@@ -1,0 +1,25 @@
+{% macro render_pagination_controls(items, query_string) %}
+{% if items.has_other_pages() %}
+<div class="pagination">
+  {% if items.has_previous() %}
+    <a class="previous_page" rel="prev" href="?{{ query_string|escape }}page={{ items.previous_page_number() }}">Anterior</a>
+  {% else %}
+    <span class="previous_page disabled">Anterior</a>
+  {% endif %}
+
+  {% for n in items.paginator.page_range %}
+    {% if n == items.number %}
+      <em class="current">{{ n }}</em>
+    {% else %}
+      <a href="?{{ query_string|escape }}page={{n}}" rel="next">{{ n }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if items.has_next() %}
+    <a class="next_page" rel="next" href="?{{ query_string|escape }}page={{ items.next_page_number() }}">Siguiente</a>
+  {% else %}
+    <span class="next_page disabled">Siguiente</a>
+  {% endif %}
+</div>
+{% endif %}
+{% endmacro %}

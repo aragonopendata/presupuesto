@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block extra_javascript %}
+<script src="{{ STATIC_URL }}javascripts/tax_calculator.js"></script>
+{% endblock %}
+{% block content %}
+<h1 class="page-title">Lo que tú aportas</h1>
+<p class="intro-text">Te mostramos de forma aproximada<a href="#footnote-receipt" title="Nota sobre el cálculo realizado"><span class="asterisk">* <span class="visuallyhidden">Nota sobre el cálculo realizado</span></span></a> cómo se distribuye el dinero que aportas con tus impuestos.</p>
+
+<form class="form-user-incomings" action="#" method="get">
+  <div class="user-incomings-custom">
+    <label for="ingresos">Indica tus ingresos brutos anuales</label>
+    <input placeholder="{{ default_income }}" name="ingresos" id="ingresos" type="text">
+    <span class="euro">€</span>
+    <button id="btn-recalculate" class="button button-3d black tupper" type="button">Calcular</button>
+  </div>
+</form>
+
+<p id="tax-amount">Has ingresado <b id='tax-amount-income'></b>, contribuyes con un total de <b id='tax-amount-paid'></b> en impuestos, de los que <b id='tax-amount-kept-locally'></b> se destinan a los Presupuestos del Gobierno de Aragon.</p>
+
+<p class="footnote tcenter" id="footnote-receipt"><span class="asterisk">*</span> El cálculo está basado en aproximaciones medias y ni sustituye ni complementa a las declaraciones tributarias oficiales. La aproximación incluye IRPF, IVA e Impuestos Especiales, pero no la Seguridad Social. Para realizar el cálculo hemos supuesto lo siguiente: todos tus ingresos provienen de rendimientos del trabajo o de actividades económicas; tienes un consumo medio de gasolina, alcohol y tabaco; al final del año ahorras el 10% de tus ingresos; y tienes reducciones y gastos deducibles por un total de 3000€ en el IRPF.</p>
+
+<div class="box box-tax">
+  <div class="box-title">
+    <h2 class="tcenter">{{ latest_budget.year }}</h2>
+  </div>
+  <div class="box-content">
+    <div class="table-grid" id="myGrid"></div>
+    {% include 'shared/social_sharing.html' %}
+  </div>
+</div>
+
+{% include 'shared/policy_paths.html' %}
+<script>
+  $(function () {
+    // Display amount as expense per capita
+    function calculatePersonalTax(row, cell, value, columnDef, dataContext) {
+      if (value == null) return null;
+      var percentage = value / columnValueExtractor(dataContext.root, columnDef);
+      return formatDecimal(percentage * getTaxPaid().tramo_ca) + " €";
+    }
+
+    function getIncomeInEuros() {
+      var income = Number($('#ingresos').val()) || {{ default_income }};
+      // Avoid too small incomes that result in tax > income, which is correct but confusing
+      income = Math.max(income, 3000); 
+      return income;
+    }
+
+    function getTaxPaid() {
+      return calculator.getTaxPaid(getIncomeInEuros());
+    }
+
+    function redrawGrid() {
+      $("#tax-amount-income").text(formatAmount(getIncomeInEuros()*100));
+      var taxPaid = getTaxPaid();
+      $("#tax-amount-paid").text(formatAmount(100*taxPaid.total.toFixed(0)));
+      $("#tax-amount-kept-locally").text(formatAmount(100*taxPaid.tramo_ca.toFixed(0)));
+      window.location.hash = 'ingresos='+getIncomeInEuros();
+
+      createBudgetGrid("#myGrid", gridData, [
+        {field: "label", name: 'Política', formatter: policyLinkFormatter, width: 300},
+        {
+          field: 'expense',
+          name: 'Gasto',
+          formatter: calculatePersonalTax, 
+          headerCssClass: 'slick-header-right',
+          getter: getBreakdownValue, 
+          column: '{{ latest_budget.name() }}',
+          year: breakdown.years['{{ latest_budget.name() }}']
+        }
+      ]);
+    }
+
+    var breakdown = {{ breakdown.to_json( labels=descriptions['functional'] )|safe }};
+    var gridData = breakdownToTable(breakdown);
+    var calculator = new TaxCalculator();
+
+    var state = $.deparam.fragment();
+    if ( state['ingresos'] ) {
+      $('#ingresos').val(state['ingresos']);
+    }
+
+    setRedrawOnButtonGroupChange('.btn-group', redrawGrid);
+    $('#btn-recalculate').click(redrawGrid);
+    $('.form-user-incomings').submit(function() { redrawGrid(); return false; });
+    redrawGrid();
+  })
+</script>
+{% endblock %}

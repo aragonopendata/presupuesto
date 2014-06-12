@@ -1,0 +1,49 @@
+/*
+ * SANKEY
+ */
+.sankey .link.with-data {
+  fill: none;
+  stroke: #1F77B4;
+  stroke-opacity: .4;
+}
+.sankey .legend-budget {
+  fill: #1F77B4;
+  opacity: .4;
+}
+
+.sankey .link-execution.with-data {
+  fill: none;
+  stroke: #E377C2;
+  stroke-opacity: .5;
+}
+.sankey .legend-execution {
+  fill: #E377C2;
+  opacity: .5;
+}
+
+.sankey .link.no-data,
+.sankey .link-execution.no-data {
+  fill: none;
+  stroke: #999;
+  stroke-opacity: .4;
+}
+
+.sankey .link:hover,
+.sankey .node:hover,
+.sankey .link-execution:hover {
+  stroke-opacity: .9;
+  cursor:pointer;
+}
+
+.sankey .legend-item text,
+.sankey .node text {
+  pointer-events: none;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.sankey .legend-note {
+  fill: none;
+  font-weight: normal !important;
+}
+

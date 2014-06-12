@@ -1,0 +1,111 @@
+// Non-semantic helper classes
+// Floats / Clears
+.fl{float:left; _margin-right:-3px}
+.fr{float:right; _margin-left:-3px}
+.cr{clear:right}
+.cl{clear:left}
+.cb{clear:both}
+
+
+
+// Text helpers
+.tcenter{text-align:center}
+.tleft{text-align:left}
+.tright{text-align:right}
+.tupper{text-transform:uppercase}
+.tlower{text-transform:lowercase}
+.tnormal{text-transform:none}
+.ttop{text-align:top}
+.tmiddle{text-align:middle}
+.tbottom{text-align:bottom}
+
+
+
+// Pads
+[class*="pad-"] {}
+
+// Los paddings son reducidos a 1/3 para mobile
+.pad-q {padding: .125em;}// q = quarter
+.pad-h {padding: .25em;}// h = half
+.pad-1 {padding: .5em;}
+.pad-2 {padding: 1em;}
+.pad-3 {padding: 1.5em;}
+
+@media screen and (min-width: 48em) {
+.pad-q {padding: .25em;}// q = quarter
+.pad-h {padding: .5em;}// h = half
+.pad-1 {padding: 1em;}
+.pad-2 {padding: 2em;}
+.pad-3 {padding: 3em;}
+}
+
+
+
+// Columns
+// @colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px
+.cols-2 {.columns(48%, 2, 2%, transparent, none, 0);}
+.cols-3 {.columns(31.3333%, 3, 2%, transparent, none, 0);}
+.cols-4 {.columns(23%, 4, 2%, transparent, none, 0);}
+.cols-5 {.columns(18%, 5, 2%, transparent, none, 0);}
+
+
+
+
+// for image replacement
+.ir {display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr;}
+.ir br {display: none;}
+
+// Hide for both screenreaders and browsers
+// css-discuss.incutio.com/wiki/Screenreader_Visibility
+.hidden {display: none; visibility: hidden;} 
+
+// Hide only visually, but have it available for screenreaders 
+// www.webaim.org/techniques/css/invisiblecontent/ 
+// Solution from: j.mp/visuallyhidden
+.visuallyhidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); // IE6, IE7
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Long strings truncation:
+// · break: it prevents the text to break out of their container (such as an URL) by forcing the break. (IE 8+, Firefox, Safari and Chrome. It doesn’t work in Opera.)
+// · ellipsis: to make an ellipsis in case the string is too long for its container.
+.break {
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+ 
+.ellipsis {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis; // Required for IE8
+	-o-text-overflow: ellipsis; // Required for Opera
+	text-overflow: ellipsis;
+}
+
+// Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto;}
+
+// Para eliminar rápidamente estilo de lista por defecto
+.no-bullet {
+	padding-left: 0;
+
+	> li {
+		list-style: none;
+		list-style-type: none;
+	}
+}
+
+// Para hacer que el último elemento tenga cero margen
+.margin0 {
+	& > *:last-child {
+		margin-bottom: 0;
+	}
+}

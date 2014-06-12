@@ -1,0 +1,253 @@
+{% extends 'base.html' %}
+{% from 'shared/entity_select.html' import render_entity_select as render_entity_select %}
+{% block extra_javascript %}
+<script src="{{ STATIC_URL }}javascripts/vis/d3.v3-3-9.min.js"></script>
+<script src="{{ STATIC_URL }}javascripts/vis/bigtext.js"></script>
+<script src="{{ STATIC_URL }}javascripts/vis/budget-treemap.js"></script>
+<script src="{{ STATIC_URL }}javascripts/vis/budget-comparison.js"></script>
+<script src="{{ STATIC_URL }}javascripts/comparator.js"></script>
+{% endblock %}
+{% block content %}
+<p>
+  <a href="{{ url('aragon.views.counties') if is_county else url('aragon.views.towns') }}" class="button button-3d grey tupper">
+    ← Volver a la lista de {{ 'comarcas' if is_county else 'municipios' }}
+  </a>
+</p>
+<h1 class="page-title">Comparativa</h1>
+<div class="comparison">
+  <div class="comparison__entities">
+    <div class="row-fluid">
+      <div class="span6">
+
+        <div class="comparison__entity">
+          <h2><a href="{{ url('aragon.views.counties_show' if is_county else 'aragon.views.towns_show', entity_left.slug) }}">{{ entity_left.name }}</a></h2>
+          {{ render_entity_select('comparator-dropdown-left', entities, entity_left) }}
+          <div class="comparison__entity__chart">
+            <h3 class="icon-policy">Políticas</h3>
+            <div id="left-income-chart-container" class="chart-container comparison__entity--chart"></div>
+            <div id="left-expense-chart-container" class="chart-container comparison__entity--chart"></div>
+          </div>
+          <p class="comparison__entity__budget"><b id="breakdown-label-left"></b> <span class="icon-budget" id="total-breakdown-left"></span></p>
+        </div>
+
+      </div>
+
+      <div class="span6">
+
+        <div class="comparison__entity">
+          <h2><a href="{{ url('aragon.views.counties_show' if is_county else 'aragon.views.towns_show', entity_right.slug) }}">{{ entity_right.name }}</a></h2>
+          {{ render_entity_select('comparator-dropdown-right', entities, entity_right) }}
+          <div class="comparison__entity__chart">
+            <h3 class="icon-policy">Políticas</h3>
+            <div id="right-income-chart-container" class="chart-container comparison__entity--chart"></div>
+            <div id="right-expense-chart-container" class="chart-container comparison__entity--chart"></div>
+          </div>
+          <p class="comparison__entity__budget"><b id="breakdown-label-right"></b> <span class="icon-budget" id="total-breakdown-right"></span></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="pop-up">
+    <div id="pop-up-title"></div>
+    <div id="pop-up-content"></div>
+  </div>
+
+{% include 'shared/data_controllers.html' %}
+
+
+  <section class="comparison__policies" role="county">
+    <h1 class="comparison__policies__title icon-policy"></h1>
+
+    <div class="alert note hidden">
+      <p class="title tupper"></p>
+    </div>
+
+    <ul class="entities-legend">
+      <li class="entity-legend entity-legend--1"><span></span> {{ entity_left.name }}</li>
+      <li class="entity-legend entity-legend--2"><span></span> {{ entity_right.name }}</li>
+    </ul>
+
+    <div class="comparison__policies__list" id="budget-comparison-income-container"></div>
+    <div class="comparison__policies__list" id="budget-comparison-expense-container"></div>
+  </section>
+</div>
+
+{% include 'shared/policy_paths.html' %}
+<script>
+  $(function () {
+
+    // We don't have grids in this page, but we reuse the formatters, who expect certain structure
+    function getColumnDefinition(uiState, stats) {
+      return { 
+        formatter: getFormatter(uiState.format),
+        year: Number(uiState.year),
+        stats: stats
+      }; 
+    }
+
+    var uiState = null;
+    function redraw() {
+      // Avoid unnecessary redrawings (the slider is trigger happy)
+      var newUIState = getUIState();
+      if ( uiState && sameUIState(uiState, newUIState) ) return;
+      uiState = newUIState;
+
+      var columnDefLeft = getColumnDefinition(uiState, statsLeft);
+      var columnDefRight = getColumnDefinition(uiState, statsRight);
+
+      // Update totals
+      var breakdownLeft = ( uiState.field == 'expense' ? expenseBreakdownLeft : incomeBreakdownLeft );
+      var actualValueLeft = breakdownLeft[uiState.field]['actual_'+uiState.year];
+      if ( actualValueLeft ) {
+        $("#breakdown-label-left").text( uiState.field == 'expense' ? 
+                                                    "Total gasto ejecutado" :
+                                                    "Total ingresos ejecutados" );
+        $("#total-breakdown-left").text( columnDefLeft.formatter( 0, 0, 
+                                                    actualValueLeft, 
+                                                    columnDefLeft, 
+                                                    breakdownLeft) );
+      } else {
+        $("#breakdown-label-left").text( uiState.field == 'expense' ? 
+                                                    "Total gasto presupuestado" :
+                                                    "Total ingresos presupuestados" );
+        $("#total-breakdown-left").text( columnDefLeft.formatter( 0, 0, 
+                                                    breakdownLeft[uiState.field][uiState.year], 
+                                                    columnDefLeft, 
+                                                    breakdownLeft) || "N/D" );
+      }
+
+      var breakdownRight = ( uiState.field == 'expense' ? expenseBreakdownRight : incomeBreakdownRight );
+      var actualValueRight = breakdownRight[uiState.field]['actual_'+uiState.year];
+      if ( actualValueRight ) {
+        $("#breakdown-label-right").text( uiState.field == 'expense' ? 
+                                                    "Total gasto ejecutado" :
+                                                    "Total ingresos ejecutados" );
+        $("#total-breakdown-right").text( columnDefRight.formatter( 0, 0, 
+                                                    actualValueRight, 
+                                                    columnDefRight, 
+                                                    breakdownRight) );
+      } else {
+        $("#breakdown-label-right").text( uiState.field == 'expense' ? 
+                                                    "Total gasto presupuestado" :
+                                                    "Total ingresos presupuestados" );
+        $("#total-breakdown-right").text( columnDefRight.formatter( 0, 0, 
+                                                    breakdownRight[uiState.field][uiState.year], 
+                                                    columnDefRight, 
+                                                    breakdownRight) || "N/D" );
+      }
+
+      // Update labels
+      if ( uiState.field == 'expense' ) {
+        $(".page-title").text("Comparativa de gastos");
+        $("#breakdown-label-right").text("Total gasto presupuestado");
+        $("#actual-breakdown-label-right").text("Total gasto ejecutado");
+
+        $('#left-income-chart-container').hide();
+        $('#left-expense-chart-container').show();
+        $('#right-income-chart-container').hide();
+        $('#right-expense-chart-container').show();
+
+        // Create the treemaps: won't do anything if already created
+        leftExpenseTreemap.createTreemap(uiState);
+        rightExpenseTreemap.createTreemap(uiState);
+
+        // Calculate the scale to use for _both_ treemaps at the same time
+        var maxValue = Math.max(leftExpenseTreemap.calculateMaxTreemapValueEver(uiState),
+                                rightExpenseTreemap.calculateMaxTreemapValueEver(uiState));
+
+        // Draw the treemaps
+        leftExpenseTreemap.maxTreemapValueEver(maxValue); // Force to use the scale from above
+        leftExpenseTreemap.updateTreemap(uiState);
+        rightExpenseTreemap.maxTreemapValueEver(maxValue);
+        rightExpenseTreemap.updateTreemap(uiState);
+
+        $('.comparison__policies__title').text("Comparativa de gastos");
+        $('#budget-comparison-income-container').hide();
+        $('#budget-comparison-expense-container').show();
+        budgetExpenseComparison.update(uiState);
+      } else {
+        $(".page-title").text("Comparativa de ingresos");
+        $("#breakdown-label-right").text("Total ingresos presupuestados");
+        $("#actual-breakdown-label-right").text("Total ingresos ejecutados");
+
+        $('#left-income-chart-container').show();
+        $('#left-expense-chart-container').hide();
+        $('#right-income-chart-container').show();
+        $('#right-expense-chart-container').hide();
+
+        // Create the treemaps: won't do anything if already created
+        leftIncomeTreemap.createTreemap(uiState);
+        rightIncomeTreemap.createTreemap(uiState);
+
+        // Calculate the scale to use for _both_ treemaps at the same time
+        var maxValue = Math.max(leftIncomeTreemap.calculateMaxTreemapValueEver(uiState),
+                                rightIncomeTreemap.calculateMaxTreemapValueEver(uiState));
+
+        // Draw the treemaps
+        leftIncomeTreemap.maxTreemapValueEver(maxValue);
+        leftIncomeTreemap.updateTreemap(uiState);
+        rightIncomeTreemap.maxTreemapValueEver(maxValue);
+        rightIncomeTreemap.updateTreemap(uiState);
+
+        $('.comparison__policies__title').text("Comparativa de ingresos");
+        $('#budget-comparison-income-container').show();
+        $('#budget-comparison-expense-container').hide();
+        budgetIncomeComparison.update(uiState);
+      }
+    }
+
+    // Breakdown data
+    var statsLeft = {{ stats_left|safe }};
+    var statsRight = {{ stats_right|safe }};
+    var expenseBreakdownLeft = {{ economic_breakdown_left.to_json( labels=descriptions['expense'] )|safe }};
+    var incomeBreakdownLeft = {{ economic_breakdown_left.to_json( labels=descriptions['income'] )|safe }};
+    var expenseBreakdownRight = {{ economic_breakdown_right.to_json( labels=descriptions['expense'] )|safe }};
+    var incomeBreakdownRight = {{ economic_breakdown_right.to_json( labels=descriptions['income'] )|safe }};
+
+    // Top level area descriptions
+    var incomeAreas = {{ income_areas|safe }};
+    var expenseAreas = {{ expense_areas|safe }};
+
+    // Treemaps
+    var leftIncomeTreemap = new BudgetTreemap("#left-income-chart-container", incomeBreakdownLeft, statsLeft, incomeAreas, 1);
+    var rightIncomeTreemap = new BudgetTreemap("#right-income-chart-container", incomeBreakdownRight, statsRight, incomeAreas, 1);
+    var leftExpenseTreemap = new BudgetTreemap("#left-expense-chart-container", expenseBreakdownLeft, statsLeft, expenseAreas, 1);
+    var rightExpenseTreemap = new BudgetTreemap("#right-expense-chart-container", expenseBreakdownRight, statsRight, expenseAreas, 1);
+
+    // Budget comparison
+    var budgetIncomeComparison = new BudgetComparison('#budget-comparison-income-container', incomeBreakdownLeft, incomeBreakdownRight, statsLeft, statsRight, 'income');
+    var budgetExpenseComparison = new BudgetComparison('#budget-comparison-expense-container', expenseBreakdownLeft, expenseBreakdownRight, statsLeft, statsRight, 'expense');
+
+    // Set up controls
+    setRedrawOnButtonGroupChange('.btn-group', redraw);
+    $('#select-format').change(redraw);
+    initSlider("#year-selection", {{ years|safe }}, redraw, {{ latest_year }});
+
+    // Select income/expense based on location hash
+    var state = $.deparam.fragment();
+    $("#"+state.field).click();
+
+    // Draw visualizations once we're done
+    redraw();
+
+    // Entity select dropdowns
+    $('#comparator-dropdown-left').submit(function(e) {
+      e.preventDefault();
+      entity_slug = $('#comparator-dropdown-left select').val();
+      if ( entity_slug != '' ) {
+        window.location.href = {{ 'getCountyCompareLink' if is_county else 'getTownCompareLink' }}(entity_slug, '{{ entity_right.slug }}');
+      }
+    });
+    $('#comparator-dropdown-right').submit(function(e) {
+      e.preventDefault();
+      entity_slug = $('#comparator-dropdown-right select').val();
+      if ( entity_slug != '' ) {
+        window.location.href = {{ 'getCountyCompareLink' if is_county else 'getTownCompareLink' }}('{{ entity_left.slug }}', entity_slug);
+      }
+    });
+
+  });
+</script>
+{% endblock %}

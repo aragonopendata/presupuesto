@@ -1,0 +1,616 @@
+EJERCICIO;CENTRO GESTOR;DESCRIPCION CORTA;DESCRIPCION LARGA
+2014;01;Cortes de Aragón;Cortes de Aragón
+2014;0100;Ingresos de las Cortes de Aragón;Ingresos de las Cortes de Aragón
+2014;01000;Ingresos de las Cortes de Aragón;Ingresos de las Cortes de Aragón
+2014;0101;Cortes de Aragón;Cortes de Aragón
+2014;01010;Cortes de Aragón;Cortes de Aragón
+2014;0102;El Justicia de Aragón;El Justicia de Aragón
+2014;01020;El Justicia de Aragón;El Justicia de Aragón
+2014;0103;Cámara de Cuentas de Aragón;Cámara de Cuentas de Aragón
+2014;01030;Cámara de Cuentas de Aragón;Cámara de Cuentas de Aragón
+2014;02;Presidencia del Gobierno de Aragón;Presidencia del Gobierno de Aragón
+2014;0200;Ingresos de Presidencia Gobierno Aragón;Ingresos de Presidencia Gobierno Aragón
+2014;02000;Ingresos de Presidencia del Gobierno;Ingresos de Presidencia del Gobierno
+2014;0201;Presidencia del Gobierno de Aragón;Presidencia del Gobierno de Aragón
+2014;02010;Presidencia del Gobierno de Aragón;Presidencia del Gobierno de Aragón
+2014;03;Consejo Consultivo de Aragón;Consejo Consultivo de Aragón
+2014;0300;Ingresos Consejo Consultivo de Aragón;Ingresos Consejo Consultivo de Aragón
+2014;03000;Ingresos Consejo Consultivo de Aragón;Ingresos Consejo Consultivo de Aragón
+2014;0301;Consejo Consultivo de Aragón;Consejo Consultivo de Aragón
+2014;03010;Consejo Consultivo de Aragón;Consejo Consultivo de Aragón
+2014;04;No operativo;No operativo
+2014;0400;No operativa;No operativa
+2014;04000;No operativa;No operativa
+2014;0401;No operativo;No operativo
+2014;04010;No operativo;No operativo
+2014;0402;No operativo;No operativo
+2014;04020;No operativo;No operativo
+2014;09;Consejo Económico y Social de Aragón;Consejo Económico y Social de Aragón
+2014;0900;Ingresos Consejo Ec. y Social de Aragón;Ingresos Consejo Ec. y Social de Aragón
+2014;09000;Ingresos Consejo Ec. y Social de Aragón;Ingresos Consejo Ec. y Social de Aragón
+2014;0901;Consejo Económico y Social de Aragón;Consejo Económico y Social de Aragón
+2014;09010;Consejo Económico y Social de Aragón;Consejo Económico y Social de Aragón
+2014;10;Presidencia y Justicia;Presidencia y Justicia
+2014;1000;Ingresos de Presidencia y Justicia;Ingresos de Presidencia y Justicia
+2014;10000;Ingresos de Presidencia y Justicia;Ingresos de Presidencia y Justicia
+2014;1001;S.G.T. Presidencia y Justicia;S.G.T. Presidencia y Justicia
+2014;10010;S.G.T. Presidencia y Justicia;S.G.T. Presidencia y Justicia
+2014;1002;Dirección General de Servicios Jurídicos;Dirección General de Servicios Jurídicos
+2014;10020;Dirección General de Servicios Jurídicos;Dirección General de Servicios Jurídicos
+2014;1003;D.G. de Desarrollo Estatutario;D.G. de Desarrollo Estatutario
+2014;10030;D.G. de Desarrollo Estatutario;D.G. de Desarrollo Estatutario
+2014;1004;D.G. Rel. Inst. y con Cortes de Aragón;D.G. Rel. Inst. y con Cortes de Aragón
+2014;10040;D.G. Rel. Inst. y con Cortes de Aragón;D.G. Rel. Inst. y con Cortes de Aragón
+2014;1005;D.G. Part. Ciudadana,Acc. Ext. y Cooper.;D.G. Part. Ciudadana,Acc. Ext. y Cooper.
+2014;10050;D.G. Part. Ciudadana,Acc. Ext. y Cooper.;D.G. Part. Ciudadana,Acc. Ext. y Cooper.
+2014;1006;D.G. de Administración de Justicia;D.G. de Administración de Justicia
+2014;10060;D.G. de Administración de Justicia;D.G. de Administración de Justicia
+2014;1007;No operativo;No operativo
+2014;10070;No operativo;No operativo
+2014;11;Política Territorial e Interior;Política Territorial e Interior
+2014;1100;Ingresos Política Territorial e Interior;Ingresos Política Territorial e Interior
+2014;11000;Ingresos Política Territorial e Interior;Ingresos Política Territorial e Interior
+2014;1101;S.G.T. de Polít.Territorial e Interior;S.G.T. de Polít.Territorial e Interior
+2014;11010;S.G.T. de Polít.Territorial e Interior;S.G.T. de Polít.Territorial e Interior
+2014;1102;No operativo;No operativo
+2014;11020;No operativo;No operativo
+2014;1103;D.G. de Administración Local;D.G. de Administración Local
+2014;11030;D.G. de Administración Local;D.G. de Administración Local
+2014;1104;D.G. de Ordenación del Territorio;D.G. de Ordenación del Territorio
+2014;11040;D.G. de Ordenación del Territorio;D.G. de Ordenación del Territorio
+2014;1105;Dirección General de Interior;Dirección General de Interior
+2014;11050;Dirección General de Interior;Dirección General de Interior
+2014;1106;Delegación Territorial de Huesca;Delegación Territorial de Huesca
+2014;11060;Delegación Territorial de Huesca;Delegación Territorial de Huesca
+2014;1107;Delegación Territorial de Teruel;Delegación Territorial de Teruel
+2014;11070;Delegación Territorial de Teruel;Delegación Territorial de Teruel
+2014;1111;No operativo;No operativo
+2014;11110;No operativo;No operativo
+2014;12;Hacienda y Administración Pública;Hacienda y Administración Pública
+2014;1200;Ingresos de Hacienda y Adm. Pública;Ingresos de Hacienda y Adm. Pública
+2014;12000;Ingresos de Hacienda y Adm. Pública;Ingresos de Hacienda y Adm. Pública
+2014;1201;S.G.T. de Hacienda y Administ. Pública;S.G.T. de Hacienda y Administ. Pública
+2014;12010;S.G.T. de Hacienda y Administ. Pública;S.G.T. de Hacienda y Administ. Pública
+2014;1202;D.G. Presupuestos,Financiación,Tesorería;D.G. Presupuestos,Financiación,Tesorería
+2014;12020;DG Presupuestos,Financiación y Tesorería;DG Presupuestos,Financiación y Tesorería
+2014;1203;D.G. Contratación, Patrimonio y Organiz.;D.G. Contratación, Patrimonio y Organiz.
+2014;12030;D.G. Contratación, Patrimonio y Organiz.;D.G. Contratación, Patrimonio y Organiz.
+2014;1204;Intervención General;Intervención General
+2014;12040;Intervención General;Intervención General
+2014;1205;Dirección General de Tributos;Dirección General de Tributos
+2014;12050;Dirección General de Tributos;Dirección General de Tributos
+2014;1206;D.G. Función Pública y Calidad de Serv.;D.G. Función Pública y Calidad de Serv.
+2014;12060;D.G. Función Pública y Calidad de Serv.;D.G. Función Pública y Calidad de Serv.
+2014;1207;No operativo;No operativo
+2014;12070;No operativo;No operativo
+2014;1208;No operativo;No operativo
+2014;12080;D.G. Asuntos Europeos y Acción Exterior;D.G. Asuntos Europeos y Acción Exterior
+2014;1250;Ingresos de Secciones Presupuestarias;Ingresos de Secciones Presupuestarias
+2014;12500;Ingresos de Secciones Presupuestarias;Ingresos de Secciones Presupuestarias
+2014;1251;Ingresos Servicio Provincial de Zaragoza;Ingresos Servicio Provincial de Zaragoza
+2014;12510;Ingresos Servicio Provincial de Zaragoza;Ingresos Servicio Provincial de Zaragoza
+2014;1252;Ingresos Servicio Provincial de Huesca;Ingresos Servicio Provincial de Huesca
+2014;12520;Ingresos Servicio Provincial de Huesca;Ingresos Servicio Provincial de Huesca
+2014;1253;Ingresos Servicio Provincial de Teruel;Ingresos Servicio Provincial de Teruel
+2014;12530;Ingresos Servicio Provincial de Teruel;Ingresos Servicio Provincial de Teruel
+2014;13;O.Púb.,Urbanismo,Vivienda y Transportes;O.Púb.,Urbanismo,Vivienda y Transportes
+2014;1300;Ingresos O.P., Urbanismo Viv. y Ttes;Ingresos O.P., Urbanismo Viv. y Ttes
+2014;13000;Ingresos O.P., Urbanismo Viv. y Ttes;Ingresos O.P., Urbanismo Viv. y Ttes
+2014;1301;S.G.T. O.P., Urbanismo,Vivienda y Ttes.;S.G.T. O.P., Urbanismo,Vivienda y Ttes.
+2014;13010;S.G.T. O.P., Urbanismo,Vivienda y Ttes.;S.G.T. O.P., Urbanismo,Vivienda y Ttes.
+2014;1302;Dirección General de Carreteras;Dirección General de Carreteras
+2014;13020;Dirección General de Carreteras;Dirección General de Carreteras
+2014;1303;Dirección General de Urbanismo;Dirección General de Urbanismo
+2014;13030;Dirección General de Urbanismo;Dirección General de Urbanismo
+2014;1304;D.G. Transportes y Planif. de Infraestr.;D.G. Transportes y Planif. de Infraestr.
+2014;13040;D.G. Transportes y Planif. de Infraestr.;D.G. Transportes y Planif. de Infraestr.
+2014;1305;D.G. de Vivienda y Rehabilitación;D.G. de Vivienda y Rehabilitación
+2014;13050;D.G. de Vivienda y Rehabilitación;D.G. de Vivienda y Rehabilitación
+2014;14;Agricultura, Ganadería y Medio Ambiente;Agricultura, Ganadería y Medio Ambiente
+2014;1400;Ingresos Agricultura,Ganad. y Medio Amb.;Ingresos Agricultura,Ganad. y Medio Amb.
+2014;14000;Ingresos Agricultura,Ganad. y Medio Amb.;Ingresos Agricultura,Ganad. y Medio Amb.
+2014;1401;S.G.T. de Agricultura,Ganadería y M.Amb.;S.G.T. de Agricultura,Ganadería y M.Amb.
+2014;14010;S.G.T. de Agricultura,Ganadería y M.Amb.;S.G.T. de Agricultura,Ganadería y M.Amb.
+2014;14011;AGRI-Sevicio Provincial de Huesca;AGRI-Sevicio Provincial de Huesca
+2014;14012;AGRI-Sevicio Provincial de Teruel;AGRI-Sevicio Provincial de Teruel
+2014;14013;AGRI-Sevicio Provincial de Zaragoza;AGRI-Sevicio Provincial de Zaragoza
+2014;1402;Dirección General de Producción Agraria;Dirección General de Producción Agraria
+2014;14020;Dirección General de Producción Agraria;Dirección General de Producción Agraria
+2014;1403;D.G. de Alimentac. y Fto Agroalimentario;D.G. de Alimentac. y Fto Agroalimentario
+2014;14030;D.G. de Alimentac. y Fto Agroalimentario;D.G. de Alimentac. y Fto Agroalimentario
+2014;1404;D.G. Conservación del Medio Natural;D.G. Conservación del Medio Natural
+2014;14040;D.G. Conservación del Medio Natural;D.G. Conservación del Medio Natural
+2014;1405;Dirección General de Desarrollo Rural;Dirección General de Desarrollo Rural
+2014;14050;Dirección General de Desarrollo Rural;Dirección General de Desarrollo Rural
+2014;1406;D.G. de Gestión Forestal;D.G. de Gestión Forestal
+2014;14060;D.G. de Gestión Forestal;D.G. de Gestión Forestal
+2014;1407;D.G. de Calidad Ambiental;D.G. de Calidad Ambiental
+2014;14070;D.G. de Calidad Ambiental;D.G. de Calidad Ambiental
+2014;15;Economía y Empleo;Economía y Empleo
+2014;1500;Ingresos de Economía y Empleo;Ingresos de Economía y Empleo
+2014;15000;Ingresos de Economía y Empleo;Ingresos de Economía y Empleo
+2014;1501;S.G.T. de Economía y Empleo;S.G.T. de Economía y Empleo
+2014;15010;S.G.T. de Economía y Empleo;S.G.T. de Economía y Empleo
+2014;1502;No operativa;No operativa
+2014;15020;No operativa;No operativa
+2014;1503;No operativa;No operativa
+2014;15030;No operativa;No operativa
+2014;1504;No operativa;No operativa
+2014;15040;No operativa;No operativa
+2014;1505;D.G. de Turismo;D.G. de Turismo
+2014;15050;Dirección General de Turismo;Dirección General de Turismo
+2014;1506;Dirección General de Economía;Dirección General de Economía
+2014;15060;Dirección General de Economía;Dirección General de Economía
+2014;1507;Dirección General de Trabajo;Dirección General de Trabajo
+2014;15070;Dirección General de Trabajo;Dirección General de Trabajo
+2014;16;Sanidad, Bienestar Social y Familia;Sanidad, Bienestar Social y Familia
+2014;1600;Ingresos Sanidad, B. Social y Familia;Ingresos Sanidad, B. Social y Familia
+2014;16000;Ingresos Sanidad, B. Social y Familia;Ingresos Sanidad, B. Social y Familia
+2014;1601;S.G.T. de Sanidad, B. Social y Familia;S.G.T. de Sanidad, B. Social y Familia
+2014;16010;S.G.T. de Sanidad, B. Social y Familia;S.G.T. de Sanidad, B. Social y Familia
+2014;1602;D.G. de Planificación y Aseguramiento;D.G. de Planificación y Aseguramiento
+2014;16020;D.G. de Planificación y Aseguramiento;D.G. de Planificación y Aseguramiento
+2014;1603;Dirección General de Consumo;Dirección General de Consumo
+2014;16030;Dirección General de Consumo;Dirección General de Consumo
+2014;1604;Dirección General de Salud Pública;Dirección General de Salud Pública
+2014;16040;Dirección General de Salud Pública;Dirección General de Salud Pública
+2014;1605;D.G. de Calidad y Atención al Usuario;D.G. de Calidad y Atención al Usuario
+2014;16050;D.G. de Calidad y Atención al Usuario;D.G. de Calidad y Atención al Usuario
+2014;1606;D.G. de Familia;D.G. de Familia
+2014;16060;D.G. de Familia;D.G. de Familia
+2014;1607;D.G. de Bienestar Social y Dependencia;D.G. de Bienestar Social y Dependencia
+2014;16070;D.G. de Bienestar Social y Dependencia;D.G. de Bienestar Social y Dependencia
+2014;16220;S,BS y F-Sevicio Provincial de Huesca;S,BS y F-Sevicio Provincial de Huesca
+2014;16440;S,BS y F-Sevicio Provincial de Teruel;S,BS y F-Sevicio Provincial de Teruel
+2014;16500;S,BS y F-Sevicio Provincial de Zaragoza;S,BS y F-Sevicio Provincial de Zaragoza
+2014;17;Industria e Innovación;Industria e Innovación
+2014;1700;Ingresos de Industria e Innovación;Ingresos de Industria e Innovación
+2014;17000;Ingresos de Industria e Innovación;Ingresos de Industria e Innovación
+2014;1701;SGT Industria e Innovación;SGT Industria e Innovación
+2014;17010;SGT Industria e Innovación;SGT Industria e Innovación
+2014;1702;D.G. de Industria y de la PYME;D.G. de Industria y de la PYME
+2014;17020;D.G. de Industria y de la PYME;D.G. de Industria y de la PYME
+2014;1703;D.G. Investigación e Innovación;D.G. Investigación e Innovación
+2014;17030;D.G. Investigación e Innovación;D.G. Investigación e Innovación
+2014;1704;D.G. Nuevas Tecnologías;D.G. Nuevas Tecnologías
+2014;17040;D.G. Nuevas Tecnologías;D.G. Nuevas Tecnologías
+2014;1705;Dirección General de Energía y Minas;Dirección General de Energía y Minas
+2014;17050;Dirección General de Energía y Minas;Dirección General de Energía y Minas
+2014;1706;Dirección General Comercio y Artesanía;Dirección General Comercio y Artesanía
+2014;17060;Dirección General Comercio y Artesanía;Dirección General Comercio y Artesanía
+2014;18;Educación, Universidad,Cultura y Deporte;Educación, Universidad,Cultura y Deporte
+2014;1800;Ingresos Educ,Univ, Cultura y Deporte;Ingresos Educ,Univ, Cultura y Deporte
+2014;18000;Ingresos Educ,Univ, Cultura y Deporte;Ingresos Educ,Univ, Cultura y Deporte
+2014;1801;S.G.T. Educación,Univ.,Cultura y Deporte;S.G.T. Educación,Univ.,Cultura y Deporte
+2014;18010;S.G.T. Educación,Univ.,Cultura y Deporte;S.G.T. Educación,Univ.,Cultura y Deporte
+2014;1802;D.G. de Universidades;D.G. de Universidades
+2014;18020;D.G. de Universidades;D.G. de Universidades
+2014;1803;D.G. de Ordenación Académica;D.G. de Ordenación Académica
+2014;18030;D.G. de Ordenación Académica;D.G. de Ordenación Académica
+2014;1804;Dirección General de Gestión de Personal;Dirección General de Gestión de Personal
+2014;18040;Dirección General de Gestión de Personal;Dirección General de Gestión de Personal
+2014;1805;D.G. Política Educativa y Educación Perm;D.G. Política Educativa y Educación Perm
+2014;18050;D.G. Política Educativa y Educación Perm;D.G. Política Educativa y Educación Perm
+2014;1806;Dirección General de Cultura;Dirección General de Cultura
+2014;18060;Dirección General de Cultura;Dirección General de Cultura
+2014;1807;Dirección General de Patrimonio Cultural;Dirección General de Patrimonio Cultural
+2014;18070;Dirección General de Patrimonio Cultural;Dirección General de Patrimonio Cultural
+2014;1808;Dirección General de Deporte;Dirección General de Deporte
+2014;18080;Dirección General de Deporte;Dirección General de Deporte
+2014;19;No operativa;No operativa
+2014;1900;No operativa;No operativa
+2014;19000;No operativa;No operativa
+2014;1901;No operativa;No operativa
+2014;19010;No operativa;No operativa
+2014;1902;No operativa;No operativa
+2014;19020;No operativa;No operativa
+2014;1903;No operativa;No operativa
+2014;19030;No operativa;No operativa
+2014;1904;No operativa;No operativa
+2014;19040;No operativa;No operativa
+2014;20;No operativa;No operativa
+2014;2000;No operativa;No operativa
+2014;20000;No operativa;No operativa
+2014;2001;No operativa;No operativa
+2014;20010;No operativa;No operativa
+2014;20011;No operativa;No operativa
+2014;20012;No operativa;No operativa
+2014;2002;No operativa;No operativa
+2014;20020;No operativa;No operativa
+2014;2003;No operativa;No operativa
+2014;20030;No operativa;No operativa
+2014;2004;No operativa;No operativa
+2014;20040;No operativa;No operativa
+2014;2010;No operativa;No operativa
+2014;20100;No operativa;No operativa
+2014;2012;No operativa;No operativa
+2014;20120;No operativa;No operativa
+2014;26;A las Administraciones Comarcales;A las Administraciones Comarcales
+2014;2600;"Ingresos de ""A las Adm. Comarcales""";"Ingresos de ""A las Adm. Comarcales"""
+2014;26000;"Ingresos de ""A las Adm. Comarcales""";"Ingresos de ""A las Adm. Comarcales"""
+2014;2601;Comarca de la Jacetania;Comarca de la Jacetania
+2014;26010;Comarca de la Jacetania;Comarca de la Jacetania
+2014;2602;Comarca del Alto Gállego;Comarca del Alto Gállego
+2014;26020;Comarca del Alto Gállego;Comarca del Alto Gállego
+2014;2603;Comarca de Sobrarbe;Comarca de Sobrarbe
+2014;26030;Comarca de Sobrarbe;Comarca de Sobrarbe
+2014;2604;Comarca de la Ribagorza;Comarca de la Ribagorza
+2014;26040;Comarca de la Ribagorza;Comarca de la Ribagorza
+2014;2605;Comarca de Cinco Villas;Comarca de Cinco Villas
+2014;26050;Comarca de Cinco Villas;Comarca de Cinco Villas
+2014;2606;Comarca Hoya de Huesca/ Plana de Uesca;Comarca Hoya de Huesca/ Plana de Uesca
+2014;26060;Comarca Hoya de Huesca/ Plana de Uesca;Comarca Hoya de Huesca/ Plana de Uesca
+2014;2607;Comarca de Somontano de Barbastro;Comarca de Somontano de Barbastro
+2014;26070;Comarca de Somontano de Barbastro;Comarca de Somontano de Barbastro
+2014;2608;Comarca de Cinca Medio;Comarca de Cinca Medio
+2014;26080;Comarca de Cinca Medio;Comarca de Cinca Medio
+2014;2609;Comarca de la Litera/ La Llitera;Comarca de la Litera/ La Llitera
+2014;26090;Comarca de la Litera/ La Llitera;Comarca de la Litera/ La Llitera
+2014;2610;Comarca de los Monegros;Comarca de los Monegros
+2014;26100;Comarca de los Monegros;Comarca de los Monegros
+2014;2611;Comarca del Bajo Cinca/ Baix Cinca;Comarca del Bajo Cinca/ Baix Cinca
+2014;26110;Comarca del Bajo Cinca/ Baix Cinca;Comarca del Bajo Cinca/ Baix Cinca
+2014;2612;Comarca de Tarazona y el Moncayo;Comarca de Tarazona y el Moncayo
+2014;26120;Comarca de Tarazona y el Moncayo;Comarca de Tarazona y el Moncayo
+2014;2613;Comarca de Campo de Borja;Comarca de Campo de Borja
+2014;26130;Comarca de Campo de Borja;Comarca de Campo de Borja
+2014;2614;Comarca del Aranda;Comarca del Aranda
+2014;26140;Comarca del Aranda;Comarca del Aranda
+2014;2615;Comarca de la Ribera Alta del Ebro;Comarca de la Ribera Alta del Ebro
+2014;26150;Comarca de la Ribera Alta del Ebro;Comarca de la Ribera Alta del Ebro
+2014;2616;Comarca de Valdejalón;Comarca de Valdejalón
+2014;26160;Comarca de Valdejalón;Comarca de Valdejalón
+2014;2617;Delimitación Comarcal de Zaragoza;Delimitación Comarcal de Zaragoza
+2014;26170;Delimitación Comarcal de Zaragoza;Delimitación Comarcal de Zaragoza
+2014;2618;Comarca de la Ribera Baja del Ebro;Comarca de la Ribera Baja del Ebro
+2014;26180;Comarca de la Ribera Baja del Ebro;Comarca de la Ribera Baja del Ebro
+2014;2619;Comarca Bajo Aragón-Caspe;Comarca Bajo Aragón-Caspe
+2014;26190;Comarca Bajo Aragón-Caspe;Comarca Bajo Aragón-Caspe
+2014;2620;Comarca de la Comunidad de Calatayud;Comarca de la Comunidad de Calatayud
+2014;26200;Comarca de la Comunidad de Calatayud;Comarca de la Comunidad de Calatayud
+2014;2621;Comarca de Campo de Cariñena;Comarca de Campo de Cariñena
+2014;26210;Comarca de Campo de Cariñena;Comarca de Campo de Cariñena
+2014;2622;Comarca de Campo de Belchite;Comarca de Campo de Belchite
+2014;26220;Comarca de Campo de Belchite;Comarca de Campo de Belchite
+2014;2623;Comarca del Bajo Martín;Comarca del Bajo Martín
+2014;26230;Comarca del Bajo Martín;Comarca del Bajo Martín
+2014;2624;Comarca de Campo de Daroca;Comarca de Campo de Daroca
+2014;26240;Comarca de Campo de Daroca;Comarca de Campo de Daroca
+2014;2625;Comarca del Jiloca;Comarca del Jiloca
+2014;26250;Comarca del Jiloca;Comarca del Jiloca
+2014;2626;Comarca de Cuencas Mineras;Comarca de Cuencas Mineras
+2014;26260;Comarca de Cuencas Mineras;Comarca de Cuencas Mineras
+2014;2627;Comarca de Andorra- Sierra de Arcos;Comarca de Andorra- Sierra de Arcos
+2014;26270;Comarca de Andorra- Sierra de Arcos;Comarca de Andorra- Sierra de Arcos
+2014;2628;Comarca del Bajo Aragón;Comarca del Bajo Aragón
+2014;26280;Comarca del Bajo Aragón;Comarca del Bajo Aragón
+2014;2629;Comarca de la Comunidad de Teruel;Comarca de la Comunidad de Teruel
+2014;26290;Comarca de la Comunidad de Teruel;Comarca de la Comunidad de Teruel
+2014;2630;Comarca de Maestrazgo;Comarca de Maestrazgo
+2014;26300;Comarca de Maestrazgo;Comarca de Maestrazgo
+2014;2631;Comarca de la Sierra de Albarracín;Comarca de la Sierra de Albarracín
+2014;26310;Comarca de la Sierra de Albarracín;Comarca de la Sierra de Albarracín
+2014;2632;Comarca de Gúdar- Javalambre;Comarca de Gúdar- Javalambre
+2014;26320;Comarca de Gúdar- Javalambre;Comarca de Gúdar- Javalambre
+2014;2633;Comarca del Matarraña/ Matarranya;Comarca del Matarraña/ Matarranya
+2014;26330;Comarca del Matarraña/ Matarranya;Comarca del Matarraña/ Matarranya
+2014;2634;Servicios Administraciones Comarcales;Servicios Administraciones Comarcales
+2014;26340;Servicios Administraciones Comarcales;Servicios Administraciones Comarcales
+2014;30;Diversos Departamentos;Diversos Departamentos
+2014;3000;"Ingresos de ""Diversos Departamentos""";"Ingresos de ""Diversos Departamentos"""
+2014;30000;"Ingresos de ""Diversos Departamentos""";"Ingresos de ""Diversos Departamentos"""
+2014;3001;Fondo Contingencia Ejecución Presupuest.;Fondo Contingencia Ejecución Presupuest.
+2014;30010;Fondo Contingencia Ejecución Presupuest.;Fondo Contingencia Ejecución Presupuest.
+2014;3002;Fondo de Gastos de Personal;Fondo de Gastos de Personal
+2014;30020;Fondo de Gastos de Personal;Fondo de Gastos de Personal
+2014;3003;Deuda Pública;Deuda Pública
+2014;30030;Deuda Pública;Deuda Pública
+2014;3004;Empresas Públicas y participadas;Empresas Públicas y participadas
+2014;30040;Empresas Públicas y participadas;Empresas Públicas y participadas
+2014;3005;No operativa;No operativa
+2014;30050;Gastos Diversos;Gastos Diversos
+2014;3006;Fondo Inclusión Social y Ay. Familiar Ur;Fondo Inclusión Social y Ay. Familiar Ur
+2014;30060;Fondo Inclusión Social y Ay. Familiar Ur;Fondo Inclusión Social y Ay. Familiar Ur
+2014;3008;No operativa;No operativa
+2014;30080;No operativa;No operativa
+2014;3011;No operativa;No operativa
+2014;30110;No operativa;No operativa
+2014;3013;No operativa;No operativa
+2014;30130;No operativa;No operativa
+2014;51;Instituto Aragonés de Empleo;Instituto Aragonés de Empleo
+2014;5100;Ingresos del Inst. Aragonés de Empleo;Ingresos del Inst. Aragonés de Empleo
+2014;51000;Ingresos del Inst. Aragonés de Empleo;Ingresos del Inst. Aragonés de Empleo
+2014;5101;Instituto Aragonés de Empleo;Instituto Aragonés de Empleo
+2014;51010;Instituto Aragonés de Empleo;Instituto Aragonés de Empleo
+2014;51011;INAEM - Servicio Provincial de Huesca;INAEM - Servicio Provincial de Huesca
+2014;51012;INAEM - Servicio Provincial de Teruel;INAEM - Servicio Provincial de Teruel
+2014;51013;INAEM - Servicio Provincial de Zaragoza;INAEM - Servicio Provincial de Zaragoza
+2014;51014;INAEM - Servicio de Formación;INAEM - Servicio de Formación
+2014;51015;INAEM - Servicio de Intermediación;INAEM - Servicio de Intermediación
+2014;51016;INAEM - Servicio de Promoción de Empleo;INAEM - Servicio de Promoción de Empleo
+2014;52;Servicio Aragonés de Salud;Servicio Aragonés de Salud
+2014;5200;Ingresos del Servicio Aragonés de Salud;Ingresos del Servicio Aragonés de Salud
+2014;52000;Ingresos del Servicio Aragonés de Salud;Ingresos del Servicio Aragonés de Salud
+2014;5201;Servicio Aragonés de Salud;Servicio Aragonés de Salud
+2014;52010;Servicio Aragonés de Salud;Servicio Aragonés de Salud
+2014;5205;Ctro. Gestión Integrada Proyectos Corp.;Ctro. Gestión Integrada Proyectos Corp.
+2014;52050;Ctro. Gestión Integrada Proyectos Corp.;Ctro. Gestión Integrada Proyectos Corp.
+2014;5206;Gerencia 061 Aragon;Gerencia 061 Aragon
+2014;52061;Gerencia 061 Aragon;Gerencia 061 Aragon
+2014;52AL;Gerencia Sector Alcañiz;Gerencia Sector Alcañiz
+2014;52AL1;Gerencia Sector Alcañiz;Gerencia Sector Alcañiz
+2014;52AL2;Hospital de  Alcañiz;Hospital de  Alcañiz
+2014;52AL3;Atención Primaria Sector Alcañiz;Atención Primaria Sector Alcañiz
+2014;52BA;Gerencia Sector Barbastro;Gerencia Sector Barbastro
+2014;52BA1;Gerencia Sector Barbastro;Gerencia Sector Barbastro
+2014;52BA2;Hospital Barbastro;Hospital Barbastro
+2014;52BA3;Centro Sociosanitario de Fraga;Centro Sociosanitario de Fraga
+2014;52BA4;Atención Primaria Sector Barbastro;Atención Primaria Sector Barbastro
+2014;52CA;Gerencia Sector Calatayud;Gerencia Sector Calatayud
+2014;52CA1;Gerencia Sector Calatayud;Gerencia Sector Calatayud
+2014;52CA2;Hospital Ernest Lluch Martin;Hospital Ernest Lluch Martin
+2014;52CA3;Atención Primaria Sector Calatayud;Atención Primaria Sector Calatayud
+2014;52HU;Gerencia Sector Huesca;Gerencia Sector Huesca
+2014;52HU1;Gerencia Sector Huesca;Gerencia Sector Huesca
+2014;52HU2;Hospital San Jorge de Huesca;Hospital San Jorge de Huesca
+2014;52HU3;Hospital Sagrado Corazón de Jesús;Hospital Sagrado Corazón de Jesús
+2014;52HU4;C.R.P. Santo Cristo de los Milagros;C.R.P. Santo Cristo de los Milagros
+2014;52HU5;Atención Primaria Sector Huesca;Atención Primaria Sector Huesca
+2014;52TE;Gerencia Sector Teruel;Gerencia Sector Teruel
+2014;52TE1;Gerencia Sector Teruel;Gerencia Sector Teruel
+2014;52TE2;Hospital Obispo Polanco Teruel;Hospital Obispo Polanco Teruel
+2014;52TE3;Hospital San José;Hospital San José
+2014;52TE4;C.R.P. San Juan de Dios;C.R.P. San Juan de Dios
+2014;52TE5;Atención Primaria Sector Teruel;Atención Primaria Sector Teruel
+2014;52Z1;Gerencia Sector Zaragoza I;Gerencia Sector Zaragoza I
+2014;52Z11;Gerencia Sector Zaragoza I;Gerencia Sector Zaragoza I
+2014;52Z12;Hospital Royo Villanova;Hospital Royo Villanova
+2014;52Z13;Hospital Nuestra Señora de Gracia;Hospital Nuestra Señora de Gracia
+2014;52Z14;Atención Primaria Sector Zaragoza I;Atención Primaria Sector Zaragoza I
+2014;52Z2;Gerencia Sector Zaragoza II;Gerencia Sector Zaragoza II
+2014;52Z21;Gerencia Sector Zaragoza II;Gerencia Sector Zaragoza II
+2014;52Z22;Hospital Universitario Miguel Servet;Hospital Universitario Miguel Servet
+2014;52Z23;Atención Primaria Sector Zaragoza II;Atención Primaria Sector Zaragoza II
+2014;52Z3;Gerencia Sector Zaragoza III;Gerencia Sector Zaragoza III
+2014;52Z31;Gerencia Sector Zaragoza III;Gerencia Sector Zaragoza III
+2014;52Z32;Hospital Clínico Universitario Lozano Bl;Hospital Clínico Universitario Lozano Bl
+2014;52Z33;H.Geriático San Jorge de Zaragoza;H.Geriático San Jorge de Zaragoza
+2014;52Z34;C.R.P. Nuestra Señora del Pilar;C.R.P. Nuestra Señora del Pilar
+2014;52Z35;Atención Primaria Sector Zaragoza III;Atención Primaria Sector Zaragoza III
+2014;53;Instituto Aragonés de Servicios Sociales;Instituto Aragonés de Servicios Sociales
+2014;5300;Ingresos Inst. Aragonés Serv. Sociales;Ingresos Inst. Aragonés Serv. Sociales
+2014;53000;Ingresos Inst. Aragonés Serv. Sociales;Ingresos Inst. Aragonés Serv. Sociales
+2014;5301;Instituto Aragonés de Servicios Sociales;Instituto Aragonés de Servicios Sociales
+2014;53010;Instituto Aragonés de Servicios Sociales;Instituto Aragonés de Servicios Sociales
+2014;53AAA;Acción concertada Plazas Mayores Huesca;Acción concertada Plazas Mayores Huesca
+2014;53AAB;Acción concertada Plazas Mayores Teruel;Acción concertada Plazas Mayores Teruel
+2014;53AAC;Acción concertada Plazas Mayores Zaragoz;Acción concertada Plazas Mayores Zaragoz
+2014;53ABA;Residencia de Mayores Ciudad de Huesca;Residencia de Mayores Ciudad de Huesca
+2014;53ABB;"Res.Mayores ""Sagrada Familia""-Huesca";"Res.Mayores ""Sagrada Familia""-Huesca"
+2014;53ABC;"Res.Mayores ""San Blas""-Huesca";"Res.Mayores ""San Blas""-Huesca"
+2014;53ABD;"Res.Mayores ""Turia""-Teruel";"Res.Mayores ""Turia""-Teruel"
+2014;53ABE;Residencia de Utrillas;Residencia de Utrillas
+2014;53ABF;"Residencia de ""Mayores Ciudad de Albarra";"Residencia de ""Mayores Ciudad de Albarra"
+2014;53ABG;"Res. de Mayores ""Javalambre"" Teruel";"Res. de Mayores ""Javalambre"" Teruel"
+2014;53ABH;Res. de Mayores  de Movera;Res. de Mayores  de Movera
+2014;53ABI;Res. de Mayores  de Borja;Res. de Mayores  de Borja
+2014;53ABJ;"Res. Mayores ""Romareda"" Zaragoza";"Res. Mayores ""Romareda"" Zaragoza"
+2014;53ABK;Res. de Mayores de Alagon;Res. de Mayores de Alagon
+2014;53ABL;"Res. de Mayores ""Las Fuentes"" Zaragoza";"Res. de Mayores ""Las Fuentes"" Zaragoza"
+2014;53ABM;Centro Asistencial de Calatayud;Centro Asistencial de Calatayud
+2014;53ABN;"Centro Asistencial ""Hogar Doz"" Tarazona";"Centro Asistencial ""Hogar Doz"" Tarazona"
+2014;53ABO;Res. Mayores Actur de Zaragoza;Res. Mayores Actur de Zaragoza
+2014;53ABP;"Res. Mayores ""Oliver"" Zaragoza";"Res. Mayores ""Oliver"" Zaragoza"
+2014;53ABQ;"Res. Mayores ""Elías Martinez"" Zaragoza";"Res. Mayores ""Elías Martinez"" Zaragoza"
+2014;53ABR;Res. de Mayores de Utebo;Res. de Mayores de Utebo
+2014;53ABS;"Res. de Mayores ""Delicias"" - Zaragoza";"Res. de Mayores ""Delicias"" - Zaragoza"
+2014;53ACA;"Centro Día en Res. ""Ciudad de Huesca""";"Centro Día en Res. ""Ciudad de Huesca"""
+2014;53ACB;"Centro Dia Res. ""Sagr.Familia"" Huesca";"Centro Dia Res. ""Sagr.Familia"" Huesca"
+2014;53ACC;Centro de Dia de Fraga;Centro de Dia de Fraga
+2014;53ACD;"Centro Dia en Res.""Romareda"" Zaragoza";"Centro Dia en Res.""Romareda"" Zaragoza"
+2014;53ACE;"Centro Dia Res ""Las Fuentes"" Zaragoza";"Centro Dia Res ""Las Fuentes"" Zaragoza"
+2014;53ACF;Centro de Dia de Calatayud;Centro de Dia de Calatayud
+2014;53ACG;Hogar 3ª Edad de Ejea de los Caballeros;Hogar 3ª Edad de Ejea de los Caballeros
+2014;53ACH;Centro de Día Barrio San José Zaragoza;Centro de Día Barrio San José Zaragoza
+2014;53ACI;"Centro de Dia ""San Blas"" Zaragoza";"Centro de Dia ""San Blas"" Zaragoza"
+2014;53ACJ;"Centro de Dia ""Delicias"" de Zaragoza";"Centro de Dia ""Delicias"" de Zaragoza"
+2014;53ACK;"Centro de Dia ""Picarral"" de Zaragoza";"Centro de Dia ""Picarral"" de Zaragoza"
+2014;53ACL;Centro de Dia Valdefierro Zaragoza;Centro de Dia Valdefierro Zaragoza
+2014;53ACM;C. Día y Usos Cultur. Casa Aísa, Huesca;C. Día y Usos Cultur. Casa Aísa, Huesca
+2014;53ACN;C. Día y Usos Cultur. Casa Aísa, Huesca;C. Día y Usos Cultur. Casa Aísa, Huesca
+2014;53ACO;"Centro de Día ""San León"" - Teruel";"Centro de Día ""San León"" - Teruel"
+2014;53ADA;Hogar de Barbastro;Hogar de Barbastro
+2014;53ADB;Hogar de Binefar;Hogar de Binefar
+2014;53ADC;Hogar de Huesca;Hogar de Huesca
+2014;53ADD;Hogar de Jaca;Hogar de Jaca
+2014;53ADE;Hogar de  Monzón;Hogar de  Monzón
+2014;53ADF;Hogar de Sabiñánigo;Hogar de Sabiñánigo
+2014;53ADG;"Hogar en Res. Mayores ""Turia"" Teruel";"Hogar en Res. Mayores ""Turia"" Teruel"
+2014;53ADH;Hogar en Res. Mayores Utrillas;Hogar en Res. Mayores Utrillas
+2014;53ADI;Hogar de Alcañiz;Hogar de Alcañiz
+2014;53ADJ;Hogar de Andorra;Hogar de Andorra
+2014;53ADK;Hogar de Calamocha;Hogar de Calamocha
+2014;53ADL;Hogar de Calanda;Hogar de Calanda
+2014;53ADM;Hogar de Ojos Negros;Hogar de Ojos Negros
+2014;53ADN;Hogar Torrecilla de Alcañiz;Hogar Torrecilla de Alcañiz
+2014;53ADO;"Hogar ""Balsas de Ebro Viejo"" Zaragoza";"Hogar ""Balsas de Ebro Viejo"" Zaragoza"
+2014;53ADP;"Hogar ""Boterón"" de Zaragoza";"Hogar ""Boterón"" de Zaragoza"
+2014;53ADQ;Club de Casetas;Club de Casetas
+2014;53ADR;"Club ""Cervantes"" de Gallur";"Club ""Cervantes"" de Gallur"
+2014;53ADS;Hogar de Illueca;Hogar de Illueca
+2014;53ADT;Hogar Las Fuentes-Zaragoza;Hogar Las Fuentes-Zaragoza
+2014;53ADU;"Hogar ""Roger de Flor"" de Zaragoza";"Hogar ""Roger de Flor"" de Zaragoza"
+2014;53ADV;Hogar de la Tercera Edad Moncayo;Hogar de la Tercera Edad Moncayo
+2014;53ADW;Hogar de Mayores Valdefierro - Zaragoza;Hogar de Mayores Valdefierro - Zaragoza
+2014;53AFA;Aulas de Tercera Edad;Aulas de Tercera Edad
+2014;53AHA;Gastos Varios de Mayores de Huesca;Gastos Varios de Mayores de Huesca
+2014;53AHB;Gastos Varios de Mayores de Teruel;Gastos Varios de Mayores de Teruel
+2014;53AHC;Gastos Varios de Mayores de Zaragoza;Gastos Varios de Mayores de Zaragoza
+2014;53AHD;Gastos Varios de Mayores en Gerencia;Gastos Varios de Mayores en Gerencia
+2014;53AIA;Convenios y Subv. de Mayores Huesca;Convenios y Subv. de Mayores Huesca
+2014;53AIB;Convenios y Subv. de Mayores de Teruel;Convenios y Subv. de Mayores de Teruel
+2014;53AIC;Convenios y Subv. de Mayores de Zaragoza;Convenios y Subv. de Mayores de Zaragoza
+2014;53AID;Convenios y Subv. de Mayores de Gerencia;Convenios y Subv. de Mayores de Gerencia
+2014;53AJA;Prestaciones de Mayores de Huesca;Prestaciones de Mayores de Huesca
+2014;53AJB;Prestaciones de Mayores de Teruel;Prestaciones de Mayores de Teruel
+2014;53AJC;Prestaciones de Mayores de Zaragoza;Prestaciones de Mayores de Zaragoza
+2014;53AJD;Ayudas Alimenticias;Ayudas Alimenticias
+2014;53AJE;Prestaciones Extraordinarias;Prestaciones Extraordinarias
+2014;53AJF;Prestaciones Plan Dependencia - Huesca;Prestaciones Plan Dependencia - Huesca
+2014;53AJG;Prestaciones Plan Dependencia - Teruel;Prestaciones Plan Dependencia - Teruel
+2014;53AJH;Prestaciones Plan Dependencia - Zaragoza;Prestaciones Plan Dependencia - Zaragoza
+2014;53BAA;Acción Concertada Discapacitados Huesca;Acción Concertada Discapacitados Huesca
+2014;53BAB;Acción Concertada Discapacitados Teruel;Acción Concertada Discapacitados Teruel
+2014;53BAC;Ac.Concertada Dispacitados Zaragoza;Ac.Concertada Dispacitados Zaragoza
+2014;53BAD;Ac.Concertada Transf.Dip.Prov. de Zarago;Ac.Concertada Transf.Dip.Prov. de Zarago
+2014;53BAE;Acción Concertada Tutelados en Huesca;Acción Concertada Tutelados en Huesca
+2014;53BAF;Acción Concertada Tutelados en Teruel;Acción Concertada Tutelados en Teruel
+2014;53BAG;Acción Concertada Tutelados en Zaragoza;Acción Concertada Tutelados en Zaragoza
+2014;53BAH;Acción Concertada Tutelados en Gerencia;Acción Concertada Tutelados en Gerencia
+2014;53BBA;"Centro Asistencial ""El Pinar""  de Teruel";"Centro Asistencial ""El Pinar""  de Teruel"
+2014;53BBB;Centro Atención Minus.Psíquicos de Zarag;Centro Atención Minus.Psíquicos de Zarag
+2014;53BBC;Centro Dependientes Cesaraugusta Zaragoz;Centro Dependientes Cesaraugusta Zaragoz
+2014;53BEA;Centro Base Huesca;Centro Base Huesca
+2014;53BEB;Centro Base Teruel;Centro Base Teruel
+2014;53BEC;Centro Base I de Zaragoza;Centro Base I de Zaragoza
+2014;53BED;Centro Base II de Zaragoza;Centro Base II de Zaragoza
+2014;53BHA;Gastos Varios Dispacitados Huesca;Gastos Varios Dispacitados Huesca
+2014;53BHB;Gastos Varios Dispacitados Teruel;Gastos Varios Dispacitados Teruel
+2014;53BHC;Gastos Varios Dispacitados Zaragoza;Gastos Varios Dispacitados Zaragoza
+2014;53BHD;Gastos Varios Dispacitados Gerencia;Gastos Varios Dispacitados Gerencia
+2014;53BHE;Gastos Varios Tutelados en Huesca;Gastos Varios Tutelados en Huesca
+2014;53BHF;Gastos Varios Tutelados en Teruel;Gastos Varios Tutelados en Teruel
+2014;53BHG;Gastos Varios Tutelados en Zaragoza;Gastos Varios Tutelados en Zaragoza
+2014;53BHH;Gastos Varios Tutelados en Gerencia;Gastos Varios Tutelados en Gerencia
+2014;53BIA;Convenios y Subv. Discapacitados Huesca;Convenios y Subv. Discapacitados Huesca
+2014;53BIB;Convenios y Subv. Discapacitados Teruel;Convenios y Subv. Discapacitados Teruel
+2014;53BIC;Convenios y Subv. Discapacitados Zaragoz;Convenios y Subv. Discapacitados Zaragoz
+2014;53BID;Convenios y Subv. Discapacitados Gerenci;Convenios y Subv. Discapacitados Gerenci
+2014;53BIE;Convenios y Subv. de Tutelados en Huesca;Convenios y Subv. de Tutelados en Huesca
+2014;53BIF;Convenios y Subv. de Tutelados en Teruel;Convenios y Subv. de Tutelados en Teruel
+2014;53BIG;Convenios y Subv. de Tutelados en Zarago;Convenios y Subv. de Tutelados en Zarago
+2014;53BIH;Convenios y Subv. de Tutelados en Gerenc;Convenios y Subv. de Tutelados en Gerenc
+2014;53BJA;Prestaciones Dispacitados de Huesca;Prestaciones Dispacitados de Huesca
+2014;53BJB;Prestaciones Dispacitados de Teruel;Prestaciones Dispacitados de Teruel
+2014;53BJC;Prestaciones Dispacitados de Zaragoza;Prestaciones Dispacitados de Zaragoza
+2014;53CAA;Acción Concertada Plazas Menores Huesca;Acción Concertada Plazas Menores Huesca
+2014;53CAB;Acción Concertada Plazas Menores Teruel;Acción Concertada Plazas Menores Teruel
+2014;53CAC;Acción Concertada Plazas Menores Zaragoz;Acción Concertada Plazas Menores Zaragoz
+2014;53CAD;Acción Concertada Plazas Menores Gerenci;Acción Concertada Plazas Menores Gerenci
+2014;53CBA;Vivienda Tutelada de Huesca;Vivienda Tutelada de Huesca
+2014;53CBB;Vivienda Tutelada de Teruel;Vivienda Tutelada de Teruel
+2014;53CBC;"COA ""Juan Lanuza I"" de Zaragoza";"COA ""Juan Lanuza I"" de Zaragoza"
+2014;53CBD;"Res. Menores  ""Cesaraugusta"" de Zaragoza";"Res. Menores  ""Cesaraugusta"" de Zaragoza"
+2014;53CBE;"Res. Menores  ""Infanta Isabel"" de Zarago";"Res. Menores  ""Infanta Isabel"" de Zarago"
+2014;53CBF;"C.O.A. ""Juan Lanuza II"" de Zaragoza";"C.O.A. ""Juan Lanuza II"" de Zaragoza"
+2014;53CBG;"Res. de Menores ""Salduba"" de Zaragoza";"Res. de Menores ""Salduba"" de Zaragoza"
+2014;53CBH;Piso Prep. Adop. Medina Albaida Zaragoza;Piso Prep. Adop. Medina Albaida Zaragoza
+2014;53CBI;"C.E.I. ""San Jorge"" de Zaragoza";"C.E.I. ""San Jorge"" de Zaragoza"
+2014;53CBJ;Centro Internamiento Menores  Juslibol;Centro Internamiento Menores  Juslibol
+2014;53CBK;"Res. Menores ""Villacampa"" de Zaragoza";"Res. Menores ""Villacampa"" de Zaragoza"
+2014;53CBL;"Vivienda Hogar  ""L. Loste"" de Huesca";"Vivienda Hogar  ""L. Loste"" de Huesca"
+2014;53CBM;Piso de Emancipación - Teruel;Piso de Emancipación - Teruel
+2014;53CGA;Supervia/Lagasca de Zaragoza;Supervia/Lagasca de Zaragoza
+2014;53CHA;Gastos Varios  de Menores de Huesca;Gastos Varios  de Menores de Huesca
+2014;53CHB;Gastos Varios  de Menores de Teruel;Gastos Varios  de Menores de Teruel
+2014;53CHC;Gastos Varios  de Menores de Zaragoza;Gastos Varios  de Menores de Zaragoza
+2014;53CHD;Gastos Varios  de Menores de Gerencia;Gastos Varios  de Menores de Gerencia
+2014;53CIA;Convenios y Subv. Menores de Huesca;Convenios y Subv. Menores de Huesca
+2014;53CIB;Convenios y Subv. Menores de Teruel;Convenios y Subv. Menores de Teruel
+2014;53CIC;Convenios y Subv. Menores de Zaragoza;Convenios y Subv. Menores de Zaragoza
+2014;53CID;Convenios y Subv. Menores de Gerencia;Convenios y Subv. Menores de Gerencia
+2014;53CJA;Acogimientos  Remunerados de Huesca;Acogimientos  Remunerados de Huesca
+2014;53CJB;Acogimientos  Remunerados de Teruel;Acogimientos  Remunerados de Teruel
+2014;53CJC;Acogimientos  Remunerados de Zaragoza;Acogimientos  Remunerados de Zaragoza
+2014;53CJD;Acogimientos  Remunerados de Gerencia;Acogimientos  Remunerados de Gerencia
+2014;53CJE;Prestaciones  Menores de Huesca;Prestaciones  Menores de Huesca
+2014;53CJF;Prestaciones  de Menores de Teruel;Prestaciones  de Menores de Teruel
+2014;53CJG;Prestaciones  Menores de Zaragoza;Prestaciones  Menores de Zaragoza
+2014;53CJH;Ayudas  Urgentes Menores D.88/98  Huesca;Ayudas  Urgentes Menores D.88/98  Huesca
+2014;53CJI;Ayudas  Urgentes Menores D.88/98  Teruel;Ayudas  Urgentes Menores D.88/98  Teruel
+2014;53CJJ;Ayudas  Urgentes Menores D.88/98  Zarago;Ayudas  Urgentes Menores D.88/98  Zarago
+2014;53DAA;Acción Concertada Plz. Inserción Huesca;Acción Concertada Plz. Inserción Huesca
+2014;53DHA;Gastos Varios inserción en Gerencia;Gastos Varios inserción en Gerencia
+2014;53DIA;Convenios y  Subv. de Inserción Huesca;Convenios y  Subv. de Inserción Huesca
+2014;53DIB;Convenios y  Subv. Inserción Teruel;Convenios y  Subv. Inserción Teruel
+2014;53DIC;Convenios y  Subv. de Inserción Zaragoza;Convenios y  Subv. de Inserción Zaragoza
+2014;53DID;Convenios y  Subv. de Inserción Gerencia;Convenios y  Subv. de Inserción Gerencia
+2014;53DIE;Conv.  y  Subv. Programas varios Huesca;Conv.  y  Subv. Programas varios Huesca
+2014;53DIF;Con. y Subv. Programas Varios en Teruel;Con. y Subv. Programas Varios en Teruel
+2014;53DIG;Conv.  y  Subv. Programas varios Zaragoz;Conv.  y  Subv. Programas varios Zaragoz
+2014;53DIH;Conv.  y  Subv. Programas varios Gerenci;Conv.  y  Subv. Programas varios Gerenci
+2014;53DJA;Ayudas de Urgencia en  Zaragoza;Ayudas de Urgencia en  Zaragoza
+2014;53DJB;Prestaciones de Insercción en  Huesca;Prestaciones de Insercción en  Huesca
+2014;53DJC;Prestaciones de Insercción en Teruel;Prestaciones de Insercción en Teruel
+2014;53DJD;Prestaciones de Insercción en Zaragoza;Prestaciones de Insercción en Zaragoza
+2014;53EIA;Serv. Sociales Entidades Locales Huesca;Serv. Sociales Entidades Locales Huesca
+2014;53EIB;Serv. Sociales Entidades Locales Teruel;Serv. Sociales Entidades Locales Teruel
+2014;53EIC;Serv. Sociales Entidades Locales Zaragoz;Serv. Sociales Entidades Locales Zaragoz
+2014;53EID;Serv. Sociales Entidades Locales Gerenci;Serv. Sociales Entidades Locales Gerenci
+2014;53EIE;Servicios Sociales Base  Area deZaragoza;Servicios Sociales Base  Area deZaragoza
+2014;53FBA;"Residencia  ""Padre Polanco"" Orihuela Tre";"Residencia  ""Padre Polanco"" Orihuela Tre"
+2014;53GGA;Dirección  Provincial de  Huesca;Dirección  Provincial de  Huesca
+2014;53GGB;Dirección Provincial  de Teruel;Dirección Provincial  de Teruel
+2014;53GGC;Dirección Provincial  de Zaragoza;Dirección Provincial  de Zaragoza
+2014;53GGD;Gerencia de IASS;Gerencia de IASS
+2014;54;Instituto Aragonés de la Mujer;Instituto Aragonés de la Mujer
+2014;5400;Ingresos del Inst. Aragonés de la Mujer;Ingresos del Inst. Aragonés de la Mujer
+2014;54000;Ingresos del Inst. Aragonés de la Mujer;Ingresos del Inst. Aragonés de la Mujer
+2014;5401;Instituto Aragonés de la Mujer;Instituto Aragonés de la Mujer
+2014;54010;Instituto Aragonés de la Mujer;Instituto Aragonés de la Mujer
+2014;55;Instituto Aragonés de la Juventud;Instituto Aragonés de la Juventud
+2014;5500;Ingresos del Inst. Arag. de la Juventud;Ingresos del Inst. Arag. de la Juventud
+2014;55000;Ingresos del Inst. Arag. de la Juventud;Ingresos del Inst. Arag. de la Juventud
+2014;5501;Instituto Aragonés de la Juventud;Instituto Aragonés de la Juventud
+2014;55010;Instituto Aragonés de la Juventud;Instituto Aragonés de la Juventud
+2014;56;Inst.Arag.Enseñanzas Artíst.Superiores;Inst.Arag.Enseñanzas Artíst.Superiores
+2014;5600;Ingresos Inst. Ar. Enseñanzas Artíst.Sup;Ingresos Inst. Ar. Enseñanzas Artíst.Sup
+2014;56000;Ingresos Inst. Ar. Enseñanzas Artíst.Sup;Ingresos Inst. Ar. Enseñanzas Artíst.Sup
+2014;5601;Inst.Arag.Enseñanzas Artíst.Superiores;Inst.Arag.Enseñanzas Artíst.Superiores
+2014;56010;Inst.Arag.Enseñanzas Artíst.Superiores;Inst.Arag.Enseñanzas Artíst.Superiores
+2014;71;E.P. Aragonesa de Servicios Telemáticos;E.P. Aragonesa de Servicios Telemáticos
+2014;7100;Ingresos Aragonesa Servicios Telemáticos;Ingresos Aragonesa Servicios Telemáticos
+2014;71000;Ingresos Aragonesa Servicios Telemáticos;Ingresos Aragonesa Servicios Telemáticos
+2014;7101;E.P. Aragonesa de Servicios Telemáticos;E.P. Aragonesa de Servicios Telemáticos
+2014;71010;E.P. Aragonesa de Servicios Telemáticos;E.P. Aragonesa de Servicios Telemáticos
+2014;7101A;AST - TELECOMUNICACIONES;AST - TELECOMUNICACIONES
+2014;72;Instituto Aragonés del Agua;Instituto Aragonés del Agua
+2014;7200;Ingresos del Instituto Aragonés del Agua;Ingresos del Instituto Aragonés del Agua
+2014;72000;Ingresos del Instituto Aragonés del Agua;Ingresos del Instituto Aragonés del Agua
+2014;7201;Instituto Aragonés del Agua;Instituto Aragonés del Agua
+2014;72010;Instituto Aragonés del Agua;Instituto Aragonés del Agua
+2014;73;Instituto Aragonés Ciencias de la Salud;Instituto Aragonés Ciencias de la Salud
+2014;7300;Ingresos Inst. Aragonés Ciencias Salud;Ingresos Inst. Aragonés Ciencias Salud
+2014;73000;Ingresos Inst. Aragonés Ciencias Salud;Ingresos Inst. Aragonés Ciencias Salud
+2014;7301;Instituto Aragonés Ciencias de la Salud;Instituto Aragonés Ciencias de la Salud
+2014;73010;Instituto Aragonés Ciencias de la Salud;Instituto Aragonés Ciencias de la Salud
+2014;74;Centro Investigación y Tecnol. Agroalim.;Centro Investigación y Tecnol. Agroalim.
+2014;7400;Ingresos Centro Invest. y Tecn. Agroalim;Ingresos Centro Invest. y Tecn. Agroalim
+2014;74000;Ingresos Centro Invest. y Tecn. Agroalim;Ingresos Centro Invest. y Tecn. Agroalim
+2014;7401;Centro Investigación y Tecnol. Agroalim.;Centro Investigación y Tecnol. Agroalim.
+2014;74010;Centro Investigación y Tecnol. Agroalim.;Centro Investigación y Tecnol. Agroalim.
+2014;75;Instituto Aragonés de Gestión Ambiental;Instituto Aragonés de Gestión Ambiental
+2014;7500;Ingresos Inst. Arag. Gestión Ambiental;Ingresos Inst. Arag. Gestión Ambiental
+2014;75000;Ingresos Inst. Arag. Gestión Ambiental;Ingresos Inst. Arag. Gestión Ambiental
+2014;7501;Instituto Aragonés de Gestión Ambiental;Instituto Aragonés de Gestión Ambiental
+2014;75010;Instituto Aragonés de Gestión Ambiental;Instituto Aragonés de Gestión Ambiental
+2014;76;E.P. Aragonesa Banco de Sangre y Tejidos;E.P. Aragonesa Banco de Sangre y Tejidos
+2014;7600;Ingresos E.P. Banco de Sangre y Tejidos;Ingresos E.P. Banco de Sangre y Tejidos
+2014;76000;Ingresos E.P. Banco de Sangre y Tejidos;Ingresos E.P. Banco de Sangre y Tejidos
+2014;7601;E.P. Aragonesa Banco de Sangre y Tejidos;E.P. Aragonesa Banco de Sangre y Tejidos
+2014;76010;E.P. Aragonesa Banco de Sangre y Tejidos;E.P. Aragonesa Banco de Sangre y Tejidos
+2014;77;Agencia de Calidad y Prospectiva Univers;Agencia de Calidad y Prospectiva Univers
+2014;7700;Ingresos Ag. Calidad y Prosp. Univ.;Ingresos Ag. Calidad y Prosp. Univ.
+2014;77000;Ingresos Ag. Calidad y Prosp. Univ.;Ingresos Ag. Calidad y Prosp. Univ.
+2014;7701;Agencia de Calidad y Prospectiva Univers;Agencia de Calidad y Prospectiva Univers
+2014;77010;Agencia de Calidad y Prospectiva Univers;Agencia de Calidad y Prospectiva Univers
+2014;90;Consorcio Aragonés Sanitario Alta Resol.;Consorcio Aragonés Sanitario Alta Resol.
+2014;9000;Ingr. Consorcio Arag. Sanitario Alta Res;Ingr. Consorcio Arag. Sanitario Alta Res
+2014;90000;Ingr. Consorcio Arag. Sanitario Alta Res;Ingr. Consorcio Arag. Sanitario Alta Res
+2014;9001;Consorcio Aragonés Sanitario Alta Resol.;Consorcio Aragonés Sanitario Alta Resol.
+2014;90010;Consorcio Aragonés Sanitario Alta Resol.;Consorcio Aragonés Sanitario Alta Resol.
+2014;90CS;Centros Alta Resolución;Centros Alta Resolución
+2014;90CS2;Centro A.R. Pirineos (JACA);Centro A.R. Pirineos (JACA)
+2014;90CS3;Centro A.R. Cinco Villas (EJEA);Centro A.R. Cinco Villas (EJEA)
+2014;90CS4;Centro A.R. Bajo Cinca (FRAGA);Centro A.R. Bajo Cinca (FRAGA)
+2014;90CS5;Centro A.R. Moncayo (TARAZONA);Centro A.R. Moncayo (TARAZONA)

@@ -1,0 +1,19 @@
+{% macro render_tab(title, category, csv_type, id, additional_css, csv_link, xls_link) %}
+<section role="region" class="tab-content {{additional_css}}" id='tab-{{category}}'>
+  <h1 class="tab-title">{{ title }}</h1>
+  <div id='{{category}}ChartContainer' class="chart-container"></div>
+  <div class="data-controllers-placeholder"></div>
+  <div class="table-grid" id='{{category}}Grid'></div>
+  <div class="totals-placeholder"></div>
+  <p class="downloads">
+    Descarga la tabla de <b>{{title}}</b> en {{name}} 
+    <a class="icon-file-excel" href="{{ csv_link if csv_link else url('aragon.views.'+category+'_'+csv_type+'_breakdown', id, 'csv') }}">
+    <span class="file-info">CSV</span>
+    </a>
+    o
+    <a class="icon-file-excel" href="{{ xls_link if xls_link else url('aragon.views.'+category+'_'+csv_type+'_breakdown', id, 'xls') }}">
+    Excel
+    </a>
+  </p>
+</section>
+{% endmacro %}

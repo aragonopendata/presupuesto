@@ -1,0 +1,146 @@
+/* @group Forms */
+/* @group Control widths */
+/* Elastic */
+input.xxsmall, textarea.xxsmall {width: 2em; text-align: center;}
+input.xsmall, textarea.xsmall {width: 4em;}
+input.small, textarea.small {width: 8em;}
+
+input.medium, textarea.medium,
+input.large, textarea.large,
+input.xlarge, textarea.xlarge,
+select.xxsmall,
+select.xsmall,
+select.small,
+select.medium,
+select.large,
+select.xlarge
+{width: auto;}
+
+/* Fluid */
+input.xxsmall-f, textarea.xxsmall-f, select.xxsmall-f,
+input.xsmall-f, textarea.xsmall-f, select.xsmall-f,
+input.small-f, textarea.small-f, select.small-f,
+input.medium-f, textarea.medium-f, select.medium-f,
+input.large-f, textarea.large-f, select.large-f,
+input.xlarge-f, textarea.xlarge-f, select.xlarge-f
+{width: 100%;}
+/* @end */
+
+
+
+/* @group label.clean */
+/* Label con checkbox o radiobutton dentro */
+label.radiocheck {display: block; margin: 0 0 1em;}
+label.radiocheck input {background: none; border: none; margin: 0 .25em 0 0; padding: 0; vertical-align: middle;}
+
+@media screen and (min-width: 480px) {
+	label.radiocheck {display: inline-block; .ie7-inline-block; margin: 0 1em 0 0;}
+	label.radiocheck input {width: auto;}
+}
+/* @end */
+
+/* Asterisco para indicar campo obligatorio*/
+.asterisk {color: #c00; font-weight: 700;}
+
+/* Pista extra en el label (http://webdesign.tutsplus.com/tutorials/site-elements/bring-your-forms-up-to-date-with-css3-and-html5-validation/) */
+form .hint {
+	background: @warningBackground;
+	color: lighten(@black, 15%);
+	font-size: .75em;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: .5em 0 0;
+	padding: .5em;
+	position: relative;
+	text-align: left;/* Necesario porque el label está alineado a derecha */
+	text-shadow: 1px 1px 0 @white;
+	.rounded(.25em);
+}
+
+/* Use pseudolabel when you cannot use a proper label
+e.g.:
+<span class="pseudolabel">Elige una opción:</span>
+<input type="radio" name="opciones" id="opcion1"> <label for="opcion1">Carne</label>
+<input type="radio" name="opciones" id="opcion2"> <label for="opcion2">Pescado</label>
+*/
+.pseudolabel {}
+
+.fields {margin: 0;}
+.fields li {list-style-type: none; list-style: none; margin: 0 0 1.5em;}
+
+/* Zebra tables: marcar filas pares */
+tr.odd td {background: lighten(@black, 92%); text-shadow: 1px 1px 0 @white;}
+
+/* @group Form class: labels en una línea y campos debajo */
+.form-stacked label {display: block; text-align: left; width: auto;}
+/* @end */
+
+
+
+/* @group Form class: Clean */
+.form-clean {border: 1px solid lighten(@black, 90%); .rounded(.25em);}
+.form-clean fieldset {border: 1px solid lighten(@black, 90%); .rounded(.25em);}
+
+.form-clean legend {
+	background: lighten(@black, 90%);
+	color: lighten(@black, 40%);
+	font-size: 1.25em;
+	font-weight: 700;
+	line-height: 1.125;
+	margin: 0;
+	padding: .35em .5em;
+	text-shadow: 1px 1px 0 @white;
+	width: 80%;
+	.rounded(.25em);
+}
+/* @end */
+
+
+
+/* @group Campo de form marcado como erróneo */
+/* Esta clase se aplica al elemento que recoge el label y el input o textarea. Usualmente un <li>.*/
+.error-field {}
+.error-field label, .error-field .pseudolabel {color: @errorText;}
+
+.error-field input,
+.error-field textarea,
+.error-field select,
+input:invalid,
+textarea:invalid
+{border-color: @errorBorder; color: @errorText;}
+
+.error-field input:hover,
+.error-field textarea:hover {}
+
+.error-field input:focus,
+.error-field textarea:focus {}
+/* @end */
+
+
+
+
+
+@media screen and (min-width: 30em) {
+	/* Elastic */
+	input.xxsmall, textarea.xxsmall, select.xxsmall {width: 2em;}
+	input.xsmall, textarea.xsmall, select.xsmall {width: 4em;}
+	input.small, textarea.small, select.small {width: 8em;}
+	input.medium, textarea.medium, select.medium {width: 16em;}
+	input.large, textarea.large, select.large {width: 24em;}
+	input.xlarge, textarea.xlarge, select.xlarge {width: 32em;}
+	
+	/* Fluid */
+	input.xxsmall-f, textarea.xxsmall-f, select.xxsmall-f {width: 10%;}
+	input.xsmall-f, textarea.xsmall-f, select.xsmall-f {width: 15%;}
+	input.small-f, textarea.small-f, select.small-f {width: 25%;}
+	input.medium-f, textarea.medium-f, select.medium-f {width: 50%;}
+	input.large-f, textarea.large-f, select.large-f {width: 75%;}
+	input.xlarge-f, textarea.xlarge-f, select.xlarge-f {width: 100%;}
+}
+
+@media screen and (min-width: 48em) {
+	label, .pseudolabel {text-align: right;}
+	form .hint {margin: 0;}
+	form .hint:before {color: @warningBackground; content: "\25C0"; left: -6px; position: absolute; top: 7px;}
+}
+/* @end */

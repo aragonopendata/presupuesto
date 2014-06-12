@@ -1,0 +1,124 @@
+.home-intro {
+	background: @white;
+	margin: 0;
+	padding: .75em;
+	.rounded(.5em);
+
+	.big-intro {
+		margin: 0 0 1.5em;
+		padding: 1.5em;
+		.rounded(.75em);
+
+		h1 {
+			font-size: 2em;
+			font-weight: 800;
+			margin: 0 0 .25em;
+		}
+
+		.intro-text {
+			font-size: 1.25em;
+			font-weight: 300;
+			margin: 0 0 .5em;
+		}
+	}
+
+
+	.options {
+		&:before,
+		&:after {
+			display: table;
+			content: "";
+			line-height: 0;
+		}
+
+		&:after {
+			clear: both;
+		}
+
+		> div {
+			float: left;
+			margin: 0 2% .25em 0;
+			padding: 10em 2% 1px;
+			width: 28%;
+			font-size: 1.143em;
+			text-align: center;
+			.rounded( .5em ); 
+			.transition( .3s );
+			box-shadow:
+			0 0 0 1px @black95,
+			0 0 0 1px @white inset,
+			0 0 4px 8px fadeout(@black, 75%) inset;
+
+			ul {
+				.no-bullet;
+			}
+
+			&:hover {
+				background-color: @black;
+				color: @white; 
+				cursor: pointer;
+				margin-top: -.25em;
+				margin-bottom: 0;
+				
+				@shadow:
+				0 0 0 .25em @black80,
+				0 0 0 .5em @white90a inset;
+				.box-shadow( @shadow );
+
+				a {
+					color: @white;
+				}
+
+				.button {
+					padding: .75em 1.5em;
+				}
+			}
+		}
+
+		.option-tax {
+			margin: 0;
+		}
+
+		.desc{ 
+			margin: 0 0 1em;
+			line-height: 1.357em;
+		}
+
+		.button {
+			padding: .5em 1em;
+		}
+	}
+
+	.option-global {
+		background: url(/static/assets/option-global.png) no-repeat center -35px;
+
+		.icon {
+			color: @accented-1;
+		}
+
+		&:hover {
+			background-image: url(/static/assets/option-global--hover.png);
+		}
+	}
+
+	.option-policies {
+		background: url(/static/assets/option-policies.png) no-repeat 20px -20px;
+
+		.icon {
+			color: @accented-2;
+		}
+
+		&:hover {
+			background-image: url(/static/assets/option-policies--hover.png);
+		}
+	}
+
+	.option-tax {
+		background: url(/static/assets/option-tax.png) no-repeat center 0;
+
+		.icon {
+			color: @complementary;
+		}
+	}
+
+}

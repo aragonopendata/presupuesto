@@ -1,0 +1,223 @@
+// Menú RWD
+// Based on: http://webdesigntutsplus.s3.amazonaws.com/tuts/378_tessa/tessa-lt-dropdowns-21c7868/index.html
+// Source: Multi-Toggle V3 (http://bradfrost.github.io/this-is-responsive/patterns.html#navigation)
+.main-menu-toggle {
+	.border-radius-corners(.25em, 0, 0, .25em);
+	display: none;
+	background: @black;
+	padding: .75em 1.5em;
+	color: @white;
+
+	&:before {
+		content: "⇣";
+		margin-right: .5em;
+	}
+
+	//&:hover,
+	&.active {
+		background-color: @color-base;
+		color: @white;
+	}
+
+	// &.active {
+	// 	&:hover {
+	// 		background: @black;
+	// 		&:before {
+	// 			content: "⇡";
+	// 		}
+	// 	}
+	// }
+}
+
+// Main Menu
+#main-menu {
+	background: @color-base;
+	line-height: 1.25;
+	margin: 0;
+	text-align: left;
+}
+
+	.nav-rwd {
+		.no-bullet;
+		font-size: 1.25em;
+		*zoom: 1;
+		 
+		&:before,
+		&:after {
+			content: " "; 
+			display: table; 
+		}
+		
+		&:after {
+			clear: both;
+		}
+		
+		ul {
+			.no-bullet;
+			width: 12em;
+		}
+
+			> li {
+				border-left: 1px solid darken(@color-base, 15%);
+				float: left;
+
+				&:last-child {
+					border-right: 1px solid darken(@color-base, 15%);
+				}
+
+				> .parent {
+					position: relative;
+
+					&:after {
+						content: "⇣";
+						position: absolute;
+						right: 1em;
+						top: 1em;
+					}
+				}
+
+				> a {
+					background-color: @color-base;
+					box-shadow: 0 .125em .25em fadeout(@black, 75%) inset;
+					color: white;
+					display: block;
+					padding: .75em 2.5em .75em .75em;
+					text-shadow: 1px 1px 0 fadeout(@black, 75%);
+
+					&:hover{ 
+						background-color: lighten(@color-base, 12%); 
+					}
+				}
+
+				&.hover > ul {
+					left: 0;
+				}
+			}
+
+			li {
+				position: relative;
+
+				ul {
+					position: absolute;
+					left: -9999px;
+				}
+
+
+				// Level 2
+				li {
+					&.hover ul {
+						left: 100%;
+						top: 0;
+					}
+
+					a {
+						background: darken(@accented-1, 5%);
+						border-top: 1px solid darken(@accented-1, 20%);
+						box-shadow: 0 .125em .5em fadeout(@black, 75%) inset;
+						display: block;
+						font-size: 1em;
+						font-weight: 700;
+						position: relative;
+						text-shadow: 1px 1px 0 fadeout(@black, 50%);
+						z-index:100;
+
+						&:hover {
+							background: lighten(@accented-1, 5%);
+						}
+					}
+
+					// Level 3
+					// li {
+					// 	a {
+					// 		background:#249578;
+					// 		z-index:200;
+					// 		border-top: 1px solid #1d7a62;
+					// 	}
+					// }
+				}
+			}
+				a {
+					color: @white;
+					padding: .75em;
+				}
+	}
+
+
+
+@media screen and (max-width: 768px) {
+	.main-menu-toggle.active {
+		display: block;
+	}
+
+	.nav-rwd {
+		padding-bottom: 1em;
+		padding-top: 1em;
+
+		ul {
+			border-top: 1px solid darken(@color-base, 15%);
+			display: block;
+			width: 100%;
+		}
+
+		> li.hover > ul ,
+		li li.hover ul {
+			position: static;
+		}
+
+		> li {
+			border-top: 1px solid darken(@color-base, 15%);
+			border-left: 1px solid darken(@color-base, 15%);
+			border-right: 1px solid darken(@color-base, 15%);
+			float: none;
+
+			&:last-child {
+				border-bottom: 1px solid darken(@color-base, 15%);
+				border-top: none;
+			}
+
+			> .parent {
+				&:after {
+					content: "";
+				}
+			}
+		}
+
+		li {
+			position: relative;
+
+			.more {
+				background: fadeout(@black, 85%);
+				border-left: 1px solid fadeout(@black, 50%);
+				bottom: 0;
+				color: @white;
+				cursor: pointer;
+				height: 2.95em;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 3em;
+				z-index: 200;
+
+				&:after {
+					content: "⇣";
+					left: 50%;
+					margin-left: -.5em;
+					position: absolute;
+					text-align: center;
+					top: 1em;
+					width: 1em;
+				}
+			}
+
+			// Se aplica al desplegar el menú
+			&.hover {
+				.more {
+					&:after {
+						content: "⇡";
+					}
+				}
+			}
+		}
+
+	}
+}

@@ -1,0 +1,16 @@
+{% macro render_entity_select(id, entities, current_entity) %}
+<div class="comparator">
+  <p class="comparator__cta icon-comparison">¿Quieres comparar {{ 'esta comarca con otra' if current_entity.level == 'comarca' else 'este municipio con otro' }}?</p>
+  <form id="{{ id }}" class="comparator__form">
+    <select data-placeholder="true">
+      <option value="" data-placeholder="true">Selecciona {{ 'una comarca' if current_entity.level == 'comarca' else 'un municipio' }}</option>
+      {% for entity in entities %}
+        {% if current_entity.name != entity.name %}
+          <option value="{{ entity.slug }}">{{ entity.name }}</dt>
+        {% endif %}
+      {% endfor %}
+    </select>
+    <button class="button button-3d color-base tupper icon-comparison" type="submit">Comparar</button>
+  </form>
+</div>
+{% endmacro %}

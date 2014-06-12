@@ -1,0 +1,185 @@
+.button, .button:visited {
+	.box-shadow(none);
+	border: 1px solid rgba(0, 0, 0, .35);
+	border: none;
+	color: @white;
+	cursor: pointer;
+	display: block;
+	font-weight: 700;
+	line-height: 1;
+	margin: .25em auto;
+	overflow: visible;
+	padding: .75em 1em;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	// white-space: nowrap;
+	width: 100%;
+	.border-box;
+	.rounded(.25em);
+	.transition(.25s, ease-out);
+}
+
+.button.button-3d,
+.button.button-3d:visited {
+	// Características de luces/sombras
+	@shadow-btn:
+	0 1px 0 0 rgba(255, 255, 255, .5) inset,
+	0 0 .5em 0 rgba(0, 0, 0, .25) inset,
+	0 .07em .125em rgba(0, 0, 0, .35);
+	.box-shadow(@shadow-btn);
+	border: 1px solid rgba(0, 0, 0, .35);
+	border-bottom: 1px solid rgba(0, 0, 0, .70)!important;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .35);
+}
+
+// Este tipo de botón necesita menos padding
+input[type="reset"].button,
+input[type="button"].button,
+input[type="submit"].button {
+	padding: .325em 1em;
+}
+
+.button,
+.button:hover,
+.button:visited {
+	color: @white;
+}
+
+.button {
+	&:hover {
+		.box-shadow(none);
+		border: none;
+		color: @white;
+	}
+
+	&:active {
+		@shadow-btn-active:
+		0 1px 1px 0 rgba(255, 255, 255, .75) inset,
+		0 0 .5em 0 rgba(0, 0, 0, .25) inset,
+		0 .0625em .125em rgba(0, 0, 0, .35);
+		.box-shadow(@shadow-btn-active);
+		top: 1px;
+		text-shadow: 0 -1px 1px rgba(0, 0, 0, .5);
+	}
+}
+
+.button-3d:hover {
+	@shadow-btn-hover:
+	0 1px 0 0 rgba(255, 255, 255, .25) inset,
+	0 -.05em .25em 0 rgba(0, 0, 0, .35) inset,
+	0 -.07em .125em rgba(0, 0, 0, .35);
+	.box-shadow(@shadow-btn-hover);
+	border: 1px solid rgba(0, 0, 0, .5);
+	border-top-color: 1px solid rgba(0, 0, 0, .25);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+}
+
+
+
+// Button: colors
+// Black
+.button.black,
+.button.black:visited {
+	background-color: lighten(@black, 25%);
+}
+
+.button.black:hover {
+	background-color: lighten(@black, 30%);
+	color: lighten(@black, 60%);
+}
+
+// Grey
+.button.grey,
+.button.grey:visited {
+	background-color: lighten(@black, 95%);
+	color: lighten(@black, 20%);
+	text-shadow: 0 -1px 0 rgba(255, 255, 255, .35);
+}
+
+.button.grey:hover {
+	background-color: lighten(@black, 90%);
+	color: lighten(@black, 30%);
+	text-shadow: 0 -1px 0 rgba(255, 255, 255, .5);
+}
+
+// Red
+.button.red,
+.button.red:visited {
+	background-color: @red;
+}
+
+.button.red:hover {
+	background-color: desaturate(darken(@red, 8%), 5%);
+	color: lighten(@red, 40%);
+}
+
+.button.color-base,
+.button.color-base:visited {
+	background-color: @color-base;
+}
+
+.button.color-base:hover {
+	background-color: desaturate(darken(@color-base, 4%), 5%);
+	color: lighten(@color-base, 40%);
+}
+
+.button.accented-2,
+.button.accented-2:visited {
+	background-color: darken(@accented-2, 10%);
+}
+
+.button.accented-2:hover {
+	background-color: darken(@accented-2, 14%);
+	color: lighten(@accented-2, 30%);
+}
+
+.button.complementary,
+.button.complementary:visited {
+	background-color: @complementary;
+}
+
+.button.complementary:hover {
+	background-color: desaturate(darken(@complementary, 4%), 5%);
+	color: lighten(@complementary, 40%);
+}
+
+
+
+// Button: sizes
+.button.small {font-size: .75em; font-weight: 700; text-transform: uppercase;}
+.button.large {font-size: 1.25em;}
+.button.xlarge {font-size: 1.5em;}
+
+
+
+// Listado de botones en fila
+.button-list li {
+	background: none;
+	display: inline-block;
+	.ie7-inline-block;
+	margin: 0 .25em 0 0;
+	padding: 0;
+}
+
+
+
+// Media Queries
+@media screen and (min-width: 480px) {
+	.button,
+	.button:visited {
+		display: inline-block;
+		.ie7-inline-block;
+		margin: 0 .25em 0 0;
+		text-align: left;
+		width: auto;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.button.small {
+		font-size: .75em;
+		margin: 0 .25em .25em 0;
+		text-transform: uppercase;
+	}
+}

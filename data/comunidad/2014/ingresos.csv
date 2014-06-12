@@ -1,0 +1,242 @@
+EJERCICIO;CENTRO GESTOR;ECONOMICA;FINANCIACION;DESCRIPCION;IMPORTE
+2014;12500;100000;91003;Tarifa Autonómica del I.R.P.F.;1.067.039.000,00
+2014;12500;110000;91003;Sobre adquisiciones por herencia o legado;159.600.000,00
+2014;12500;110003;91003;Donaciones;12.285.000,00
+2014;12500;111000;91003;Sobre el patrimonio neto de las personas físicas;27.000.000,00
+2014;12500;112000;91003;Sobre Grandes superficies;4.935.000,00
+2014;12500;113000;91003;Sobre emisiones contaminantes;6.090.000,00
+2014;12500;200000;91003;Sobre Transmisiones Patrimoniales Onerosas;108.570.000,00
+2014;12500;200001;91003;Sobre Operaciones Societarias;12.285.000,00
+2014;12500;200002;91003;Sobre Transmisiones de vehículos;2.415.000,00
+2014;12500;201000;91003;Efectos timbrados y otros;45.675.000,00
+2014;12500;201001;91003;Exceso letras de cambio;52.500,00
+2014;12500;201002;91003;Reintegros a metálico;3.675.000,00
+2014;12500;210001;91003;I.V.A. Sobre Operaciones Internas;882.000.000,00
+2014;12500;220000;91003;Sobre el alcohol y bebidas derivadas;15.000.000,00
+2014;12500;220001;91003;Sobre Cerveza;4.846.000,00
+2014;12500;220003;91003;Sobre labores de tabaco;142.500.000,00
+2014;12500;220005;91003;Sobre determinados medios de transporte;11.000.000,00
+2014;12500;220006;91003;Sobre productos intermedios;325.000,00
+2014;12500;220007;91003;Sobre energía (electricidad);71.000.000,00
+2014;12500;220008;91003;Sobre hidrocarburos;265.000.000,00
+2014;12500;300050;91003;Venta de Bienes de Cortes de Aragón;36.000,00
+2014;12500;301006;91003;Venta de  Public de Educ., Univ., Cult. y Deporte;15.000,00
+2014;12500;301050;91003;Venta de Publicac. de Cortes de Aragón;10.000,00
+2014;12500;302000;91003;Venta de cartones de bingo;280.000,00
+2014;12500;310050;91003;Entradas Cortes de Aragón;255.000,00
+2014;12500;319000;91003;Prestación Serv. de Presidencia y Justicia;130.680,00
+2014;12500;319006;91003;Prestación Serv. de Educ., Univ., Cult. y Deporte;1.935.000,00
+2014;12500;319103;91003;Prestación de servicios en guarderías;900.000,00
+2014;12500;319109;91003;Prestación de servicios en cartografía;1.000,00
+2014;12500;319111;91003;Cuotas alumnos Inst. Formación Agroambiental;200.000,00
+2014;12500;319116;91003;Prestación de Servicios en Residencias;500.000,00
+2014;12500;319118;91003;Prestación Servicios RACI;71.050,00
+2014;12500;319321;91003;Transporte Sanitario por Helicóptero;100.000,00
+2014;12500;329001;91003;Tasa 01- Dirección e inspección de obras;1.016.000,00
+2014;12500;329003;91003;Tasa 03- Serv.admvos, redacc. informes,activ. fac.;61.400,00
+2014;12500;329004;91003;Tasa 04- Por Autorizacones Espectáculos Públicos;20.000,00
+2014;12500;329005;91003;Tasa 05-S. Mat. orde. transp. terr carretera;1.400.000,00
+2014;12500;329007;91003;Tasa 07-Serv. Exped. cédula habitabilidad;4.000,00
+2014;12500;329010;91003;Tasa 10-S. facultativos agronómicos;4.950,00
+2014;12500;329011;91003;Tasa 11-Servicios  facultativos veterinarios;600.000,00
+2014;12500;329012;91003;Tasa 12-Ins. y ctroles sanitarios  anim y sus prod;35.000,00
+2014;12500;329013;91003;Tasa 13-Aut., Inspec., materia centros sanitarios;120.000,00
+2014;12500;329014;91003;Tasa 14-Ord. activ. indust. energ. metrol. mineras;2.571.620,99
+2014;12500;329015;91003;Tasa 15-Serv. exped. titulos académicos y profesio;657.000,00
+2014;12500;329017;91003;Tasa 17-S. facul. montes, forestales y v. pecuaria;420.000,00
+2014;12500;329019;91003;Tasa 19-S. Adtvod y Técnicos de juego;625.000,00
+2014;12500;329020;91003;Tasa 20-Aut, Insp y actu. cen y est. farmaceúticos;48.000,00
+2014;12500;329021;91003;Tasa 21-Aut. Insp. centros Servicios Sociales;30.000,00
+2014;12500;329022;91003;Tasa 22-Inserción anuncios en el BOA;270.800,00
+2014;12500;329023;91003;Tasa 23-Inscripción y Publicidad Asoc,Fun,CP y CCA;22.000,00
+2014;12500;329025;91003;Tasa 25-S. Registro Territorial P.Intelectual de A;9.500,00
+2014;12500;329030;91003;Tasa 30-Tasa inscripción Reg. de org. modif. genét;2.200,00
+2014;12500;329037;91003;Tasa 37-Tasa dchos. de exam. pruebas de acceso FP;211.352,10
+2014;12500;329038;91003;Tasa 38- S. admtvos diligencias bastanteo de poder;5.240,00
+2014;12500;329039;91003;Tasa39-Insc pruebas obt. tit. postobligatorios;136.000,00
+2014;12500;329042;91003;Tasa 42 - Análisis e Informes del Lab. Salud Públi;50.000,00
+2014;12500;330000;91003;Precios Públicos del Laboratorio Agroalimentario;64.000,00
+2014;12500;330006;91003;Instalaciones deportivas;45.000,00
+2014;12500;330007;91003;Actividades Deportivas;10.000,00
+2014;12500;330011;91003;Grado superior FP y artes plásticas y diseño;1.765.000,00
+2014;12500;330012;91003;Precios Públicos de Caza y Pesca;160.000,00
+2014;12500;335000;91003;P. Públicos del Laboratorio de Calidad de la Edif.;14.000,00
+2014;12500;370000;91003;Casinos;2.592.000,00
+2014;12500;370001;91003;Bingos;20.304.000,00
+2014;12500;370002;91003;Máquinas recreativas;25.380.000,00
+2014;12500;370003;91003;Loterías,rifas,boletos y combinaciones aleatorias;16.200,00
+2014;12500;380100;91003;Reintegros de ejercicios cerrados;22.218,23
+2014;12500;381099;91003;Otros reintegros de Presupuesto corriente;3.614.000,00
+2014;12500;390000;91003;Costas por sentencias judiciales;95.000,00
+2014;12500;390001;91003;Daños carreteras;110.000,00
+2014;12500;394005;91003;OTROS INGRESOS;15.700.000,00
+2014;12500;395003;91003;Multas y sanciones de Agricultura, Ganad. y M.Amb.;280.000,00
+2014;12500;395008;91003;Multas y sanciones Política Territorial e Interior;10.000,00
+2014;12500;395099;91003;Otras multas y sanciones;588.947,50
+2014;12500;395100;91003;Multas y sanciones;7.628.500,00
+2014;12500;396003;91003;Ing.diversos.Rec eventuales.Agricultura,Gan y M Am;213.600,00
+2014;12500;396100;91003;Ingresos diversos. Recursos eventuales;2.220.658,59
+2014;12500;400050;91003;Fondo Suficiencia Global;216.800.000,00
+2014;12500;400051;91003;Fondo de Garantía Servicios Públicos Fundamentales;56.200.000,00
+2014;12500;400152;91003;Fondo Cooperación Liquidación Ejercicio 2012;125.500.000,00
+2014;12500;403000;34001;Ayudas complementarias a la Política Agraria Común;700.000,00
+2014;12500;403004;91003;Estadística agraria;52.016,70
+2014;12500;403099;12101;Otras subvenciones de Agricultura, Gan. y M.A.;1.237.560,00
+2014;12500;403099;34011;Otras subvenciones de Agricultura, Gan. y M.A.;228.000,00
+2014;12500;404000;39005;Ayudas a jubilación y reestructuración de empresas;64.710,00
+2014;12500;404003;35005;Pensiones a ancianos y enfermos;40.000,00
+2014;12500;404020;91003;Plan Acción a favor de pers. situación dependencia;50.000.000,00
+2014;12500;404021;39054;Víctimas violencia de género;100.000,00
+2014;12500;404021;39092;Víctimas violencia de género;169.856,00
+2014;12500;405001;39015;Fomento de la donación y trasplante de órganos;64.795,74
+2014;12500;405002;39017;Prevención del S.I.D.A.;134.195,67
+2014;12500;405003;39018;Actuaciones en drogodependencias;562.853,30
+2014;12500;405004;39019;Prevención de enfermedades emergentes;64.032,53
+2014;12500;405005;39016;Junta Arbitral de Consumo;24.271,59
+2014;12500;405007;39049;Form.Cont.Uso racional del medicamento para médic.;615.135,24
+2014;12500;407013;39025;Plan rest,utiliz. Educat. pueblos abandon.:Bubal;24.780,00
+2014;12500;420000;91003;"Fondo programa de ""Ahorro e incapacidad temporal""";9.650.525,35
+2014;12500;420001;91003;Compens. asistencia sanitaria conting. prof.;200.000,00
+2014;12500;492100;14101;Programa Operativo FEDER 2007-2013;1.151.237,03
+2014;12500;493000;11101;Fondo Social Europeo- Objetivo 3;561.710,79
+2014;12500;493100;11101;Fondo Social Europeo- Programa Operativo 2007-2013;12.961.006,89
+2014;12500;496000;12101;Agricultura -Política Agraria Común;440.900.000,00
+2014;12500;496009;12101;Agricultura- Otras subvenciones corrientes;110.000,00
+2014;12500;497000;12102;Fondo Europeo Agrícola de Desarrollo Rural;1.489.354,05
+2014;12500;499000;19001;Punto de Información Europea;25.000,00
+2014;12500;499099;19004;Otras subvenciones del exterior;402.050,00
+2014;12500;520000;91003;Intereses;8.000.000,00
+2014;12500;520050;91003;De las Cortes de Aragón;43.000,00
+2014;12500;540008;91003;Arrendamientos de locales;1.300,00
+2014;12500;540009;91003;Alquileres de viviendas;400.000,00
+2014;12500;550001;91003;Cánones de concesiones;2.300.000,00
+2014;12500;552003;91003;De protección y gestión de los montes;625.000,00
+2014;12500;552009;91003;Otros aprovechamientos;900.000,00
+2014;12500;553000;91003;Cánones de I.T.V. privadas;4.622.925,00
+2014;12500;553009;91003;Otros cánones;1.400.000,00
+2014;12500;590000;91003;Ingresos por viviendas de promoción pública;1.300.000,00
+2014;12500;590009;91003;Otros ingresos patrimoniales;7.331.445,13
+2014;12500;600000;91003;Venta de terrenos;800.000,00
+2014;12500;610000;91003;Venta de inversiones reales- Varios;200.000,00
+2014;12500;620000;91003;Venta de inmuebles;28.092.412,18
+2014;12500;702001;36004;Acciones prioritarias: incendios forestales;3.152.800,00
+2014;12500;702005;39077;Convenio Ciclo Integral del Agua;8.066.987,00
+2014;12500;702009;36001;Otras subvenciones en materia de Medio Ambiente;592.000,00
+2014;12500;704002;39001;Plan de vivienda;2.400.000,00
+2014;12500;705006;34014;Campañas de sanidad animal;20.000,00
+2014;12500;705006;34021;Campañas de sanidad animal;500.000,00
+2014;12500;705006;34039;Campañas de sanidad animal;250.000,00
+2014;12500;705007;34025;Agrupación Defensa Sanitaria;1.000,00
+2014;12500;705008;34006;Apicultura;110.000,00
+2014;12500;705009;34005;Otras subvenciones de capital;1.000.000,00
+2014;12500;705009;34044;Otras subvenciones de capital;1.925.000,00
+2014;12500;705009;34046;Otras subvenciones de capital;1.721.369,87
+2014;12500;705009;34047;Otras subvenciones de capital;4.029.907,68
+2014;12500;705009;34050;Otras subvenciones de capital;600.000,00
+2014;12500;705010;34026;Agrup.Tratam. Integrado Agricultura (ATRIAS);165.000,00
+2014;12500;705013;34015;Semillas y plantas de viveros;115.000,00
+2014;12500;705014;34007;Industrias Agrarias;2.584.648,00
+2014;12500;705015;34043;Modernización de explotaciones;5.380.000,00
+2014;12500;705017;34017;Lucha contra agentes nocivos;473.000,00
+2014;12500;705017;34018;Lucha contra agentes nocivos;125.000,00
+2014;12500;705018;34023;Control lechero;70.000,00
+2014;12500;705021;34004;Agroambientales;6.400.000,00
+2014;12500;705022;34031;Cese anticipado;250.000,00
+2014;12500;705025;34032;Indemnización compensatoria básica;1.825.000,00
+2014;12500;705026;34016;Nuevas variedades vegetales;43.000,00
+2014;12500;705032;34049;Ayudas del Fondo Europeo de Pesca;52.000,00
+2014;12500;709001;32200;Plan Especial de Teruel;30.000.000,00
+2014;12500;792100;14101;Programa Operativo FEDER 2007-2013;6.227.600,33
+2014;12500;792100;14102;Programa Operativo FEDER 2007-2013;56.128,48
+2014;12500;793100;11101;Fondo Social Europeo- Programa Operativo 2007-2013;5.040.760,00
+2014;12500;796000;12101;Fondo Europeo Agrícola de Garantía;103.500,00
+2014;12500;796002;12101;Plan Nacional Apícola;220.000,00
+2014;12500;797000;12102;Forestación;1.225.000,00
+2014;12500;797001;12102;Agroambientales;12.800.000,00
+2014;12500;797002;12102;Cese Anticipado;500.000,00
+2014;12500;797003;12102;Indemnización Compensación Básica;3.650.000,00
+2014;12500;797004;12102;Modernización explotaciones, incorporación jóvenes;14.610.000,00
+2014;12500;797006;12102;Modernización de regadíos;14.572.885,25
+2014;12500;797008;12102;P.D.R.- Renov., dllo de pueblos y patrimonio rural;450.000,00
+2014;12500;797009;12102;P.D.R.- Diversif. actividades en el ámbito agrario;5.700.000,00
+2014;12500;797011;12102;PDR Formación;178.163,00
+2014;12500;797012;12102;P.D.R.- Transf. y comercializ. productos agrícolas;5.169.296,00
+2014;12500;797013;12102;PDR Medidas forestales;3.721.518,59
+2014;12500;797014;12102;PDR Concentración  parcelaria;2.049.273,57
+2014;12500;797018;12102;PDR Protección del  Medio Ambiente;150.500,00
+2014;12500;797099;12102;Otras transferencias de capital;18.575.840,55
+2014;12500;798000;15101;Fondo Europeo de Pesca;91.000,00
+2014;12500;799000;19003;Otras subvenciones del exterior;45.225,00
+2014;12500;821001;91003;Reintegros préstamos convenios con EE Locales;3.500.000,00
+2014;12500;900000;91003;Emisión de Deuda Pública;1.159.890.000,00
+2014;51000;330002;91003;Precios Públicos de los Centros de Form del INAEM;2.000,00
+2014;51000;404099;39071;Otras subv. Empleo y de Servicios Sociales;61.300,00
+2014;51000;413000;33002;Conferencia Sectorial de Empleo;581.742,00
+2014;51000;413000;33004;Conferencia Sectorial de Empleo;21.029.945,56
+2014;51000;413000;33005;Conferencia Sectorial de Empleo;12.844.693,00
+2014;51000;413001;39008;Planes trabajo Centros Nacionales Formación Ocup.;280.000,00
+2014;51000;413003;39111;Otras subv del Servicio Público de Empleo Estatal;26.950,00
+2014;51000;520000;91003;Intereses;30.000,00
+2014;51000;713009;33002;Otras subvenciones Serv. Público de Empleo INEM;95.981,00
+2014;52000;319115;91003;Prestación de servicios en hospitales del SAS;17.500.000,00
+2014;52000;520000;91003;Intereses;50.000,00
+2014;53000;319100;91003;Prestación de Servicios en Residencias IASS;12.000.000,00
+2014;53000;319102;91003;Prest. Servicios Centros Sociales y clubs IASS;1.000.000,00
+2014;53000;395100;91003;Multas y sanciones;60.000,00
+2014;53000;520000;91003;Intereses;20.000,00
+2014;54000;520000;91003;Intereses;1.500,00
+2014;55000;311001;91003;Prestación de Servicios en residencias;675.000,00
+2014;55000;311003;91003;Prestación de Servicios centros sociales y clubs;15.000,00
+2014;55000;311008;91003;Prestación de Servicios en albergues;70.000,00
+2014;55000;311009;91003;Prestación de servicios por Carné Joven;550.000,00
+2014;55000;470009;91003;Otras subvenciones de empresas;100.000,00
+2014;55000;520000;91003;Intereses;3.000,00
+2014;71000;792100;14101;Programa Operativo FEDER 2007-2013;1.925.000,00
+2014;72000;221000;91003;Canon de Saneamiento;40.900.276,30
+2014;72000;329001;91003;Tasa 01- Dirección e inspección de obras;25.000,00
+2014;72000;329003;91003;Tasa 03- Serv.admvos, redacc. informes,activ. fac.;500,00
+2014;72000;330009;91003;Tratamiento fosas sépticas;100.000,00
+2014;72000;395100;91003;Multas y sanciones;30.000,00
+2014;72000;396100;91003;Ingresos diversos. Recursos eventuales;50.000,00
+2014;72000;520000;91003;Intereses;100.000,00
+2014;72000;821001;91003;Reintegros préstamos convenios con EE Locales;736.300,00
+2014;73000;329035;91003;Tasa 35- Tasa eval. ensayos clínicos y p. sanitari;130.000,00
+2014;73000;330010;91003;Servicios Investigación Biomédica;1.000.000,00
+2014;73000;393005;91003;Cursos y otros ingresos de Sanidad, BS y Familia;30.000,00
+2014;73000;405099;39020;Otras subvenciones en materia de Salud y Consumo;1.791.086,34
+2014;73000;405099;39053;Otras subvenciones en materia de Salud y Consumo;917.912,19
+2014;73000;440002;91003;Transferencia de la Universidad de Zaragoza;100.000,00
+2014;73000;470009;72009;Otras subvenciones de empresas;1.769.351,43
+2014;73000;499099;19090;Otras subvenciones del exterior;395.989,90
+2014;73000;520000;91003;Intereses;1.000,00
+2014;73000;709009;39020;Otras subvenciones de capital;518.459,63
+2014;73000;709009;39053;Otras subvenciones de capital;527.293,24
+2014;73000;770010;72009;proyectos producción y transferencia conocimiento;330.000,00
+2014;73000;799000;19090;Otras subvenciones del exterior;143.380,00
+2014;74000;319319;91003;Prestación de Servicios en laboratorios;93.000,00
+2014;74000;319320;72012;Prestación servicios investigación agroalimentaria;230.000,00
+2014;74000;381100;91003;Reintegros de ejercicio corriente;35.000,00
+2014;74000;450008;91003;Aportaciones Departamentos D.G.A.;130.000,00
+2014;74000;470009;91003;Otras subvenciones de empresas;750,00
+2014;74000;520000;91003;Intereses;5.000,00
+2014;74000;552000;91003;De investigación agraria;90.000,00
+2014;74000;552005;91003;Aprovechamientos de fincas agrícolas;110.000,00
+2014;74000;553009;91003;Otros cánones;770,00
+2014;74000;707003;39037;Plan Nacional de Investigación;420.000,00
+2014;74000;719011;39003;Instituto Nacional Investigación y Tecnología Agra;650.000,00
+2014;74000;719011;39035;Instituto Nacional Investigación y Tecnología Agra;55.105,00
+2014;74000;719011;39044;Instituto Nacional Investigación y Tecnología Agra;225.000,00
+2014;74000;750008;55007;Aportaciones Departamentos D.G.A.;380.000,00
+2014;74000;770010;71008;proyectos producción y transferencia conocimiento;30.000,00
+2014;74000;799000;19090;Otras subvenciones del exterior;100.000,00
+2014;75000;329016;91003;Tasa 16-Expedición licencias caza y pesca;2.019.149,95
+2014;75000;329017;91003;Tasa 17-S. facul. montes, forestales y v. pecuaria;194.575,03
+2014;75000;329026;91003;Tasa 26-Tasa servicios gestión de los cotos;862.122,66
+2014;75000;329028;91003;Tasa 28-Tasa ser.adm. protección del medio ambient;395.623,14
+2014;75000;329029;91003;Tasa 29-Tasa S.Adm. conservación biodiversidad;12.202,37
+2014;75000;329034;91003;Tasa 34-S. admtivos. calificación ambien act. clas;188.145,85
+2014;75000;520000;91003;Intereses;1.500,00
+2014;76000;396010;91003;Ingresos diversos Bco Sangre y Tejidos de Aragón;8.912.486,86
+2014;76000;520000;91003;Intereses;12.400,00
+2014;77000;520000;91003;Intereses;50,00
+;;;;;

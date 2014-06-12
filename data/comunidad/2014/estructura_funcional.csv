@@ -1,0 +1,217 @@
+EJERCICIO;GRUPO;FUNCION;SUBFUNCION;PROGRAMA;DESCRIPCION CORTA;DESCRIPCION LARGA
+2014;0;;;;Deuda Pública;Deuda Pública
+2014;1;;;;Servcios Carácter General;Servicios de Carácter General
+2014;3;;;;Seg Protecc y Prom Social;Seguridad, Protección y Promoción Social
+2014;4;;;;Prod.Bienes Púb. c.social;Producción de Bienes Públicos de Carácter Social
+2014;5;;;;Prod.Bien P carac.econom.;Producc. de Bienes Públicos de Carácter Económico
+2014;6;;;;Reg Econom Caráct General;Regulación Económica de Carácter General
+2014;7;;;;Reg Econ Sect Productivos;Regulación Económica de Sectores Productivos
+2014;9;;;;Transfer a otras AA.PP.;Transferencias a otras Administraciones Públicas
+2014;0;01;;;Deuda Pública;Deuda Pública
+2014;1;11;;;Alta Dirección C.A. y Gob;Alta Dirección de la C.A. y del Gobierno
+2014;1;12;;;Administración General;Administración General
+2014;1;13;;;Rel. Ext. y Coop. Intern.;Relaciones Exteriores y Cooperación Internacional
+2014;1;14;;;Justicia;Justicia
+2014;3;31;;;Seg. y Protección Social;Seguridad y Protección Social
+2014;3;32;;;Promoción Social;Promoción Social
+2014;4;41;;;Sanidad;Sanidad
+2014;4;42;;;Educación;Educación
+2014;4;43;;;Vivienda y Urbanismo;Vivienda y Urbanismo
+2014;4;44;;;Bienestar Comunitario;Bienestar Comunitario
+2014;4;45;;;Cultura;Cultura
+2014;4;46;;;Otros Srvcios Com. y Soc.;Otros Servicios Comunitarios y Sociales
+2014;5;51;;;Infraestructuras Básicas;Infraestructuras Básicas y del Transporte
+2014;5;53;;;Infraestructuras Agrarias;Infraestructuras Agrarias
+2014;5;54;;;Invest Cient, Téc y Aplic;Investigación Científica, Técnica y Aplicada
+2014;5;55;;;Inform Básica y Estadíst;Información Básica y Estadística
+2014;6;61;;;Act Económicas Generales;Actuaciones Económicas Generales
+2014;6;62;;;Comercio;Comercio
+2014;6;63;;;Actividad Financiera;Actividad Financiera
+2014;6;64;;;Otras act. carácter econ.;Otras actuaciones de carácter económico
+2014;7;71;;;Agricultura y Ganadería;Agricultura y Ganadería
+2014;7;72;;;Industria;Industria
+2014;7;73;;;Energía y Minas;Energía y Minas
+2014;7;75;;;Turismo;Turismo
+2014;9;91;;;Transfer AA.PP. Territ;Transferencias a AA.PP. Territoriales
+2014;0;01;011;;Deuda Pública;Deuda Pública
+2014;1;11;111;;Alta Dirección (Cortes);Alta Dirección de la C.A. (Cortes de Aragón)
+2014;1;11;112;;Alta Dirección (P Gob.Ar);Alta Dirección de la C.A. (Presidencia Gob Aragón)
+2014;1;12;121;;Servicios Generales;Servicios Generales
+2014;1;12;122;;Función Pública;Función Pública
+2014;1;12;123;;Formac y perfecc personal;Formación y Perfeccionamiento del personal (IAAP)
+2014;1;12;125;;Gastos relat. Admón.Local;Gastos relativos a la Administración Local
+2014;1;12;126;;Otros Servicios Generales;Otros Servicios Generales
+2014;1;13;131;;Rel. Exteriores;Relaciones Exteriores
+2014;1;13;134;;Cooperación Internacional;Cooperación Internacional
+2014;1;14;142;;Administración Justicia;Administración de Justicia
+2014;3;31;313;;Acción Social;Acción Social
+2014;3;31;315;;Relaciones Laborales;Relaciones Laborales
+2014;3;32;322;;Promoción del Empleo;Promoción del Empleo
+2014;3;32;323;;Promoción Sociocultural;Promoción Sociocultural
+2014;3;32;324;;Acción favor Inmigrantes;Acción en favor de los Inmigrantes
+2014;4;41;411;;Admón General Sanidad;Administración General de Sanidad
+2014;4;41;412;;Hosp,Svcios, Asist y Cent;Hospitales, Svcios, Asistencias y Centros de Salud
+2014;4;41;413;;Acciones Públicas Salud;Acciones Públicas relativas a la Salud
+2014;4;42;421;;Admón General Educación;Administración General de Educación
+2014;4;42;422;;Enseñanza;Enseñanza
+2014;4;42;423;;Becas y Ayudas;Becas y Ayudas
+2014;4;43;431;;Vivienda;Vivienda
+2014;4;43;432;;Urbanismo y Arquitectura;Urbanismo y Arquitectura
+2014;4;44;442;;Protecc y Medio Ambiente;Protección y Medio Ambiente
+2014;4;44;443;;Otros Srvcios Bstar Com.;Otros servicios de Bienestar Comunitario
+2014;4;45;452;;Archivos,Bibliot y Museos;Archivos, Bibliotecas y Museos
+2014;4;45;455;;Promoción Cultural;Promoción Cultural
+2014;4;45;457;;Deportes y Educ Física;Deportes y Educación Física
+2014;4;45;458;;Patr. Hist-Artíst y Arqu.;Patrimonio Histórico-Artístico y Arqueológico
+2014;4;46;463;;Asoc y Partic. Ciudadana;Asociación y Participación Ciudadana
+2014;5;51;511;;Admón G. Infr. Básic.Tte;Administración General de Infr. Básicas y del Tte
+2014;5;51;512;;Recursos Hidráulicos;Recursos Hidráulicos
+2014;5;51;513;;Transporte Terrestre;Transporte Terrestre
+2014;5;53;531;;Reforma y Dllo Agrario;Reforma y Desarrollo Agrario
+2014;5;53;533;;Mejora del Medio Natural;Mejora del Medio Natural
+2014;5;54;541;;Ad G. Industria e Innov.;Adm. Gen. de Industria e Innovación
+2014;5;54;542;;Invest Técnica y Aplicada;Investigación Técnica y Aplicada
+2014;5;55;551;;Estadís, Cartogr y Meteor;Estadística, Cartografía y Meteorología
+2014;6;61;611;;Admón Gen. Ec.,Hcda.,Empl;Administración General de Economía, Hacda y Empleo
+2014;6;61;612;;Regulac Económica General;Regulación Económica General
+2014;6;61;615;;Asuntos de la C.E;Asuntos de la Comunidad Europea
+2014;6;62;622;;Comercio Interior;Comercio Interior
+2014;6;62;623;;Comercio Exterior;Comercio Exterior
+2014;6;63;631;;Administración Financiera;Administración Financiera
+2014;6;64;641;;Junta Contratación Adtva.;Junta de Contratación Administrativa
+2014;6;64;642;;Defensa Competencia;Defensa de la Competencia
+2014;7;71;711;;Ad.G Agric,Ganad. Med.Amb;Adm.Gener. Agricultura, Ganadería y Medio Ambiente
+2014;7;71;712;;Promoción Población Rural;Promoción de la Población Rural
+2014;7;71;716;;Calidad y Segur Alimentar;Calidad y Seguridad Alimentaria
+2014;7;72;722;;Act Admtva sobre Industr;Actuaciones Administrativas sobre Industria
+2014;7;72;723;;Apoyo a la PYME;Apoyo a la Pequeña y Mediana Empresa
+2014;7;73;731;;Planif y Prod Energ y Min;Planificación y Producción Energética y Minera
+2014;7;75;751;;Ordción y Prom Turística;Ordenación y Promoción Turística
+2014;9;91;911;;Transfer AA.PP. Comarcal;Transferencias a Administraciones Comarcales
+2014;0;01;011;0111;Amortiz. y gastos Deuda;Amortización y Gastos Financieros de la Deuda
+2014;1;11;111;1111;Cortes de Aragón;Cortes de Aragón (Actividad Legislativa)
+2014;1;11;111;1112;Actuaciones del Justicia;Actuaciones del Justicia de Aragón
+2014;1;11;111;1113;Aljafería;Aljafería
+2014;1;11;111;1114;Act. Cámara de Cuentas;Actuaciones de la Cámara de Cuentas de Aragón
+2014;1;11;112;1121;Presidencia y Órg Presid;Presidencia y Órganos de la Presidencia
+2014;1;11;112;1125;Consejo Cons. Aragón;Consejo Consultivo de Aragón
+2014;1;12;121;1211;Serv. G. Presid. y Justic;Servicios Generales de Presidencia y Justicia
+2014;1;12;121;1212;Serv.Centr,Edif e Instal.;Servicios Centrales, Edificios e Instalaciones
+2014;1;12;121;1213;Serv.Seg y Protec Civil;Servicios de Seguridad y Protección Civil
+2014;1;12;121;1214;Ordenación Administrativa;Ordenación Administrativa
+2014;1;12;121;1215;Servicios de Interior;Servicios de Interior
+2014;1;12;121;1216;Com.Aragonesas Exterior;Comunidades Aragonesas del Exterior
+2014;1;12;121;1217;Relac. Institucionales;Relaciones Institucionales
+2014;1;12;121;1219;U.Policía Nacional ads.CA;Unidad Policía Nacional adscrita a la C.Autónoma
+2014;1;12;122;1221;Direc y Adm Func. Pública;Dirección y Administración de la Función Pública
+2014;1;12;123;1231;Selec, Form y Perf Person;Selección, Formación y Perfeccionamiento Personal
+2014;1;12;125;1251;Apoyo a la Admón. Local;Apoyo a la Administración Local
+2014;1;12;125;1252;Política Territorial;Política Territorial
+2014;1;12;125;1253;Estrategias Territoriales;Estrategias Territoriales
+2014;1;12;125;1259;Cooperación Policía Local;Cooperación con la Policía Local
+2014;1;12;126;1261;Serv.Coord.Admva.Huesca;Servicios de Coordinación Administrativa en Huesca
+2014;1;12;126;1262;Serv.Coord.Admva.Teruel;Servicios de Coordinación Administrativa en Teruel
+2014;1;12;126;1263;Servicios Jurídicos;Servicios Jurídicos
+2014;1;12;126;1264;Inform.Ciud y Docum Admva;Información Ciudadana y Documentación Admva.
+2014;1;12;126;1265;Servicios Telemáticos;Servicios Telemáticos
+2014;1;12;126;1266;TV y Radio Autonómicas;Televisión y Radio Autonómicas
+2014;1;12;126;1267;Act. Rel.Dllo.Estatutario;Actuaciones Relativas al Desarrollo Estatutario
+2014;1;12;126;1268;Inform. Partic. Ciudadana;Información y Participación Ciudadana
+2014;1;12;126;1269;Serv.Gen.Pol.Terr. e Int;Serv. Generales de Política Territorial e Interior
+2014;1;13;131;1311;Act. Relac. Exteriores;Actuaciones de Relaciones Exteriores
+2014;1;13;134;1341;Cooperación al Desarrollo;Cooperación al Desarrollo
+2014;1;14;142;1421;Serv. Admon. Justicia;Servicios de Administración de Justicia
+2014;3;31;313;3131;Prest. Asist y Serv Soc;Prestaciones Asistenciales y Servicios Sociales
+2014;3;31;313;3132;Gestión y Dllo Serv Soc;Gestión y Desarrollo de los Servicios Sociales
+2014;3;31;313;3133;Política  Apoyo Familia;Política Integral de Apoyo a la Familia
+2014;3;31;313;3134;Atención a la dependencia;Atención a la dependencia
+2014;3;31;313;3135;Acc Social a favor person;Acción Social en Favor del Personal
+2014;3;31;313;3136;Fondo Inc. Soc.y Ay Fam U;Fondo de Inclusión Social y Ayuda Familiar Urgente
+2014;3;31;315;3151;Relaciones Laborales;Relaciones Laborales
+2014;3;32;322;3221;Fomento del Empleo. INAEM;Fomento del Empleo. Instituto Aragonés de Empleo
+2014;3;32;322;3222;Fomento del Empleo EE.TT.;Fomento del Empleo. Escuelas Taller
+2014;3;32;322;3225;Fomento del Empleo;Fomento del Empleo
+2014;3;32;322;3229;Consejo Econom y Social;Consejo Económico y Social de Aragón
+2014;3;32;323;3231;Promoción de la Juventud;Promoción de la Juventud
+2014;3;32;323;3232;Promoción de la Mujer;Promoción de la Mujer
+2014;3;32;324;3241;Apoyo a la Inmigración;Apoyo a la Inmigración
+2014;4;41;411;4111;Serv. G. San.Bien.Soc. F;Serv. Gener. Sanidad, Bienestar Social y Familia
+2014;4;41;412;4121;Asistencia Sanitaria;Asistencia Sanitaria
+2014;4;41;412;4123;Asist. Sanit. Medio rural;Asistencia Sanitaria Medio Rural (CASAR)
+2014;4;41;412;4124;Prod.comp.sanguín. y tej.;Producc. componentes sanguíneos y de tejidos
+2014;4;41;413;4131;Protecc y Promoción Salud;Protección y Promoción de la Salud
+2014;4;41;413;4132;Serv. Atención Usuario;Servicios de Atención al Usuario
+2014;4;41;413;4134;Salud Pública;Salud Pública
+2014;4;42;421;4211;Ser G. Educ,U.,Cult y Dep;Servicios Generales Educación,Univ.,Cultura y Dep.
+2014;4;42;421;4212;Gestión de Personal;Gestión de Personal
+2014;4;42;422;4221;Educ Infantil y Primaria;Educación Infantil y Primaria
+2014;4;42;422;4222;Educ Secundaria y FP;Educación Secundaria y Formación Profesional
+2014;4;42;422;4223;Educación Especial;Educación Especial
+2014;4;42;422;4224;Enseñanzas Artísticas;Enseñanzas Artísticas
+2014;4;42;422;4225;Educación Permanente;Educación Permanente
+2014;4;42;422;4226;Plan Aragonés de F.P.;Plan Aragonés de Formación Profesional
+2014;4;42;422;4227;Formación del Profesorado;Formación del Profesorado
+2014;4;42;422;4228;Educación Universitaria;Educación Universitaria
+2014;4;42;422;4229;Eval. Calidad Enseñanza S;Evaluación de la calidad de la Enseñanza Superior
+2014;4;42;423;4231;Plan. y Progr. Educativos;Planificación y Programas Educativos
+2014;4;43;431;4311;Prom y Admón.Viviendas;Promoción y Administración de Viviendas
+2014;4;43;431;4312;Gestión social vivienda;Gestión social de la vivienda
+2014;4;43;432;4321;Urbanismo;Urbanismo
+2014;4;43;432;4323;Arquitectura y Rehabil.;Arquitectura y Rehabilitación
+2014;4;44;442;4422;Protecc y Mejor Medio Amb;Protección y Mejora del Medio Ambiente
+2014;4;44;442;4423;Gestión Ambiental;Gestión Ambiental
+2014;4;44;443;4431;Control del Consumo;Control del Consumo
+2014;4;45;452;4521;Archivos y Museos;Archivos y Museos
+2014;4;45;452;4522;Gestión de Bibliotecas;Gestión de Bibliotecas
+2014;4;45;455;4553;Prom y Acción Cultural;Promoción y Acción Cultural
+2014;4;45;457;4571;Fom y apoyo Activ. Depor;Fomento y apoyo a la Actividad Deportiva
+2014;4;45;458;4581;Prot Difusión Patrim Cult;Protección y Difusión del Patrimonio Cultural
+2014;4;46;463;4631;Elecc. Institucionales;Elecciones Institucionales
+2014;5;51;511;5111;S G OP, Urb., Viv y Ttes.;Serv.G. O.Públicas, Urbanismo, Vivienda y Ttes
+2014;5;51;512;5121;Gest e Infr Recur Hidrául;Gestión e Infraestructura de Recursos Hidráulicos
+2014;5;51;513;5131;Carreteras;Carreteras
+2014;5;51;513;5132;Transportes;Transportes
+2014;5;53;531;5311;Mej Estr Agrar y Dllo Rur;Mejora de Estructuras Agrarias y Desarrollo Rural
+2014;5;53;531;5312;Des. Sost. Medio Rural;Desarrollo Sostenible en el Medio Rural
+2014;5;53;533;5331;Prot y mejora Medio Nat.;Protección y mejora del Medio Natural
+2014;5;53;533;5332;Cons. Biodiv. y Des.Sost;Conservac. de la Biodivers y Desarrollo Sostenible
+2014;5;54;541;5411;Serv G. Industria e Innov;Serv. Generales Industria e Innovación
+2014;5;54;542;5421;Invest Agroalimentaria;Investigación Agroalimentaria
+2014;5;54;542;5422;Inv Tecnolog Aplic Indust;Investigación y Tecnología Aplicada a la Industria
+2014;5;54;542;5423;Inves, Dllo e Innovac Tec;Investigación, Desarrollo e Innovación Tecnológica
+2014;5;54;542;5424;Inves y Dllo Soc Infor;Investigación y Dllo. Sociedad de la Información
+2014;5;54;542;5425;Inves. y Des. A. de Salud;Investigación y Desarrollo en el Área de la Salud
+2014;5;55;551;5511;Elab y difus Estadística;Elaboración y Difusión Estadística
+2014;6;61;611;6111;Serv G. Hda y Admón Públ.;Serv. Gen. de Hacienda y Administración Pública
+2014;6;61;611;6112;Serv G. Economía y Empleo;Servicios Generales de Economía y Empleo
+2014;6;61;612;6121;Planific.y Direcc Presup;Planificación y Dirección Presupuestaria
+2014;6;61;612;6122;Promoción y Dllo Económ.;Promoción y Desarrollo Económico
+2014;6;61;612;6123;Plan Minería del Carbón;Plan Minería del Carbón y Dllo Alternat Com.Min
+2014;6;61;612;6124;Corp. Empr. Públ. Aragón;Corporación Empresarial Pública de Aragón
+2014;6;61;612;6126;Apoyo Dllo Econ y Social;Apoyo al Desarrollo Económico y Social
+2014;6;61;612;6127;Gastos no clasificados;Gastos no clasificados
+2014;6;61;612;6128;Fondo Gastos Personal;Fondo de Gastos de Personal
+2014;6;61;612;6129;Fondo Contingencia;Fondo de Contingencia de Ejecución Presupuestaria
+2014;6;61;615;6152;Act Programas Europeos;Actuaciones relativas a Programas Europeos
+2014;6;62;622;6221;Ordción y Prom Comercial;Ordenación y Promoción Comercial
+2014;6;62;623;6231;Comerc Ext. y Rel.Ec. Int;Comercio Exterior y Relaciones Económicas Inter
+2014;6;63;631;6311;Gestión e Inspec Tributos;Gestión e Inspección de Tributos
+2014;6;63;631;6312;Control Interno y Contab;Control Interno y Contabilidad
+2014;6;63;631;6313;Gestión del Patrimonio;Gestión del Patrimonio
+2014;6;63;631;6314;Gestión de Tesorería;Gestión de Tesorería
+2014;6;63;631;6315;Estudios Econ y Regulació;Estudios Económicos y Regulación
+2014;6;64;641;6411;Jta Cons. Contr.Ad y Reg;Jta Consultiva Contratación Admtva y Registros
+2014;6;64;642;6421;Acts. Defensa Competencia;Actuaciones en materia de Defensa de Competencia
+2014;7;71;711;7111;S.G. Agr.,Ganad. y M.Amb.;Serv.Gen. Agricultura, Ganadería y Medio Ambiente
+2014;7;71;712;7121;Dllo Agroalim y Fmto Asoc;Desarrollo Agroalimentario y Fomento Asociativo
+2014;7;71;712;7122;Coord y Gest Serv. Agroam;Coordinación y  Gestión de Servicios Agroambient.
+2014;7;71;712;7123;Producc Agr y Gest Ayudas;Producción Agraria y Gestión de Ayudas
+2014;7;71;712;7128;Política Agraria Comunita;Política Agraria Comunitaria
+2014;7;71;716;7161;Calidad y Segur Alimentar;Calidad y Seguridad Alimentaria
+2014;7;72;722;7221;Act Admtva sobre Industr;Actuaciones Administrativas sobre Industria
+2014;7;72;723;7231;Fomento Industrial;Fomento Industrial
+2014;7;73;731;7311;Fmto y Gestión Energética;Fomento y Gestión Energética
+2014;7;73;731;7312;Apoyo a la Minería;Apoyo a la Minería
+2014;7;75;751;7511;Ordción y Prom y Fmto Tur;Ordenación, Promoción y Fomento del Turismo
+2014;9;91;911;9111;Transfer AA.PP. Comarcal;Transferencias a Administraciones Comarcales
+2014;9;91;911;9112;Cohesión Comarcal;Cohesión Comarcal

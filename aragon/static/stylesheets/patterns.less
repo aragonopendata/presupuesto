@@ -1,0 +1,85 @@
+@import "jquery-ui-1.8.16.custom.css";
+@import "slick.grid.less";
+@import "jslider/jslider.less";
+@import "jslider/jslider.presus.less";
+@import "select2.css";
+@import "patches.less";
+
+
+
+
+
+
+// Pagination
+.pagination {line-height: 1; margin: 0 0 1.5em; text-align: center;}
+.pagination a,
+.pagination .current,
+.pagination .gap
+{display: inline-block; .ie7-inline-block; font-family: @sansFontFamily; font-weight: 700; margin: 0 .25em .5em 0; padding: 2em; vertical-align: middle;}
+
+.pagination a {background: @white; color: @black30; text-shadow: 1px 1px 0 @white; .rounded(.25em); @shadow: 0 0 0 1px @black90, 0 0 0 1px @white inset, 0 -.25em .25em fadeout(@black, 95%) inset, 0 .25em 0 1px fadeout(@black, 90%); .box-shadow(@shadow);}
+.pagination a:hover {background: lighten(@color-base, 45%); color: desaturate(darken(@color-base, 10%), 20%); @shadow: 0 0 0 1px lighten(@color-base, 25%), 0 0 0 1px @white inset, 0 -.25em .25em fadeout(@color-base, 55%) inset, 0 .125em 0 1px fadeout(@black, 80%); .box-shadow(@shadow);}
+.pagination .previous_page {}
+.pagination .next_page {}
+.pagination .current {border-bottom: .25em solid @color-base; font-style: normal; font-weight: 700; text-shadow: 1px 1px 0 @white; .rounded(.25em); @shadow: 0 .25em 0 0 fadeout(@black, 90%); .box-shadow(@shadow);}
+.pagination .gap {}
+.pagination [class*="_page"] {display: block; font-weight: 700; text-transform: uppercase; vertical-align: middle;}
+.previous_page:before {content: '← ';}
+.next_page:after {content: ' →';}
+.pagination .disabled {display: none;}
+
+@media screen and (min-width: 48em) {
+	.pagination a,
+	.pagination .current,
+	.pagination .gap
+	{padding: 1em;}
+	
+	.pagination [class*="_page"] {display: inline-block; .ie7-inline-block;}
+	.next_page {margin-left: 1em;}
+	.previous_page {margin-right: 1em;}
+}
+
+
+
+
+
+
+// Tab System
+.tab-system {margin: 0 0 3em;}
+
+// Menu
+.tab-menu {margin: 0; text-align: center;}
+.tab-menu li {background: none!important; margin: 0 0 .5em; padding: 0!important;}
+.tab-menu li.current {}
+
+.tab-menu a {
+	background: @black50;
+	color: @white;
+	display: block;
+	font-weight: 700;
+	outline: none;
+	padding: 1.25em .5em;
+	text-shadow: 1px 1px 0 @black75a;
+	.rounded(.5em);
+}
+
+.tab-menu a:hover {background: @black30;}
+.tab-menu li.current a {background: @color-base; position: relative; text-shadow: 1px 1px 0 @black75a; top: 1px;}
+.tab-menu li.current a:hover {cursor: default;}
+
+
+
+// Contents
+.tab-contents {}
+.tab-content {background: @white; margin: 0; padding: 0 1em 1em; .rounded(.5em); @shadow: 0 0 0 1px @black80 inset; .box-shadow(@shadow);}
+.tab-title {background: @black90; font-size: 1.5em; margin: 0 -.675em 1em; padding: .75em; text-align: center; text-shadow: 1px 1px 0 @white; .border-radius-corners(.5em, 0, 0, .5em);}
+
+@media screen and (min-width: 48em) {
+	.tab-menu {margin: 0; text-align: left;}
+	.tab-menu li {display: inline-block; margin: 0 .25em 0 0; vertical-align: bottom; .ie7-inline-block;}
+	.tab-menu a {color: @white; display: inline-block; font-size: .875em; padding: .75em; text-transform: uppercase; .border-radius-corners(.25em, 0, 0, .25em); .ie7-inline-block;}
+	.tab-menu li.current {}
+	.tab-menu li.current a {background-color: @black90; border: 1px solid @black80; border-bottom: none; color: @black20; text-shadow: 1px 1px 0 @white75a; top: 1px; @shadow: 0 1px 1px 0 @white inset; .box-shadow(@shadow);}
+	.tab-menu li.current a:hover {cursor: default;}
+	.tab-title {text-align: left; text-shadow: 1px 1px 0 @white; .border-radius-corners(.25em, 0, 0, 0); @shadow: 0 0 0 1px @black80 inset; .box-shadow(@shadow);}
+}

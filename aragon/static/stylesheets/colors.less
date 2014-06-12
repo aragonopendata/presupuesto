@@ -1,0 +1,38 @@
+@black: #000;
+@black10: lighten(@black, 10%);/* #1a1a1a */
+@black20: lighten(@black, 20%);/* #333 */
+@black30: lighten(@black, 30%);/* #4d4d4d */
+@black40: lighten(@black, 40%);/* #666 */
+@black50: lighten(@black, 50%);/* #808080 */
+@black60: lighten(@black, 60%);/* #999 */
+@black70: lighten(@black, 70%);/* #b3b3b3 */
+@black80: lighten(@black, 80%);/* #ccc */
+@black85: lighten(@black, 85%);/* #d9d9d9 */
+@black90: lighten(@black, 90%);/* #e6e6e6 */
+@black95: lighten(@black, 95%);/* #f2f2f2 */
+@white: #fff;
+@black75a: fadeout(@black, 75%);
+@white75a: fadeout(@white, 75%);
+@black90a: fadeout(@black, 90%);
+@white90a: fadeout(@white, 90%);
+
+// Color: Harmony
+@brightness: 10%;// Cantidad de brillo añadir/restar a los colores de la paleta de color para crear semitonos
+@degrees: 35%;
+
+@color-base: 		#b72f00;
+@complementary:		spin(@color-base, 180);
+@accented-1:		spin(@color-base, -(@degrees));
+@accented-2:		spin(@color-base, @degrees);
+@linkColor: @color-base;
+
+
+// Color: helpers
+@formControlFocus: @color-base;
+@yellow-mark: #ff9;
+@yellow-note: #ff9;
+@red: #c00;
+
+// Entities compared
+@entity1: @accented-1;
+@entity2: @accented-2;

@@ -1,0 +1,110 @@
+#skip-navigation {}
+
+.chromeframe {
+	border-bottom: 1px solid darken(@warningBorder, 20%);
+	left: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10000;
+	.box-shadow(0 .25em .5em fadeout(@black, 75%) );
+
+	.alert {
+		margin: 0;
+		.rounded(0);
+	}
+}
+
+.container-fluid {
+	margin: 0 auto;
+	padding: 0 1em;
+	max-width: 59.75em;
+}
+
+// Masthead
+header[role="banner"] {
+	background: @white url(/static/assets/pignatelli.jpg) no-repeat center bottom;
+	margin: 0;
+	text-align: center;
+}
+
+.logo-gobierno-aragon {margin: 1.5em 0 1em; text-align: center;}
+.aragon-access {background: #EFF0F2 url("/static/assets/cornerAccess.gif") no-repeat left bottom; display: inline-block; .ie7-inline-block; margin: 0 1em .25em 0; vertical-align: middle;}
+.aragon-access ul {font-weight: 700; padding: .25em 1em .25em 1.5em;}
+.aragon-access ul li {background: url("/static/assets/sepAcces.gif") no-repeat right 6px; display: inline; margin-right: .25em; padding-right: .5em;}
+.aragon-access ul li:last-child {background: none; margin-right: 0; padding-right: 0;}
+.aragon-access ul li a {color: #7B7B7B; font-size: .875em; text-decoration: none;}
+.aragon-access ul li a:hover {text-decoration: underline;}
+.aragones {display: inline-block; .ie7-inline-block; margin: 0 0 .25em; padding-top: 10px; vertical-align: middle;}
+
+// Header: Presus
+.main-title {border-top: 1px solid @black90; font-size: 1.5em; font-weight: 700; margin: 0; padding: .25em 0 .5em; text-align: center;}
+.main-title a {color: @black20; display: block;}
+.main-title a:hover {color: @black40;}
+#title-icon {width: 44px; height: 44px; margin-right: -5px;}
+
+
+@import "nav-rwd.less";
+
+
+
+#container {
+	padding: 2em 0;
+	.clearfix;
+}
+
+@import "home.less";
+
+.button.magenta {background-color: @accented-1;}
+.button.blue {background-color: @accented-2;}
+.button.green {background-color: @complementary;}
+
+
+
+
+
+// Search
+.form-search {background: @black20; border-bottom: 1px solid @white; color: @white; margin: 0; text-align: center; @shadow: 0 .25em .5em @black inset; .box-shadow(@shadow);}
+.form-search label {display: block; margin: 0; text-align: center;}
+.form-search input {margin: 0 0 .5em; text-align: center;}
+.form-search .container-fluid {padding: .75em;}
+.form-search label {display: none;}
+
+
+
+// Content
+.content {background: @white url(/static/assets/waves.png) repeat-x; border-bottom: 1px solid @black85; padding: 1.5em 0;}
+.page-title {font-weight: 100; text-align: center;}
+.no-data-alert {top: -300px; position: relative; left: 100px; color: grey;}
+
+
+// Footer
+footer[role="contentinfo"] {text-align: center;}
+.feder {background: #EFF0F2; border-top: 1px solid @white; padding: 1.5em 0 1em;}
+.footer-corp {background: #1C1C1C; color: #A4A4A4; padding: 1em 0;}
+.footer-corp a {color: #A4A4A4; display: inline-block; .ie7-inline-block; font-weight: 700; padding: 1em;}
+.footer-corp .bar {display: none;}
+.footer-corp a:hover {text-decoration: underline;}
+.legal-text {font-size: .875em; line-height: 1.25;}
+
+
+
+// Media queries
+@media screen and (min-width: 30em) {
+	.form-search input {margin: 0;}
+	.footer-corp a, .footer-corp .bar {display: inline;}
+	.footer-corp a {padding: 0;}
+}
+
+@media screen and (min-width: 48em) {
+	.logo-gobierno-aragon {float: left;}
+	.aragon-access {display: inline; float: right; margin: 0 0 .25em;}
+	.aragones {clear: both; float: right; margin: 0;}
+	.main-title {font-size: 3em;}
+	.form-search label {display: inline-block; .ie7-inline-block; margin: 0.2em 1.2em 0 0;}
+	.form-search input {margin: 0 1em 0 0; text-align: left;}
+	.page-title {text-align: left;}
+	footer[role="contentinfo"] {text-align: left;}
+	.legal-text {margin: 0;}
+	.footer-corp .logo-aragon {float: right; margin: 0;}
+}

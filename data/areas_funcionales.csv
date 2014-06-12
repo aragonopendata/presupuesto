@@ -1,0 +1,121 @@
+#Area,Politica,Grupo,Descripcion,Descripcion
+0,,,DeudaPublica,Deuda pública
+0,1,,DeudaPublicaDeudaPublica,Deuda pública
+0,1,1,DeudaPublicaDeudaPublicaDeudaPublica,Deuda pública
+1,,,ServiciosPublicosBasicos,Servicios públicos básicos
+1,3,,SeguridadYMovilidadCiudadana,Seguridad y movilidad ciudadana
+1,3,0,AdministracionGeneralDeLaSeguridadYProteccionCivil,Administración general de la seguridad y protección civil
+1,3,2,SeguridadYOrdenPublico,Seguridad y orden público
+1,3,3,OrdenacionDelTraficoYDelEstacionamiento,Ordenación del tráfico y del estacionamiento
+1,3,4,ProteccionCivil,Protección civil
+1,3,5,ServicioDeExtincionDeIncendios,Servicio de extinción de incendios
+1,5,,ViviendaYUrbanismo,Vivienda y urbanismo
+1,5,0,AdministracionGeneralDeViviendaYUrbanismo,Administración general de vivienda y urbanismo
+1,5,1,Urbanismo,Urbanismo
+1,5,2,Vivienda,Vivienda
+1,5,3,AccesoALaVivienda,Acceso a la vivienda
+1,5,4,FomentoDeLaEdificacionProtegida,Fomento de la edificacion protegida
+1,5,5,ViasPublicas,Vias públicas
+1,6,,BienestarComunitario,Bienestar comunitario
+1,6,1,SaneamientoAbastecimientoYDistribucionDeAguas,"Saneamiento, abastecimiento y distribución de aguas"
+1,6,2,RecogidaEliminacionYTratamientoDeResiduos,"Recogida, eliminacion y tratamiento de residuos"
+1,6,3,LimpiezaViaria,Limpieza viaria
+1,6,4,CementeriosYServiciosFunerarios,Cementerios y servicios funerarios
+1,6,5,AlumbradoPublico,Alumbrado público
+1,6,9,OtrosServiciosDeBienestarComunitario,Otros servicios de bienestar comunitario
+1,7,,MedioAmbiente,Medio ambiente
+1,7,0,AdministracionGeneralDelMedioAmbiente,Administración general del medio ambiente
+1,7,1,ParquesYJardines,Parques y jardines
+1,7,2,ProteccionYMejoraDelMedioAmbiente,Protección y mejora del medio ambiente
+1,7,9,OtrasActuacionesRelacionadasConElMedioAmbiente,Otras actuaciones relacionadas con el medio ambiente
+2,,,ActuacionesDeProteccionYPromocionSocial,Actuaciones de protección y promoción social
+2,1,,Pensiones,Pensiones
+2,1,1,PensionesPensiones,Pensiones
+2,2,,OtrasPrestacionesEconomicasAFavorDeEmpleados,Otras prestaciones económicas a favor de empleados
+2,2,1,OtrasPrestacionesEconomicasAFavorDeEmpleadosOtrasPrestacionesEconomicasAFavorDeEmpleados,Otras prestaciones económicas a favor de empleados
+2,3,,ServiciosSocialesYPromocionSocial,Servicios sociales y promoción social
+2,3,0,AdministracionGeneralDeServiciosSociales,Administración general de servicios sociales
+2,3,1,ProgramasActuacionesDeProteccionYPromocionSocialServiciosSocialesYPromocionSocialAccionSocial,Accion social
+2,3,2,PromocionSocial,Promoción social
+2,3,3,AsistenciaAPersonasDependientes,Asistencia a personas dependientes
+2,4,,FomentoDelEmpleo,Fomento del empleo
+2,4,1,FomentoDelEmpleoFomentoDelEmpleo,Fomento del empleo
+3,,,ProduccionDeBienesPublicosDeCaracterPreferente,Produccion de bienes públicos de caracter preferente
+3,1,,Sanidad,Sanidad
+3,1,2,HospitalesServiciosAsistencialesYCentrosDeSalud,"Hospitales, servicios asistenciales y centros de salud"
+3,1,3,AccionesPublicasRelativasALaSalud,Acciones públicas relativas a la salud
+3,2,,Educacion,Educación
+3,2,0,AdministracionGeneralDeEducacion,Administración general de educación
+3,2,1,EnsenanzaPreescolarYPrimaria,Enseñanza preescolar y primaria
+3,2,2,EnsenanzaSecundaria,Enseñanza secundaria
+3,2,3,PromocionEducativa,Promoción educativa
+3,2,4,ServiciosComplementariosDeEducacion,Servicios complementarios de educación
+3,3,,Cultura,Cultura
+3,3,0,AdministracionGeneralDeCultura,Administración general de cultura
+3,3,2,BibliotecasYArchivos,Bibliotecas y archivos
+3,3,3,MuseosYArtesPlasticas,Museos y artes plásticas
+3,3,4,PromocionCultural,Promoción cultural
+3,3,5,ArtesEscenicas,Artes escénicas
+3,3,6,ArqueologiaYProteccionDelPatrimonioHistorico-artistico,Arqueología y protección del patrimonio historico-artistico
+3,3,7,OcioYTiempoLibre,Ocio y tiempo libre
+3,3,8,FiestasPopularesYFestejos,Fiestas populares y festejos
+3,4,,Deporte,Deporte
+3,4,0,AdministracionGeneralDeDeportes,Administración general de deportes
+3,4,1,PromocionYFomentoDelDeporte,Promoción y fomento del deporte
+3,4,2,InstalacionesDeportivas,Instalaciones deportivas
+4,,,ActuacionesDeCaracterEconomico,Actuaciones de caracter económico
+4,1,,AgriculturaGanaderiaYPesca,Agricultura ganadería y pesca
+4,1,0,AdministracionGeneralDeAgriculturaGanaderiaYPesca,Administración general de agricultura ganadería y pesca
+4,1,2,MejoraDeLasEstructurasAgropecuariasYDeLosSistemasProductivos,Mejora de las estructuras agropecuarias y de los sistemas productivos
+4,1,4,DesarrolloRural,Desarrollo rural
+4,1,5,ProteccionYDesarrolloDeLosRecursosPesqueros,Protección y desarrollo de los recursos pesqueros
+4,1,9,OtrasActuacionesEnAgriculturaGanaderiaYPesca,"Otras actuaciones en agricultura, ganadería y pesca"
+4,2,,IndustriaYEnergia,Industria y energía
+4,2,0,AdministracionGeneralDeIndustriaYEnergia,Administración general de industria y energía
+4,2,2,Industria,Industria
+4,2,3,Mineria,Minería
+4,2,5,Energia,Energía
+4,3,,ComercioTurismoYPequenasYMedianasEmpresas,"Comercio, turismo y pequeñas y medianas empresas"
+4,3,0,AdministracionGeneralDeComercioTurismoYPequenasYMedianasEmpresas,"Administración general de comercio, turismo y pequeñas y medianas empresas"
+4,3,1,Comercio,Comercio
+4,3,2,OrdenacionYPromocionTuristica,Ordenación y promoción turistica
+4,3,3,DesarrolloEmpresarial,Desarrollo empresarial
+4,3,9,OtrasActuacionesSectoriales,Otras actuaciones sectoriales
+4,4,,TransportePublico,Transporte público
+4,4,0,AdministracionGeneralDelTransporte,Administración general del transporte
+4,4,1,PromocionMantenimientoYDesarrolloDelTransporte,Promoción mantenimiento y desarrollo del transporte
+4,4,2,InfraestructurasDelTransporte,Infraestructuras del transporte
+4,5,,Infraestructuras,Infraestructuras
+4,5,0,AdministracionGeneralDeInfraestructuras,Administración general de infraestructuras
+4,5,2,RecursosHidraulicos,Recursos hidráulicos
+4,5,3,Carreteras,Carreteras
+4,5,4,CaminosVecinales,Caminos vecinales
+4,5,9,OtrasInfraestructuras,Otras infraestructuras
+4,6,,InvestigacionDesarrolloEInnovacion,"Investigación, desarrollo e innovación"
+4,6,2,InvestigacionYEstudiosRelacionadosConLosServiciosPublicos,Investigación y estudios relacionados con los servicios públicos
+4,6,3,InvestigacionCientificaTecnicaYAplicada,"Investigación cientifica, técnica y aplicada"
+4,9,,OtrasActuacionesDeCaracterEconomico,Otras actuaciones de caracter económico
+4,9,1,SociedadDeLaInformacion,Sociedad de la informacion
+4,9,2,GestionDelConocimiento,Gestión del conocimiento
+4,9,3,OficinasDeDefensaAlConsumidor,Oficinas de defensa al consumidor
+9,,,ActuacionesDeCaracterGeneral,Actuaciones de caracter general
+9,1,,OrganosDeGobierno,Órganos de gobierno
+9,1,2,OrganosDeGobiernoOrganosDeGobierno,Órganos de gobierno
+9,2,,ServiciosDeCaracterGeneral,Servicios de carácter general
+9,2,0,AdministracionGeneral,Administración general
+9,2,2,CoordinacionYOrganizacionInstitucionalDeLasEntidadesLocales,Coordinacion y organización institucional de las Entidades Locales
+9,2,3,InformacionBasicaYEstadistica,Informacion básica y estadística
+9,2,4,ParticipacionCiudadana,Participación ciudadana
+9,2,5,AtencionALosCiudadanos,Atención a los ciudadanos
+9,2,6,ComunicacionesInternas,Comunicaciones internas
+9,2,9,ImprevistosYFuncionesNoClasificadas,Imprevistos y funciones no clasificadas
+9,3,,AdministracionFinancieraYTributaria,Administración financiera y tributaria
+9,3,1,PoliticaEconomicaYFiscal,Politica económica y fiscal
+9,3,2,GestionDelSistemaTributario,Gestión del sistema tributario
+9,3,3,GestionDelPatrimonio,Gestión del patrimonio
+9,3,4,GestionDeLaDeudaYDeLaTesoreria,Gestión de la deuda y de la tesoreria
+9,4,,TransferenciasAOtrasAdministracionesPublicas,Transferencias a otras administraciónes públicas
+9,4,1,TransferenciasAComunidadesAutonomas,Transferencias a Comunidades Autónomas
+9,4,2,TransferenciasAEntidadesLocalesTerritoriales,Transferencias a Entidades Locales territoriales
+9,4,3,TransferenciasAOtrasEntidadesLocales,Transferencias a otras Entidades Locales
+9,4,4,TransferenciasALaAdministracionGeneralDelEstado,Transferencias a la Administración General del Estado

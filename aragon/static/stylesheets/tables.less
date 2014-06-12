@@ -1,0 +1,145 @@
+/* @group Table class: Standard */
+.table-std, .table-std caption, .table-std thead, .table-std th, .table-std tr, .table-std td {border: 1px solid lighten(@black, 90%);}
+.table-std, .table-std thead, .table-std th, .table-std tr, .table-std td {}
+
+.table-std {}
+
+.table-std caption {
+	background: @accented-2;
+	color: @white;
+	font-weight: 700;
+	padding: .5em;
+	text-shadow: 1px 1px 0 darken(@accented-2, 5%);
+	text-transform: uppercase;
+	.border-radius-corners(.25em, 0, 0, .25em);
+}
+
+.table-std th {font-weight: 700; text-align: left;}
+.table-std th, .table-std td {padding: .5em;}
+
+.table-std thead td,
+.table-std thead th,
+.table-std tfoot th,
+.table-std tfoot td {
+	@shadow-table-std-thead:
+	0 0 0 1px rgba(255, 255, 255, .5) inset,
+	0 0 .5em 0 fadeout(@color-base, 50%) inset;
+	.box-shadow(@shadow-table-std-thead);
+	background: lighten(@color-base, 50%);
+	color: darken(@color-base, 15%);
+	text-shadow: 1px 1px 0 @white;
+}
+
+.table-std tbody thead,
+.table-std tbody th {
+	@shadow-table-std-thead:
+	0 0 0 1px rgba(255, 255, 255, .5) inset,
+	0 0 .5em 0 rgba(0, 0, 0, .10) inset;
+	.box-shadow(@shadow-table-std-thead);
+	background: lighten(@black, 98%);
+	color: lighten(@black, 40%);
+	text-shadow: 1px 1px 0 @white;
+}
+
+.table-std thead th {}
+.table-std tbody {}
+.table-std tbody th {}
+.table-std tfoot {}
+/* @end */
+
+
+
+/* @group Table class: Light */
+.table-light {font-size: .875em;}
+.table-light caption {font-size: 2em; font-style: italic; font-weight: 700; padding: .5em 0; text-align: left;}
+.table-light, .table-light caption, tr {border-bottom: 1px solid lighten(@black, 90%);}
+
+.table-light th,
+.table-light td
+{padding: .5em;}
+
+.table-light th {font-weight: 700; text-align: middle;}
+/* @end */
+
+
+
+/* @group Responsiveness */
+.generatedcontent .table-responsive,
+.generatedcontent .table-responsive thead,
+.generatedcontent .table-responsive tbody,
+.generatedcontent .table-responsive tfoot,
+.generatedcontent .table-responsive tr,
+.generatedcontent .table-responsive td,
+.generatedcontent .table-responsive th,
+.generatedcontent .table-responsive caption
+{display:block}
+
+.table-responsive {width:100%}
+.generatedcontent .table-responsive tr {overflow:hidden}
+.generatedcontent .table-responsive thead tr {left:-9999px; position: absolute; top:-9999px;}
+
+.table-responsive td,
+.table-responsive th
+{padding: 2%; text-align:left; vertical-align: top;}
+
+.no-generatedcontent .table-responsive td,
+.no-generatedcontent .table-responsive th
+{padding: .5em}
+
+.table-responsive th {font-weight: bold;}
+
+.generatedcontent .table-responsive td,
+.generatedcontent .table-responsive th
+{border-bottom: 1px solid @black85; float:left; padding: 2% 2% 2% 54%; position:relative; width:44%;}
+	
+.table-responsive td:before,
+.table-responsive th:before
+{position:absolute; top:0; left:0; width:44%; padding:2%; content:attr(data-th)}
+
+.generatedcontent .table-responsive tbody tr:first-child td:first-child,
+.generatedcontent .table-responsive tbody tr:first-child th:first-child
+{padding-top:3.2em}
+
+.generatedcontent .table-responsive tbody tr:first-child td:first-child:before,
+.generatedcontent .table-responsive tbody tr:first-child th:first-child:before
+{background: @black90; color: @black40; text-align: center; text-shadow: 1px 1px 0 @white; width:100%;}
+
+
+
+/* Media query: 600px */
+@media (min-width:37.5em) {
+	.table-light {font-size: 1em;}
+	
+	/* Table responsive */
+	.generatedcontent .table-responsive  {display:table}
+	.generatedcontent .table-responsive thead {display:table-header-group}
+	.generatedcontent .table-responsive tbody {display:table-row-group}
+	.generatedcontent .table-responsive tfoot {display:table-footer-group}
+	.generatedcontent .table-responsive tr {display:table-row}
+	.generatedcontent .table-responsive caption {display: table-caption;}
+	.generatedcontent .table-responsive td,	.generatedcontent .table-responsive th {display:table-cell}
+	.generatedcontent .table-responsive thead tr {position:static}
+
+	.table-responsive td,
+	.table-responsive th,
+	.generatedcontent .table-responsive td,
+	.generatedcontent .table-responsive th
+	{padding:1em}
+
+	.generatedcontent .table-responsive td,
+	.generatedcontent .table-responsive th
+	{position:static; float:none; width:auto}
+	
+	.table-responsive td:before,
+	.table-responsive th:before
+	{display:none; content:''}
+
+	.generatedcontent .table-responsive tbody tr:first-child td:first-child,
+	.generatedcontent .table-responsive tbody tr:first-child th:first-child
+	{padding-top:1em}
+
+	.table-responsive .align_center {text-align:center}
+	.table-responsive .align_left {text-align:left}
+	.table-responsive .align_right {text-align:right}
+}
+/* @end */

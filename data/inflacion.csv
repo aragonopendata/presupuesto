@@ -1,0 +1,21 @@
+# Datos de IPC del IAEST. Medias anuales de IPC para Aragón, Índice general: 
+#   http://www.aragon.es/DepartamentosOrganismosPublicos/Organismos/InstitutoAragonesEstadistica/pcaxis/ci.Aplicacion_axis_IPC.detalleDepartamento
+# Las tasas de inflación se refieren a la media de las tasas interanuales durante los 12
+# meses del año. Esta media es calculada por el IAEST y publicada en la dirección indicada.
+# La aplicación calcula internamente un índice de inflación a partir de estas tasas, tal que:
+#    Indice Año Actual = 100
+#    Indice Año N-1 = Indice Año N / (1+Inflación Año N)
+#
+# Nota: los presupuestos de un año X se ajustan con el índice de la inflación del año anterior.
+# Por tanto el índice del año actual no se usa. De hecho sólo se conoce cuando termina el año.
+#
+2005,3.5
+2006,3.7
+2007,2.9
+2008,4.4
+2009,-0.4
+2010,1.8
+2011,3.2
+2012,2.4
+2013,1.3
+2014,0

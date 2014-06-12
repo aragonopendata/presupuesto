@@ -1,0 +1,256 @@
+{% extends 'base.html' %}
+{% block extra_javascript %}
+<script src="{{ STATIC_URL }}javascripts/vis/d3.v3-3-9.min.js"></script>
+<script src="{{ STATIC_URL }}javascripts/vis/topojson.v1.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4yU-JrVuhdtVRkyVXgTKw9HtPJ_wZyb4&sensor=false&language=es"></script>
+<script src="{{ STATIC_URL }}javascripts/vis/map.js"></script>
+{% endblock %}
+{% block content %}
+<h1 class="page-title">{{ 'Comarcas' if is_county else 'Municipios' }}</h1>
+
+<div id="map-canvas">
+  <div id="map-legend">
+  </div>
+  <div class="map-info">
+    <div class="map-info__title">
+      <h2></h2>
+    </div>
+    <div class="map-info__content">
+      <ul class="map-info__basics">
+        <li><b>Habitantes:</b> <span id="map-info__population"></span></li>
+      </ul>
+      <p class="map-info__quantitype"></p>
+      <ul class="map-info__budgets">
+        <li class="icon-budget"><b>Previsto:</b> <span id="map-info__budget_amount"></span></li>
+        <li class="icon-budget"><b id="map-info__actual_amount_label">Gastado:</b> <span id="map-info__actual_amount"></span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% include 'shared/data_controllers.html' %}
+
+<div class="table-grid" id="myGrid"></div>
+
+<p class="downloads" id="income-downloads">
+  Descarga la tabla de <b>Ingresos</b>
+  <a class="icon-file-excel" href="{{ url('aragon.views.entities_income', level, 'csv') }}"><span class="file-info">CSV</span></a>
+  o
+  <a class="icon-file-excel" href="{{ url('aragon.views.entities_income', level, 'xls') }}"><span class="file-info">Excel</span></a>
+</p>
+<p class="downloads" id="expense-downloads">
+  Descarga la tabla de <b>Gastos</b>
+  <a class="icon-file-excel" href="{{ url('aragon.views.entities_expenses', level, 'csv') }}"><span class="file-info">CSV</span></a>
+  o
+  <a class="icon-file-excel" href="{{ url('aragon.views.entities_expenses', level, 'xls') }}"><span class="file-info">Excel</span></a>
+</p>
+
+{% include 'shared/social_sharing.html' %}
+{% include 'shared/data_sources.html' %}
+{% include 'shared/policy_paths.html' %}
+
+<script>
+  $(function () {
+    // Return the value for a grid element, aware of the BudgetBreakdown structure.
+    // If the column or cell does not exist at all, return null. This makes sense 
+    // when the whole data may not be available: f.ex. in a list of budgets per
+    // town, sometimes there are gaps in the list, i.e. some cities are missing.
+    // (This is a modified version of the original getBreakdownValue in grid_helpers.)
+    function getNonExhaustiveBreakdownValue(item, columnDef) {
+      if ( item.root != null && item.root.years[columnDef.column] === undefined )
+        return null;
+
+      return getValue(item[columnDef.field][columnDef.column], item.id) || null;
+    }
+
+    function getColumnDefinition(uiState) {
+      return { 
+        field: uiState.field, 
+        name: "Previsto",
+        formatter: valueGridFormatter,
+        sortable: true, 
+        headerCssClass: 'slick-header-right',
+        getter: getNonExhaustiveBreakdownValue, 
+        column: uiState.year,
+        year: Number(uiState.year),
+        stats: stats,
+        width: 140,
+        resizable: false
+      }; 
+    }
+
+    function getExecutionColumnDefinition(uiState) {
+      var columnDef = getColumnDefinition(uiState);
+      columnDef.column = "actual_" + uiState.year;
+      columnDef.name = uiState.field == 'expense' ? "Gastado" : "Ingresado";
+      return columnDef;
+    }
+
+    function getInfoboxLabel(uiState) {
+      switch (uiState.format) {
+        case "nominal":     return "Cantidades totales (nominales):";
+        case "real":        return "Cantidades totales (reales):";
+        case "per_capita":  return "Cantidades per-capita (reales):";
+        case "percentage":  // XXX: hidden for now
+      }
+    }
+
+    function getValue(value, entity_id) {
+      if ( value === undefined || value == null)
+        return value;
+
+      switch (uiState.format) {
+        case "nominal":
+          return value;
+        case "real":
+          return adjustInflation(value, stats, uiState.year);
+        case "per_capita":
+          var population = getPopulationFigure(stats, uiState.year, entity_id);
+          return adjustInflation(value, stats, uiState.year) / population;
+        case "percentage":  // XXX: hidden for now
+      }
+    }
+
+    function valueFormat(value) {
+      if ( value === undefined || value == null )
+        return '';
+
+      switch (uiState.format) {
+        case "nominal":
+          return formatAmount(value);
+        case "real":
+          return formatAmount(value);
+        case "per_capita":
+          return formatDecimal(value/100) + " €";
+        case "percentage":
+          return formatPercent(value).replace(".",",");
+      }
+    }
+
+    // SlickGrid wrapper
+    function valueGridFormatter(row, cell, value, columnDef, dataContext) {
+      return valueFormat(value);
+    }
+
+    // Update the infobox on hover (or on status change)
+    var lastHover = null;
+    function updateInfobox() {
+      // Keep track of last hovered entity
+      var name = lastHover;
+      if ( !name )
+        return;
+
+      // Update name and population
+      $('.map-info__title h2').text(name);
+      $('#map-info__population').text( formatNumber(getPopulationFigure(stats, uiState.year, name)) );
+
+      // Update economic values
+      var data = economicBreakdown.sub[name];
+      if ( data )
+        data = ( uiState.field == 'expense') ? data.expense : data.income;
+      var budgeted = data && data[uiState.year];
+      var actual = data && data['actual_'+uiState.year];
+      $('#map-info__budget_amount').text( budgeted ? valueFormat( getValue(budgeted, lastHover) ) : '' );
+      $('#map-info__actual_amount').text( actual ? valueFormat( getValue(actual, lastHover) ) : '' );
+    }
+
+    // On hover populate the infobox
+    function onHover(name, amount) {
+      lastHover = name;
+      updateInfobox();
+    }
+
+    // On click go to the entity page (if there's data available)
+    function onClick(name, amount) {
+      if ( amount !== undefined ) {
+        window.location={{ 'getCountyLink' if is_county else 'getTownLink' }}(entities[name].slug);
+      }
+    }
+
+    var uiState = null;
+    function redraw() {
+      // Avoid unnecessary redrawings (the slider is trigger happy)
+      var newUIState = getUIState();
+      if ( uiState && sameUIState(uiState, newUIState) ) return;
+      uiState = newUIState;
+
+      // Do work
+      var columnDef = getColumnDefinition(uiState);
+      var executionColumnDef = getExecutionColumnDefinition(uiState);
+      createBudgetGrid("#myGrid", economicGridData, [
+        {
+          field: "id", 
+          name: "{{ 'Comarca' if is_county else 'Municipio' }}", 
+          formatter: {{ 'countyLinkFormatter' if is_county else 'townLinkFormatter' }}, 
+          sortable: true,
+          uiState: uiState,
+          entities: entities
+        },
+        columnDef
+{% if show_actual %}
+        ,executionColumnDef
+{% endif %}
+      ]);
+
+      // Amend labels on page based on whether we display income/expenses
+      if ( uiState.field == 'expense' ) {
+        $(".page-title").text("{{ 'Comarcas' if is_county else 'Municipios' }}: Gastos");
+        $("#total-breakdown-label").text("Total gasto presupuestado");
+        $("#total-actual-breakdown-label").text("Total gasto ejecutado");
+        $("#map-info__actual_amount_label").text("Gastado:");
+        $("#income-downloads").hide();
+        $("#expense-downloads").show();
+      } else {
+        $(".page-title").text("{{ 'Comarcas' if is_county else 'Municipios' }}: Ingresos");
+        $("#total-breakdown-label").text("Total ingresos presupuestados");
+        $("#total-actual-breakdown-label").text("Total ingresos ejecutados");
+        $("#map-info__actual_amount_label").text("Ingresado:");
+        $("#income-downloads").show();
+        $("#expense-downloads").hide();
+      }
+
+      // Amend infobox based on selected formatting
+      $(".map-info__quantitype").text( getInfoboxLabel(uiState) );
+
+      var year = $("#year-selection").val();
+
+      // Redraw map
+      map.draw(uiState);
+      updateInfobox();
+    }
+
+    var stats = {{ stats|safe }};
+    var entities = {{ entities_json|safe }};
+    var economicBreakdown = {{ economic_breakdown.to_json()|safe }};
+    var economicGridData = breakdownToTable(economicBreakdown);
+    var i18n = {
+      'Presupuestado': 'Presupuestado'
+    };
+
+    // Set up controls
+    setRedrawOnButtonGroupChange('.btn-group', redraw);
+    $('#select-format').change(redraw);
+    var years = {{ years|safe }};
+    initSlider("#year-selection", years, redraw, {{ latest_year }});
+
+    // Select income/expense based on location hash
+    var state = $.deparam.fragment();
+    $("#"+state.field).click();
+
+    // Create map
+    var map = new BudgetMap(economicGridData, 
+                            years,
+                            "#map-canvas",
+                            "#map-legend",
+                            "/static/assets/vis/{{ 'comarcas' if is_county else 'municipios' }}.json",
+                            "{{ 'comarcas' if is_county else 'municipios' }}",
+                            "{{ 'D_COMARCA' if is_county else 'D_MUNI_INE' }}",
+                            stats);
+    map.initializeOnLoad(getUIState());
+    map.onHover(onHover);
+    map.onClick(onClick);
+
+    redraw();
+  });
+</script>
+{% endblock %}

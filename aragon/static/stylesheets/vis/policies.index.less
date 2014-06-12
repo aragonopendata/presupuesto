@@ -1,0 +1,29 @@
+// TREEMAP
+.chart-container {
+	rect {
+		cursor: pointer;
+
+		&.out{
+			fill: rgb(134,134,134) !important;
+		}
+
+		&.parent {
+			fill-opacity: 0;
+		}
+
+		g.bg & {
+			cursor: default;
+		}
+	}
+
+	.treemap-text {
+		font-size: 15px;
+		padding: 4px;
+		line-height: 1.1;
+		display: block;
+		fill: #fff;
+		pointer-events: none;
+		text-align: center;
+		text-anchor: middle;
+	}
+}

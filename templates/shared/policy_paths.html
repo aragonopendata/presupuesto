@@ -1,0 +1,127 @@
+<script>
+// Poor man's alternative to Rails/Django parameterize method, 
+// with quite limited handling of accented characters
+function parameterize(s) {
+  return s && s.toLowerCase()
+                .replace(/ /g, '-')
+                .replace(/\./g, '')
+                .replace(/á/, 'a')
+                .replace(/é/, 'e')
+                .replace(/í/, 'i')
+                .replace(/ó/, 'o')
+                .replace(/ú/, 'u');
+}
+
+// Return path to a policy page
+function getPolicyLink(policy_id, title) {
+  var url = "{{ url('aragon.views.policies') }}";
+  if ( policy_id )
+    url = url + '/'+policy_id+'/'+parameterize(title);
+  return url;
+}
+
+// Return path to a programme, inside a policy page
+function getProgrammeLink(programme_id, title) {
+  var url = "{{ url('aragon.views.programmes_show') }}/"+programme_id+'/'+parameterize(title);
+  return url;
+}
+
+
+// Return path to article pages
+function getExpenseArticleLink(article_id, title) {
+  if ( article_id )
+    return "{{ url('aragon.views.expense_articles_show') }}/"+article_id+'/'+parameterize(title);
+  else
+    return "{{ url('aragon.views.policies') }}#field=expense";
+}
+function getIncomeArticleLink(article_id, title) {
+  if ( article_id )
+    return "{{ url('aragon.views.income_articles_show') }}/"+article_id+'/'+parameterize(title);
+  else
+    return "{{ url('aragon.views.policies') }}#field=income";
+}
+
+
+// Return path to a county page
+function getCountyLink(slug) {
+  var url = "{{ url('aragon.views.counties') }}/"+slug;
+  return url;
+}
+function getCountyIncomeLink(slug, article_id) {
+  return "{{ url('aragon.views.counties') }}/"+slug+'/ingresos/'+article_id;
+}
+function getCountyFExpenseLink(slug, article_id) {
+  return "{{ url('aragon.views.counties') }}/"+slug+'/gastosf/'+article_id;
+}
+function getCountyExpenseLink(slug, article_id) {
+  return "{{ url('aragon.views.counties') }}/"+slug+'/gastos/'+article_id;
+}
+function getCountyCompareLink(left_slug, right_slug) {
+  var url = "{{ url('aragon.views.counties') }}/"+left_slug+'/'+right_slug;
+  return url;
+}
+
+
+// Return path to a town page
+function getTownLink(slug) {
+  var url = "{{ url('aragon.views.towns') }}/"+slug;
+  return url;
+}
+function getTownIncomeLink(slug, article_id) {
+  return "{{ url('aragon.views.towns') }}/"+slug+'/ingresos/'+article_id;
+}
+function getTownFExpenseLink(slug, article_id) {
+  return "{{ url('aragon.views.towns') }}/"+slug+'/gastosf/'+article_id;
+}
+function getTownExpenseLink(slug, article_id) {
+  return "{{ url('aragon.views.towns') }}/"+slug+'/gastos/'+article_id;
+}
+function getTownCompareLink(left_slug, right_slug) {
+  var url = "{{ url('aragon.views.towns') }}/"+left_slug+'/'+right_slug;
+  return url;
+}
+
+
+// Convert a programme/policy name into a link
+function policyLinkFormatter(row, cell, value, columnDef, dataContext) {
+  var programme_level = (columnDef.programme_level == undefined) ? 1 : columnDef.programme_level;
+  if ( dataContext.indent >= programme_level ) {
+    var link = getProgrammeLink(dataContext.id, value);
+  } else {
+    var link = getPolicyLink(dataContext.id, value);
+  }
+  var linkedValue = "<a href='"+link+"'>"+value+"</a>";
+  return rowNameFormatter(row, cell, linkedValue, columnDef, dataContext);
+};
+
+// Convert an article name into a link
+function articleLinkFormatter(row, cell, value, columnDef, dataContext, linkGetter) {
+  if ( dataContext.indent > 0 ) {
+    var link = linkGetter(dataContext.parent.id, dataContext.parent.label);
+  } else {
+    var link = linkGetter(dataContext.id, value);
+  }
+  var linkedValue = "<a href='"+link+"'>"+value+"</a>";
+  return rowNameFormatter(row, cell, linkedValue, columnDef, dataContext);
+};
+function incomeArticleLinkFormatter(row, cell, value, columnDef, dataContext) {
+  return articleLinkFormatter(row, cell, value, columnDef, dataContext, getIncomeArticleLink);
+};
+function expenseArticleLinkFormatter(row, cell, value, columnDef, dataContext) {
+  return articleLinkFormatter(row, cell, value, columnDef, dataContext, getExpenseArticleLink);
+};
+
+// Convert a region name into a link
+function countyLinkFormatter(row, cell, value, columnDef, dataContext) {
+  var link = getCountyLink(columnDef.entities[value].slug);
+  var linkedValue = "<a href='"+link+"'>"+value+"</a>";
+  return rowNameFormatter(row, cell, linkedValue, columnDef, dataContext);
+};
+
+// Convert a town name into a link
+function townLinkFormatter(row, cell, value, columnDef, dataContext) {
+  var link = getTownLink(columnDef.entities[value].slug);
+  var linkedValue = "<a href='"+link+"'>"+value+"</a>";
+  return rowNameFormatter(row, cell, linkedValue, columnDef, dataContext);
+};
+</script>

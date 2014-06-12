@@ -1,0 +1,767 @@
+# Comarcas obtenidas a partir de - por ejemplo - http://opendata.aragon.es/dataset/cifras-poblacion-revision-padron-municipal-2006-comarcas
+# Municipios obtenidos del INE: http://www.ine.es/daco/daco42/codmun/codmunmapa.htm
+CA1,comunidad,Aragón
+01,comarca,La Jacetania
+02,comarca,Alto Gállego
+03,comarca,Sobrarbe
+04,comarca,La Ribagorza
+05,comarca,Cinco Villas
+06,comarca,Hoya de Huesca / Plana de Uesca
+07,comarca,Somontano de Barbastro
+08,comarca,Cinca Medio
+09,comarca,La Litera / La Llitera
+10,comarca,Los Monegros
+11,comarca,Bajo Cinca / Baix Cinca
+12,comarca,Tarazona y el Moncayo
+13,comarca,Campo de Borja
+14,comarca,Aranda
+15,comarca,Ribera Alta del Ebro
+16,comarca,Valdejalón
+17,comarca,D.C. Zaragoza
+18,comarca,Ribera Baja del Ebro
+19,comarca,Bajo Aragón-Caspe / Baix Aragó-Casp
+20,comarca,Comunidad de Calatayud
+21,comarca,Campo de Cariñena
+22,comarca,Campo de Belchite
+23,comarca,Bajo Martín
+24,comarca,Campo de Daroca
+25,comarca,Jiloca
+26,comarca,Cuencas Mineras
+27,comarca,Andorra-Sierra de Arcos
+28,comarca,Bajo Aragón
+29,comarca,Comunidad de Teruel
+30,comarca,Maestrazgo
+31,comarca,Sierra de Albarracín
+32,comarca,Gúdar-Javalambre
+33,comarca,Matarraña / Matarranya
+22001,municipio,Abiego
+22002,municipio,Abizanda
+22003,municipio,Adahuesca
+22004,municipio,Agüero
+22907,municipio,Aínsa-Sobrarbe
+22006,municipio,Aisa
+22007,municipio,Albalate de Cinca
+22008,municipio,Albalatillo
+22009,municipio,Albelda
+22011,municipio,Albero Alto
+22012,municipio,Albero Bajo
+22013,municipio,Alberuela de Tubo
+22014,municipio,Alcalá de Gurrea
+22015,municipio,Alcalá del Obispo
+22016,municipio,Alcampell
+22017,municipio,Alcolea de Cinca
+22018,municipio,Alcubierre
+22019,municipio,Alerre
+22020,municipio,Alfántega
+22021,municipio,Almudévar
+22022,municipio,Almunia de San Juan
+22023,municipio,Almuniente
+22024,municipio,Alquézar
+22025,municipio,Altorricón
+22027,municipio,Angüés
+22028,municipio,Ansó
+22029,municipio,Antillón
+22032,municipio,Aragüés del Puerto
+22035,municipio,Arén
+22036,municipio,Argavieso
+22037,municipio,Arguis
+22039,municipio,Ayerbe
+22040,municipio,Azanuy-Alins
+22041,municipio,Azara
+22042,municipio,Azlor
+22043,municipio,Baélls
+22044,municipio,Bailo
+22045,municipio,Baldellou
+22046,municipio,Ballobar
+22047,municipio,Banastás
+22048,municipio,Barbastro
+22049,municipio,Barbués
+22050,municipio,Barbuñales
+22051,municipio,Bárcabo
+22052,municipio,Belver de Cinca
+22053,municipio,Benabarre
+22054,municipio,Benasque
+22246,municipio,Beranuy
+22055,municipio,Berbegal
+22057,municipio,Bielsa
+22058,municipio,Bierge
+22059,municipio,Biescas
+22060,municipio,Binaced
+22061,municipio,Binéfar
+22062,municipio,Bisaurri
+22063,municipio,Biscarrués
+22064,municipio,Blecua y Torres
+22066,municipio,Boltaña
+22067,municipio,Bonansa
+22068,municipio,Borau
+22069,municipio,Broto
+22072,municipio,Caldearenas
+22074,municipio,Campo
+22075,municipio,Camporrélls
+22076,municipio,Canal de Berdún
+22077,municipio,Candasnos
+22078,municipio,Canfranc
+22079,municipio,Capdesaso
+22080,municipio,Capella
+22081,municipio,Casbas de Huesca
+22083,municipio,Castejón de Monegros
+22084,municipio,Castejón de Sos
+22082,municipio,Castejón del Puente
+22085,municipio,Castelflorite
+22086,municipio,Castiello de Jaca
+22087,municipio,Castigaleu
+22088,municipio,Castillazuelo
+22089,municipio,Castillonroy
+22094,municipio,Chalamera
+22095,municipio,Chía
+22096,municipio,Chimillas
+22090,municipio,Colungo
+22099,municipio,Esplús
+22102,municipio,Estada
+22103,municipio,Estadilla
+22105,municipio,Estopiñán del Castillo
+22106,municipio,Fago
+22107,municipio,Fanlo
+22109,municipio,Fiscal
+22110,municipio,Fonz
+22111,municipio,Foradada del Toscar
+22112,municipio,Fraga
+22113,municipio,La Fueva
+22114,municipio,Gistaín
+22115,municipio,El Grado
+22116,municipio,Grañén
+22117,municipio,Graus
+22119,municipio,Gurrea de Gállego
+22122,municipio,Hoz de Jaca
+22908,municipio,Hoz y Costean
+22124,municipio,Huerto
+22125,municipio,Huesca
+22126,municipio,Ibieca
+22127,municipio,Igriés
+22128,municipio,Ilche
+22129,municipio,Isábena
+22130,municipio,Jaca
+22131,municipio,Jasa
+22133,municipio,Labuerda
+22135,municipio,Laluenga
+22136,municipio,Lalueza
+22137,municipio,Lanaja
+22139,municipio,Laperdiguera
+22141,municipio,Lascellas-Ponzano
+22142,municipio,Lascuarre
+22143,municipio,Laspaúles
+22144,municipio,Laspuña
+22149,municipio,Loarre
+22150,municipio,Loporzano
+22151,municipio,Loscorrales
+22905,municipio,Lupiñén-Ortilla
+22155,municipio,Monesma y Cajigar
+22156,municipio,Monflorite-Lascasas
+22157,municipio,Montanuy
+22158,municipio,Monzón
+22160,municipio,Naval
+22162,municipio,Novales
+22163,municipio,Nueno
+22164,municipio,Olvena
+22165,municipio,Ontiñena
+22167,municipio,Osso de Cinca
+22168,municipio,Palo
+22170,municipio,Panticosa
+22172,municipio,Peñalba
+22173,municipio,Las Peñas de Riglos
+22174,municipio,Peralta de Alcofea
+22175,municipio,Peralta de Calasanz
+22176,municipio,Peraltilla
+22177,municipio,Perarrúa
+22178,municipio,Pertusa
+22181,municipio,Piracés
+22182,municipio,Plan
+22184,municipio,Poleñino
+22186,municipio,Pozán de Vero
+22187,municipio,La Puebla de Castro
+22188,municipio,Puente de Montañana
+22902,municipio,Puente la Reina de Jaca
+22189,municipio,Puértolas
+22190,municipio,El Pueyo de Araguás
+22193,municipio,Pueyo de Santa Cruz
+22195,municipio,Quicena
+22197,municipio,Robres
+22199,municipio,Sabiñánigo
+22200,municipio,Sahún
+22201,municipio,Salas Altas
+22202,municipio,Salas Bajas
+22203,municipio,Salillas
+22204,municipio,Sallent de Gállego
+22205,municipio,San Esteban de Litera
+22207,municipio,San Juan de Plan
+22903,municipio,San Miguel del Cinca
+22206,municipio,Sangarrén
+22208,municipio,Santa Cilia
+22209,municipio,Santa Cruz de la Serós
+22906,municipio,Santa María de Dulcis
+22212,municipio,Santaliestra y San Quílez
+22213,municipio,Sariñena
+22214,municipio,Secastilla
+22215,municipio,Seira
+22217,municipio,Sena
+22218,municipio,Senés de Alcubierre
+22220,municipio,Sesa
+22221,municipio,Sesué
+22222,municipio,Siétamo
+22223,municipio,Sopeira
+22904,municipio,La Sotonera
+22225,municipio,Tamarite de Litera
+22226,municipio,Tardienta
+22227,municipio,Tella-Sin
+22228,municipio,Tierz
+22229,municipio,Tolva
+22230,municipio,Torla
+22232,municipio,Torralba de Aragón
+22233,municipio,Torre la Ribera
+22234,municipio,Torrente de Cinca
+22235,municipio,Torres de Alcanadre
+22236,municipio,Torres de Barbués
+22239,municipio,Tramaced
+22242,municipio,Valfarta
+22243,municipio,Valle de Bardají
+22901,municipio,Valle de Hecho
+22244,municipio,Valle de Lierp
+22245,municipio,Velilla de Cinca
+22909,municipio,Vencillón
+22247,municipio,Viacamp y Litera
+22248,municipio,Vicién
+22249,municipio,Villanova
+22250,municipio,Villanúa
+22251,municipio,Villanueva de Sigena
+22252,municipio,Yebra de Basa
+22253,municipio,Yésero
+22254,municipio,Zaidín
+44001,municipio,Ababuj
+44002,municipio,Abejuela
+44003,municipio,Aguatón
+44004,municipio,Aguaviva
+44005,municipio,Aguilar del Alfambra
+44006,municipio,Alacón
+44007,municipio,Alba
+44008,municipio,Albalate del Arzobispo
+44009,municipio,Albarracín
+44010,municipio,Albentosa
+44011,municipio,Alcaine
+44012,municipio,Alcalá de la Selva
+44013,municipio,Alcañiz
+44014,municipio,Alcorisa
+44016,municipio,Alfambra
+44017,municipio,Aliaga
+44021,municipio,Allepuz
+44022,municipio,Alloza
+44023,municipio,Allueva
+44018,municipio,Almohaja
+44019,municipio,Alobras
+44020,municipio,Alpeñés
+44024,municipio,Anadón
+44025,municipio,Andorra
+44026,municipio,Arcos de las Salinas
+44027,municipio,Arens de Lledó
+44028,municipio,Argente
+44029,municipio,Ariño
+44031,municipio,Azaila
+44032,municipio,Bádenas
+44033,municipio,Báguena
+44034,municipio,Bañón
+44035,municipio,Barrachina
+44036,municipio,Bea
+44037,municipio,Beceite
+44039,municipio,Bello
+44038,municipio,Belmonte de San José
+44040,municipio,Berge
+44041,municipio,Bezas
+44042,municipio,Blancas
+44043,municipio,Blesa
+44044,municipio,Bordón
+44045,municipio,Bronchales
+44046,municipio,Bueña
+44047,municipio,Burbáguena
+44048,municipio,Cabra de Mora
+44049,municipio,Calaceite
+44050,municipio,Calamocha
+44051,municipio,Calanda
+44052,municipio,Calomarde
+44053,municipio,Camañas
+44054,municipio,Camarena de la Sierra
+44055,municipio,Camarillas
+44056,municipio,Caminreal
+44059,municipio,Cantavieja
+44060,municipio,Cañada de Benatanduz
+44061,municipio,La Cañada de Verich
+44062,municipio,Cañada Vellida
+44063,municipio,Cañizar del Olivar
+44064,municipio,Cascante del Río
+44065,municipio,Castejón de Tornos
+44066,municipio,Castel de Cabra
+44070,municipio,El Castellar
+44071,municipio,Castellote
+44067,municipio,Castelnou
+44068,municipio,Castelserás
+44074,municipio,Cedrillas
+44075,municipio,Celadas
+44076,municipio,Cella
+44077,municipio,La Cerollera
+44080,municipio,La Codoñera
+44082,municipio,Corbalán
+44084,municipio,Cortes de Aragón
+44085,municipio,Cosa
+44086,municipio,Cretas
+44087,municipio,Crivillén
+44088,municipio,La Cuba
+44089,municipio,Cubla
+44090,municipio,Cucalón
+44092,municipio,El Cuervo
+44093,municipio,Cuevas de Almudén
+44094,municipio,Cuevas Labradas
+44096,municipio,Ejulve
+44097,municipio,Escorihuela
+44099,municipio,Escucha
+44100,municipio,Estercuel
+44101,municipio,Ferreruela de Huerva
+44102,municipio,Fonfría
+44103,municipio,Formiche Alto
+44105,municipio,Fórnoles
+44106,municipio,Fortanete
+44107,municipio,Foz-Calanda
+44108,municipio,La Fresneda
+44109,municipio,Frías de Albarracín
+44110,municipio,Fuenferrada
+44111,municipio,Fuentes Calientes
+44112,municipio,Fuentes Claras
+44113,municipio,Fuentes de Rubielos
+44114,municipio,Fuentespalda
+44115,municipio,Galve
+44116,municipio,Gargallo
+44117,municipio,Gea de Albarracín
+44118,municipio,La Ginebrosa
+44119,municipio,Griegos
+44120,municipio,Guadalaviar
+44121,municipio,Gúdar
+44122,municipio,Híjar
+44123,municipio,Hinojosa de Jarque
+44124,municipio,La Hoz de la Vieja
+44125,municipio,Huesa del Común
+44126,municipio,La Iglesuela del Cid
+44127,municipio,Jabaloyas
+44128,municipio,Jarque de la Val
+44129,municipio,Jatiel
+44130,municipio,Jorcas
+44131,municipio,Josa
+44132,municipio,Lagueruela
+44133,municipio,Lanzuela
+44135,municipio,Libros
+44136,municipio,Lidón
+44137,municipio,Linares de Mora
+44141,municipio,Lledó
+44138,municipio,Loscos
+44142,municipio,Maicas
+44143,municipio,Manzanera
+44144,municipio,Martín del Río
+44145,municipio,Mas de las Matas
+44146,municipio,La Mata de los Olmos
+44147,municipio,Mazaleón
+44148,municipio,Mezquita de Jarque
+44149,municipio,Mirambel
+44150,municipio,Miravete de la Sierra
+44151,municipio,Molinos
+44152,municipio,Monforte de Moyuela
+44153,municipio,Monreal del Campo
+44154,municipio,Monroyo
+44155,municipio,Montalbán
+44156,municipio,Monteagudo del Castillo
+44157,municipio,Monterde de Albarracín
+44158,municipio,Mora de Rubielos
+44159,municipio,Moscardón
+44160,municipio,Mosqueruela
+44161,municipio,Muniesa
+44163,municipio,Noguera de Albarracín
+44164,municipio,Nogueras
+44165,municipio,Nogueruelas
+44167,municipio,Obón
+44168,municipio,Odón
+44169,municipio,Ojos Negros
+44171,municipio,Olba
+44172,municipio,Oliete
+44173,municipio,Los Olmos
+44174,municipio,Orihuela del Tremedal
+44175,municipio,Orrios
+44176,municipio,Palomar de Arroyos
+44177,municipio,Pancrudo
+44178,municipio,Las Parras de Castellote
+44179,municipio,Peñarroya de Tastavins
+44180,municipio,Peracense
+44181,municipio,Peralejos
+44182,municipio,Perales del Alfambra
+44183,municipio,Pitarque
+44184,municipio,Plou
+44185,municipio,El Pobo
+44187,municipio,La Portellada
+44189,municipio,Pozondón
+44190,municipio,Pozuel del Campo
+44191,municipio,La Puebla de Híjar
+44192,municipio,La Puebla de Valverde
+44193,municipio,Puertomingalvo
+44194,municipio,Ráfales
+44195,municipio,Rillo
+44196,municipio,Riodeva
+44197,municipio,Ródenas
+44198,municipio,Royuela
+44199,municipio,Rubiales
+44200,municipio,Rubielos de la Cérida
+44201,municipio,Rubielos de Mora
+44203,municipio,Salcedillo
+44204,municipio,Saldón
+44205,municipio,Samper de Calanda
+44206,municipio,San Agustín
+44207,municipio,San Martín del Río
+44208,municipio,Santa Cruz de Nogueras
+44209,municipio,Santa Eulalia
+44210,municipio,Sarrión
+44211,municipio,Segura de los Baños
+44212,municipio,Seno
+44213,municipio,Singra
+44215,municipio,Terriente
+44216,municipio,Teruel
+44217,municipio,Toril y Masegoso
+44218,municipio,Tormón
+44219,municipio,Tornos
+44220,municipio,Torralba de los Sisones
+44223,municipio,Torre de Arcas
+44224,municipio,Torre de las Arcas
+44225,municipio,Torre del Compte
+44227,municipio,Torre los Negros
+44221,municipio,Torrecilla de Alcañiz
+44222,municipio,Torrecilla del Rebollar
+44226,municipio,Torrelacárcel
+44228,municipio,Torremocha de Jiloca
+44229,municipio,Torres de Albarracín
+44230,municipio,Torrevelilla
+44231,municipio,Torrijas
+44232,municipio,Torrijo del Campo
+44234,municipio,Tramacastiel
+44235,municipio,Tramacastilla
+44236,municipio,Tronchón
+44237,municipio,Urrea de Gaén
+44238,municipio,Utrillas
+44239,municipio,Valacloche
+44240,municipio,Valbona
+44241,municipio,Valdealgorfa
+44243,municipio,Valdecuenca
+44244,municipio,Valdelinares
+44245,municipio,Valdeltormo
+44246,municipio,Valderrobres
+44247,municipio,Valjunquera
+44249,municipio,El Vallecillo
+44250,municipio,Veguillas de la Sierra
+44251,municipio,Villafranca del Campo
+44252,municipio,Villahermosa del Campo
+44256,municipio,Villanueva del Rebollar de la Sierra
+44257,municipio,Villar del Cobo
+44258,municipio,Villar del Salz
+44260,municipio,Villarluengo
+44261,municipio,Villarquemado
+44262,municipio,Villarroya de los Pinares
+44263,municipio,Villastar
+44264,municipio,Villel
+44265,municipio,Vinaceite
+44266,municipio,Visiedo
+44267,municipio,Vivel del Río Martín
+44268,municipio,La Zoma
+50001,municipio,Abanto
+50002,municipio,Acered
+50003,municipio,Agón
+50004,municipio,Aguarón
+50005,municipio,Aguilón
+50006,municipio,Ainzón
+50007,municipio,Aladrén
+50008,municipio,Alagón
+50009,municipio,Alarba
+50010,municipio,Alberite de San Juan
+50011,municipio,Albeta
+50012,municipio,Alborge
+50013,municipio,Alcalá de Ebro
+50014,municipio,Alcalá de Moncayo
+50015,municipio,Alconchel de Ariza
+50016,municipio,Aldehuela de Liestos
+50017,municipio,Alfajarín
+50018,municipio,Alfamén
+50019,municipio,Alforque
+50020,municipio,Alhama de Aragón
+50021,municipio,Almochuel
+50022,municipio,La Almolda
+50023,municipio,Almonacid de la Cuba
+50024,municipio,Almonacid de la Sierra
+50025,municipio,La Almunia de Doña Godina
+50026,municipio,Alpartir
+50027,municipio,Ambel
+50028,municipio,Anento
+50029,municipio,Aniñón
+50030,municipio,Añón de Moncayo
+50031,municipio,Aranda de Moncayo
+50032,municipio,Arándiga
+50033,municipio,Ardisa
+50034,municipio,Ariza
+50035,municipio,Artieda
+50036,municipio,Asín
+50037,municipio,Atea
+50038,municipio,Ateca
+50039,municipio,Azuara
+50040,municipio,Badules
+50041,municipio,Bagüés
+50042,municipio,Balconchán
+50043,municipio,Bárboles
+50044,municipio,Bardallur
+50045,municipio,Belchite
+50046,municipio,Belmonte de Gracián
+50047,municipio,Berdejo
+50048,municipio,Berrueco
+50901,municipio,Biel
+50050,municipio,Bijuesca
+50051,municipio,Biota
+50052,municipio,Bisimbre
+50053,municipio,Boquiñeni
+50054,municipio,Bordalba
+50055,municipio,Borja
+50056,municipio,Botorrita
+50057,municipio,Brea de Aragón
+50058,municipio,Bubierca
+50059,municipio,Bujaraloz
+50060,municipio,Bulbuente
+50061,municipio,Bureta
+50062,municipio,El Burgo de Ebro
+50063,municipio,El Buste
+50064,municipio,Cabañas de Ebro
+50065,municipio,Cabolafuente
+50066,municipio,Cadrete
+50067,municipio,Calatayud
+50068,municipio,Calatorao
+50069,municipio,Calcena
+50070,municipio,Calmarza
+50071,municipio,Campillo de Aragón
+50072,municipio,Carenas
+50073,municipio,Cariñena
+50074,municipio,Caspe
+50075,municipio,Castejón de Alarba
+50076,municipio,Castejón de las Armas
+50077,municipio,Castejón de Valdejasa
+50078,municipio,Castiliscar
+50079,municipio,Cervera de la Cañada
+50080,municipio,Cerveruela
+50081,municipio,Cetina
+50092,municipio,Chiprana
+50093,municipio,Chodes
+50082,municipio,Cimballa
+50083,municipio,Cinco Olivas
+50084,municipio,Clarés de Ribota
+50085,municipio,Codo
+50086,municipio,Codos
+50087,municipio,Contamina
+50088,municipio,Cosuenda
+50089,municipio,Cuarte de Huerva
+50090,municipio,Cubel
+50091,municipio,Las Cuerlas
+50094,municipio,Daroca
+50095,municipio,Ejea de los Caballeros
+50096,municipio,Embid de Ariza
+50098,municipio,Encinacorba
+50099,municipio,Épila
+50100,municipio,Erla
+50101,municipio,Escatrón
+50102,municipio,Fabara
+50104,municipio,Farlete
+50105,municipio,Fayón
+50106,municipio,Los Fayos
+50107,municipio,Figueruelas
+50108,municipio,Fombuena
+50109,municipio,El Frago
+50110,municipio,El Frasno
+50111,municipio,Fréscano
+50113,municipio,Fuendejalón
+50114,municipio,Fuendetodos
+50115,municipio,Fuentes de Ebro
+50116,municipio,Fuentes de Jiloca
+50117,municipio,Gallocanta
+50118,municipio,Gallur
+50119,municipio,Gelsa
+50120,municipio,Godojos
+50121,municipio,Gotor
+50122,municipio,Grisel
+50123,municipio,Grisén
+50124,municipio,Herrera de los Navarros
+50125,municipio,Ibdes
+50126,municipio,Illueca
+50128,municipio,Isuerre
+50129,municipio,Jaraba
+50130,municipio,Jarque
+50131,municipio,Jaulín
+50132,municipio,La Joyosa
+50133,municipio,Lagata
+50134,municipio,Langa del Castillo
+50135,municipio,Layana
+50136,municipio,Lécera
+50138,municipio,Lechón
+50137,municipio,Leciñena
+50139,municipio,Letux
+50140,municipio,Litago
+50141,municipio,Lituénigo
+50142,municipio,Lobera de Onsella
+50143,municipio,Longares
+50144,municipio,Longás
+50146,municipio,Lucena de Jalón
+50147,municipio,Luceni
+50148,municipio,Luesia
+50149,municipio,Luesma
+50150,municipio,Lumpiaque
+50151,municipio,Luna
+50152,municipio,Maella
+50153,municipio,Magallón
+50154,municipio,Mainar
+50155,municipio,Malanquilla
+50156,municipio,Maleján
+50160,municipio,Mallén
+50157,municipio,Malón
+50159,municipio,Maluenda
+50161,municipio,Manchones
+50162,municipio,Mara
+50163,municipio,María de Huerva
+50902,municipio,Marracos
+50164,municipio,Mediana de Aragón
+50165,municipio,Mequinenza
+50166,municipio,Mesones de Isuela
+50167,municipio,Mezalocha
+50168,municipio,Mianos
+50169,municipio,Miedes de Aragón
+50170,municipio,Monegrillo
+50171,municipio,Moneva
+50172,municipio,Monreal de Ariza
+50173,municipio,Monterde
+50174,municipio,Montón
+50175,municipio,Morata de Jalón
+50176,municipio,Morata de Jiloca
+50177,municipio,Morés
+50178,municipio,Moros
+50179,municipio,Moyuela
+50180,municipio,Mozota
+50181,municipio,Muel
+50182,municipio,La Muela
+50183,municipio,Munébrega
+50184,municipio,Murero
+50185,municipio,Murillo de Gállego
+50186,municipio,Navardún
+50187,municipio,Nigüella
+50188,municipio,Nombrevilla
+50189,municipio,Nonaspe
+50190,municipio,Novallas
+50191,municipio,Novillas
+50192,municipio,Nuévalos
+50193,municipio,Nuez de Ebro
+50194,municipio,Olvés
+50195,municipio,Orcajo
+50196,municipio,Orera
+50197,municipio,Orés
+50198,municipio,Oseja
+50199,municipio,Osera de Ebro
+50200,municipio,Paniza
+50201,municipio,Paracuellos de Jiloca
+50202,municipio,Paracuellos de la Ribera
+50203,municipio,Pastriz
+50204,municipio,Pedrola
+50205,municipio,Las Pedrosas
+50206,municipio,Perdiguera
+50207,municipio,Piedratajada
+50208,municipio,Pina de Ebro
+50209,municipio,Pinseque
+50210,municipio,Los Pintanos
+50211,municipio,Plasencia de Jalón
+50212,municipio,Pleitas
+50213,municipio,Plenas
+50214,municipio,Pomer
+50215,municipio,Pozuel de Ariza
+50216,municipio,Pozuelo de Aragón
+50217,municipio,Pradilla de Ebro
+50218,municipio,Puebla de Albortón
+50219,municipio,La Puebla de Alfindén
+50220,municipio,Puendeluna
+50221,municipio,Purujosa
+50222,municipio,Quinto
+50223,municipio,Remolinos
+50224,municipio,Retascón
+50225,municipio,Ricla
+50227,municipio,Romanos
+50228,municipio,Rueda de Jalón
+50229,municipio,Ruesca
+50241,municipio,Sabiñán
+50230,municipio,Sádaba
+50231,municipio,Salillas de Jalón
+50232,municipio,Salvatierra de Esca
+50233,municipio,Samper del Salz
+50234,municipio,San Martín de la Virgen de Moncayo
+50235,municipio,San Mateo de Gállego
+50236,municipio,Santa Cruz de Grío
+50237,municipio,Santa Cruz de Moncayo
+50238,municipio,Santa Eulalia de Gállego
+50239,municipio,Santed
+50240,municipio,Sástago
+50242,municipio,Sediles
+50243,municipio,Sestrica
+50244,municipio,Sierra de Luna
+50245,municipio,Sigüés
+50246,municipio,Sisamón
+50247,municipio,Sobradiel
+50248,municipio,Sos del Rey Católico
+50249,municipio,Tabuenca
+50250,municipio,Talamantes
+50251,municipio,Tarazona
+50252,municipio,Tauste
+50253,municipio,Terrer
+50254,municipio,Tierga
+50255,municipio,Tobed
+50256,municipio,Torralba de los Frailes
+50257,municipio,Torralba de Ribota
+50258,municipio,Torralbilla
+50259,municipio,Torrehermosa
+50260,municipio,Torrelapaja
+50261,municipio,Torrellas
+50262,municipio,Torres de Berrellén
+50263,municipio,Torrijo de la Cañada
+50264,municipio,Tosos
+50265,municipio,Trasmoz
+50266,municipio,Trasobares
+50267,municipio,Uncastillo
+50268,municipio,Undués de Lerda
+50269,municipio,Urrea de Jalón
+50270,municipio,Urriés
+50271,municipio,Used
+50272,municipio,Utebo
+50274,municipio,Val de San Martín
+50273,municipio,Valdehorna
+50275,municipio,Valmadrid
+50276,municipio,Valpalmas
+50277,municipio,Valtorres
+50278,municipio,Velilla de Ebro
+50279,municipio,Velilla de Jiloca
+50280,municipio,Vera de Moncayo
+50281,municipio,Vierlas
+50283,municipio,Villadoz
+50284,municipio,Villafeliche
+50285,municipio,Villafranca de Ebro
+50286,municipio,Villalba de Perejil
+50287,municipio,Villalengua
+50903,municipio,Villamayor de Gállego
+50288,municipio,Villanueva de Gállego
+50290,municipio,Villanueva de Huerva
+50289,municipio,Villanueva de Jiloca
+50291,municipio,Villar de los Navarros
+50292,municipio,Villarreal de Huerva
+50293,municipio,Villarroya de la Sierra
+50294,municipio,Villarroya del Campo
+50282,municipio,La Vilueña
+50295,municipio,Vistabella
+50296,municipio,La Zaida
+50297,municipio,Zaragoza
+50298,municipio,Zuera
