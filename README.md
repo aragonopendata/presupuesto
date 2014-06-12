@@ -1,16 +1,25 @@
 
-<img src="http://presupuesto.aragon.es/static/assets/logo-gobierno-aragon.png" height="28px" /><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>![Logo Gobierno de Aragón](aragon/static/assets/logoAragonOpenData.png)
+<img src="http://presupuesto.aragon.es/static/assets/logo-gobierno-aragon.png" height="28px" /><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>![Logo Aragón Open Data](aragon/static/assets/logoAragonOpenData.png)
 
 ##Presupuestos de Aragón
 
 Este repositorio contiene el código de la aplicación de visualización de [Presupuestos del Gobierno de Aragón][1], desarrollada como parte del proyecto [Aragón Open Data][3].
 
 ### Introducción
-El objetivo de la primera fase del proyecto consistió en ofrecer una visualización de los Presupuestos Generales de Aragón suficientemente intuitiva como para ser comprendida por personas sin experiencia previa, pero haciendo a la vez disponibles los detalles de cada elemento del presupuesto para las personas interesadas en profundizar más. La primera fase muestra la realidad del presupuesto en su conjunto, cubriendo tanto el lado de los ingresos como el de los gastos, y tanto las cantidades previstas como los finalmente realizadas (cuando la información esté disponible). El objetivo de la segunda fase fue extender la transparencia de los presupuestos de la comunidad a niveles inferiores: municipios y comarcas.Las principales funcionalidades de la aplicación son: * Visualización de gastos e ingresos presupuestados, de forma jerárquica y según las cuatro clasificaciones usadas en los presupuestos: funcional (para qué se gasta), económica (en qué se gasta, o cómo se ingresa), financiación (origen y tipo de los fondos) y orgánica/institucional (quién gasta/ingresa).
- * Mostrar la información de los programas presupuestarios al máximo nivel existente, el nivel de partida.
- * Mostrar la evolución de los presupuestos desde 2006.
- * Búsqueda de texto libre en los presupuestos, facilitando encontrar cualquier dato.
-Para más información, consulta las memorias del proyecto para las fases [uno](docs/Memoria Fase 1.pdf) y [dos](docs/Memoria Fase 2.pdf).
+El objetivo de la primera fase del proyecto consistió en ofrecer una visualización de los Presupuestos Generales de Aragón suficientemente intuitiva como para ser comprendida por personas sin experiencia previa en política presupuestaria, pero a la vez suficientemente detallada para permitir a aquellas personas interesadas y expertas en este asunto profundizar más de una manera ágil y efectiva. Así, esa primera fase muestra la realidad del presupuesto en su conjunto, cubriendo tanto el lado de los ingresos como el de los gastos, y tanto las cantidades presupuestadas como las finalmente ejecutadas (cuando la información esté disponible). El objetivo de la segunda fase ha sido extender la transparencia de los presupuestos de la comunidad autónoma a niveles inferiores: municipios y comarcas.
+
+Las principales funcionalidades de la aplicación son:
+
+ * Visualización de gastos e ingresos presupuestados, de forma jerárquica y según las cuatro clasificaciones usadas en los presupuestos: funcional (para qué se gasta), económica (en qué se gasta, o cómo se ingresa), financiación (origen y tipo de los fondos) y orgánica/institucional (quién gasta/ingresa).
+
+ * Mostrar la información de los programas presupuestarios al máximo nivel de desglose existente, el nivel de partida.
+
+ * Mostrar la evolución de los presupuestos desde 2006.
+
+ * Permitir la búsqueda de texto libre en el conjunto de los presupuestos para encontrar cualquier dato de forma sencilla
+
+Para más información, consulta las memorias del proyecto para las fases [uno](docs/Memoria Fase 1.pdf) y [dos](docs/Memoria Fase 2.pdf).
+
 [1]: http://presupuesto.aragon.es
 [3]: http://opendata.aragon.es/
 
@@ -47,9 +56,12 @@ Para instalar la aplicación en local es necesario seguir los siguientes pasos:
 
         $ python manage.py runserver
 
-Para más información, consulta la [documentación técnica del proyecto](docs/Documentación Técnica.pdf).
+Para más información, consulta la [documentación técnica del proyecto](docs/Documentación Técnica.pdf).
+
 ###Licencia
 
-El código de esta aplicación está publicado con la licencia abierta [EUPL 1.1][2] (European Union Public License 1.1).
+El código de esta aplicación está publicado bajo la licencia abierta [EUPL 1.1][2] (European Union Public License 1.1), lo que significa que puedes reutilizarlo, modificarlo y adaptarlo a tus necesidades de forma totalmente libre. Eso sí, nos encantaría que, si utilizas el código, añadieras un reconocimiento a Open Data Aragón en tu proyecto e incluyeras nuestro logo.
+
+![Logo Aragón Open Data](aragon/static/assets/logoAragonOpenData.png)
 
 [2]: https://joinup.ec.europa.eu/software/page/eupl
