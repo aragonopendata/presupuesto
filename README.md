@@ -1,5 +1,5 @@
 
-<img src="http://presupuesto.aragon.es/static/assets/logo-gobierno-aragon.png" height="28px" /> ![Logo Gobierno de Aragón](aragon/static/assets/logoAragonOpenData.png)
+<img src="http://presupuesto.aragon.es/static/assets/logo-gobierno-aragon.png" height="28px" /><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>![Logo Gobierno de Aragón](aragon/static/assets/logoAragonOpenData.png)
 
 ##Presupuestos de Aragón
 
