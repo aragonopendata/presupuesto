@@ -60,7 +60,7 @@ Para más información, consulta la [documentación técnica del proyecto](docs/
 
 ###Licencia
 
-El código de esta aplicación está publicado bajo la licencia abierta [EUPL 1.1][2] (European Union Public License 1.1), lo que significa que puedes reutilizarlo, modificarlo y adaptarlo a tus necesidades de forma totalmente libre. Eso sí, nos encantaría que, si utilizas el código, añadieras un reconocimiento a Open Data Aragón en tu proyecto e incluyeras nuestro logo.
+El código de esta aplicación está publicado bajo la licencia abierta [EUPL 1.1][2] (European Union Public License 1.1), lo que significa que puedes reutilizarlo, modificarlo y adaptarlo a tus necesidades de forma totalmente libre. Si utilizas el código, a modo de reconocimiento a Aragón Open Data incluye en tu proyecto nuestro logo en el cabecero o en el pie de página, te lo agradeceremos!
 
 ![Logo Aragón Open Data](aragon/static/assets/logoAragonOpenData.png)
 
