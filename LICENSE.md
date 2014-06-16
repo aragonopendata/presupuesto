@@ -63,7 +63,6 @@ In this Licence, the following terms have the following meaning:
   or providing access to its essential functionalities at the disposal
   of any other natural or legal person.
 
-
 2. Scope of the rights granted by the Licence
 
 The Licensor hereby grants You a world-wide, royalty-free,
