@@ -4,13 +4,11 @@ function TaxCalculator() {
     // Calcula el impuesto total a pagar en función de los tramos del IRPF
     // Fuente: http://impuestosrenta.com/tablas-irpf/
     var taxBrackets = [
-      [0, 0.2475],      // [limite inferior del tramo del IRPF, porcentaje a pagar]
-      [17707, 0.30],
-      [33007, 0.40],
-      [53407, 0.47],
-      [120000, 0.49],
-      [175000, 0.51],
-      [300000, 0.52]
+      [0, 0.2],      // [limite inferior del tramo del IRPF, porcentaje a pagar como suma de tramo estatal + tramo autonómico ]
+      [12450, 0.25],
+      [20200, 0.31],
+      [34000, 0.385],
+      [60000, 0.45]
     ];
     var taxToPay = 0;
     for (var i=taxBrackets.length-1; i>=0; i--) {
@@ -50,10 +48,21 @@ function TaxCalculator() {
     var savings = income * 0.10;
     var vat = this.getVATPaid(income - incomeTax - savings);
     var excise = this.getExciseTaxPaid();
-
+    var tramo_ca;
+    //Cálculo de impuestos autonómicos: tramo_ca = incomeTax * (Tramo autonomico / total del porcentaje a pagar [variable] en irpf) + vat * 0.5 + excise * 0.58
+		if (income < 34000){
+      tramo_ca = incomeTax * 0.5 + vat * 0.5 + excise * 0.58;
+    }
+    else if (income < 60000){
+    	tramo_ca = incomeTax * 0.4935 + vat * 0.5 + excise * 0.58;
+    }
+    else{
+    	tramo_ca = incomeTax * 0.4778 + vat * 0.5 + excise * 0.58;
+    }
     return {
       'total' : incomeTax + vat + excise,
-      'tramo_ca' : incomeTax * 0.5 + vat * 0.5 + excise * 0.58
+      'tramo_ca' : tramo_ca
+      
     };
   };
 }
