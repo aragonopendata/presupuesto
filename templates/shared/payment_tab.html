@@ -1,0 +1,17 @@
+{% macro render_tab(title, category, additional_css) %}
+<section role="region" class="tab-content {{additional_css}}" id='tab-{{category}}'>
+  <h1 class="tab-title">{{ title }}</h1>
+  <div class="totals-placeholder"></div>
+  <div class="table-grid" id='{{category}}Grid'></div>
+  <p class="downloads">
+    {{ _('Descarga la tabla de') }} <b>{{title}}</b> en 
+    <a class="icon-file-excel" href="">
+    <span class="file-info">CSV</span>
+    </a>
+    o
+    <a class="icon-file-excel" href="">
+    Excel
+    </a>
+  </p>
+</section>
+{% endmacro %}

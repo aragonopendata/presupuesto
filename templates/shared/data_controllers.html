@@ -2,29 +2,22 @@
   <div class="row-fluid">
     <div class="span4">
       <div id="btn-field-wrapper">
-        <p class="title">Ingresos y gastos</p>
+        <p class="title">{{ _('Ingresos y gastos') }}</p>
         <div id="btn-field" class="btn-group">
-          <button class="btn {{ 'active' if show_side=='income' }}" id="income">Ingresos</button>
+          <button class="btn {{ 'active' if show_side=='income' }}" id="income">{{ _('Ingresos') }}</button>
 {% if display_functional_view %}
-          <button class="btn {{ 'active' if not full_breakdown }}" id="expense">¿Cómo se gasta?</button>
-          <button class="btn {{ 'active' if full_breakdown }}" id="fexpense">¿En qué se gasta?</button>
+          <button class="btn {{ 'active' if not full_breakdown }}" id="expense">{{ _('¿Cómo se gasta?') }}</button>
+          <button class="btn {{ 'active' if full_breakdown }}" id="fexpense">{{ _('¿En qué se gasta?') }}</button>
 {% else %}
-          <button class="btn {{ 'active' if show_side!='income' }}" id="expense">Gastos</button>
+          <button class="btn {{ 'active' if show_side!='income' }}" id="expense">{{ _('Gastos') }}</button>
 {% endif %}
         </div>
       </div>
     </div>
     <div class="span4">
       <div class="quantity-selection">
-        <p class="title">Cantidades</p>
-        <select id="select-format">
-          <option value="nominal">Nominales</option>
-          <option selected="selected" value="real">Reales (ajustadas a inflación)</option>
-          {% if not hide_percentage_format %}
-          <option value="percentage">Porcentaje sobre el total</option>
-          {% endif %}
-          <option value="per_capita">Per-capita (real)</option>
-        </select>
+        <p class="title">{{ _('Cantidades') }}</p>
+        {% include 'shared/data_controllers_select.html' %}
       </div>
     </div>
     {% if show_side %}
@@ -32,7 +25,7 @@
     {% else %}
     <div class="span4">
     {% endif %}
-      <p class="title">Año</p>
+      <p class="title">{{ _('Año') }}</p>
       <div class="layout-slider">
         <input id="year-selection" type="slider" name="price" value="20" />
       </div>

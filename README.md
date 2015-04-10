@@ -18,48 +18,10 @@ Las principales funcionalidades de la aplicación son:
 
  * Permitir la búsqueda de texto libre en el conjunto de los presupuestos para encontrar cualquier dato de forma sencilla
 
-Para más información, consulta las memorias del proyecto para las fases [uno](docs/Memoria Fase 1.pdf) y [dos](docs/Memoria Fase 2.pdf).
+Para más información, consulta las memorias del proyecto para las fases [uno](docs/Memoria Fase 1.pdf) y [dos](docs/Memoria Fase 2.pdf). Y las instrucciones de instalación en el fichero [`INSTALL.md`](INSTALL.md).
 
 [1]: http://presupuesto.aragon.es
 [3]: http://opendata.aragon.es/
-
-### Instalando en local
-
-Para instalar la aplicación en local es necesario seguir los siguientes pasos:
-
-* Crear `project/settings.py` a partir del fichero `project/settings.py-example` suministrado, actualizando los detalles de la base de datos a utilizar.
-
-* Instalar los componentes utilizados por la aplicación. Actualmente, la aplicación no es compatible con versiones de Django superiores a 1.6 por usar el argumento [deprecado][4] `mimetype`, por lo que usaremos una versión anterior:
-
-        $ pip install django=="1.5"
-        $ pip install Coffin Jinja2 Pygments psycopg2 xlwt
-        
-* Borrar base de datos:
-        $ dropdb -h localhost presupuestos
-
-* Crear la base de datos:
-
-        $ createdb -h localhost presupuestos
-        $ python manage.py syncdb
-
-* Cargar los datos básicos:
-
-        $ python manage.py load_glossary
-        $ python manage.py load_entities
-        $ python manage.py load_stats
-        $ python manage.py load_budget 2014
-
-* Cargar los datos de al menos un par de comarcas:
-
-        $ python manage.py load_budget_data comarca 2014Q1
-
-* Arrancar el servidor
-
-        $ python manage.py runserver
-
-Para más información, consulta la [documentación técnica del proyecto](docs/Documentación Técnica.pdf).
-
-[4]: https://docs.djangoproject.com/en/1.7/internals/deprecation/#deprecation-removed-in-1-7
 
 ###Licencia
 

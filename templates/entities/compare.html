@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% from 'shared/entity_select.html' import render_entity_select as render_entity_select %}
 {% block extra_javascript %}
-<script src="{{ STATIC_URL }}javascripts/vis/d3.v3-3-9.min.js"></script>
+<script src="{{ STATIC_URL }}javascripts/vis/d3.v3.min.js"></script>
 <script src="{{ STATIC_URL }}javascripts/vis/bigtext.js"></script>
 <script src="{{ STATIC_URL }}javascripts/vis/budget-treemap.js"></script>
 <script src="{{ STATIC_URL }}javascripts/vis/budget-comparison.js"></script>
@@ -9,21 +9,25 @@
 {% endblock %}
 {% block content %}
 <p>
-  <a href="{{ url('aragon.views.counties') if is_county else url('aragon.views.towns') }}" class="button button-3d grey tupper">
-    ← Volver a la lista de {{ 'comarcas' if is_county else 'municipios' }}
+  <a href="{{ url('budget_app.views.counties') if is_county else url('budget_app.views.towns') }}" class="button button-3d grey tupper">
+    {% if is_county %}
+    ← {{ _('Volver a la lista de comarcas') }}
+    {% else %}
+    ← {{ _('Volver a la lista de municipios') }}
+    {% endif %}
   </a>
 </p>
-<h1 class="page-title">Comparativa</h1>
+<h1 class="page-title">{{ _('Comparativa') }}</h1>
 <div class="comparison">
   <div class="comparison__entities">
     <div class="row-fluid">
       <div class="span6">
 
         <div class="comparison__entity">
-          <h2><a href="{{ url('aragon.views.counties_show' if is_county else 'aragon.views.towns_show', entity_left.slug) }}">{{ entity_left.name }}</a></h2>
+          <h2><a href="{{ url('budget_app.views.counties_show' if is_county else 'budget_app.views.towns_show', entity_left.slug) }}">{{ entity_left.name }}</a></h2>
           {{ render_entity_select('comparator-dropdown-left', entities, entity_left) }}
           <div class="comparison__entity__chart">
-            <h3 class="icon-policy">Políticas</h3>
+            <h3 class="icon-policy">{{ _('Políticas') }}</h3>
             <div id="left-income-chart-container" class="chart-container comparison__entity--chart"></div>
             <div id="left-expense-chart-container" class="chart-container comparison__entity--chart"></div>
           </div>
@@ -35,10 +39,10 @@
       <div class="span6">
 
         <div class="comparison__entity">
-          <h2><a href="{{ url('aragon.views.counties_show' if is_county else 'aragon.views.towns_show', entity_right.slug) }}">{{ entity_right.name }}</a></h2>
+          <h2><a href="{{ url('budget_app.views.counties_show' if is_county else 'budget_app.views.towns_show', entity_right.slug) }}">{{ entity_right.name }}</a></h2>
           {{ render_entity_select('comparator-dropdown-right', entities, entity_right) }}
           <div class="comparison__entity__chart">
-            <h3 class="icon-policy">Políticas</h3>
+            <h3 class="icon-policy">{{ _('Políticas') }}</h3>
             <div id="right-income-chart-container" class="chart-container comparison__entity--chart"></div>
             <div id="right-expense-chart-container" class="chart-container comparison__entity--chart"></div>
           </div>

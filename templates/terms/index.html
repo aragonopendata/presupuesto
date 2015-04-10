@@ -1,19 +1,19 @@
 {% extends 'base.html' %}
 {% from 'shared/pagination.html' import render_pagination_controls as render_pagination_controls %}
 {% block content %}
-<h1 class="page-title">¿Qué significa?</h1>
+<h1 class="page-title">{{ _('¿Qué significa?') }}</h1>
 
-<form class="form-search-glossary" action="{{ url('aragon.views.terms') }}" method="get">
-  <label class="vissuallyhidden" for="q">Consulta</label>
-  <input placeholder="Escribe aquí tu término de búsqueda" class="medium-f" name="q" id="q" type="text">
-  <button class="button button-3d black tupper" type="button">Buscar</button>
+<form class="form-search-glossary" action="{{ url('budget_app.views.terms') }}" method="get">
+  <label class="vissuallyhidden" for="q">{{ _('Consulta') }}</label>
+  <input placeholder="{{ _('Escribe aquí tu término de búsqueda') }}" class="medium-f" name="q" id="q" type="text">
+  <button class="button button-3d black tupper" type="button">{{ _('Buscar') }}</button>
 </form>
 
 <div class="glossary">
   {% for term in terms %}
   <dl>
     <dt class="icon-term">{{ term.title }}</dt>
-    <dd>{{ term.description }}</dd>
+    <dd>{{ term.description|safe }}</dd>
   </dl>
   {% endfor %}
 </div>

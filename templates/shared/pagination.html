@@ -2,9 +2,9 @@
 {% if items.has_other_pages() %}
 <div class="pagination">
   {% if items.has_previous() %}
-    <a class="previous_page" rel="prev" href="?{{ query_string|escape }}page={{ items.previous_page_number() }}">Anterior</a>
+    <a class="previous_page" rel="prev" href="?{{ query_string|escape }}page={{ items.previous_page_number() }}">{{ _('Anterior') }}</a>
   {% else %}
-    <span class="previous_page disabled">Anterior</a>
+    <span class="previous_page disabled">{{ _('Anterior') }}</a>
   {% endif %}
 
   {% for n in items.paginator.page_range %}
@@ -16,9 +16,9 @@
   {% endfor %}
 
   {% if items.has_next() %}
-    <a class="next_page" rel="next" href="?{{ query_string|escape }}page={{ items.next_page_number() }}">Siguiente</a>
+    <a class="next_page" rel="next" href="?{{ query_string|escape }}page={{ items.next_page_number() }}">{{ _('Siguiente') }}</a>
   {% else %}
-    <span class="next_page disabled">Siguiente</a>
+    <span class="next_page disabled">{{ _('Siguiente') }}</a>
   {% endif %}
 </div>
 {% endif %}

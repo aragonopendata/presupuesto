@@ -1,4 +1,4 @@
-<header role="banner">
+<header role="banner" class="hide-when-embedded">
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span6">
@@ -18,7 +18,7 @@
 			</div>
 		</div>
 		<h1 class="main-title">
-			<a href="{{ url('aragon.views.welcome') }}" title="Ir a la home de Presupuestos del Gobierno de Aragón">
+			<a href="{{ url('budget_app.views.welcome') }}" title="Ir a la home de Presupuestos del Gobierno de Aragón">
 				<img id="title-icon" src="{{ STATIC_URL }}assets/logoAragonOpenBudget.png" alt="Logo de Open Budget Aragón" width="40">
 				Presupuestos de Aragón
 			</a>
@@ -32,17 +32,17 @@
 			<h1 class="visuallyhidden">Menú principal</h1>
 
 			<ul class="nav-rwd">
-				<li class="page-budgets"><a href="{{ url('aragon.views.budgets') }}" class="icon-budget">Visión global</a></li>
+				<li class="page-budgets"><a href="{{ url('budget_app.views.budgets') }}" class="icon-budget">Visión global</a></li>
 				<li class="page-policies">
-					<a href="{{ url('aragon.views.policies') }}" class="icon-policy parent">Políticas</a>
+					<a href="{{ url('budget_app.views.policies') }}" class="icon-policy parent">Políticas</a>
 					<ul>
-						<li><a href="{{ url('aragon.views.policies') }}">Gobierno de Aragón</a></li>
-						<li><a href="{{ url('aragon.views.counties') }}">Comarcas</a></li>
-						<li><a href="{{ url('aragon.views.towns') }}">Municipios</a></li>
+						<li><a href="{{ url('budget_app.views.policies') }}">Gobierno de Aragón</a></li>
+						<li><a href="{{ url('budget_app.views.counties') }}">Comarcas</a></li>
+						<li><a href="{{ url('budget_app.views.towns') }}">Municipios</a></li>
 					</ul>
 				</li>
-				<li class="page-tax-receipt"><a href="{{ url('aragon.views.tax_receipt') }}" class="icon-tax">Lo que tú aportas</a></li>
-				<li class="page-glossary"><a href="{{ url('aragon.views.terms') }}" class="icon-glossary">¿Qué significa...?</a></li>
+				<li class="page-tax-receipt"><a href="{{ url('budget_app.views.tax_receipt') }}" class="icon-aportacion">Lo que tú aportas</a></li>
+				<li class="page-glossary"><a href="{{ url('budget_app.views.terms') }}" class="icon-glossary">¿Qué significa...?</a></li>
 			</ul>
 		</div>
 	</nav>

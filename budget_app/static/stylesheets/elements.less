@@ -1,0 +1,624 @@
+html {
+	font-size: 100%;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+// Margins
+div, footer, aside {
+	margin: 0;
+}
+
+nav, section, article, table {
+	margin: 0 0 3em;
+}
+
+header, address, p, ol, ul, dl, blockquote, figure {
+	margin: 0 0 1.5em;
+}
+
+// Apply a natural box layout model to all elements (http://paulirish.com/2012/box-sizing-border-box-ftw/)
+// Polyfill: https://github.com/Schepp/box-sizing-polyfill
+// Info: http://html5please.com/#box-sizing
+img, label, input, textarea, select, button {
+	.border-box;
+}
+
+.no-box-sizing img,
+.no-box-sizing input,
+.no-box-sizing label,
+.no-box-sizing .pseudolabel,
+.no-box-sizing textarea,
+.no-box-sizing select,
+.no-box-sizing button,
+.no-box-sizing .btn {
+	*behavior: url(../assets/boxsizing.htc);
+}
+
+// Document sections
+body {
+	-webkit-font-smoothing: antialiased;/* Thinning Text in Webkit (Safari) (http://orderedlist.com/resources/html-css/thinning-text-in-webkit-safari/)*/	
+	background-color: @bodyBackground;
+	font-family: @baseFontFamily;
+  	font-size: @baseFontSize;
+  	line-height: @baseLineHeight;
+  	color: @textColor;
+}
+
+nav ul li {
+	list-style-type: none;
+	list-style: none;
+}
+
+section {}
+article {}
+header {}
+footer {}
+aside {}
+address {}
+hgroup {}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-family: @headingsFontFamily;
+	font-weight: 800;
+	line-height: 1.125;
+	margin: 0 0 .5em;
+}
+
+h1,.h1 {font-size: 1.5em;}
+h2,.h2 {font-size: 1.25em;}
+h3,.h3 {font-size: 1em;}
+h4,.h4 {font-size: 1em;}
+h5,.h5 {font-size: 1em;}
+h6,.h6 {font-size: 1em;}
+
+
+
+// Text level semantics
+a, a:visited {
+	color: @linkColor;
+	text-decoration: none;
+}
+
+// Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test
+a:hover,
+a:active {
+	color: @linkColorHover;
+	outline: none;
+}
+
+// j.mp/webkit-tap-highlight-color
+a {-webkit-tap-highlight-color: @yellow-note;}
+a:visited {}
+a:hover, a:focus {}
+a:focus {outline: thin dotted;}
+a:active {}
+
+span {}
+rt {}
+rp {}
+
+abbr[title],
+dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+dfn {}
+abbr {}
+cite {color: @black; font-style: italic;}
+q {font-style: italic;}
+time {}
+var {}
+i, em {font-style: italic;}
+i {}
+em {}
+b, strong {font-weight: bold;}
+b {}
+strong {}
+
+// Set sub, sup without affecting line-height: gist.github.com/413930
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -.25em;
+	vertical-align: sub;
+	font-size: smaller;
+}
+
+sup {
+	vertical-align: super;
+	font-size: smaller;
+	top: -.5em;
+}
+
+small {
+	font-size: 85%;
+}
+
+ins,
+mark {
+	padding: 0 .5em;
+	text-decoration: none;
+}
+
+ins {
+	text-decoration: none;
+}
+
+mark {
+	font-style: italic;
+	font-weight: 700;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+code {}
+kbd {}
+samp {}
+ruby {}
+bdo {}
+wbr {}
+
+
+
+// Grouping content
+div {}
+
+pre {
+	// www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+p {}
+
+ul, ol {
+	list-style-image: none;
+}
+
+ul {
+	list-style: circle;
+	list-style-type: circle;
+	margin-left: 1.25em;
+}
+
+ol {
+	list-style-type: decimal;
+	list-style: decimal;
+	list-style-position: inside;
+}
+
+li {
+	margin: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+	list-style-type: disc;
+	list-style: disc;
+	margin: 0;
+	padding-left: 2.25em;
+}
+
+
+dl {}
+
+dt {
+	font-weight: 700;
+}
+
+dd {}
+
+blockquote {
+	font-size: 1.5em;
+	font-style: italic;
+	margin: 0 0 .75em;
+
+	p {
+		margin: 0 0 .5em;
+	}
+
+	footer {
+		font-size: .583em;
+	}
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid lighten(@black, 80%);
+	margin: 1em 0;
+	padding: 0;
+}
+
+br {}
+
+
+
+// Forms
+input, select, optgroup, option, textarea {
+	background-color: @white;// Meter fondo blanco porque algunos navegadores no lo meten
+}
+.pseudolabel, label, input, textarea, select {
+	display: inline-block;
+	.ie7-inline-block;
+	line-height: 1.25;
+}
+
+input, textarea, select {
+	.box-sizing(border-box);// Hacer que el padding y el borde aplicados a estos elementos no influya en su ancho
+}
+
+textarea {
+	overflow: auto;// www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/
+}
+
+.ie6 legend,
+.ie7 legend {
+	margin-left: -7px;// Podría emplearse sin las clases .ie7 o .ie7 empleando: *margin-left: -7px;
+} 
+
+// Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css
+input[type="radio"] {
+	// vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+	// vertical-align: bottom;
+}
+
+.ie7 input[type="checkbox"] {
+	// vertical-align: baseline;
+}
+
+.ie6 input {
+	// vertical-align: text-bottom;
+}
+
+// Hand cursor on clickable input elements
+label,
+input[type="button"],
+input[type="submit"],
+input[type="image"],
+button,
+option {
+	cursor: pointer;
+}
+
+
+
+// 1. Correct font-size not inheriting in all browsers
+// 2. Remove margins in FF3/4 S5 Chrome. Webkit browsers add a 2px margin outside the chrome of form elements.
+// 3. Define consistent vertical alignment display in all browsers
+button, input, select, textarea {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+	*vertical-align: middle;
+	.transition(.25s, ease-out);
+}
+
+// 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+// 2. Correct inner spacing displayed oddly in IE6/7
+button,
+input {
+	line-height: normal;
+	*overflow: visible;
+}
+
+// 1. Display hand cursor for clickable form elements
+// 2. Allow styling of clickable form elements in iOS
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+// Remove inner padding and border in FF3/4 (www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/)
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+form {}
+
+fieldset {
+	border: 0;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+legend {
+	border: 0;
+    display: block;// De fábrica es como si vienera con display-block.
+    font-size: 1.25em;
+    font-weight: 700;
+    margin: 0 0 .5em;
+    padding: 0;// Para neutralizar el padding que trae de fábrica
+    width: 100%;// Para que coja todo el ancho es necesario
+}
+
+label,
+.pseudolabel {
+	cursor: pointer;// Indicate that 'label' will shift focus to the associated form element
+	font-weight: 700;
+	padding: .5em 0;
+	text-align: center;
+	vertical-align: top;
+}
+
+input {}
+textarea {overflow: auto; vertical-align: top;/* Remove default vertical scrollbar in IE6/7/8/9 */}
+select {}
+
+
+
+// Consistent box sizing and appearance
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+}
+
+input[type="search"] {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+// Visual properties
+input, textarea, select {
+	@shadow:
+	0 1px 0 @white,
+	0 0 0 1px @white,
+	0 .25em .5em .05em lighten(@black, 90%) inset,
+	0 0 .25em .05em lighten(@black, 90%);
+	.box-shadow(@shadow);
+	background-position: left 1px;
+	background-repeat: repeat-x;
+	border: 1px solid lighten(@black, 60%);
+	color: lighten(@black, 60%);
+	padding: .375em .5em;
+	vertical-align: middle;
+	.rounded(.125em);
+}
+
+input,
+textarea,
+select {
+	&:hover {
+		@shadow:
+		0 1px 0 @white,
+		0 0 0 1px @white,
+		0 .25em .5em .05em lighten(@black, 85%) inset,
+		0 0 .25em .05em lighten(@black, 85%);
+		.box-shadow(@shadow);
+		border: 1px solid lighten(@black, 50%);
+		color:  lighten(@black, 40%);
+		cursor: pointer;
+	}
+
+	&:focus {
+		@shadow:
+		0 1px 0 @white,
+		0 0 0 1px @white,
+		0 .25em .5em .05em fadeout(@formControlFocus, 80%) inset,
+		0 0 .5em fadeout(@formControlFocus, 60%);
+		.box-shadow(@shadow);
+		color: lighten(@black, 20%);
+		border: 1px solid @formControlFocus;
+		cursor: default;
+		text-shadow: 0 0 .05em lighten(@black, 70%);
+	}
+}
+
+
+
+optgroup,
+option {
+	padding: 0 1em;// Un poco de padding lateral para que los textos no se peguen al borde del select
+}
+
+optgroup {
+	font-style: normal;// Evitar negrita que trae de fábrica, si así se desea al menos
+}
+
+// Make buttons play nice in IE: www.viget.com/inspire/styling-the-button-element-in-internet-explorer/
+button {
+	overflow: visible;
+	width: auto;
+}
+
+meter {}
+output {}
+datalist {}
+keygen {}
+progress {}
+
+
+
+// colors for form validity
+input,
+textarea {
+	&:valid {
+
+	}
+
+	&:invalid {
+		
+	}
+}
+
+
+
+// Tabular data
+col {}
+colgroup {}
+
+caption {
+	font-size: 1em;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 1.25;
+	width: 100%;
+}
+
+tbody {}
+thead {}
+tfoot {}
+tr {}
+
+td {
+	vertical-align: top;
+}
+
+th {
+	text-align: left;
+}
+
+td {}
+
+
+
+// Interactive elements
+menu {}
+command {}
+summary {}
+details {}
+
+
+
+// Embedding content
+// Bicubic resizing for non-native sized IMG: code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+.ie7 img {
+	-ms-interpolation-mode: bicubic;
+}
+
+// Correct overflow displayed oddly in IE9
+svg:not(:root) {
+	overflow: hidden;
+}
+
+img {
+   max-width: 100%;// to prevent overflow
+   height: auto;// to keep aspect ratio
+   width: auto;// bugfix for IE8
+   box-sizing: border-box;// to prevent overflow when border or padding added
+}
+
+area {}
+map {}
+embed {}
+object {}
+param {}
+source {}
+iframe {}
+canvas {}
+audio {}
+video {}
+track {}
+device {}
+
+
+
+// Quotes and blockquotes
+// More info and HTML5 examples: http://html5doctor.com/blockquote-q-cite/#punctuation-characters
+
+q {
+	quotes: '“' '”' '‘' '’';// opening followed by closing quote pairs
+}
+
+// The equivalent using Unicode escapes:
+// q {quotes: '\201C' '\201D' '\2018' '\2019';}
+q:before {content: open-quote;}
+q:after {content: close-quote;}
+
+// four levels of nested quotes
+q {quotes: '“' '”' '‘' '’' '“' '”' '‘' '’';}
+
+// for two levels of nested quotations
+q {quotes: '“' '”' '‘' '’';}
+
+// extra content definitions for pre-2011 WebKit
+q:before {content: '“'; content: open-quote;}
+q:after {content: '”'; content: close-quote;}
+q q:before {content: '‘'; content: open-quote;}
+q q:after {content: '’'; content: close-quote;}
+
+// q in blockquote
+blockquote q:before {content: '‘'; content: open-quote;}
+blockquote q:after {content: '’'; content: close-quote;}
+blockquote q q:before {content: '“'; content: open-quote;}
+blockquote q q:after {content: '”'; content: close-quote;}
+
+// alternative blockquote style
+blockquote {quotes: '“' '”';}
+blockquote p:before {content: '“'; content: open-quote;}
+blockquote p:after {content: ''; content: no-close-quote;}
+blockquote p:last-child:after {content: '”'; content: close-quote;}
+
+// quotes for French, German (two kinds) and Japanese
+:lang(fr) > q {quotes: '« ' ' »' '“' '”';}
+:lang(de) > q {quotes: '„' '“' '‚' '‘';}
+:lang(de) > q {quotes: '»' '«' '›' '‹';} // alternative style
+:lang(ja) > q {quotes: '「' '」' '『' '』';}
+
+
+
+// Selection
+// These selection declarations have to be separate.
+// Evitamos uso de text-shadow (heredado de otras declaraciones) porque sino se hace complicado ver el texto seleccionado.
+::-moz-selection {
+	background: @yellow-note;
+	color:@black;
+	text-shadow: none;
+}
+
+::selection {
+	background: @yellow-note;
+	color:@black;
+	text-shadow: none;
+}
+
+@media screen and (min-width: 30em) {
+	h1, .h1 {font-size: 2.5em;}
+	h2, .h2 {font-size: 1.75em;}
+	h3, .h3 {font-size: 1.5em;}
+	h4, .h4 {font-size: 1.25em;}
+	h5, .h5 {font-size: 1em;}
+	h6, .h6 {font-size: 1em;}
+}
+
+@media screen and (min-width: 48em) {
+	label,
+	.pseudolabel {
+		text-align: left;
+	}
+}

@@ -1,0 +1,57 @@
+// Apply to an element to show grid elements
+.show-grid .row-fluid > [class*="span"],
+.show-grid label[class*="span"], .show-grid input[class*="span"], .show-grid select[class*="span"]
+{background: rgba(255, 128, 0, .15) url(../assets/show-grid.png); margin-bottom: 1em;}
+
+// Show the pads
+.show-grid [class*="pad-"] {background: rgba(255, 255, 0, .05);}
+
+
+
+// Block grids
+
+// For IE7/8 compatibility block-fluid items need to be
+// the same height. You can optionally uncomment the
+// lines below to support arbitrary height, but know
+// that IE7/8 do not support :nth-child. Si se mete
+// Selectivzr (http://selectivizr.com/) permite soportarlo.
+// Si no queremos usar :nth-child + Selectivzr podemos
+// usar la clase .row-clear en los items impares para
+// comenzar con una nueva fila.
+
+
+// Ejemplo de HTML:
+// <ul class="block-fluid row-items4">
+// 	<li>Item1</li><li>Item2</li><li>Item3</li><li>Item4</li>
+// 	<li>Item5</li><li>Item6</li><li>Item7</li><li>Item8</li>
+// 	<li>Item9</li>
+// </ul>
+	
+.block-fluid {.clearfix;}
+.block-fluid>* {float: left; padding: 0;}
+
+// Clase auxiliar a aplicar cuando queremos que un elemento sea el primero de la fila.
+// No es necesario usar si se carga Selectivzr (http://selectivizr.com/) y se emplean las clases referidas a las columnas impares.
+.block-fluid .row-clear {clear: left;}
+
+.block-fluid.row-items2 {margin-left: -4%;}
+.block-fluid.row-items2>* {margin-left: 4%; width: 46%;}
+.block-fluid.row-items2>*:nth-child(2n+1) {clear: left;}
+
+.block-fluid.row-items3 {margin-left: -2%;}
+.block-fluid.row-items3>* {margin-left: 2%; width: 31.3%;}
+.block-fluid.row-items3>*:nth-child(3n+1) {clear: left;}
+
+.block-fluid.row-items4 {margin-left: -2%;}
+.block-fluid.row-items4>* {margin-left: 2%; width: 23%;}
+.block-fluid.row-items4>*:nth-child(4n+1) {clear: left;}
+
+.block-fluid.row-items5 {margin-left: -1.5%;}
+.block-fluid.row-items5>* {margin-left: 1.5%; width: 18.5%;}
+.block-fluid.row-items5>*:nth-child(5n+1) {clear: left;}
+
+@media (max-width: 48em) {
+	.block-fluid[class*="row-items"] {margin-left: 0;}
+	.block-fluid[class*="row-items"] > * {float: none; margin-left: 0; width: auto;}
+	.block-fluid .row-clear {clear: none;}
+}

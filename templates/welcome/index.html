@@ -5,16 +5,16 @@
     <div class="row-fluid">
       <div class="span6">
         <div class="intro">
-          <h1>¿Cómo y en qué gasta el Gobierno de Aragón?</h1>
-          <p class="intro-text">Te mostramos de un modo claro cómo se distribuye nuestro presupuesto. De dónde vienen los ingresos y a qué destinamos el gasto.</p>
+          <h1>{{ _('¿Cómo y en qué gasta el Gobierno de Aragón?') }}</h1>
+          <p class="intro-text">{{ _('Te mostramos de un modo claro cómo se distribuye nuestro presupuesto. De dónde vienen los ingresos y a qué destinamos el gasto') }}.</p>
         </div>
       </div>
       <div class="span6">
         <div class="expense-examples">
-          <p class="title">Algunos ejemplos:</p>
+          <p class="title">{{ _('Algunos ejemplos') }}:</p>
           <ul>
             {% for programme in featured_programmes %}
-            <li><a href="{% url 'aragon.views.programmes_show' programme.uid(), programme.slug() %}">                {{ programme.description }}</a>
+            <li><a href="{% url 'budget_app.views.programmes_show' programme.uid(), programme.slug() %}">                {{ programme.description }}</a>
               &rarr; <b>{{ formatter( breakdown.subtotals[programme.uid()].total_expense[latest_budget.year] / 100 ) }} €</b></li>
             {% endfor %}
           </ul>
@@ -25,33 +25,33 @@
   <div class="options">
     <div class="option-global">
       <div data-icon="B" aria-hidden="true" class="icon mega"></div>
-      <h2>Visión global</h2>
-      <p class="desc">Para que tengas una idea general de los ingresos y gastos del Gobierno de Aragón.</p>
-      <p><a href="{{ url('aragon.views.budgets') }}" class="button button-3d magenta icon-plus">Visión global</a></p>
+      <h2>{{ _('Visión global') }}</h2>
+      <p class="desc">{{ _('Para que tengas una idea general de los ingresos y gastos del Gobierno de Aragón') }}.</p>
+      <p><a href="{{ url('budget_app.views.budgets') }}" class="button button-3d magenta icon-plus">Visión global</a></p>
     </div>
     <div class="option-policies">
       <div data-icon="P" aria-hidden="true" class="icon mega"></div>
-      <h2>Políticas concretas</h2>
+      <h2>{{ _('Políticas concretas') }}</h2>
         <ul>
-          <li><a href="#">Gobierno de Aragón</a></li>
-          <li><a href="#">Comarcas</a></li>
-          <li><a href="#">Municipios</a></li>
+          <li><a href="{{ url('budget_app.views.policies') }}">{{ _('Gobierno de Aragón') }}</a></li>
+          <li><a href="{{ url('budget_app.views.counties') }}">{{ _('Comarcas') }}</a></li>
+          <li><a href="{{ url('budget_app.views.towns') }}">{{ _('Municipios') }}</a></li>
         </ul>
-      <p><a href="{{ url('aragon.views.policies') }}" class="button button-3d blue icon-plus">Políticas</a></p>
+      <p><a href="{{ url('budget_app.views.policies') }}" class="button button-3d blue icon-plus">Políticas</a></p>
     </div>
 
     <div class="option-tax">
       <div data-icon="&#x63;" aria-hidden="true" class="icon mega"></div>
       <h2>¿Y qué aporto yo?</h2>
       <p class="desc">Te contamos en qué se invierte el dinero que recaudamos de tus impuestos.</p>
-      <p><a href="{{ url('aragon.views.tax_receipt') }}" class="button button-3d green icon-plus">Lo que tú aportas</a></p>
+      <p><a href="{{ url('budget_app.views.tax_receipt') }}" class="button button-3d green icon-plus">Lo que tú aportas</a></p>
     </div>
   </div>
 </section>
 
 <script>
-  $('.option-global').click(function(){window.location = '{{ url('aragon.views.budgets') }}';});
-  $('.option-policies').click(function(){window.location = '{{ url('aragon.views.policies') }}';});
-  $('.option-tax').click(function(){window.location = '{{ url('aragon.views.tax_receipt') }}';});
+  $('.option-global').click(function(){window.location = '{{ url('budget_app.views.budgets') }}';});
+  $('.option-policies').click(function(){window.location = '{{ url('budget_app.views.policies') }}';});
+  $('.option-tax').click(function(){window.location = '{{ url('budget_app.views.tax_receipt') }}';});
 </script>
 {% endblock %} 

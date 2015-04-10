@@ -1,0 +1,3045 @@
+# España: Datos de población del INE, a 1 de Enero:
+#   http://www.ine.es/jaxiBD/tabla.do?per=12&type=db&divi=DPOP&idtab=1
+#
+# Aragón: Datos de población del IAEST, a 1 de Enero del año en cuestión: 
+#   http://www.aragon.es/DepartamentosOrganismosPublicos/Organismos/InstitutoAragonesEstadistica/AreasTematicas/02_Demografia_Y_Poblacion/01_CifrasPoblacion_Y_Censos/02_Estimaciones_Y_Proyecciones/ci.01_Estimaciones_poblacion_actual.detalleDepartamento
+# Reutilizamos la población de 2012 para 2013 y 2014, porque no hay datos más actualizados
+#
+# Población comarcal y municipal (Evolución de la población > Evolución histórica): 
+#   http://www.aragon.es/DepartamentosOrganismosPublicos/Organismos/InstitutoAragonesEstadistica/AreasGenericas/ci.EstadisticaLocal.detalleDepartamento
+# Descargar el fichero en formato Excel 2000, los otros no terminan de funcionar bien.
+# Mucho ojo con los ceros al final de las cantidades: al usar . como separador de miles Excel los elimina
+#
+CA1,Aragón,2005,1243464
+CA1,Aragón,2006,1258847
+CA1,Aragón,2007,1275904
+CA1,Aragón,2008,1297581
+CA1,Aragón,2009,1313735
+CA1,Aragón,2010,1313020
+CA1,Aragón,2011,1314905
+CA1,Aragón,2012,1314869
+CA1,Aragón,2013,1311924
+CA1,Aragón,2014,1311924
+01,La Jacetania,2010,18664
+02,Alto Gállego,2010,14921
+03,Sobrarbe,2010,7718
+04,La Ribagorza,2010,13473
+05,Cinco Villas,2010,33331
+06,Hoya de Huesca / Plana de Uesca,2010,68428
+07,Somontano de Barbastro,2010,24410
+08,Cinca Medio,2010,24051
+09,La Litera / La Llitera,2010,19161
+10,Los Monegros,2010,20942
+11,Bajo Cinca / Baix Cinca,2010,24670
+12,Tarazona y el Moncayo,2010,14730
+13,Campo de Borja,2010,15517
+14,Aranda,2010,7617
+15,Ribera Alta del Ebro,2010,27827
+16,Valdejalón,2010,30533
+17,D.C. Zaragoza,2010,746719
+18,Ribera Baja del Ebro,2010,9452
+19,Bajo Aragón-Caspe / Baix Aragó-Casp,2010,15016
+20,Comunidad de Calatayud,2010,42013
+21,Campo de Cariñena,2010,11173
+22,Campo de Belchite,2010,5260
+23,Bajo Martín,2010,7135
+24,Campo de Daroca,2010,6192
+25,Jiloca,2010,14142
+26,Cuencas Mineras,2010,9094
+27,Andorra-Sierra de Arcos,2010,11523
+28,Bajo Aragón,2010,30311
+29,Comunidad de Teruel,2010,46957
+30,Maestrazgo,2010,3682
+31,Sierra de Albarracín,2010,4930
+32,Gúdar-Javalambre,2010,8610
+33,Matarraña / Matarranya,2010,8893
+01,La Jacetania,2011,18709
+02,Alto Gállego,2011,14820
+03,Sobrarbe,2011,7790
+04,La Ribagorza,2011,13395
+05,Cinco Villas,2011,33150
+06,Hoya de Huesca / Plana de Uesca,2011,68484
+07,Somontano de Barbastro,2011,24304
+08,Cinca Medio,2011,24128
+09,La Litera / La Llitera,2011,19135
+10,Los Monegros,2011,20839
+11,Bajo Cinca / Baix Cinca,2011,24609
+12,Tarazona y el Moncayo,2011,14765
+13,Campo de Borja,2011,15446
+14,Aranda,2011,7501
+15,Ribera Alta del Ebro,2011,27775
+16,Valdejalón,2011,30018
+17,D.C. Zaragoza,2011,748360
+18,Ribera Baja del Ebro,2011,9412
+19,Bajo Aragón-Caspe / Baix Aragó-Casp,2011,15077
+20,Comunidad de Calatayud,2011,41013
+21,Campo de Cariñena,2011,11350
+22,Campo de Belchite,2011,5284
+23,Bajo Martín,2011,7057
+24,Campo de Daroca,2011,6322
+25,Jiloca,2011,13937
+26,Cuencas Mineras,2011,9043
+27,Andorra-Sierra de Arcos,2011,11450
+28,Bajo Aragón,2011,30341
+29,Comunidad de Teruel,2011,46848
+30,Maestrazgo,2011,3670
+31,Sierra de Albarracín,2011,4981
+32,Gúdar-Javalambre,2011,8475
+33,Matarraña / Matarranya,2011,8805
+01,La Jacetania,2012,18537
+02,Alto Gállego,2012,14641
+03,Sobrarbe,2012,7812
+04,La Ribagorza,2012,13182
+05,Cinco Villas,2012,32661
+06,Hoya de Huesca / Plana de Uesca,2012,68186
+07,Somontano de Barbastro,2012,24428
+08,Cinca Medio,2012,24145
+09,La Litera / La Llitera,2012,18961
+10,Los Monegros,2012,20633
+11,Bajo Cinca / Baix Cinca,2012,24828
+12,Tarazona y el Moncayo,2012,14666
+13,Campo de Borja,2012,15371
+14,Aranda,2012,7412
+15,Ribera Alta del Ebro,2012,27913
+16,Valdejalón,2012,29730
+17,D.C. Zaragoza,2012,754880
+18,Ribera Baja del Ebro,2012,9349
+19,Bajo Aragón-Caspe / Baix Aragó-Casp,2012,15039
+20,Comunidad de Calatayud,2012,40899
+21,Campo de Cariñena,2012,11059
+22,Campo de Belchite,2012,5188
+23,Bajo Martín,2012,6942
+24,Campo de Daroca,2012,6219
+25,Jiloca,2012,13697
+26,Cuencas Mineras,2012,8894
+27,Andorra-Sierra de Arcos,2012,11299
+28,Bajo Aragón,2012,30080
+29,Comunidad de Teruel,2012,47223
+30,Maestrazgo,2012,3602
+31,Sierra de Albarracín,2012,4930
+32,Gúdar-Javalambre,2012,8328
+33,Matarraña / Matarranya,2012,8733
+22001,Abiego,2010,281
+22002,Abizanda,2010,132
+22003,Adahuesca,2010,166
+22004,Agüero,2010,164
+22006,Aísa,2010,362
+22007,Albalate de Cinca,2010,1237
+22008,Albalatillo,2010,243
+22009,Albelda,2010,847
+22011,Albero Alto,2010,132
+22012,Albero Bajo,2010,96
+22013,Alberuela de Tubo,2010,355
+22014,Alcalá de Gurrea,2010,278
+22015,Alcalá del Obispo,2010,491
+22016,Alcampell,2010,782
+22017,Alcolea de Cinca,2010,1164
+22018,Alcubierre,2010,433
+22019,Alerre,2010,223
+22020,Alfántega,2010,125
+22021,Almudévar,2010,2554
+22022,Almunia de San Juan,2010,664
+22023,Almuniente,2010,559
+22024,Alquézar,2010,313
+22025,Altorricón,2010,1506
+22027,Angüés,2010,429
+22028,Ansó,2010,491
+22029,Antillón,2010,150
+22032,Aragüés del Puerto,2010,128
+22035,Arén,2010,363
+22036,Argavieso,2010,119
+22037,Arguis,2010,118
+22039,Ayerbe,2010,1119
+22040,Azanuy-Alins,2010,174
+22041,Azara,2010,200
+22042,Azlor,2010,135
+22043,Baells,2010,120
+22044,Bailo,2010,296
+22045,Baldellou,2010,117
+22046,Ballobar,2010,981
+22047,Banastás,2010,270
+22048,Barbastro,2010,17080
+22049,Barbués,2010,98
+22050,Barbuñales,2010,109
+22051,Bárcabo,2010,129
+22052,Belver de Cinca,2010,1362
+22053,Benabarre,2010,1177
+22054,Benasque,2010,2219
+22055,Berbegal,2010,441
+22057,Bielsa,2010,511
+22058,Bierge,2010,258
+22059,Biescas,2010,1634
+22060,Binaced,2010,1494
+22061,Binéfar,2010,9407
+22062,Bisaurri,2010,208
+22063,Biscarrués,2010,228
+22064,Blecua y Torres,2010,208
+22066,Boltaña,2010,1051
+22067,Bonansa,2010,102
+22068,Borau,2010,81
+22069,Broto,2010,542
+22072,Caldearenas,2010,246
+22074,Campo,2010,355
+22075,Camporrells,2010,193
+22076,Canal de Berdún,2010,396
+22077,Candasnos,2010,409
+22078,Canfranc,2010,624
+22079,Capdesaso,2010,163
+22080,Capella,2010,366
+22081,Casbas de Huesca,2010,299
+22082,Castejón del Puente,2010,399
+22083,Castejón de Monegros,2010,661
+22084,Castejón de Sos,2010,788
+22085,Castelflorite,2010,130
+22086,Castiello de Jaca,2010,256
+22087,Castigaleu,2010,119
+22088,Castillazuelo,2010,193
+22089,Castillonroy,2010,378
+22090,Colungo,2010,147
+22094,Chalamera,2010,128
+22095,Chía,2010,105
+22096,Chimillas,2010,359
+22099,Esplús,2010,677
+22102,Estada,2010,236
+22103,Estadilla,2010,860
+22105,Estopiñán del Castillo,2010,177
+22106,Fago,2010,26
+22107,Fanlo,2010,138
+22109,Fiscal,2010,317
+22110,Fonz,2010,1035
+22111,Foradada del Toscar,2010,215
+22112,Fraga,2010,14539
+22113,Fueva (La),2010,619
+22114,Gistaín,2010,145
+22115,Grado (El),2010,493
+22116,Grañén,2010,1930
+22117,Graus,2010,3700
+22119,Gurrea de Gállego,2010,1664
+22122,Hoz de Jaca,2010,71
+22124,Huerto,2010,272
+22125,Huesca,2010,52347
+22126,Ibieca,2010,108
+22127,Igriés,2010,627
+22128,Ilche,2010,246
+22129,Isábena,2010,313
+22130,Jaca,2010,13374
+22131,Jasa,2010,116
+22133,Labuerda,2010,167
+22135,Laluenga,2010,220
+22136,Lalueza,2010,1101
+22137,Lanaja,2010,1417
+22139,Laperdiguera,2010,102
+22141,Lascellas-Ponzano,2010,154
+22142,Lascuarre,2010,157
+22143,Laspaúles,2010,297
+22144,Laspuña,2010,289
+22149,Loarre,2010,371
+22150,Loporzano,2010,540
+22151,Loscorrales,2010,108
+22155,Monesma y Cajigar,2010,106
+22156,Monflorite-Lascasas,2010,312
+22157,Montanuy,2010,285
+22158,Monzón,2010,17115
+22160,Naval,2010,265
+22162,Novales,2010,181
+22163,Nueno,2010,557
+22164,Olvena,2010,58
+22165,Ontiñena,2010,586
+22167,Osso de Cinca,2010,735
+22168,Palo,2010,24
+22170,Panticosa,2010,819
+22172,Peñalba,2010,761
+22173,Peñas de Riglos (Las),2010,268
+22174,Peralta de Alcofea,2010,618
+22175,Peralta de Calasanz,2010,235
+22176,Peraltilla,2010,200
+22177,Perarrúa,2010,112
+22178,Pertusa,2010,113
+22181,Piracés,2010,104
+22182,Plan,2010,336
+22184,Poleñino,2010,226
+22186,Pozán de Vero,2010,244
+22187,Puebla de Castro (La),2010,433
+22188,Puente de Montañana,2010,148
+22189,Puértolas,2010,241
+22190,Pueyo de Araguás (El),2010,150
+22193,Pueyo de Santa Cruz,2010,369
+22195,Quicena,2010,302
+22197,Robres,2010,630
+22199,Sabiñánigo,2010,10383
+22200,Sahún,2010,360
+22201,Salas Altas,2010,311
+22202,Salas Bajas,2010,149
+22203,Salillas,2010,110
+22204,Sallent de Gállego,2010,1542
+22205,San Esteban de Litera,2010,526
+22206,Sangarrén,2010,242
+22207,San Juan de Plan,2010,153
+22208,Santa Cilia,2010,209
+22209,Santa Cruz de la Serós,2010,136
+22212,Santaliestra y San Quílez,2010,106
+22213,Sariñena,2010,4428
+22214,Secastilla,2010,150
+22215,Seira,2010,156
+22217,Sena,2010,548
+22218,Senés de Alcubierre,2010,68
+22220,Sesa,2010,225
+22221,Sesué,2010,127
+22222,Siétamo,2010,665
+22223,Sopeira,2010,120
+22225,Tamarite de Litera,2010,3730
+22226,Tardienta,2010,1007
+22227,Tella-Sin,2010,266
+22228,Tierz,2010,691
+22229,Tolva,2010,171
+22230,Torla,2010,328
+22232,Torralba de Aragón,2010,111
+22233,Torre la Ribera,2010,117
+22234,Torrente de Cinca,2010,1276
+22235,Torres de Alcanadre,2010,106
+22236,Torres de Barbués,2010,303
+22239,Tramaced,2010,100
+22242,Valfarta,2010,87
+22243,Valle de Bardají,2010,50
+22244,Valle de Lierp,2010,65
+22245,Velilla de Cinca,2010,450
+22246,Veracruz,2010,104
+22247,Viacamp y Litera,2010,48
+22248,Vicién,2010,122
+22249,Villanova,2010,154
+22250,Villanúa,2010,492
+22251,Villanueva de Sigena,2010,512
+22252,Yebra de Basa,2010,155
+22253,Yésero,2010,71
+22254,Zaidín,2010,1709
+22901,Valle de Hecho,2010,960
+22902,Puente la Reina de Jaca,2010,215
+22903,San Miguel del Cinca,2010,848
+22904,Sotonera (La),2010,1061
+22905,Lupiñén-Ortilla,2010,397
+22906,Santa María de Dulcis,2010,221
+22907,Aínsa-Sobrarbe,2010,2180
+22908,Hoz y Costeán,2010,205
+22909,Vencillón,2010,469
+44001,Ababuj,2010,77
+44002,Abejuela,2010,56
+44003,Aguatón,2010,21
+44004,Aguaviva,2010,693
+44005,Aguilar del Alfambra,2010,67
+44006,Alacón,2010,361
+44007,Alba,2010,248
+44008,Albalate del Arzobispo,2010,2155
+44009,Albarracín,2010,1096
+44010,Albentosa,2010,310
+44011,Alcaine,2010,69
+44012,Alcalá de la Selva,2010,513
+44013,Alcañiz,2010,16291
+44014,Alcorisa,2010,3642
+44016,Alfambra,2010,676
+44017,Aliaga,2010,381
+44018,Almohaja,2010,29
+44019,Alobras,2010,70
+44020,Alpeñés,2010,27
+44021,Allepuz,2010,133
+44022,Alloza,2010,711
+44023,Allueva,2010,15
+44024,Anadón,2010,21
+44025,Andorra,2010,8367
+44026,Arcos de las Salinas,2010,111
+44027,Arens de Lledó,2010,213
+44028,Argente,2010,232
+44029,Ariño,2010,925
+44031,Azaila,2010,139
+44032,Bádenas,2010,22
+44033,Báguena,2010,398
+44034,Bañón,2010,167
+44035,Barrachina,2010,167
+44036,Bea,2010,37
+44037,Beceite,2010,608
+44038,Belmonte de San José,2010,137
+44039,Bello,2010,284
+44040,Berge,2010,274
+44041,Bezas,2010,79
+44042,Blancas,2010,166
+44043,Blesa,2010,121
+44044,Bordón,2010,141
+44045,Bronchales,2010,480
+44046,Bueña,2010,67
+44047,Burbáguena,2010,296
+44048,Cabra de Mora,2010,88
+44049,Calaceite,2010,1145
+44050,Calamocha,2010,4649
+44051,Calanda,2010,4004
+44052,Calomarde,2010,84
+44053,Camañas,2010,125
+44054,Camarena de la Sierra,2010,165
+44055,Camarillas,2010,119
+44056,Caminreal,2010,758
+44059,Cantavieja,2010,748
+44060,Cañada de Benatanduz,2010,42
+44061,Cañada de Verich (La),2010,111
+44062,Cañada Vellida,2010,42
+44063,Cañizar del Olivar,2010,109
+44064,Cascante del Río,2010,79
+44065,Castejón de Tornos,2010,70
+44066,Castel de Cabra,2010,140
+44067,Castelnou,2010,120
+44068,Castelserás,2010,831
+44070,Castellar (El),2010,68
+44071,Castellote,2010,804
+44074,Cedrillas,2010,623
+44075,Celadas,2010,440
+44076,Cella,2010,2951
+44077,Cerollera (La),2010,113
+44080,Codoñera (La),2010,397
+44082,Corbalán,2010,99
+44084,Cortes de Aragón,2010,75
+44085,Cosa,2010,64
+44086,Cretas,2010,618
+44087,Crivillén,2010,93
+44088,Cuba (La),2010,52
+44089,Cubla,2010,61
+44090,Cucalón,2010,102
+44092,Cuervo (El),2010,107
+44093,Cuevas de Almudén,2010,133
+44094,Cuevas Labradas,2010,141
+44096,Ejulve,2010,198
+44097,Escorihuela,2010,185
+44099,Escucha,2010,1015
+44100,Estercuel,2010,271
+44101,Ferreruela de Huerva,2010,74
+44102,Fonfría,2010,30
+44103,Formiche Alto,2010,190
+44105,Fórnoles,2010,103
+44106,Fortanete,2010,224
+44107,Foz-Calanda,2010,296
+44108,Fresneda (La),2010,511
+44109,Frías de Albarracín,2010,156
+44110,Fuenferrada,2010,37
+44111,Fuentes Calientes,2010,119
+44112,Fuentes Claras,2010,590
+44113,Fuentes de Rubielos,2010,127
+44114,Fuentespalda,2010,341
+44115,Galve,2010,154
+44116,Gargallo,2010,118
+44117,Gea de Albarracín,2010,430
+44118,Ginebrosa (La),2010,229
+44119,Griegos,2010,134
+44120,Guadalaviar,2010,243
+44121,Gúdar,2010,84
+44122,Híjar,2010,1899
+44123,Hinojosa de Jarque,2010,151
+44124,Hoz de la Vieja (La),2010,88
+44125,Huesa del Común,2010,90
+44126,Iglesuela del Cid (La),2010,505
+44127,Jabaloyas,2010,81
+44128,Jarque de la Val,2010,90
+44129,Jatiel,2010,52
+44130,Jorcas,2010,43
+44131,Josa,2010,34
+44132,Lagueruela,2010,62
+44133,Lanzuela,2010,25
+44135,Libros,2010,153
+44136,Lidón,2010,57
+44137,Linares de Mora,2010,313
+44138,Loscos,2010,177
+44141,Lledó,2010,170
+44142,Maicas,2010,42
+44143,Manzanera,2010,551
+44144,Martín del Río,2010,469
+44145,Mas de las Matas,2010,1415
+44146,Mata de los Olmos (La),2010,289
+44147,Mazaleón,2010,586
+44148,Mezquita de Jarque,2010,120
+44149,Mirambel,2010,125
+44150,Miravete de la Sierra,2010,38
+44151,Molinos,2010,303
+44152,Monforte de Moyuela,2010,69
+44153,Monreal del Campo,2010,2765
+44154,Monroyo,2010,379
+44155,Montalbán,2010,1408
+44156,Monteagudo del Castillo,2010,71
+44157,Monterde de Albarracín,2010,69
+44158,Mora de Rubielos,2010,1706
+44159,Moscardón,2010,71
+44160,Mosqueruela,2010,608
+44161,Muniesa,2010,669
+44163,Noguera de Albarracín,2010,134
+44164,Nogueras,2010,35
+44165,Nogueruelas,2010,237
+44167,Obón,2010,36
+44168,Odón,2010,220
+44169,Ojos Negros,2010,489
+44171,Olba,2010,237
+44172,Oliete,2010,479
+44173,Olmos (Los),2010,128
+44174,Orihuela del Tremedal,2010,564
+44175,Orrios,2010,159
+44176,Palomar de Arroyos,2010,198
+44177,Pancrudo,2010,136
+44178,Parras de Castellote (Las),2010,73
+44179,Peñarroya de Tastavins,2010,517
+44180,Peracense,2010,89
+44181,Peralejos,2010,78
+44182,Perales del Alfambra,2010,279
+44183,Pitarque,2010,96
+44184,Plou,2010,43
+44185,Pobo (El),2010,139
+44187,Portellada (La),2010,262
+44189,Pozondón,2010,83
+44190,Pozuel del Campo,2010,100
+44191,Puebla de Híjar (La),2010,1006
+44192,Puebla de Valverde (La),2010,571
+44193,Puertomingalvo,2010,207
+44194,Ráfales,2010,170
+44195,Rillo,2010,113
+44196,Riodeva,2010,180
+44197,Ródenas,2010,79
+44198,Royuela,2010,248
+44199,Rubiales,2010,57
+44200,Rubielos de la Cérida,2010,45
+44201,Rubielos de Mora,2010,772
+44203,Salcedillo,2010,8
+44204,Saldón,2010,29
+44205,Samper de Calanda,2010,925
+44206,San Agustín,2010,150
+44207,San Martín del Río,2010,199
+44208,Santa Cruz de Nogueras,2010,36
+44209,Santa Eulalia,2010,1152
+44210,Sarrión,2010,1140
+44211,Segura de los Baños,2010,40
+44212,Seno,2010,49
+44213,Singra,2010,98
+44215,Terriente,2010,186
+44216,Teruel,2010,35241
+44217,Toril y Masegoso,2010,34
+44218,Tormón,2010,32
+44219,Tornos,2010,232
+44220,Torralba de los Sisones,2010,216
+44221,Torrecilla de Alcañiz,2010,440
+44222,Torrecilla del Rebollar,2010,151
+44223,Torre de Arcas,2010,96
+44224,Torre de las Arcas,2010,37
+44225,Torre del Compte,2010,153
+44226,Torrelacárcel,2010,223
+44227,Torre los Negros,2010,105
+44228,Torremocha de Jiloca,2010,148
+44229,Torres de Albarracín,2010,175
+44230,Torrevelilla,2010,214
+44231,Torrijas,2010,66
+44232,Torrijo del Campo,2010,539
+44234,Tramacastiel,2010,98
+44235,Tramacastilla,2010,107
+44236,Tronchón,2010,106
+44237,Urrea de Gaén,2010,525
+44238,Utrillas,2010,3309
+44239,Valacloche,2010,30
+44240,Valbona,2010,224
+44241,Valdealgorfa,2010,685
+44243,Valdecuenca,2010,56
+44244,Valdelinares,2010,116
+44245,Valdeltormo,2010,328
+44246,Valderrobres,2010,2290
+44247,Valjunquera,2010,403
+44249,Vallecillo (El),2010,47
+44250,Veguillas de la Sierra,2010,28
+44251,Villafranca del Campo,2010,352
+44252,Villahermosa del Campo,2010,99
+44256,Villanueva del Rebollar de la Sierra,2010,53
+44257,Villar del Cobo,2010,208
+44258,Villar del Salz,2010,83
+44260,Villarluengo,2010,188
+44261,Villarquemado,2010,940
+44262,Villarroya de los Pinares,2010,177
+44263,Villastar,2010,450
+44264,Villel,2010,366
+44265,Vinaceite,2010,314
+44266,Visiedo,2010,149
+44267,Vivel del Río Martín,2010,86
+44268,Zoma (La),2010,22
+50001,Abanto,2010,124
+50002,Acered,2010,160
+50003,Agón,2010,166
+50004,Aguarón,2010,863
+50005,Aguilón,2010,250
+50006,Ainzón,2010,1269
+50007,Aladrén,2010,62
+50008,Alagón,2010,7178
+50009,Alarba,2010,155
+50010,Alberite de San Juan,2010,101
+50011,Albeta,2010,141
+50012,Alborge,2010,126
+50013,Alcalá de Ebro,2010,276
+50014,Alcalá de Moncayo,2010,153
+50015,Alconchel de Ariza,2010,99
+50016,Aldehuela de Liestos,2010,48
+50017,Alfajarín,2010,2168
+50018,Alfamén,2010,1509
+50019,Alforque,2010,81
+50020,Alhama de Aragón,2010,1172
+50021,Almochuel,2010,26
+50022,Almolda (La),2010,619
+50023,Almonacid de la Cuba,2010,283
+50024,Almonacid de la Sierra,2010,790
+50025,Almunia de Doña Godina (La),2010,7802
+50026,Alpartir,2010,564
+50027,Ambel,2010,305
+50028,Anento,2010,136
+50029,Aniñón,2010,818
+50030,Añón de Moncayo,2010,205
+50031,Aranda de Moncayo,2010,214
+50032,Arándiga,2010,406
+50033,Ardisa,2010,80
+50034,Ariza,2010,1279
+50035,Artieda,2010,94
+50036,Asín,2010,104
+50037,Atea,2010,125
+50038,Ateca,2010,2151
+50039,Azuara,2010,701
+50040,Badules,2010,95
+50041,Bagüés,2010,23
+50042,Balconchán,2010,12
+50043,Bárboles,2010,333
+50044,Bardallur,2010,327
+50045,Belchite,2010,1665
+50046,Belmonte de Gracián,2010,236
+50047,Berdejo,2010,64
+50048,Berrueco,2010,43
+50050,Bijuesca,2010,113
+50051,Biota,2010,1115
+50052,Bisimbre,2010,109
+50053,Boquiñeni,2010,995
+50054,Bordalba,2010,74
+50055,Borja,2010,5042
+50056,Botorrita,2010,536
+50057,Brea de Aragón,2010,1854
+50058,Bubierca,2010,83
+50059,Bujaraloz,2010,1055
+50060,Bulbuente,2010,248
+50061,Bureta,2010,269
+50062,Burgo de Ebro (El),2010,2321
+50063,Buste (El),2010,88
+50064,Cabañas de Ebro,2010,556
+50065,Cabolafuente,2010,49
+50066,Cadrete,2010,3054
+50067,Calatayud,2010,21717
+50068,Calatorao,2010,3094
+50069,Calcena,2010,68
+50070,Calmarza,2010,77
+50071,Campillo de Aragón,2010,154
+50072,Carenas,2010,195
+50073,Cariñena,2010,3725
+50074,Caspe,2010,9989
+50075,Castejón de Alarba,2010,98
+50076,Castejón de las Armas,2010,122
+50077,Castejón de Valdejasa,2010,283
+50078,Castiliscar,2010,338
+50079,Cervera de la Cañada,2010,311
+50080,Cerveruela,2010,41
+50081,Cetina,2010,697
+50082,Cimballa,2010,127
+50083,Cinco Olivas,2010,123
+50084,Clarés de Ribota,2010,101
+50085,Codo,2010,211
+50086,Codos,2010,256
+50087,Contamina,2010,38
+50088,Cosuenda,2010,389
+50089,Cuarte de Huerva,2010,8658
+50090,Cubel,2010,192
+50091,Cuerlas (Las),2010,66
+50092,Chiprana,2010,276
+50093,Chodes,2010,149
+50094,Daroca,2010,2300
+50095,Ejea de los Caballeros,2010,17344
+50096,Embid de Ariza,2010,56
+50098,Encinacorba,2010,252
+50099,Épila,2010,4765
+50100,Erla,2010,421
+50101,Escatrón,2010,1132
+50102,Fabara,2010,1255
+50104,Farlete,2010,439
+50105,Fayón,2010,407
+50106,Fayos (Los),2010,153
+50107,Figueruelas,2010,1332
+50108,Fombuena,2010,52
+50109,Frago (El),2010,106
+50110,Frasno (El),2010,476
+50111,Fréscano,2010,220
+50113,Fuendejalón,2010,953
+50114,Fuendetodos,2010,174
+50115,Fuentes de Ebro,2010,4617
+50116,Fuentes de Jiloca,2010,280
+50117,Gallocanta,2010,152
+50118,Gallur,2010,3007
+50119,Gelsa,2010,1201
+50120,Godojos,2010,46
+50121,Gotor,2010,399
+50122,Grisel,2010,79
+50123,Grisén,2010,554
+50124,Herrera de los Navarros,2010,616
+50125,Ibdes,2010,490
+50126,Illueca,2010,3348
+50128,Isuerre,2010,37
+50129,Jaraba,2010,360
+50130,Jarque,2010,550
+50131,Jaulín,2010,323
+50132,Joyosa (La),2010,936
+50133,Lagata,2010,134
+50134,Langa del Castillo,2010,151
+50135,Layana,2010,124
+50136,Lécera,2010,765
+50137,Leciñena,2010,1305
+50138,Lechón,2010,57
+50139,Letux,2010,425
+50140,Litago,2010,183
+50141,Lituénigo,2010,125
+50142,Lobera de Onsella,2010,50
+50143,Longares,2010,896
+50144,Longás,2010,36
+50146,Lucena de Jalón,2010,309
+50147,Luceni,2010,1098
+50148,Luesia,2010,361
+50149,Luesma,2010,38
+50150,Lumpiaque,2010,937
+50151,Luna,2010,846
+50152,Maella,2010,2028
+50153,Magallón,2010,1205
+50154,Mainar,2010,167
+50155,Malanquilla,2010,127
+50156,Maleján,2010,344
+50157,Malón,2010,379
+50159,Maluenda,2010,1094
+50160,Mallén,2010,3704
+50161,Manchones,2010,123
+50162,Mara,2010,206
+50163,María de Huerva,2010,4729
+50164,Mediana de Aragón,2010,481
+50165,Mequinenza,2010,2495
+50166,Mesones de Isuela,2010,315
+50167,Mezalocha,2010,226
+50168,Mianos,2010,41
+50169,Miedes de Aragón,2010,475
+50170,Monegrillo,2010,479
+50171,Moneva,2010,122
+50172,Monreal de Ariza,2010,189
+50173,Monterde,2010,194
+50174,Montón,2010,132
+50175,Morata de Jalón,2010,1352
+50176,Morata de Jiloca,2010,301
+50177,Morés,2010,437
+50178,Moros,2010,469
+50179,Moyuela,2010,260
+50180,Mozota,2010,114
+50181,Muel,2010,1385
+50182,Muela (La),2010,5166
+50183,Munébrega,2010,488
+50184,Murero,2010,146
+50185,Murillo de Gállego,2010,189
+50186,Navardún,2010,50
+50187,Nigüella,2010,81
+50188,Nombrevilla,2010,35
+50189,Nonaspe,2010,1061
+50190,Novallas,2010,919
+50191,Novillas,2010,626
+50192,Nuévalos,2010,356
+50193,Nuez de Ebro,2010,801
+50194,Olvés,2010,115
+50195,Orcajo,2010,33
+50196,Orera,2010,129
+50197,Orés,2010,101
+50198,Oseja,2010,55
+50199,Osera de Ebro,2010,473
+50200,Paniza,2010,759
+50201,Paracuellos de Jiloca,2010,576
+50202,Paracuellos de la Ribera,2010,194
+50203,Pastriz,2010,1384
+50204,Pedrola,2010,3721
+50205,Pedrosas (Las),2010,121
+50206,Perdiguera,2010,664
+50207,Piedratajada,2010,150
+50208,Pina de Ebro,2010,2655
+50209,Pinseque,2010,3481
+50210,Pintanos (Los),2010,38
+50211,Plasencia de Jalón,2010,404
+50212,Pleitas,2010,48
+50213,Plenas,2010,132
+50214,Pomer,2010,37
+50215,Pozuel de Ariza,2010,20
+50216,Pozuelo de Aragón,2010,342
+50217,Pradilla de Ebro,2010,618
+50218,Puebla de Albortón,2010,125
+50219,Puebla de Alfindén (La),2010,5250
+50220,Puendeluna,2010,65
+50221,Purujosa,2010,44
+50222,Quinto,2010,2111
+50223,Remolinos,2010,1199
+50224,Retascón,2010,79
+50225,Ricla,2010,3568
+50227,Romanos,2010,113
+50228,Rueda de Jalón,2010,353
+50229,Ruesca,2010,75
+50230,Sádaba,2010,1671
+50231,Salillas de Jalón,2010,375
+50232,Salvatierra de Esca,2010,235
+50233,Samper del Salz,2010,128
+50234,San Martín de la Virgen de Moncayo,2010,295
+50235,San Mateo de Gállego,2010,3079
+50236,Santa Cruz de Grío,2010,164
+50237,Santa Cruz de Moncayo,2010,126
+50238,Santa Eulalia de Gállego,2010,125
+50239,Santed,2010,61
+50240,Sástago,2010,1260
+50241,Saviñán,2010,793
+50242,Sediles,2010,112
+50243,Sestrica,2010,402
+50244,Sierra de Luna,2010,308
+50245,Sigüés,2010,132
+50246,Sisamón,2010,50
+50247,Sobradiel,2010,999
+50248,Sos del Rey Católico,2010,662
+50249,Tabuenca,2010,412
+50250,Talamantes,2010,61
+50251,Tarazona,2010,11131
+50252,Tauste,2010,7567
+50253,Terrer,2010,519
+50254,Tierga,2010,179
+50255,Tobed,2010,256
+50256,Torralba de los Frailes,2010,96
+50257,Torralba de Ribota,2010,198
+50258,Torralbilla,2010,64
+50259,Torrehermosa,2010,83
+50260,Torrelapaja,2010,45
+50261,Torrellas,2010,293
+50262,Torres de Berrellén,2010,1496
+50263,Torrijo de la Cañada,2010,277
+50264,Tosos,2010,245
+50265,Trasmoz,2010,78
+50266,Trasobares,2010,152
+50267,Uncastillo,2010,781
+50268,Undués de Lerda,2010,71
+50269,Urrea de Jalón,2010,414
+50270,Urriés,2010,37
+50271,Used,2010,328
+50272,Utebo,2010,17999
+50273,Valdehorna,2010,35
+50274,Val de San Martín,2010,79
+50275,Valmadrid,2010,109
+50276,Valpalmas,2010,155
+50277,Valtorres,2010,114
+50278,Velilla de Ebro,2010,254
+50279,Velilla de Jiloca,2010,102
+50280,Vera de Moncayo,2010,419
+50281,Vierlas,2010,104
+50282,Vilueña (La),2010,114
+50283,Villadoz,2010,83
+50284,Villafeliche,2010,200
+50285,Villafranca de Ebro,2010,837
+50286,Villalba de Perejil,2010,112
+50287,Villalengua,2010,391
+50288,Villanueva de Gállego,2010,4376
+50289,Villanueva de Jiloca,2010,69
+50290,Villanueva de Huerva,2010,562
+50291,Villar de los Navarros,2010,120
+50292,Villarreal de Huerva,2010,202
+50293,Villarroya de la Sierra,2010,565
+50294,Villarroya del Campo,2010,75
+50295,Vistabella,2010,50
+50296,Zaida (La),2010,509
+50297,Zaragoza,2010,675121
+50298,Zuera,2010,7510
+50901,Biel,2010,186
+50902,Marracos,2010,100
+50903,Villamayor de Gállego,2010,2888
+22001,Abiego,2011,280
+22002,Abizanda,2011,139
+22003,Adahuesca,2011,176
+22004,Agüero,2011,160
+22006,Aísa,2011,379
+22007,Albalate de Cinca,2011,1259
+22008,Albalatillo,2011,237
+22009,Albelda,2011,839
+22011,Albero Alto,2011,134
+22012,Albero Bajo,2011,109
+22013,Alberuela de Tubo,2011,355
+22014,Alcalá de Gurrea,2011,275
+22015,Alcalá del Obispo,2011,411
+22016,Alcampell,2011,762
+22017,Alcolea de Cinca,2011,1137
+22018,Alcubierre,2011,439
+22019,Alerre,2011,222
+22020,Alfántega,2011,130
+22021,Almudévar,2011,2560
+22022,Almunia de San Juan,2011,661
+22023,Almuniente,2011,550
+22024,Alquézar,2011,302
+22025,Altorricón,2011,1492
+22027,Angüés,2011,439
+22028,Ansó,2011,475
+22029,Antillón,2011,146
+22032,Aragüés del Puerto,2011,133
+22035,Arén,2011,359
+22036,Argavieso,2011,118
+22037,Arguis,2011,117
+22039,Ayerbe,2011,1125
+22040,Azanuy-Alins,2011,181
+22041,Azara,2011,200
+22042,Azlor,2011,133
+22043,Baells,2011,114
+22044,Bailo,2011,300
+22045,Baldellou,2011,119
+22046,Ballobar,2011,974
+22047,Banastás,2011,283
+22048,Barbastro,2011,17085
+22049,Barbués,2011,96
+22050,Barbuñales,2011,101
+22051,Bárcabo,2011,126
+22052,Belver de Cinca,2011,1374
+22053,Benabarre,2011,1180
+22054,Benasque,2011,2236
+22055,Berbegal,2011,417
+22057,Bielsa,2011,495
+22058,Bierge,2011,254
+22059,Biescas,2011,1597
+22060,Binaced,2011,1485
+22061,Binéfar,2011,9482
+22062,Bisaurri,2011,206
+22063,Biscarrués,2011,223
+22064,Blecua y Torres,2011,215
+22066,Boltaña,2011,1055
+22067,Bonansa,2011,102
+22068,Borau,2011,85
+22069,Broto,2011,543
+22072,Caldearenas,2011,231
+22074,Campo,2011,350
+22075,Camporrells,2011,182
+22076,Canal de Berdún,2011,382
+22077,Candasnos,2011,395
+22078,Canfranc,2011,620
+22079,Capdesaso,2011,176
+22080,Capella,2011,372
+22081,Casbas de Huesca,2011,303
+22082,Castejón del Puente,2011,372
+22083,Castejón de Monegros,2011,649
+22084,Castejón de Sos,2011,776
+22085,Castelflorite,2011,128
+22086,Castiello de Jaca,2011,257
+22087,Castigaleu,2011,115
+22088,Castillazuelo,2011,197
+22089,Castillonroy,2011,380
+22090,Colungo,2011,142
+22094,Chalamera,2011,122
+22095,Chía,2011,102
+22096,Chimillas,2011,358
+22099,Esplús,2011,654
+22102,Estada,2011,234
+22103,Estadilla,2011,853
+22105,Estopiñán del Castillo,2011,174
+22106,Fago,2011,30
+22107,Fanlo,2011,132
+22109,Fiscal,2011,318
+22110,Fonz,2011,1021
+22111,Foradada del Toscar,2011,211
+22112,Fraga,2011,14426
+22113,Fueva (La),2011,634
+22114,Gistaín,2011,150
+22115,Grado (El),2011,484
+22116,Grañén,2011,1988
+22117,Graus,2011,3697
+22119,Gurrea de Gállego,2011,1651
+22122,Hoz de Jaca,2011,70
+22124,Huerto,2011,267
+22125,Huesca,2011,52443
+22126,Ibieca,2011,109
+22127,Igriés,2011,666
+22128,Ilche,2011,237
+22129,Isábena,2011,305
+22130,Jaca,2011,13299
+22131,Jasa,2011,113
+22133,Labuerda,2011,169
+22135,Laluenga,2011,216
+22136,Lalueza,2011,1089
+22137,Lanaja,2011,1381
+22139,Laperdiguera,2011,102
+22141,Lascellas-Ponzano,2011,148
+22142,Lascuarre,2011,155
+22143,Laspaúles,2011,302
+22144,Laspuña,2011,301
+22149,Loarre,2011,369
+22150,Loporzano,2011,563
+22151,Loscorrales,2011,108
+22155,Monesma y Cajigar,2011,100
+22156,Monflorite-Lascasas,2011,315
+22157,Montanuy,2011,284
+22158,Monzón,2011,17215
+22160,Naval,2011,258
+22162,Novales,2011,175
+22163,Nueno,2011,559
+22164,Olvena,2011,55
+22165,Ontiñena,2011,597
+22167,Osso de Cinca,2011,768
+22168,Palo,2011,29
+22170,Panticosa,2011,820
+22172,Peñalba,2011,765
+22173,Peñas de Riglos (Las),2011,269
+22174,Peralta de Alcofea,2011,619
+22175,Peralta de Calasanz,2011,243
+22176,Peraltilla,2011,212
+22177,Perarrúa,2011,112
+22178,Pertusa,2011,117
+22181,Piracés,2011,103
+22182,Plan,2011,327
+22184,Poleñino,2011,224
+22186,Pozán de Vero,2011,241
+22187,Puebla de Castro (La),2011,416
+22188,Puente de Montañana,2011,143
+22189,Puértolas,2011,233
+22190,Pueyo de Araguás (El),2011,151
+22193,Pueyo de Santa Cruz,2011,371
+22195,Quicena,2011,290
+22197,Robres,2011,606
+22199,Sabiñánigo,2011,10345
+22200,Sahún,2011,342
+22201,Salas Altas,2011,310
+22202,Salas Bajas,2011,140
+22203,Salillas,2011,106
+22204,Sallent de Gállego,2011,1536
+22205,San Esteban de Litera,2011,509
+22206,Sangarrén,2011,231
+22207,San Juan de Plan,2011,157
+22208,Santa Cilia,2011,208
+22209,Santa Cruz de la Serós,2011,189
+22212,Santaliestra y San Quílez,2011,97
+22213,Sariñena,2011,4402
+22214,Secastilla,2011,155
+22215,Seira,2011,151
+22217,Sena,2011,549
+22218,Senés de Alcubierre,2011,64
+22220,Sesa,2011,209
+22221,Sesué,2011,131
+22222,Siétamo,2011,658
+22223,Sopeira,2011,118
+22225,Tamarite de Litera,2011,3711
+22226,Tardienta,2011,998
+22227,Tella-Sin,2011,272
+22228,Tierz,2011,715
+22229,Tolva,2011,160
+22230,Torla,2011,327
+22232,Torralba de Aragón,2011,107
+22233,Torre la Ribera,2011,119
+22234,Torrente de Cinca,2011,1337
+22235,Torres de Alcanadre,2011,109
+22236,Torres de Barbués,2011,301
+22239,Tramaced,2011,98
+22242,Valfarta,2011,90
+22243,Valle de Bardají,2011,50
+22244,Valle de Lierp,2011,66
+22245,Velilla de Cinca,2011,449
+22246,Veracruz,2011,104
+22247,Viacamp y Litera,2011,48
+22248,Vicién,2011,119
+22249,Villanova,2011,157
+22250,Villanúa,2011,512
+22251,Villanueva de Sigena,2011,478
+22252,Yebra de Basa,2011,152
+22253,Yésero,2011,69
+22254,Zaidín,2011,1689
+22901,Valle de Hecho,2011,947
+22902,Puente la Reina de Jaca,2011,290
+22903,San Miguel del Cinca,2011,849
+22904,Sotonera (La),2011,1040
+22905,Lupiñén-Ortilla,2011,389
+22906,Santa María de Dulcis,2011,219
+22907,Aínsa-Sobrarbe,2011,2232
+22908,Hoz y Costeán,2011,208
+22909,Vencillón,2011,467
+44001,Ababuj,2011,78
+44002,Abejuela,2011,66
+44003,Aguatón,2011,20
+44004,Aguaviva,2011,693
+44005,Aguilar del Alfambra,2011,70
+44006,Alacón,2011,349
+44007,Alba,2011,230
+44008,Albalate del Arzobispo,2011,2115
+44009,Albarracín,2011,1096
+44010,Albentosa,2011,301
+44011,Alcaine,2011,67
+44012,Alcalá de la Selva,2011,516
+44013,Alcañiz,2011,16420
+44014,Alcorisa,2011,3622
+44016,Alfambra,2011,677
+44017,Aliaga,2011,382
+44018,Almohaja,2011,29
+44019,Alobras,2011,75
+44020,Alpeñés,2011,26
+44021,Allepuz,2011,129
+44022,Alloza,2011,701
+44023,Allueva,2011,23
+44024,Anadón,2011,24
+44025,Andorra,2011,8324
+44026,Arcos de las Salinas,2011,100
+44027,Arens de Lledó,2011,196
+44028,Argente,2011,223
+44029,Ariño,2011,914
+44031,Azaila,2011,148
+44032,Bádenas,2011,21
+44033,Báguena,2011,386
+44034,Bañón,2011,165
+44035,Barrachina,2011,145
+44036,Bea,2011,32
+44037,Beceite,2011,608
+44038,Belmonte de San José,2011,129
+44039,Bello,2011,274
+44040,Berge,2011,264
+44041,Bezas,2011,82
+44042,Blancas,2011,154
+44043,Blesa,2011,132
+44044,Bordón,2011,146
+44045,Bronchales,2011,469
+44046,Bueña,2011,65
+44047,Burbáguena,2011,300
+44048,Cabra de Mora,2011,87
+44049,Calaceite,2011,1143
+44050,Calamocha,2011,4628
+44051,Calanda,2011,4004
+44052,Calomarde,2011,103
+44053,Camañas,2011,125
+44054,Camarena de la Sierra,2011,159
+44055,Camarillas,2011,130
+44056,Caminreal,2011,718
+44059,Cantavieja,2011,757
+44060,Cañada de Benatanduz,2011,41
+44061,Cañada de Verich (La),2011,112
+44062,Cañada Vellida,2011,40
+44063,Cañizar del Olivar,2011,106
+44064,Cascante del Río,2011,102
+44065,Castejón de Tornos,2011,68
+44066,Castel de Cabra,2011,140
+44067,Castelnou,2011,120
+44068,Castelserás,2011,832
+44070,Castellar (El),2011,69
+44071,Castellote,2011,805
+44074,Cedrillas,2011,620
+44075,Celadas,2011,434
+44076,Cella,2011,2905
+44077,Cerollera (La),2011,103
+44080,Codoñera (La),2011,387
+44082,Corbalán,2011,102
+44084,Cortes de Aragón,2011,76
+44085,Cosa,2011,60
+44086,Cretas,2011,607
+44087,Crivillén,2011,92
+44088,Cuba (La),2011,52
+44089,Cubla,2011,68
+44090,Cucalón,2011,101
+44092,Cuervo (El),2011,101
+44093,Cuevas de Almudén,2011,141
+44094,Cuevas Labradas,2011,135
+44096,Ejulve,2011,203
+44097,Escorihuela,2011,183
+44099,Escucha,2011,1019
+44100,Estercuel,2011,272
+44101,Ferreruela de Huerva,2011,68
+44102,Fonfría,2011,30
+44103,Formiche Alto,2011,181
+44105,Fórnoles,2011,102
+44106,Fortanete,2011,223
+44107,Foz-Calanda,2011,293
+44108,Fresneda (La),2011,499
+44109,Frías de Albarracín,2011,152
+44110,Fuenferrada,2011,62
+44111,Fuentes Calientes,2011,119
+44112,Fuentes Claras,2011,582
+44113,Fuentes de Rubielos,2011,134
+44114,Fuentespalda,2011,326
+44115,Galve,2011,151
+44116,Gargallo,2011,125
+44117,Gea de Albarracín,2011,415
+44118,Ginebrosa (La),2011,230
+44119,Griegos,2011,141
+44120,Guadalaviar,2011,247
+44121,Gúdar,2011,82
+44122,Híjar,2011,1872
+44123,Hinojosa de Jarque,2011,150
+44124,Hoz de la Vieja (La),2011,89
+44125,Huesa del Común,2011,92
+44126,Iglesuela del Cid (La),2011,501
+44127,Jabaloyas,2011,90
+44128,Jarque de la Val,2011,89
+44129,Jatiel,2011,52
+44130,Jorcas,2011,44
+44131,Josa,2011,38
+44132,Lagueruela,2011,68
+44133,Lanzuela,2011,27
+44135,Libros,2011,156
+44136,Lidón,2011,56
+44137,Linares de Mora,2011,300
+44138,Loscos,2011,179
+44141,Lledó,2011,168
+44142,Maicas,2011,39
+44143,Manzanera,2011,562
+44144,Martín del Río,2011,432
+44145,Mas de las Matas,2011,1387
+44146,Mata de los Olmos (La),2011,283
+44147,Mazaleón,2011,564
+44148,Mezquita de Jarque,2011,117
+44149,Mirambel,2011,133
+44150,Miravete de la Sierra,2011,33
+44151,Molinos,2011,283
+44152,Monforte de Moyuela,2011,64
+44153,Monreal del Campo,2011,2768
+44154,Monroyo,2011,394
+44155,Montalbán,2011,1392
+44156,Monteagudo del Castillo,2011,66
+44157,Monterde de Albarracín,2011,64
+44158,Mora de Rubielos,2011,1666
+44159,Moscardón,2011,67
+44160,Mosqueruela,2011,625
+44161,Muniesa,2011,665
+44163,Noguera de Albarracín,2011,148
+44164,Nogueras,2011,36
+44165,Nogueruelas,2011,215
+44167,Obón,2011,38
+44168,Odón,2011,221
+44169,Ojos Negros,2011,473
+44171,Olba,2011,238
+44172,Oliete,2011,470
+44173,Olmos (Los),2011,131
+44174,Orihuela del Tremedal,2011,580
+44175,Orrios,2011,153
+44176,Palomar de Arroyos,2011,191
+44177,Pancrudo,2011,139
+44178,Parras de Castellote (Las),2011,77
+44179,Peñarroya de Tastavins,2011,509
+44180,Peracense,2011,88
+44181,Peralejos,2011,84
+44182,Perales del Alfambra,2011,268
+44183,Pitarque,2011,94
+44184,Plou,2011,45
+44185,Pobo (El),2011,143
+44187,Portellada (La),2011,259
+44189,Pozondón,2011,80
+44190,Pozuel del Campo,2011,98
+44191,Puebla de Híjar (La),2011,1013
+44192,Puebla de Valverde (La),2011,552
+44193,Puertomingalvo,2011,157
+44194,Ráfales,2011,165
+44195,Rillo,2011,112
+44196,Riodeva,2011,176
+44197,Ródenas,2011,71
+44198,Royuela,2011,251
+44199,Rubiales,2011,58
+44200,Rubielos de la Cérida,2011,43
+44201,Rubielos de Mora,2011,751
+44203,Salcedillo,2011,8
+44204,Saldón,2011,29
+44205,Samper de Calanda,2011,909
+44206,San Agustín,2011,201
+44207,San Martín del Río,2011,193
+44208,Santa Cruz de Nogueras,2011,40
+44209,Santa Eulalia,2011,1147
+44210,Sarrión,2011,1135
+44211,Segura de los Baños,2011,39
+44212,Seno,2011,46
+44213,Singra,2011,92
+44215,Terriente,2011,197
+44216,Teruel,2011,35288
+44217,Toril y Masegoso,2011,37
+44218,Tormón,2011,36
+44219,Tornos,2011,230
+44220,Torralba de los Sisones,2011,209
+44221,Torrecilla de Alcañiz,2011,437
+44222,Torrecilla del Rebollar,2011,146
+44223,Torre de Arcas,2011,95
+44224,Torre de las Arcas,2011,35
+44225,Torre del Compte,2011,156
+44226,Torrelacárcel,2011,213
+44227,Torre los Negros,2011,103
+44228,Torremocha de Jiloca,2011,135
+44229,Torres de Albarracín,2011,167
+44230,Torrevelilla,2011,216
+44231,Torrijas,2011,63
+44232,Torrijo del Campo,2011,518
+44234,Tramacastiel,2011,89
+44235,Tramacastilla,2011,118
+44236,Tronchón,2011,107
+44237,Urrea de Gaén,2011,527
+44238,Utrillas,2011,3270
+44239,Valacloche,2011,31
+44240,Valbona,2011,202
+44241,Valdealgorfa,2011,675
+44243,Valdecuenca,2011,53
+44244,Valdelinares,2011,113
+44245,Valdeltormo,2011,324
+44246,Valderrobres,2011,2303
+44247,Valjunquera,2011,387
+44249,Vallecillo (El),2011,61
+44250,Veguillas de la Sierra,2011,25
+44251,Villafranca del Campo,2011,339
+44252,Villahermosa del Campo,2011,102
+44256,Villanueva del Rebollar de la Sierra,2011,52
+44257,Villar del Cobo,2011,205
+44258,Villar del Salz,2011,80
+44260,Villarluengo,2011,194
+44261,Villarquemado,2011,906
+44262,Villarroya de los Pinares,2011,172
+44263,Villastar,2011,448
+44264,Villel,2011,342
+44265,Vinaceite,2011,301
+44266,Visiedo,2011,148
+44267,Vivel del Río Martín,2011,91
+44268,Zoma (La),2011,22
+50001,Abanto,2011,130
+50002,Acered,2011,198
+50003,Agón,2011,164
+50004,Aguarón,2011,873
+50005,Aguilón,2011,258
+50006,Ainzón,2011,1245
+50007,Aladrén,2011,67
+50008,Alagón,2011,7112
+50009,Alarba,2011,160
+50010,Alberite de San Juan,2011,99
+50011,Albeta,2011,149
+50012,Alborge,2011,121
+50013,Alcalá de Ebro,2011,283
+50014,Alcalá de Moncayo,2011,205
+50015,Alconchel de Ariza,2011,96
+50016,Aldehuela de Liestos,2011,52
+50017,Alfajarín,2011,2215
+50018,Alfamén,2011,1577
+50019,Alforque,2011,87
+50020,Alhama de Aragón,2011,1146
+50021,Almochuel,2011,37
+50022,Almolda (La),2011,615
+50023,Almonacid de la Cuba,2011,270
+50024,Almonacid de la Sierra,2011,824
+50025,Almunia de Doña Godina (La),2011,7851
+50026,Alpartir,2011,570
+50027,Ambel,2011,290
+50028,Anento,2011,133
+50029,Aniñón,2011,803
+50030,Añón de Moncayo,2011,208
+50031,Aranda de Moncayo,2011,208
+50032,Arándiga,2011,412
+50033,Ardisa,2011,85
+50034,Ariza,2011,1286
+50035,Artieda,2011,92
+50036,Asín,2011,110
+50037,Atea,2011,128
+50038,Ateca,2011,2160
+50039,Azuara,2011,702
+50040,Badules,2011,100
+50041,Bagüés,2011,21
+50042,Balconchán,2011,15
+50043,Bárboles,2011,326
+50044,Bardallur,2011,328
+50045,Belchite,2011,1683
+50046,Belmonte de Gracián,2011,236
+50047,Berdejo,2011,71
+50048,Berrueco,2011,45
+50050,Bijuesca,2011,115
+50051,Biota,2011,1095
+50052,Bisimbre,2011,108
+50053,Boquiñeni,2011,985
+50054,Bordalba,2011,73
+50055,Borja,2011,5020
+50056,Botorrita,2011,526
+50057,Brea de Aragón,2011,1816
+50058,Bubierca,2011,82
+50059,Bujaraloz,2011,1048
+50060,Bulbuente,2011,241
+50061,Bureta,2011,272
+50062,Burgo de Ebro (El),2011,2341
+50063,Buste (El),2011,83
+50064,Cabañas de Ebro,2011,550
+50065,Cabolafuente,2011,46
+50066,Cadrete,2011,3177
+50067,Calatayud,2011,20837
+50068,Calatorao,2011,3054
+50069,Calcena,2011,70
+50070,Calmarza,2011,105
+50071,Campillo de Aragón,2011,151
+50072,Carenas,2011,195
+50073,Cariñena,2011,3728
+50074,Caspe,2011,9871
+50075,Castejón de Alarba,2011,97
+50076,Castejón de las Armas,2011,121
+50077,Castejón de Valdejasa,2011,274
+50078,Castiliscar,2011,328
+50079,Cervera de la Cañada,2011,313
+50080,Cerveruela,2011,46
+50081,Cetina,2011,687
+50082,Cimballa,2011,127
+50083,Cinco Olivas,2011,125
+50084,Clarés de Ribota,2011,97
+50085,Codo,2011,213
+50086,Codos,2011,251
+50087,Contamina,2011,39
+50088,Cosuenda,2011,413
+50089,Cuarte de Huerva,2011,9564
+50090,Cubel,2011,194
+50091,Cuerlas (Las),2011,62
+50092,Chiprana,2011,465
+50093,Chodes,2011,147
+50094,Daroca,2011,2313
+50095,Ejea de los Caballeros,2011,17306
+50096,Embid de Ariza,2011,53
+50098,Encinacorba,2011,253
+50099,Épila,2011,4720
+50100,Erla,2011,406
+50101,Escatrón,2011,1121
+50102,Fabara,2011,1263
+50104,Farlete,2011,435
+50105,Fayón,2011,406
+50106,Fayos (Los),2011,153
+50107,Figueruelas,2011,1303
+50108,Fombuena,2011,50
+50109,Frago (El),2011,107
+50110,Frasno (El),2011,477
+50111,Fréscano,2011,217
+50113,Fuendejalón,2011,979
+50114,Fuendetodos,2011,180
+50115,Fuentes de Ebro,2011,4603
+50116,Fuentes de Jiloca,2011,279
+50117,Gallocanta,2011,156
+50118,Gallur,2011,2931
+50119,Gelsa,2011,1174
+50120,Godojos,2011,44
+50121,Gotor,2011,384
+50122,Grisel,2011,71
+50123,Grisén,2011,563
+50124,Herrera de los Navarros,2011,604
+50125,Ibdes,2011,482
+50126,Illueca,2011,3282
+50128,Isuerre,2011,36
+50129,Jaraba,2011,363
+50130,Jarque,2011,543
+50131,Jaulín,2011,302
+50132,Joyosa (La),2011,941
+50133,Lagata,2011,145
+50134,Langa del Castillo,2011,145
+50135,Layana,2011,123
+50136,Lécera,2011,759
+50137,Leciñena,2011,1339
+50138,Lechón,2011,48
+50139,Letux,2011,428
+50140,Litago,2011,185
+50141,Lituénigo,2011,126
+50142,Lobera de Onsella,2011,54
+50143,Longares,2011,907
+50144,Longás,2011,32
+50146,Lucena de Jalón,2011,307
+50147,Luceni,2011,1088
+50148,Luesia,2011,401
+50149,Luesma,2011,51
+50150,Lumpiaque,2011,939
+50151,Luna,2011,839
+50152,Maella,2011,2018
+50153,Magallón,2011,1221
+50154,Mainar,2011,164
+50155,Malanquilla,2011,130
+50156,Maleján,2011,338
+50157,Malón,2011,375
+50159,Maluenda,2011,1106
+50160,Mallén,2011,3709
+50161,Manchones,2011,141
+50162,Mara,2011,202
+50163,María de Huerva,2011,5048
+50164,Mediana de Aragón,2011,470
+50165,Mequinenza,2011,2478
+50166,Mesones de Isuela,2011,316
+50167,Mezalocha,2011,222
+50168,Mianos,2011,41
+50169,Miedes de Aragón,2011,462
+50170,Monegrillo,2011,472
+50171,Moneva,2011,129
+50172,Monreal de Ariza,2011,186
+50173,Monterde,2011,190
+50174,Montón,2011,136
+50175,Morata de Jalón,2011,1314
+50176,Morata de Jiloca,2011,286
+50177,Morés,2011,422
+50178,Moros,2011,449
+50179,Moyuela,2011,258
+50180,Mozota,2011,113
+50181,Muel,2011,1434
+50182,Muela (La),2011,5213
+50183,Munébrega,2011,467
+50184,Murero,2011,148
+50185,Murillo de Gállego,2011,194
+50186,Navardún,2011,48
+50187,Nigüella,2011,79
+50188,Nombrevilla,2011,38
+50189,Nonaspe,2011,1054
+50190,Novallas,2011,949
+50191,Novillas,2011,603
+50192,Nuévalos,2011,355
+50193,Nuez de Ebro,2011,837
+50194,Olvés,2011,119
+50195,Orcajo,2011,43
+50196,Orera,2011,136
+50197,Orés,2011,107
+50198,Oseja,2011,54
+50199,Osera de Ebro,2011,462
+50200,Paniza,2011,766
+50201,Paracuellos de Jiloca,2011,590
+50202,Paracuellos de la Ribera,2011,187
+50203,Pastriz,2011,1351
+50204,Pedrola,2011,3769
+50205,Pedrosas (Las),2011,117
+50206,Perdiguera,2011,651
+50207,Piedratajada,2011,147
+50208,Pina de Ebro,2011,2626
+50209,Pinseque,2011,3579
+50210,Pintanos (Los),2011,45
+50211,Plasencia de Jalón,2011,389
+50212,Pleitas,2011,53
+50213,Plenas,2011,135
+50214,Pomer,2011,36
+50215,Pozuel de Ariza,2011,21
+50216,Pozuelo de Aragón,2011,340
+50217,Pradilla de Ebro,2011,619
+50218,Puebla de Albortón,2011,120
+50219,Puebla de Alfindén (La),2011,5433
+50220,Puendeluna,2011,62
+50221,Purujosa,2011,43
+50222,Quinto,2011,2105
+50223,Remolinos,2011,1183
+50224,Retascón,2011,76
+50225,Ricla,2011,3065
+50227,Romanos,2011,123
+50228,Rueda de Jalón,2011,350
+50229,Ruesca,2011,80
+50230,Sádaba,2011,1643
+50231,Salillas de Jalón,2011,383
+50232,Salvatierra de Esca,2011,226
+50233,Samper del Salz,2011,119
+50234,San Martín de la Virgen de Moncayo,2011,285
+50235,San Mateo de Gállego,2011,3137
+50236,Santa Cruz de Grío,2011,161
+50237,Santa Cruz de Moncayo,2011,130
+50238,Santa Eulalia de Gállego,2011,130
+50239,Santed,2011,67
+50240,Sástago,2011,1294
+50241,Saviñán,2011,747
+50242,Sediles,2011,115
+50243,Sestrica,2011,401
+50244,Sierra de Luna,2011,310
+50245,Sigüés,2011,131
+50246,Sisamón,2011,43
+50247,Sobradiel,2011,979
+50248,Sos del Rey Católico,2011,666
+50249,Tabuenca,2011,394
+50250,Talamantes,2011,57
+50251,Tarazona,2011,11121
+50252,Tauste,2011,7484
+50253,Terrer,2011,500
+50254,Tierga,2011,202
+50255,Tobed,2011,250
+50256,Torralba de los Frailes,2011,94
+50257,Torralba de Ribota,2011,202
+50258,Torralbilla,2011,58
+50259,Torrehermosa,2011,81
+50260,Torrelapaja,2011,43
+50261,Torrellas,2011,296
+50262,Torres de Berrellén,2011,1511
+50263,Torrijo de la Cañada,2011,279
+50264,Tosos,2011,242
+50265,Trasmoz,2011,76
+50266,Trasobares,2011,146
+50267,Uncastillo,2011,754
+50268,Undués de Lerda,2011,74
+50269,Urrea de Jalón,2011,403
+50270,Urriés,2011,36
+50271,Used,2011,321
+50272,Utebo,2011,18204
+50273,Valdehorna,2011,36
+50274,Val de San Martín,2011,80
+50275,Valmadrid,2011,106
+50276,Valpalmas,2011,164
+50277,Valtorres,2011,95
+50278,Velilla de Ebro,2011,245
+50279,Velilla de Jiloca,2011,99
+50280,Vera de Moncayo,2011,405
+50281,Vierlas,2011,97
+50282,Vilueña (La),2011,119
+50283,Villadoz,2011,84
+50284,Villafeliche,2011,225
+50285,Villafranca de Ebro,2011,837
+50286,Villalba de Perejil,2011,113
+50287,Villalengua,2011,390
+50288,Villanueva de Gállego,2011,4526
+50289,Villanueva de Jiloca,2011,78
+50290,Villanueva de Huerva,2011,560
+50291,Villar de los Navarros,2011,120
+50292,Villarreal de Huerva,2011,230
+50293,Villarroya de la Sierra,2011,575
+50294,Villarroya del Campo,2011,81
+50295,Vistabella,2011,50
+50296,Zaida (La),2011,514
+50297,Zaragoza,2011,674725
+50298,Zuera,2011,7604
+50901,Biel,2011,166
+50902,Marracos,2011,110
+50903,Villamayor de Gállego,2011,2885
+22001,Abiego,2012,277
+22002,Abizanda,2012,136
+22003,Adahuesca,2012,182
+22004,Agüero,2012,159
+22006,Aísa,2012,367
+22007,Albalate de Cinca,2012,1251
+22008,Albalatillo,2012,224
+22009,Albelda,2012,810
+22011,Albero Alto,2012,134
+22012,Albero Bajo,2012,114
+22013,Alberuela de Tubo,2012,348
+22014,Alcalá de Gurrea,2012,285
+22015,Alcalá del Obispo,2012,368
+22016,Alcampell,2012,746
+22017,Alcolea de Cinca,2012,1141
+22018,Alcubierre,2012,424
+22019,Alerre,2012,211
+22020,Alfántega,2012,135
+22021,Almudévar,2012,2519
+22022,Almunia de San Juan,2012,664
+22023,Almuniente,2012,564
+22024,Alquézar,2012,301
+22025,Altorricón,2012,1494
+22027,Angüés,2012,419
+22028,Ansó,2012,467
+22029,Antillón,2012,148
+22032,Aragüés del Puerto,2012,128
+22035,Arén,2012,362
+22036,Argavieso,2012,110
+22037,Arguis,2012,125
+22039,Ayerbe,2012,1117
+22040,Azanuy-Alins,2012,174
+22041,Azara,2012,200
+22042,Azlor,2012,133
+22043,Baells,2012,123
+22044,Bailo,2012,311
+22045,Baldellou,2012,113
+22046,Ballobar,2012,940
+22047,Banastás,2012,286
+22048,Barbastro,2012,17304
+22049,Barbués,2012,98
+22050,Barbuñales,2012,105
+22051,Bárcabo,2012,117
+22052,Belver de Cinca,2012,1375
+22053,Benabarre,2012,1215
+22054,Benasque,2012,2217
+22055,Berbegal,2012,420
+22057,Bielsa,2012,503
+22058,Bierge,2012,251
+22059,Biescas,2012,1589
+22060,Binaced,2012,1498
+22061,Binéfar,2012,9456
+22062,Bisaurri,2012,202
+22063,Biscarrués,2012,226
+22064,Blecua y Torres,2012,219
+22066,Boltaña,2012,1092
+22067,Bonansa,2012,96
+22068,Borau,2012,84
+22069,Broto,2012,542
+22072,Caldearenas,2012,223
+22074,Campo,2012,330
+22075,Camporrells,2012,167
+22076,Canal de Berdún,2012,365
+22077,Candasnos,2012,381
+22078,Canfranc,2012,599
+22079,Capdesaso,2012,184
+22080,Capella,2012,360
+22081,Casbas de Huesca,2012,304
+22082,Castejón del Puente,2012,360
+22083,Castejón de Monegros,2012,623
+22084,Castejón de Sos,2012,767
+22085,Castelflorite,2012,131
+22086,Castiello de Jaca,2012,249
+22087,Castigaleu,2012,104
+22088,Castillazuelo,2012,189
+22089,Castillonroy,2012,360
+22090,Colungo,2012,131
+22094,Chalamera,2012,115
+22095,Chía,2012,97
+22096,Chimillas,2012,370
+22099,Esplús,2012,663
+22102,Estada,2012,230
+22103,Estadilla,2012,855
+22105,Estopiñán del Castillo,2012,161
+22106,Fago,2012,29
+22107,Fanlo,2012,126
+22109,Fiscal,2012,346
+22110,Fonz,2012,982
+22111,Foradada del Toscar,2012,208
+22112,Fraga,2012,14655
+22113,Fueva (La),2012,641
+22114,Gistaín,2012,147
+22115,Grado (El),2012,471
+22116,Grañén,2012,1990
+22117,Graus,2012,3595
+22119,Gurrea de Gállego,2012,1644
+22122,Hoz de Jaca,2012,72
+22124,Huerto,2012,266
+22125,Huesca,2012,52296
+22126,Ibieca,2012,113
+22127,Igriés,2012,658
+22128,Ilche,2012,226
+22129,Isábena,2012,307
+22130,Jaca,2012,13248
+22131,Jasa,2012,112
+22133,Labuerda,2012,156
+22135,Laluenga,2012,221
+22136,Lalueza,2012,1066
+22137,Lanaja,2012,1358
+22139,Laperdiguera,2012,101
+22141,Lascellas-Ponzano,2012,143
+22142,Lascuarre,2012,152
+22143,Laspaúles,2012,322
+22144,Laspuña,2012,296
+22149,Loarre,2012,361
+22150,Loporzano,2012,549
+22151,Loscorrales,2012,107
+22155,Monesma y Cajigar,2012,95
+22156,Monflorite-Lascasas,2012,301
+22157,Montanuy,2012,265
+22158,Monzón,2012,17263
+22160,Naval,2012,250
+22162,Novales,2012,177
+22163,Nueno,2012,567
+22164,Olvena,2012,53
+22165,Ontiñena,2012,584
+22167,Osso de Cinca,2012,806
+22168,Palo,2012,30
+22170,Panticosa,2012,790
+22172,Peñalba,2012,759
+22173,Peñas de Riglos (Las),2012,268
+22174,Peralta de Alcofea,2012,596
+22175,Peralta de Calasanz,2012,242
+22176,Peraltilla,2012,202
+22177,Perarrúa,2012,109
+22178,Pertusa,2012,121
+22181,Piracés,2012,100
+22182,Plan,2012,314
+22184,Poleñino,2012,217
+22186,Pozán de Vero,2012,243
+22187,Puebla de Castro (La),2012,430
+22188,Puente de Montañana,2012,133
+22189,Puértolas,2012,225
+22190,Pueyo de Araguás (El),2012,154
+22193,Pueyo de Santa Cruz,2012,362
+22195,Quicena,2012,291
+22197,Robres,2012,605
+22199,Sabiñánigo,2012,10241
+22200,Sahún,2012,340
+22201,Salas Altas,2012,311
+22202,Salas Bajas,2012,138
+22203,Salillas,2012,106
+22204,Sallent de Gállego,2012,1512
+22205,San Esteban de Litera,2012,502
+22206,Sangarrén,2012,227
+22207,San Juan de Plan,2012,162
+22208,Santa Cilia,2012,201
+22209,Santa Cruz de la Serós,2012,194
+22212,Santaliestra y San Quílez,2012,94
+22213,Sariñena,2012,4402
+22214,Secastilla,2012,153
+22215,Seira,2012,149
+22217,Sena,2012,542
+22218,Senés de Alcubierre,2012,53
+22220,Sesa,2012,208
+22221,Sesué,2012,127
+22222,Siétamo,2012,650
+22223,Sopeira,2012,114
+22225,Tamarite de Litera,2012,3656
+22226,Tardienta,2012,985
+22227,Tella-Sin,2012,263
+22228,Tierz,2012,714
+22229,Tolva,2012,152
+22230,Torla,2012,320
+22232,Torralba de Aragón,2012,110
+22233,Torre la Ribera,2012,117
+22234,Torrente de Cinca,2012,1321
+22235,Torres de Alcanadre,2012,105
+22236,Torres de Barbués,2012,297
+22239,Tramaced,2012,94
+22242,Valfarta,2012,74
+22243,Valle de Bardají,2012,49
+22244,Valle de Lierp,2012,64
+22245,Velilla de Cinca,2012,452
+22246,Veracruz,2012,97
+22247,Viacamp y Litera,2012,51
+22248,Vicién,2012,115
+22249,Villanova,2012,148
+22250,Villanúa,2012,499
+22251,Villanueva de Sigena,2012,464
+22252,Yebra de Basa,2012,147
+22253,Yésero,2012,67
+22254,Zaidín,2012,1750
+22901,Valle de Hecho,2012,937
+22902,Puente la Reina de Jaca,2012,286
+22903,San Miguel del Cinca,2012,849
+22904,Sotonera (La),2012,1042
+22905,Lupiñén-Ortilla,2012,378
+22906,Santa María de Dulcis,2012,226
+22907,Aínsa-Sobrarbe,2012,2242
+22908,Hoz y Costeán,2012,204
+22909,Vencillón,2012,455
+44001,Ababuj,2012,73
+44002,Abejuela,2012,55
+44003,Aguatón,2012,20
+44004,Aguaviva,2012,660
+44005,Aguilar del Alfambra,2012,73
+44006,Alacón,2012,331
+44007,Alba,2012,231
+44008,Albalate del Arzobispo,2012,2087
+44009,Albarracín,2012,1102
+44010,Albentosa,2012,290
+44011,Alcaine,2012,69
+44012,Alcalá de la Selva,2012,496
+44013,Alcañiz,2012,16424
+44014,Alcorisa,2012,3556
+44016,Alfambra,2012,622
+44017,Aliaga,2012,366
+44018,Almohaja,2012,28
+44019,Alobras,2012,79
+44020,Alpeñés,2012,25
+44021,Allepuz,2012,121
+44022,Alloza,2012,673
+44023,Allueva,2012,21
+44024,Anadón,2012,27
+44025,Andorra,2012,8266
+44026,Arcos de las Salinas,2012,105
+44027,Arens de Lledó,2012,205
+44028,Argente,2012,224
+44029,Ariño,2012,893
+44031,Azaila,2012,133
+44032,Bádenas,2012,21
+44033,Báguena,2012,370
+44034,Bañón,2012,162
+44035,Barrachina,2012,143
+44036,Bea,2012,30
+44037,Beceite,2012,607
+44038,Belmonte de San José,2012,126
+44039,Bello,2012,282
+44040,Berge,2012,254
+44041,Bezas,2012,78
+44042,Blancas,2012,158
+44043,Blesa,2012,125
+44044,Bordón,2012,131
+44045,Bronchales,2012,472
+44046,Bueña,2012,63
+44047,Burbáguena,2012,292
+44048,Cabra de Mora,2012,79
+44049,Calaceite,2012,1105
+44050,Calamocha,2012,4579
+44051,Calanda,2012,3956
+44052,Calomarde,2012,90
+44053,Camañas,2012,135
+44054,Camarena de la Sierra,2012,145
+44055,Camarillas,2012,117
+44056,Caminreal,2012,735
+44059,Cantavieja,2012,745
+44060,Cañada de Benatanduz,2012,39
+44061,Cañada de Verich (La),2012,106
+44062,Cañada Vellida,2012,38
+44063,Cañizar del Olivar,2012,110
+44064,Cascante del Río,2012,91
+44065,Castejón de Tornos,2012,64
+44066,Castel de Cabra,2012,138
+44067,Castelnou,2012,177
+44068,Castelserás,2012,834
+44070,Castellar (El),2012,64
+44071,Castellote,2012,794
+44074,Cedrillas,2012,631
+44075,Celadas,2012,406
+44076,Cella,2012,2878
+44077,Cerollera (La),2012,116
+44080,Codoñera (La),2012,377
+44082,Corbalán,2012,107
+44084,Cortes de Aragón,2012,72
+44085,Cosa,2012,61
+44086,Cretas,2012,598
+44087,Crivillén,2012,88
+44088,Cuba (La),2012,50
+44089,Cubla,2012,62
+44090,Cucalón,2012,108
+44092,Cuervo (El),2012,91
+44093,Cuevas de Almudén,2012,148
+44094,Cuevas Labradas,2012,128
+44096,Ejulve,2012,208
+44097,Escorihuela,2012,177
+44099,Escucha,2012,995
+44100,Estercuel,2012,259
+44101,Ferreruela de Huerva,2012,70
+44102,Fonfría,2012,30
+44103,Formiche Alto,2012,175
+44105,Fórnoles,2012,105
+44106,Fortanete,2012,222
+44107,Foz-Calanda,2012,279
+44108,Fresneda (La),2012,486
+44109,Frías de Albarracín,2012,151
+44110,Fuenferrada,2012,62
+44111,Fuentes Calientes,2012,116
+44112,Fuentes Claras,2012,576
+44113,Fuentes de Rubielos,2012,125
+44114,Fuentespalda,2012,317
+44115,Galve,2012,170
+44116,Gargallo,2012,122
+44117,Gea de Albarracín,2012,405
+44118,Ginebrosa (La),2012,216
+44119,Griegos,2012,143
+44120,Guadalaviar,2012,236
+44121,Gúdar,2012,77
+44122,Híjar,2012,1806
+44123,Hinojosa de Jarque,2012,151
+44124,Hoz de la Vieja (La),2012,79
+44125,Huesa del Común,2012,86
+44126,Iglesuela del Cid (La),2012,496
+44127,Jabaloyas,2012,83
+44128,Jarque de la Val,2012,91
+44129,Jatiel,2012,49
+44130,Jorcas,2012,41
+44131,Josa,2012,38
+44132,Lagueruela,2012,69
+44133,Lanzuela,2012,28
+44135,Libros,2012,141
+44136,Lidón,2012,55
+44137,Linares de Mora,2012,296
+44138,Loscos,2012,175
+44141,Lledó,2012,169
+44142,Maicas,2012,38
+44143,Manzanera,2012,554
+44144,Martín del Río,2012,429
+44145,Mas de las Matas,2012,1360
+44146,Mata de los Olmos (La),2012,281
+44147,Mazaleón,2012,567
+44148,Mezquita de Jarque,2012,118
+44149,Mirambel,2012,129
+44150,Miravete de la Sierra,2012,33
+44151,Molinos,2012,286
+44152,Monforte de Moyuela,2012,63
+44153,Monreal del Campo,2012,2709
+44154,Monroyo,2012,390
+44155,Montalbán,2012,1350
+44156,Monteagudo del Castillo,2012,67
+44157,Monterde de Albarracín,2012,66
+44158,Mora de Rubielos,2012,1649
+44159,Moscardón,2012,64
+44160,Mosqueruela,2012,621
+44161,Muniesa,2012,653
+44163,Noguera de Albarracín,2012,152
+44164,Nogueras,2012,31
+44165,Nogueruelas,2012,219
+44167,Obón,2012,39
+44168,Odón,2012,229
+44169,Ojos Negros,2012,445
+44171,Olba,2012,249
+44172,Oliete,2012,459
+44173,Olmos (Los),2012,124
+44174,Orihuela del Tremedal,2012,572
+44175,Orrios,2012,152
+44176,Palomar de Arroyos,2012,189
+44177,Pancrudo,2012,133
+44178,Parras de Castellote (Las),2012,69
+44179,Peñarroya de Tastavins,2012,497
+44180,Peracense,2012,77
+44181,Peralejos,2012,83
+44182,Perales del Alfambra,2012,269
+44183,Pitarque,2012,93
+44184,Plou,2012,48
+44185,Pobo (El),2012,142
+44187,Portellada (La),2012,254
+44189,Pozondón,2012,71
+44190,Pozuel del Campo,2012,90
+44191,Puebla de Híjar (La),2012,982
+44192,Puebla de Valverde (La),2012,550
+44193,Puertomingalvo,2012,144
+44194,Ráfales,2012,159
+44195,Rillo,2012,111
+44196,Riodeva,2012,173
+44197,Ródenas,2012,79
+44198,Royuela,2012,247
+44199,Rubiales,2012,61
+44200,Rubielos de la Cérida,2012,43
+44201,Rubielos de Mora,2012,755
+44203,Salcedillo,2012,10
+44204,Saldón,2012,28
+44205,Samper de Calanda,2012,884
+44206,San Agustín,2012,177
+44207,San Martín del Río,2012,191
+44208,Santa Cruz de Nogueras,2012,39
+44209,Santa Eulalia,2012,1122
+44210,Sarrión,2012,1129
+44211,Segura de los Baños,2012,40
+44212,Seno,2012,45
+44213,Singra,2012,84
+44215,Terriente,2012,191
+44216,Teruel,2012,35841
+44217,Toril y Masegoso,2012,35
+44218,Tormón,2012,34
+44219,Tornos,2012,231
+44220,Torralba de los Sisones,2012,181
+44221,Torrecilla de Alcañiz,2012,447
+44222,Torrecilla del Rebollar,2012,142
+44223,Torre de Arcas,2012,88
+44224,Torre de las Arcas,2012,30
+44225,Torre del Compte,2012,148
+44226,Torrelacárcel,2012,200
+44227,Torre los Negros,2012,98
+44228,Torremocha de Jiloca,2012,128
+44229,Torres de Albarracín,2012,167
+44230,Torrevelilla,2012,199
+44231,Torrijas,2012,57
+44232,Torrijo del Campo,2012,506
+44234,Tramacastiel,2012,85
+44235,Tramacastilla,2012,125
+44236,Tronchón,2012,100
+44237,Urrea de Gaén,2012,516
+44238,Utrillas,2012,3238
+44239,Valacloche,2012,28
+44240,Valbona,2012,211
+44241,Valdealgorfa,2012,651
+44243,Valdecuenca,2012,56
+44244,Valdelinares,2012,106
+44245,Valdeltormo,2012,317
+44246,Valderrobres,2012,2335
+44247,Valjunquera,2012,386
+44249,Vallecillo (El),2012,54
+44250,Veguillas de la Sierra,2012,20
+44251,Villafranca del Campo,2012,323
+44252,Villahermosa del Campo,2012,99
+44256,Villanueva del Rebollar de la Sierra,2012,47
+44257,Villar del Cobo,2012,202
+44258,Villar del Salz,2012,79
+44260,Villarluengo,2012,200
+44261,Villarquemado,2012,904
+44262,Villarroya de los Pinares,2012,163
+44263,Villastar,2012,480
+44264,Villel,2012,347
+44265,Vinaceite,2012,308
+44266,Visiedo,2012,145
+44267,Vivel del Río Martín,2012,86
+44268,Zoma (La),2012,22
+50001,Abanto,2012,127
+50002,Acered,2012,243
+50003,Agón,2012,167
+50004,Aguarón,2012,848
+50005,Aguilón,2012,254
+50006,Ainzón,2012,1214
+50007,Aladrén,2012,60
+50008,Alagón,2012,7167
+50009,Alarba,2012,161
+50010,Alberite de San Juan,2012,97
+50011,Albeta,2012,149
+50012,Alborge,2012,118
+50013,Alcalá de Ebro,2012,284
+50014,Alcalá de Moncayo,2012,193
+50015,Alconchel de Ariza,2012,90
+50016,Aldehuela de Liestos,2012,51
+50017,Alfajarín,2012,2259
+50018,Alfamén,2012,1609
+50019,Alforque,2012,86
+50020,Alhama de Aragón,2012,1124
+50021,Almochuel,2012,42
+50022,Almolda (La),2012,611
+50023,Almonacid de la Cuba,2012,252
+50024,Almonacid de la Sierra,2012,781
+50025,Almunia de Doña Godina (La),2012,7792
+50026,Alpartir,2012,570
+50027,Ambel,2012,281
+50028,Anento,2012,126
+50029,Aniñón,2012,801
+50030,Añón de Moncayo,2012,213
+50031,Aranda de Moncayo,2012,198
+50032,Arándiga,2012,385
+50033,Ardisa,2012,83
+50034,Ariza,2012,1227
+50035,Artieda,2012,90
+50036,Asín,2012,115
+50037,Atea,2012,152
+50038,Ateca,2012,2099
+50039,Azuara,2012,680
+50040,Badules,2012,100
+50041,Bagüés,2012,20
+50042,Balconchán,2012,14
+50043,Bárboles,2012,327
+50044,Bardallur,2012,325
+50045,Belchite,2012,1655
+50046,Belmonte de Gracián,2012,238
+50047,Berdejo,2012,63
+50048,Berrueco,2012,42
+50050,Bijuesca,2012,114
+50051,Biota,2012,1073
+50052,Bisimbre,2012,99
+50053,Boquiñeni,2012,956
+50054,Bordalba,2012,71
+50055,Borja,2012,5057
+50056,Botorrita,2012,532
+50057,Brea de Aragón,2012,1795
+50058,Bubierca,2012,84
+50059,Bujaraloz,2012,1054
+50060,Bulbuente,2012,235
+50061,Bureta,2012,268
+50062,Burgo de Ebro (El),2012,2363
+50063,Buste (El),2012,82
+50064,Cabañas de Ebro,2012,553
+50065,Cabolafuente,2012,44
+50066,Cadrete,2012,3293
+50067,Calatayud,2012,21174
+50068,Calatorao,2012,3015
+50069,Calcena,2012,65
+50070,Calmarza,2012,77
+50071,Campillo de Aragón,2012,152
+50072,Carenas,2012,184
+50073,Cariñena,2012,3572
+50074,Caspe,2012,9885
+50075,Castejón de Alarba,2012,95
+50076,Castejón de las Armas,2012,118
+50077,Castejón de Valdejasa,2012,257
+50078,Castiliscar,2012,310
+50079,Cervera de la Cañada,2012,318
+50080,Cerveruela,2012,41
+50081,Cetina,2012,677
+50082,Cimballa,2012,118
+50083,Cinco Olivas,2012,119
+50084,Clarés de Ribota,2012,89
+50085,Codo,2012,205
+50086,Codos,2012,241
+50087,Contamina,2012,39
+50088,Cosuenda,2012,398
+50089,Cuarte de Huerva,2012,10394
+50090,Cubel,2012,187
+50091,Cuerlas (Las),2012,55
+50092,Chiprana,2012,465
+50093,Chodes,2012,147
+50094,Daroca,2012,2288
+50095,Ejea de los Caballeros,2012,17180
+50096,Embid de Ariza,2012,52
+50098,Encinacorba,2012,239
+50099,Épila,2012,4746
+50100,Erla,2012,400
+50101,Escatrón,2012,1133
+50102,Fabara,2012,1255
+50104,Farlete,2012,428
+50105,Fayón,2012,384
+50106,Fayos (Los),2012,152
+50107,Figueruelas,2012,1322
+50108,Fombuena,2012,52
+50109,Frago (El),2012,109
+50110,Frasno (El),2012,452
+50111,Fréscano,2012,208
+50113,Fuendejalón,2012,973
+50114,Fuendetodos,2012,172
+50115,Fuentes de Ebro,2012,4577
+50116,Fuentes de Jiloca,2012,280
+50117,Gallocanta,2012,154
+50118,Gallur,2012,2882
+50119,Gelsa,2012,1173
+50120,Godojos,2012,43
+50121,Gotor,2012,366
+50122,Grisel,2012,66
+50123,Grisén,2012,603
+50124,Herrera de los Navarros,2012,576
+50125,Ibdes,2012,471
+50126,Illueca,2012,3290
+50128,Isuerre,2012,34
+50129,Jaraba,2012,355
+50130,Jarque,2012,531
+50131,Jaulín,2012,279
+50132,Joyosa (La),2012,936
+50133,Lagata,2012,135
+50134,Langa del Castillo,2012,141
+50135,Layana,2012,127
+50136,Lécera,2012,757
+50137,Leciñena,2012,1306
+50138,Lechón,2012,52
+50139,Letux,2012,404
+50140,Litago,2012,174
+50141,Lituénigo,2012,120
+50142,Lobera de Onsella,2012,45
+50143,Longares,2012,895
+50144,Longás,2012,34
+50146,Lucena de Jalón,2012,269
+50147,Luceni,2012,1045
+50148,Luesia,2012,366
+50149,Luesma,2012,50
+50150,Lumpiaque,2012,921
+50151,Luna,2012,825
+50152,Maella,2012,1986
+50153,Magallón,2012,1208
+50154,Mainar,2012,157
+50155,Malanquilla,2012,123
+50156,Maleján,2012,325
+50157,Malón,2012,376
+50159,Maluenda,2012,1123
+50160,Mallén,2012,3714
+50161,Manchones,2012,131
+50162,Mara,2012,190
+50163,María de Huerva,2012,5265
+50164,Mediana de Aragón,2012,468
+50165,Mequinenza,2012,2449
+50166,Mesones de Isuela,2012,318
+50167,Mezalocha,2012,210
+50168,Mianos,2012,40
+50169,Miedes de Aragón,2012,458
+50170,Monegrillo,2012,464
+50171,Moneva,2012,117
+50172,Monreal de Ariza,2012,226
+50173,Monterde,2012,169
+50174,Montón,2012,133
+50175,Morata de Jalón,2012,1266
+50176,Morata de Jiloca,2012,280
+50177,Morés,2012,402
+50178,Moros,2012,441
+50179,Moyuela,2012,278
+50180,Mozota,2012,107
+50181,Muel,2012,1379
+50182,Muela (La),2012,5062
+50183,Munébrega,2012,470
+50184,Murero,2012,140
+50185,Murillo de Gállego,2012,202
+50186,Navardún,2012,47
+50187,Nigüella,2012,74
+50188,Nombrevilla,2012,35
+50189,Nonaspe,2012,1064
+50190,Novallas,2012,948
+50191,Novillas,2012,602
+50192,Nuévalos,2012,350
+50193,Nuez de Ebro,2012,843
+50194,Olvés,2012,117
+50195,Orcajo,2012,47
+50196,Orera,2012,135
+50197,Orés,2012,103
+50198,Oseja,2012,48
+50199,Osera de Ebro,2012,449
+50200,Paniza,2012,758
+50201,Paracuellos de Jiloca,2012,587
+50202,Paracuellos de la Ribera,2012,172
+50203,Pastriz,2012,1364
+50204,Pedrola,2012,3780
+50205,Pedrosas (Las),2012,116
+50206,Perdiguera,2012,645
+50207,Piedratajada,2012,130
+50208,Pina de Ebro,2012,2635
+50209,Pinseque,2012,3676
+50210,Pintanos (Los),2012,45
+50211,Plasencia de Jalón,2012,386
+50212,Pleitas,2012,52
+50213,Plenas,2012,131
+50214,Pomer,2012,35
+50215,Pozuel de Ariza,2012,22
+50216,Pozuelo de Aragón,2012,327
+50217,Pradilla de Ebro,2012,627
+50218,Puebla de Albortón,2012,128
+50219,Puebla de Alfindén (La),2012,5603
+50220,Puendeluna,2012,63
+50221,Purujosa,2012,40
+50222,Quinto,2012,2077
+50223,Remolinos,2012,1153
+50224,Retascón,2012,70
+50225,Ricla,2012,3188
+50227,Romanos,2012,121
+50228,Rueda de Jalón,2012,345
+50229,Ruesca,2012,75
+50230,Sádaba,2012,1577
+50231,Salillas de Jalón,2012,373
+50232,Salvatierra de Esca,2012,210
+50233,Samper del Salz,2012,121
+50234,San Martín de la Virgen de Moncayo,2012,297
+50235,San Mateo de Gállego,2012,3158
+50236,Santa Cruz de Grío,2012,148
+50237,Santa Cruz de Moncayo,2012,133
+50238,Santa Eulalia de Gállego,2012,124
+50239,Santed,2012,65
+50240,Sástago,2012,1266
+50241,Saviñán,2012,749
+50242,Sediles,2012,106
+50243,Sestrica,2012,390
+50244,Sierra de Luna,2012,291
+50245,Sigüés,2012,121
+50246,Sisamón,2012,40
+50247,Sobradiel,2012,1029
+50248,Sos del Rey Católico,2012,646
+50249,Tabuenca,2012,387
+50250,Talamantes,2012,60
+50251,Tarazona,2012,11050
+50252,Tauste,2012,7382
+50253,Terrer,2012,475
+50254,Tierga,2012,197
+50255,Tobed,2012,230
+50256,Torralba de los Frailes,2012,90
+50257,Torralba de Ribota,2012,205
+50258,Torralbilla,2012,56
+50259,Torrehermosa,2012,80
+50260,Torrelapaja,2012,39
+50261,Torrellas,2012,290
+50262,Torres de Berrellén,2012,1521
+50263,Torrijo de la Cañada,2012,281
+50264,Tosos,2012,226
+50265,Trasmoz,2012,76
+50266,Trasobares,2012,139
+50267,Uncastillo,2012,731
+50268,Undués de Lerda,2012,76
+50269,Urrea de Jalón,2012,396
+50270,Urriés,2012,41
+50271,Used,2012,304
+50272,Utebo,2012,18281
+50273,Valdehorna,2012,33
+50274,Val de San Martín,2012,77
+50275,Valmadrid,2012,111
+50276,Valpalmas,2012,161
+50277,Valtorres,2012,101
+50278,Velilla de Ebro,2012,243
+50279,Velilla de Jiloca,2012,115
+50280,Vera de Moncayo,2012,398
+50281,Vierlas,2012,98
+50282,Vilueña (La),2012,111
+50283,Villadoz,2012,87
+50284,Villafeliche,2012,209
+50285,Villafranca de Ebro,2012,834
+50286,Villalba de Perejil,2012,109
+50287,Villalengua,2012,386
+50288,Villanueva de Gállego,2012,4611
+50289,Villanueva de Jiloca,2012,60
+50290,Villanueva de Huerva,2012,559
+50291,Villar de los Navarros,2012,114
+50292,Villarreal de Huerva,2012,230
+50293,Villarroya de la Sierra,2012,553
+50294,Villarroya del Campo,2012,78
+50295,Vistabella,2012,52
+50296,Zaida (La),2012,499
+50297,Zaragoza,2012,679624
+50298,Zuera,2012,7738
+50901,Biel,2012,168
+50902,Marracos,2012,106
+50903,Villamayor de Gállego,2012,2838
+22001,Abiego,2013,279
+22002,Abizanda,2013,143
+22003,Adahuesca,2013,176
+22004,Agüero,2013,150
+22006,Aísa,2013,364
+22007,Albalate de Cinca,2013,1249
+22008,Albalatillo,2013,209
+22009,Albelda,2013,794
+22011,Albero Alto,2013,123
+22012,Albero Bajo,2013,121
+22013,Alberuela de Tubo,2013,339
+22014,Alcalá de Gurrea,2013,277
+22015,Alcalá del Obispo,2013,354
+22016,Alcampell,2013,724
+22017,Alcolea de Cinca,2013,1125
+22018,Alcubierre,2013,416
+22019,Alerre,2013,213
+22020,Alfántega,2013,140
+22021,Almudévar,2013,2514
+22022,Almunia de San Juan,2013,663
+22023,Almuniente,2013,538
+22024,Alquézar,2013,298
+22025,Altorricón,2013,1447
+22027,Angüés,2013,419
+22028,Ansó,2013,447
+22029,Antillón,2013,156
+22032,Aragüés del Puerto,2013,128
+22035,Arén,2013,326
+22036,Argavieso,2013,112
+22037,Arguis,2013,129
+22039,Ayerbe,2013,1111
+22040,Azanuy-Alins,2013,181
+22041,Azara,2013,197
+22042,Azlor,2013,133
+22043,Baells,2013,109
+22044,Bailo,2013,301
+22045,Baldellou,2013,103
+22046,Ballobar,2013,863
+22047,Banastás,2013,297
+22048,Barbastro,2013,17210
+22049,Barbués,2013,89
+22050,Barbuñales,2013,98
+22051,Bárcabo,2013,115
+22052,Belver de Cinca,2013,1330
+22053,Benabarre,2013,1206
+22054,Benasque,2013,2195
+22055,Berbegal,2013,385
+22057,Bielsa,2013,500
+22058,Bierge,2013,246
+22059,Biescas,2013,1568
+22060,Binaced,2013,1550
+22061,Binéfar,2013,9468
+22062,Bisaurri,2013,194
+22063,Biscarrués,2013,220
+22064,Blecua y Torres,2013,211
+22066,Boltaña,2013,1071
+22067,Bonansa,2013,86
+22068,Borau,2013,86
+22069,Broto,2013,533
+22072,Caldearenas,2013,212
+22074,Campo,2013,426
+22075,Camporrells,2013,165
+22076,Canal de Berdún,2013,385
+22077,Candasnos,2013,349
+22078,Canfranc,2013,572
+22079,Capdesaso,2013,177
+22080,Capella,2013,371
+22081,Casbas de Huesca,2013,306
+22082,Castejón del Puente,2013,349
+22083,Castejón de Monegros,2013,611
+22084,Castejón de Sos,2013,731
+22085,Castelflorite,2013,135
+22086,Castiello de Jaca,2013,249
+22087,Castigaleu,2013,102
+22088,Castillazuelo,2013,181
+22089,Castillonroy,2013,342
+22090,Colungo,2013,115
+22094,Chalamera,2013,113
+22095,Chía,2013,100
+22096,Chimillas,2013,374
+22099,Esplús,2013,672
+22102,Estada,2013,221
+22103,Estadilla,2013,847
+22105,Estopiñán del Castillo,2013,144
+22106,Fago,2013,27
+22107,Fanlo,2013,118
+22109,Fiscal,2013,374
+22110,Fonz,2013,987
+22111,Foradada del Toscar,2013,197
+22112,Fraga,2013,14834
+22113,Fueva (La),2013,618
+22114,Gistaín,2013,144
+22115,Grado (El),2013,448
+22116,Grañén,2013,1961
+22117,Graus,2013,3513
+22119,Gurrea de Gállego,2013,1627
+22122,Hoz de Jaca,2013,74
+22124,Huerto,2013,255
+22125,Huesca,2013,52418
+22126,Ibieca,2013,121
+22127,Igriés,2013,675
+22128,Ilche,2013,211
+22129,Isábena,2013,297
+22130,Jaca,2013,13221
+22131,Jasa,2013,102
+22133,Labuerda,2013,156
+22135,Laluenga,2013,225
+22136,Lalueza,2013,1021
+22137,Lanaja,2013,1340
+22139,Laperdiguera,2013,95
+22141,Lascellas-Ponzano,2013,148
+22142,Lascuarre,2013,143
+22143,Laspaúles,2013,316
+22144,Laspuña,2013,293
+22149,Loarre,2013,361
+22150,Loporzano,2013,547
+22151,Loscorrales,2013,106
+22155,Monesma y Cajigar,2013,93
+22156,Monflorite-Lascasas,2013,304
+22157,Montanuy,2013,253
+22158,Monzón,2013,17290
+22160,Naval,2013,250
+22162,Novales,2013,183
+22163,Nueno,2013,558
+22164,Olvena,2013,62
+22165,Ontiñena,2013,585
+22167,Osso de Cinca,2013,805
+22168,Palo,2013,23
+22170,Panticosa,2013,765
+22172,Peñalba,2013,720
+22173,Peñas de Riglos (Las),2013,268
+22174,Peralta de Alcofea,2013,553
+22175,Peralta de Calasanz,2013,240
+22176,Peraltilla,2013,201
+22177,Perarrúa,2013,107
+22178,Pertusa,2013,124
+22181,Piracés,2013,102
+22182,Plan,2013,312
+22184,Poleñino,2013,215
+22186,Pozán de Vero,2013,230
+22187,Puebla de Castro (La),2013,415
+22188,Puente de Montañana,2013,129
+22189,Puértolas,2013,214
+22190,Pueyo de Araguás (El),2013,153
+22193,Pueyo de Santa Cruz,2013,358
+22195,Quicena,2013,298
+22197,Robres,2013,582
+22199,Sabiñánigo,2013,10129
+22200,Sahún,2013,326
+22201,Salas Altas,2013,302
+22202,Salas Bajas,2013,136
+22203,Salillas,2013,102
+22204,Sallent de Gállego,2013,1490
+22205,San Esteban de Litera,2013,501
+22206,Sangarrén,2013,214
+22207,San Juan de Plan,2013,158
+22208,Santa Cilia,2013,206
+22209,Santa Cruz de la Serós,2013,191
+22212,Santaliestra y San Quílez,2013,91
+22213,Sariñena,2013,4323
+22214,Secastilla,2013,158
+22215,Seira,2013,142
+22217,Sena,2013,530
+22218,Senés de Alcubierre,2013,51
+22220,Sesa,2013,208
+22221,Sesué,2013,121
+22222,Siétamo,2013,663
+22223,Sopeira,2013,110
+22225,Tamarite de Litera,2013,3626
+22226,Tardienta,2013,994
+22227,Tella-Sin,2013,254
+22228,Tierz,2013,726
+22229,Tolva,2013,147
+22230,Torla,2013,292
+22232,Torralba de Aragón,2013,107
+22233,Torre la Ribera,2013,113
+22234,Torrente de Cinca,2013,1241
+22235,Torres de Alcanadre,2013,106
+22236,Torres de Barbués,2013,303
+22239,Tramaced,2013,95
+22242,Valfarta,2013,78
+22243,Valle de Bardají,2013,39
+22244,Valle de Lierp,2013,59
+22245,Velilla de Cinca,2013,447
+22246,Veracruz,2013,99
+22247,Viacamp y Litera,2013,43
+22248,Vicién,2013,124
+22249,Villanova,2013,150
+22250,Villanúa,2013,487
+22251,Villanueva de Sigena,2013,443
+22252,Yebra de Basa,2013,146
+22253,Yésero,2013,63
+22254,Zaidín,2013,1797
+22901,Valle de Hecho,2013,924
+22902,Puente la Reina de Jaca,2013,284
+22903,San Miguel del Cinca,2013,854
+22904,Sotonera (La),2013,1018
+22905,Lupiñén-Ortilla,2013,374
+22906,Santa María de Dulcis,2013,219
+22907,Aínsa-Sobrarbe,2013,2250
+22908,Hoz y Costeán,2013,190
+22909,Vencillón,2013,442
+44001,Ababuj,2013,65
+44002,Abejuela,2013,39
+44003,Aguatón,2013,19
+44004,Aguaviva,2013,654
+44005,Aguilar del Alfambra,2013,75
+44006,Alacón,2013,306
+44007,Alba,2013,215
+44008,Albalate del Arzobispo,2013,2049
+44009,Albarracín,2013,1093
+44010,Albentosa,2013,296
+44011,Alcaine,2013,69
+44012,Alcalá de la Selva,2013,457
+44013,Alcañiz,2013,16384
+44014,Alcorisa,2013,3501
+44016,Alfambra,2013,584
+44017,Aliaga,2013,361
+44018,Almohaja,2013,21
+44019,Alobras,2013,79
+44020,Alpeñés,2013,19
+44021,Allepuz,2013,119
+44022,Alloza,2013,667
+44023,Allueva,2013,15
+44024,Anadón,2013,23
+44025,Andorra,2013,8278
+44026,Arcos de las Salinas,2013,96
+44027,Arens de Lledó,2013,215
+44028,Argente,2013,225
+44029,Ariño,2013,769
+44031,Azaila,2013,124
+44032,Bádenas,2013,20
+44033,Báguena,2013,353
+44034,Bañón,2013,163
+44035,Barrachina,2013,148
+44036,Bea,2013,30
+44037,Beceite,2013,599
+44038,Belmonte de San José,2013,117
+44039,Bello,2013,250
+44040,Berge,2013,251
+44041,Bezas,2013,75
+44042,Blancas,2013,157
+44043,Blesa,2013,118
+44044,Bordón,2013,120
+44045,Bronchales,2013,461
+44046,Bueña,2013,62
+44047,Burbáguena,2013,294
+44048,Cabra de Mora,2013,66
+44049,Calaceite,2013,1106
+44050,Calamocha,2013,4515
+44051,Calanda,2013,3949
+44052,Calomarde,2013,84
+44053,Camañas,2013,127
+44054,Camarena de la Sierra,2013,138
+44055,Camarillas,2013,110
+44056,Caminreal,2013,724
+44059,Cantavieja,2013,724
+44060,Cañada de Benatanduz,2013,38
+44061,Cañada de Verich (La),2013,94
+44062,Cañada Vellida,2013,38
+44063,Cañizar del Olivar,2013,98
+44064,Cascante del Río,2013,80
+44065,Castejón de Tornos,2013,66
+44066,Castel de Cabra,2013,131
+44067,Castelnou,2013,152
+44068,Castelserás,2013,833
+44070,Castellar (El),2013,62
+44071,Castellote,2013,782
+44074,Cedrillas,2013,630
+44075,Celadas,2013,404
+44076,Cella,2013,2886
+44077,Cerollera (La),2013,104
+44080,Codoñera (La),2013,368
+44082,Corbalán,2013,109
+44084,Cortes de Aragón,2013,57
+44085,Cosa,2013,60
+44086,Cretas,2013,597
+44087,Crivillén,2013,76
+44088,Cuba (La),2013,47
+44089,Cubla,2013,61
+44090,Cucalón,2013,110
+44092,Cuervo (El),2013,98
+44093,Cuevas de Almudén,2013,141
+44094,Cuevas Labradas,2013,135
+44096,Ejulve,2013,204
+44097,Escorihuela,2013,162
+44099,Escucha,2013,1003
+44100,Estercuel,2013,261
+44101,Ferreruela de Huerva,2013,67
+44102,Fonfría,2013,30
+44103,Formiche Alto,2013,170
+44105,Fórnoles,2013,93
+44106,Fortanete,2013,208
+44107,Foz-Calanda,2013,269
+44108,Fresneda (La),2013,495
+44109,Frías de Albarracín,2013,143
+44110,Fuenferrada,2013,61
+44111,Fuentes Calientes,2013,113
+44112,Fuentes Claras,2013,553
+44113,Fuentes de Rubielos,2013,128
+44114,Fuentespalda,2013,308
+44115,Galve,2013,168
+44116,Gargallo,2013,122
+44117,Gea de Albarracín,2013,410
+44118,Ginebrosa (La),2013,216
+44119,Griegos,2013,139
+44120,Guadalaviar,2013,245
+44121,Gúdar,2013,84
+44122,Híjar,2013,1774
+44123,Hinojosa de Jarque,2013,146
+44124,Hoz de la Vieja (La),2013,83
+44125,Huesa del Común,2013,82
+44126,Iglesuela del Cid (La),2013,469
+44127,Jabaloyas,2013,78
+44128,Jarque de la Val,2013,87
+44129,Jatiel,2013,50
+44130,Jorcas,2013,38
+44131,Josa,2013,36
+44132,Lagueruela,2013,72
+44133,Lanzuela,2013,27
+44135,Libros,2013,137
+44136,Lidón,2013,54
+44137,Linares de Mora,2013,276
+44138,Loscos,2013,156
+44141,Lledó,2013,172
+44142,Maicas,2013,36
+44143,Manzanera,2013,539
+44144,Martín del Río,2013,437
+44145,Mas de las Matas,2013,1349
+44146,Mata de los Olmos (La),2013,280
+44147,Mazaleón,2013,558
+44148,Mezquita de Jarque,2013,121
+44149,Mirambel,2013,113
+44150,Miravete de la Sierra,2013,29
+44151,Molinos,2013,276
+44152,Monforte de Moyuela,2013,66
+44153,Monreal del Campo,2013,2680
+44154,Monroyo,2013,367
+44155,Montalbán,2013,1341
+44156,Monteagudo del Castillo,2013,59
+44157,Monterde de Albarracín,2013,62
+44158,Mora de Rubielos,2013,1632
+44159,Moscardón,2013,62
+44160,Mosqueruela,2013,607
+44161,Muniesa,2013,640
+44163,Noguera de Albarracín,2013,146
+44164,Nogueras,2013,30
+44165,Nogueruelas,2013,210
+44167,Obón,2013,38
+44168,Odón,2013,228
+44169,Ojos Negros,2013,435
+44171,Olba,2013,250
+44172,Oliete,2013,430
+44173,Olmos (Los),2013,131
+44174,Orihuela del Tremedal,2013,552
+44175,Orrios,2013,145
+44176,Palomar de Arroyos,2013,186
+44177,Pancrudo,2013,123
+44178,Parras de Castellote (Las),2013,63
+44179,Peñarroya de Tastavins,2013,480
+44180,Peracense,2013,73
+44181,Peralejos,2013,90
+44182,Perales del Alfambra,2013,265
+44183,Pitarque,2013,89
+44184,Plou,2013,45
+44185,Pobo (El),2013,145
+44187,Portellada (La),2013,245
+44189,Pozondón,2013,66
+44190,Pozuel del Campo,2013,80
+44191,Puebla de Híjar (La),2013,974
+44192,Puebla de Valverde (La),2013,547
+44193,Puertomingalvo,2013,135
+44194,Ráfales,2013,138
+44195,Rillo,2013,109
+44196,Riodeva,2013,165
+44197,Ródenas,2013,78
+44198,Royuela,2013,230
+44199,Rubiales,2013,55
+44200,Rubielos de la Cérida,2013,43
+44201,Rubielos de Mora,2013,722
+44203,Salcedillo,2013,10
+44204,Saldón,2013,29
+44205,Samper de Calanda,2013,867
+44206,San Agustín,2013,151
+44207,San Martín del Río,2013,182
+44208,Santa Cruz de Nogueras,2013,38
+44209,Santa Eulalia,2013,1118
+44210,Sarrión,2013,1149
+44211,Segura de los Baños,2013,40
+44212,Seno,2013,43
+44213,Singra,2013,73
+44215,Terriente,2013,179
+44216,Teruel,2013,35961
+44217,Toril y Masegoso,2013,35
+44218,Tormón,2013,31
+44219,Tornos,2013,234
+44220,Torralba de los Sisones,2013,174
+44221,Torrecilla de Alcañiz,2013,437
+44222,Torrecilla del Rebollar,2013,142
+44223,Torre de Arcas,2013,95
+44224,Torre de las Arcas,2013,31
+44225,Torre del Compte,2013,147
+44226,Torrelacárcel,2013,193
+44227,Torre los Negros,2013,91
+44228,Torremocha de Jiloca,2013,125
+44229,Torres de Albarracín,2013,159
+44230,Torrevelilla,2013,211
+44231,Torrijas,2013,44
+44232,Torrijo del Campo,2013,496
+44234,Tramacastiel,2013,76
+44235,Tramacastilla,2013,114
+44236,Tronchón,2013,91
+44237,Urrea de Gaén,2013,491
+44238,Utrillas,2013,3268
+44239,Valacloche,2013,23
+44240,Valbona,2013,197
+44241,Valdealgorfa,2013,621
+44243,Valdecuenca,2013,44
+44244,Valdelinares,2013,100
+44245,Valdeltormo,2013,322
+44246,Valderrobres,2013,2310
+44247,Valjunquera,2013,383
+44249,Vallecillo (El),2013,52
+44250,Veguillas de la Sierra,2013,22
+44251,Villafranca del Campo,2013,323
+44252,Villahermosa del Campo,2013,102
+44256,Villanueva del Rebollar de la Sierra,2013,46
+44257,Villar del Cobo,2013,192
+44258,Villar del Salz,2013,73
+44260,Villarluengo,2013,195
+44261,Villarquemado,2013,889
+44262,Villarroya de los Pinares,2013,164
+44263,Villastar,2013,498
+44264,Villel,2013,355
+44265,Vinaceite,2013,287
+44266,Visiedo,2013,141
+44267,Vivel del Río Martín,2013,81
+44268,Zoma (La),2013,19
+50001,Abanto,2013,133
+50002,Acered,2013,245
+50003,Agón,2013,155
+50004,Aguarón,2013,743
+50005,Aguilón,2013,252
+50006,Ainzón,2013,1187
+50007,Aladrén,2013,54
+50008,Alagón,2013,7175
+50009,Alarba,2013,152
+50010,Alberite de San Juan,2013,91
+50011,Albeta,2013,144
+50012,Alborge,2013,119
+50013,Alcalá de Ebro,2013,270
+50014,Alcalá de Moncayo,2013,184
+50015,Alconchel de Ariza,2013,85
+50016,Aldehuela de Liestos,2013,48
+50017,Alfajarín,2013,2235
+50018,Alfamén,2013,1517
+50019,Alforque,2013,78
+50020,Alhama de Aragón,2013,1106
+50021,Almochuel,2013,38
+50022,Almolda (La),2013,608
+50023,Almonacid de la Cuba,2013,244
+50024,Almonacid de la Sierra,2013,744
+50025,Almunia de Doña Godina (La),2013,7766
+50026,Alpartir,2013,567
+50027,Ambel,2013,270
+50028,Anento,2013,108
+50029,Aniñón,2013,789
+50030,Añón de Moncayo,2013,212
+50031,Aranda de Moncayo,2013,185
+50032,Arándiga,2013,367
+50033,Ardisa,2013,81
+50034,Ariza,2013,1207
+50035,Artieda,2013,90
+50036,Asín,2013,103
+50037,Atea,2013,167
+50038,Ateca,2013,2061
+50039,Azuara,2013,643
+50040,Badules,2013,102
+50041,Bagüés,2013,20
+50042,Balconchán,2013,14
+50043,Bárboles,2013,316
+50044,Bardallur,2013,311
+50045,Belchite,2013,1633
+50046,Belmonte de Gracián,2013,233
+50047,Berdejo,2013,61
+50048,Berrueco,2013,41
+50050,Bijuesca,2013,108
+50051,Biota,2013,1036
+50052,Bisimbre,2013,100
+50053,Boquiñeni,2013,923
+50054,Bordalba,2013,68
+50055,Borja,2013,4915
+50056,Botorrita,2013,516
+50057,Brea de Aragón,2013,1754
+50058,Bubierca,2013,78
+50059,Bujaraloz,2013,1044
+50060,Bulbuente,2013,241
+50061,Bureta,2013,268
+50062,Burgo de Ebro (El),2013,2366
+50063,Buste (El),2013,76
+50064,Cabañas de Ebro,2013,540
+50065,Cabolafuente,2013,41
+50066,Cadrete,2013,3363
+50067,Calatayud,2013,20926
+50068,Calatorao,2013,2998
+50069,Calcena,2013,81
+50070,Calmarza,2013,80
+50071,Campillo de Aragón,2013,148
+50072,Carenas,2013,165
+50073,Cariñena,2013,3537
+50074,Caspe,2013,9858
+50075,Castejón de Alarba,2013,87
+50076,Castejón de las Armas,2013,106
+50077,Castejón de Valdejasa,2013,248
+50078,Castiliscar,2013,300
+50079,Cervera de la Cañada,2013,318
+50080,Cerveruela,2013,42
+50081,Cetina,2013,672
+50082,Cimballa,2013,115
+50083,Cinco Olivas,2013,109
+50084,Clarés de Ribota,2013,84
+50085,Codo,2013,202
+50086,Codos,2013,227
+50087,Contamina,2013,37
+50088,Cosuenda,2013,390
+50089,Cuarte de Huerva,2013,11043
+50090,Cubel,2013,188
+50091,Cuerlas (Las),2013,52
+50092,Chiprana,2013,487
+50093,Chodes,2013,135
+50094,Daroca,2013,2255
+50095,Ejea de los Caballeros,2013,17139
+50096,Embid de Ariza,2013,51
+50098,Encinacorba,2013,238
+50099,Épila,2013,4734
+50100,Erla,2013,393
+50101,Escatrón,2013,1104
+50102,Fabara,2013,1276
+50104,Farlete,2013,411
+50105,Fayón,2013,372
+50106,Fayos (Los),2013,151
+50107,Figueruelas,2013,1319
+50108,Fombuena,2013,52
+50109,Frago (El),2013,105
+50110,Frasno (El),2013,441
+50111,Fréscano,2013,204
+50113,Fuendejalón,2013,948
+50114,Fuendetodos,2013,169
+50115,Fuentes de Ebro,2013,4656
+50116,Fuentes de Jiloca,2013,261
+50117,Gallocanta,2013,154
+50118,Gallur,2013,2846
+50119,Gelsa,2013,1135
+50120,Godojos,2013,39
+50121,Gotor,2013,352
+50122,Grisel,2013,70
+50123,Grisén,2013,626
+50124,Herrera de los Navarros,2013,569
+50125,Ibdes,2013,460
+50126,Illueca,2013,3216
+50128,Isuerre,2013,33
+50129,Jaraba,2013,340
+50130,Jarque,2013,529
+50131,Jaulín,2013,265
+50132,Joyosa (La),2013,983
+50133,Lagata,2013,142
+50134,Langa del Castillo,2013,134
+50135,Layana,2013,108
+50136,Lécera,2013,754
+50137,Leciñena,2013,1263
+50138,Lechón,2013,51
+50139,Letux,2013,372
+50140,Litago,2013,173
+50141,Lituénigo,2013,124
+50142,Lobera de Onsella,2013,40
+50143,Longares,2013,903
+50144,Longás,2013,35
+50146,Lucena de Jalón,2013,264
+50147,Luceni,2013,1032
+50148,Luesia,2013,325
+50149,Luesma,2013,47
+50150,Lumpiaque,2013,915
+50151,Luna,2013,794
+50152,Maella,2013,1977
+50153,Magallón,2013,1191
+50154,Mainar,2013,158
+50155,Malanquilla,2013,117
+50156,Maleján,2013,305
+50157,Malón,2013,378
+50159,Maluenda,2013,1116
+50160,Mallén,2013,3611
+50161,Manchones,2013,122
+50162,Mara,2013,186
+50163,María de Huerva,2013,5315
+50164,Mediana de Aragón,2013,469
+50165,Mequinenza,2013,2436
+50166,Mesones de Isuela,2013,300
+50167,Mezalocha,2013,244
+50168,Mianos,2013,33
+50169,Miedes de Aragón,2013,470
+50170,Monegrillo,2013,458
+50171,Moneva,2013,116
+50172,Monreal de Ariza,2013,231
+50173,Monterde,2013,161
+50174,Montón,2013,115
+50175,Morata de Jalón,2013,1259
+50176,Morata de Jiloca,2013,232
+50177,Morés,2013,393
+50178,Moros,2013,434
+50179,Moyuela,2013,280
+50180,Mozota,2013,117
+50181,Muel,2013,1377
+50182,Muela (La),2013,5015
+50183,Munébrega,2013,462
+50184,Murero,2013,135
+50185,Murillo de Gállego,2013,189
+50186,Navardún,2013,45
+50187,Nigüella,2013,75
+50188,Nombrevilla,2013,34
+50189,Nonaspe,2013,1038
+50190,Novallas,2013,947
+50191,Novillas,2013,594
+50192,Nuévalos,2013,348
+50193,Nuez de Ebro,2013,863
+50194,Olvés,2013,109
+50195,Orcajo,2013,45
+50196,Orera,2013,133
+50197,Orés,2013,104
+50198,Oseja,2013,44
+50199,Osera de Ebro,2013,447
+50200,Paniza,2013,754
+50201,Paracuellos de Jiloca,2013,567
+50202,Paracuellos de la Ribera,2013,172
+50203,Pastriz,2013,1317
+50204,Pedrola,2013,3680
+50205,Pedrosas (Las),2013,111
+50206,Perdiguera,2013,616
+50207,Piedratajada,2013,126
+50208,Pina de Ebro,2013,2615
+50209,Pinseque,2013,3687
+50210,Pintanos (Los),2013,48
+50211,Plasencia de Jalón,2013,374
+50212,Pleitas,2013,45
+50213,Plenas,2013,128
+50214,Pomer,2013,33
+50215,Pozuel de Ariza,2013,22
+50216,Pozuelo de Aragón,2013,318
+50217,Pradilla de Ebro,2013,624
+50218,Puebla de Albortón,2013,125
+50219,Puebla de Alfindén (La),2013,5784
+50220,Puendeluna,2013,55
+50221,Purujosa,2013,39
+50222,Quinto,2013,2085
+50223,Remolinos,2013,1144
+50224,Retascón,2013,70
+50225,Ricla,2013,3225
+50227,Romanos,2013,114
+50228,Rueda de Jalón,2013,343
+50229,Ruesca,2013,76
+50230,Sádaba,2013,1506
+50231,Salillas de Jalón,2013,337
+50232,Salvatierra de Esca,2013,211
+50233,Samper del Salz,2013,109
+50234,San Martín de la Virgen de Moncayo,2013,292
+50235,San Mateo de Gállego,2013,3190
+50236,Santa Cruz de Grío,2013,136
+50237,Santa Cruz de Moncayo,2013,143
+50238,Santa Eulalia de Gállego,2013,123
+50239,Santed,2013,66
+50240,Sástago,2013,1249
+50241,Saviñán,2013,770
+50242,Sediles,2013,108
+50243,Sestrica,2013,400
+50244,Sierra de Luna,2013,262
+50245,Sigüés,2013,113
+50246,Sisamón,2013,39
+50247,Sobradiel,2013,1054
+50248,Sos del Rey Católico,2013,635
+50249,Tabuenca,2013,369
+50250,Talamantes,2013,60
+50251,Tarazona,2013,10863
+50252,Tauste,2013,7190
+50253,Terrer,2013,586
+50254,Tierga,2013,195
+50255,Tobed,2013,236
+50256,Torralba de los Frailes,2013,88
+50257,Torralba de Ribota,2013,203
+50258,Torralbilla,2013,57
+50259,Torrehermosa,2013,70
+50260,Torrelapaja,2013,37
+50261,Torrellas,2013,287
+50262,Torres de Berrellén,2013,1501
+50263,Torrijo de la Cañada,2013,277
+50264,Tosos,2013,210
+50265,Trasmoz,2013,74
+50266,Trasobares,2013,140
+50267,Uncastillo,2013,712
+50268,Undués de Lerda,2013,60
+50269,Urrea de Jalón,2013,406
+50270,Urriés,2013,41
+50271,Used,2013,303
+50272,Utebo,2013,18336
+50273,Valdehorna,2013,29
+50274,Val de San Martín,2013,76
+50275,Valmadrid,2013,138
+50276,Valpalmas,2013,151
+50277,Valtorres,2013,92
+50278,Velilla de Ebro,2013,243
+50279,Velilla de Jiloca,2013,116
+50280,Vera de Moncayo,2013,406
+50281,Vierlas,2013,91
+50282,Vilueña (La),2013,109
+50283,Villadoz,2013,93
+50284,Villafeliche,2013,206
+50285,Villafranca de Ebro,2013,834
+50286,Villalba de Perejil,2013,108
+50287,Villalengua,2013,376
+50288,Villanueva de Gállego,2013,4606
+50289,Villanueva de Jiloca,2013,57
+50290,Villanueva de Huerva,2013,534
+50291,Villar de los Navarros,2013,113
+50292,Villarreal de Huerva,2013,219
+50293,Villarroya de la Sierra,2013,535
+50294,Villarroya del Campo,2013,78
+50295,Vistabella,2013,49
+50296,Zaida (La),2013,486
+50297,Zaragoza,2013,682004
+50298,Zuera,2013,7817
+50901,Biel,2013,167
+50902,Marracos,2013,101
+50903,Villamayor de Gállego,2013,2837

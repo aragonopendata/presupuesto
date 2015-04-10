@@ -1,0 +1,78 @@
+@font-face {
+	font-family: 'icons';
+	src: url('../assets/icomoon.eot');
+	src: url('../assets/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../assets/icomoon.svg#icons') format('svg'),
+		url('../assets/icomoon.woff') format('woff'),
+		url('../assets/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Use the following CSS code if you want to have a class per icon
+[class*="icon-"]:before,
+[data-icon]:before {
+	font-family: 'icons';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	text-transform: none;
+}
+[class*="icon-"]:before {margin-right: .35em; /* Margen hacia la derecha para separarlo del texto */}
+[data-icon]:before {content: attr(data-icon); line-height: 1;}
+
+// Icon list
+.icon-file-pdf:before {content: "\66";}
+.icon-file-word:before {content: "\77";}
+.icon-file-excel:before {content: "\6c";}
+.icon-file-powerpoint:before {content: "\73";}
+.icon-file-zip:before {content: "\7a";}
+.icon-plus:before {content: "\2b";}
+.icon-cancel:before {content: "\78";}
+.icon-minus:before {content: "\2d";}
+.icon-expenses:before {content: "\3c";}
+.icon-incomes:before {content: "\3e";}
+.icon-programme:before {content: "\70";}
+.icon-budget:before {content: "\42";}
+.icon-search:before {content: "\53";}
+.icon-term:before {content: "\54";}
+.icon-glossary:before {content: "\47";}
+.icon-calendar:before {content: "\43";}
+.icon-aportacion:before {content: "\63";}
+.icon-policy:before {content: "\50";}
+.icon-home:before {content: "\48";}
+.icon-checkmark:before {content: "\76";}
+.icon-feed:before {content: "\72";}
+.icon-loop:before {content: "\21";}
+.icon-comparison:before {content: "\22";}
+.icon-tree:before {content: "\e600";}
+.icon-compass:before {content: "\e601";}
+.icon-payments:before {content: "\e604"; }
+
+
+// Listas de iconos / Icono en bloque
+.icon-list >  [class*="icon-"] {background: none;/*Para evitar heredar el bullet por defecto que le es asignado a los <li> */}
+.icon-list >  [class*="icon-"]:before, .icon-block:before {left: 0; position: absolute; top: 0;}
+.icon-list > *, .icon-block {padding-left: 1.5em; position: relative;}
+.icon-block {display: block; /* Obligarlo a ponserse en línea no es capaz de meterle padding izquierdo */}
+
+
+
+// Meta info de un archivo PDF, XLS, etc.
+[class*="icon-file"] .meta {color: lighten(@black, 20%); font-size: .75em; text-transform: uppercase;}
+
+
+
+// Tamaños de iconos standalone
+.tera[data-icon]:before {font-size: 5.5em;}
+.giga[data-icon]:before {font-size: 5em;}
+.mega[data-icon]:before {font-size: 4.5em;}
+.kilo[data-icon]:before {font-size: 4em;}
+.hecto[data-icon]:before {font-size: 3.5em;}
+.deca[data-icon]:before {font-size: 3em;}
+.deci[data-icon]:before {font-size: 2.5em;}
+.centi[data-icon]:before {font-size: 2em;}
+.milli[data-icon]:before {font-size: 1.5em;}
+.micro[data-icon]:before {font-size: 1em;}
+.nano[data-icon]:before {font-size: .875em;}
+.pico[data-icon]:before {font-size: .75em;}

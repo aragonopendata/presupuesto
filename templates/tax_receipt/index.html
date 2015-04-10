@@ -3,21 +3,21 @@
 <script src="{{ STATIC_URL }}javascripts/tax_calculator.js"></script>
 {% endblock %}
 {% block content %}
-<h1 class="page-title">Lo que tú aportas</h1>
-<p class="intro-text">Te mostramos de forma aproximada<a href="#footnote-receipt" title="Nota sobre el cálculo realizado"><span class="asterisk">* <span class="visuallyhidden">Nota sobre el cálculo realizado</span></span></a> cómo se distribuye el dinero que aportas con tus impuestos.</p>
+<h1 class="page-title">{{ _('Lo que tú aportas') }}</h1>
+<p class="intro-text">{{ _('Te mostramos de forma aproximada') }}<a href="#footnote-receipt" title="{{ _('Nota sobre el cálculo realizado') }}"><span class="asterisk">* <span class="visuallyhidden">{{ _('Nota sobre el cálculo realizado') }}</span></span></a> {{ _('cómo se distribuye el dinero que aportas con tus impuestos') }}.</p>
 
 <form class="form-user-incomings" action="#" method="get">
   <div class="user-incomings-custom">
-    <label for="ingresos">Indica tus ingresos brutos anuales</label>
+    <label for="ingresos">{{ _('Indica tus ingresos brutos anuales') }}</label>
     <input placeholder="{{ default_income }}" name="ingresos" id="ingresos" type="text">
     <span class="euro">€</span>
-    <button id="btn-recalculate" class="button button-3d black tupper" type="button">Calcular</button>
+    <button id="btn-recalculate" class="button button-3d black tupper" type="button">{{ _('Calcular') }}</button>
   </div>
 </form>
 
-<p id="tax-amount">Has ingresado <b id='tax-amount-income'></b>, contribuyes con un total de <b id='tax-amount-paid'></b> en impuestos, de los que <b id='tax-amount-kept-locally'></b> se destinan a los Presupuestos del Gobierno de Aragon.</p>
+<p id="tax-amount">{{ _('Has ingresado <b id="tax-amount-income"></b>, contribuyes con un total de <b id="tax-amount-paid"></b> en impuestos, de los que <b id="tax-amount-kept-locally"></b> se destinan a los')|safe }} {{ _('Presupuestos del Gobierno de Aragón') }}.</p>
 
-<p class="footnote tcenter" id="footnote-receipt"><span class="asterisk">*</span> El cálculo está basado en aproximaciones medias y ni sustituye ni complementa a las declaraciones tributarias oficiales. La aproximación incluye IRPF, IVA e Impuestos Especiales, pero no la Seguridad Social. Para realizar el cálculo hemos supuesto lo siguiente: todos tus ingresos provienen de rendimientos del trabajo o de actividades económicas; tienes un consumo medio de gasolina, alcohol y tabaco; al final del año ahorras el 10% de tus ingresos; y tienes reducciones y gastos deducibles por un total de 3000€ en el IRPF.</p>
+<p class="footnote tcenter" id="footnote-receipt"><span class="asterisk">*</span> {{ _('El cálculo está basado en aproximaciones medias y ni sustituye ni complementa a las declaraciones tributarias oficiales. La aproximación incluye IRPF, IVA e Impuestos Especiales, pero no la Seguridad Social. Para realizar el cálculo hemos supuesto lo siguiente: todos tus ingresos provienen de rendimientos del trabajo o de actividades económicas; tienes un consumo medio de gasolina, alcohol y tabaco; al final del año ahorras el 10% de tus ingresos; y tienes reducciones y gastos deducibles por un total de 3000€ en el IRPF') }}.</p>
 
 <div class="box box-tax">
   <div class="box-title">

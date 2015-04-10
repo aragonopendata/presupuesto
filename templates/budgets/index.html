@@ -1,40 +1,20 @@
 {% extends 'base.html' %}
 {% block extra_javascript %}
-<script src="{{ STATIC_URL }}javascripts/vis/d3.v3-3-9.min.js"></script>
+<script src="{{ STATIC_URL }}javascripts/vis/d3.v3.min.js"></script>
 <script src="{{ STATIC_URL }}javascripts/vis/d3.sankey.js"></script>
 <script src="{{ STATIC_URL }}javascripts/vis/budget-sankey.js"></script>
 {% endblock %}
 {% block content %}
-<h1 class="page-title">El recorrido de mis impuestos</h1>
+<h1 class="page-title">{{ _('El recorrido de mis impuestos') }}</h1>
 
-<div class="budget-stream">
-  <div class="row-fluid">
-    <div class="span4">
-      <div class="step1">
-        <h2><span>1.</span> <b>La recaudación</b></h2>
-        <p class="desc">Se realiza a través de <b>impuestos directos</b> - como el IRPF y el impuesto de sociedades - y de <b>impuestos indirectos</b> - el IVA e impuestos sobre el tabaco, el alcohol o la gasolina -.</p>
-      </div>
-    </div>
-    <div class="span4">
-      <div class="step2">
-        <h2><span>2.</span> <b>¿Cómo se reparte?</b></h2>
-        <p class="desc">Una parte del dinero recaudado se queda en la <b>Administración General del Estado</b>, mientras que otra parte se transfiere al <b>Gobierno de Aragón</b>.</p>
-      </div>
-    </div>
-    <div class="span4">
-      <div class="step3">
-        <h2><span>3.</span> <b>¿En qué se emplea?</b></h2>
-        <p class="desc">El <b>Gobierno de Aragón</b> utiliza el dinero recaudado, junto con otras fuentes de financiación como puede ser la deuda, para <b>mantener los servicios públicos</b>.</p>
-      </div>
-    </div>
-  </div>
-</div>
+{% include 'budgets/budgets_intro.html' %}
 
-<h1 class="page-title" style="margin-top: 100px">Ingresos y gastos en el Gobierno de Aragón</h1>
+<h1 class="page-title" style="margin-top: 100px">{{ _('Ingresos y gastos en el Gobierno de Aragón') }}</h1>
+
 <div class="sankey" id="chart" style="margin-top: -10px"></div>
 
 <div class="data-controllers">
-  <p class="title tcenter">Elige año</p>
+  <p class="title tcenter">{{ _('Elige año') }}</p>
   <div class="layout-slider">
     <input id="year-selection" type="slider" name="price" value="20" />
   </div>
@@ -45,11 +25,43 @@
   <div id="pop-up-content"></div>
 </div>
 
+{% include 'budgets/budgets_indicators.html' %}
+
+{% include 'shared/social_sharing.html' %}
+
+{% include 'shared/data_sources.html' %}
+
 {% include 'shared/policy_paths.html' %}
 <script>
   $(function() {
     function redraw() {
-      sankey.update(getUIState());
+      var uiState = getUIState();
+      sankey.update(uiState);
+      updateIndicators(uiState);
+    }
+
+    // Update global budget indicators
+    function updateIndicators(uiState) {
+      function getSum(breakdown, ids, field, year) {
+        // TODO: Take into account whether actual spending figures exists (and whether they cover whole year)
+        return _.reduce(ids, function(sum, id) { return sum + (breakdown.sub[id][field][year]||0); }, 0);
+      }
+
+      function format(amount) {
+        return formatAmount(adjustInflation(amount, stats, uiState.year));
+      }
+
+      var gross_savings = getSum(chapterBreakdown, _.range(1, 6), 'income', uiState.year) -
+                          getSum(chapterBreakdown, _.range(1, 6), 'expense', uiState.year);
+      var net_savings = gross_savings - getSum(chapterBreakdown, '9', 'expense', uiState.year);
+      var funding_capacity = gross_savings +
+                              getSum(chapterBreakdown, [6, 7], 'income', uiState.year) -
+                              getSum(chapterBreakdown, [6, 7], 'expense', uiState.year);
+
+      $('#indicators-year').text(uiState.year);
+      $('#total-gross-savings').text(format(gross_savings));
+      $('#total-net-savings').text(format(net_savings));
+      $('#total-funding-capacity').text(format(funding_capacity));
     }
 
     // Calculate maximum amount to display across all years, so we can set a global scale for the Sankey
@@ -69,17 +81,23 @@
     }
 
     var stats = {{ stats|safe }};
+    var budgetStatuses = {{ budget_statuses|safe }};
+
     var functionalBreakdown = {{ functional_breakdown.to_json( labels=descriptions['functional'] )|safe }};
     var economicBreakdown = {{ economic_breakdown.to_json( labels=descriptions['income'] )|safe }};
+    var chapterBreakdown = {{ chapter_breakdown.to_json()|safe }};  // Used for indicators
     var i18n = {
       'other': 'Otros',
-      'government': 'Gobierno de Aragón',
+      'government': '{{ _("Gobierno de Aragón") }}',
       'budgeted': 'Presupuestado',
       'executed': 'Ejecutado',
       'amounts.are.real': '(Cantidades actualizadas con la inflación)',
       'n/d': 'No hay datos'
     };
+
     var sankey = new BudgetSankey(functionalBreakdown, economicBreakdown, stats, i18n);
+    sankey.incomeNodes({{ income_nodes|safe }});
+    sankey.expenseNodes({{ expense_nodes|safe }});
     // Set a constant scale for the Sankey diagram across the years (otherwise each year would look
     // equally big). Note: 4% margin to avoid clipping, as there is some spacing between the items.
     sankey.maxAmountEver( calculateMaximumSankeyAmount(functionalBreakdown, stats) * 1.04 );  
@@ -90,6 +108,4 @@
   })
 </script>
 
-{% include 'shared/social_sharing.html' %}
-{% include 'shared/data_sources.html' %}
 {% endblock %}

@@ -14,7 +14,7 @@ function parameterize(s) {
 
 // Return path to a policy page
 function getPolicyLink(policy_id, title) {
-  var url = "{{ url('aragon.views.policies') }}";
+  var url = "{{ url('budget_app.views.policies') }}";
   if ( policy_id )
     url = url + '/'+policy_id+'/'+parameterize(title);
   return url;
@@ -22,7 +22,7 @@ function getPolicyLink(policy_id, title) {
 
 // Return path to a programme, inside a policy page
 function getProgrammeLink(programme_id, title) {
-  var url = "{{ url('aragon.views.programmes_show') }}/"+programme_id+'/'+parameterize(title);
+  var url = "{{ url('budget_app.views.programmes_show') }}/"+programme_id+'/'+parameterize(title);
   return url;
 }
 
@@ -30,54 +30,54 @@ function getProgrammeLink(programme_id, title) {
 // Return path to article pages
 function getExpenseArticleLink(article_id, title) {
   if ( article_id )
-    return "{{ url('aragon.views.expense_articles_show') }}/"+article_id+'/'+parameterize(title);
+    return "{{ url('budget_app.views.expense_articles_show') }}/"+article_id+'/'+parameterize(title);
   else
-    return "{{ url('aragon.views.policies') }}#field=expense";
+    return "{{ url('budget_app.views.policies') }}#field=expense";
 }
 function getIncomeArticleLink(article_id, title) {
   if ( article_id )
-    return "{{ url('aragon.views.income_articles_show') }}/"+article_id+'/'+parameterize(title);
+    return "{{ url('budget_app.views.income_articles_show') }}/"+article_id+'/'+parameterize(title);
   else
-    return "{{ url('aragon.views.policies') }}#field=income";
+    return "{{ url('budget_app.views.policies') }}#view=income";
 }
 
 
 // Return path to a county page
 function getCountyLink(slug) {
-  var url = "{{ url('aragon.views.counties') }}/"+slug;
+  var url = "{{ url('budget_app.views.counties') }}/"+slug;
   return url;
 }
 function getCountyIncomeLink(slug, article_id) {
-  return "{{ url('aragon.views.counties') }}/"+slug+'/ingresos/'+article_id;
+  return "{{ url('budget_app.views.counties') }}/"+slug+'/ingresos/'+article_id;
 }
 function getCountyFExpenseLink(slug, article_id) {
-  return "{{ url('aragon.views.counties') }}/"+slug+'/gastosf/'+article_id;
+  return "{{ url('budget_app.views.counties') }}/"+slug+'/gastosf/'+article_id;
 }
 function getCountyExpenseLink(slug, article_id) {
-  return "{{ url('aragon.views.counties') }}/"+slug+'/gastos/'+article_id;
+  return "{{ url('budget_app.views.counties') }}/"+slug+'/gastos/'+article_id;
 }
 function getCountyCompareLink(left_slug, right_slug) {
-  var url = "{{ url('aragon.views.counties') }}/"+left_slug+'/'+right_slug;
+  var url = "{{ url('budget_app.views.counties') }}/"+left_slug+'/'+right_slug;
   return url;
 }
 
 
 // Return path to a town page
 function getTownLink(slug) {
-  var url = "{{ url('aragon.views.towns') }}/"+slug;
+  var url = "{{ url('budget_app.views.towns') }}/"+slug;
   return url;
 }
 function getTownIncomeLink(slug, article_id) {
-  return "{{ url('aragon.views.towns') }}/"+slug+'/ingresos/'+article_id;
+  return "{{ url('budget_app.views.towns') }}/"+slug+'/ingresos/'+article_id;
 }
 function getTownFExpenseLink(slug, article_id) {
-  return "{{ url('aragon.views.towns') }}/"+slug+'/gastosf/'+article_id;
+  return "{{ url('budget_app.views.towns') }}/"+slug+'/gastosf/'+article_id;
 }
 function getTownExpenseLink(slug, article_id) {
-  return "{{ url('aragon.views.towns') }}/"+slug+'/gastos/'+article_id;
+  return "{{ url('budget_app.views.towns') }}/"+slug+'/gastos/'+article_id;
 }
 function getTownCompareLink(left_slug, right_slug) {
-  var url = "{{ url('aragon.views.towns') }}/"+left_slug+'/'+right_slug;
+  var url = "{{ url('budget_app.views.towns') }}/"+left_slug+'/'+right_slug;
   return url;
 }
 
@@ -86,9 +86,9 @@ function getTownCompareLink(left_slug, right_slug) {
 function policyLinkFormatter(row, cell, value, columnDef, dataContext) {
   var programme_level = (columnDef.programme_level == undefined) ? 1 : columnDef.programme_level;
   if ( dataContext.indent >= programme_level ) {
-    var link = getProgrammeLink(dataContext.id, value);
+    var link = getProgrammeLink(dataContext.key, value);
   } else {
-    var link = getPolicyLink(dataContext.id, value);
+    var link = getPolicyLink(dataContext.key, value);
   }
   var linkedValue = "<a href='"+link+"'>"+value+"</a>";
   return rowNameFormatter(row, cell, linkedValue, columnDef, dataContext);
@@ -97,9 +97,9 @@ function policyLinkFormatter(row, cell, value, columnDef, dataContext) {
 // Convert an article name into a link
 function articleLinkFormatter(row, cell, value, columnDef, dataContext, linkGetter) {
   if ( dataContext.indent > 0 ) {
-    var link = linkGetter(dataContext.parent.id, dataContext.parent.label);
+    var link = linkGetter(dataContext.parent.key, dataContext.parent.label);
   } else {
-    var link = linkGetter(dataContext.id, value);
+    var link = linkGetter(dataContext.key, value);
   }
   var linkedValue = "<a href='"+link+"'>"+value+"</a>";
   return rowNameFormatter(row, cell, linkedValue, columnDef, dataContext);

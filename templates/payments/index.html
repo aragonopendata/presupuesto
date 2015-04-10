@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% from 'shared/payment_tab.html' import render_tab as render_tab %}
+{% block content %}
+<h1 class="page-title">{{ _('Inversiones y pagos') }}</h1>
+
+<section role="region" class="payments-breakdown tab-system">
+  <h1 class="visuallyhidden">{{ _('Pagos e inversiones') }}</h1>
+
+  <nav role="navigation" class="tab-menu">
+    <h2 class="visuallyhidden">{{ _('Menú de pagos e inversiones') }}</h2>
+    <ul id="tabs">
+      <li class="current"><a href="#tab-area">{{ _('Por area') }}</a></li>
+      <li><a href="#tab-payee">{{ _('Por beneficiario') }}</a></li>
+    </ul>
+  </nav>
+
+  <div class="tab-contents">
+    {{ render_tab('Por area', 'area', 'current') }}
+    {{ render_tab('Por beneficiario', 'payee', 'visuallyhidden') }} 
+  </div>
+
+  {% include 'shared/social_sharing.html' %}
+</section>
+
+<!-- 
+  We render the totals here initially, and move it to the active tab at run-time.
+-->
+<div class="visuallyhidden">
+  <div id="totals_panel">
+    <p class="total"><span>{{ _('Total de inversiones y pagos') }}</span> <b id="total"></b></p>
+  </div>
+</div>
+
+{% include 'shared/data_sources.html' %}
+
+<script>
+  $(function () {
+    //
+    // GRID RENDERING
+    //
+
+    function getColumnDefinition() {
+      return { 
+        field: 'expense',
+        name: 'Pago',        
+        formatter: getFormatter('nominal'),
+        sortable: true, 
+        headerCssClass: 'slick-header-right',
+        column: '2014', 
+        getter: getBreakdownValue, 
+        year: '2014',   // FIXME: Hardcoded year several times in this file. Also 'expense' as field, less bad
+        width: 150,
+        resizable: false
+      }; 
+    }
+
+    // Do all the hard work of drawing the grids
+    function redrawGrid() {
+      var columnDef = getColumnDefinition();
+
+      $("#payeeGrid").data('grid', createBudgetGrid( "#payeeGrid", 
+                        payeeGridData, [
+                          {
+                            field: "key",
+                            name: 'Beneficiario', 
+                            formatter: rowNameFormatter
+                          },
+                          columnDef
+                        ], {
+                          explicitInitialization: true
+                        }));
+
+      $("#areaGrid").data('grid', createBudgetGrid( "#areaGrid", 
+                        areaGridData, [
+                          {
+                            field: "key",
+                            name: 'Area', 
+                            formatter: rowNameFormatter
+                          },
+                          columnDef
+                        ], {
+                          explicitInitialization: true
+                        }));
+
+      // Total amounts are the same whichever way you break down the items, so any breakdown will do
+      $("#total").text( 
+        columnDef.formatter(  0, 0, 
+          payeeBreakdown['expense'][2014], 
+          columnDef, 
+          payeeBreakdown) || 'n/a' );
+    }    
+
+
+    //
+    // DATA
+    //
+    var payeeBreakdown = {{ payee_breakdown.to_json(  )|safe }};
+    var payeeGridData = breakdownToTable(payeeBreakdown);
+
+    var areaBreakdown = {{ area_breakdown.to_json(  )|safe }};
+    var areaGridData = breakdownToTable(areaBreakdown);
+
+
+    //
+    // TABS
+    //
+    $('.payments-breakdown .tab-menu li a').click(function(){
+      $('.payments-breakdown .tab-menu li').removeClass('current');
+      $(this).parent().addClass('current');
+      var currentTab = $(this).attr('href');
+      $('.payments-breakdown .tab-content').removeClass('current').addClass("visuallyhidden");
+      $(currentTab).addClass('current').removeClass("visuallyhidden");
+
+      // Callback to do some initialization (grid, controllers...) on tab switch
+      onTabSwitch();
+
+      return false;
+    });
+
+    function onTabSwitch() {
+      var currentTab = $(".payments-breakdown .tab-content.current");
+
+      // SlickGrid can't be initialized in a tab that is not visible, so we set explicitInitialization
+      // to true, and tell the grid to initialize itself when the time comes, i.e. when the tab is visible
+      var currentGrid = currentTab.children('div.table-grid').data('grid');
+      if ( currentGrid != undefined )
+        currentGrid.init();
+
+      // Move totals to the right tab
+      var totals = $("#totals_panel").detach();
+      totals.appendTo(currentTab.find(".totals-placeholder"));
+    }
+
+
+    //
+    // LOCATION HASH
+    //
+
+    // XXX: This method is very similar to the one for policies, but not quite the same :/
+    function unfoldItem(gridData, itemId) {
+      var found = false;
+      for ( i=0; i<gridData.length && !found; i++ ) {
+        // XXX: Not proud of this matching (both passing a description via URL and using indexOf
+        // to match), but a) we don't have a better id at the moment, the breakdown only gives us
+        // amounts and the dimension keys, and b) because of the former we've added the date to the
+        // item description, so we can't get an exact match.
+        if ( gridData[i].key.indexOf(itemId) == 0 ) {
+          var parent = gridData[i].parent;
+          while (parent != null) {
+            parent._expanded = true;
+            parent = parent.parent;
+          }
+          found = true;
+        }
+      }
+      return found;
+    }
+
+    function parseLocationHash() {
+      state = $.deparam.fragment();
+
+      // Highlight a particular item
+      if ( state.description ) {
+        unfoldItem(payeeGridData, state.description);
+        redrawGrid();
+        $("a[href=#tab-payee]").click();
+        window.setTimeout(function(){ $(".toggle.collapse")[0].scrollIntoView() }, 1000);
+
+      } else {
+        redrawGrid();
+        onTabSwitch();  // Do some tab initialization
+      }
+    }
+
+    parseLocationHash();      // Handle the hash the page may have loaded with.
+  })
+</script>
+
+{% endblock %}

@@ -1,0 +1,161 @@
+/*
+IMPORTANT:
+In order to preserve the uniform grid appearance, all cell styles need to have padding, margin and border sizes.
+No built-in (selected, editable, highlight, flashing, invalid, loading, :focus) or user-specified CSS
+classes should alter those!
+*/
+.slick-header.ui-state-default,
+.slick-headerrow.ui-state-default
+{width: 100%; overflow: hidden; border-left: 0;}
+
+.slick-header-columns,
+.slick-headerrow-columns
+{position: relative; white-space: nowrap; cursor: default; overflow: hidden;}
+
+.slick-header-column.ui-state-default {
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0;
+	padding: .5em 1em;
+	border: none;
+	border-right: 1px solid @black80;
+	float: left;
+}
+
+.slick-headerrow-column.ui-state-default {padding: 4px;}
+
+.slick-sort-indicator {background: @accented-2 url(../assets/slick/sort.png) no-repeat center; display: inline-block; .ie7-inline-block; height: 18px; margin-left: .5em; vertical-align: middle; width: 24px; @shadow: 0 0 0 .125em @white, 0 0 .25em fadeout(@black, 50%) inset; .box-shadow(@shadow);}
+.slick-sort-indicator:hover {background-color: @color-base; cursor: pointer; @shadow: 0 0 0 2px @white, 0 0 .25em fadeout(@black, 50%) inset, 0 0 .5em .125em fadeout(@accented-2, 50%); .box-shadow(@shadow);}
+.slick-sort-indicator-desc {background-image: url(../assets/slick/sort-desc.png);}
+.slick-sort-indicator-asc {background-image: url(../assets/slick/sort-asc.png);}
+.slick-resizable-handle {position: absolute; font-size: .1px; display: block; cursor: col-resize; width: 4px; right: 0; top: 0; height: 100%;}
+.slick-sortable-placeholder {background: @black90;}
+@color-slick-active: spin(@accented-2, 120%);
+.slick-header-column-sorted .slick-sort-indicator {background-color: @color-slick-active;}
+.slick-header-column-sorted .slick-sort-indicator:hover {background-color: darken(@color-slick-active, 10%);}
+.slick-header-column:hover {cursor: pointer;}
+.slick-header-column:hover .slick-column-name {color: @black60;}
+.grid-canvas {position: relative; outline: 0;}
+
+.slick-row.ui-widget-content,
+.slick-row.ui-state-active
+{position: absolute; border: 0; width: 100%;}
+
+.slick-cell,
+.slick-headerrow-column {
+	position: absolute;
+	border: 1px solid transparent;
+	border-right: 1px dotted @black80;
+	border-bottom-color: @black80;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: middle;
+	z-index: 1;
+	padding: .5em .5em;
+	margin: 0;
+	white-space: nowrap;
+	cursor: default;
+}
+
+.slick-group {}
+.slick-group-toggle {display: inline-block; .ie7-inline-block;}
+.slick-cell.highlighted {background: lightskyblue; background: rgba(0, 0, 255, .2); .transition(.5s);}
+.slick-cell.flashing {border: 1px solid red !important;}
+.slick-cell.editable {background: @white; border-color: @black; border-style: solid; overflow: visible; z-index: 11;}
+.slick-cell:focus {outline: none;}
+.slick-reorder-proxy {background: @accented-2; cursor: move; display: inline-block; .ie7-inline-block; .opacity(.15);}
+.slick-reorder-guide {background: @accented-2; display: inline-block; .ie7-inline-block; height: 2px; .opacity(.7);}
+.slick-selection {border: 2px dashed @black; position: absolute; z-index: 10;}
+.slick-cell .toggle {vertical-align: middle;}
+
+.slick-cell .toggle.expand,
+.slick-cell .toggle.collapse
+{background: no-repeat center center; display: inline-block; .ie7-inline-block; height: 24px; width: 24px; @shadow: 0 0 .25em fadeout(@black, 50%) inset; .box-shadow(@shadow);}
+
+@shadow-st: 0 0 0 .125em fadeout(@accented-1, 50%), 0 0 .25em fadeout(@black, 50%) inset;
+@shadow-st-h: 0 0 0 2px @white, 0 0 .25em fadeout(@black, 50%) inset, 0 0 .5em .125em fadeout(@accented-1, 50%);
+
+@shadow-st: 0 0 0 .125em fadeout(@accented-1, 50%), 0 0 .25em fadeout(@black, 50%) inset;
+@shadow-st-h: 0 0 0 2px @white, 0 0 .25em fadeout(@black, 50%) inset, 0 0 .5em .125em fadeout(@accented-1, 50%);
+
+.slick-cell .toggle.expand,
+.slick-cell .toggle.collapse {background-color: @black30; .box-shadow(@shadow-st);}
+
+.slick-cell .toggle.expand {background-image: url(../assets/slick/expand.png);}
+.slick-cell .toggle.collapse {background-image: url(../assets/slick/collapse.png);}
+
+.slick-cell .toggle.expand:hover,
+.slick-cell .toggle.collapse:hover {background-color: darken(@accented-1, 10%); .box-shadow(@shadow-st-h);}
+
+/* Column styles */
+.slick-column-name {font-weight: bold;}
+.slick-cell.l1, .slick-cell.l2, .slick-cell.l3, .slick-cell.l4, .slick-header-right {text-align: right;}
+.slick-cell.l0:hover {background: lighten(@color-base, 60%); cursor: pointer; @shadow: 0 0 0 1px @white inset, 0 .125em .25em lighten(@color-base, 40%) inset; .box-shadow(@shadow);}
+.slick-cell.l0:hover a {color: lighten(@color-base, 30%);}
+
+/* Row styles */
+.indent-0 .slick-cell {font-weight: bold;}
+.indent-1 .slick-cell {}
+.indent-2 .slick-cell {}
+.indent-3 .slick-cell {}
+.indent-4 .slick-cell {}
+
+.slick-cell-text {margin-left: .5em; vertical-align: middle;}
+
+/*
+En "slick.grid.js" se definen ciertas propiedades que se insertan en el <head> del HTML.
+
+Line 57:
+var defaults = {
+      explicitInitialization: false,
+      rowHeight: 40,
+      defaultColumnWidth: 80,
+      enableAddRow: false,
+      leaveSpaceForNewRows: false,
+      editable: false,
+      autoEdit: true,
+      enableCellNavigation: true,
+      enableColumnReorder: true,
+      asyncEditorLoading: false,
+      asyncEditorLoadDelay: 100,
+      forceFitColumns: false,
+      enableAsyncPostRender: false,
+      asyncPostRenderDelay: 50,
+      autoHeight: false,
+      editorLock: Slick.GlobalEditorLock,
+      showHeaderRow: false,
+      headerRowHeight: 25,
+      showTopPanel: false,
+      topPanelHeight: 25,
+      formatterFactory: null,
+      editorFactory: null,
+      cellFlashingCssClass: "flashing",
+      selectedCellCssClass: "selected",
+      multiSelect: true,
+      enableTextSelectionOnCells: true,
+      dataItemColumnValueExtractor: null,
+      fullWidthRows: false,
+      multiColumnSort: false,
+      defaultFormatter: defaultFormatter
+    };
+
+Línea 856 (alturas de celdas):
+.slick-header-column { left: 1000px; }
+.slick-top-panel { height:" + options.topPanelHeight + "px; }
+.slick-headerrow-columns { height:" + options.headerRowHeight + "px; }
+.slick-cell { height:" + rowHeight + "px; }
+.slick-row { height:" + options.rowHeight + "px; }
+
+
+
+En "grid_helpers.js":
+var spacer = "<span style='display:inline-block;height:1px;width:" + (25 * dataContext["indent"]) + "px'></span>";
+Ese "25" es lo que indenta.
+*/
+
+
+
+/* Neutralizaciones */
+.indent-0 .slick-cell {font-size: 1.125em !important;}

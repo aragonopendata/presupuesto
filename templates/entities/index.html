@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
 {% block extra_javascript %}
-<script src="{{ STATIC_URL }}javascripts/vis/d3.v3-3-9.min.js"></script>
+<script src="{{ STATIC_URL }}javascripts/vis/d3.v3.min.js"></script>
 <script src="{{ STATIC_URL }}javascripts/vis/topojson.v1.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4yU-JrVuhdtVRkyVXgTKw9HtPJ_wZyb4&sensor=false&language=es"></script>
 <script src="{{ STATIC_URL }}javascripts/vis/map.js"></script>
 {% endblock %}
 {% block content %}
-<h1 class="page-title">{{ 'Comarcas' if is_county else 'Municipios' }}</h1>
+<h1 class="page-title">
+  {% if is_county %}
+  {{ _('Comarcas') }}
+  {% else %}
+  {{ _('Municipios') }}
+  {% endif %}
+</h1>
 
 <div id="map-canvas">
   <div id="map-legend">
@@ -17,12 +23,12 @@
     </div>
     <div class="map-info__content">
       <ul class="map-info__basics">
-        <li><b>Habitantes:</b> <span id="map-info__population"></span></li>
+        <li><b>{{ _('Habitantes') }}:</b> <span id="map-info__population"></span></li>
       </ul>
       <p class="map-info__quantitype"></p>
       <ul class="map-info__budgets">
-        <li class="icon-budget"><b>Previsto:</b> <span id="map-info__budget_amount"></span></li>
-        <li class="icon-budget"><b id="map-info__actual_amount_label">Gastado:</b> <span id="map-info__actual_amount"></span></li>
+        <li class="icon-budget"><b>{{ _('Previsto') }}:</b> <span id="map-info__budget_amount"></span></li>
+        <li class="icon-budget"><b id="map-info__actual_amount_label">{{ _('Gastado') }}:</b> <span id="map-info__actual_amount"></span></li>
       </ul>
     </div>
   </div>
@@ -33,16 +39,16 @@
 <div class="table-grid" id="myGrid"></div>
 
 <p class="downloads" id="income-downloads">
-  Descarga la tabla de <b>Ingresos</b>
-  <a class="icon-file-excel" href="{{ url('aragon.views.entities_income', level, 'csv') }}"><span class="file-info">CSV</span></a>
+  {{ _('Descarga la tabla de <b>Ingresos</b>')|safe }}
+  <a class="icon-file-excel" href="{{ url('budget_app.views.entities_income', level, 'csv') }}"><span class="file-info">CSV</span></a>
   o
-  <a class="icon-file-excel" href="{{ url('aragon.views.entities_income', level, 'xls') }}"><span class="file-info">Excel</span></a>
+  <a class="icon-file-excel" href="{{ url('budget_app.views.entities_income', level, 'xls') }}"><span class="file-info">Excel</span></a>
 </p>
 <p class="downloads" id="expense-downloads">
-  Descarga la tabla de <b>Gastos</b>
-  <a class="icon-file-excel" href="{{ url('aragon.views.entities_expenses', level, 'csv') }}"><span class="file-info">CSV</span></a>
+  {{ _('Descarga la tabla de <b>Gastos</b>')|safe }}
+  <a class="icon-file-excel" href="{{ url('budget_app.views.entities_expenses', level, 'csv') }}"><span class="file-info">CSV</span></a>
   o
-  <a class="icon-file-excel" href="{{ url('aragon.views.entities_expenses', level, 'xls') }}"><span class="file-info">Excel</span></a>
+  <a class="icon-file-excel" href="{{ url('budget_app.views.entities_expenses', level, 'xls') }}"><span class="file-info">Excel</span></a>
 </p>
 
 {% include 'shared/social_sharing.html' %}
@@ -60,7 +66,7 @@
       if ( item.root != null && item.root.years[columnDef.column] === undefined )
         return null;
 
-      return getValue(item[columnDef.field][columnDef.column], item.id) || null;
+      return getValue(item[columnDef.field][columnDef.column], item.key) || null;
     }
 
     function getColumnDefinition(uiState) {
@@ -74,7 +80,7 @@
         column: uiState.year,
         year: Number(uiState.year),
         stats: stats,
-        width: 140,
+        width: 150,
         resizable: false
       }; 
     }
@@ -95,6 +101,12 @@
       }
     }
 
+    // XXX: There's some overlap here with the treemap viz and grid formatters.
+    // For a long time I was doing data conversion (%, per capita) in the formatters, and it
+    // all made sense. However, in this page, with many entities, the ordering of items depends
+    // on the data format selected, so I'm forced to split the formatter in its conversion/formatter
+    // parts. I could try to refactor the original formatters so their code is more widely reused
+    // across pages and visualizations.
     function getValue(value, entity_id) {
       if ( value === undefined || value == null)
         return value;
@@ -179,7 +191,7 @@
       var executionColumnDef = getExecutionColumnDefinition(uiState);
       createBudgetGrid("#myGrid", economicGridData, [
         {
-          field: "id", 
+          field: "key", 
           name: "{{ 'Comarca' if is_county else 'Municipio' }}", 
           formatter: {{ 'countyLinkFormatter' if is_county else 'townLinkFormatter' }}, 
           sortable: true,
@@ -195,15 +207,11 @@
       // Amend labels on page based on whether we display income/expenses
       if ( uiState.field == 'expense' ) {
         $(".page-title").text("{{ 'Comarcas' if is_county else 'Municipios' }}: Gastos");
-        $("#total-breakdown-label").text("Total gasto presupuestado");
-        $("#total-actual-breakdown-label").text("Total gasto ejecutado");
         $("#map-info__actual_amount_label").text("Gastado:");
         $("#income-downloads").hide();
         $("#expense-downloads").show();
       } else {
         $(".page-title").text("{{ 'Comarcas' if is_county else 'Municipios' }}: Ingresos");
-        $("#total-breakdown-label").text("Total ingresos presupuestados");
-        $("#total-actual-breakdown-label").text("Total ingresos ejecutados");
         $("#map-info__actual_amount_label").text("Ingresado:");
         $("#income-downloads").show();
         $("#expense-downloads").hide();
@@ -211,6 +219,10 @@
 
       // Amend infobox based on selected formatting
       $(".map-info__quantitype").text( getInfoboxLabel(uiState) );
+
+      // XXX: We used to have and update grid totals at this point. But because we're missing lots of data,
+      // and some entities have only budget or execution data, the result was misleading: you can't 
+      // compare overall budget vs. execution, yearly evolution didn't mean much, etc. So we removed them.
 
       var year = $("#year-selection").val();
 

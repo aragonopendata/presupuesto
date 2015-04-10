@@ -1,9 +1,10 @@
 <div class="chromeframe">
   <div class="alert note">
-    <p class="title tupper">¡Atención!</p>
-    <p>Este sitio web no va a funcionar correctamente en tu navegador. La visualización de datos de esta página requieren un navegador con funciones adicionales, como <a href="http://windows.microsoft.com/es-ES/internet-explorer/downloads/ie-9/worldwide-languages">IE9</a>, <a href="http://www.mozilla.org/es-ES/firefox/fx/">Firefox</a>, <a href="https://www.google.com/intl/es/chrome/browser/?hl=es">Chrome</a> o <a href="http://www.apple.com/es/safari/">Safari</a>. Si quieres continuar usando Internet Explorer <a href="http://www.google.com/chromeframe?user=true&hl=es">puedes instalar el plugin de Google Chrome Frame</a> en unos minutos.</p>
+    <p class="title tupper">{{ _('¡Atención!') }}</p>
+    <p>{{ _('Este sitio web no va a funcionar correctamente en tu navegador. La visualización de datos de esta página requieren un navegador con funciones adicionales, como') }} <a href="http://windows.microsoft.com/es-ES/internet-explorer/downloads/ie-9/worldwide-languages">IE9</a>, <a href="http://www.mozilla.org/es-ES/firefox/fx/">Firefox</a>, <a href="https://www.google.com/intl/es/chrome/browser/?hl=es">Chrome</a> o <a href="http://www.apple.com/es/safari/">Safari</a>. {{ _('Si quieres continuar usando Internet Explorer') }} <a href="http://www.google.com/chromeframe?user=true&hl=es">{{ _('puedes instalar el plugin de Google Chrome Frame') }}</a> {{ _('en unos minutos') }}.</p>
   </div>
 </div>
 <style>
+  /* Hacer un poco de hueco en la parte superior para permitir posicionar la alerta de Chrome Frame */
   body {padding-top: 7em!important;}
 </style>

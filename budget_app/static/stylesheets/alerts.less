@@ -1,0 +1,46 @@
+/* Función para crear alertas (note, example, ok, error) */
+.alert (@bgcolor: red, @bordercolor: black, @color: white, @linkcolor: blue, @img: none) {
+	@shadow-alert:
+	0 1px 0 fadeout(@white, 20%) inset,
+	0 0 .5em darken(@bgcolor, 15%) inset;
+	.box-shadow(@shadow-alert);
+	background-color: @bgcolor;
+	background-position: .5em .75em;
+	background-repeat: no-repeat;
+	border: 1px solid @bordercolor;
+	color: darken(@color, 20%)/* Oscurecemos el color un poco para obtener más contraste de cara a la accesibilidad */;
+	line-height: 1.25em;
+	text-shadow: 0 1px 0 rgba(255,255,255,.75);
+	/* Definir el color de los enlaces que van dentro */
+	a {
+		color: @linkcolor;
+		border-bottom: 1px dotted @linkcolor;
+		font-weight: 700;
+	}
+	a:hover {
+		color: darken(@linkcolor, 10%);
+		border-bottom: none;
+	}
+	.title {background: url(@img) no-repeat 0 center; display: inline-block; .ie7-inline-block; font-size: 1em; font-weight: 700; margin: 0 0 .5em; padding: 0 0 0 21px;}
+	ul, ol {margin-bottom: .5em;}
+	li {margin: 0;}
+	p {margin-bottom: .5em;}
+	.btn {border-bottom: none; color: @white; text-shadow: none;}
+	.btn span {padding-bottom: .125em; padding-top: .125em;}
+}
+
+.alert {
+	font-size: .875em;
+	margin: 0 0 1em;
+	padding: .75em 1em;
+	text-shadow: 1px 1px 1px @white;
+	vertical-align: top;
+	.rounded(.25em);
+}
+
+.alert.inline-block {display: inline-block; .ie7-inline-block;}
+
+.note {.alert(@warningBackground, @warningBorder, @warningText, spin(darken(@warningText, 10%), 10%), '../assets/sticky-note-text.png');}
+.example {.alert(@infoBackground, @infoBorder, @infoText, spin(darken(@infoText, 10%), 10%), '../assets/ui-address-bar-green.png');}
+.ok {.alert(@successBackground, @successBorder, @successText, spin(darken(@successText, 10%), 10%), '../assets/tick.png');}
+.error {.alert(@errorBackground, @errorBorder, @errorText, spin(darken(@errorText, 10%), 10%), '../assets/exclamation-red.png');}

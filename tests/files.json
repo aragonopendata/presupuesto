@@ -1,0 +1,14 @@
+{
+    "name": "Main Test Suite",
+    "js_files": [
+    	"../static/javascripts/jquery-1.8.3.min.js",
+		"../static/javascripts/grid_controls.js",
+		"../static/javascripts/grid_formatters.js",
+		"../static/javascripts/grid_helpers.js",
+		"../static/javascripts/numeral.min.js",
+		"../static/javascripts/numeral-languages.min.js",
+		"../static/javascripts/tax_calculator.js"
+    ],
+    "media_files": [
+    ]
+}

@@ -1,50 +1,54 @@
 {% extends 'base.html' %}
 {% from 'shared/breakdown_tab.html' import render_tab as render_tab %}
 {% block extra_javascript %}
-<script src="{{ STATIC_URL }}javascripts/vis/d3.v3-3-9.min.js"></script>
+<script src="{{ STATIC_URL }}javascripts/vis/d3.v3.min.js"></script>
 {% if show_treemap %}
 <script src="{{ STATIC_URL }}javascripts/vis/bigtext.js"></script>
 <script src="{{ STATIC_URL }}javascripts/vis/budget-treemap.js"></script>
 {% else %}
-<script src="{{ STATIC_URL }}javascripts/vis/nv.d3.1-1-14b.js"></script>
+<script src="{{ STATIC_URL }}javascripts/vis/nv.d3.1-1-15b.js"></script>
 <script src="{{ STATIC_URL }}javascripts/vis/budget-stacked-graph.js"></script>
 {% endif %}
 {% endblock %}
 {% block content %}
 {% if programme %}
 <p class="history-back">
-  <a href="{% url 'aragon.views.policies_show' programme.policy, policy.slug() %}" id="policy-name-link">
+  <a href="{% url 'budget_app.views.policies_show' programme.policy, policy.slug() %}" id="policy-name-link">
     &larr; {{ descriptions['functional'].get(programme.policy) }}
   </a>
 </p>
 <h1 class="page-title">{{ name }}</h1>
 {% else %}
 <p class="history-back">
-  <a href="{{ url(show_entity_url, entity.slug) if entity else url('aragon.views.policies') }}">&larr; Volver a Políticas</a>
+  <a href="{{ url(show_entity_url, entity.slug) if entity else url('budget_app.views.policies') }}">&larr; {{ _('Volver a Políticas') }}</a>
 </p>
 <h1 class="page-title">{{ entity.name+': ' if entity }}{{ name }}</h1>
 {% endif %}
 
 <section role="region" class="policy-breakdown tab-system">
-  <h1 class="visuallyhidden">Programas, entidades y conceptos</h1>
+  <h1 class="visuallyhidden">{{ _('Programas, entidades y conceptos') }}</h1>
 
   <nav role="navigation" class="tab-menu">
-    <h2 class="visuallyhidden">Menú de programas, entidades y conceptos</h2>
+    <h2 class="visuallyhidden">{{ _('Menú de programas, entidades y conceptos') }}</h2>
     <ul id="tabs">
 {% if full_breakdown %}
   {% if programme is not defined and show_side != 'income' %}
-      <li class="current"><a href="#tab-functional">{{ tab_titles['functional'] }}</a></li>
-      <li><a href="#tab-economic">{{ tab_titles['economic'] }}</a></li>
+      <li class="current"><a href="#tab-functional">{{ _(tab_titles['functional']) }}</a></li>
+      <li><a href="#tab-economic">{{ _(tab_titles['economic']) }}</a></li>
   {% else %}
-      <li class="current"><a href="#tab-economic">{{ tab_titles['economic'] }}</a></li>
+      <li class="current"><a href="#tab-economic">{{ _(tab_titles['economic']) }}</a></li>
   {% endif %}
+  {% if show_funding_tab %}
       <li><a href="#tab-funding">{{ tab_titles['funding'] }}</a></li>
-      <li><a href="#tab-institutional">{{ tab_titles['institutional'] }}</a></li>
+  {% endif %}
+  {% if show_institutional_tab %}
+      <li><a href="#tab-institutional">{{ _(tab_titles['institutional']) }}</a></li>
+  {% endif %}
 {% else %}
   {% if policy_uid %}
-      <li class="current"><a href="#tab-functional">{{ tab_titles['functional'] }}</a></li>
+      <li class="current"><a href="#tab-functional">{{ _(tab_titles['functional']) }}</a></li>
   {% else %}
-      <li class="current"><a href="#tab-economic">{{ tab_titles['economic'] }}</a></li>
+      <li class="current"><a href="#tab-economic">{{ _(tab_titles['economic']) }}</a></li>
   {% endif %}
 {% endif %}
     </ul>
@@ -53,18 +57,22 @@
   <div class="tab-contents">
 {% if full_breakdown %}
   {% if programme is not defined and show_side != 'income' %}
-    {{ render_tab(tab_titles['functional'], 'functional', csv_type, csv_id, 'current') }} 
-    {{ render_tab(tab_titles['economic'], 'economic', csv_type, csv_id, 'visuallyhidden') }}
+    {{ render_tab(_(tab_titles['functional']), 'functional', csv_type, csv_id, 'current') }} 
+    {{ render_tab(_(tab_titles['economic']), 'economic', csv_type, csv_id, 'visuallyhidden') }}
   {% else %}
-    {{ render_tab(tab_titles['economic'], 'economic', csv_type, csv_id, 'current') }} 
+    {{ render_tab(_(tab_titles['economic']), 'economic', csv_type, csv_id, 'current') }} 
   {% endif %}
+  {% if show_funding_tab %}
     {{ render_tab(tab_titles['funding'], 'funding', csv_type, csv_id, 'visuallyhidden') }} 
-    {{ render_tab(tab_titles['institutional'], 'institutional', csv_type, csv_id, 'visuallyhidden') }} 
+  {% endif %}
+  {% if show_institutional_tab %}
+    {{ render_tab(_(tab_titles['institutional']), 'institutional', csv_type, csv_id, 'visuallyhidden') }} 
+  {% endif %}
 {% else %}
     {# The download links for small entities are too cumbersome to calculate in the macro #}
   {% if policy_uid %}
-    {% set download_view_name = 'aragon.views.entity_article_fexpenses' %}
-    {{ render_tab(tab_titles['functional'], 
+    {% set download_view_name = 'budget_app.views.entity_article_fexpenses' %}
+    {{ render_tab(_(tab_titles['functional']), 
                   'functional', 
                   csv_type, 
                   csv_id, 
@@ -72,9 +80,9 @@
                   csv_link=url(download_view_name, level, entity.slug, csv_id, 'csv'),
                   xls_link=url(download_view_name, level, entity.slug, csv_id, 'xls') ) }} 
   {% else %}
-    {% set download_view_name = 'aragon.views.entity_article_expenses' if show_side=='expense' 
-                                else 'aragon.views.entity_article_income'%}
-    {{ render_tab(tab_titles['economic'], 
+    {% set download_view_name = 'budget_app.views.entity_article_expenses' if show_side=='expense' 
+                                else 'budget_app.views.entity_article_income'%}
+    {{ render_tab(_(tab_titles['economic']), 
                   'economic', 
                   csv_type, 
                   csv_id, 
@@ -98,10 +106,11 @@
 <!-- Same story with the totals -->
 <div class="visuallyhidden">
   <div id="totals_panel">
-    <p class="total"><span>Total presupuestado</span> <b id="total"></b></p>
-    {% if show_actual %}
-    <p class="total"><span>Total ejecutado</span> <b id="total-actual"></b></p>
-    {% endif %}
+    <p class="total" id="main-total">
+      <span class="main-label"></span> <b class="main-amount"></b>
+      <br/>
+      <span class="secondary-label">{{ _('Presupuestados') }}</span> <b class="secondary-amount"></b>
+    </p>
   </div>
 </div>
 
@@ -122,7 +131,7 @@
     
     // Shows the uid next to an item
     function fullIdFormatter(row, cell, value, columnDef, dataContext) {
-      var fullName = (value||'') + " (" + dataContext.id + ")";
+      var fullName = (value||'') + " (" + dataContext.key + ")";
       return rowNameFormatter(row, cell, fullName, columnDef, dataContext);
     };
 
@@ -135,7 +144,7 @@
       var getIncomeLink = {{ 'getCountyIncomeLink' if is_county else 'getTownIncomeLink' }};
       var getExpenseLink = {{ 'getCountyExpenseLink' if is_county else 'getTownExpenseLink' }};
       var getLink = (uiState.view == 'expense') ? getExpenseLink : getIncomeLink;
-      var link = getLink('{{ entity.slug }}', dataContext.id);
+      var link = getLink('{{ entity.slug }}', dataContext.key);
       var linkedValue = "<a href='"+link+"'>"+value+"</a>";
       return rowNameFormatter(row, cell, linkedValue, columnDef, dataContext);
     };
@@ -156,15 +165,16 @@
         getter: getBreakdownValue, 
         year: Number(uiState.year),
         stats: stats,
-        width: 140,
+        width: 150,
         resizable: false
       }; 
     }
 
     function getExecutionColumnDefinition(uiState) {
       var columnDef = getColumnDefinition(uiState);
+      var label = uiState.field == 'expense' ? '{{ _("Gastado") }}' : '{{ _("Ingresado") }}';
       columnDef.column = "actual_" + uiState.year;
-      columnDef.name = uiState.field == 'expense' ? "Gastado" : "Ingresado";
+      columnDef.name = getExecutionColumnName(uiState, budgetStatuses, label);
       return columnDef;
     }
 
@@ -191,7 +201,11 @@
 {% else %}
                               formatter: rowNameFormatter, 
 {% endif %}
+{% if policy_uid %}
                               programme_level: 0  // Programmes at root level. Used to generate links
+{% else %}  // Showing an article
+                              programme_level: 1  // Policies at root level. Used to generate links
+{% endif %}
                             },
                             columnDef
 {% if show_actual %}
@@ -225,6 +239,7 @@
       }
 
 {% if full_breakdown %}
+{% if show_institutional_tab %}
       $("#institutionalGrid").data('grid', createBudgetGrid(  "#institutionalGrid", 
                         institutionalGridData, [
                           {field: "label", formatter: rowNameFormatter, name: 'Entidad'},
@@ -235,7 +250,9 @@
                         ], {
                           explicitInitialization: true
                         }));
+{% endif %}
 
+{% if show_funding_tab %}
       $("#fundingGrid").data('grid', createBudgetGrid(  "#fundingGrid", 
                         fundingGridData, [
                           {field: "label", formatter: rowNameFormatter, name: 'Fondo'},
@@ -248,17 +265,26 @@
                         }));
 {% endif %}
 
+{% endif %}
+
       // Total amounts are the same whichever way you break down the items, so any breakdown will do
-      $("#total").text( 
-        columnDef.formatter(  0, 0, 
-          economicBreakdown[uiState.field][uiState.year], 
-          columnDef, 
-          economicBreakdown) || 'n/a' );
-      $("#total-actual").text( 
-        columnDef.formatter(  0, 0, 
-          economicBreakdown[uiState.field]['actual_'+uiState.year], 
-          executionColumnDef, 
-          economicBreakdown) || 'n/a' );
+      var breakdown = economicBreakdown,
+          hasActualData = breakdown[uiState.field]['actual_'+uiState.year],
+          getTotal = function(breakdown) { return (breakdown[uiState.field][uiState.year]||0); },
+          getActualTotal = function(breakdown) { return (breakdown[uiState.field]['actual_'+uiState.year]||0); },
+          format = function(amount) { return columnDef.formatter(0, 0, amount, columnDef, breakdown); },
+          formatActual = function(amount) { return columnDef.formatter(0, 0, amount, executionColumnDef, breakdown); };
+
+      if ( hasActualData ) {
+        $('.secondary-label, .secondary-amount').show();
+        $("#main-total .main-amount").text(formatActual(getActualTotal(breakdown)));
+        $("#main-total .secondary-amount").text(format(getTotal(breakdown)));
+
+      } else {
+        $('.secondary-label, .secondary-amount').hide();
+        $("#main-total .main-amount").text(format(getTotal(breakdown)));
+      }
+      $("#main-total .main-label").html(getGenericExecutionTotalLabel(uiState, budgetStatuses))
 
       onTabSwitch();
     }    
@@ -277,6 +303,7 @@
     // POLICY DATA
     //
     var stats = {{ stats|safe }};
+    var budgetStatuses = {{ budget_statuses|safe }};
 
     // The income and expense descriptions for the economic breakdowns do not match,
     // i.e. the same code, '2', means different things for income and expenses, so
@@ -307,12 +334,12 @@
       $(container).css('width', chartWidth);
       $(container).css('height', chartWidth/2);
       {% if show_treemap %}
-      var treemap = new BudgetTreemap(container, breakdown, stats, areas).i18n(i18n);
+      var treemap = new BudgetTreemap(container, breakdown, stats, areas).i18n(i18n).maxLevels(2).budgetStatuses(budgetStatuses);
       treemap.createTreemap(getUIState());
       treemap.updateTreemap(getUIState());
       $(container).data('chart', treemap);
       {% else %}
-      var chart = new BudgetStackedChart(container, stats, i18n);
+      var chart = new BudgetStackedChart(container, stats, i18n).budgetStatuses(budgetStatuses);;
       $(container).data('chart', chart);
       chart.loadBreakdown(breakdown, '{{ show_side }}');
       {% endif %}
@@ -374,6 +401,13 @@
     function onTabSwitch() {
       var currentTab = $(".policy-breakdown .tab-content.current");
 
+      // XXX: This shouldn't be necessary, but there seems to be a bug in Chrome 38 (not 39 afaik):
+      // if we hide a tab all its elements should be hidden too, but recently, and only in Chrome,
+      // when switching tabs, we sometimes end up with traces of the previous grid. So we go one step
+      // further and hide the non-active grids when we switch a tab.
+      $('div.table-grid').hide();
+      currentTab.children('div.table-grid').show();
+
       // SlickGrid can't be initialized in a tab that is not visible, so we set explicitInitialization
       // to true, and tell the grid to initialize itself when the time comes, i.e. when the tab is visible
       var currentGrid = currentTab.children('div.table-grid').data('grid');
@@ -405,7 +439,7 @@
     function unfoldItem(gridData, itemId) {
       var found = false;
       for ( i=0; i<gridData.length && !found; i++ ) {
-        if ( gridData[i].id == itemId ) {
+        if ( gridData[i].key == itemId ) {
           var parent = gridData[i].parent;
           while (parent != null) {
             parent._expanded = true;
@@ -425,7 +459,7 @@
         unfoldItem(economicGridData, state.item);
         redrawGrid();
         $("a[href=#tab-concepts]").click();
-        window.setTimeout(function(){ $("#economicGrid")[0].scrollIntoView() }, 1000);
+        window.setTimeout(function(){ $(".toggle.collapse")[0].scrollIntoView() }, 1000);
 
       } else {
         redrawGrid();
