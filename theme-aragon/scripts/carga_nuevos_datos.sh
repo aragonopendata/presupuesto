@@ -13,8 +13,8 @@ CACHE=/tmp/presupuesto
 cd $APP
 
 # Convenient variables
-COUNTY_DATA=$APP/data/comarca/latest
-TOWN_DATA=$APP/data/municipio/latest
+COUNTY_DATA=$APP/theme-aragon/data/comarca/latest
+TOWN_DATA=$APP/theme-aragon/data/municipio/latest
 
 # Make sure target folders exist
 if test ! -d $COUNTY_DATA; then mkdir $COUNTY_DATA; fi
