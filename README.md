@@ -1,5 +1,5 @@
 
-<img src="http://presupuesto.aragon.es/static/assets/logo-gobierno-aragon.png" height="28px" /><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>![Logo Aragón Open Data](aragon/static/assets/logoAragonOpenData.png)
+<img src="http://presupuesto.aragon.es/static/assets/logo-gobierno-aragon.png" height="28px" /><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>![Logo Aragón Open Data](budget_app/static/assets/logoAragonOpenData.png)
 
 ##Presupuestos de Aragón
 
@@ -29,6 +29,6 @@ El Gobierno de Aragón a través de Aragón Open Data pone a disposición de usu
 
 Que el código de esta aplicación esté publicado bajo la licencia abierta [EUPL 1.1][2] (European Union Public License 1.1), significa que puedes reutilizarlo, modificarlo y adaptarlo a tus necesidades de forma totalmente libre. Si utilizas el código, a modo de reconocimiento a Aragón Open Data incluye en tu proyecto nuestro logo en el cabecero o en el pie de página, te lo agradeceremos!
 
-![Logo Aragón Open Data](aragon/static/assets/logoAragonOpenData.png)
+![Logo Aragón Open Data](budget_app/static/assets/logoAragonOpenData.png)
 
 [2]: https://joinup.ec.europa.eu/software/page/eupl
