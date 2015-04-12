@@ -71,6 +71,14 @@ LOCALE_PATHS = (
     os.path.join(os.path.dirname(__file__), '..', THEME, 'locale'),
 )
 
+# Ensure LANGUAGES is defined for LocaleMiddleware. Multilingual themes
+# will have defined this beforehand with their particular language list.
+if not 'LANGUAGES' in locals():
+    LANGUAGES = (
+      ('es-ES', 'Castellano'),
+    )
+
+
 SITE_ID = 1
 
 # If you set this to False, Django will make some optimizations so as not
@@ -136,7 +144,7 @@ if DEBUG:
         'django.middleware.common.CommonMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware', #
         'django.middleware.csrf.CsrfViewMiddleware', #
-        # 'django.middleware.locale.LocaleMiddleware', #
+        'django.middleware.locale.LocaleMiddleware', #
     )
 else:
     MIDDLEWARE_CLASSES = (
@@ -144,7 +152,7 @@ else:
         'django.middleware.common.CommonMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware', #
         'django.middleware.csrf.CsrfViewMiddleware', #
-        # 'django.middleware.locale.LocaleMiddleware', #
+        'django.middleware.locale.LocaleMiddleware', #
         # 'django.contrib.auth.middleware.AuthenticationMiddleware',
         # 'django.contrib.messages.middleware.MessageMiddleware',
         'django.middleware.cache.FetchFromCacheMiddleware',
