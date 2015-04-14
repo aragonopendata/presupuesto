@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+		http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<url>
+		<loc>http://presupuesto.aragon.es/</loc>
+		<changefreq>yearly</changefreq>
+	</url>
+	<url>
+		<loc>http://presupuesto.aragon.es/resumen</loc>
+		<changefreq>yearly</changefreq>
+	</url>
+	<url>
+		<loc>http://presupuesto.aragon.es/politicas</loc>
+		<changefreq>yearly</changefreq>
+	</url>
+	<url>
+		<loc>http://presupuesto.aragon.es/recibo</loc>
+		<changefreq>yearly</changefreq>
+	</url>
+	<url>
+		<loc>http://presupuesto.aragon.es/glosario</loc>
+		<changefreq>yearly</changefreq>
+	</url>
+	<url>
+		<loc>http://presupuesto.aragon.es/glosario?page=2</loc>
+		<changefreq>yearly</changefreq>
+	</url>
+</urlset>
