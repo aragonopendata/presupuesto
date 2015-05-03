@@ -107,8 +107,19 @@ def write_economic_breakdown(c, writer):
 def economic_policy_breakdown(request, id, format):
     return policies_show(request, id, '', _generator("%s.economica" % id, format, write_economic_breakdown))
 
+def write_detailed_economic_breakdown(c, writer):
+    writer.writerow(['#Año', 'Id Capítulo', 'Nombre Capítulo', 'Id Artículo', 'Nombre Artículo', 'Id Subconcepto', 'Nombre Subconcepto', 'Presupuesto Gastos', 'Gastos Reales'])
+    for year in set(c['economic_breakdown'].years.values()):
+        for chapter_id, chapter in c['economic_breakdown'].subtotals.iteritems():
+            write_breakdown_item(writer, year, chapter, 'expense', [chapter_id, None, None], c['descriptions']['expense'])
+            for article_id, article in chapter.subtotals.iteritems():
+                write_breakdown_item(writer, year, article, 'expense', [chapter_id, article_id, None], c['descriptions']['expense'])
+                for heading_id, heading in article.subtotals.iteritems():
+                    for subheading_id, subheading in heading.subtotals.iteritems():
+                        write_breakdown_item(writer, year, subheading, 'expense', [chapter_id, article_id, subheading_id], c['descriptions']['expense'])
+
 def economic_programme_breakdown(request, id, format):
-    return programmes_show(request, id, '', _generator("%s.economica" % id, format, write_economic_breakdown))
+    return programmes_show(request, id, '', _generator("%s.economica" % id, format, write_detailed_economic_breakdown))
 
 
 #
