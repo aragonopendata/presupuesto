@@ -4735,12 +4735,15 @@ a.avatar:hover {
 .total .main-amount {
   display: block;
 }
+.total .main-label {
+  font-weight: 600;
+}
 .total .secondary-label {
-  font-size: 16px;
+  font-size: 0.875em;
 }
 .total .secondary-amount {
   display: block;
-  font-size: 16px;
+  font-size: 0.875em;
   font-weight: 400;
 }
 .tiny-shadow-black {
@@ -4788,9 +4791,8 @@ a.avatar:hover {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
-  -webkit-box-shadow: 0 0 0 2px #d3937d, 0 0 0 1px #ffffff inset, 0 0.25em 0.5em #ffa484 inset;
-  -moz-box-shadow: 0 0 0 2px #d3937d, 0 0 0 1px #ffffff inset, 0 0.25em 0.5em #ffa484 inset;
-  box-shadow: 0 0 0 2px #d3937d, 0 0 0 1px #ffffff inset, 0 0.25em 0.5em #ffa484 inset;
+  border: 1px solid #b72f00;
+  /*@shadow: 0 0 0 2px desaturate(lighten(@color-base, 30%), 50%), 0 0 0 1px @white inset, 0 .25em .5em lighten(@color-base, 40%) inset; .box-shadow(@shadow);*/
 }
 .file-info {
   color: #333333;
@@ -5638,7 +5640,8 @@ Ese "25" es lo que indenta.
   margin: 0 0 1.5em;
 }
 .table-grid {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #b72f00;
+  border-radius: 7px;
   font-size: .75em;
   margin: 0 0 1em;
 }
@@ -5872,13 +5875,18 @@ table [class^="h-"] {
 .box {
   background: #ffffff;
   margin: 1.5em 0;
-  padding: .25em;
+  padding: 0;
+  border: 1px solid #b72f00;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
-  -webkit-box-shadow: 0 0 0 1px #d9d9d9, 0 0 0 1px #ffffff inset, 0 0 0.25em #cccccc inset;
-  -moz-box-shadow: 0 0 0 1px #d9d9d9, 0 0 0 1px #ffffff inset, 0 0 0.25em #cccccc inset;
-  box-shadow: 0 0 0 1px #d9d9d9, 0 0 0 1px #ffffff inset, 0 0 0.25em #cccccc inset;
+  /*
+	@shadow:
+	0 0 0 1px @black85,
+	0 0 0 1px @white inset,
+	0 0 .25em @black80 inset;
+	.box-shadow(@shadow);
+	*/
 }
 .box-title {
   background: #b72f00;
@@ -5886,7 +5894,6 @@ table [class^="h-"] {
   margin: 0;
   padding: .5em;
   text-align: center;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
   -webkit-border-top-right-radius: 0.5em;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -5899,9 +5906,6 @@ table [class^="h-"] {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0.5em;
-  -webkit-box-shadow: 0 0 0 1px #e6e6e6 inset, 0 0 0 2px #ffffff inset, 0 0 0.5em #d9d9d9 inset;
-  -moz-box-shadow: 0 0 0 1px #e6e6e6 inset, 0 0 0 2px #ffffff inset, 0 0 0.5em #d9d9d9 inset;
-  box-shadow: 0 0 0 1px #e6e6e6 inset, 0 0 0 2px #ffffff inset, 0 0 0.5em #d9d9d9 inset;
 }
 .box-title > * {
   margin: 0;
@@ -5921,9 +5925,13 @@ table [class^="h-"] {
   border-bottom-right-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
   border-top-left-radius: 0;
-  -webkit-box-shadow: 0 0 0 1px #e6e6e6 inset, 0 0 0 2px #ffffff inset, 0 0.25em 0.5em rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 0 0 1px #e6e6e6 inset, 0 0 0 2px #ffffff inset, 0 0.25em 0.5em rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 0 0 1px #e6e6e6 inset, 0 0 0 2px #ffffff inset, 0 0.25em 0.5em rgba(0, 0, 0, 0.1) inset;
+  /*
+		@shadow:
+		0 0 0 1px @black90 inset,
+		0 0 0 2px @white inset,
+		0 .25em .5em fadeout(@black, 90%) inset;
+		.box-shadow(@shadow);
+		*/
 }
 @media screen and (min-width: 48em) {
   .box-title {
@@ -6362,29 +6370,12 @@ table [class^="h-"] {
   background: white;
   margin-bottom: 12px;
   border-radius: 0.5em;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #b72f00;
 }
 #totals_panel .total {
+  border-color: #e9c1b3;
   border-bottom: none;
   margin: 0;
-}
-#totals_panel .subtotal-title {
-  line-height: 40px;
-}
-#totals_panel .subtotal {
-  clear: both;
-  height: 36px;
-  line-height: 36px;
-  margin: 0;
-  border-top: 1px dotted #e6e6e6;
-}
-#totals_panel .subtotal span {
-  font-size: 0.875em;
-}
-#totals_panel .subtotal-separator {
-  height: 2px;
-  margin: 0;
-  border-top: 1px solid #e6e6e6;
 }
 #totals_panel .total:first-child {
   border-top: none;

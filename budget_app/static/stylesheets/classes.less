@@ -40,12 +40,15 @@ a.avatar:hover {.box-shadow(0 0 .5em lighten(@black, 75%)); border: 1px solid li
   .main-amount {
     display: block;
   }
+  .main-label {
+    font-weight: 600;
+  }
   .secondary-label {
-    font-size: 16px;
+    font-size: 0.875em;
   }
   .secondary-amount {
     display: block;
-    font-size: 16px;
+    font-size: 0.875em;
     font-weight: 400;
   }
 }
@@ -60,7 +63,7 @@ a.avatar:hover {.box-shadow(0 0 .5em lighten(@black, 75%)); border: 1px solid li
 .history-back a:hover {background-color: @accented-1; border-left: .25em solid darken(@accented-1, 20%); color: @white; padding: .5em 1.25em; text-shadow: 1px 1px 0 fadeout(@black, 80%);}
 
 // Área de descarga de archivos
-.downloads {background: lighten(@color-base, 50%); padding: 1em 1.5em; text-align: center; text-shadow: 1px 1px 0 @white; .rounded(.5em); @shadow: 0 0 0 2px desaturate(lighten(@color-base, 30%), 50%), 0 0 0 1px @white inset, 0 .25em .5em lighten(@color-base, 40%) inset; .box-shadow(@shadow);}
+.downloads {background: lighten(@color-base, 50%); padding: 1em 1.5em; text-align: center; text-shadow: 1px 1px 0 @white; .rounded(.5em); border: 1px solid @color-base; /*@shadow: 0 0 0 2px desaturate(lighten(@color-base, 30%), 50%), 0 0 0 1px @white inset, 0 .25em .5em lighten(@color-base, 40%) inset; .box-shadow(@shadow);*/}
 
 // Info de peso y formato de un archivo
 .file-info {color: @black20; font-size: .875em;}
