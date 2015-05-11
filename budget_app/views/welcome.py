@@ -2,6 +2,7 @@ from coffin.shortcuts import render_to_response
 from django.conf import settings
 from budget_app.models import Budget, Entity, FunctionalCategory, BudgetBreakdown
 from helpers import *
+from random import sample
 
 
 def welcome(request):
@@ -10,9 +11,14 @@ def welcome(request):
 
     # Retrieve front page examples
     populate_latest_budget(c)
-    c['featured_programmes'] = (FunctionalCategory.objects
+    c['featured_programmes'] = list(FunctionalCategory.objects
                                 .filter(budget=c['latest_budget'])
                                 .filter(programme__in=settings.FEATURED_PROGRAMMES))
+
+    # Get only 3 random items from all Featured Programmes
+    c['featured_programmes'] = sample(c['featured_programmes'], 3)
+
+    print type(c['featured_programmes'])
 
     # Decide whether we're going to show budget or execution figures
     use_actual = False

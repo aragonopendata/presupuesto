@@ -73,6 +73,7 @@
                               getSum(chapterBreakdown, [6, 7], 'income', uiState.year) -
                               getSum(chapterBreakdown, [6, 7], 'expense', uiState.year);
 
+      // Check this values to get the right ones
       var total_incomes_estimated = getSum(chapterBreakdown, _.range(1, 6), 'income', uiState.year);
       var total_incomes_executed = getSum(chapterBreakdown, _.range(1, 6), 'income', uiState.year);
       var total_expenses_estimated = getSum(chapterBreakdown, _.range(1, 6), 'expense', uiState.year);
