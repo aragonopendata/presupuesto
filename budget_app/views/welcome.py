@@ -16,9 +16,8 @@ def welcome(request):
                                 .filter(programme__in=settings.FEATURED_PROGRAMMES))
 
     # Get only 3 random items from all Featured Programmes
-    c['featured_programmes'] = sample(c['featured_programmes'], 3)
-
-    print type(c['featured_programmes'])
+    if len(c['featured_programmes']) > 3:
+        c['featured_programmes'] = sample(c['featured_programmes'], 3)
 
     # Decide whether we're going to show budget or execution figures
     use_actual = False
