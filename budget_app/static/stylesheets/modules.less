@@ -414,15 +414,19 @@ table [class^="h-"] {
 
 		[class^="step"] {
 			text-align: left;
+			@shadow:
+				0 0 .5em lighten(@accented-2, 40%),
+				0 0 0 1px @black70;
+				.box-shadow(@shadow);
 
 			h2 {
 				span {
+					color: desaturate(lighten(@accented-2, 10%), 50%);
 					background-position: right center;
 					background-repeat: no-repeat;
 				}
 
 				b {
-					background: url(../assets/busget-stream-question.png) no-repeat right .275em;
 					padding-right: 1.5em;}
 			}
 
@@ -439,36 +443,8 @@ table [class^="h-"] {
 				z-index: 1000;
 				.border-radius-corners(0, .5em, .5em, 0);
 			}
-			
-			&:hover {
-				cursor: pointer;
-				@shadow:
-				0 0 .5em lighten(@accented-2, 40%),
-				0 0 0 1px @black70;
-				.box-shadow(@shadow);
-
-				.desc {
-					@shadow:
-					0 0 .5em lighten(@accented-2, 40%),
-					0 0 0 1px @black70;
-					.box-shadow(@shadow);
-				}
-
-				h2 {
-					span {
-						color: desaturate(lighten(@accented-2, 10%), 50%);
-					}
-
-					b {
-						background-image: url(../assets/busget-stream-question-hover.png);
-						color: desaturate(darken(@accented-2, 10%), 50%);
-					}
-				}
-			}
 		}
 	}
-
-	
 	
 	.data-controllers {
 		text-align: left;
@@ -826,12 +802,57 @@ table [class^="h-"] {
 		margin: 0;
 	}
 
+	.subtotal-title{
+		line-height: 40px;
+	}
+
+	.subtotal{
+		clear: both;
+		height: 36px;
+		line-height: 36px;
+		margin: 0;
+		border-top: 1px dotted @black90;
+
+		span{
+			font-size: 0.875em;
+		}
+	}
+
+	.subtotal-separator{
+		height: 2px;
+		margin: 0;
+		border-top: 1px solid @black90;
+	}
+
 	.total:first-child{
 		border-top: none;
+	}
+
+	.icon-question{
+		float: left;
+		display: block;
+		width: 22px;
+		height: 22px;
+		margin-right: 8px;
+  	margin-top: 5px;
+		background: url(../assets/busget-stream-question.png) no-repeat 0 0 transparent;
+
+		&:hover{
+			background-image: url(../assets/busget-stream-question-hover.png);
+		}
 	}
 
 	abbr[title], 
 	dfn[title] {
 		border-bottom: none;
 	}
+}
+
+@tooltipArrowColor: @black30;
+
+.tooltip{
+	font-size: 13px;
+}
+.tooltip-inner{
+	background: @black30;
 }

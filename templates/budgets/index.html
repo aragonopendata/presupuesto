@@ -25,6 +25,21 @@
   <div id="pop-up-content"></div>
 </div>
 
+<div id="budgets-totals">
+  <h1 class="page-title" id="indicadores">{{ _('Ingresos y gastos totales en') }} <span id="totals-year"></span></h1>
+  <div id="totals_panel">
+    <div class="total">
+      <p class="subtotal-title"><span><strong>{{ _('Ingresos totales') }}</strong></span></p>
+      <p class="subtotal"><span>{{ _('Presupuestado') }}</span> <b id="total-incomes-estimated"></b></p>
+      <p class="subtotal"><span>{{ _('Ejecutado') }}</span> <b id="total-incomes-executed"></b></p>
+      <p class="subtotal-separator"></p>
+      <p class="subtotal-title"><span><strong>{{ _('Gastos totales') }}</strong></span></p>
+      <p class="subtotal"><span>{{ _('Presupuestado') }}</span> <b id="total-expenses-estimated"></b></p>
+      <p class="subtotal"><span>{{ _('Ejecutado') }}</span> <b id="total-expenses-executed"></b></p>
+    </div>
+  </div>
+</div>
+
 {% include 'budgets/budgets_indicators.html' %}
 
 {% include 'shared/social_sharing.html' %}
@@ -58,7 +73,16 @@
                               getSum(chapterBreakdown, [6, 7], 'income', uiState.year) -
                               getSum(chapterBreakdown, [6, 7], 'expense', uiState.year);
 
-      $('#indicators-year').text(uiState.year);
+      var total_incomes_estimated = getSum(chapterBreakdown, _.range(1, 6), 'income', uiState.year);
+      var total_incomes_executed = getSum(chapterBreakdown, _.range(1, 6), 'income', uiState.year);
+      var total_expenses_estimated = getSum(chapterBreakdown, _.range(1, 6), 'expense', uiState.year);
+      var total_expenses_executed = getSum(chapterBreakdown, _.range(1, 6), 'expense', uiState.year);
+
+      $('#indicators-year, #totals-year').text(uiState.year);
+      $('#total-incomes-estimated').text(format(total_incomes_estimated));
+      $('#total-incomes-executed').text(format(total_incomes_executed));
+      $('#total-expenses-estimated').text(format(total_expenses_estimated));
+      $('#total-expenses-executed').text(format(total_expenses_executed));
       $('#total-gross-savings').text(format(gross_savings));
       $('#total-net-savings').text(format(net_savings));
       $('#total-funding-capacity').text(format(funding_capacity));
