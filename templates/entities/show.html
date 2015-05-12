@@ -51,7 +51,7 @@
   <a class="icon-file-excel" href="{{ url('budget_app.views.entity_income', entity.level, entity.slug, 'xls') }}"><span class="file-info">Excel</span></a>
 </p>
 <p class="downloads" id="fexpense-downloads">
-  {{ _('Descarga la tabla de <b>Gastos (Funcional)</b>')|safe }}
+  {{ _('Descarga la tabla de <b>Gastos (por programa)</b>')|safe }}
   <a class="icon-file-excel" href="{{ url('budget_app.views.entity_fexpenses', entity.level, entity.slug, 'csv') }}"><span class="file-info">CSV</span></a>
   o
   <a class="icon-file-excel" href="{{ url('budget_app.views.entity_fexpenses', entity.level, entity.slug, 'xls') }}"><span class="file-info">Excel</span></a>
@@ -153,7 +153,7 @@
       // Update labels and show/hide totals plus download links based on view
       var executionLabelPostfix = getExecutionTotalLabel(uiState, budgetStatuses);
       if ( uiState.view == 'fexpense' ) {
-        $(".page-title").text("{{ entity.name }}: Gastos (funcionales)");
+        $(".page-title").text("{{ entity.name }}: Gastos (por programa)");
         $("#main-total .main-label").html("Total gastos no financieros"+executionLabelPostfix);
         $("#including-financial-total .main-label").html("Total gastos"+executionLabelPostfix);
         $("#income-downloads").hide();
