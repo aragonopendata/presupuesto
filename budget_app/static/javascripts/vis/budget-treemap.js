@@ -1,4 +1,4 @@
-function BudgetTreemap(selector, breakdown, stats, areas, aspectRatio) {
+function BudgetTreemap(selector, breakdown, stats, areas, aspectRatio, colorScale) {
   var width = $(selector).width();
   var height = width / (aspectRatio===undefined ? 2 : aspectRatio);
   var expenseData;
@@ -17,7 +17,7 @@ function BudgetTreemap(selector, breakdown, stats, areas, aspectRatio) {
   var maxLevels = -1; // By default, don't limit treemap depth
 
   // D3 category10 scale as starting point
-  var category10 = [ "#A9A69F", "#D3C488", "#2BA9A0", "#E8A063", "#9EBF7B", "#dbb0c0", "#7d8f69", "#a29ac8", "#6c6592", "#9e9674", "#e377c2", "#e7969c", "#bcbd22", "#17becf" ];
+  var category10 = colorScale ? colorScale : [ "#A9A69F", "#D3C488", "#2BA9A0", "#E8A063", "#9EBF7B", "#dbb0c0", "#7d8f69", "#a29ac8", "#6c6592", "#9e9674", "#e377c2", "#e7969c", "#bcbd22", "#17becf" ];
   var colors = d3.scale.ordinal().range(category10).domain([0,1,2,3,4,5,6,7,8,9]);
 
 
