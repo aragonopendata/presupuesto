@@ -150,7 +150,7 @@ function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, i1
     // TODO: Set up value only at the end, automatically
     var result = { "nodes": [], "links": [] };
 
-    result.nodes.push({ "name": _['government'], "budgeted": real(functionalBreakdown.income[year]) });
+    result.nodes.push({ "name": '', "budgeted": real(functionalBreakdown.income[year]) });
     var government_id = result.nodes.length-1;
     addSourceFlows(getIncomeNodes(), government_id);
     addTargetFlows(government_id, getExpenseNodes());
@@ -321,7 +321,8 @@ function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, i1
   }
 
   function mover(d) {
-    d.name ? $("#pop-up-title").html(d.name) : $("#pop-up-title").html(d.source.name + " → " + d.target.name);
+    d.name ? $("#pop-up-title").html(d.name) : (d.source.name ? $("#pop-up-title").html(d.source.name) : $("#pop-up-title").html(d.target.name));
+
     if ( d.missingData ) {
       $("#pop-up-content").html('');
     } else {  // Flow
@@ -332,7 +333,12 @@ function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, i1
 
     var popLeft = d3.event.pageX - popUp.width() / 2;
     var popTop = d3.event.pageY - popUp.height() - 15;
-    popUp.css({"left":popLeft,"top":popTop}).show();
+    popLeft = (popLeft < 0 ) ? 0 : popLeft;
+    if (popLeft+popUp.width() < $('body').width()) {
+      popUp.css({"left":popLeft,"top":popTop}).show();
+    } else {
+      popUp.css({"rigth":0,"top":popTop}).show();
+    }
   }
   
   function mout(d) {
