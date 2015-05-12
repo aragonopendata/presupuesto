@@ -6622,14 +6622,7 @@ table [class^="h-"] {
   }
   a,
   a:visited {
-    color: #333333 !important;
-    text-decoration: underline;
-  }
-  a:after {
-    content: " (" attr(href) ")";
-  }
-  abbr:after {
-    content: " (" attr(title) ")";
+    color: #333333 /*!important; text-decoration: underline;*/;
   }
   .ir a:after {
     content: "";
@@ -6660,6 +6653,19 @@ table [class^="h-"] {
   h2,
   h3 {
     page-break-after: avoid;
+  }
+  #main-menu,
+  #menu-lang,
+  .form-search,
+  .social-sharing,
+  .footer-corp .footer-menu,
+  .slick-cell .toggle.expand,
+  .slick-sort-indicator {
+    display: none;
+  }
+  header[role="banner"] > .container-fluid .logo {
+    font-size: 2em;
+    text-indent: 0 !important;
   }
 }
 .chartWrap {
@@ -6925,6 +6931,9 @@ g.bg .chart-container rect {
   pointer-events: none;
   text-align: center;
   text-anchor: middle;
+}
+.chart-container text.nv-legend-text:hover {
+  font-weight: 600;
 }
 #pop-up {
   display: none;
