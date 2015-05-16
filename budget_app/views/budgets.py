@@ -14,7 +14,6 @@ def budgets(request):
     c = get_context(request, css_class='body-summary', title='')
 
     # Income/expense breakdown
-    # TODO: Add note on view saying we're showing only non-financial expense
     c['functional_breakdown'] = BudgetBreakdown(['policy', 'programme'])
     c['economic_breakdown'] = BudgetBreakdown(['article', 'heading'])
     c['chapter_breakdown'] = BudgetBreakdown(['chapter']) # Used for indicators
