@@ -31,12 +31,12 @@
     <div class="total">
       <span class="main-label">{{ _('Ingresos totales') }}</span> <b id="total-incomes-executed"></b>
       <br/>
-      <span class="secondary-label">{{ _('Presupuestado') }}</span> <b id="total-incomes-estimated" class="secondary-amount"></b>
+      <span class="secondary-label">{{ _('Presupuestado') }}</span> <b id="total-incomes-budgeted" class="secondary-amount"></b>
     </div>
     <div class="total">
       <span class="main-label">{{ _('Gastos totales') }}</span> <b id="total-expenses-executed"></b>
       <br/>
-      <span class="secondary-label">{{ _('Presupuestado') }}</span> <b id="total-expenses-estimated" class="secondary-amount"></b></p>
+      <span class="secondary-label">{{ _('Presupuestado') }}</span> <b id="total-expenses-budgeted" class="secondary-amount"></b></p>
     </div>
   </div>
 </div>
@@ -74,16 +74,15 @@
                               getSum(chapterBreakdown, [6, 7], 'income', uiState.year) -
                               getSum(chapterBreakdown, [6, 7], 'expense', uiState.year);
 
-      // Check this values to get the right ones
-      var total_incomes_estimated = getSum(chapterBreakdown, _.range(1, 6), 'income', uiState.year);
-      var total_incomes_executed = getSum(chapterBreakdown, _.range(1, 6), 'income', uiState.year);
-      var total_expenses_estimated = getSum(chapterBreakdown, _.range(1, 6), 'expense', uiState.year);
-      var total_expenses_executed = getSum(chapterBreakdown, _.range(1, 6), 'expense', uiState.year);
+      var total_incomes_budgeted = economicBreakdown.income[uiState.year];
+      var total_incomes_executed = economicBreakdown.income['actual_'+uiState.year];
+      var total_expenses_budgeted = economicBreakdown.expense[uiState.year];
+      var total_expenses_executed = economicBreakdown.expense['actual_'+uiState.year];
 
       $('#indicators-year, #totals-year').text(uiState.year);
-      $('#total-incomes-estimated').text(format(total_incomes_estimated));
+      $('#total-incomes-budgeted').text(format(total_incomes_budgeted));
       $('#total-incomes-executed').text(format(total_incomes_executed));
-      $('#total-expenses-estimated').text(format(total_expenses_estimated));
+      $('#total-expenses-budgeted').text(format(total_expenses_budgeted));
       $('#total-expenses-executed').text(format(total_expenses_executed));
       $('#total-gross-savings').text(format(gross_savings));
       $('#total-net-savings').text(format(net_savings));
