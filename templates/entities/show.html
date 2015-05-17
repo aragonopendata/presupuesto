@@ -327,9 +327,10 @@
     var fexpenseAreas = {{ functional_areas|safe }};
     var expenseAreas = {{ expense_areas|safe }};
 
-    var incomeTreemap = new BudgetTreemap("#incomeChartContainer", breakdowns['income'], stats, incomeAreas).i18n(i18n).budgetStatuses(budgetStatuses);
-    var fexpenseTreemap = new BudgetTreemap("#fexpenseChartContainer", breakdowns['fexpense'], stats, fexpenseAreas).i18n(i18n).budgetStatuses(budgetStatuses);
-    var expenseTreemap = new BudgetTreemap("#expenseChartContainer", breakdowns['expense'], stats, expenseAreas).i18n(i18n).budgetStatuses(budgetStatuses);
+    var colorScale = {{ color_scale|safe }};
+    var incomeTreemap = new BudgetTreemap("#incomeChartContainer", breakdowns['income'], stats, incomeAreas, 2, colorScale).i18n(i18n).budgetStatuses(budgetStatuses);
+    var fexpenseTreemap = new BudgetTreemap("#fexpenseChartContainer", breakdowns['fexpense'], stats, fexpenseAreas, 2, colorScale).i18n(i18n).budgetStatuses(budgetStatuses);
+    var expenseTreemap = new BudgetTreemap("#expenseChartContainer", breakdowns['expense'], stats, expenseAreas, 2, colorScale).i18n(i18n).budgetStatuses(budgetStatuses);
 {% if not entities %}
     // Limit treemap depth for top-level entities
     incomeTreemap.maxLevels(1);
