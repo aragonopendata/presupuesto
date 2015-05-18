@@ -1,0 +1,42 @@
+// Update global budget indicators
+function updateIndicators(uiState) {
+  function getSum(breakdown, ids, field, year) {
+    // TODO: Take into account whether actual spending figures exists (and whether they cover whole year)
+    return _.reduce(ids, function(sum, id) { return sum + (breakdown.sub[id][field][year]||0); }, 0);
+  }
+
+  function format(amount) {
+    return formatAmount(adjustInflation(amount, stats, uiState.year));
+  }
+
+  var gross_savings = getSum(chapterBreakdown, _.range(1, 6), 'income', uiState.year) -
+                      getSum(chapterBreakdown, _.range(1, 6), 'expense', uiState.year);
+  var net_savings = gross_savings - getSum(chapterBreakdown, '9', 'expense', uiState.year);
+  var funding_capacity = gross_savings +
+                          getSum(chapterBreakdown, [6, 7], 'income', uiState.year) -
+                          getSum(chapterBreakdown, [6, 7], 'expense', uiState.year);
+
+  var total_incomes_budgeted = economicBreakdown.income[uiState.year];
+  var total_incomes_executed = economicBreakdown.income['actual_'+uiState.year];
+  var total_expenses_budgeted = economicBreakdown.expense[uiState.year];
+  var total_expenses_executed = economicBreakdown.expense['actual_'+uiState.year];
+
+  // Check if executed data is available
+  if (total_incomes_executed){
+    $('#totals_panel .secondary-label, #total-incomes-budgeted, #total-expenses-budgeted').show();
+    $('#total-incomes-budgeted').text(format(total_incomes_budgeted));
+    $('#total-incomes-executed').text(format(total_incomes_executed));
+    $('#total-expenses-budgeted').text(format(total_expenses_budgeted));
+    $('#total-expenses-executed').text(format(total_expenses_executed));
+  }
+  else{
+    $('#total-incomes-executed').text(format(total_incomes_budgeted));
+    $('#total-expenses-executed').text(format(total_expenses_budgeted));
+    $('#totals_panel .secondary-label, #total-incomes-budgeted, #total-expenses-budgeted').hide();
+  }
+
+  $('#indicators-year, #totals-year').text(uiState.year);
+  $('#total-gross-savings').text(format(gross_savings));
+  $('#total-net-savings').text(format(net_savings));
+  $('#total-funding-capacity').text(format(funding_capacity));
+}
