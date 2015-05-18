@@ -1,0 +1,11 @@
+Coffin==0.4.0
+Django==1.4.2
+django-appconf==1.0.1
+django-compressor==1.5
+django-jasmine==0.4.1
+Jinja2==2.7.3
+MarkupSafe==0.23
+psycopg2==2.6
+Pygments==2.0.2
+six==1.9.0
+xlwt==1.0.0
