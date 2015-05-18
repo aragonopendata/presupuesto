@@ -12,6 +12,9 @@ def payments(request, render_callback=None):
     c['area_breakdown'] = BudgetBreakdown(['area', 'payee', 'description'])
 
     budget = populate_latest_budget(c)
+    # TODO: We should have a year slider in the page, but in the meantime...
+    c['year'] = budget.year
+
     for item in Payment.objects.each_denormalized("b.id = %s", [budget.id]):
         # We add the date to the description, if it exists:
         # TODO: I wanted the date to be in a separate column, but it's complicated right

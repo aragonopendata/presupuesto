@@ -46,9 +46,9 @@
         formatter: getFormatter('nominal'),
         sortable: true, 
         headerCssClass: 'slick-header-right',
-        column: '2014', 
+        column: '{{year}}', 
         getter: getBreakdownValue, 
-        year: '2014',   // FIXME: Hardcoded year several times in this file. Also 'expense' as field, less bad
+        year: '{{year}}',
         width: 150,
         resizable: false
       }; 
@@ -85,7 +85,7 @@
       // Total amounts are the same whichever way you break down the items, so any breakdown will do
       $("#total").text( 
         columnDef.formatter(  0, 0, 
-          payeeBreakdown['expense'][2014], 
+          payeeBreakdown['expense'][{{year}}], 
           columnDef, 
           payeeBreakdown) || 'n/a' );
     }    
