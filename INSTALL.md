@@ -2,11 +2,16 @@
 
 Para instalar la aplicación en local es necesario seguir los siguientes pasos:
 
-* Instalar los componentes utilizados por la aplicación. Actualmente, la aplicación no es compatible con versiones de Django superiores a 1.6 por usar el argumento [deprecado][4] `mimetype`, por lo que usaremos una versión anterior:
+* Instalar los componentes utilizados por la aplicación. Actualmente, la aplicación requiere coffin 0.4.0, así como django 1.4.2:
+    
+        $ pip install -r requirements.txt
 
-        $ pip install django=="1.5"
-        $ pip install Coffin Django Jinja2 Pygments psycopg2 xlwt django_jasmine django_compressor
-        
+    * Incompatibilidad con otras versiones de coffin y django:
+        * En coffin > 0.4.0 desaparece `coffin.common.env`.
+        * En django > 1.6 desaparece el argumento [deprecado][4] `mimetype`.
+        * En django > = 1.5 desaparece `django.views.generic.simple`.
+        * En django < 1.4.2 no se ha incorporado aún la [compatibilidad][5] con `django.utils.six`.
+
 * Borrar base de datos:
 
         $ dropdb -h localhost presupuestos
@@ -37,6 +42,7 @@ Para instalar la aplicación en local es necesario seguir los siguientes pasos:
 Para más información, consulta la [documentación técnica del proyecto](docs/Documentación Técnica.pdf).
 
 [4]: https://docs.djangoproject.com/en/1.7/internals/deprecation/#deprecation-removed-in-1-7
+[5]: https://docs.djangoproject.com/en/1.5/topics/python3/#philosophy
 
 
 ### Configurando el buscador
