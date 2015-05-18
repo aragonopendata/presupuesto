@@ -232,6 +232,8 @@
     </table>
   </div>
 </section>
+
+{{ render_pagination_controls(items, query_string) }} 
 {% endif %}
 
 {% if payments %}
@@ -292,6 +294,8 @@
     </table>
   </div>
 </section>
+
+{{ render_pagination_controls(payments, query_string) }} 
 {% endif %}
 
 <script>
@@ -300,7 +304,5 @@
   });
 </script>
 </script>
-
-{{ render_pagination_controls(items, query_string) }} 
 
 {% endblock %}
