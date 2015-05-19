@@ -3629,6 +3629,10 @@ header[role="banner"] {
   font-weight: 100;
   text-align: center;
 }
+.page-subtitle {
+  font-size: 1.375em;
+  text-align: center;
+}
 .no-data-alert {
   top: -300px;
   position: relative;
@@ -3707,7 +3711,8 @@ footer[role="contentinfo"] {
     margin: 0 1em 0 0;
     text-align: left;
   }
-  .page-title {
+  .page-title,
+  .page-subtitle {
     text-align: left;
   }
   footer[role="contentinfo"] {
