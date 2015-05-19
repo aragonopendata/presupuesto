@@ -374,15 +374,15 @@ table [class^="h-"] {
 
 	[class^="step"] {
 		background: @white;
-		margin: 0 0 1.5em;
-		padding: .5em 1.5em;
-		position: relative;
 		text-align: center;
 		.rounded(.5em);
 		@shadow: 0 0 0 1px @black90;
 		.box-shadow(@shadow);
 
 		h2 {
+			padding: .3em 0.875em;
+			margin: 0;
+
 			span {
 				color: @black90; display: block; font-size: 4em;
 			}
@@ -398,6 +398,7 @@ table [class^="h-"] {
 
 		.desc {
 			font-size: .875em;
+			margin: 0;
 		}
 	}
 }
@@ -435,14 +436,14 @@ table [class^="h-"] {
 			.desc {
 				background: desaturate(darken(@accented-2, 10%), 50%);
 				color: @white;
-				left: 0;
+				//left: 0;
 				line-height: 1.25;
-				right: 0;
+				//right: 0;
 				padding: 1em;
-				position: absolute;
+				//position: absolute;
 				text-shadow: 1px 1px 0 fadeout(@black, 80%);
-				top: 93%;
-				z-index: 1000;
+				//top: 93%;
+				//z-index: 1000;
 				.border-radius-corners(0, .5em, .5em, 0);
 			}
 		}

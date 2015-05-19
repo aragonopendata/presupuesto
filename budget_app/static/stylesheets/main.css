@@ -5972,9 +5972,6 @@ table [class^="h-"] {
 }
 .budget-stream [class^="step"] {
   background: #ffffff;
-  margin: 0 0 1.5em;
-  padding: .5em 1.5em;
-  position: relative;
   text-align: center;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -5982,6 +5979,10 @@ table [class^="h-"] {
   -webkit-box-shadow: 0 0 0 1px #e6e6e6;
   -moz-box-shadow: 0 0 0 1px #e6e6e6;
   box-shadow: 0 0 0 1px #e6e6e6;
+}
+.budget-stream [class^="step"] h2 {
+  padding: .3em 0.875em;
+  margin: 0;
 }
 .budget-stream [class^="step"] h2 span {
   color: #e6e6e6;
@@ -5997,6 +5998,7 @@ table [class^="h-"] {
 }
 .budget-stream [class^="step"] .desc {
   font-size: .875em;
+  margin: 0;
 }
 .sankey {
   margin: 0 0 1.5em;
@@ -6031,14 +6033,9 @@ table [class^="h-"] {
   .budget-stream [class^="step"] .desc {
     background: #635821;
     color: #ffffff;
-    left: 0;
     line-height: 1.25;
-    right: 0;
     padding: 1em;
-    position: absolute;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-    top: 93%;
-    z-index: 1000;
     -webkit-border-top-right-radius: 0;
     -webkit-border-bottom-right-radius: 0.5em;
     -webkit-border-bottom-left-radius: 0.5em;
