@@ -16,8 +16,8 @@
   </nav>
 
   <div class="tab-contents">
-    {{ render_tab('Por area', 'area', 'current') }}
-    {{ render_tab('Por beneficiario', 'payee', 'visuallyhidden') }} 
+    {{ render_tab(_('Por area'), 'area', 'current') }}
+    {{ render_tab(_('Por beneficiario'), 'payee', 'visuallyhidden') }}
   </div>
 
   {% include 'shared/social_sharing.html' %}
@@ -43,7 +43,7 @@
     function getColumnDefinition() {
       return { 
         field: 'expense',
-        name: 'Pago',        
+        name: '{{ _("Pago") }}',
         formatter: getFormatter('nominal'),
         sortable: true, 
         headerCssClass: 'slick-header-right',
@@ -63,7 +63,7 @@
                         payeeGridData, [
                           {
                             field: "key",
-                            name: 'Beneficiario', 
+                            name: '{{ _("Beneficiario") }}',
                             formatter: rowNameFormatter
                           },
                           columnDef
@@ -75,7 +75,7 @@
                         areaGridData, [
                           {
                             field: "key",
-                            name: 'Area', 
+                            name: '{{ _("Área") }}',
                             formatter: rowNameFormatter
                           },
                           columnDef
