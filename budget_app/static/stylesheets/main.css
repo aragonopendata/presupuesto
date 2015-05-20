@@ -3629,10 +3629,6 @@ header[role="banner"] {
   font-weight: 100;
   text-align: center;
 }
-.page-subtitle {
-  font-size: 1.375em;
-  text-align: center;
-}
 .no-data-alert {
   top: -300px;
   position: relative;
