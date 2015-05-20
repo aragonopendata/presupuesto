@@ -33,7 +33,7 @@ def entities_show(request, c, entity, render_callback=None):
     # Prepare the budget breakdowns
     c['financial_expense_breakdown'] = BudgetBreakdown()
     c['functional_breakdown'] = BudgetBreakdown(['policy', 'programme'])
-    if entity.level == get_main_entity_level():
+    if entity.level == settings.MAIN_ENTITY_LEVEL:
         c['economic_breakdown'] = BudgetBreakdown(['article', 'heading'])
 
         # We assume here that all items are properly configured across all dimensions
@@ -68,7 +68,7 @@ def entities_show(request, c, entity, render_callback=None):
     populate_budget_statuses(c, entity.id)
     populate_area_descriptions(c, ['functional', 'income', 'expense'])
     c['display_functional_view'] = True
-    _set_full_breakdown(c, entity.level == get_main_entity_level())
+    _set_full_breakdown(c, entity.level == settings.MAIN_ENTITY_LEVEL)
     c['entity'] = entity
 
     return render(c, render_callback, 'entities/show.html')

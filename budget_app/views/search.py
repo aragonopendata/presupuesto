@@ -18,7 +18,7 @@ def search(request):
     # to search across all budgets one needs to request that explicitly.
     if c['selected_year'] != "all":
         year = c['selected_year']
-        budgets = Budget.objects.filter(entity__level=get_main_entity_level(), year=year)
+        budgets = Budget.objects.filter(entity__id=get_main_entity(c).id, year=year)
         budget = budgets[0] if len(budgets)>0 else None
     else:
         year = None
@@ -57,7 +57,7 @@ def search(request):
 
     c['results_size'] = len(c['terms']) + len(c['policies_ids']) + len(all_items) + len(all_payments)
     c['formatter'] = add_thousands_separator
-    c['main_entity_level'] = get_main_entity_level()
+    c['main_entity_level'] = settings.MAIN_ENTITY_LEVEL
 
     # XXX: Note we only have top-level descriptions. Beware on the view not to use
     # the wrong descriptions. We should fetch the descriptions from the DB together with

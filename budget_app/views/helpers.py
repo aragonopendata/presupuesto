@@ -30,9 +30,6 @@ def set_title(c, title):
 def get_main_entity(c):
     return Entity.objects.main_entity()
 
-def get_main_entity_level():
-    return settings.MAIN_ENTITY_LEVEL
-
 def populate_stats(c):  # Convenience: assume it's top level entity
     populate_entity_stats(c, get_main_entity(c))
     
