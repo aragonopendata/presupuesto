@@ -7,17 +7,17 @@ from helpers import *
 
 
 def budgets(request):
-    # Retrieve the entity to display
-    main_entity = Entity.objects.main_entity()
-
     # Get request context
     c = get_context(request, css_class='body-summary', title='')
+
+    # Retrieve the entity to display
+    main_entity = get_main_entity(c)
 
     # Income/expense breakdown
     c['functional_breakdown'] = BudgetBreakdown(['policy', 'programme'])
     c['economic_breakdown'] = BudgetBreakdown(['article', 'heading'])
     c['chapter_breakdown'] = BudgetBreakdown(['chapter']) # Used for indicators
-    for item in BudgetItem.objects.each_denormalized("e.level = %s", [get_main_entity_level()]):
+    for item in BudgetItem.objects.each_denormalized("e.id = %s", [main_entity.id]):
         column_name = year_column_name(item)
         c['chapter_breakdown'].add_item(column_name, item)
         if not item.is_financial():

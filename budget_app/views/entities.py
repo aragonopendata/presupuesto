@@ -19,7 +19,7 @@ def entities_index(request, c, level, render_callback=None):
     # Additional data needed by the view
     populate_level(c, level)
     populate_level_stats(c, level)
-    populate_years(c, 'economic_breakdown', level)
+    populate_years(c, 'economic_breakdown')
     populate_entities(c, level)
 
     # XXX: The percentage format in pages listing entities is tricky and confusing, partly because
@@ -64,7 +64,7 @@ def entities_show(request, c, entity, render_callback=None):
     populate_entity_stats(c, entity)
     # TODO: We're doing this also for Aragon, check performance!
     populate_entity_descriptions(c, entity)
-    populate_years(c, 'economic_breakdown', entity.level)
+    populate_years(c, 'economic_breakdown')
     populate_budget_statuses(c, entity.id)
     populate_area_descriptions(c, ['functional', 'income', 'expense'])
     c['display_functional_view'] = True
@@ -127,7 +127,7 @@ def entities_show_policy(request, c, entity, id, title, render_callback=None):
     populate_level(c, entity.level)
     populate_entity_stats(c, entity)
     populate_entity_descriptions(c, entity)
-    populate_years(c, 'functional_breakdown', entity.level)
+    populate_years(c, 'functional_breakdown')
     populate_budget_statuses(c, entity.id)
     populate_area_descriptions(c, ['functional', show_side])
     _populate_csv_settings(c, 'policy', id)
@@ -201,7 +201,7 @@ def entities_show_article(request, c, entity, id, title, show_side, render_callb
     # Additional data needed by the view
     populate_level(c, entity.level)
     populate_entity_stats(c, entity)
-    populate_years(c, 'institutional_breakdown', entity.level)
+    populate_years(c, 'institutional_breakdown')
     populate_budget_statuses(c, entity.id)
     populate_area_descriptions(c, ['functional', 'funding', show_side])
     _populate_csv_settings(c, 'article', id)

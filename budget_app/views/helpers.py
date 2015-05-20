@@ -14,7 +14,6 @@ def get_context(request, css_class='', title=''):
     c = RequestContext(request)
     c['page_css_class'] = css_class
     c['title_prefix'] = title
-    c['main_entity_level'] = get_main_entity_level()
 
     # Global settings
     c['show_institutional_tab'] = not hasattr(settings, 'SHOW_INSTITUTIONAL_TAB') or settings.SHOW_INSTITUTIONAL_TAB
@@ -25,11 +24,17 @@ def get_context(request, css_class='', title=''):
 
     return c
 
+def set_title(c, title):
+    c['title_prefix'] = title
+
+def get_main_entity(c):
+    return Entity.objects.main_entity()
+
 def get_main_entity_level():
     return settings.MAIN_ENTITY_LEVEL
 
 def populate_stats(c):  # Convenience: assume it's top level entity
-    populate_entity_stats(c, Entity.objects.main_entity())
+    populate_entity_stats(c, get_main_entity(c))
     
 def populate_entity_stats(c, entity, stats_name='stats'):
     c[stats_name] = json.dumps({
@@ -48,19 +53,19 @@ def populate_level_stats(c, level):
 # Assumes we're dealing with the top-level entity here
 # TODO: Don't like this method, should get rid of it
 def populate_descriptions(c):
-    c['descriptions'] = Budget.objects.get_all_descriptions(Entity.objects.main_entity())
+    c['descriptions'] = Budget.objects.get_all_descriptions(get_main_entity(c))
 
 def populate_entity_descriptions(c, entity):
     c['descriptions'] = Budget.objects.get_all_descriptions(entity)
 
-def populate_years(c, breakdown_name, level=None):
+def populate_years(c, breakdown_name):
     years = sorted(list(set(c[breakdown_name].years.values())))
     c['years'] = json.dumps([str(year) for year in years])
     c['latest_year'] = years[-1]
     c['show_treemap'] = ( len(years) == 1 )
 
     # Tweak the slider labels when a budget is not final, just proposed
-    if _is_proposed_budget(level, c['latest_year']):
+    if _is_proposed_budget():
         years[len(years)-1] = str(years[len(years)-1]) + ' (proyecto)'
     c['years_scale'] = json.dumps([str(year) for year in years])
 
@@ -73,7 +78,7 @@ def populate_budget_statuses(c, entity_id):
     c['budget_statuses'] = json.dumps(Budget.objects.get_statuses(entity_id))
 
 def populate_latest_budget(c):
-    c['latest_budget'] = Budget.objects.latest(Entity.objects.main_entity().id)
+    c['latest_budget'] = Budget.objects.latest(get_main_entity(c).id)
     return c['latest_budget']
 
 def populate_level(c, level):
@@ -85,9 +90,8 @@ def populate_entities(c, level):
     c['entities'] = Entity.objects.entities(level)
     c['entities_json'] = json.dumps(Entity.objects.get_entities_table(level))
 
-def _is_proposed_budget(level, year):
+def _is_proposed_budget():
     # XXX: Temporary workaround, should come from data model somehow
-    # return (level == get_main_entity_level() and year == 2014)
     return False;
 
 

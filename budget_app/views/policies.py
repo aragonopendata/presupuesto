@@ -7,29 +7,30 @@ import json
 
 
 def policies(request, render_callback=None):
-    # Retrieve the entity to display
-    main_entity = Entity.objects.main_entity()
-
     # Get request context
-    c = get_context(request, css_class='body-entities', title=main_entity.name)
+    c = get_context(request, css_class='body-entities', title='')
+
+    # Retrieve the entity to display
+    main_entity = get_main_entity(c)
+    set_title(c, main_entity.name)
 
     return entities_show(request, c, main_entity, render_callback)
 
 
 def policies_show(request, id, title, render_callback=None):
-    # Retrieve the entity to display
-    main_entity = Entity.objects.main_entity()
-
     # Get request context
     c = get_context(request, css_class='body-policies', title='')
     c['policy_uid'] = id
+
+    # Retrieve the entity to display
+    main_entity = get_main_entity(c)
 
     # Get the budget breakdown
     c['functional_breakdown'] = BudgetBreakdown(['programme'])
     c['economic_breakdown'] = BudgetBreakdown(['chapter', 'article', 'heading'])
     c['funding_breakdown'] = BudgetBreakdown(['source', 'fund'])
     c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
-    get_budget_breakdown(   "fc.policy = %s and e.level = %s", [ id, get_main_entity_level() ],
+    get_budget_breakdown(   "fc.policy = %s and e.id = %s", [ id, main_entity.id ],
                             [ 
                                 c['functional_breakdown'], 
                                 c['economic_breakdown'],
@@ -41,7 +42,7 @@ def policies_show(request, id, title, render_callback=None):
     show_side = 'expense'
     populate_stats(c)
     populate_entity_descriptions(c, main_entity)
-    populate_years(c, 'functional_breakdown', get_main_entity_level())
+    populate_years(c, 'functional_breakdown')
     populate_budget_statuses(c, main_entity.id)
     populate_area_descriptions(c, ['functional', 'funding', show_side])
     _populate_csv_settings(c, 'policy', id)
@@ -55,11 +56,13 @@ def policies_show(request, id, title, render_callback=None):
 
 
 def programmes_show(request, id, title, render_callback=None):
-    # Retrieve the entity to display
-    main_entity = Entity.objects.main_entity()
-
     # Get request context
     c = get_context(request, css_class='body-policies', title='')
+
+    # Retrieve the entity to display
+    main_entity = get_main_entity(c)
+
+    # Extra request context info
     c['programme_id'] = id
     c['programme'] = FunctionalCategory.objects.filter( budget__entity=main_entity, 
                                                         programme=id)[0]
@@ -80,7 +83,7 @@ def programmes_show(request, id, title, render_callback=None):
     c['economic_breakdown'] = BudgetBreakdown(['chapter', 'article', 'heading', 'uid'])
     c['funding_breakdown'] = BudgetBreakdown(['source', 'fund'])
     c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
-    get_budget_breakdown(   "fc.programme = %s and e.level = %s", [ id, get_main_entity_level() ],
+    get_budget_breakdown(   "fc.programme = %s and e.id = %s", [ id, main_entity.id ],
                             [ 
                                 c['economic_breakdown'],
                                 c['funding_breakdown'],
@@ -99,7 +102,7 @@ def programmes_show(request, id, title, render_callback=None):
     # Additional data needed by the view
     show_side = 'expense'
     populate_stats(c)
-    populate_years(c, 'institutional_breakdown', get_main_entity_level())
+    populate_years(c, 'institutional_breakdown')
     populate_budget_statuses(c, main_entity.id)
     populate_area_descriptions(c, ['functional', 'funding', show_side])
     _populate_csv_settings(c, 'programme', id)
@@ -118,11 +121,13 @@ def expense_articles_show(request, id, title, render_callback=None):
 
 
 def articles_show(request, id, title, show_side, render_callback=None):
-    # Retrieve the entity to display
-    main_entity = Entity.objects.main_entity()
-
     # Get request context
     c = get_context(request, css_class='body-policies', title='')
+
+    # Retrieve the entity to display
+    main_entity = get_main_entity(c)
+
+    # Extra request context info
     c['article_id'] = id
     c['article'] = EconomicCategory.objects.filter( budget__entity=main_entity,
                                                     article=id, 
@@ -140,7 +145,7 @@ def articles_show(request, id, title, show_side, render_callback=None):
     c['economic_breakdown'] = BudgetBreakdown(['heading', 'uid'])
     c['funding_breakdown'] = BudgetBreakdown(['source', 'fund'])
     c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
-    get_budget_breakdown(   "ec.article = %s and e.level = %s", [ id, get_main_entity_level() ],
+    get_budget_breakdown(   "ec.article = %s and e.id = %s", [ id, main_entity.id ],
                             [ 
                                 c['functional_breakdown'],
                                 c['economic_breakdown'],
@@ -159,7 +164,7 @@ def articles_show(request, id, title, show_side, render_callback=None):
 
     # Additional data needed by the view
     populate_stats(c)
-    populate_years(c, 'institutional_breakdown', get_main_entity_level())
+    populate_years(c, 'institutional_breakdown')
     populate_budget_statuses(c, main_entity.id)
     populate_area_descriptions(c, ['functional', 'funding', show_side])
     _populate_csv_settings(c, 'article', id)
