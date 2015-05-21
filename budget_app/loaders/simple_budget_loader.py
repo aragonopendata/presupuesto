@@ -7,7 +7,7 @@ import re
 
 class SimpleBudgetLoader:
 
-    def load(self, level, name, year, path):
+    def load(self, entity, year, path):
         # Parse the incoming data and keep in memory
         budget_items = []        
         self.parse_budget_data(budget_items, os.path.join(path, 'ingresos.csv'))
@@ -16,7 +16,7 @@ class SimpleBudgetLoader:
         self.parse_budget_data(budget_items, os.path.join(path, 'ejecucion_gastos.csv'))
 
         # Now load the data one budget at a time
-        self.load_budget(level, path, name, year, budget_items)
+        self.load_budget(path, entity, year, budget_items)
 
 
     # OVERRIDE THIS!
@@ -42,14 +42,7 @@ class SimpleBudgetLoader:
                 budget_items.append(self.parse_item(filename, line))
 
 
-    def load_budget(self, level, path, name, year, items):
-        # Find the public body the budget relates to
-        entity = Entity.objects.filter(level=level, name=name)
-        if not entity:
-            raise Exception("Entity (%s/%s) not found" % (level, name))
-        else:
-            entity = entity[0]
-
+    def load_budget(self, path, entity, year, items):
         # Delete previous budget for the given entity/year if it exists
         Budget.objects.filter(entity=entity, year=year).delete()
 

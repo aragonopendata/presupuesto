@@ -6,9 +6,8 @@ import os.path
 
 
 class BudgetLoader:
-    def load(self, level, name, year, path):
+    def load(self, entity, year, path):
         # Delete the existing budget if needed
-        entity = self._get_entity(level, name)
         budget = Budget.objects.filter(entity=entity, year=year)
         if budget:
             budget.delete()
@@ -22,8 +21,7 @@ class BudgetLoader:
         self.load_funding_hierarchy(budget, path)
         self.load_data_files(budget, path)
 
-    def load_execution(self, level, name, year, path):
-        entity = self._get_entity(level, name)
+    def load_execution(self, entity, year, path):
         budget = Budget.objects.filter(entity=entity, year=year)[0]
 
         print "Borrando ejecución presupuestaria previa..."
@@ -351,12 +349,6 @@ class BudgetLoader:
                 return int(s.replace('.', '').replace(',', '')) * 10
             else:   # No comma, or trailing comma (yes, it happens)
                 return int(s.replace('.', '')) * 100
-
-    def _get_entity(self, level, name):
-        entity = Entity.objects.filter(level=level, name=name)
-        if not entity:
-            raise Exception("Entity (%s/%s) not found" % (level, name))
-        return entity[0]
 
     # Do nothing here, but useful to be overriden in some loaders with input files not in UTF8
     def _escape_unicode(self, s):
