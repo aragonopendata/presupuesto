@@ -81,7 +81,7 @@
     function getColumnDefinition(uiState) {
       return { 
         field: uiState.field, 
-        name: "Previsto",
+        name: '{{ _("Previsto") }}',
         formatter: getFormatter(uiState.format),
         sortable: true, 
         headerCssClass: 'slick-header-right',
@@ -139,7 +139,7 @@
       var grid = createBudgetGrid("#myGrid", gridData[uiState.view], [
         {
           field: "label", 
-          name: ( uiState.field == 'fexpense' ? 'Política' : 'Artículo' ),
+          name: ( uiState.field == 'fexpense' ? '{{ _("Política") }}' : '{{ _("Artículo") }}' ),
           formatter: entityLinkFormatter,
           sortable: true,
           uiState: uiState
@@ -153,7 +153,7 @@
       // Update labels and show/hide totals plus download links based on view
       var executionLabelPostfix = getExecutionTotalLabel(uiState, budgetStatuses);
       if ( uiState.view == 'fexpense' ) {
-        $(".page-title").text("{{ entity.name }}: Gastos (por programa)");
+        $(".page-title").text("{{ entity.name }}: "+'{{ _("Gastos (por programa)") }}');
         $("#main-total .main-label").html("Total gastos no financieros"+executionLabelPostfix);
         $("#including-financial-total .main-label").html("Total gastos"+executionLabelPostfix);
         $("#income-downloads").hide();
@@ -161,14 +161,14 @@
         $("#expense-downloads").hide();
 
       } else if ( uiState.view == 'income' ) {
-        $(".page-title").text("{{ entity.name }}: Ingresos");
+        $(".page-title").text("{{ entity.name }}: "+'{{ _("Ingresos") }}');
         $("#main-total .main-label").html("Total ingresos"+executionLabelPostfix);
         $("#income-downloads").show();
         $("#fexpense-downloads").hide();
         $("#expense-downloads").hide();
 
       } else {
-        $(".page-title").text("{{ entity.name }}: Gastos");
+        $(".page-title").text("{{ entity.name }}: "+'{{ _("Gastos") }}');
         $("#main-total .main-label").html("Total gastos"+executionLabelPostfix);
         $("#income-downloads").hide();
         $("#fexpense-downloads").hide();
