@@ -3,10 +3,6 @@ from django.conf import settings
 from django.template.defaultfilters import slugify
 
 class EntityManager(models.Manager):
-    # This assumes there is only one of the MAIN_ENTITY_LEVEL, which is good enough for now
-    def main_entity(self):
-        return self.filter(level=settings.MAIN_ENTITY_LEVEL)[0]
-
     def entities(self, level):
         return self.filter(level=level).order_by('name')
 
