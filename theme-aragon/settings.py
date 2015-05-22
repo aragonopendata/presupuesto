@@ -22,5 +22,8 @@ SHOW_FUNDING_TAB = True
 # Warning: the execution data still gets shown in the summary chart and in downloads.
 # SHOW_ACTUAL = True
 
+# Show financial expenditure/income in overview charts. Default: False.
+# SHOW_FINANCIAL_DATA_IN_OVERVIEW = False
+
 # Search in entity names. Default: True.
 # SEARCH_ENTITIES = True
