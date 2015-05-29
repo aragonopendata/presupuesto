@@ -62,10 +62,6 @@ MANAGERS = ADMINS
 # In a Windows environment this must be set to your system time zone.
 TIME_ZONE = 'Europe/Madrid'
 
-# Language code for this installation. All choices can be found here:
-# http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'es-ES'
-
 # Location of translation files (used by themes to override certain strings)
 LOCALE_PATHS = (
     os.path.join(os.path.dirname(__file__), '..', THEME, 'locale'),
@@ -74,9 +70,14 @@ LOCALE_PATHS = (
 # Ensure LANGUAGES is defined for LocaleMiddleware. Multilingual themes
 # will have defined this beforehand with their particular language list.
 if not 'LANGUAGES' in locals():
+    # All choices can be found here: http://www.i18nguy.com/unicode/language-identifiers.html
     LANGUAGES = (
       ('es-ES', 'Castellano'),
     )
+
+# Base language code for this installation. Selects the first from the list of available ones.
+# See https://docs.djangoproject.com/en/1.4//topics/i18n/translation/#how-django-discovers-language-preference
+LANGUAGE_CODE = locals()['LANGUAGES'][0][0]
 
 
 SITE_ID = 1
