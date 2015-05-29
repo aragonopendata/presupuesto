@@ -1,12 +1,13 @@
 from coffin.shortcuts import render_to_response
 from django.conf import settings
+from django.utils.translation import ugettext as _
 from budget_app.models import Budget, Entity, FunctionalCategory, BudgetBreakdown
 from helpers import *
 from random import sample
 
 
 def welcome(request):
-    c = get_context(request, css_class='body-welcome', title='Inicio')
+    c = get_context(request, css_class='body-welcome', title=_('Inicio'))
     c['formatter'] = add_thousands_separator
 
     # Retrieve front page examples
