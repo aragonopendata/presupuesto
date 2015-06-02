@@ -154,22 +154,22 @@
       var executionLabelPostfix = getExecutionTotalLabel(uiState, budgetStatuses);
       if ( uiState.view == 'fexpense' ) {
         $(".page-title").text("{{ entity.name }}: "+'{{ _("Gastos (por programa)") }}');
-        $("#main-total .main-label").html("Total gastos no financieros"+executionLabelPostfix);
-        $("#including-financial-total .main-label").html("Total gastos"+executionLabelPostfix);
+        $("#main-total .main-label").html('{{ _("Total gastos no financieros") }}'+executionLabelPostfix);
+        $("#including-financial-total .main-label").html('{{ _("Total gastos") }}'+executionLabelPostfix);
         $("#income-downloads").hide();
         $("#fexpense-downloads").show();
         $("#expense-downloads").hide();
 
       } else if ( uiState.view == 'income' ) {
         $(".page-title").text("{{ entity.name }}: "+'{{ _("Ingresos") }}');
-        $("#main-total .main-label").html("Total ingresos"+executionLabelPostfix);
+        $("#main-total .main-label").html('{{ _("Total ingresos") }}'+executionLabelPostfix);
         $("#income-downloads").show();
         $("#fexpense-downloads").hide();
         $("#expense-downloads").hide();
 
       } else {
         $(".page-title").text("{{ entity.name }}: "+'{{ _("Gastos") }}');
-        $("#main-total .main-label").html("Total gastos"+executionLabelPostfix);
+        $("#main-total .main-label").html('{{ _("Total gastos") }}'+executionLabelPostfix);
         $("#income-downloads").hide();
         $("#fexpense-downloads").hide();
         $("#expense-downloads").show();
