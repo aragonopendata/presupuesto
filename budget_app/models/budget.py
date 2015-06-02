@@ -46,7 +46,7 @@ class BudgetManager(models.Manager):
         result = {}
         for item in items:
             if item.chapter == '4' or item.chapter == '7':
-                result[item.uid()] = item.description + ' (cap.' + item.chapter + ')'
+                result[item.uid()] = item.description + ' (cap. ' + item.chapter + ')'
             else:
                 result[item.uid()] = item.description
         return result
