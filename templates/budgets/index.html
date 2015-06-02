@@ -85,7 +85,7 @@
     var economicBreakdown = {{ economic_breakdown.to_json( labels=descriptions['income'] )|safe }};
     var chapterBreakdown = {{ chapter_breakdown.to_json()|safe }};  // Used for indicators
     var i18n = {
-      'other': 'Otros',
+      'other': '{{ _("Otros") }}',
       'government': '{{ _("Gobierno de Aragón") }}',
       'budgeted': '{{ _("Presupuestado") }}',
       'executed': '{{ _("Ejecutado") }}',
