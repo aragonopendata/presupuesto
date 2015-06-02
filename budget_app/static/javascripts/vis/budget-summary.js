@@ -29,7 +29,7 @@ function BudgetSummary(selector, breakdown, areaNames, colorScale, field, year) 
   for (var i = 0; i < existingAreas.length; i++) {
     var area = existingAreas[i];
     var percentage = 100 * areaAmounts[area] / totalAmount;
-    var label = (percentage > 4 ) ? (areaNames[area]+' ('+percentage.toFixed(1)+'%)') : '';
+    var label = (percentage > 4 ) ? (areaNames[area]+' ('+formatDecimal(percentage, 1)+'%)') : '';
     if ( i%2 == 0 ) {
       topRow.append('<td style="width: '+percentage+
                     '%; border-bottom-style: solid; border-bottom-color: '+colorScale[Number(area)]+
