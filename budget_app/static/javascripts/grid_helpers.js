@@ -239,8 +239,3 @@ function getExecutionColumnName(uiState, budgetStatuses, label) {
 function getExecutionTotalLabel(uiState, budgetStatuses) {
   return isQuarter(budgetStatuses[uiState.year]) ? " <small>("+quarterLabels[budgetStatuses[uiState.year]]+")</small>" : "";
 }
-
-function getGenericExecutionTotalLabel(uiState, budgetStatuses) {
-  var label = uiState.view == 'income' ? "Total ingresos" : "Total gastos";
-  return isQuarter(budgetStatuses[uiState.year]) ? label+" <small>("+quarterLabels[budgetStatuses[uiState.year]]+")</small>" : label;
-}

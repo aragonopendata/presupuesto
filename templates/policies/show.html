@@ -284,7 +284,8 @@
         $('.secondary-label, .secondary-amount').hide();
         $("#main-total .main-amount").text(format(getTotal(breakdown)));
       }
-      $("#main-total .main-label").html(getGenericExecutionTotalLabel(uiState, budgetStatuses))
+      var label = uiState.view == 'income' ? '{{ _("Total ingresos") }}' : '{{ _("Total gastos") }}';
+      $("#main-total .main-label").html(label+getExecutionTotalLabel(uiState, budgetStatuses))
 
       onTabSwitch();
     }    
