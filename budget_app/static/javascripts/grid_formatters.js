@@ -6,7 +6,6 @@ numeral.language('es');
 
 // Pretty print a number by inserting ',' thousand separator
 function formatNumber(value, postfix) {
-
   if (value == null) return '';
 
   if (postfix) {
@@ -20,7 +19,6 @@ function formatNumber(value, postfix) {
 function formatAmount(value) {
   if (value == null) return '';
   value = Number(value/100); // Also note value is in cents originally
-
   return formatNumber(value, '\xA0€');
 }
 
@@ -41,7 +39,6 @@ function formatSimplifiedAmount(value) {
 
 // Format decimal number
 function formatDecimal(value, precision) {
-
   if (value == null) return '';
 
   var rule = '0,0.00';
