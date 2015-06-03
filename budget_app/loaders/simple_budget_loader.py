@@ -7,7 +7,7 @@ import re
 
 class SimpleBudgetLoader:
 
-    def load(self, entity, year, path):
+    def load(self, entity, year, path, status):
         # Parse the incoming data and keep in memory
         budget_items = []        
         self.parse_budget_data(budget_items, os.path.join(path, 'ingresos.csv'))
@@ -16,7 +16,7 @@ class SimpleBudgetLoader:
         self.parse_budget_data(budget_items, os.path.join(path, 'ejecucion_gastos.csv'))
 
         # Now load the data one budget at a time
-        self.load_budget(path, entity, year, budget_items)
+        self.load_budget(path, entity, year, status, budget_items)
 
 
     # OVERRIDE THIS!
@@ -42,13 +42,13 @@ class SimpleBudgetLoader:
                 budget_items.append(self.parse_item(filename, line))
 
 
-    def load_budget(self, path, entity, year, items):
+    def load_budget(self, path, entity, year, status, items):
         # Delete previous budget for the given entity/year if it exists
         Budget.objects.filter(entity=entity, year=year).delete()
 
         # Store the data in the database
         print u"Cargando presupuesto para entidad '%s' año %s..." % (entity.name, year)
-        budget = Budget(entity=entity, year=year)
+        budget = Budget(entity=entity, year=year, status=status)
         budget.save()
 
         # Load the economic and functional classification from a manually edited file

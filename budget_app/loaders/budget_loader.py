@@ -6,14 +6,14 @@ import os.path
 
 
 class BudgetLoader:
-    def load(self, entity, year, path):
+    def load(self, entity, year, path, status):
         # Delete the existing budget if needed
         budget = Budget.objects.filter(entity=entity, year=year)
         if budget:
             budget.delete()
 
         print "Cargando presupuesto de %s..." % path
-        budget = Budget(entity=entity, year=year)
+        budget = Budget(entity=entity, year=year, status=status)
         budget.save()
         self.load_institutional_hierarchy(budget, path)
         self.load_economic_hierarchy(budget, path)
