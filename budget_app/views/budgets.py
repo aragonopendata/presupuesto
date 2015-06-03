@@ -17,11 +17,11 @@ def budgets(request):
     c['functional_breakdown'] = BudgetBreakdown(['policy', 'programme'])
     c['economic_breakdown'] = BudgetBreakdown(['article', 'heading'])
     c['chapter_breakdown'] = BudgetBreakdown(['chapter']) # Used for indicators
-    c['show_financial_data'] = hasattr(settings, 'SHOW_FINANCIAL_DATA_IN_OVERVIEW') and settings.SHOW_FINANCIAL_DATA_IN_OVERVIEW
+    c['include_financial_spending'] = hasattr(settings, 'INCLUDE_FINANCIAL_SPENDING_IN_BREAKDOWNS') and settings.INCLUDE_FINANCIAL_SPENDING_IN_BREAKDOWNS
     for item in BudgetItem.objects.each_denormalized("e.id = %s", [main_entity.id]):
         column_name = year_column_name(item)
         c['chapter_breakdown'].add_item(column_name, item)
-        if c['show_financial_data'] or not item.is_financial():
+        if c['include_financial_spending'] or not item.is_financial():
             c['functional_breakdown'].add_item(column_name, item)
             c['economic_breakdown'].add_item(column_name, item)
 
