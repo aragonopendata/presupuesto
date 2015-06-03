@@ -174,7 +174,7 @@
       var columnDef = getColumnDefinition(uiState);
       var label = uiState.field == 'expense' ? '{{ _("Gastado") }}' : '{{ _("Ingresado") }}';
       columnDef.column = "actual_" + uiState.year;
-      columnDef.name = getExecutionColumnName(uiState, budgetStatuses, label);
+      columnDef.name = getExecutionColumnName(budgetStatuses[uiState.year], label);
       return columnDef;
     }
 
@@ -285,7 +285,7 @@
         $("#main-total .main-amount").text(format(getTotal(breakdown)));
       }
       var label = uiState.view == 'income' ? '{{ _("Total ingresos") }}' : '{{ _("Total gastos") }}';
-      $("#main-total .main-label").html(label+getExecutionTotalLabel(uiState, budgetStatuses))
+      $("#main-total .main-label").html(label+getExecutionTotalLabel(budgetStatuses[uiState.year]))
 
       onTabSwitch();
     }    

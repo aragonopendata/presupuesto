@@ -155,7 +155,7 @@ function BudgetTreemap(selector, breakdown, stats, areas, aspectRatio, colorScal
 
       // ...unless we know the execution data is not complete (the year is not over),
       // in which case we go with the budget.
-      if ( budgetStatuses[year] && budgetStatuses[year].search(/^\dT$/)==0 && column_name.indexOf("actual_")===0 )
+      if ( budgetStatuses[year] && budgetStatuses[year]!='' && column_name.indexOf("actual_")===0 )
         continue;
 
       // Normally we do this:

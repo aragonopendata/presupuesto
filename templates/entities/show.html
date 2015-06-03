@@ -98,7 +98,7 @@
       var columnDef = getColumnDefinition(uiState);
       var label = uiState.field == 'expense' ? '{{ _("Gastado") }}' : '{{ _("Ingresado") }}';
       columnDef.column = "actual_" + uiState.year;
-      columnDef.name = getExecutionColumnName(uiState, budgetStatuses, label);
+      columnDef.name = getExecutionColumnName(budgetStatuses[uiState.year], label);
       return columnDef;
     }
 
@@ -151,7 +151,7 @@
       ]);
 
       // Update labels and show/hide totals plus download links based on view
-      var executionLabelPostfix = getExecutionTotalLabel(uiState, budgetStatuses);
+      var executionLabelPostfix = getExecutionTotalLabel(budgetStatuses[uiState.year]);
       if ( uiState.view == 'fexpense' ) {
         $(".page-title").text("{{ entity.name }}: "+'{{ _("Gastos (por programa)") }}');
         $("#main-total .main-label").html('{{ _("Total gastos no financieros") }}'+executionLabelPostfix);
