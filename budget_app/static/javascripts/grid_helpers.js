@@ -226,20 +226,13 @@ function isPartiallyExecuted(s) {
   return s && s!='';
 }
 
-var budgetStatusLabels = {
-    '1T': 'hasta el primer trimestre', 
-    '2T': 'hasta el segundo trimestre',
-    '3T': 'hasta el tercer trimestre',
-    'D': 'a día de hoy'
-  }
-
-function getExecutionColumnName(budgetStatus, label) {
+function getExecutionColumnName(budgetStatus, label, budgetStatusLabels) {
   return isPartiallyExecuted(budgetStatus) ?
             "<abbr title='("+budgetStatusLabels[budgetStatus]+")'>"+label+"*</abbr>" :
             label;
 }
 
-function getExecutionTotalLabel(budgetStatus) {
+function getExecutionTotalLabel(budgetStatus, budgetStatusLabels) {
   return isPartiallyExecuted(budgetStatus) ?
             " <small>("+budgetStatusLabels[budgetStatus]+")</small>" :
             "";

@@ -174,7 +174,7 @@
       var columnDef = getColumnDefinition(uiState);
       var label = uiState.field == 'expense' ? '{{ _("Gastado") }}' : '{{ _("Ingresado") }}';
       columnDef.column = "actual_" + uiState.year;
-      columnDef.name = getExecutionColumnName(budgetStatuses[uiState.year], label);
+      columnDef.name = getExecutionColumnName(budgetStatuses[uiState.year], label, budgetStatusLabels);
       return columnDef;
     }
 
@@ -285,7 +285,7 @@
         $("#main-total .main-amount").text(format(getTotal(breakdown)));
       }
       var label = uiState.view == 'income' ? '{{ _("Total ingresos") }}' : '{{ _("Total gastos") }}';
-      $("#main-total .main-label").html(label+getExecutionTotalLabel(budgetStatuses[uiState.year]))
+      $("#main-total .main-label").html(label+getExecutionTotalLabel(budgetStatuses[uiState.year], budgetStatusLabels))
 
       onTabSwitch();
     }    
@@ -305,6 +305,12 @@
     //
     var stats = {{ stats|safe }};
     var budgetStatuses = {{ budget_statuses|safe }};
+    var budgetStatusLabels = {
+      '1T': '{{ _("hasta el primer trimestre") }}',
+      '2T': '{{ _("hasta el segundo trimestre") }}',
+      '3T': '{{ _("hasta el tercer trimestre") }}',
+      'D': '{{ _("a día de hoy") }}'
+    };
 
     // The income and expense descriptions for the economic breakdowns do not match,
     // i.e. the same code, '2', means different things for income and expenses, so
