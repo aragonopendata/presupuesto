@@ -154,8 +154,12 @@
       var executionLabelPostfix = getExecutionTotalLabel(budgetStatuses[uiState.year], budgetStatusLabels);
       if ( uiState.view == 'fexpense' ) {
         $(".page-title").text("{{ entity.name }}: "+'{{ _("Gastos (por programa)") }}');
-        $("#main-total .main-label").html('{{ _("Total gastos no financieros") }}'+executionLabelPostfix);
-        $("#including-financial-total .main-label").html('{{ _("Total gastos") }}'+executionLabelPostfix);
+        if ( includeFinancialChapters ) {
+          $("#main-total .main-label").html('{{ _("Total gastos") }}'+executionLabelPostfix);
+        } else {
+          $("#main-total .main-label").html('{{ _("Total gastos no financieros") }}'+executionLabelPostfix);
+          $("#including-financial-total .main-label").html('{{ _("Total gastos") }}'+executionLabelPostfix);
+        }
         $("#income-downloads").hide();
         $("#fexpense-downloads").show();
         $("#expense-downloads").hide();
@@ -179,7 +183,7 @@
       // (This is basically for historical reasons, Aragon wanted it so. It could be argued that
       // it may be more consistent to show the split in all views; that'd require changes in the
       // controller when calculating the breakdowns.)
-      if ( uiState.view == 'fexpense' ) {
+      if ( !includeFinancialChapters && uiState.view == 'fexpense' ) {
         $('#including-financial-total').show();
       } else {
         $('#including-financial-total').hide();
@@ -211,14 +215,19 @@
       if ( uiState.view == 'fexpense' ) {
         // We have two totals for the functional expense view (non-financial/financial), so
         // we have some extra work in this case.
-        var totalBudgeted = format(getTotal(breakdown)+getTotal(financialExpenseBreakdown));
+        var totalBudgeted = getTotal(breakdown);
+        if ( !includeFinancialChapters )
+          totalBudgeted += getTotal(financialExpenseBreakdown);
+
         if ( hasActualData ) {
-          var totalActual = formatActual(getActualTotal(breakdown)+getActualTotal(financialExpenseBreakdown));
-          $("#including-financial-total .main-amount").text(totalActual);
-          $("#including-financial-total .secondary-amount").text(totalBudgeted);
+          var totalActual = getActualTotal(breakdown);
+          if ( !includeFinancialChapters )
+            totalActual += getActualTotal(financialExpenseBreakdown);
+          $("#including-financial-total .main-amount").text(formatActual(totalActual));
+          $("#including-financial-total .secondary-amount").text(format(totalBudgeted));
 
         } else {
-          $("#including-financial-total .main-amount").text(totalBudgeted);
+          $("#including-financial-total .main-amount").text(format(totalBudgeted));
         }
       }
 
@@ -313,7 +322,12 @@
       'D': '{{ _("a día de hoy") }}'
     };
 
-    var financialExpenseBreakdown = {{ financial_expense_breakdown.to_json()|safe }};
+{% if include_financial_chapters %}
+    var includeFinancialChapters = true;
+{% else %}
+    var financialExpenseBreakdown = {{ financial_expense_breakdown.to_json()|safe }},
+        includeFinancialChapters = false;
+{% endif %}
 
     var breakdowns = {
       'income': {{ economic_breakdown.to_json( labels=descriptions['income'] )|safe }},

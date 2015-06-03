@@ -147,7 +147,7 @@ def get_budget_breakdown(condition, condition_arguments, breakdowns, callback=No
 # Auxiliary callback to distinguish financial and non-financial spending
 def get_financial_breakdown_callback(c):
     def callback(column_name, item):
-        if item.is_financial() and item.expense:
+        if not c['include_financial_chapters'] and item.is_financial() and item.expense:
             c['financial_expense_breakdown'].add_item(column_name, item)
         else:
             c['functional_breakdown'].add_item(column_name, item)

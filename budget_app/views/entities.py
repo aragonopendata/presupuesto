@@ -33,6 +33,7 @@ def entities_show(request, c, entity, render_callback=None):
     # Prepare the budget breakdowns
     c['financial_expense_breakdown'] = BudgetBreakdown()
     c['functional_breakdown'] = BudgetBreakdown(['policy', 'programme'])
+    c['include_financial_chapters'] = hasattr(settings, 'INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS') and settings.INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS
     if entity.level == settings.MAIN_ENTITY_LEVEL:
         c['economic_breakdown'] = BudgetBreakdown(['article', 'heading'])
 
