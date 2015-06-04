@@ -14,8 +14,11 @@
           <p class="title">{{ _('Algunos ejemplos') }}:</p>
           <ul>
             {% for programme in featured_programmes %}
-            <li><a href="{% url 'budget_app.views.programmes_show' programme.uid(), programme.slug() %}">                {{ programme.description }}</a>
-              &rarr; <b>{{ formatter( breakdown.subtotals[programme.uid()].total_expense[latest_budget.year] / 100 ) }} €</b></li>
+            {# Items are initially hidden and shown randomly via Javascript, see below #}
+            <li class="hidden">
+              <a href="{% url 'budget_app.views.programmes_show' programme.uid(), programme.slug() %}">{{ programme.description }}</a>
+              &rarr; <b>{{ formatter( breakdown.subtotals[programme.uid()].total_expense[latest_budget.year] / 100 ) }} €</b>
+            </li>
             {% endfor %}
           </ul>
         </div>
@@ -51,6 +54,15 @@
 
 <script>
 $(function () {
+  // Show three featured programmes, at random.
+  // We used to do the selection on the server, but then the page would be cached, hence not random anymore.
+  for (var i=1; i<=3; i++) {
+    var hiddenProgrammes = $("div.expense-examples li.hidden"),
+        chosenProgramme = Math.floor(Math.random()*hiddenProgrammes.length);
+    $(hiddenProgrammes[chosenProgramme]).removeClass("hidden");
+  }
+
+  // Make hero boxes react to clicks
   $('.option-global').click(function(){window.location = '{{ url('budget_app.views.budgets') }}';});
   $('.option-policies').click(function(){window.location = '{{ url('budget_app.views.policies') }}';});
   $('.option-tax').click(function(){window.location = '{{ url('budget_app.views.tax_receipt') }}';});
