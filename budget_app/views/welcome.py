@@ -25,6 +25,7 @@ def welcome(request):
     for programme in c['featured_programmes']:
         if (BudgetItem.objects
                     .filter(functional_category=programme)
+                    .filter(budget__status='')  # Don't use partially executed budgets
                     .filter(actual=True).count()) > 0:
             use_actual = True
             break
