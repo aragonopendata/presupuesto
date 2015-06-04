@@ -50,8 +50,10 @@
 </section>
 
 <script>
+$(function () {
   $('.option-global').click(function(){window.location = '{{ url('budget_app.views.budgets') }}';});
   $('.option-policies').click(function(){window.location = '{{ url('budget_app.views.policies') }}';});
   $('.option-tax').click(function(){window.location = '{{ url('budget_app.views.tax_receipt') }}';});
+});
 </script>
 {% endblock %} 
