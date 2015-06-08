@@ -1,7 +1,7 @@
 <div class="social-sharing">
   <p class="title">{{ _('Compártelo') }}</p>
     <ul class="addthis_toolbox addthis_default_style addthis_32x32_style addthis_button_expanded">
-        <li><a class="addthis_button_twitter" onClick="window.open('https://twitter.com/intent/tweet?text={{ title_prefix+' - ' if title_prefix }}{{ _('Presupuestos del Gobierno de Aragón') }}&url={{ request.build_absolute_uri() }}','sharer','toolbar=0,status=0,width=548,height=500');" href="javascript: void(0)" title="Comparte esta página en Twitter"></a>
+        <li><a class="addthis_button_twitter" onClick='window.open("https://twitter.com/intent/tweet?text={{ title_prefix+' - ' if title_prefix }}{{ _('Presupuestos del Gobierno de Aragón') }}&url={{ request.build_absolute_uri() }}","sharer","toolbar=0,status=0,width=548,height=500");' href="javascript: void(0)" title="Comparte esta página en Twitter"></a>
 
         <!-- XXX: Should read the facebook app id from settings. Now we're forced to override the partial -->
         <li><a class="addthis_button_facebook" onClick="window.open('https://www.facebook.com/dialog/share?app_id=818301894905112&display=popup&href={{ request.build_absolute_uri() }}&redirect_uri={{ request.build_absolute_uri() }}','sharer','toolbar=0,status=0,width=548,height=325');" href="javascript: void(0)" title="Comparte esta página en Facebook"></a>
