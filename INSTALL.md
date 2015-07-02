@@ -70,6 +70,6 @@ Pero para usarlo de manera regular debemos configurar la aplicación, vía `loca
 
 ### Adaptando el aspecto visual
 
-La aplicación soporta el concepto de 'themes' capaces de modificar el aspecto visual de la web: tanto recursos estáticos (imágenes, hojas de estilo...) como las plantillas que generan el contenido de la web. El directorio `theme-dvmi` es un buen ejemplo de cómo debe organizarse el contenido de un theme.
+La aplicación soporta el concepto de 'themes' capaces de modificar el aspecto visual de la web: tanto recursos estáticos (imágenes, hojas de estilo...) como las plantillas que generan el contenido de la web. El repositorio [`presupuesto-dvmi`](https://github.com/civio/presupuesto-dvmi) de Civio -una adaptación del software de Aragón Open Data a los Presupuestos Generales del Estado- es un buen ejemplo de cómo puede organizarse el contenido de un theme.
 
 El theme a usar se configura mediante la variable `THEME`, que es referenciada en diversos puntos de `settings.py` para instalar los directorios del theme (plantillas y recursos estáticos) justo antes de los de la aplicación principal.
