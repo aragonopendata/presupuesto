@@ -6873,7 +6873,7 @@ svg .title {
   stroke: #1F77B4;
   stroke-opacity: .4;
 }
-.sankey .legend-budget {
+.sankey .legend-budget circle {
   fill: #1F77B4;
   opacity: .4;
 }
@@ -6882,7 +6882,7 @@ svg .title {
   stroke: #E377C2;
   stroke-opacity: .5;
 }
-.sankey .legend-execution {
+.sankey .legend-execution circle {
   fill: #E377C2;
   opacity: .5;
 }
@@ -6904,8 +6904,10 @@ svg .title {
   font-weight: bold;
   font-size: 12px;
 }
-.sankey .legend-note {
+.sankey .legend-note circle {
   fill: none;
+}
+.sankey .legend-note text {
   font-weight: normal !important;
 }
 .chart-container rect {

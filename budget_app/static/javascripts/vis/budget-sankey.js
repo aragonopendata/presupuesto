@@ -1,8 +1,9 @@
-function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, i18n) {
+function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, theBudgetStatuses, i18n) {
 
   var functionalBreakdown = theFunctionalBreakdown;
   var economicBreakdown = theEconomicBreakdown;
   var stats = theStats;
+  var budgetStatuses = theBudgetStatuses;
   var _ = i18n;
   var maxAmountEver = 0;
 
@@ -227,13 +228,10 @@ function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, i1
     var legend = svg.append('g').attr("transform", "translate(5,"+height+")");
     addLegendItem(legend, 0, _['budgeted'], 'legend-budget');
     addLegendItem(legend, 1, _['executed'], 'legend-execution');
-    var note = svg.append('g').attr("transform", "translate(-10,"+(height+15)+")");
+    var note = svg.append('g').attr("transform", "translate(-10,"+(height+20)+")");
     addLegendItem(note, 0, _['amounts.are.real'], 'legend-note');
 
-    // Hide or show 'legend-execution' based on hasExecution variable
-    if( !hasExecution ){
-      d3.select( d3.select('.legend-execution').node().parentNode ).style('visibility', 'hidden');
-    }
+    updateExecution();
   };
 
   this.update = function(newUIState) {
@@ -266,18 +264,30 @@ function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, i1
     .transition().duration(transitionLength).delay(transitionDelay)
       .call(setupExecutionLink);
 
+    updateExecution();
+  };
+
+  function updateExecution(){
     // Hide or show 'legend-execution' based on hasExecution variable
     var visibility = ( hasExecution ) ? 'visible' : 'hidden';
-    d3.select( d3.select('.legend-execution').node().parentNode ).style('visibility', visibility );
-  };
+    d3.select('.legend-execution').style('visibility', visibility );
+
+    // Update execution text based on budgetStatuses
+    if (hasExecution && budgetStatuses) {
+      var txt = _['executed'];
+      if(budgetStatuses[uiState.year] !== ''){
+        txt += ' '+_[budgetStatuses[uiState.year]];
+      }
+      d3.select('.legend-execution text').text( txt );
+    }
+  }
 
   function addLegendItem(legend, i, text, cssClass) {
 
     var g = legend.append('g')
-      .attr("class", 'legend-item')
+      .attr("class", 'legend-item '+cssClass)
       .attr("transform", "translate("+i*150+",0)");
     g.append("circle")
-      .attr("class", cssClass)
       .attr("r", "5");
     g.append("text")
       .attr("text-anchor", "start")

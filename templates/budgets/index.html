@@ -89,11 +89,15 @@
       'government': '{{ _("Gobierno de Aragón") }}',
       'budgeted': '{{ _("Presupuestado") }}',
       'executed': '{{ _("Ejecutado") }}',
+      '1T': '{{ _("hasta el primer trimestre") }}',
+      '2T': '{{ _("hasta el segundo trimestre") }}',
+      '3T': '{{ _("hasta el tercer trimestre") }}',
+      'D': '{{ _("a día de hoy") }}',
       'amounts.are.real': '{{ _("(Cantidades actualizadas con la inflación)") }}',
       'n/d': 'No hay datos'
     };
 
-    var sankey = new BudgetSankey(functionalBreakdown, economicBreakdown, stats, i18n);
+    var sankey = new BudgetSankey(functionalBreakdown, economicBreakdown, stats, budgetStatuses, i18n);
     sankey.incomeNodes({{ income_nodes|safe }});
     sankey.expenseNodes({{ expense_nodes|safe }});
     // Set a constant scale for the Sankey diagram across the years (otherwise each year would look
