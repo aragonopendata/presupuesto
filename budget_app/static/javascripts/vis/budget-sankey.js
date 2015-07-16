@@ -178,8 +178,8 @@ function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, th
     var color = d3.scale.category20();
 
     svg = d3.select(selector).append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+        // Use viewBox instead width/height to avoid problems in IE11 (https://stackoverflow.com/questions/22250642/d3js-responsive-force-layout-not-working-in-ie-11)
+        .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom) )
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
