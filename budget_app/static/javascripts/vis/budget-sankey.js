@@ -172,6 +172,9 @@ function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, th
         width = $(selector).width() - margin.left - margin.right,
         height = ($(selector).width()/2+20) - margin.top - margin.bottom;
 
+    // Set height to selector for IE11
+    $(selector).height( height + margin.top + margin.bottom );
+
     var color = d3.scale.category20();
 
     svg = d3.select(selector).append("svg")
