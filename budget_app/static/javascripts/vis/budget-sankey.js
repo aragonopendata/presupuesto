@@ -278,7 +278,7 @@ function BudgetSankey(theFunctionalBreakdown, theEconomicBreakdown, theStats, th
     // Update execution text based on budgetStatuses
     if (hasExecution && budgetStatuses) {
       var txt = _['executed'];
-      if(budgetStatuses[uiState.year] !== ''){
+      if(budgetStatuses[uiState.year] && budgetStatuses[uiState.year] !== ''){
         txt += ' '+_[budgetStatuses[uiState.year]];
       }
       d3.select('.legend-execution text').text( txt );
