@@ -32,3 +32,7 @@ Que el código de esta aplicación esté publicado bajo la licencia abierta [EUP
 ![Logo Aragón Open Data](budget_app/static/assets/logoAragonOpenData.png)
 
 [2]: https://joinup.ec.europa.eu/software/page/eupl
+
+###Agradecimientos
+
+Gracias a <a href="https://www.browserstack.com">BrowserStack</a> por facilitarnos una cuenta Live gratuita para poder mejorar la compatibilidad con Internet Explorer.
