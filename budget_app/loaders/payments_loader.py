@@ -52,6 +52,28 @@ class PaymentsLoader:
         return items
 
 
+    # Parse an input line into fields
+    # Note: we're ignoring some fields, not really relevant or not populated often enough to 
+    # be useful: period, NIF and source filename.
+    def parse_item(self, budget, line):
+        # The date is not always available
+        try:
+            date=datetime.datetime.strptime(line[4], "%Y-%m-%d")
+        except ValueError:
+            date=None
+
+        return {
+            'area': line[0].strip(),
+            'fc_code': line[1].strip(),
+            'ec_code': line[2].strip(),
+            'payee': self._titlecase(line[6].strip()),
+            'contract_type': line[7].strip(),
+            'date': date,
+            'description': self._spanish_titlecase(line[8].strip()),
+            'amount': self._get_amount(line)
+        }
+
+
     # Note that the payment data may not be fully classified along the functional or economic
     # categories. When loading budget data for small entities we fill this up using dummy categories, 
     # since we have complex queries in the application that expect a number of different tables
@@ -59,37 +81,22 @@ class PaymentsLoader:
     # But for payments we're going to leave the fields null in the database, should be cleaner.
     def load_items(self, budget, items):
         for item in items:
-            # Read the item data
-            # Note: we're ignoring some fields, not really relevant or not populated often enough to 
-            # be useful: period, NIF and source filename.
-            area=item[0].strip()
-            fc_code = item[1].strip()
-            ec_code = item[2].strip()
-            payee=self._titlecase(item[6].strip())
-            contract_type = item[7].strip()
-            description = self._spanish_titlecase(item[8].strip())
-            amount = self._get_amount(item)
-
-            # The date is not always available
-            try:
-                date=datetime.datetime.strptime(item[4], "%Y-%m-%d")
-            except ValueError:
-                date=None
+            fields = self.parse_item(budget, item)
 
             # Ignore entries with no amount
-            if amount == 0:
+            if fields['amount'] == 0:
                 continue
 
             # Fetch economic category
-            if ec_code!='':
+            if fields['ec_code']!='':
                 ec = EconomicCategory.objects.filter(expense=True,
-                                                    chapter=ec_code[0],
-                                                    article=ec_code[0:2] if len(ec_code) >= 2 else None,
-                                                    heading=ec_code[0:3] if len(ec_code) >= 3 else None,
+                                                    chapter=fields['ec_code'][0],
+                                                    article=fields['ec_code'][0:2] if len(fields['ec_code']) >= 2 else None,
+                                                    heading=fields['ec_code'][0:3] if len(fields['ec_code']) >= 3 else None,
                                                     subheading = None,
                                                     budget=budget)
                 if not ec:
-                    print u"ALERTA: No se encuentra la categoría económica '%s' para '%s': %s€" % (ec_code, description.decode("utf8"), amount/100)
+                    print u"ALERTA: No se encuentra la categoría económica '%s' para '%s': %s€" % (fields['ec_code'], fields['description'].decode("utf8"), fields['amount']/100)
                     continue
                 else:
                     ec = ec[0]
@@ -97,30 +104,30 @@ class PaymentsLoader:
                 ec = None
 
             # Fetch functional category
-            if fc_code!='':
-                fc = FunctionalCategory.objects.filter( area=fc_code[0:1],
-                                                        policy=fc_code[0:2],
-                                                        function=fc_code[0:3],
-                                                        programme=fc_code,
+            if fields['fc_code']!='':
+                fc = FunctionalCategory.objects.filter( area=fields['fc_code'][0:1],
+                                                        policy=fields['fc_code'][0:2],
+                                                        function=fields['fc_code'][0:3],
+                                                        programme=fields['fc_code'],
                                                         budget=budget)
                 if not fc:
-                    print u"ALERTA: No se encuentra la categoría funcional '%s' para '%s': %s€" % (fc_code, description.decode("utf8"), amount/100)
+                    print u"ALERTA: No se encuentra la categoría funcional '%s' para '%s': %s€" % (fields['fc_code'], fields['description'].decode("utf8"), fields['amount']/100)
                     continue
                 else:
                     fc = fc[0]
             else:
                 fc = None
 
-            Payment(area=area,
+            Payment(area=fields['area'],
                     functional_category = fc,
                     economic_category = ec,
-                    economic_concept = ec_code,
-                    date=date,
-                    payee=payee,
-                    contract_type=contract_type,
+                    economic_concept = fields['ec_code'],
+                    date=fields['date'],
+                    payee=fields['payee'],
+                    contract_type=fields['contract_type'],
                     expense=True,
-                    amount=amount,
-                    description=description,
+                    amount=fields['amount'],
+                    description=fields['description'],
                     budget=budget).save()
 
 
