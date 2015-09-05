@@ -19,4 +19,7 @@ class Command(BaseCommand):
         region_name = settings.MAIN_ENTITY_NAME if len(args)<3 else args[2]
         path = os.path.join(settings.ROOT_PATH, settings.THEME, 'data', region_type, year)
 
-        PaymentsLoader().load(region_type, region_name, year, path)
+        # Import the loader dynamically. See http://stackoverflow.com/questions/301134/dynamic-module-import-in-python
+        module = __import__(settings.THEME+'.loaders', globals(), locals(), [settings.PAYMENTS_LOADER])
+        loader = module.__dict__[settings.PAYMENTS_LOADER]()
+        loader.load(region_type, region_name, year, path)
