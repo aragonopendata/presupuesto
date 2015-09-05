@@ -11,10 +11,6 @@ def payments(request, render_callback=None):
     c['payee_breakdown'] = BudgetBreakdown(['payee', 'area', 'description'])
     c['area_breakdown'] = BudgetBreakdown(['area', 'payee', 'description'])
 
-    # FIXME: remove hardcoded years
-    c['years'] = ['2014', '2015']
-    c['latest_year'] = '2015'
-
     for item in Payment.objects.each_denormalized():
         # We add the date to the description, if it exists:
         # TODO: I wanted the date to be in a separate column, but it's complicated right
@@ -27,5 +23,6 @@ def payments(request, render_callback=None):
 
     # Additional data needed by the view
     populate_stats(c)
+    populate_years(c, 'area_breakdown')
 
     return render_to_response('payments/index.html', c)
