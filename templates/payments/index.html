@@ -7,6 +7,13 @@
 <section role="region" class="payments-breakdown tab-system">
   <h1 class="visuallyhidden">{{ _('Pagos e inversiones') }}</h1>
 
+  <div class="data-controllers">
+    <p class="title tcenter">{{ _('Elige año') }}</p>
+    <div class="layout-slider">
+      <input id="year-selection" type="slider" value="2015"/>
+    </div>
+  </div>
+
   <nav role="navigation" class="tab-menu">
     <h2 class="visuallyhidden">{{ _('Menú de pagos e inversiones') }}</h2>
     <ul id="tabs">
@@ -40,16 +47,16 @@
     // GRID RENDERING
     //
 
-    function getColumnDefinition() {
+    function getColumnDefinition(uiState) {
       return { 
         field: 'expense',
         name: '{{ _("Pago") }}',
         formatter: getFormatter('nominal'),
         sortable: true, 
         headerCssClass: 'slick-header-right',
-        column: '{{year}}', 
+        column: uiState.year,
         getter: getBreakdownValue, 
-        year: '{{year}}',
+        year: Number(uiState.year),
         width: 150,
         resizable: false
       }; 
@@ -57,7 +64,8 @@
 
     // Do all the hard work of drawing the grids
     function redrawGrid() {
-      var columnDef = getColumnDefinition();
+      var uiState = getUIState();
+      var columnDef = getColumnDefinition(uiState);
 
       $("#payeeGrid").data('grid', createBudgetGrid( "#payeeGrid", 
                         payeeGridData, [
@@ -82,11 +90,12 @@
                         ], {
                           explicitInitialization: true
                         }));
+      onTabSwitch();  // Do some tab initialization
 
       // Total amounts are the same whichever way you break down the items, so any breakdown will do
       $("#total").text( 
         columnDef.formatter(  0, 0, 
-          payeeBreakdown['expense'][{{year}}], 
+          payeeBreakdown['expense'][uiState.year],
           columnDef, 
           payeeBreakdown) || 'n/a' );
     }    
@@ -95,11 +104,13 @@
     //
     // DATA
     //
-    var payeeBreakdown = {{ payee_breakdown.to_json(  )|safe }};
+    var payeeBreakdown = {{ payee_breakdown.to_json()|safe }};
     var payeeGridData = breakdownToTable(payeeBreakdown);
 
-    var areaBreakdown = {{ area_breakdown.to_json(  )|safe }};
+    var areaBreakdown = {{ area_breakdown.to_json()|safe }};
     var areaGridData = breakdownToTable(areaBreakdown);
+
+    var stats = {{ stats|safe }};
 
 
     //
@@ -173,6 +184,7 @@
       }
     }
 
+    initSlider("#year-selection", {{ years|safe }}, redrawGrid, {{ latest_year }});
     parseLocationHash();      // Handle the hash the page may have loaded with.
   })
 </script>
