@@ -111,6 +111,7 @@
     var areaBreakdown = {{ area_breakdown.to_json()|safe }};
     var areaGridData = breakdownToTable(areaBreakdown);
 
+    var years = {{ years|safe }};
     var stats = {{ stats|safe }};
 
 
@@ -185,7 +186,9 @@
       }
     }
 
-    initSlider("#year-selection", {{ years|safe }}, redrawGrid, {{ latest_year }});
+    initSlider("#year-selection", years, redrawGrid, {{ latest_year }});
+    if (years.length==1) $(".data-controllers").hide();
+
     parseLocationHash();      // Handle the hash the page may have loaded with.
   })
 </script>
