@@ -149,7 +149,7 @@ if DEBUG:
     )
 else:
     MIDDLEWARE_CLASSES = (
-        'django.middleware.cache.UpdateCacheMiddleware',
+        'project.middleware.SmartUpdateCacheMiddleware',
         'django.middleware.common.CommonMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware', #
         'django.middleware.csrf.CsrfViewMiddleware', #
