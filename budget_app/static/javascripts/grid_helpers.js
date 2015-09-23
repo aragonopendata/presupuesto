@@ -44,12 +44,13 @@ function getBreakdownValue(item, columnDef) {
 
 // Convert a BudgetBreakdown object to an Array understood by SlickGrid
 function breakdownToTable(breakdown, indent) {
-  if (breakdown == null) return [];
+  if (breakdown == null || breakdown.sub == null) return [];
 
   var gridData = [];
   indent = indent || 0;
-  for (var key in breakdown.sub) {
-    item = breakdown.sub[key];
+
+  $.each(breakdown.sub, function(key, item) {
+
     // SlickGrid requires all items to have a unique id. I started using the business domain key,
     // which work most of the time, since budget programmes and such have unique ids (and we kept
     // the label in a separate field). But it failed when trying to show payments, or in general
@@ -65,7 +66,8 @@ function breakdownToTable(breakdown, indent) {
 
     // Add the children information
     $.merge(gridData, breakdownToTable(item, indent+1));
-  }
+  });
+
   return gridData;
 }
 
