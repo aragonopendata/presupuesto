@@ -155,11 +155,11 @@
                 {% if item.level==main_entity_level %}
                   {% if item.expense %}
                     <p class="concept icon-concept">
-                      <a href="{% url 'budget_app.views.programmes_show' item['programme'], descriptions['functional'].get(item['programme'])|slugify %}#item={{item.uid()}}" id="policy-name-link">{{ item.description }}</a>
+                      <a href="{% url 'budget_app.views.programmes_show' item['programme'], descriptions['functional'].get(item['programme'])|slugify %}#item={{item.uid()}}" id="policy-name-link">{{ item.description|safe }}</a>
                     </p>
                   {% else %}
                     <p class="concept icon-concept">
-                      <a href="{% url 'budget_app.views.income_articles_show' item['article'], descriptions['income'].get(item['article'])|slugify %}#item={{item.uid()}}" id="policy-name-link">{{ item.description }}</a>
+                      <a href="{% url 'budget_app.views.income_articles_show' item['article'], descriptions['income'].get(item['article'])|slugify %}#item={{item.uid()}}" id="policy-name-link">{{ item.description|safe }}</a>
                     </p>
                   {% endif %}
                 {% else %}
@@ -175,7 +175,7 @@
                     {% set item_anchor = item.uid() %}
                   {% endif %}
                   <p class="concept icon-concept">
-                    <a href="{{ url(view_name, item.name|slugify, item_id) }}#item={{item_anchor}}" id="policy-name-link">{{ item.description }}</a>
+                    <a href="{{ url(view_name, item.name|slugify, item_id) }}#item={{item_anchor}}" id="policy-name-link">{{ item.description|safe }}</a>
                   </p>
                 {% endif %}
 
@@ -259,13 +259,13 @@
               <div class="concept-block">
                 {# Concept name #}
                 <p class="concept icon-concept">
-                  <a href="{{ url('budget_app.views.payments') }}#description={{payment.description}}" id="policy-name-link">{{ payment.payee }}: {{ payment.description }}</a>
+                  <a href="{{ url('budget_app.views.payments') }}#description={{payment.description}}" id="policy-name-link">{{ payment.payee|safe }}: {{ payment.description|safe }}</a>
                 </p>
 
                 {# Programme/Article #}
                 {% if payment.programme %}
                 <p class="programme icon-programme">
-                  <a href="{% url 'budget_app.views.programmes_show' payment.programme, payment.fc_description|slugify %}">{{ payment.fc_description }}</a>
+                  <a href="{% url 'budget_app.views.programmes_show' payment.programme, payment.fc_description|slugify %}">{{ payment.fc_description|safe }}</a>
                 </p>
                 {% endif %}
 
