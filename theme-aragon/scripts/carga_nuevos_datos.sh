@@ -18,7 +18,7 @@ TOWN_DATA=$APP/theme-aragon/data/municipio/latest
 
 # Make sure target folders exist
 if test ! -d $COUNTY_DATA; then mkdir $COUNTY_DATA; fi
-if test ! -d $APP/data/municipio/latest; then mkdir $APP/data/municipio/latest; fi
+if test ! -d $TOWN_DATA; then mkdir $TOWN_DATA; fi
 
 # Check if more recent data exists, for counties
 echo "Comprobando los datos de comarcas..."
