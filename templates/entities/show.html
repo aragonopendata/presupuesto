@@ -139,7 +139,7 @@
       var grid = createBudgetGrid("#myGrid", gridData[uiState.view], [
         {
           field: "label", 
-          name: ( uiState.field == 'fexpense' ? '{{ _("Política") }}' : '{{ _("Artículo") }}' ),
+          name: ( uiState.view == 'fexpense' ? '{{ _("Política") }}' : '{{ _("Artículo") }}' ),
           formatter: entityLinkFormatter,
           sortable: true,
           uiState: uiState
