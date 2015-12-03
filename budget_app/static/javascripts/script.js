@@ -60,7 +60,6 @@ $(document).ready(function(){
 		}
 
 	}(document));
-
 });
 
 
@@ -80,6 +79,7 @@ $(document).ready(function() {
 		$(".nav-rwd").toggle();
 	});
 	adjustMenu();
+	 addProjectLabel(2016);
 });
 
 $(window).bind('resize orientationchange', function() {
@@ -122,3 +122,21 @@ var adjustMenu = function() {
 		});
 	}
 };
+
+//función que añade un titulo de antención a los proyectos de presupuesto del año dado por parametro
+function addProjectLabel(year){
+	var url = window.location;
+	if (url.pathname.indexOf('politicas')>0){
+		var anio = $('div.jslider-value span ').html();
+		if (anio == year){
+			if ($('div.projectLabel').length==0){
+				$('h1.main-title').before('<div class="projectLabel" style="float: right; margin-top: 35px;">Proyecto de pptos</div>');
+			}
+		}
+		else{
+			if ($('div.projectLabel').length>0){
+				$('div.projectLabel').remove();
+			}
+		}
+	}
+}
