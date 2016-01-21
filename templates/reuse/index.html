@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title_prefix+' - ' if title_prefix }}{{ _('Presupuestos del Gobierno de Aragón') }}</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="es">
+  <meta http-equiv="cleartype" content="on">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  {% include 'shared/fonts.html' %}
+
+  <link href="{{ STATIC_URL }}stylesheets/main.css" media="all" rel="stylesheet" type="text/css" />
+
+  <link href="{{ STATIC_URL }}assets/favicon.png" rel="icon" type="image/x-icon" />
+
+  {% load compress %}
+
+  {% compress js %}
+  <script src="{{ STATIC_URL }}javascripts/jquery-1.8.3.min.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/jquery.cookie.min.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/jquery.event.drag-2.0.min.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/underscore-1-5-2.min.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/numeral.min.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/numeral-languages.min.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/slick.core.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/slick.dataview.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/slick.grid.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/grid_controls.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/grid_formatters.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/grid_helpers.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/modernizr-2.6.3.min.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/respond.min.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/jquery.ba-bbq.min.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/bootstrap/bootstrap-modal.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/bootstrap/bootstrap-tooltip.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/bootstrap/bootstrap-popover.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/bootstrap/bootstrap-transition.js"></script>
+  {% endcompress %}
+
+  {% include 'shared/meta.html' %}
+  {% include 'shared/analytics.html' %}
+</head>
+<body class="{{ page_css_class }}">
+  {% include 'shared/header.html' %}
+  <form class="form-search hide-when-embedded" action="{{ url('budget_app.views.search') }}" method="get">
+    <div class="container-fluid">
+      <label for="q">{{ _('¿Buscas algo en concreto?') }}</label>
+      <input placeholder="{{ _('Escribe aquí tu término de búsqueda') }}" class="medium-f" name="q" id="q" type="text">
+      <button class="button button-3d black tupper icon-search" type="submit">{{ _('Buscar') }}</button>
+    </div>
+  </form>
+  <div class="content" role="main">
+    <div class="container-fluid">
+<h1 class="page-title">{{ _('Reutilización') }}</h1>
+
+<div class="reuse">
+<h2>Datos reutilizables</h2>
+<div class="intro-reuse">La aplicación de visualización de presupuestos del Gobierno de Aragón es parte del proyecto <a href="http://opendata.aragon.es/" target="_blank">Aragón Open Data</a>. Como parte de dicho proyecto, el facilitar la máxima reutilización de la información está en el corazón de todo lo que hacemos. Por esa razón siempre es posible descargarse los datos que están detrás de las tablas y gráficas que se van mostrando en la navegación por la web. Las opciones de descarga de datos se encuentran en la parte inferior de la web, se permite la descarga en los formatos "XLS" y "CSV". Igualmente se puede acceder a <a href="http://opendata.aragon.es/catalogo/busqueda-libre/Presupuesto" target="_blank">los datos presupuestarios en bruto</a> dentro dentro del portal de datos abiertos de Aragón.</div>
+
+<h2>El código de presupuesto.aragon.es</h2>
+<div class="code-reuse">Más allá de las opciones de descarga de los datos, hemos puesto a disposición de todos los reutilizadores el código que hay detrás de presupuesto.aragon.es. Esta es la forma que tenemos de devolver a todos los ciudadanos un nuevo producto reutilizable. El código fuente de la aplicación se encuentra disponible en la cuenta de <a href="https://github.com/aragonopendata/presupuesto" target="_blank">GitHub de Aragón Open Data</a>. En la propia cuenta se pueden encontrar instrucciones para la <a href="https://github.com/aragonopendata/presupuesto/blob/master/INSTALL.md" target="_blank">instalación del producto</a>, así como las cláusulas legales que permiten la reutilización. El producto está licenciado bajo la <a href="https://github.com/aragonopendata/presupuesto/blob/master/LICENSE.md" target="_blank">licencia abierta EUPL</a>, lo que es garantía para que cualquiera pueda reutilizar el código con cualquier fin con la única obligación de atribuir la autoría inicial del código a Aragón Open Data.</div>
+
+<h2>Otras iniciativas que usan nuestro código</h2>
+<div class="other-initiative">En Aragón Open Data estamos muy contentos de la aceptación que ha tenido el proyecto presupuesto.aragon.es. La aplicación de visualización de presupuestos del Gobierno de Aragón ha tenido una buena repercusión a nivel nacional y prueba de ello son los ejemplos de reutilización del código informático que se han producido. Otras administraciones y organizaciones se han unido al ejemplo de presupuesto.aragon.es y han reutilizado e incluso mejorado nuestra aplicación para ofrecer una visión clara y real del destino de los fondos públicos.</br></br>
+En el lado de las organizaciones la <a href="http://dondevanmisimpuestos.es/" target="_blank">Fundación Ciudadana Civio</a> ha adoptado nuestro código para ofrecer una visión nacional de la estructura del gasto público. Desde aquí queremos agradecerles su compromiso con la transparencia económica de las instituciones y su apoyo con aquellos que pensamos y trabajamos para que la información pública sea precisamente eso, pública. Pero además hay un conjunto de instituciones que también están reutilizando nuestra aplicación de una u otra manera y a las que también les queremos agradecer su esfuerzo por intentar que hayan puesto una disciplina administrativa como la presupuestaria, que muchas veces es complicada de entender, en formatos atractivos y claros para los ciudadanos. Estas administraciones que están utilizando el código de presupuesto.aragón.es son:
+
+
+</div>
+  <ul>
+  	<li>
+  		<a href="http://www.huesca.es/areas/transparencia/Presupuestos/" target="_blank">
+  			Ayuntamiento de Huesca
+  		</a>
+  	</li>
+  	<li>
+  		<a href="http://lascuentasclaras.malaga.eu/" target="_blank">
+  			Ayuntamiento de Málaga
+  		</a>
+  	</li>
+  	<li>
+  		<a href="http://dondevanmisimpuestos.mostoles.es/" target="_blank">
+  			Ayuntamiento de Móstoles
+  		</a>
+  	</li>
+  	<li>
+  		<a href="http://rubi.dondevanmisimpuestos.es/" target="_blank">
+  			Ayuntamiento de Rubí
+  		</a>
+  	</li>
+  	<li>
+  		<a href="http://torrelodones.dondevanmisimpuestos.es/" target="_blank">
+  			Ayuntamiento de Torrelodones
+  		</a>
+  	</li>
+  	<li>
+  		<a href="http://utebo.es/transparencia/presupuestos" target="_blank">
+  			Ayuntamiento de Utebo
+  		</a>
+  	</li>
+  	<li>
+  		<a href="http://pressupostos.vilanova.cat/" target="_blank">
+  			Ayuntamiento de Vilanova y la Geltrú
+  		</a>
+  	</li>
+
+  </ul>
+  
+  Y al resto de administraciones, ¡os esperamos!
+</div>
+
+    </div>
+  </div>
+  {% include 'shared/footer.html' %}
+
+  <!--[if lt IE 9]>
+    {% include 'shared/chromeframe.html' %}
+  <![endif]-->
+
+  <!--[if lte IE 7]>
+    <script src="{{ STATIC_URL }}javascripts/icons-lte-ie7.js"></script>
+  <![endif]-->
+
+  <script src="{{ STATIC_URL }}javascripts/css_browser_selector.js"></script>
+
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script src="{{ STATIC_URL }}javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  {% compress js %}
+  <script src="{{ STATIC_URL }}javascripts/breakpoints.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/script.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/iframeResizer.contentWindow.min.js"></script>
+
+  <!-- Slider -->
+  <script src="{{ STATIC_URL }}javascripts/jslider/jshashtable-2.1_src.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/jslider/jquery.numberformatter-1.2.3.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/jslider/tmpl.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/jslider/jquery.dependClass-0.1.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/jslider/draggable-0.1.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/jslider/jquery.slider.js"></script>
+
+  <!-- Select2 -->
+  <script src="{{ STATIC_URL }}javascripts/select2.min.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/select2_locale_es.js"></script>
+  {% endcompress %}
+
+  {% block extra_javascript %}{% endblock %} 
+</body>
+</html>

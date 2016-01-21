@@ -1,2 +1,22 @@
 User-agent: *
-Disallow:
+Disallow: /comarcas/dc-zaragoza
+Disallow: /municipios/valle-de-bardaji
+Disallow: /municipios/monterde-de-albarracin
+Disallow: /municipios/valdelinares
+Disallow: /municipios/berdejo
+Disallow: /municipios/cabolafuente
+Disallow: /municipios/malanquilla
+Disallow: /municipios/malon
+Disallow: /municipios/pomer
+Disallow: /municipios/clares-de-ribota
+Allow: /municipios/camporrells
+Disallow: /municipios/campo
+Disallow: /municipios/veracruz
+Disallow: /municipios/nigüella
+Disallow: /municipios/angües
+Disallow: /municipios/bagües
+Disallow: /municipios/savinan
+Disallow: /municipios/*/gastos/main-menu
+Disallow: comarcas/d.c.-zaragoza
+Sitemap: http://presupuesto.aragon.es/static/sitemap.xml
+

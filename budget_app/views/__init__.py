@@ -5,6 +5,7 @@ from towns import towns, towns_show, towns_compare, towns_show_income, towns_sho
 from entities import entities_index, entities_show, entities_show_article, entities_show_policy
 from tax_receipt import tax_receipt
 from terms import terms
+from reuse import reuse
 from welcome import welcome
 from search import search
 from payments import payments

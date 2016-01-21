@@ -10,6 +10,8 @@ budget_app_urlpatterns = patterns('budget_app.views',
     url(r'^resumen$', 'budgets'),
 
     url(r'^glosario$', 'terms'),
+    
+    url(r'^reutilizacion$', 'reuse'),
 
     url(r'^busqueda$', 'search'),
 
