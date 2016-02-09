@@ -5874,8 +5874,14 @@ table [class^="h-"] {
   border-radius: 0.5em;
 }
 
+
+.reuse h2{
+	    padding-top: 10px;
+}
+
 .reuse ul {
   list-style: none;
+  padding-top: 10px;
 }
 
 .reuse li a {
