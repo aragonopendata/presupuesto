@@ -219,7 +219,7 @@
   };
   
   jSlider.prototype.onstatechange = function(){
-    addProjectLabel(2016);
+    //addProjectLabel(2016);
   };
   
   jSlider.prototype.create = function(){

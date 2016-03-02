@@ -79,7 +79,7 @@ $(document).ready(function() {
 		$(".nav-rwd").toggle();
 	});
 	adjustMenu();
-	 addProjectLabel(2016);
+	 //addProjectLabel(2016);
 });
 
 $(window).bind('resize orientationchange', function() {
