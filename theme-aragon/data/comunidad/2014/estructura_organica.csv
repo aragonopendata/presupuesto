@@ -22,7 +22,7 @@ EJERCICIO;CENTRO GESTOR;DESCRIPCION CORTA;DESCRIPCION LARGA
 2014;0400;No operativa;No operativa
 2014;04000;No operativa;No operativa
 2014;0401;No operativo;No operativo
-2014;04010;No operativo;No operativo
+2014;04010;;
 2014;0402;No operativo;No operativo
 2014;04020;No operativo;No operativo
 2014;09;Consejo Económico y Social de Aragón;Consejo Económico y Social de Aragón
@@ -419,6 +419,7 @@ EJERCICIO;CENTRO GESTOR;DESCRIPCION CORTA;DESCRIPCION LARGA
 2014;53ACM;C. Día y Usos Cultur. Casa Aísa, Huesca;C. Día y Usos Cultur. Casa Aísa, Huesca
 2014;53ACN;C. Día y Usos Cultur. Casa Aísa, Huesca;C. Día y Usos Cultur. Casa Aísa, Huesca
 2014;53ACO;"Centro de Día ""San León"" - Teruel";"Centro de Día ""San León"" - Teruel"
+2014;53AD;IASS - Centro Mayores (Hogares);IASS - Centro Mayores (Hogares)
 2014;53ADA;Hogar de Barbastro;Hogar de Barbastro
 2014;53ADB;Hogar de Binefar;Hogar de Binefar
 2014;53ADC;Hogar de Huesca;Hogar de Huesca
@@ -442,6 +443,7 @@ EJERCICIO;CENTRO GESTOR;DESCRIPCION CORTA;DESCRIPCION LARGA
 2014;53ADU;"Hogar ""Roger de Flor"" de Zaragoza";"Hogar ""Roger de Flor"" de Zaragoza"
 2014;53ADV;Hogar de la Tercera Edad Moncayo;Hogar de la Tercera Edad Moncayo
 2014;53ADW;Hogar de Mayores Valdefierro - Zaragoza;Hogar de Mayores Valdefierro - Zaragoza
+2014;53ADX;Comedor Personas Mayores San Blas de Fonz (Huesca);Comedor Personas Mayores San Blas de Fonz (Huesca)
 2014;53AFA;Aulas de Tercera Edad;Aulas de Tercera Edad
 2014;53AHA;Gastos Varios de Mayores de Huesca;Gastos Varios de Mayores de Huesca
 2014;53AHB;Gastos Varios de Mayores de Teruel;Gastos Varios de Mayores de Teruel
@@ -614,3 +616,4 @@ EJERCICIO;CENTRO GESTOR;DESCRIPCION CORTA;DESCRIPCION LARGA
 2014;90CS3;Centro A.R. Cinco Villas (EJEA);Centro A.R. Cinco Villas (EJEA)
 2014;90CS4;Centro A.R. Bajo Cinca (FRAGA);Centro A.R. Bajo Cinca (FRAGA)
 2014;90CS5;Centro A.R. Moncayo (TARAZONA);Centro A.R. Moncayo (TARAZONA)
+

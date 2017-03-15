@@ -266,6 +266,7 @@ class BudgetLoader:
 
     def process_data_items(self, budget, items, is_expense, is_actual):
         for item in items:
+	    #print str(item)
             # Match budget item data to existing categories
             ic = InstitutionalCategory.objects.filter(budget=budget,
                                             institution=item['ic_code'][0:2],
@@ -295,6 +296,7 @@ class BudgetLoader:
                                                 heading=item['ec_heading'],
                                                 subheading=item['ec_subheading'])
             if not ec:
+                #print str("budget -> "+str(budget)+"\nexpense -> "+str(is_expense)+"\nitem -> "+str(item))
                 print u"ALERTA: No se encuentra la categoría económica '%s' para '%s': %s€" % (item['ec_code'], item['description'], item['amount'])
                 continue
             else:

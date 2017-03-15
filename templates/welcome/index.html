@@ -1,5 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}  
+
+<!-- Sitelinks Search Box: que mi buscador aparezca en los resultados de Google -->
+<!-- http://www.analizosuweb.com/blog/sitelinks-search-box-que-mi-buscador-aparezca-en-los-resultados-de-google/#.Vm_-E6_hDOQ -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "http://presupuesto.aragon.es",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "http://presupuesto.aragon.es/busqueda?q={search_term}",
+      "query-input": "required name=search_term"
+    }
+  }
+</script>
+<!-- FinSitelinks Search Box: que mi buscador aparezca en los resultados de Google -->
 <section class="home-intro" role="region">
   <div class="big-intro">
     <div class="row-fluid">

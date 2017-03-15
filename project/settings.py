@@ -145,7 +145,7 @@ if DEBUG:
         'django.middleware.common.CommonMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware', #
         'django.middleware.csrf.CsrfViewMiddleware', #
-        #'django.middleware.locale.LocaleMiddleware', #
+#        'django.middleware.locale.LocaleMiddleware', #
     )
 else:
     MIDDLEWARE_CLASSES = (
@@ -153,7 +153,7 @@ else:
         'django.middleware.common.CommonMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware', #
         'django.middleware.csrf.CsrfViewMiddleware', #
-        #'django.middleware.locale.LocaleMiddleware', #
+#        'django.middleware.locale.LocaleMiddleware', #
         # 'django.contrib.auth.middleware.AuthenticationMiddleware',
         # 'django.contrib.messages.middleware.MessageMiddleware',
         'django.middleware.cache.FetchFromCacheMiddleware',
@@ -261,5 +261,5 @@ DEFAULT_CACHES = {
 CACHES = ENV.get('CACHES', DEFAULT_CACHES)
 
 CACHE_MIDDLEWARE_ALIAS = 'default'
-CACHE_MIDDLEWARE_SECONDS = 90 *60 * 60 * 24  # 90 Days: data doesn't actually change
+CACHE_MIDDLEWARE_SECONDS = 90 * 60 * 60 * 24  # 90 Days: data doesn't actually change
 CACHE_MIDDLEWARE_KEY_PREFIX = 'budget_app'

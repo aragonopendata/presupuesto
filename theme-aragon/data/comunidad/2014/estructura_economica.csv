@@ -178,8 +178,8 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;G;8;85;851;;Constitución de depósitos;Constitución de depósitos
 2014;G;8;87;870;;Aport. Patrimoniales;Aportaciones Patrimoniales
 2014;G;9;90;900;;Canc. tít. Deuda l/ plazo;Cancelación de títulos de la Deuda a largo plazo
-2014;G;9;91;910;;Canc. prést l/p Ent.Créd.;Canc. préstamos l/plazo con Entidades de Crédito
-2014;G;9;91;911;;Canc. prést c/p Ent.Créd.;Canc. préstamos c/plazo con Entidades de Crédito
+2014;G;9;91;910;;Amortización préstamos L/P entes fuera del Sector;Amortización préstamos L/P entes fuera del Sector
+2014;G;9;91;911;;Amortización préstamos C/P entes fuera del Sector;Amortización préstamos C/P entes fuera del Sector
 2014;G;9;91;912;;Amort. prést l/p E.S.Públ;Amort. préstamos l/plazo con Entes Sector Público
 2014;G;1;10;100;100000;Retr.básicas de Alt.Cargo;Retribuciones básicas de Altos Cargos
 2014;G;1;10;100;100001;Otras remun. de Alt.Cargo;Otras remuneraciones de Altos Cargos
@@ -570,6 +570,13 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;G;4;44;440;440133;Reh. Estación Canfranc;Rehabilitación Estación Canfranc
 2014;G;4;44;440;440134;Tr. SARGA. G. Red Nat. Ar;Transferencia a SARGA. Gestión Red Natural Aragón
 2014;G;4;44;440;440135;Prog.dep. univ.supraauton;Programas deportivos universitarios supraautonómic
+2014;G;4;44;440;440136;Universidad Zaragoza. Exposición Aragón y Flandes;Universidad Zaragoza. Exposición Aragón y Flandes
+2014;G;4;44;440;440137;Planes de Formación DGA;Planes de Formación DGA
+2014;G;4;44;440;440138;Programa LIFE;Programa LIFE
+2014;G;4;44;440;440139;Instituto de Investigación Sanitaria de Aragón;Instituto de Investigación Sanitaria de Aragón
+2014;G;4;44;440;440140;Transferencia a Promo.  Actividades Aeroportuarias;Transferencia a Promo.  Actividades Aeroportuarias
+2014;G;4;44;440;440141;Transferencia Consorcio de Bomberos prov. Huesca;Transferencia Consorcio de Bomberos prov. Huesca
+2014;G;4;44;440;440142;Colaboraciones invest. biomédica y transf resultad;Colaboraciones invest. biomédica y transf resultad
 2014;G;4;45;450;450001;Formación EE.TT.;Formación Escuelas Taller
 2014;G;4;45;450;450002;Contratación desempleados;Subvención a la contratación de desempleados
 2014;G;4;45;450;450003;Formación FIP;Formación e Inserción Profesional DGA
@@ -681,6 +688,9 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;G;4;46;460;460103;Conv. Manc. R Bajo Huerva;Convenio con la Mancomunidad Ribera Bajo Huerva
 2014;G;4;46;460;460104;Conv. Manc. R. Izda. Ebro;Convenio con la Mancomunidad Ribera Izda. del Ebro
 2014;G;4;46;460;460105;Garantía Joven Aragón;Garantía Joven Aragón
+2014;G;4;46;460;460106;Transf. planes de formación en la Admintración;Transferen. planes de formación en la Admintración
+2014;G;4;46;460;460107;Fomento de la participación ciudadana;Fomento de la participación ciudadana
+2014;G;4;46;460;460108;Transferencias escuelas infantiles;Transferencias escuelas infantiles
 2014;G;4;47;470;470001;Apoyo a Empr Interés Gral;Apoyo a Empresas de Interés General
 2014;G;4;47;470;470002;Subv.Proyec.Coop.Transfr.;Subv. Proyectos de Cooperación Transfronteriza
 2014;G;4;47;470;470003;Planes Form. D.G.A.;Planes de Formación de la D.G.A.
@@ -759,7 +769,8 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;G;4;47;470;470078;Formación en idiomas;Formación en idiomas
 2014;G;4;47;470;470079;Apoyo rto viveros empresa;Apoyo rendimiento viveros empresa
 2014;G;4;47;470;470080;Apoyo FP dual;Apoyo FP dual
-2014;G;4;47;470;470081;Sin nombre;Sin nombre
+2014;G;4;47;470;470081;Subvención empresas sector ferial;Subvención empresas sector ferial
+2014;G;4;47;470;470082;Programa LIFE;Programa LIFE
 2014;G;4;48;480;480001;Seminario Por la Paz;Fundación Seminario Investigación para la Paz
 2014;G;4;48;480;480002;Subvenciones directas;Subvenciones Directas
 2014;G;4;48;480;480003;Fund.Aspect.Pol. e Inst.;Subv.Fundac.Aspectos Políticos e Instituc.Aragón
@@ -921,7 +932,7 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;G;4;48;480;480160;Programas de Mayores;Programas de mayores
 2014;G;4;48;480;480161;Programas de Menores;Programas de menores
 2014;G;4;48;480;480162;Programas Discapacitados;Programas discapacitados
-2014;G;4;48;480;480163;Becarios Proy. Investig.;Becarios proyectos investigación
+2014;G;4;48;480;480163;Becarios Proyectos de Investigación;Becarios Proyectos de Investigación
 2014;G;4;48;480;480164;Conv.Com.Regant. Arag-Cat;Convenio Comunidad Regantes Canal Aragón-Cataluña
 2014;G;4;48;480;480166;Becas arag. resd. América;Programa Becas a aragoneses residentes en América
 2014;G;4;48;480;480167;Inf. y divulg. agroalim.;Información y divulgación agroalimentaria
@@ -1146,6 +1157,14 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;G;4;48;480;480388;Decreto Bolsas de Alquiler;Decreto Bolsas de Alquiler
 2014;G;4;48;480;480389;Proy. internacionalización act. formativas y labor;Proy. internacionalización act. formativas y labor
 2014;G;4;48;480;480390;Garantía Joven Aragón;Garantía Joven Aragón
+2014;G;4;48;480;480391;Asoc. Promoción Consumo Frutas Hortalizas 5 al día;Asoc. Promoción Consumo Frutas Hortalizas 5 al día
+2014;G;4;48;480;480392;Planes de Formación promovidos por Asoc. de EELL;Planes de Formación promovidos por Asoc. de EELL
+2014;G;4;48;480;480393;Plan de Mediación;Plan de Mediación
+2014;G;4;48;480;480394;ICOMOS España;ICOMOS España
+2014;G;4;48;480;480395;Fundación Aragón Invierte;Fundación Aragón Invierte
+2014;G;4;48;480;480396;Convenio ASZA;Convenio ASZA
+2014;G;4;48;480;480397;Becas material curricular y comedor;Becas material curricular y comedor
+2014;G;4;48;480;480398;Asoc. Red Coop. Rutas Europeas Emperador Carlos V;Asoc. Red Coop. Rutas Europeas Emperador Carlos V
 2014;G;4;49;490;490000;Al Exterior;Al Exterior
 2014;G;4;49;490;490001;A ONU Of. Década del Agua;A la ONU para Sede Oficina Década del Agua
 2014;G;4;49;490;490002;Proy interna. actividades;Proy internacionalización actividades púb-privadas
@@ -1162,6 +1181,7 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;G;6;60;609;609000;Inmovilizado Inmaterial;Inmovilizado Inmaterial
 2014;G;6;60;609;609001;Gastos Grales Proy Invest;Gastos Generales de Proyectos de Investigación
 2014;G;7;70;700;700000;Act. restitución territ.;Actuaciones de restitución territorial
+2014;G;7;70;700;700001;Convenio con la Guardía Civil rescates de montaña;Convenio con la Guardía Civil rescates de montaña
 2014;G;7;70;705;705000;Act.seg.amb. obras hidrau;Act. de seguimiento ambiental de obras hidráulicas
 2014;G;7;70;705;705001;Infraest. Científica;Infraestructura Científica
 2014;G;7;70;705;705002;Acciones Metrología Legal;Acciones Metrología Legal. Control Mercado
@@ -1243,6 +1263,11 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;G;7;74;740;740066;Auditorías Sector Hortofr;Auditorías Sector Hortofrutícola
 2014;G;7;74;740;740067;F. prov. téc AVALIA;Fondo de provisiones técnicas AVALIA
 2014;G;7;74;740;740068;Bodega piloto DOP C.Borja;Bodega piloto DOP Campo de Borja
+2014;G;7;74;740;740069;Plataforma Logística de Zaragoza. Accesos PLAZA;Plataforma Logística de Zaragoza. Accesos PLAZA
+2014;G;7;74;740;740070;Inversiones IAF - FITE;Inversiones IAF - FITE
+2014;G;7;74;740;740071;Inversiones  Turismo Aragón - FITE;Inversiones  Turismo Aragón - FITE
+2014;G;7;74;740;740072;Convenio ADIF;Convenio ADIF
+2014;G;7;74;740;740073;Consorcio Aeródromo de Teruel;Consorcio Aeródromo de Teruel
 2014;G;7;75;750;750000;A Comunidades Autónomas;A Comunidades Autónomas
 2014;G;7;76;760;760001;Subvenciones Directas;Subvenciones Directas
 2014;G;7;76;760;760002;Ptos Interés Deuda Local;Puntos de Interés de la Deuda Local
@@ -1365,7 +1390,9 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;G;7;76;760;760123;Convenio ciudad Huesca;Convenio con la ciudad de Huesca
 2014;G;7;76;760;760124;Convenio ciudad Teruel;Convenio con la ciudad de Teruel
 2014;G;7;76;760;760125;Conv. Ayto. Zaragoza. Obras de saneamiento;Convenio Ayto.. Zaragoza. Obras de saneamiento
-2014;G;7;76;760;760999;Fondo de Desarrollo Territorial y Rural;Fondo de Desarrollo Rural y Territorial
+2014;G;7;76;760;760126;Fondo de Inversiones de Teruel;Fondo de Inversiones de Teruel
+2014;G;7;76;760;760127;Convenio Ayto.Fanlo cons.carret. viabilidad invern;Convenio Ayto.Fanlo cons.carret. viabilidad invern
+2014;G;7;76;760;760999;Fondo de Desarrollo Territorial y Rural;Fondo de Desarrollo Territorial y Rural
 2014;G;7;77;770;770001;Apoyo a Empr Aragonesas;Apoyo a Empresas Aragonesas
 2014;G;7;77;770;770002;Alojamiento Temporeros;Subv. Alojamiento Temporeros (Decreto 43/2000)
 2014;G;7;77;770;770003;Ay.Acces.V.L.R.;Ayudas accesibilidad vehículos l.regulares viajero
@@ -1486,6 +1513,7 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;G;7;77;770;770126;Plan RENOVE;Plan RENOVE
 2014;G;7;77;770;770127;P A. Des Alt. C. Mineras;Plan Aragonés Des. Alternativo C Mineras (Empresa)
 2014;G;7;77;770;770128;Subvenciones inversión empresas sector ferial;Subvenciones inversión empresas sector ferial
+2014;G;7;77;770;770129;Convocatoria Empresas - FITE;Convocatoria Empresas - FITE
 2014;G;7;77;770;770999;Fondo de Desarrollo Territorial y Rural;Fondo de Desarrollo Territorial y Rural
 2014;G;7;78;780;780001;Subvenciones directas;Subvenciones directas
 2014;G;7;78;780;780002;Comunidades Arag del Ext;Ayudas a Comunidades Aragonesas del Exterior
@@ -1643,6 +1671,15 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;G;7;78;780;780162;Plan 2013-16 ayudas rehab;Plan vivienda 2013-2016 ayudas para rehabilitación
 2014;G;7;78;780;780163;Plan 2013-16 ayudas inqui;Plan vivienda 2013-2016 ayudas para inquilinos
 2014;G;7;78;780;780164;Subv renove instalaciones;Subv renove instalaciones, promoción seguridad ind
+2014;G;7;78;780;780165;Fundación Uncastillo;Fundación Uncastillo
+2014;G;7;78;780;780166;Asociación Amigos del Serrablo;Asociación Amigos del Serrablo
+2014;G;7;78;780;780167;Fundación Centro Est. Física Cosmos Aragón-FITE;Fundación Centro Est. Física Cosmos Aragón-FITE
+2014;G;7;78;780;780168;Rehabilitación unifamiliares en el medio rural;Rehabilitación unifamiliares en el medio rural
+2014;G;7;78;780;780169;PNV 2013-2016 Fom. Parque Púb. Vivienda Alquiler;PNV 2013-2016 Fom. Parque Púb. Vivienda Alquiler
+2014;G;7;78;780;780170;Urbanización Junta de Compensación Arco Sur;Urbanización Junta de Compensación Arco Sur
+2014;G;7;78;780;780171;Alojamientos Colectivos-Rehabilitación Medio Rural;Alojamientos Colectivos-Rehabilitación Medio Rural
+2014;G;7;78;780;780172;Fundación Labordeta;Fundación Labordeta
+2014;G;7;78;780;780173;Alojamientos Colectivos;Alojamientos Colectivos
 2014;G;7;78;780;780999;F. Des. Ter. y Rural;Fondo de Desarrollo Territorial y Rural
 2014;G;7;79;790;790000;Al Exterior;Al Exterior
 2014;G;8;80;800;800000;Concedidos a corto plazo;Préstamos y anticipos concedidos a corto plazo
@@ -1655,9 +1692,10 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;G;8;85;851;851000;Constitución de depósitos;Constitución de depósitos
 2014;G;8;87;870;870000;Aport. Patrimoniales;Aportaciones Patrimoniales
 2014;G;9;90;900;900000;Canc. tít. Deuda l/ plazo;Cancelación de títulos de la Deuda a largo plazo
-2014;G;9;91;910;910000;Canc. prést l/p Ent.Créd.;Canc. préstamos l/plazo con Entidades de Crédito
-2014;G;9;91;911;911000;Canc. prést c/p Ent.Créd.;Canc. préstamos c/plazo con Entidades de Crédito
+2014;G;9;91;910;910000;Amortización préstamos L/P entes fuera del Sector;AAmortización préstamos L/P entes fuera del Sector
+2014;G;9;91;911;911000;Amortización préstamos C/P entes fuera del Sector;Amortización préstamos C/P entes fuera del Sector
 2014;G;9;91;912;912000;Amort. prést l/p E.S.Públ;Amort. préstamos l/plazo con Entes Sector Público
+2014;G;9;91;912;912001;Amortización préstamos L/P del BEI;Amortización préstamos L/P del BEI
 2014;I;1;;;;Impuestos Directos;Impuestos Directos
 2014;I;2;;;;Impuestos Indirectos;Impuestos Indirectos
 2014;I;3;;;;Tasas y otros ingresos;Tasas y otros ingresos
@@ -1724,7 +1762,7 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;I;2;20;201;;S/Actos Jurídicos Docum.;Sobre Actos Jurídicos Documentados
 2014;I;2;21;210;;S/Valor Añadido (I.V.A.);Sobre el Valor Añadido (I.V.A.)
 2014;I;2;22;220;;Impuestos especiales;Impuestos especiales
-2014;I;2;22;221;;Canon de Saneamiento;Canon de Saneamiento
+2014;I;2;22;221;;Impuesto s/contaminación aguas;Impuesto s/contaminación de las aguas
 2014;I;3;30;300;;Venta de Bienes;Venta de Bienes
 2014;I;3;30;301;;Venta de publicaciones;Venta de publicaciones
 2014;I;3;30;302;;Venta material de juego;Venta de material de juego
@@ -1859,6 +1897,7 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;I;1;10;100;100000;Tarifa Autonómica IRPF;Tarifa Autonómica del I.R.P.F.
 2014;I;1;10;100;100001;Tar.Aut IRPF-Ejerc.2009;Tarifa Autonómica del I.R.P.F. - Ejercicio 2009
 2014;I;1;10;100;100002;Tar.Aut IRPF-Ejerc.2011;Tarifa Autonómica del I.R.P.F. - Ejercicio 2011
+2014;I;1;10;100;100003;Tar.Aut IRPF-Ejerc.2012;Tarifa Autonómica del IRPF. Liquidación Ej. 2012
 2014;I;1;11;110;110000;S/Adquis. herencia/legado;Sobre adquisiciones por herencia o legado
 2014;I;1;11;110;110001;Recargo s/ adquis. bienes;Recargo sobre adquisición de bienes
 2014;I;1;11;110;110002;S/ Bienes personas juríd.;Sobre bienes de personas jurídicas
@@ -1877,6 +1916,7 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;I;2;21;210;210011;IVA - Ejercicio 2008;Impuesto Valor Añadido - Ejercicio 2008
 2014;I;2;21;210;210012;IVA - Ejercicio 2009;Impuesto Valor Añadido - Ejercicio 2009
 2014;I;2;21;210;210013;IVA - Ejercicio 2011;Impuesto Valor Añadido - Ejercicio 2011
+2014;I;2;21;210;210014;IVA - Ejercicio 2012;IVA. Liquidación Ej. 2012
 2014;I;2;22;220;220000;S/Alcohol, bebidas deriv.;Sobre el alcohol y bebidas derivadas
 2014;I;2;22;220;220001;S/ Cerveza;Sobre Cerveza
 2014;I;2;22;220;220002;S/ Vinos,bebidas ferment.;Sobre vinos y bebidas fermentadas
@@ -1904,7 +1944,13 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;I;2;22;220;220027;S/Energía-Electr. Ej.2011;Sobre energía (electricidad) - Ejercicio 2011
 2014;I;2;22;220;220028;S/ Hidrocarburos Ej.2011;Sobre hidrocarburos - Ejercicio 2011
 2014;I;2;22;220;220029;Tipo Aut. IE s7Hidrocarb.;Tipo Autonómico del Impuesto Esp. de Hidrocarburos
-2014;I;2;22;221;221000;Canon de Saneamiento;Canon de Saneamiento
+2014;I;2;22;220;220030;S/ Alcohol. Bebida. Ej. 2012;S/ Alcohol y bebidas derivadas. Liquidación 2012
+2014;I;2;22;220;220031;S/ Cerveza. Ej. 2012;S/ Cerveza. Liquidación Ej. 2012
+2014;I;2;22;220;220032;S/ Labores Tabaco. Ej. 2012;S/ Labores Tabaco. Liquidación Ej. 2012
+2014;I;2;22;220;220036;S/ Producto Interm. Ej. 2012;S/ Productos Intermedios. Liquidación Ej. 2012
+2014;I;2;22;220;220037;S/ Energía Eléctrica. Ej. 2012;S/ Energía Electrica. Liquidación Ej. 2012
+2014;I;2;22;220;220038;S/ Hidrocarburos. Ej. 2012;S/ Hidrocarburos. Liquidación Ej. 2012
+2014;I;2;22;221;221000;Impuesto s/contaminación aguas;Impuesto s/contaminación de las aguas
 2014;I;3;30;300;300000;Venta de Bienes P y J;Venta de Bienes de Presidencia y Justicia
 2014;I;3;30;300;300001;Venta de Bienes H y AP;Venta de Bienes de Hacienda y Admón Pública
 2014;I;3;30;300;300002;Venta de Bienes OP,U,V yT;Venta de Bienes de OP, Urb., Vivienda y Ttes.
@@ -2027,6 +2073,9 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;I;3;32;329;329039;Tasa 39-Inc p.obt tit.pos;Tasa39-Insc pruebas obt. tit. postobligatorios
 2014;I;3;32;329;329040;Tasa 40-S.adm.act g tribu;Tasa 40-Tasa s. adm actuaciones gestión tributaria
 2014;I;3;32;329;329042;Tasa 42 - An. e In. SP;Tasa 42 - Análisis e Informes del Lab. Salud Públi
+2014;I;3;32;329;329043;Tasa 43- Inscripción Cooperativas y Sdes. Laborale;Tasa 43- Inscripción Cooperativas y Sdes. Laboral
+2014;I;3;32;329;329044;Tasa 44- Autorización Agencias de Colocación;Tasa 44- Autorización Agencias de Colocación
+2014;I;3;32;329;329045;Tasa 45- Inscripción Centros Colaboradores;Tasa 45- Inscripción Centros Colaboradores
 2014;I;3;33;330;330000;P. Públicos Lab. Agroalim;Precios Públicos del Laboratorio Agroalimentario
 2014;I;3;33;330;330001;P. Públicos CTA;Precios Públicos del C. Transferencia Agroalimenta
 2014;I;3;33;330;330002;P. Públicos CForm INAEM;Precios Públicos de los Centros de Form del INAEM
@@ -2129,6 +2178,7 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;I;4;40;400;400024;Comp Patrimonio Ej 2011;Compensación Patrimonio - Ejercicio 2011
 2014;I;4;40;400;400025;F. Adic. FA Ej. 2009;Fondos Adicionales Finan Autonómica Ejercicio 2009
 2014;I;4;40;400;400026;Fondos Convergencia 2010;Fondos de Convergencia - Ejercicio 2010
+2014;I;4;40;400;400027;Fondos Convergencia Ej. 2012;Fondos de Convergencia Autonómica Ejercicio 2012
 2014;I;4;40;400;400032;F.Suficiencia - Ej. 2011;Fondo de Suficiencia - Ejercicio 2011
 2014;I;4;40;400;400040;F. Cohesión Sanita-Ej2011;Fondos de Cohesión Sanitaria - Ejercicio 2011
 2014;I;4;40;400;400050;Fondo Suficiencia Global;Fondo Suficiencia Global
@@ -2138,7 +2188,11 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;I;4;40;400;400150;F.Suf.Global Ej. anterior;FondoSuficiencia Global liquidación ej. anteriores
 2014;I;4;40;400;400151;F. G. S. Púb. Fun ej.2011;Fondo de Garantía Serv Púb. Fund.-Ejercicio 2011
 2014;I;4;40;400;400152;F. Cooperación Ej. 2012;Fondo Cooperación Liquidación Ejercicio 2012
+2014;I;4;40;400;400153;Fondo Suficiencia Global. EJ. 2012;Fondo Suficiencia Global Ejercicio 2012
+2014;I;4;40;400;400154;Fondo de Garantía Ej. 2012;Fondo de Garantía Ejercicio 2012
+2014;I;4;40;400;400155;Fondo de Convergencia Autonómica Liq. ejerc. 2013;Fondo de Convergencia Autonómica Liq. ejerc. 2013
 2014;I;4;40;400;400201;Anticip. Liquidación 2010;Anticipo Liquidación 2010
+2014;I;4;40;400;400400;Anticipo de Tesorería (art.64 Ley 22/2009);Anticipo de Tesorería (art.64 Ley 22/2009)
 2014;I;4;40;401;401000;Serv transf (Secc 32 PGE);Servicios transferidos (Sección 32 P.G.E.)
 2014;I;4;40;401;401004;RD 205/10 Form. Prof. Emp;R.D. 250/2010 Formación Profesional para el Empleo
 2014;I;4;40;401;401010;Ec. Hda y Empleo;Economía, Hacienda y Empleo
@@ -2274,6 +2328,8 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;I;4;49;499;499099;Otras subv. del exterior;Otras subvenciones del exterior
 2014;I;5;51;510;510000;Intereses de Anticipos;Intereses de Anticipos
 2014;I;5;51;511;511000;Intereses de Préstamos Co;Intereses de Préstamos Concedidos
+2014;I;5;51;511;511003;Intereses por prestamos BEI convenio 2013;Intereses por prestamos BEI convenio 2013
+2014;I;5;51;511;511004;Intereses por prestamos BEI convenio 2014;Intereses por prestamos BEI convenio 2014
 2014;I;5;51;512;512000;Intereses de Avales Otorg;Intereses de Avales Otorgados
 2014;I;5;52;520;520000;Intereses;Intereses
 2014;I;5;52;520;520002;Intereses vivienda;Intereses vivienda
@@ -2522,3 +2578,4 @@ EJERCICIO;GASTO/INGRESO;CAPITULO;ARTICULO;CONCEPTO;SUBCONCEPTO;DESCRIPCION CORTA
 2014;I;9;91;910;910100;Préstamos lp BEI;Préstamos recibidos a largo plazo del BEI
 2014;I;9;92;920;920000;Pres.rec. Ley Pptos 2013;Préstamos recibidos Ley de Presupuestos 2013
 2014;I;9;92;921;921000;Préstamos recibidos a c.p;Préstamos recibidos a corto plazo
+
