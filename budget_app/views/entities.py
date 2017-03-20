@@ -2,6 +2,7 @@
 from coffin.shortcuts import render_to_response
 from budget_app.models import BudgetBreakdown, Entity, EconomicCategory
 from helpers import *
+from properties import *
 
 def entities_index(request, c, level, render_callback=None):
     # Get the budget breakdown
@@ -71,6 +72,8 @@ def entities_show(request, c, entity, render_callback=None):
     c['display_functional_view'] = True
     _set_full_breakdown(c, entity.level == settings.MAIN_ENTITY_LEVEL)
     c['entity'] = entity
+    
+    c['draftBudgetYear'] = draftBudgetYear
 
     return render(c, render_callback, 'entities/show.html')
 
@@ -138,6 +141,8 @@ def entities_show_policy(request, c, entity, id, title, render_callback=None):
 
     c['name'] = c['descriptions']['functional'].get(c['policy_uid'])
     c['title_prefix'] = c['name']
+    
+    c['draftBudgetYear'] = draftBudgetYear
 
     return render(c, render_callback, 'policies/show.html')
 
@@ -209,6 +214,8 @@ def entities_show_article(request, c, entity, id, title, show_side, render_callb
     _set_show_side(c, show_side)
     _set_full_breakdown(c, False)
     c['entity'] = entity
+
+    c['draftBudgetYear'] = draftBudgetYear
 
     return render(c, render_callback, 'policies/show.html')
 

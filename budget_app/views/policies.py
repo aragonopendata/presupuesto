@@ -3,6 +3,7 @@ from coffin.shortcuts import render_to_response
 from budget_app.models import Budget, BudgetBreakdown, FunctionalCategory, EconomicCategory
 from entities import entities_show
 from helpers import *
+from properties import *
 import json
 
 
@@ -51,6 +52,8 @@ def policies_show(request, id, title, render_callback=None):
 
     c['name'] = c['descriptions']['functional'].get(c['policy_uid'])
     c['title_prefix'] = c['name']
+    
+    c['draftBudgetYear'] = draftBudgetYear
 
     return render(c, render_callback, 'policies/show.html')
 
@@ -108,6 +111,8 @@ def programmes_show(request, id, title, render_callback=None):
     _populate_csv_settings(c, 'programme', id)
     _set_show_side(c, show_side)
     _set_full_breakdown(c, True)
+    
+    c['draftBudgetYear'] = draftBudgetYear
 
     return render(c, render_callback, 'policies/show.html')
 
@@ -170,6 +175,8 @@ def articles_show(request, id, title, show_side, render_callback=None):
     _populate_csv_settings(c, 'article', id)
     _set_show_side(c, show_side)
     _set_full_breakdown(c, True)
+    
+    c['draftBudgetYear'] = draftBudgetYear
 
     return render(c, render_callback, 'policies/show.html')
 

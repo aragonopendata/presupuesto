@@ -25,6 +25,11 @@
 <h1 class="page-title">{{ entity.name+': ' if entity }}{{ name }}</h1>
 {% endif %}
 
+
+<div class="alert inline-block note" id="draftBudgetMessage" display="none">
+	Datos correspondientes al Proyecto de Ley de Presupuestos de la Comunidad Autónoma de Aragón para el ejercicio 2017
+</div>
+
 <section role="region" class="policy-breakdown tab-system">
   <h1 class="visuallyhidden">{{ _('Programas, entidades y conceptos') }}</h1>
 
@@ -288,6 +293,8 @@
       $("#main-total .main-label").html(label+getExecutionTotalLabel(budgetStatuses[uiState.year], budgetStatusLabels))
 
       onTabSwitch();
+      
+      showIfDraftBudget();
     }    
 
 
@@ -438,7 +445,18 @@
       var totals = $("#totals_panel").detach();
       totals.appendTo(currentTab.find(".totals-placeholder"));
     }
-
+    
+    //
+    // DRAFT BUDGET MESSAGE
+	//
+	function showIfDraftBudget() {
+		var year = $("#year-selection").val();
+		if (year == {{ draftBudgetYear }}) {
+	  		$("#draftBudgetMessage").show();
+		} else {
+			$("#draftBudgetMessage").hide();
+		} 
+    }
 
     //
     // LOCATION HASH

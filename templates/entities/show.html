@@ -37,7 +37,9 @@
 {% if entities %}
 {{ render_entity_select('entity-select', entities, entity) }}
 {% endif %}
-
+<div class="alert inline-block note" id="draftBudgetMessage" display="none">
+	Datos correspondientes al Proyecto de Ley de Presupuestos de la Comunidad Autónoma de Aragón para el ejercicio 2017
+</div>
 {% include 'shared/data_controllers.html' %}
 
 <div class="table-grid" id="myGrid"></div>
@@ -233,8 +235,15 @@
 
       // Create budget legends (they require UI state since we don't have a draw() method, will do for now)
       // TODO: Have a draw() method to get rid of all this clunky extra parameters (year and field)
-      var year = $("#year-selection").val();
-
+	  var year = $("#year-selection").val();
+	  // 
+	  if (year == {{ draftBudgetYear }}) {
+		  $("#draftBudgetMessage").show();
+	  } else {
+		  $("#draftBudgetMessage").hide();
+	  }
+	  
+     
       var expenseSummary = new BudgetSummary('#expenseSummaryContainer', breakdowns['expense'], expenseAreas, expenseTreemap.colorScale(), 'expense', year);
       var fexpenseSummary = new BudgetSummary('#fexpenseSummaryContainer', breakdowns['fexpense'], fexpenseAreas, fexpenseTreemap.colorScale(), 'expense', year);
       var incomeSummary = new BudgetSummary('#incomeSummaryContainer', breakdowns['income'], incomeAreas, incomeTreemap.colorScale(), 'income', year);
