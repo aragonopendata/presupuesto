@@ -4,6 +4,7 @@ from coffin.shortcuts import render_to_response
 from django.conf import settings
 from budget_app.models import Budget, BudgetBreakdown, BudgetItem
 from helpers import *
+from properties import *
 
 
 def budgets(request):
@@ -34,4 +35,6 @@ def budgets(request):
     c['income_nodes'] = json.dumps(settings.OVERVIEW_INCOME_NODES)
     c['expense_nodes'] = json.dumps(settings.OVERVIEW_EXPENSE_NODES)
 
+    c['draftBudgetYear'] = draftBudgetYear
+    
     return render_to_response('budgets/index.html', c)

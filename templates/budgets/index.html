@@ -11,6 +11,10 @@
 
 <h1 class="page-title" style="margin-top: 50px">{{ _('Ingresos y gastos en el Gobierno de Aragón') }}</h1>
 
+<div class="alert inline-block note" id="draftBudgetMessage" display="none">
+	Datos correspondientes al Proyecto de Ley de Presupuestos de la Comunidad Autónoma de Aragón para el ejercicio 2017
+</div>
+
 <div class="sankey" id="chart" style="margin-top: -10px"></div>
 
 <div class="data-controllers">
@@ -58,6 +62,8 @@
       var uiState = getUIState();
       sankey.update(uiState);
       updateIndicators(uiState);
+      // Show Draft Budget
+      showIfDraftBudget();
     }
 
     {% include 'budgets/budgets_update_indicators.html' %}
@@ -107,6 +113,19 @@
     initSlider("#year-selection", {{ years|safe }}, redraw, {{ latest_year }});
     sankey.draw("#chart", getUIState());
     redraw();
+    
+    //
+    // DRAFT BUDGET MESSAGE
+	//
+	function showIfDraftBudget() {
+		var year = $("#year-selection").val();
+		if (year == {{ draftBudgetYear }}) {
+	  		$("#draftBudgetMessage").show();
+		} else {
+			$("#draftBudgetMessage").hide();
+		} 
+    }
+    
   })
 </script>
 

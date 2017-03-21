@@ -20,6 +20,9 @@
 
 <h1 class="page-title"></h1>
 
+<div class="alert inline-block note" id="draftBudgetMessage" display="none">
+	Datos correspondientes al Proyecto de Ley de Presupuestos de la Comunidad Autónoma de Aragón para el ejercicio 2017
+</div>
 
 <div id="expenseSummaryContainer"></div>
 <div id="fexpenseSummaryContainer"></div>
@@ -37,9 +40,6 @@
 {% if entities %}
 {{ render_entity_select('entity-select', entities, entity) }}
 {% endif %}
-<div class="alert inline-block note" id="draftBudgetMessage" display="none">
-	Datos correspondientes al Proyecto de Ley de Presupuestos de la Comunidad Autónoma de Aragón para el ejercicio 2017
-</div>
 {% include 'shared/data_controllers.html' %}
 
 <div class="table-grid" id="myGrid"></div>
