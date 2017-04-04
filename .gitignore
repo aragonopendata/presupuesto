@@ -8,3 +8,6 @@ presupuesto-*
 *config.codekit
 
 budget_app/static/stylesheets/config.codekit
+/.gitignore
+/.project
+/.pydevproject
