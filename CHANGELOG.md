@@ -20,4 +20,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New CHANGELOG file necessary to follow the changes of the application in the new versioning system.
 
 [Unreleased]: https://github.com/aragonopendata/presupuesto/compare/master...develop
-[1.0.1]: https://github.com/aragonopendata/presupuesto/releases/compare/v1.0.0...v1.0.1
+[1.0.1]: https://github.com/aragonopendata/presupuesto/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/aragonopendata/presupuesto/releases/tag/v1.0.0
