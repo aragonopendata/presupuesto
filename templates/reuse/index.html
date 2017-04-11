@@ -35,12 +35,13 @@
   <script src="{{ STATIC_URL }}javascripts/bootstrap/bootstrap-tooltip.js"></script>
   <script src="{{ STATIC_URL }}javascripts/bootstrap/bootstrap-popover.js"></script>
   <script src="{{ STATIC_URL }}javascripts/bootstrap/bootstrap-transition.js"></script>
+  <script src="{{ STATIC_URL }}javascripts/utils.js"></script>
   {% endcompress %}
 
   {% include 'shared/meta.html' %}
   {% include 'shared/analytics.html' %}
 </head>
-<body class="{{ page_css_class }}">
+<body class="{{ page_css_class }}" onload="countReused();">
   {% include 'shared/header.html' %}
   <form class="form-search hide-when-embedded" action="{{ url('budget_app.views.search') }}" method="get">
     <div class="container-fluid">
@@ -54,20 +55,17 @@
 <h1 class="page-title">{{ _('Reutilización') }}</h1>
 
 <div class="reuse">
-<h2>Datos reutilizables</h2>
-<div class="intro-reuse">La aplicación de visualización de presupuestos del Gobierno de Aragón es parte del proyecto <a href="http://opendata.aragon.es/" target="_blank">Aragón Open Data</a>. Como parte de dicho proyecto, el facilitar la máxima reutilización de la información está en el corazón de todo lo que hacemos. Por esa razón siempre es posible descargarse los datos que están detrás de las tablas y gráficas que se van mostrando en la navegación por la web. Las opciones de descarga de datos se encuentran en la parte inferior de la web, se permite la descarga en los formatos "XLS" y "CSV". Igualmente se puede acceder a <a href="http://opendata.aragon.es/catalogo/busqueda-libre/Presupuesto" target="_blank">los datos presupuestarios en bruto</a> dentro dentro del portal de datos abiertos de Aragón.</div>
+	<h2>Datos reutilizables</h2>
+	<div class="intro-reuse">La aplicación de visualización de presupuestos del Gobierno de Aragón es parte del proyecto <a href="http://opendata.aragon.es/" target="_blank">Aragón Open Data</a>. Como parte de dicho proyecto, el facilitar la máxima reutilización de la información está en el corazón de todo lo que hacemos. Por esa razón siempre es posible descargarse los datos que están detrás de las tablas y gráficas que se van mostrando en la navegación por la web. Las opciones de descarga de datos se encuentran en la parte inferior de la web, se permite la descarga en los formatos "XLS" y "CSV". Igualmente se puede acceder a <a href="http://opendata.aragon.es/catalogo/busqueda-libre/Presupuesto" target="_blank">los datos presupuestarios en bruto</a> dentro dentro del portal de datos abiertos de Aragón.</div>
 
-<h2>El código de presupuesto.aragon.es</h2>
-<div class="code-reuse">Más allá de las opciones de descarga de los datos, hemos puesto a disposición de todos los reutilizadores el código que hay detrás de presupuesto.aragon.es. Esta es la forma que tenemos de devolver a todos los ciudadanos un nuevo producto reutilizable. El código fuente de la aplicación se encuentra disponible en la cuenta de <a href="https://github.com/aragonopendata/presupuesto" target="_blank">GitHub de Aragón Open Data</a>. En la propia cuenta se pueden encontrar instrucciones para la <a href="https://github.com/aragonopendata/presupuesto/blob/master/INSTALL.md" target="_blank">instalación del producto</a>, así como las cláusulas legales que permiten la reutilización. El producto está licenciado bajo la <a href="https://github.com/aragonopendata/presupuesto/blob/master/LICENSE.md" target="_blank">licencia abierta EUPL</a>, lo que es garantía para que cualquiera pueda reutilizar el código con cualquier fin con la única obligación de atribuir la autoría inicial del código a Aragón Open Data.</div>
+	<h2>El código de presupuesto.aragon.es</h2>
+	<div class="code-reuse">Más allá de las opciones de descarga de los datos, hemos puesto a disposición de todos los reutilizadores el código que hay detrás de presupuesto.aragon.es. Esta es la forma que tenemos de devolver a todos los ciudadanos un nuevo producto reutilizable. El código fuente de la aplicación se encuentra disponible en la cuenta de <a href="https://github.com/aragonopendata/presupuesto" target="_blank">GitHub de Aragón Open Data</a>. En la propia cuenta se pueden encontrar instrucciones para la <a href="https://github.com/aragonopendata/presupuesto/blob/master/INSTALL.md" target="_blank">instalación del producto</a>, así como las cláusulas legales que permiten la reutilización. El producto está licenciado bajo la <a href="https://github.com/aragonopendata/presupuesto/blob/master/LICENSE.md" target="_blank">licencia abierta EUPL</a>, lo que es garantía para que cualquiera pueda reutilizar el código con cualquier fin con la única obligación de atribuir la autoría inicial del código a Aragón Open Data.</div>
 
-<h2>Otras iniciativas que usan nuestro código</h2>
-<div class="other-initiative">En Aragón Open Data estamos muy contentos de la aceptación que ha tenido el proyecto presupuesto.aragon.es. La aplicación de visualización de presupuestos del Gobierno de Aragón ha tenido una buena repercusión a nivel nacional y prueba de ello son los ejemplos de reutilización del código informático que se han producido. Otras administraciones y organizaciones se han unido al ejemplo de presupuesto.aragon.es y han reutilizado e incluso mejorado nuestra aplicación para ofrecer una visión clara y real del destino de los fondos públicos.</br></br>
-En el lado de las organizaciones la <a href="http://dondevanmisimpuestos.es/" target="_blank">Fundación Ciudadana Civio</a> ha adoptado nuestro código para ofrecer una visión nacional de la estructura del gasto público. Desde aquí queremos agradecerles su compromiso con la transparencia económica de las instituciones y su apoyo con aquellos que pensamos y trabajamos para que la información pública sea precisamente eso, pública. Pero además hay un conjunto de instituciones que también están reutilizando nuestra aplicación de una u otra manera y a las que también les queremos agradecer su esfuerzo por intentar que hayan puesto una disciplina administrativa como la presupuestaria, que muchas veces es complicada de entender, en formatos atractivos y claros para los ciudadanos. Las iniciativas que están utilizando el código de presupuesto.aragón.es son:
-
-
-</div>
-  
-  <ul>
+	<h2>Otras iniciativas que usan nuestro código</h2>
+	<div class="other-initiative">En Aragón Open Data estamos muy contentos de la aceptación que ha tenido el proyecto presupuesto.aragon.es. La aplicación de visualización de presupuestos del Gobierno de Aragón ha tenido una buena repercusión a nivel nacional y prueba de ello son los ejemplos de reutilización del código informático que se han producido. Otras administraciones y organizaciones se han unido al ejemplo de presupuesto.aragon.es y han reutilizado e incluso mejorado nuestra aplicación para ofrecer una visión clara y real del destino de los fondos públicos.</br></br>
+	En el lado de las organizaciones la <a href="http://dondevanmisimpuestos.es/" target="_blank">Fundación Ciudadana Civio</a> ha adoptado nuestro código para ofrecer una visión nacional de la estructura del gasto público. Desde aquí queremos agradecerles su compromiso con la transparencia económica de las instituciones y su apoyo con aquellos que pensamos y trabajamos para que la información pública sea precisamente eso, pública. Pero además hay un conjunto de instituciones que también están reutilizando nuestra aplicación de una u otra manera y a las que también les queremos agradecer su esfuerzo por intentar que hayan puesto una disciplina administrativa como la presupuestaria, que muchas veces es complicada de entender, en formatos atractivos y claros para los ciudadanos. Las iniciativas que están utilizando el código de presupuesto.aragón.es son:</div>
+ 
+  <ul id="adm_aragon">
   	<div style="font-weight: bold; font-size: 20px;margin-left: -1.25em;">En Aragón:</div>
   	<li>
   		<a href="http://www.huesca.es/areas/transparencia/Presupuestos/" target="_blank">
@@ -81,11 +79,16 @@ En el lado de las organizaciones la <a href="http://dondevanmisimpuestos.es/" ta
   	</li>
   </ul>
   
-  <ul>
-		<div style="font-weight: bold; font-size: 20px;margin-left: -1.25em;">En España:</div>
-        <li>
+  <ul id="adm_spain">
+	<div style="font-weight: bold; font-size: 20px;margin-left: -1.25em;">En España:</div>
+    <li>
       <a href="http://presupuesto.navarra.es/es/" target="_blank">
         Gobierno de Navarra
+      </a>
+    </li>
+    <li>
+      <a href="http://canarias.dondevanmisimpuestos.es/" target="_blank">
+        Gobierno de Canarias
       </a>
     </li>
     <li>
@@ -163,6 +166,11 @@ En el lado de las organizaciones la <a href="http://dondevanmisimpuestos.es/" ta
   			Ayuntamiento de Rubí
   		</a>
   	</li>
+  	<li>
+      <a href="http://gramenet.dondevanmisimpuestos.es/es/" target="_blank">
+        Ayuntamiento de Santa Coloma de Gramenet
+      </a>
+    </li>
     <li>
       <a href="http://orzamentoaberto.santiagodecompostela.gal/" target="_blank">
         Ayuntamiento de Santiago de Compostela
@@ -184,7 +192,7 @@ En el lado de las organizaciones la <a href="http://dondevanmisimpuestos.es/" ta
       </a>
     </li>
   </ul>
-  <ul>
+  <ul id="emp_org">
     <div style="font-weight: bold; font-size: 20px;margin-left: -1.25em;">Empresas y organizaciones:</div>
     <li>
       <a href="http://athletic.derbia.eus/" target="_blank">
@@ -197,7 +205,7 @@ En el lado de las organizaciones la <a href="http://dondevanmisimpuestos.es/" ta
       </a>
     </li>
   </ul>
-  <ul>
+  <ul id="adm_int">
 		<div style="font-weight: bold; font-size: 20px;margin-left: -1.25em;">A nivel internacional:</div>
   	<li>
   		<a href="http://presupuestos.lanacion.com.ar/" target="_blank">
@@ -206,7 +214,7 @@ En el lado de las organizaciones la <a href="http://dondevanmisimpuestos.es/" ta
   	</li>
   </ul>
   
-  Y al resto de administraciones, ¡os esperamos!
+  <p id="adm_count_text"></p>
 </div>
 
     </div>
