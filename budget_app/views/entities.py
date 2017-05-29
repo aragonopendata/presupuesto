@@ -35,7 +35,7 @@ def entities_show(request, c, entity, render_callback=None):
     c['financial_expense_breakdown'] = BudgetBreakdown()
     c['functional_breakdown'] = BudgetBreakdown(['policy', 'programme'])
     c['include_financial_chapters'] = hasattr(settings, 'INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS') and settings.INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS
-    if entity.level == settings.MAIN_ENTITY_LEVEL:
+    if entity.level == settings.MAIN_ENTITY_LEVEL or entity.level == settings.UNIVERSITY_ENTITY_LEVEL:
         c['economic_breakdown'] = BudgetBreakdown(['article', 'heading'])
 
         # We assume here that all items are properly configured across all dimensions
@@ -63,17 +63,26 @@ def entities_show(request, c, entity, render_callback=None):
 
     # Additional data needed by the view
     populate_level(c, entity.level)
+    #if entity.level != settings.UNIVERSITY_ENTITY_LEVEL:
     populate_entity_stats(c, entity)
     # TODO: We're doing this also for Aragon, check performance!
     populate_entity_descriptions(c, entity)
+    #if entity.level != settings.UNIVERSITY_ENTITY_LEVEL:
     populate_years(c, 'economic_breakdown')
     populate_budget_statuses(c, entity.id)
     populate_area_descriptions(c, ['functional', 'income', 'expense'])
     c['display_functional_view'] = True
-    _set_full_breakdown(c, entity.level == settings.MAIN_ENTITY_LEVEL)
+    if entity.level == settings.UNIVERSITY_ENTITY_LEVEL:
+        _set_full_breakdown(c, entity.level == settings.UNIVERSITY_ENTITY_LEVEL)
+    else:
+        _set_full_breakdown(c, entity.level == settings.MAIN_ENTITY_LEVEL)
+        
+        
     c['entity'] = entity
     
     c['draftBudgetYear'] = draftBudgetYear
+    
+    c['isUniversity'] = str(entity.level == settings.UNIVERSITY_ENTITY_LEVEL).lower()
 
     return render(c, render_callback, 'entities/show.html')
 
@@ -144,7 +153,10 @@ def entities_show_policy(request, c, entity, id, title, render_callback=None):
     
     c['draftBudgetYear'] = draftBudgetYear
 
-    return render(c, render_callback, 'policies/show.html')
+    if entity.level == 'universidad':
+        return render(c, render_callback, 'university/show.html')
+    else:
+        return render(c, render_callback, 'policies/show.html')
 
 
 # Prepare all data needed for an article breakdown page (i.e. economic dimension)
@@ -217,7 +229,10 @@ def entities_show_article(request, c, entity, id, title, show_side, render_callb
 
     c['draftBudgetYear'] = draftBudgetYear
 
-    return render(c, render_callback, 'policies/show.html')
+    if entity.level == 'universidad':
+        return render(c, render_callback, 'university/show.html')
+    else:
+        return render(c, render_callback, 'policies/show.html')
 
 
 # Unfortunately institutions id change sometimes over the years, so we need to

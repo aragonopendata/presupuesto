@@ -10,6 +10,19 @@
 # Descargar el fichero en formato Excel 2000, los otros no terminan de funcionar bien.
 # Mucho ojo con los ceros al final de las cantidades: al usar . como separador de miles Excel los elimina
 #
+UNI,Universidad de Zaragoza, 2005,0
+UNI,Universidad de Zaragoza, 2006,0
+UNI,Universidad de Zaragoza, 2007,0
+UNI,Universidad de Zaragoza, 2008,0
+UNI,Universidad de Zaragoza, 2009,0
+UNI,Universidad de Zaragoza, 2010,0
+UNI,Universidad de Zaragoza, 2011,0
+UNI,Universidad de Zaragoza, 2012,0
+UNI,Universidad de Zaragoza, 2013,0
+UNI,Universidad de Zaragoza, 2014,0
+UNI,Universidad de Zaragoza, 2015,0
+UNI,Universidad de Zaragoza, 2016,0
+UNI,Universidad de Zaragoza, 2017,0
 CA1,Aragón,2005,1269027
 CA1,Aragón,2006,1277471
 CA1,Aragón,2007,1296655

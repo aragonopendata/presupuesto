@@ -20,6 +20,7 @@ class EconomicCategory(models.Model):
     description = models.CharField(max_length=500)          # 500 for PGE
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    source_type = models.CharField(max_length=1)
 
     objects = EconomicCategoriesManager()
 

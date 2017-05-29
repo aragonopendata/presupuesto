@@ -77,6 +77,7 @@ class BudgetItem(models.Model):
     functional_category = models.ForeignKey('FunctionalCategory', db_column='functional_category_id')
     funding_category = models.ForeignKey('FundingCategory', db_column='funding_category_id')
     institutional_category = models.ForeignKey('InstitutionalCategory', db_column='institutional_category_id')
+    source_type = models.CharField(max_length=1)    # e.g. U
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
 

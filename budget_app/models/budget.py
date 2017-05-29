@@ -75,6 +75,7 @@ class Budget(models.Model):
     status = models.CharField(max_length=5)     # e.g. DRAFT, 1T, 2T, 3T
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    source_type = models.CharField(max_length=1)    # e.g. U
 
     objects = BudgetManager()
 

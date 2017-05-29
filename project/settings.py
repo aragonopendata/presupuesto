@@ -2,6 +2,7 @@
 
 import os.path
 import sys
+from local_settings import ENV
 SETTINGS_PATH = os.path.dirname(os.path.abspath(__file__))
 ROOT_PATH = os.path.join(SETTINGS_PATH, '..')
 
@@ -30,8 +31,8 @@ if ENV.get('THEME'):
     THEME=ENV.get('THEME')
     execfile( os.path.join(ROOT_PATH, THEME, 'settings.py'), globals(), locals())
 else:
-   print "Please set the environment variable THEME in your local_settings.py file."
-   sys.exit(1)
+    print "Please set the environment variable THEME in your local_settings.py file."
+    sys.exit(1)
 
 
 # DJANGO SETTINGS

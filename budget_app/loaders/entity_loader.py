@@ -18,4 +18,5 @@ class EntityLoader:
             entity.save()
 
     def _delete_all(self):
+        print "Eliminando todas las entidades..."
         Entity.objects.all().delete()

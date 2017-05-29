@@ -20,8 +20,22 @@ function getPolicyLink(policy_id, title) {
   return url;
 }
 
+//Return path to a policy page (University)
+function getPolicyUniversityLink(policy_id, title) {
+  var url = "{{ url('budget_app.views.university') }}";
+  if ( policy_id )
+    url = url + '/'+policy_id+'/'+parameterize(title);
+  return url;
+}
+
 // Return path to a programme, inside a policy page
 function getProgrammeLink(programme_id, title) {
+  var url = "{{ url('budget_app.views.programmes_show') }}/"+programme_id+'/'+parameterize(title);
+  return url;
+}
+
+//Return path to a programme, inside a policy page
+function getProgrammeUniversityLink(programme_id, title) {
   var url = "{{ url('budget_app.views.programmes_show') }}/"+programme_id+'/'+parameterize(title);
   return url;
 }
@@ -39,6 +53,22 @@ function getIncomeArticleLink(article_id, title) {
     return "{{ url('budget_app.views.income_articles_show') }}/"+article_id+'/'+parameterize(title);
   else
     return "{{ url('budget_app.views.policies') }}#view=income";
+}
+
+//Return path to article pages (University)
+function getExpenseArticleUniversityLink(article_id, title) {
+	if ( article_id ) {
+    	return "{{ url('budget_app.views.expense_articles_show') }}/uni/"+article_id+'/'+parameterize(title);
+	} else {
+		return "{{ url('budget_app.views.university') }}#field=expense";
+	}
+}
+function getIncomeArticleUniversityLink(article_id, title) {
+	if ( article_id ) {
+		return "{{ url('budget_app.views.income_articles_show') }}/uni/"+article_id+'/'+parameterize(title);
+	} else {
+		return "{{ url('budget_app.views.university') }}#view=income";
+	}
 }
 
 
@@ -94,6 +124,18 @@ function policyLinkFormatter(row, cell, value, columnDef, dataContext) {
   return rowNameFormatter(row, cell, linkedValue, columnDef, dataContext);
 };
 
+//Convert a programme/policy name into a link
+function policyUniversityLinkFormatter(row, cell, value, columnDef, dataContext) {
+  var programme_level = (columnDef.programme_level == undefined) ? 1 : columnDef.programme_level;
+  if ( dataContext.indent >= programme_level ) {
+    var link = getProgrammeUniversityLink(dataContext.key, value);
+  } else {
+    var link = getPolicyUniversityLink(dataContext.key, value);
+  }
+  var linkedValue = "<a href='"+link+"'>"+value+"</a>";
+  return rowNameFormatter(row, cell, linkedValue, columnDef, dataContext);
+};
+
 // Convert an article name into a link
 function articleLinkFormatter(row, cell, value, columnDef, dataContext, linkGetter) {
   if ( dataContext.indent > 0 ) {
@@ -109,6 +151,13 @@ function incomeArticleLinkFormatter(row, cell, value, columnDef, dataContext) {
 };
 function expenseArticleLinkFormatter(row, cell, value, columnDef, dataContext) {
   return articleLinkFormatter(row, cell, value, columnDef, dataContext, getExpenseArticleLink);
+};
+
+function incomeArticleUniversityLinkFormatter(row, cell, value, columnDef, dataContext) {
+	return articleLinkFormatter(row, cell, value, columnDef, dataContext, getIncomeArticleUniversityLink);
+};
+function expenseArticleUniversityLinkFormatter(row, cell, value, columnDef, dataContext) {
+	return articleLinkFormatter(row, cell, value, columnDef, dataContext, getExpenseArticleUniversityLink);
 };
 
 // Convert a region name into a link

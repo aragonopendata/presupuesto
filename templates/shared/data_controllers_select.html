@@ -1,8 +1,12 @@
 <select id="select-format">
   <option value="nominal">{{ _('Nominales') }}</option>
+  {% if isUniversity == "false" %}
   <option selected="selected" value="real">{{ _('Reales (ajustadas a inflación)') }}</option>
+  {% endif %}
   {% if not hide_percentage_format %}
   <option value="percentage">{{ _('Porcentaje sobre el total') }}</option>
   {% endif %}
+  {% if isUniversity == "false" %}
   <option value="per_capita">{{ _('Per-capita (real)') }}</option>
+  {% endif %}
 </select>

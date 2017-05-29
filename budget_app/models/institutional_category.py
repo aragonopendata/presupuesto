@@ -13,6 +13,7 @@ class InstitutionalCategory(models.Model):
     description = models.CharField(max_length=200)
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    source_type = models.CharField(max_length=1)
 
     objects = InstitutionalCategoriesManager()
 

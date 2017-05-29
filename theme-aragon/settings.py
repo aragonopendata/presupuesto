@@ -3,6 +3,9 @@
 MAIN_ENTITY_LEVEL = 'comunidad'
 MAIN_ENTITY_NAME = 'Aragón'
 
+UNIVERSITY_ENTITY_LEVEL = 'universidad'
+UNIVERSITY_ENTITY_NAME = 'Universidad de Zaragoza'
+
 BUDGET_LOADER = 'AragonBudgetLoader'
 
 FEATURED_PROGRAMMES = ['24121', '24221', '35131']
@@ -17,6 +20,8 @@ OVERVIEW_EXPENSE_NODES = ['241', '242', '371', '231', '001', '351']
 
 # Show an extra tab with funding breakdown (only applicable to some budgets). Default: False.
 SHOW_FUNDING_TAB = True
+# Show an extra tab with funding breakdown. University. Default: False.
+SHOW_FUNDING_TAB_UNIVERSITY = False
 
 # Show an extra column with actual revenues/expenses. Default: True.
 # Warning: the execution data still gets shown in the summary chart and in downloads.

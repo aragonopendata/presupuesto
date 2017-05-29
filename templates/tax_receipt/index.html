@@ -101,6 +101,7 @@ var budgetYear = {{ draftBudgetYear }};
     $('#btn-recalculate').click(redrawGrid);
     $('.form-user-incomings').submit(function() { redrawGrid(); return false; });
     redrawGrid();
+    showIfDraftBudget();
   })
 </script>
 {% endblock %}

@@ -13,22 +13,25 @@
 {% block content %}
 {% if programme %}
 <p class="history-back">
-  <a href="{% url 'budget_app.views.policies_show' programme.policy, policy.slug() %}" id="policy-name-link">
+  <a href="{% url 'budget_app.views.university_show' programme.policy, policy.slug() %}" id="policy-name-link">
     &larr; {{ descriptions['functional'].get(programme.policy) }}
   </a>
 </p>
 <h1 class="page-title">{{ name }}</h1>
 {% else %}
 <p class="history-back">
-  <a href="{{ url(show_entity_url, entity.slug) if entity else url('budget_app.views.policies') }}">&larr; {{ _('Volver a Políticas') }}</a>
+  <a href="{{ url(show_entity_url, entity.slug) if entity else url('budget_app.views.university') }}">&larr; {{ _('Volver a Universidad de Zaragoza') }}</a>
 </p>
 <h1 class="page-title">{{ entity.name+': ' if entity }}{{ name }}</h1>
 {% endif %}
 
-
-<div class="alert inline-block note" id="draftBudgetMessage" style="display:none">
-	Datos correspondientes al Proyecto de Ley de Presupuestos de la Comunidad Autónoma de Aragón para el ejercicio 2017
+<div id="logoUniversity" style="margin-left: 80%;">
+	<img src="{{ STATIC_URL }}assets/logoUZ.png" alt="Logo de Universidad de Zaragoza">
 </div>
+
+<!-- <div class="alert inline-block note" id="draftBudgetMessage" display="none">
+	Datos correspondientes al Proyecto de Ley de Presupuestos de la Comunidad Autónoma de Aragón para el ejercicio 2017
+</div> -->
 
 <section role="region" class="policy-breakdown tab-system">
   <h1 class="visuallyhidden">{{ _('Programas, entidades y conceptos') }}</h1>
@@ -43,7 +46,7 @@
   {% else %}
       <li class="current"><a href="#tab-economic">{{ _(tab_titles['economic']) }}</a></li>
   {% endif %}
-  {% if show_funding_tab %}
+  {% if show_funding_tab_university %}
       <li><a href="#tab-funding">{{ tab_titles['funding'] }}</a></li>
   {% endif %}
   {% if show_institutional_tab %}
@@ -67,7 +70,7 @@
   {% else %}
     {{ render_tab(_(tab_titles['economic']), 'economic', csv_type, csv_id, 'current') }} 
   {% endif %}
-  {% if show_funding_tab %}
+  {% if show_funding_tab_university %}
     {{ render_tab(tab_titles['funding'], 'funding', csv_type, csv_id, 'visuallyhidden') }} 
   {% endif %}
   {% if show_institutional_tab %}
@@ -126,7 +129,7 @@
 </div>
 {% endif %}
 
-{% include 'shared/data_sources.html' %}
+{% include 'shared/data_sources_university.html' %}
 {% include 'shared/policy_paths.html' %}
 <script>
   $(function () {
@@ -190,11 +193,9 @@
       var newUIState = getUIState();
       if ( uiState && sameUIState(uiState, newUIState) )  return;
       uiState = newUIState;
-
       // Do work
       var columnDef = getColumnDefinition(uiState);
       var executionColumnDef = getExecutionColumnDefinition(uiState);
-
       if ( $("#functionalGrid").length > 0 ) {
         $("#functionalGrid").data('grid', createBudgetGrid( "#functionalGrid", 
                           functionalGridData, [
@@ -257,7 +258,7 @@
                         }));
 {% endif %}
 
-{% if show_funding_tab %}
+{% if show_funding_tab_university %}
       $("#fundingGrid").data('grid', createBudgetGrid(  "#fundingGrid", 
                         fundingGridData, [
                           {field: "label", formatter: rowNameFormatter, name: 'Fondo'},
@@ -294,7 +295,8 @@
 
       onTabSwitch();
       
-      showIfDraftBudget();
+      //showIfDraftBudget();
+      
     }    
 
 
@@ -449,14 +451,14 @@
     //
     // DRAFT BUDGET MESSAGE
 	//
-	function showIfDraftBudget() {
+	/*function showIfDraftBudget() {
 		var year = $("#year-selection").val();
 		if (year == {{ draftBudgetYear }}) {
 	  		$("#draftBudgetMessage").show();
 		} else {
 			$("#draftBudgetMessage").hide();
 		} 
-    }
+    }*/
 
     //
     // LOCATION HASH

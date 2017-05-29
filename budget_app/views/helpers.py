@@ -18,6 +18,7 @@ def get_context(request, css_class='', title=''):
     # Global settings
     c['show_institutional_tab'] = not hasattr(settings, 'SHOW_INSTITUTIONAL_TAB') or settings.SHOW_INSTITUTIONAL_TAB
     c['show_funding_tab'] = hasattr(settings, 'SHOW_FUNDING_TAB') and settings.SHOW_FUNDING_TAB
+    c['show_funding_tab_university'] = hasattr(settings, 'SHOW_FUNDING_TAB_UNIVERSITY') and settings.SHOW_FUNDING_TAB_UNIVERSITY
     c['show_actual'] = not hasattr(settings, 'SHOW_ACTUAL') or settings.SHOW_ACTUAL
 
     c['color_scale'] = getattr(settings, 'COLOR_SCALE', [])
@@ -31,8 +32,15 @@ def set_title(c, title):
 def get_main_entity(c):
     return Entity.objects.filter(level=settings.MAIN_ENTITY_LEVEL)[0]
 
+# This assumes there is only one of the MAIN_ENTITY_LEVEL, which is good enough for now
+def get_university_entity(c):
+    return Entity.objects.filter(level=settings.UNIVERSITY_ENTITY_LEVEL)[0]
+
 def populate_stats(c):  # Convenience: assume it's top level entity
     populate_entity_stats(c, get_main_entity(c))
+    
+def populate_university_stats(c):  # Convenience: assume it's top level entity
+    populate_entity_stats(c, get_university_entity(c))
     
 def populate_entity_stats(c, entity, stats_name='stats'):
     c[stats_name] = json.dumps({

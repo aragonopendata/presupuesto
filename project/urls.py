@@ -27,17 +27,26 @@ budget_app_urlpatterns = patterns('budget_app.views',
     # Aragón programme pages
     url(r'^programas$', 'programmes_show'),
     url(r'^programas/(?P<id>[0-9A-Z]+)$', 'programmes_show'),
-    url(r'^programas/(?P<id>[0-9A-Z]+)/(?P<title>.+)$', 'programmes_show'),
+    url(r'^programas/(?P<id>[0-9]+)/(?P<title>.+)$', 'programmes_show'),
+    
+    # Unizar programme pages
+    url(r'^programas/(?P<id>[0-9A-Z]+)/(?P<title>.+)$', 'programmes_show_university'),
 
     # Aragón expense pages (economic breakdown)
     url(r'^articulos/g$', 'expense_articles_show'),
     url(r'^articulos/g/(?P<id>[0-9]+)$', 'expense_articles_show'),
     url(r'^articulos/g/(?P<id>[0-9]+)/(?P<title>.+)$', 'expense_articles_show'),
+    
+    # Unizar expense pages
+    url(r'^articulos/g/[a-z]+/(?P<id>[0-9]+)/(?P<title>.+)$', 'expense_articles_show_university'),
 
     # Aragón income pages
     url(r'^articulos/i$', 'income_articles_show'),
     url(r'^articulos/i/(?P<id>[0-9]+)$', 'income_articles_show'),
     url(r'^articulos/i/(?P<id>[0-9]+)/(?P<title>.+)$', 'income_articles_show'),
+    
+    # Unizar income pages
+    url(r'^articulos/i/[a-z]+/(?P<id>[0-9]+)/(?P<title>.+)$', 'income_articles_show_university'),
 
     # Counties
     url(r'^comarcas$', 'counties'),
@@ -52,6 +61,11 @@ budget_app_urlpatterns = patterns('budget_app.views',
     url(r'^municipios/(?P<town_slug>[a-z\-]+)/ingresos/(?P<id>[0-9]+)$', 'towns_show_income'),
     url(r'^municipios/(?P<town_slug>[a-z\-]+)/gastosf/(?P<id>[0-9]+)$', 'towns_show_fexpense'),
     url(r'^municipios/(?P<town_slug>[a-z\-]+)/gastos/(?P<id>[0-9]+)$', 'towns_show_expense'),
+
+    # University
+    url(r'^universidad$', 'university'),
+    url(r'^universidad/(?P<id>[0-9]+)$', 'university_show'),
+    url(r'^universidad/(?P<id>[0-9]+)/(?P<title>.+)$', 'university_show'),
 
     # Comparison pages
     url(r'^comarcas/(?P<county_left_slug>.+)/(?P<county_right_slug>.+)$', 'counties_compare'),
@@ -71,11 +85,20 @@ budget_app_urlpatterns = patterns('budget_app.views',
     url(r'^politicas/(?P<id>[0-9]+)_economic\.(?P<format>.+)$', 'economic_policy_breakdown'),
     url(r'^politicas/(?P<id>[0-9]+)_funding\.(?P<format>.+)$', 'funding_policy_breakdown'),
     url(r'^politicas/(?P<id>[0-9]+)_institutional\.(?P<format>.+)$', 'institutional_policy_breakdown'),
+    
+    # University
+    url(r'^universidad/(?P<id>[0-9]+)_functional\.(?P<format>.+)$', 'functional_university_breakdown'),
+    url(r'^universidad/(?P<id>[0-9]+)_economic\.(?P<format>.+)$', 'economic_university_breakdown'),
+    url(r'^universidad/(?P<id>[0-9]+)_funding\.(?P<format>.+)$', 'funding_university_breakdown'),
+    url(r'^universidad/(?P<id>[0-9]+)_institutional\.(?P<format>.+)$', 'institutional_university_breakdown'),
 
     # Aragón programmes
     url(r'^programas/(?P<id>[0-9A-Z]+)_economic\.(?P<format>.+)$', 'economic_programme_breakdown'),
     url(r'^programas/(?P<id>[0-9A-Z]+)_funding\.(?P<format>.+)$', 'funding_programme_breakdown'),
     url(r'^programas/(?P<id>[0-9A-Z]+)_institutional\.(?P<format>.+)$', 'institutional_programme_breakdown'),
+
+    # Unizar programmes
+    #url(r'^programas/uni/(?P<id>[0-9A-Z]+)_economic\.(?P<format>.+)$', 'economic_programme_university_breakdown'),
 
     # Aragón articles
     url(r'^articulos/(?P<id>[0-9]+)_functional\.(?P<format>.+)$', 'functional_article_breakdown'),

@@ -20,7 +20,11 @@
 
 <h1 class="page-title"></h1>
 
-<div class="alert inline-block note" id="draftBudgetMessage" display="none">
+<div id="logoUniversity" style="display: none; margin-left: 80%;">
+	<img src="{{ STATIC_URL }}assets/logoUZ.png" alt="Logo de Universidad de Zaragoza">
+</div>
+
+<div class="alert inline-block note" id="draftBudgetMessage" style="display:none">
 	Datos correspondientes al Proyecto de Ley de Presupuestos de la Comunidad Autónoma de Aragón para el ejercicio 2017
 </div>
 
@@ -66,7 +70,13 @@
 </p>
 
 {% include 'shared/social_sharing.html' %}
+
+{% if isUniversity %}
+{% include 'shared/data_sources_university.html' %}
+{% else %}
 {% include 'shared/data_sources.html' %}
+{% endif %}
+
 {% include 'shared/policy_paths.html' %}
 
 <script>
@@ -117,13 +127,23 @@
     };
 {% else %}
     // The top level and small entities have different URLs at this point
-    function entityLinkFormatter(row, cell, value, columnDef, dataContext) {
-      if ( uiState.view == 'fexpense' )
-        var formatter = policyLinkFormatter;
-      else if ( uiState.view == 'expense' )
-        var formatter = expenseArticleLinkFormatter;
-      else
-        var formatter = incomeArticleLinkFormatter;
+	function entityLinkFormatter(row, cell, value, columnDef, dataContext) {
+		if ( uiState.view == 'fexpense' ) {
+			if ({{ isUniversity}})
+        		var formatter = policyUniversityLinkFormatter;
+			else
+				var formatter = policyLinkFormatter;
+		} else if ( uiState.view == 'expense' ) {
+			if ({{ isUniversity}})
+				var formatter = expenseArticleUniversityLinkFormatter;
+			else
+				var formatter = expenseArticleLinkFormatter;
+		} else {
+			if ({{ isUniversity}})
+				var formatter = incomeArticleUniversityLinkFormatter;
+			else
+				var formatter = incomeArticleLinkFormatter;
+      }
       return formatter(row, cell, value, columnDef, dataContext);
     }
 {% endif %}
@@ -236,8 +256,14 @@
       // Create budget legends (they require UI state since we don't have a draw() method, will do for now)
       // TODO: Have a draw() method to get rid of all this clunky extra parameters (year and field)
 	  var year = $("#year-selection").val();
-	  // 
-	  if (year == {{ draftBudgetYear }}) {
+	  //
+	  if ({{ isUniversity}}) {
+		  $("#logoUniversity").show();
+	  } else {
+		  $("#logoUniversity").hide();
+	  }
+	  
+	  if (!{{ isUniversity }} && year == {{ draftBudgetYear }}) {
 		  $("#draftBudgetMessage").show();
 	  } else {
 		  $("#draftBudgetMessage").hide();
@@ -298,7 +324,11 @@
       var entitySlug = '{{ entity.slug }}';
       window.location=getExpenseLink(entitySlug, d.id);
 {% else %}
-      window.location=getExpenseArticleLink(d.id, d.name);
+		if ('unizar' == '{{ entity.slug }}') {
+			window.location=getExpenseArticleUniversityLink(d.id, d.name);
+		} else {
+			window.location=getExpenseArticleLink(d.id, d.name);
+		}
 {% endif %}
     }
 
@@ -308,7 +338,11 @@
       var entitySlug = '{{ entity.slug }}';
       window.location=getExpenseLink(entitySlug, d.id);
 {% else %}
-      window.location=getPolicyLink(d.id, d.name);
+		if ('unizar' == '{{ entity.slug }}') {
+			window.location=getPolicyUniversityLink(d.id, d.name);
+		} else {
+			window.location=getPolicyLink(d.id, d.name);
+		}
 {% endif %}
     }
 
@@ -318,7 +352,11 @@
       var entitySlug = '{{ entity.slug }}';
       window.location=getIncomeLink(entitySlug, d.id);
 {% else %}
-      window.location=getIncomeArticleLink(d.id, d.name);
+		if ('unizar' == '{{ entity.slug }}') {
+			window.location=getIncomeArticleUniversityLink(d.id, d.name);
+		} else {
+			window.location=getIncomeArticleLink(d.id, d.name);
+		}
 {% endif %}
     }
 

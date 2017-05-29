@@ -6,7 +6,7 @@
   <div class="table-grid" id='{{category}}Grid'></div>
   <div class="totals-placeholder"></div>
   <p class="downloads">
-    {{ _('Descarga la tabla de') }} <b>{{title}}</b> en {{name}} 
+    {{ _('Descarga la tabla de') }} <b>{{title}}</b> en {{name}}
     <a class="icon-file-excel" href="{{ csv_link if csv_link else url('budget_app.views.'+category+'_'+csv_type+'_breakdown', id, 'csv') }}">
     <span class="file-info">CSV</span>
     </a>
