@@ -45,7 +45,7 @@ def university_show(request, id, title, render_callback=None):
     populate_years(c, 'functional_breakdown')
     populate_budget_statuses(c, university_entity.id)
     populate_area_descriptions(c, ['functional', 'funding', show_side])
-    _populate_csv_settings(c, 'policy', id)
+    _populate_csv_settings(c, 'university', id)
     _set_show_side(c, show_side)
     _set_full_breakdown(c, True)
 
