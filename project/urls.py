@@ -98,7 +98,9 @@ budget_app_urlpatterns = patterns('budget_app.views',
     url(r'^programas/(?P<id>[0-9A-Z]+)_institutional\.(?P<format>.+)$', 'institutional_programme_breakdown'),
 
     # Unizar programmes
-    #url(r'^programas/uni/(?P<id>[0-9A-Z]+)_economic\.(?P<format>.+)$', 'economic_programme_university_breakdown'),
+    url(r'^universidad/(?P<id>[0-9A-Z]+)_economic\.(?P<format>.+)$', 'economic_programme_university_breakdown'),
+    url(r'^universidad/(?P<id>[0-9A-Z]+)_funding\.(?P<format>.+)$', 'funding_programme_university_breakdown'),
+    url(r'^universidad/(?P<id>[0-9A-Z]+)_institutional\.(?P<format>.+)$', 'institutional_programme_university_breakdown'),
 
     # Aragón articles
     url(r'^articulos/(?P<id>[0-9]+)_functional\.(?P<format>.+)$', 'functional_article_breakdown'),
