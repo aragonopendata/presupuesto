@@ -324,7 +324,7 @@
       var entitySlug = '{{ entity.slug }}';
       window.location=getExpenseLink(entitySlug, d.id);
 {% else %}
-		if ('unizar' == '{{ entity.slug }}') {
+		if ('universidad-de-zaragoza' == '{{ entity.slug }}') {
 			window.location=getExpenseArticleUniversityLink(d.id, d.name);
 		} else {
 			window.location=getExpenseArticleLink(d.id, d.name);
@@ -338,7 +338,7 @@
       var entitySlug = '{{ entity.slug }}';
       window.location=getExpenseLink(entitySlug, d.id);
 {% else %}
-		if ('unizar' == '{{ entity.slug }}') {
+		if ('universidad-de-zaragoza' == '{{ entity.slug }}') {
 			window.location=getPolicyUniversityLink(d.id, d.name);
 		} else {
 			window.location=getPolicyLink(d.id, d.name);
@@ -352,7 +352,7 @@
       var entitySlug = '{{ entity.slug }}';
       window.location=getIncomeLink(entitySlug, d.id);
 {% else %}
-		if ('unizar' == '{{ entity.slug }}') {
+		if ('universidad-de-zaragoza' == '{{ entity.slug }}') {
 			window.location=getIncomeArticleUniversityLink(d.id, d.name);
 		} else {
 			window.location=getIncomeArticleLink(d.id, d.name);
