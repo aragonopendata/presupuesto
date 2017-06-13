@@ -162,6 +162,16 @@
                       <a href="{% url 'budget_app.views.income_articles_show' item['article'], descriptions['income'].get(item['article'])|slugify %}#item={{item.uid()}}" id="policy-name-link">{{ item.description|safe }}</a>
                     </p>
                   {% endif %}
+                {% elif item.level==university_entity_level %}
+                    {% if item.expense %}
+                    <p class="concept icon-concept">
+                      <a href="{% url 'budget_app.views.programmes_show_university' item['programme'], descriptions['functional'].get(item['programme'])|slugify %}#item={{item.uid()}}" id="policy-name-link">{{ item.description|safe }}</a>
+                    </p>
+                  {% else %}
+                    <p class="concept icon-concept">
+                      <a href="{% url 'budget_app.views.income_articles_show_university' item['article'], descriptions['income'].get(item['article'])|slugify %}#item={{item.uid()}}" id="policy-name-link">{{ item.description|safe }}</a>
+                    </p>
+                  {% endif %}
                 {% else %}
                   {% set view_name_prefix = 'budget_app.views.counties_show_' if item.level=='comarca' else 'budget_app.views.towns_show_' %}
                   {% set view_name = view_name_prefix+show_side %}
@@ -207,6 +217,10 @@
                 <p class="date icon-calendar">
                   <a href="{{ url('budget_app.views.policies') }}#view={{show_side}}">{{ item.name }} {{ item.year }}</a>
                 </p>
+                {% elif item.level==university_entity_level %}
+				<p class="date icon-calendar">
+                	<a href="{{ url('budget_app.views.university') }}#view={{show_side}}">{{ item.name }} {{ item.year }}</a>
+				</p>
                 {% else %}
                 {% set view_name = 'budget_app.views.counties_show' if item.level=='comarca' else 'budget_app.views.towns_show' %}
                 <p class="date icon-calendar">

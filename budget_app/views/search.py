@@ -58,6 +58,7 @@ def search(request):
     c['results_size'] = len(c['terms']) + len(c['policies_ids']) + len(all_items) + len(all_payments)
     c['formatter'] = add_thousands_separator
     c['main_entity_level'] = settings.MAIN_ENTITY_LEVEL
+    c['university_entity_level'] = settings.UNIVERSITY_ENTITY_LEVEL
 
     # XXX: Note we only have top-level descriptions. Beware on the view not to use
     # the wrong descriptions. We should fetch the descriptions from the DB together with
