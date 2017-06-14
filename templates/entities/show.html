@@ -182,23 +182,40 @@
           $("#main-total .main-label").html('{{ _("Total gastos no financieros") }}'+executionLabelPostfix);
           $("#including-financial-total .main-label").html('{{ _("Total gastos") }}'+executionLabelPostfix);
         }
-        $("#income-downloads").hide();
-        $("#fexpense-downloads").show();
-        $("#expense-downloads").hide();
-
+        if ({{isUniversity}} && !{{universityBudgetFileDownload}}) {
+        	$("#income-downloads").hide();
+            $("#fexpense-downloads").hide();
+            $("#expense-downloads").hide();
+        } else {
+       		$("#income-downloads").hide();
+        	$("#fexpense-downloads").show();
+        	$("#expense-downloads").hide();
+        }
       } else if ( uiState.view == 'income' ) {
         $(".page-title").text("{{ entity.name }}: "+'{{ _("Ingresos") }}');
         $("#main-total .main-label").html('{{ _("Total ingresos") }}'+executionLabelPostfix);
-        $("#income-downloads").show();
-        $("#fexpense-downloads").hide();
-        $("#expense-downloads").hide();
+        if ({{isUniversity}} && !{{universityBudgetFileDownload}}) {
+        	$("#income-downloads").hide();
+        	$("#fexpense-downloads").hide();
+        	$("#expense-downloads").hide();
+        } else {
+        	$("#income-downloads").show();
+        	$("#fexpense-downloads").hide();
+        	$("#expense-downloads").hide();
+        }
 
       } else {
         $(".page-title").text("{{ entity.name }}: "+'{{ _("Gastos") }}');
         $("#main-total .main-label").html('{{ _("Total gastos") }}'+executionLabelPostfix);
-        $("#income-downloads").hide();
-        $("#fexpense-downloads").hide();
-        $("#expense-downloads").show();
+        if ({{isUniversity}} && !{{universityBudgetFileDownload}}) {
+        	$("#income-downloads").hide();
+            $("#fexpense-downloads").hide();
+            $("#expense-downloads").hide();
+        } else {
+        	$("#income-downloads").hide();
+            $("#fexpense-downloads").hide();
+            $("#expense-downloads").show();
+        }
       }
 
       // We show financial/non-financial split only in the functional breakdown view.

@@ -2,7 +2,7 @@ from budgets import budgets
 from policies import policies, policies_show, programmes_show, income_articles_show, expense_articles_show
 from counties import counties, counties_show, counties_compare, counties_show_income, counties_show_expense, counties_show_fexpense
 from towns import towns, towns_show, towns_compare, towns_show_income, towns_show_expense, towns_show_fexpense
-from university import university, university_show, programmes_show_university, income_articles_show_university, expense_articles_show_university
+from university import university, university_show, university_dlc, programmes_show_university, income_articles_show_university, expense_articles_show_university
 from entities import entities_index, entities_show, entities_show_article, entities_show_policy
 from tax_receipt import tax_receipt
 from terms import terms

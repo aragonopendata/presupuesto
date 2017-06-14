@@ -30,6 +30,45 @@ def university_show(request, id, title, render_callback=None):
     c['economic_breakdown'] = BudgetBreakdown(['chapter', 'article', 'heading'])
     c['funding_breakdown'] = BudgetBreakdown(['source', 'fund'])
     c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
+    get_budget_breakdown(   "fc.policy = %s and e.id = %s", [ id, university_entity.id ],
+                            [ 
+                                c['functional_breakdown'], 
+                                c['economic_breakdown'],
+                                c['funding_breakdown'],
+                                c['institutional_breakdown']
+                            ])
+
+    # Additional data needed by the view
+    show_side = 'expense'
+    populate_university_stats(c)
+    populate_entity_descriptions(c, university_entity)
+    populate_years(c, 'functional_breakdown')
+    populate_budget_statuses(c, university_entity.id)
+    populate_area_descriptions(c, ['functional', 'funding', show_side])
+    _populate_csv_settings(c, 'university', id)
+    _set_show_side(c, show_side)
+    _set_full_breakdown(c, True)
+
+    c['name'] = c['descriptions']['functional'].get(c['policy_uid'])
+    c['title_prefix'] = c['name']
+    
+    c['draftBudgetYear'] = draftBudgetYear
+
+    return render(c, render_callback, 'university/show.html')
+
+def university_dlc(request, id, title, render_callback=None):
+    # Get request context
+    c = get_context(request, css_class='body-policies', title='')
+    c['policy_uid'] = id
+
+    # Retrieve the entity to display
+    university_entity = get_university_entity(c)
+
+    # Get the budget breakdown
+    c['functional_breakdown'] = BudgetBreakdown(['programme'])
+    c['economic_breakdown'] = BudgetBreakdown(['chapter', 'article', 'heading'])
+    c['funding_breakdown'] = BudgetBreakdown(['source', 'fund'])
+    c['institutional_breakdown'] = BudgetBreakdown([_year_tagged_institution, _year_tagged_department])
     get_budget_breakdown(   "ec.article = %s and e.id = %s", [ id, university_entity.id ],
                             [ 
                                 c['functional_breakdown'], 

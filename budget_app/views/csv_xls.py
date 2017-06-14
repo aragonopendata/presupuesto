@@ -3,7 +3,7 @@
 from django.http import HttpResponse
 from budget_app.models import Entity
 from budget_app.views import policies, policies_show, programmes_show, income_articles_show, expense_articles_show
-from budget_app.views import university, university_show, programmes_show_university, income_articles_show_university, expense_articles_show_university
+from budget_app.views import university, university_show, university_dlc, programmes_show_university, income_articles_show_university, expense_articles_show_university
 from budget_app.views import entities_index, entities_show, entities_show_article, entities_show_policy
 from helpers import get_context
 import csv
@@ -84,7 +84,7 @@ def functional_policy_breakdown(request, id, format):
     return policies_show(request, id, '', _generator("%s.funcional" % id, format, write_functional_breakdown))
 
 def functional_university_breakdown(request, id, format):
-    return university_show(request, id, '', _generator("%s.funcional" % id, format, write_functional_breakdown))
+    return university_dlc(request, id, '', _generator("%s.funcional" % id, format, write_functional_breakdown))
 
 def functional_article_breakdown(request, id, format):
     return expense_articles_show(request, id, format, _generator("%s.economica" % id, format, write_entity_functional_breakdown))
@@ -115,7 +115,7 @@ def economic_policy_breakdown(request, id, format):
     return policies_show(request, id, '', _generator("%s.economica" % id, format, write_economic_breakdown))
 
 def economic_university_breakdown(request, id, format):
-    return university_show(request, id, '', _generator("%s.economica" % id, format, write_economic_breakdown))
+    return university_dlc(request, id, '', _generator("%s.economica" % id, format, write_economic_breakdown))
 
 def write_detailed_economic_breakdown(c, writer):
     writer.writerow(['#Año', 'Id Capítulo', 'Nombre Capítulo', 'Id Artículo', 'Nombre Artículo', 'Id Subconcepto', 'Nombre Subconcepto', 'Presupuesto Gastos', 'Gastos Reales'])
@@ -187,7 +187,7 @@ def funding_policy_breakdown(request, id, format):
     return policies_show(request, id, '', _generator("%s.financiacion" % id, format, write_funding_breakdown))
 
 def funding_university_breakdown(request, id, format):
-    return university_show(request, id, '', _generator("%s.financiacion" % id, format, write_funding_breakdown))
+    return university_dlc(request, id, '', _generator("%s.financiacion" % id, format, write_funding_breakdown))
 
 def funding_programme_breakdown(request, id, format):
     return programmes_show(request, id, '', _generator("%s.financiacion" % id, format, write_funding_breakdown))
@@ -218,7 +218,7 @@ def institutional_policy_breakdown(request, id, format):
     return policies_show(request, id, '', _generator("%s.organica" % id, format, write_institutional_breakdown))
 
 def institutional_university_breakdown(request, id, format):
-    return university_show(request, id, '', _generator("%s.organica" % id, format, write_institutional_breakdown))
+    return university_dlc(request, id, '', _generator("%s.organica" % id, format, write_institutional_breakdown))
 
 def institutional_programme_breakdown(request, id, format):
     return programmes_show(request, id, '', _generator("%s.organica" % id, format, write_institutional_breakdown))

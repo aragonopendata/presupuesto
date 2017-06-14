@@ -8,6 +8,7 @@ urlLicenseRepo = 'https://github.com/aragonopendata/presupuesto/blob/master/LICE
 urlInstallRepo = 'https://github.com/aragonopendata/presupuesto/blob/master/INSTALL.md'
 urlCivioFundation = 'http://dondevanmisimpuestos.es/'
 draftBudgetYear = '0'
+universityBudgetFileDownload = 'false'
 
 # /reuse
 urlCatalogoPresupuesto = urlOpenData + appCkan + '/busqueda-libre/Presupuesto'

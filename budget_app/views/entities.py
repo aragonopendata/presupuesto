@@ -81,6 +81,7 @@ def entities_show(request, c, entity, render_callback=None):
     c['entity'] = entity
     
     c['draftBudgetYear'] = draftBudgetYear
+    c['universityBudgetFileDownload'] = universityBudgetFileDownload
     
     c['isUniversity'] = str(entity.level == settings.UNIVERSITY_ENTITY_LEVEL).lower()
     c['university_entity_level'] = settings.UNIVERSITY_ENTITY_LEVEL

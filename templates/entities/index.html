@@ -208,13 +208,23 @@
       if ( uiState.field == 'expense' ) {
         $(".page-title").text("{{ 'Comarcas' if is_county else 'Municipios' }}: Gastos");
         $("#map-info__actual_amount_label").text("Gastado:");
-        $("#income-downloads").hide();
-        $("#expense-downloads").show();
+        if ({{isUniversity}} && !{{universityBudgetFileDownload}}) {
+        	$("#income-downloads").hide();
+            $("#expense-downloads").hide();
+        } else {
+        	$("#income-downloads").hide();
+            $("#expense-downloads").show();
+        }
       } else {
         $(".page-title").text("{{ 'Comarcas' if is_county else 'Municipios' }}: Ingresos");
         $("#map-info__actual_amount_label").text("Ingresado:");
-        $("#income-downloads").show();
-        $("#expense-downloads").hide();
+        if ({{isUniversity}} && !{{universityBudgetFileDownload}}) {
+        	$("#income-downloads").hide();
+            $("#expense-downloads").hide();
+        } else {
+        	$("#income-downloads").show();
+            $("#expense-downloads").hide();
+        }
       }
 
       // Amend infobox based on selected formatting
