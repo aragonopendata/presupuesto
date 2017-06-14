@@ -83,6 +83,7 @@ def entities_show(request, c, entity, render_callback=None):
     c['draftBudgetYear'] = draftBudgetYear
     
     c['isUniversity'] = str(entity.level == settings.UNIVERSITY_ENTITY_LEVEL).lower()
+    c['university_entity_level'] = settings.UNIVERSITY_ENTITY_LEVEL
 
     return render(c, render_callback, 'entities/show.html')
 

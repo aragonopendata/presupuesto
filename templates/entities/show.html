@@ -71,7 +71,7 @@
 
 {% include 'shared/social_sharing.html' %}
 
-{% if isUniversity %}
+{% if entity.level == university_entity_level %}
 {% include 'shared/data_sources_university.html' %}
 {% else %}
 {% include 'shared/data_sources.html' %}
