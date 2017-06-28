@@ -339,11 +339,13 @@ class BudgetLoader:
     def load_execution_data_files(self, budget, path):
         filename = os.path.join(path, 'ejecucion_gastos.csv')
         print "Cargando ejecución de gastos de %s..." % filename
-        self.load_data_file_university(budget, filename, True, True)
+        #self.load_data_file_university(budget, filename, True, True)
+        self.load_data_file(budget, filename, True, True)
 
         filename = os.path.join(path, 'ejecucion_ingresos.csv')
         print "Cargando ejecución de ingresos de %s..." % filename
-        self.load_data_file_university(budget, filename, False, True)
+        #self.load_data_file_university(budget, filename, False, True)
+        self.load_data_file(budget, filename, False, True)
 
     # We first load all data lines, and then we process them. This became necessary at 
     # some point when had to deal with subtotals in incoming files, for example.
