@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - New section with the budgets of the University of Zaragoza.
 
+## [1.0.5] - 2017-08-17
+### Added
+- New link to the page of Junta de Comunidades de Castilla la Mancha.
+
 
 ## [1.0.4] - 2017-05-22
 ### Added
