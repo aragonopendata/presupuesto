@@ -54,6 +54,7 @@ def policies_show(request, id, title, render_callback=None):
     c['title_prefix'] = c['name']
     
     c['draftBudgetYear'] = draftBudgetYear
+    c['draftBudgetYear_2'] = draftBudgetYear_2
 
     return render(c, render_callback, 'policies/show.html')
 
@@ -113,6 +114,7 @@ def programmes_show(request, id, title, render_callback=None):
     _set_full_breakdown(c, True)
     
     c['draftBudgetYear'] = draftBudgetYear
+    c['draftBudgetYear_2'] = draftBudgetYear_2
 
     return render(c, render_callback, 'policies/show.html')
 
@@ -177,6 +179,7 @@ def articles_show(request, id, title, show_side, render_callback=None):
     _set_full_breakdown(c, True)
     
     c['draftBudgetYear'] = draftBudgetYear
+    c['draftBudgetYear_2'] = draftBudgetYear_2
 
     return render(c, render_callback, 'policies/show.html')
 

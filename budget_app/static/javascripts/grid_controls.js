@@ -25,7 +25,7 @@ function initSlider(selector, years, callback, startValue, labels) {
       to: mostRecentYear + 0.01,
       step: 1,
       //scale: labels || years,
-      scale: [2006, '|', 2008, '|', 2010, '|', 2012, '|', 2014, '|', 2016, '|', 2018, '|'],
+      scale: [2006, '|', 2008, '|', 2010, '|', 2012, '|', 2014, '|', 2016, '|', 2018, '|', 2020, '|'],
       format: { format: '####', locale: 'es' }, 
       skin: "presus",
       callback: callback

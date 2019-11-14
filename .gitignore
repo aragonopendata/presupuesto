@@ -3,6 +3,7 @@ db
 .DS_Store
 /static
 local_settings*py
+/project/settings.py
 fabfile.*
 presupuesto-*
 *config.codekit

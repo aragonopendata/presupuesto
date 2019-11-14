@@ -18,5 +18,6 @@ def tax_receipt(request):
         c['breakdown'].add_item(c['latest_budget'].name(), item)
         
     c['draftBudgetYear'] = draftBudgetYear
+    c['draftBudgetYear_2'] = draftBudgetYear_2
 
     return render_to_response('tax_receipt/index.html', c)

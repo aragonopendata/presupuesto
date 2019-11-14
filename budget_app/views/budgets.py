@@ -36,5 +36,6 @@ def budgets(request):
     c['expense_nodes'] = json.dumps(settings.OVERVIEW_EXPENSE_NODES)
 
     c['draftBudgetYear'] = draftBudgetYear
+    c['draftBudgetYear_2'] = draftBudgetYear_2
     
     return render_to_response('budgets/index.html', c)

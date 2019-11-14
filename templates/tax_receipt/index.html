@@ -23,6 +23,10 @@
     Prorroga del presupuesto del ejercicio 2018 con las condiciones fijadas en la ORDEN HAP/2068/2018, de 21 de diciembre, por la que se determinan las condiciones a las que ha de ajustarse la prórroga del Presupuesto de la Comunidad Autónoma de Aragón de 2018, hasta la aprobación de la Ley de Presupuestos para 2019
 </div>
 
+<div class="alert inline-block note" id="draftBudgetMessage_2" display="none">
+  Datos con el Proyecto de Ley de Presupuestos de la Comunidad Autónoma de Aragón para el Ejercicio 2020
+</div>
+
 <div class="box box-tax">
   <div class="box-title">
     <h2 class="tcenter">{{ latest_budget.year }}</h2>
@@ -36,6 +40,7 @@
 {% include 'shared/policy_paths.html' %}
 <script>
 var budgetYear = {{ draftBudgetYear }};
+var budgetYear_2 = {{ draftBudgetYear_2 }};
   $(function () {
     // Display amount as expense per capita
     function calculatePersonalTax(row, cell, value, columnDef, dataContext) {
@@ -82,9 +87,14 @@ var budgetYear = {{ draftBudgetYear }};
 	function showIfDraftBudget() {
 		var year = {{ latest_budget.year }};
 		if (year == budgetYear) {
-	  		$("#draftBudgetMessage").show();
+      $("#draftBudgetMessage_2").hide();
+      $("#draftBudgetMessage").show();
+    } else if (year == budgetYear_2) {
+      $("#draftBudgetMessage").hide();
+      $("#draftBudgetMessage_2").show();
 		} else {
-			$("#draftBudgetMessage").hide();
+      $("#draftBudgetMessage").hide();
+      $("#draftBudgetMessage_2").hide();
 		} 
     }
 

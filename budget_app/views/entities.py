@@ -74,6 +74,7 @@ def entities_show(request, c, entity, render_callback=None):
     c['entity'] = entity
     
     c['draftBudgetYear'] = draftBudgetYear
+    c['draftBudgetYear_2'] = draftBudgetYear_2
 
     return render(c, render_callback, 'entities/show.html')
 
@@ -143,6 +144,7 @@ def entities_show_policy(request, c, entity, id, title, render_callback=None):
     c['title_prefix'] = c['name']
     
     c['draftBudgetYear'] = draftBudgetYear
+    c['draftBudgetYear_2'] = draftBudgetYear_2
 
     return render(c, render_callback, 'policies/show.html')
 
@@ -216,6 +218,7 @@ def entities_show_article(request, c, entity, id, title, show_side, render_callb
     c['entity'] = entity
 
     c['draftBudgetYear'] = draftBudgetYear
+    c['draftBudgetYear_2'] = draftBudgetYear_2
 
     return render(c, render_callback, 'policies/show.html')
 
