@@ -264,8 +264,8 @@ type="text/javascript"></script>
                             "{{ 'D_COMARCA' if is_county else 'D_MUNI_INE' }}",
                             stats);
     map.initializeOnLoad(getUIState());
-    //map.onHover(onHover);
-    //map.onClick(onClick);
+    map.onHover(onHover);
+    map.onClick(onClick);
     //redraw();
   });
 </script>

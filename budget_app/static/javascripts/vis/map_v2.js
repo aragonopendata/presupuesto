@@ -45,6 +45,16 @@ function BudgetMap(map, dataGrid,
 
     function addOverlay(obj, map, regions) {
         geoJson = topojson.feature(regions, regions.objects[divisionName]);
+        var values = getAllAmounts(years, uiState.field, uiState.format);
+        
+        color = d3.scale.linear().domain(
+            [d3.quantile(values, .05),
+            d3.quantile(values, .3),
+            d3.quantile(values, .5),
+            d3.quantile(values, .7),
+            d3.quantile(values, .95)])
+            .range(["#F2F294","#c2e699","#78c679","#31a354","#006837"])
+            .clamp(true);
         var layer = d3.select(map.getPanes().overlayPane)
             .append("div")
             .attr("class", "SvgOverlay");
@@ -65,7 +75,8 @@ function BudgetMap(map, dataGrid,
             .style("opacity", 0.8)
             .style("stroke","black")
             .style("fill", function(d){
-                return getColour(getAdminDivisionExpense(d));
+                aColor = color(getAdminDivisionExpense(d));
+                return (aColor===undefined || aColor=='#NaNNaNNaN') ? 'grey' : aColor;
             })
             .style("cursor", "pointer")
             .on("mouseover", function(d){
@@ -74,20 +85,77 @@ function BudgetMap(map, dataGrid,
             .on("click", function(d){
                 dispatch.click(getDivisionName(d), getAdminDivisionExpense(d));
             });
+
+        // We use quantiles to spread out the color categories: a purely linear scale is a bad idea
+        // when there are a few outliers at the top, as is the case often (f.ex. a capital city/region).
+        // We could cover the whole value domain here, but cropping the extremes gives better results.
+        color.domain([
+            d3.quantile(values, .05),
+            d3.quantile(values, .3),
+            d3.quantile(values, .5),
+            d3.quantile(values, .7),
+            d3.quantile(values, .95)
+        ]);
+    
+        // In the original d3.js example, the legend was drawn using the color domain items directly.
+        // However, in that case the color scale was a threshold one, not linear like ours. So what
+        // we're going to do is use the mid-points of the domain ranges above, which is more accurate.
+        // (Ideally we'd have a gradient instead of a block of colors)
+        var midPoints = [
+            (color.domain()[0] + color.domain()[1]) / 2,
+            (color.domain()[1] + color.domain()[2]) / 2,
+            (color.domain()[2] + color.domain()[3]) / 2,
+            (color.domain()[3] + color.domain()[4]) / 2
+        ];
+    
+        // Draw the legend
+        // We crop on the top to cope with outliers; otherwise tick values would pile up at the bottom.
+        var y = d3.scale.linear()
+            .domain([d3.quantile(values, .01), d3.quantile(values, .93)])
+            .range([0, 240]);
+        var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("right")
+            .tickSize(13)
+            .tickValues(midPoints)
+            .tickFormat(function(d) {
+                return format(d, uiState.format);
+            });
+    
+        var g = d3.select(mapLegendId).html("").append("svg").append("g")
+            .attr("transform", "translate(0,10)");
+    
+        g.selectAll("rect")
+            .data(color.range().map(function(d, i) {
+                return {
+                y0: i ? y(midPoints[i - 1]) : y.range()[0],
+                y1: i < midPoints.length ? y(midPoints[i]) : y.range()[1],
+                z: d
+                };
+            }))
+            .enter().append("rect")
+            .attr("width", 8)
+            .attr("y", function(d) { return d.y0; })
+            .attr("height", function(d) { return d.y1 - d.y0; })
+            .style("fill", function(d) { return d.z; })
+            .style("opacity", "0.5");
+    
+        g.call(yAxis);
     }
 
     function getColour(value) {
+        let auxValue = value/100000000;
         result = '#grey';
-        if (value >= (5.1 * 1000000)){
-            result = '#F2F294';
-        } else if (value >= (3.8 * 1000000)) {
-            result = '#c2e699';
-        } else if (value >= (2.9 * 1000000)) {
-            result = '#78c679';
-        } else if (value >= (2.0 * 1000000)) {
-            result = '#31a354';
-        } else {
+        if (auxValue >= 5.1) {
             result = '#006837';
+        } else if (auxValue >= 3.8) {
+            result = '#31a354';
+        } else if (auxValue >= 2.9) {
+            result = '#78c679';
+        } else if (auxValue >= 2.0) {
+            result = '#c2e699';
+        } else if (auxValue < 2.0) {
+            result = '#F2F294';
         }
 
         return result;
@@ -122,9 +190,9 @@ function BudgetMap(map, dataGrid,
     }
 
     function transformValue(value, format, year, stats, entity_id) {
-        if ( value === undefined )
+        if ( value === undefined ) {
           return undefined;
-    
+        }
         switch (format) {
           case "nominal":
             return value;
@@ -136,6 +204,27 @@ function BudgetMap(map, dataGrid,
             var population = getPopulationFigure(stats, year, entity_id);
             return adjustInflation(value, stats, year) / population;
         }
+    }
+
+    function format(value, format) {
+        switch (format) {
+            case "nominal":
+                return formatSimplifiedAmount(value);
+            case "real":
+                return formatSimplifiedAmount(value);
+            case "percentage":
+                return formatPercent(value).replace(".",",");
+            case "per_capita":
+                return formatDecimal(value/100, 1) + " €";
+        }
+    }
+
+    this.onHover = function(f) {
+        dispatch.on("hover", f);
+    }
+
+    this.onClick = function(f) {
+        dispatch.on("click", f);
     }
 
 }
