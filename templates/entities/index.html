@@ -188,6 +188,7 @@
     function redraw() {
       // Avoid unnecessary redrawings (the slider is trigger happy)
       var newUIState = getUIState();
+      var firstLoad = uiState;
       if ( uiState && sameUIState(uiState, newUIState) ) return;
       uiState = newUIState;
 
@@ -232,7 +233,9 @@
       var year = $("#year-selection").val();
 
       // Redraw map
-      map.reset(getUIState());
+      if (firstLoad) {
+        map.reset(getUIState());
+      }
       updateInfobox();
     }
 

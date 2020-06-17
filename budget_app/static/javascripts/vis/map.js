@@ -31,7 +31,7 @@ function BudgetMap(map, dataGrid,
       //Create the map
       map = L.map("map-canvas", {
           zoomControl: false,
-          fullscreenControl: true
+          dragging: false
       }).setView([41.395, 0], 8);
 
       //Create the base layer
@@ -83,7 +83,6 @@ function BudgetMap(map, dataGrid,
       divisions = adminDivisions.selectAll("path").data(geoJson.features);
       divisions.enter().append("svg:path")
           .attr("d", path)
-          .style("opacity", 0.6)
           .style("stroke","white")
           .style("fill", function(d){
               aColor = color(getAdminDivisionExpense(d));
