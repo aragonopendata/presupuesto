@@ -24,8 +24,6 @@ function initSlider(selector, years, callback, startValue, labels) {
       // JSlider gets stuck if from==to (i.e. only one year), so workaround that #wtf
       to: mostRecentYear + 0.01,
       step: 1,
-      //scale: labels || years,
-      scale: [2006, '|', 2008, '|', 2010, '|', 2012, '|', 2014, '|', 2016, '|', 2018, '|', 2020, '|'],
       format: { format: '####', locale: 'es' }, 
       skin: "presus",
       callback: callback
