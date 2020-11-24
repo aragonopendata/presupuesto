@@ -363,33 +363,34 @@
       {% endif %}
     };
 
-{% if programme is not defined and show_side != 'income' %}
-    var chartWidth = $('#functionalChartContainer').width();
-    var functionalAreas = {{ functional_areas|safe }};
-    setupGraph( chartWidth, 
-                '#functionalChartContainer', 
-                functionalBreakdown,
-                functionalAreas);
-{% endif %}
+{% if not request.user_agent.is_mobile %}
+  {% if programme is not defined and show_side != 'income' %}
+      var chartWidth = $('#functionalChartContainer').width();
+      var functionalAreas = {{ functional_areas|safe }};
+      setupGraph( chartWidth, 
+                  '#functionalChartContainer', 
+                  functionalBreakdown,
+                  functionalAreas);
+  {% endif %}
 
-{% if full_breakdown or article %}
-    if ( chartWidth == undefined )
-      var chartWidth = $('#economicChartContainer').width();
-    var economicAreas = {{ (expense_areas if show_side=='expense' else income_areas)|safe }};
-    setupGraph( chartWidth, 
-                '#economicChartContainer', 
-                economicBreakdown,
-                economicAreas);
-{% endif %}
+  {% if full_breakdown or article %}
+      if ( chartWidth == undefined )
+        var chartWidth = $('#economicChartContainer').width();
+      var economicAreas = {{ (expense_areas if show_side=='expense' else income_areas)|safe }};
+      setupGraph( chartWidth, 
+                  '#economicChartContainer', 
+                  economicBreakdown,
+                  economicAreas);
+  {% endif %}
 
-{% if full_breakdown %}
-    var fundingAreas = {{ funding_areas|safe }};
-    setupGraph( chartWidth, 
-                '#fundingChartContainer', 
-                fundingBreakdown,
-                fundingAreas);
+  {% if full_breakdown %}
+      var fundingAreas = {{ funding_areas|safe }};
+      setupGraph( chartWidth, 
+                  '#fundingChartContainer', 
+                  fundingBreakdown,
+                  fundingAreas);
+  {% endif %}
 {% endif %}
-
 
 {% if show_treemap %}
     function onPolicySelected(event, d) {
