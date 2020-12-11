@@ -45,7 +45,7 @@ DATABASES = {
         'NAME': ENV.get('DATABASE_NAME'),                   # Or path to database file if using sqlite3.
         'USER': ENV.get('DATABASE_USER'),                   # Not used with sqlite3.
         'PASSWORD': ENV.get('DATABASE_PASSWORD'),           # Not used with sqlite3.
-        'HOST': 'localhost',                        # Set to empty string for localhost. Not used with sqlite3.
+        'HOST': 'bov-aodback-01.aragon.local',                        # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                                 # Set to empty string for default. Not used with sqlite3.
     }
 }
@@ -142,13 +142,17 @@ TEMPLATE_LOADERS = (
 
 if DEBUG:
     MIDDLEWARE_CLASSES = (
+        'django_user_agents.middleware.UserAgentMiddleware',
+        'project.middleware.SmartUpdateCacheMiddleware',
         'django.middleware.common.CommonMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware', #
         'django.middleware.csrf.CsrfViewMiddleware', #
 #        'django.middleware.locale.LocaleMiddleware', #
+	'django.middleware.cache.FetchFromCacheMiddleware'
     )
 else:
     MIDDLEWARE_CLASSES = (
+        'django_user_agents.middleware.UserAgentMiddleware',
         'project.middleware.SmartUpdateCacheMiddleware',
         'django.middleware.common.CommonMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware', #
@@ -176,6 +180,7 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
     # 'django.contrib.auth',
+    'django_user_agents',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     # 'django.contrib.sites',
@@ -263,3 +268,7 @@ CACHES = ENV.get('CACHES', DEFAULT_CACHES)
 CACHE_MIDDLEWARE_ALIAS = 'default'
 CACHE_MIDDLEWARE_SECONDS = 90 * 60 * 60 * 24  # 90 Days: data doesn't actually change
 CACHE_MIDDLEWARE_KEY_PREFIX = 'budget_app'
+
+# Name of cache backend to cache user agents. If it not specified default
+# cache alias will be used. Set to `None` to disable caching.
+USER_AGENTS_CACHE = 'default'

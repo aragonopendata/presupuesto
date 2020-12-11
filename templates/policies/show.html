@@ -27,7 +27,7 @@
 
 
 <div class="alert inline-block note" id="draftBudgetMessage" display="none">
-    Prorroga del presupuesto del ejercicio 2018 con las condiciones fijadas en la ORDEN HAP/2068/2018, de 21 de diciembre, por la que se determinan las condiciones a las que ha de ajustarse la prórroga del Presupuesto de la Comunidad Autónoma de Aragón de 2018, hasta la aprobación de la Ley de Presupuestos para 2019
+	Prorroga del presupuesto del ejercicio 2018 con las condiciones fijadas en la ORDEN HAP/2068/2018, de 21 de diciembre, por la que se determinan las condiciones a las que ha de ajustarse la prórroga del Presupuesto de la Comunidad Autónoma de Aragón de 2018, hasta la aprobación de la Ley de Presupuestos para 2019
 </div>
 
 <div class="alert inline-block note" id="draftBudgetMessage_2" display="none">
@@ -363,34 +363,37 @@
       {% endif %}
     };
 
-{% if not request.user_agent.is_mobile %}
-  {% if programme is not defined and show_side != 'income' %}
-      var chartWidth = $('#functionalChartContainer').width();
-      var functionalAreas = {{ functional_areas|safe }};
-      setupGraph( chartWidth, 
-                  '#functionalChartContainer', 
-                  functionalBreakdown,
-                  functionalAreas);
-  {% endif %}
+$('#functionalChartContainer').addClass("mobile");
+$('#economicChartContainer').addClass("mobile");
+$('#fundingChartContainer').addClass("mobile");
 
-  {% if full_breakdown or article %}
-      if ( chartWidth == undefined )
-        var chartWidth = $('#economicChartContainer').width();
-      var economicAreas = {{ (expense_areas if show_side=='expense' else income_areas)|safe }};
-      setupGraph( chartWidth, 
-                  '#economicChartContainer', 
-                  economicBreakdown,
-                  economicAreas);
-  {% endif %}
+	{% if programme is not defined and show_side != 'income' %}
+	    var chartWidth = $('#functionalChartContainer').width();
+	    var functionalAreas = {{ functional_areas|safe }};
+	    setupGraph( chartWidth,
+        	        '#functionalChartContainer',
+                	functionalBreakdown,
+	                functionalAreas);
+	{% endif %}
 
-  {% if full_breakdown %}
-      var fundingAreas = {{ funding_areas|safe }};
-      setupGraph( chartWidth, 
-                  '#fundingChartContainer', 
-                  fundingBreakdown,
-                  fundingAreas);
-  {% endif %}
-{% endif %}
+	{% if full_breakdown or article %}
+	    if ( chartWidth == undefined )
+	      var chartWidth = $('#economicChartContainer').width();
+	    var economicAreas = {{ (expense_areas if show_side=='expense' else income_areas)|safe }};
+	    setupGraph( chartWidth, 
+	                '#economicChartContainer', 
+	                economicBreakdown,
+	                economicAreas);
+	{% endif %}
+
+	{% if full_breakdown %}
+	    var fundingAreas = {{ funding_areas|safe }};
+	    setupGraph( chartWidth, 
+	                '#fundingChartContainer', 
+	                fundingBreakdown,
+	                fundingAreas);
+	{% endif %}
+
 
 {% if show_treemap %}
     function onPolicySelected(event, d) {

@@ -29,7 +29,7 @@ class AragonBulkBudgetLoader:
         self.parse_budget_data(budget_items, level, functional_filename)
 
         self.load_functional_area_fix(path)
-        
+
         # Now load the data one budget at a time
         for budget_id in budget_items:
             self.load_budget(level, path, budget_id.entity_id, budget_id.year, budget_items[budget_id])
@@ -126,8 +126,7 @@ class AragonBulkBudgetLoader:
             # Convert it to the XBRL data format, and store it for further processing.
             # Note that we only use this data if the more detailed one coming via XBRL
             # (which we have loaded already in this very same script) does not exist.
-            if (entity_id != '0'):
-                budget_id = AragonBulkBudgetLoader.BudgetId(entity_id, year)
+            budget_id = AragonBulkBudgetLoader.BudgetId(entity_id, year)
             if not budget_id in budget_items:
                 budget_items[budget_id] = []
                 budget_items[budget_id].extend(self.non_xbrl_summary_as_lines(income_budget, 'I', 'PRESUPUESTO'))
