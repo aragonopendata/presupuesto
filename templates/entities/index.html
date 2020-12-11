@@ -2,8 +2,12 @@
 {% block extra_javascript %}
 <script src="{{ STATIC_URL }}javascripts/vis/d3.v3.min.js"></script>
 <script src="{{ STATIC_URL }}javascripts/vis/topojson.v1.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzahdVZ16o6s_vFx-g3Scy8aGlTc5kIFc&sensor=false&language=es"></script>
-type="text/javascript"></script>
+<link rel="stylesheet" href="{{ STATIC_URL }}javascripts/leaflet/leaflet.css"/>
+<script src="{{ STATIC_URL }}javascripts/leaflet/leaflet.js"></script>
+
+<script src='{{ STATIC_URL }}javascripts/mapbox/mapbox-gl.js'></script>
+<link href='{{ STATIC_URL }}stylesheets/mapbox/mapbox-gl.css' rel='stylesheet' />
+
 <script src="{{ STATIC_URL }}javascripts/vis/map.js"></script>
 {% endblock %}
 {% block content %}
@@ -184,6 +188,7 @@ type="text/javascript"></script>
     function redraw() {
       // Avoid unnecessary redrawings (the slider is trigger happy)
       var newUIState = getUIState();
+      var firstLoad = uiState;
       if ( uiState && sameUIState(uiState, newUIState) ) return;
       uiState = newUIState;
 
@@ -228,7 +233,9 @@ type="text/javascript"></script>
       var year = $("#year-selection").val();
 
       // Redraw map
-      map.draw(uiState);
+      if (firstLoad) {
+        map.reset(getUIState());
+      }
       updateInfobox();
     }
 
@@ -251,7 +258,7 @@ type="text/javascript"></script>
     $("#"+state.field).click();
 
     // Create map
-    var map = new BudgetMap(economicGridData, 
+    var map = new BudgetMap(map, economicGridData, 
                             years,
                             "#map-canvas",
                             "#map-legend",
@@ -262,7 +269,6 @@ type="text/javascript"></script>
     map.initializeOnLoad(getUIState());
     map.onHover(onHover);
     map.onClick(onClick);
-
     redraw();
   });
 </script>

@@ -20,13 +20,13 @@
 <p class="footnote tcenter" id="footnote-receipt"><span class="asterisk">*</span> {{ _('El cálculo está basado en aproximaciones medias y ni sustituye ni complementa a las declaraciones tributarias oficiales. La aproximación incluye IRPF, IVA e Impuestos Especiales, pero no la Seguridad Social. Para realizar el cálculo hemos supuesto lo siguiente: todos tus ingresos provienen de rendimientos del trabajo o de actividades económicas; tienes un consumo medio de gasolina, alcohol y tabaco; al final del año ahorras el 10% de tus ingresos; y tienes reducciones y gastos deducibles por un total de 3000€ en el IRPF') }}.</p>
 
 <div class="alert inline-block note" id="draftBudgetMessage" display="none">
-    Prorroga del presupuesto del ejercicio 2018 con las condiciones fijadas en la ORDEN HAP/2068/2018, de 21 de diciembre, por la que se determinan las condiciones a las que ha de ajustarse la prórroga del Presupuesto de la Comunidad Autónoma de Aragón de 2018, hasta la aprobación de la Ley de Presupuestos para 2019
+	Prorroga del presupuesto del ejercicio 2018 con las condiciones fijadas en la ORDEN HAP/2068/2018, de 21 de diciembre, por la que se determinan las condiciones a las que ha de ajustarse la prórroga del Presupuesto de la Comunidad Autónoma de Aragón de 2018, hasta la aprobación de la Ley de Presupuestos para 2019
 </div>
 
 <div class="alert inline-block note" id="draftBudgetMessage_2" display="none">
-  Datos con el Proyecto de Ley de Presupuestos de la Comunidad Autónoma de Aragón para el Ejercicio 2021
-</div>
-
+    Datos con el Proyecto de Ley de Presupuestos de la Comunidad Autónoma de Aragón para el Ejercicio 2021
+  </div>
+	
 <div class="box box-tax">
   <div class="box-title">
     <h2 class="tcenter">{{ latest_budget.year }}</h2>
@@ -111,6 +111,7 @@ var budgetYear_2 = {{ draftBudgetYear_2 }};
     $('#btn-recalculate').click(redrawGrid);
     $('.form-user-incomings').submit(function() { redrawGrid(); return false; });
     redrawGrid();
+    showIfDraftBudget();
   })
 </script>
 {% endblock %}

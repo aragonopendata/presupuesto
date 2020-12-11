@@ -4,14 +4,15 @@
   </div>
   <div class="box-content">
     <ul class="source-list">
-      <li><a href="https://opendata.aragon.es" target="_blank">Datos presupuestarios · <b>Aragón Open Data</b></a></li>
-      <li><a href="https://opendata.aragon.es/catalogo/cifras-de-poblacion-revision-del-padron-municipal" target="_blank">Datos de población · <b>Instituto Aragonés de Estadística (IAEST)</b></a></li>
+      <li><a href="http://opendata.aragon.es" target="_blank">Datos presupuestarios · <b>Aragón Open Data</b></a></li>
+      <li><a href="http://opendata.aragon.es/catalogo/cifras-de-poblacion-revision-del-padron-municipal" target="_blank">Datos de población · <b>Instituto Aragonés de Estadística (IAEST)</b></a></li>
       <li><a href="https://www.aragon.es/-/indice-de-precios-de-consumo" target="_blank">Datos de inflación (Medias anuales de IPC) · <b>Instituto Aragonés de Estadística (IAEST).</b></a></li>
     </ul>
     <div class="alert inline-block note">
       <p class="title tupper">{{ _('Nota') }}</p>
       <ul>
-        <li>Los ingresos y gastos mostrados incluyen tanto a la Administración General de la Diputación General de Aragón como a los Organismos Autónomos IASS, INAEM, SALUD, IAM, IAJU y a las Entidades de Derecho Público AST, IAA, INAGA, ACES, Banco de Sangre, CITA e IACS.</li>
+      	<li><b>Aclaración sobre Gastos Financieros:</b> En las páginas principales de <a href="{{ url('budget_app.views.policies') }}">Gastos Financieros</a> e <a href="{{ url('budget_app.views.budgets') }}">Ingresos y Gastos en el Gobierno de Aragón</a> no se reflejan los gastos financieros <i>(Capítulo 8 Activos Financieros y 9 Pasivos Financieros)</i> porque el techo de gasto se acuerda sin estos gastos financieros. Para conocer con detalle estos gastos se debe acceder a cada partida.</li>
+      	<li>Los ingresos y gastos mostrados incluyen tanto a la Administración General de la Diputación General de Aragón como a los Organismos Autónomos IASS, INAEM, SALUD, IAM, IAJU y a las Entidades de Derecho Público AST, IAA, INAGA, ACES, Banco de Sangre, CITA e IACS.</li>
         <li>El ajuste de la inflación se realiza a <b>1 de enero de {{ last_inflation_year }}</b>. La tasa de inflación anual es la media de la tasa interanual de los doce meses del año.</li>
         <li>Los presupuestos comarcales y municipales se actualizan con datos trimestrales a fechas 1 de enero, abril, julio y octubre.</li>
       </ul>
