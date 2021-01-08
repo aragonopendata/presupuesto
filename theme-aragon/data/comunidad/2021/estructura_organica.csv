@@ -1,0 +1,651 @@
+EJERCICIO;CENTRO GESTOR;DESCRIPCION CORTA;DESCRIPCION LARGA
+2021;ADGA;ADGA;ADGA
+2021;01;Cortes de Aragón;Cortes de Aragón
+2021;0100;Ingresos de las Cortes de Aragón;Ingresos de las Cortes de Aragón
+2021;01000;Ingresos de las Cortes de Aragón;Ingresos de las Cortes de Aragón
+2021;0101;Cortes de Aragón;Cortes de Aragón
+2021;01010;Cortes de Aragón;Cortes de Aragón
+2021;0102;El Justicia de Aragón;El Justicia de Aragón
+2021;01020;El Justicia de Aragón;El Justicia de Aragón
+2021;0103;Cámara de Cuentas de Aragón;Cámara de Cuentas de Aragón
+2021;01030;Cámara de Cuentas de Aragón;Cámara de Cuentas de Aragón
+2021;02;Presidencia del Gobierno de Aragón;Presidencia del Gobierno de Aragón
+2021;0200;Ingresos de Presidencia Gobierno Aragón;Ingresos de Presidencia Gobierno Aragón
+2021;02000;Ingresos de Presidencia del Gobierno;Ingresos de Presidencia del Gobierno
+2021;0201;Secretaría General de la Presidencia;Secretaría General de la Presidencia
+2021;02010;Secretaría General de la Presidencia;Secretaría General de la Presidencia
+2021;03;Consejo Consultivo de Aragón;Consejo Consultivo de Aragón
+2021;0300;Ingresos Consejo Consultivo de Aragón;Ingresos Consejo Consultivo de Aragón
+2021;03000;Ingresos Consejo Consultivo de Aragón;Ingresos Consejo Consultivo de Aragón
+2021;0301;Consejo Consultivo de Aragón;Consejo Consultivo de Aragón
+2021;03010;Consejo Consultivo de Aragón;Consejo Consultivo de Aragón
+2021;04;Tribunal Admtvo. de Contratos Públicos de Aragón;Tribunal Admtvo. de Contratos Públicos de Aragón
+2021;0400;Ingr.Tribunal Admtvo. de Contr. Públicos de Aragón;Ingr.Tribunal Admtvo. de Contr. Públicos de Aragón
+2021;04000;Ingr. Tribunal Admtvo. de Cont. Públicos de Aragón;Ingr. Tribunal Admtvo. de Cont. Públicos de Aragón
+2021;0401;Tribunal Admtvo. de Contratos Públicos de Aragón;Tribunal Admtvo. de Contratos Públicos de Aragón
+2021;04010;Tribunal Admtvo. de Contratos Públicos de Aragón;Tribunal Admtvo. de Contratos Públicos de Aragón
+2021;0402;No operativo;No operativo
+2021;04020;No operativo;No operativo
+2021;05;Vicepresidencia del Gobierno;Vicepresidencia del Gobierno
+2021;0500;Ingresos Vicepresidencia del Gobierno;Ingresos Vicepresidencia del Gobierno
+2021;05000;Ingresos Vicepresidencia del Gobierno;Ingresos Vicepresidencia del Gobierno
+2021;0502;D. G. Desarrollo Estatutario y Programas Europeos;D. G. Desarrollo Estatutario y Programas Europeos
+2021;05020;D. G. Desarrollo Estatutario y Programas Europeos;D. G. Desarrollo Estatutario y Programas Europeos
+2021;09;Consejo Económico y Social de Aragón;Consejo Económico y Social de Aragón
+2021;0900;Ingresos Consejo Ec. y Social de Aragón;Ingresos Consejo Ec. y Social de Aragón
+2021;09000;Ingresos Consejo Ec. y Social de Aragón;Ingresos Consejo Ec. y Social de Aragón
+2021;0901;Consejo Económico y Social de Aragón;Consejo Económico y Social de Aragón
+2021;09010;Consejo Económico y Social de Aragón;Consejo Económico y Social de Aragón
+2021;10;Presidencia y Relaciones Institucionales;Presidencia y Relaciones Institucionales
+2021;1000;Ingresos de Presidencia y Relaciones Institucional;Ingresos de Presidencia y Relaciones Institucional
+2021;10000;Ingresos de Presidencia y Relaciones Institucional;Ingresos de Presidencia y Relaciones Institucional
+2021;1001;S.G.T. de Presidencia y Rel. Institucionales;S.G.T. de Presidencia y Rel. Institucionales
+2021;10010;S.G.T. de Presidencia y Rel. Institucionales;S.G.T. de Presidencia y Rel. Institucionales
+2021;1002;Dirección General de Servicios Jurídicos;Dirección General de Servicios Jurídicos
+2021;10020;Dirección General de Servicios Jurídicos;Dirección General de Servicios Jurídicos
+2021;1003;Dirección General  de Administración Local;Dirección General  de Administración Local
+2021;10030;Dirección General  de Administración Local;Dirección General  de Administración Local
+2021;1004;Dirección General  Relaciones Institucionales;Dirección General  Relaciones Institucionales
+2021;10040;Dirección General Relaciones Institucionales;Dirección General Relaciones Institucionales
+2021;1005;Dirección General de Justicia;Dirección General de Justicia
+2021;10050;Dirección General de Justicia;Dirección General de Justicia
+2021;1006;Delegación Territorial de Huesca;Delegación Territorial de Huesca
+2021;10060;Delegación Territorial de Huesca;Delegación Territorial de Huesca
+2021;1007;Delegación Territorial de Teruel;Delegación Territorial de Teruel
+2021;10070;Delegación Territorial de Teruel;Delegación Territorial de Teruel
+2021;1008;Dirección General de Interior y Protección Civil;Dirección General de Interior y Protección Civil
+2021;10080;Dirección General  de Interior y Protección Civil;Dirección General de Interior y Protección Civil
+2021;11;Ciudadanía y Derechos Sociales;Ciudadanía y Derechos Sociales
+2021;1100;Ingresos Ciudadanía y Derechos Sociales;Ingresos Ciudadanía y Derechos Sociales
+2021;11000;Ingresos Ciudadanía y Derechos Sociales;Ingresos Ciudadanía y Derechos Sociales
+2021;1101;S.G.T. de Ciudadanía y Derechos Sociales;S.G.T. de Ciudadanía y Derechos Sociales
+2021;11010;S.G.T. de Ciudadanía y Derechos Sociales;S.G.T. de Ciudadanía y Derechos Sociales
+2021;1102;D.G. de Gobierno Abierto e Innovación Social.;D.G. de Gobierno Abierto e Innovación Social.
+2021;11020;D.G. de Gobierno Abierto e Innovación Social.;D.G. de Gobierno Abierto e Innovación Social.
+2021;1103;D.G. de Protección de Consumidores y Usuarios;D.G. de Protección de Consumidores y Usuarios
+2021;11030;D.G. de Protección de Consumidores y Usuarios;D.G. de Protección de Consumidores y Usuarios
+2021;1104;D.G. de Igualdad y Familias;D.G. de Igualdad y Familias
+2021;11040;D.G. de Igualdad y Familias;D.G. de Igualdad y Familias
+2021;1105;D.G. de Cooperación al Desarrollo e Inmigración;D.G. de Cooperación al Desarrollo e Inmigración
+2021;11050;D.G. de Cooperación al Desarrollo e Inmigración;D.G. de Cooperación al Desarrollo e Inmigración
+2021;1106;No operativo;No operativo
+2021;11060;No operativo;No operativo
+2021;1107;No operativo;No operativo
+2021;11070;No operativo;No operativo
+2021;1111;No operativo;No operativo
+2021;11110;No operativo;No operativo
+2021;12;Hacienda y Administración Pública;Hacienda y Administración Pública
+2021;1200;Ingresos de Hacienda y Adm. Pública;Ingresos de Hacienda y Adm. Pública
+2021;12000;Ingresos de Hacienda y Adm. Pública;Ingresos de Hacienda y Adm. Pública
+2021;1201;S.G.T. de Hacienda y Administ. Pública;S.G.T. de Hacienda y Administ. Pública
+2021;12010;S.G.T. de Hacienda y Administ. Pública;S.G.T. de Hacienda y Administ. Pública
+2021;1202;D.G. Presupuestos, Financiación y Tesorería;D.G. Presupuestos, Financiación y Tesorería
+2021;12020;D.G. Presupuestos, Financiación y Tesorería;D.G. Presupuestos, Financiación y Tesorería
+2021;1203;D.G. de Contratación;D.G. de Contratación
+2021;12030;D.G. de Contratación;D.G. de Contratación
+2021;1204;Intervención General;Intervención General
+2021;12040;Intervención General;Intervención General
+2021;1205;Dirección General de Tributos;Dirección General de Tributos
+2021;12050;Dirección General de Tributos;Dirección General de Tributos
+2021;1206;D.G. Función Pública y Calidad de los Servicios;D.G. Función Pública y Calidad de los Servicios
+2021;12060;D.G. Función Pública y Calidad de los Servicios;D.G. Función Pública y Calidad de los Servicios
+2021;1207;D.G. de Patrimonio y Organización;D.G. de Patrimonio y Organización
+2021;12070;D.G. de Patrimonio y Organización;D.G. de Patrimonio y Organización
+2021;1208;No operativo;No operativo
+2021;12080;No operativo;No operativo
+2021;1250;Ingresos de Secciones Presupuestarias;Ingresos de Secciones Presupuestarias
+2021;12500;Ingresos de Secciones Presupuestarias;Ingresos de Secciones Presupuestarias
+2021;1251;Ingresos Servicio Provincial de Zaragoza;Ingresos Servicio Provincial de Zaragoza
+2021;12510;Ingresos Servicio Provincial de Zaragoza;Ingresos Servicio Provincial de Zaragoza
+2021;1252;Ingresos Servicio Provincial de Huesca;Ingresos Servicio Provincial de Huesca
+2021;12520;Ingresos Servicio Provincial de Huesca;Ingresos Servicio Provincial de Huesca
+2021;1253;Ingresos Servicio Provincial de Teruel;Ingresos Servicio Provincial de Teruel
+2021;12530;Ingresos Servicio Provincial de Teruel;Ingresos Servicio Provincial de Teruel
+2021;13;Vertebración del Territorio, Movilidad y Vivienda;Vertebración del Territorio, Movilidad y Vivienda
+2021;1300;Ingresos Vertebración Territorio, Movilidad y Viv.;Ingresos Vertebración Territorio, Movilidad y Viv.
+2021;13000;Ingresos Vertebración Territorio, Movilidad y Viv.;Ingresos Vertebración Territorio, Movilidad y Viv.
+2021;1301;S.G.T. Vertebración Territorio, Movilidad y Viv.;S.G.T. Vertebración Territorio, Movilidad y Viv.
+2021;13010;S.G.T. Vertebración Territorio, Movilidad y Viv.;S.G.T. Vertebración Territorio, Movilidad y Viv.
+2021;1302;Dirección General de Ordenación del Territorio;Dirección General de Ordenación del Territorio
+2021;13020;Dirección General  de Ordenación del Territorio;Dirección General de Ordenación del Territorio
+2021;1303;Dirección General  de Urbanismo;Dirección General  de Urbanismo
+2021;13030;Dirección General de Urbanismo;Dirección General de Urbanismo
+2021;1304;Dirección General  de Carreteras;Dirección General de Carreteras
+2021;13040;Dirección General de Carreteras;Dirección General de Carreteras
+2021;1305;Dirección General de Vivienda y Rehabilitación;Dirección General  de Vivienda y Rehabilitación
+2021;13050;Dirección General de Vivienda y Rehabilitación;Dirección General de Vivienda y Rehabilitación
+2021;1306;Dirección General de Transportes;Dirección General de Transportes
+2021;13060;Dirección General de Transportes;Dirección General de Transportes
+2021;14;Agricultura, Ganadería y Medio Ambiente;Agricultura, Ganadería y Medio Ambiente
+2021;1400;Ingresos Agricultura, Ganadería y Medio Ambiente;Ingresos Agricultura, Ganadería y Medio Ambiente
+2021;14000;Ingresos Agricultura, Ganadería y Medio Ambiente;Ingresos Agricultura, Ganadería y Medio Ambiente
+2021;1401;S.G.T. de Agricultura, Ganadería y Medio Ambiente;S.G.T. de Agricultura, Ganadería y Medio Ambiente
+2021;14010;S.G.T. de Agricultura, Ganadería y Medio Ambiente;S.G.T. de Agricultura, Ganadería y Medio Ambiente
+2021;14011;DRyS-Sevicio Provincial de Huesca;DRyS-Sevicio Provincial de Huesca
+2021;14012;DRyS-Sevicio Provincial de Teruel;DRyS-Sevicio Provincial de Teruel
+2021;14013;DRyS-Sevicio Provincial de Zaragoza;DRyS-Sevicio Provincial de Zaragoza
+2021;1402;Dirección General de Producción Agraria;Dirección General de Producción Agraria
+2021;14020;Dirección General de Producción Agraria;Dirección General de Producción Agraria
+2021;1403;D.G. de Calidad y Seguridad Alimentaria;D.G. de Calidad y Seguridad Alimentaria
+2021;14030;D.G. de Calidad y Seguridad Alimentaria;D.G. de Calidad y Seguridad Alimentaria
+2021;1404;D.G. de Cambio Climático y Educación Ambiental;D.G. de Cambio Climático y Educación Ambiental
+2021;14040;D.G. de Cambio Climático y Educación Ambiental;D.G. de Cambio Climático y Educación Ambiental
+2021;1405;D.G. de Desarrollo Rural;D.G. de Desarrollo Rural
+2021;14050;D.G. de Desarrollo Rural;D.G. de Desarrollo Rural
+2021;1406;D.G. de Medio Natural y Gestión Forestal;D.G. de Medio Natural y Gestión Forestal
+2021;14060;D.G. de Medio Natural y Gestión Forestal;D.G. de Medio Natural y Gestión Forestal
+2021;1407;D. G. de Innovación y Promoción Agroalimentaria;D. G. de Innovación y Promoción Agroalimentaria
+2021;14070;D. G. de Innovación y Promoción Agroalimentaria;D. G. de Innovación y Promoción Agroalimentaria
+2021;15;Economía, Planificación y Empleo;Economía, Planificación y Empleo
+2021;1500;Ingresos de Economía, Planificación y Empleo;Ingresos de Economía, Planificación y Empleo
+2021;15000;Ingresos de Economía, Planificación y Empleo;Ingresos de Economía, Planificación y Empleo
+2021;1501;S.G.T. de Economía, Planificación y Empleo;S.G.T. de Economía, Planificación y Empleo
+2021;15010;S.G.T. de Economía, Planificación y Empleo;S.G.T. de Economía, Planificación y Empleo
+2021;1502;D.G. de Economía;D.G. de Economía
+2021;15020;D.G. de Economía;D.G. de Economía
+2021;1503;D.G. de Trabajo, Autónomos y Economía Social;D.G. de Trabajo, Autónomos y Economía Social
+2021;15030;D.G. de Trabajo, Autónomos y Economía Social;D.G. de Trabajo, Autónomos y Economía Social
+2021;1504;D.G. de Planificación y Desarrollo Económico;D.G. de Planificación y Desarrollo Económico
+2021;15040;D.G. de Planificación y Desarrollo Económico;D.G. de Planificación y Desarrollo Económico
+2021;1505;No operativa;No operativa
+2021;15050;No operativa;No operativa
+2021;1506;No operativa;No operativa
+2021;15060;No operativa;No operativa
+2021;1507;No operativa;No operativa
+2021;15070;No operativa;No operativa
+2021;16;Sanidad;Sanidad
+2021;1600;Ingresos Sanidad;Ingresos Sanidad
+2021;16000;Ingresos Sanidad;Ingresos Sanidad
+2021;1601;S.G.T. de Sanidad;S.G.T. de Sanidad
+2021;16010;S.G.T. de Sanidad;S.G.T. de Sanidad
+2021;1602;D.G. de Asistencia Sanitaria;D.G. de Asistencia Sanitaria
+2021;16020;D.G. de Asistencia Sanitaria;D.G. de Asistencia Sanitaria
+2021;1603;D.G. de Derechos y Garantías de los Usuarios;D.G. de Derechos y Garantías de los Usuarios
+2021;16030;D.G. de Derechos y Garantías de los Usuarios;D.G. de Derechos y Garantías de los Usuarios
+2021;1604;D.G. de Salud Pública;D.G. de Salud Pública
+2021;16040;D.G. de Salud Pública;D.G. de Salud Pública
+2021;1605;No operativa;No operativa
+2021;16050;No operativa;No operativa
+2021;1606;No operativa;No operativa
+2021;16060;No operativa;No operativa
+2021;1607;No operativa;No operativa
+2021;16070;No operativa;No operativa
+2021;16220;Sanidad-Sevicio Provincial de Huesca;Sanidad-Sevicio Provincial de Huesca
+2021;16440;Sanidad-Sevicio Provincial de Teruel;Sanidad-Sevicio Provincial de Teruel
+2021;16500;Sanidad-Sevicio Provincial de Zaragoza;Sanidad-Sevicio Provincial de Zaragoza
+2021;17;Ciencia, Universidad y Sociedad del Conocimiento;Ciencia, Universidad y Sociedad del Conocimiento
+2021;1700;Ingresos de Ciencia, Universidad y Sociedad del Co;Ingresos de Ciencia, Universidad y Sociedad del Co
+2021;17000;Ingresos de Ciencia, Universidad y Sociedad del Co;Ingresos de Ciencia, Universidad y Sociedad del Co
+2021;1701;SGT de Ciencia, Universidad y Sociedad del Conocim;SGT de Ciencia, Universidad y Sociedad del Conocim
+2021;17010;SGT de Ciencia, Universidad y Sociedad del Conocim;SGT de Ciencia, Universidad y Sociedad del Conocim
+2021;1702;D.G. de Universidades;D.G. de Universidades
+2021;17020;D.G. de Universidades;D.G. de Universidades
+2021;1703;D.G. Investigación e Innovación;D.G. de Investigación e Innovación
+2021;17030;D.G. Investigación e Innovación;D.G. de Investigación e Innovación
+2021;1704;D.G. de Admón Electrónica y Sdad de la Información;D.G. de Admón Electrónica y Sdad de la Información
+2021;17040;D.G. de Admón Electrónica y Sdad de la Información;D.G. de Admón Electrónica y Sdad de la Información
+2021;1705;No operativa;No operativa
+2021;17050;No operativa;No operativa
+2021;1706;No operativa;No operativa
+2021;17060;No operativa;No operativa
+2021;18;Educación, Cultura y Deporte;Educación, Cultura y Deporte
+2021;1800;Ingresos Educación, Cultura y Deporte;Ingresos Educación, Cultura y Deporte
+2021;18000;Ingresos Educación, Cultura y Deporte;Ingresos Educación, Cultura y Deporte
+2021;1801;S.G.T. de Educación, Cultura y Deporte;S.G.T. de Educación, Cultura y Deporte
+2021;18010;S.G.T. de Educación, Cultura y Deporte;S.G.T. de Educación, Cultura y Deporte
+2021;1802;D.G. de Política Lingüística;D.G. de Política Lingüística
+2021;18020;D.G. de Política Lingüística;D.G. de Política Lingüística
+2021;1803;D.G. de Planificación y Equidad;D.G. de Planificación y Equidad
+2021;18030;D.G. de Planificación y Equidad;D.G. de Planificación y Equidad
+2021;1804;D.G. de Personal;D.G. de Personal
+2021;18040;D.G. de Personal;D.G. de Personal
+2021;1805;D.G. de Innovación y Formación Profesional;D.G. de Innovación y Formación Profesional
+2021;18050;D.G. de Innovación y Formación Profesional;D.G. de Innovación y Formación Profesional
+2021;1806;D.G. de Cultura;D.G. de Cultura
+2021;18060;D.G. de Cultura;D.G. de Cultura
+2021;1807;D.G. de Patrimonio Cultural;D.G. de Patrimonio Cultural
+2021;18070;D.G. de Patrimonio Cultural;D.G. de Patrimonio Cultural
+2021;1808;D.G. de Deporte;D.G. de Deporte
+2021;18080;D.G. de Deporte;D.G. de Deporte
+2021;19;Industria, Competitividad y Desarrollo Empresarial;Industria, Competitividad y Desarrollo Empresarial
+2021;1900;Ingresos de Industria, Competitividad y Des. Empre;Ingresos de Industria, Competitividad y Des. Empre
+2021;19000;Ingresos de Industria, Competitividad y Des. Empre;Ingresos de Industria, Competitividad y Des. Empre
+2021;1901;SGT de Industria, Competitividad y Desarrollo Empr;SGT de Industria, Competitividad y Desarrollo Empr
+2021;19010;SGT de Industria, Competitividad y Desarrollo Empr;SGT de Industria, Competitividad y Desarrollo Empr
+2021;1902;Dirección General de Industria y PYMES;Dirección General de Industria y PYMES
+2021;19020;Dirección General de Industria y PYMES;Dirección General de Industria y PYMES
+2021;1903;Dirección General de Comercio, Ferias y Artesanía;Dirección General de Comercio, Ferias y Artesanía
+2021;19030;Dirección General de Comercio, Ferias y Artesanía;Dirección General de Comercio, Ferias y Artesanía
+2021;1904;Dirección General de Energía y Minas;Dirección General de Energía y Minas
+2021;19040;Dirección General de Energía y Minas;Dirección General de Energía y Minas
+2021;1905;Dirección General de Turismo;Dirección General de Turismo
+2021;19050;Dirección General de Turismo;Dirección General de Turismo
+2021;20;No operativa;No operativa
+2021;2000;No operativa;No operativa
+2021;20000;No operativa;No operativa
+2021;2001;No operativa;No operativa
+2021;20010;No operativa;No operativa
+2021;20011;No operativa;No operativa
+2021;20012;No operativa;No operativa
+2021;2002;No operativa;No operativa
+2021;20020;No operativa;No operativa
+2021;2003;No operativa;No operativa
+2021;20030;No operativa;No operativa
+2021;2004;No operativa;No operativa
+2021;20040;No operativa;No operativa
+2021;2010;No operativa;No operativa
+2021;20100;No operativa;No operativa
+2021;2012;No operativa;No operativa
+2021;20120;No operativa;No operativa
+2021;26;A las Administraciones Comarcales;A las Administraciones Comarcales
+2021;2600;Ingresos de A las Adm. Comarcales;Ingresos de A las Adm. Comarcales
+2021;26000;Ingresos de A las Adm. Comarcales;Ingresos de A las Adm. Comarcales
+2021;2601;Comarca de la Jacetania;Comarca de la Jacetania
+2021;26010;Comarca de la Jacetania;Comarca de la Jacetania
+2021;2602;Comarca del Alto Gállego;Comarca del Alto Gállego
+2021;26020;Comarca del Alto Gállego;Comarca del Alto Gállego
+2021;2603;Comarca de Sobrarbe;Comarca de Sobrarbe
+2021;26030;Comarca de Sobrarbe;Comarca de Sobrarbe
+2021;2604;Comarca de la Ribagorza;Comarca de la Ribagorza
+2021;26040;Comarca de la Ribagorza;Comarca de la Ribagorza
+2021;2605;Comarca de Cinco Villas;Comarca de Cinco Villas
+2021;26050;Comarca de Cinco Villas;Comarca de Cinco Villas
+2021;2606;Comarca Hoya de Huesca/ Plana de Uesca;Comarca Hoya de Huesca/ Plana de Uesca
+2021;26060;Comarca Hoya de Huesca/ Plana de Uesca;Comarca Hoya de Huesca/ Plana de Uesca
+2021;2607;Comarca de Somontano de Barbastro;Comarca de Somontano de Barbastro
+2021;26070;Comarca de Somontano de Barbastro;Comarca de Somontano de Barbastro
+2021;2608;Comarca de Cinca Medio;Comarca de Cinca Medio
+2021;26080;Comarca de Cinca Medio;Comarca de Cinca Medio
+2021;2609;Comarca de la Litera/ La Llitera;Comarca de la Litera/ La Llitera
+2021;26090;Comarca de la Litera/ La Llitera;Comarca de la Litera/ La Llitera
+2021;2610;Comarca de los Monegros;Comarca de los Monegros
+2021;26100;Comarca de los Monegros;Comarca de los Monegros
+2021;2611;Comarca del Bajo Cinca/ Baix Cinca;Comarca del Bajo Cinca/ Baix Cinca
+2021;26110;Comarca del Bajo Cinca/ Baix Cinca;Comarca del Bajo Cinca/ Baix Cinca
+2021;2612;Comarca de Tarazona y el Moncayo;Comarca de Tarazona y el Moncayo
+2021;26120;Comarca de Tarazona y el Moncayo;Comarca de Tarazona y el Moncayo
+2021;2613;Comarca de Campo de Borja;Comarca de Campo de Borja
+2021;26130;Comarca de Campo de Borja;Comarca de Campo de Borja
+2021;2614;Comarca del Aranda;Comarca del Aranda
+2021;26140;Comarca del Aranda;Comarca del Aranda
+2021;2615;Comarca de la Ribera Alta del Ebro;Comarca de la Ribera Alta del Ebro
+2021;26150;Comarca de la Ribera Alta del Ebro;Comarca de la Ribera Alta del Ebro
+2021;2616;Comarca de Valdejalón;Comarca de Valdejalón
+2021;26160;Comarca de Valdejalón;Comarca de Valdejalón
+2021;2617;Comarca Central;Comarca Central
+2021;26170;Comarca Central;Comarca Central
+2021;2618;Comarca de la Ribera Baja del Ebro;Comarca de la Ribera Baja del Ebro
+2021;26180;Comarca de la Ribera Baja del Ebro;Comarca de la Ribera Baja del Ebro
+2021;2619;Comarca Bajo Aragón-Caspe;Comarca Bajo Aragón-Caspe
+2021;26190;Comarca Bajo Aragón-Caspe;Comarca Bajo Aragón-Caspe
+2021;2620;Comarca de la Comunidad de Calatayud;Comarca de la Comunidad de Calatayud
+2021;26200;Comarca de la Comunidad de Calatayud;Comarca de la Comunidad de Calatayud
+2021;2621;Comarca de Campo de Cariñena;Comarca de Campo de Cariñena
+2021;26210;Comarca de Campo de Cariñena;Comarca de Campo de Cariñena
+2021;2622;Comarca de Campo de Belchite;Comarca de Campo de Belchite
+2021;26220;Comarca de Campo de Belchite;Comarca de Campo de Belchite
+2021;2623;Comarca del Bajo Martín;Comarca del Bajo Martín
+2021;26230;Comarca del Bajo Martín;Comarca del Bajo Martín
+2021;2624;Comarca de Campo de Daroca;Comarca de Campo de Daroca
+2021;26240;Comarca de Campo de Daroca;Comarca de Campo de Daroca
+2021;2625;Comarca del Jiloca;Comarca del Jiloca
+2021;26250;Comarca del Jiloca;Comarca del Jiloca
+2021;2626;Comarca de Cuencas Mineras;Comarca de Cuencas Mineras
+2021;26260;Comarca de Cuencas Mineras;Comarca de Cuencas Mineras
+2021;2627;Comarca de Andorra- Sierra de Arcos;Comarca de Andorra- Sierra de Arcos
+2021;26270;Comarca de Andorra- Sierra de Arcos;Comarca de Andorra- Sierra de Arcos
+2021;2628;Comarca del Bajo Aragón;Comarca del Bajo Aragón
+2021;26280;Comarca del Bajo Aragón;Comarca del Bajo Aragón
+2021;2629;Comarca de la Comunidad de Teruel;Comarca de la Comunidad de Teruel
+2021;26290;Comarca de la Comunidad de Teruel;Comarca de la Comunidad de Teruel
+2021;2630;Comarca de Maestrazgo;Comarca de Maestrazgo
+2021;26300;Comarca de Maestrazgo;Comarca de Maestrazgo
+2021;2631;Comarca de la Sierra de Albarracín;Comarca de la Sierra de Albarracín
+2021;26310;Comarca de la Sierra de Albarracín;Comarca de la Sierra de Albarracín
+2021;2632;Comarca de Gúdar- Javalambre;Comarca de Gúdar- Javalambre
+2021;26320;Comarca de Gúdar- Javalambre;Comarca de Gúdar- Javalambre
+2021;2633;Comarca del Matarraña/ Matarranya;Comarca del Matarraña/ Matarranya
+2021;26330;Comarca del Matarraña/ Matarranya;Comarca del Matarraña/ Matarranya
+2021;2634;Servicios Administraciones Comarcales;Servicios Administraciones Comarcales
+2021;26340;Servicios Administraciones Comarcales;Servicios Administraciones Comarcales
+2021;30;Diversos Departamentos;Diversos Departamentos
+2021;3000;Ingresos de Diversos Departamentos;Ingresos de Diversos Departamentos
+2021;30000;Ingresos de Diversos Departamentos;Ingresos de Diversos Departamentos
+2021;3001;Fondo Contingencia Ejecución Presupuest.;Fondo Contingencia Ejecución Presupuest.
+2021;30010;Fondo Contingencia Ejecución Presupuest.;Fondo Contingencia Ejecución Presupuest.
+2021;3002;Fondo de Gastos de Personal;Fondo de Gastos de Personal
+2021;30020;Fondo de Gastos de Personal;Fondo de Gastos de Personal
+2021;3003;Deuda Pública;Deuda Pública
+2021;30030;Deuda Pública;Deuda Pública
+2021;3004;Empresas Públicas y participadas;Empresas Públicas y participadas
+2021;30040;Empresas Públicas y participadas;Empresas Públicas y participadas
+2021;3005;Promoción y Desarrollo Industrial;Promoción y Desarrollo Industrial
+2021;30050;Promoción y Desarrollo Industrial;Promoción y Desarrollo Industrial
+2021;3006;Fondo Inclusión Social y Ay. Familiar Ur;Fondo Inclusión Social y Ay. Familiar Ur
+2021;30060;Fondo Inclusión Social y Ay. Familiar Ur;Fondo Inclusión Social y Ay. Familiar Ur
+2021;3007;Relaciones Laborales;Relaciones Laborales
+2021;30070;Relaciones Laborales;Relaciones Laborales
+2021;3008;No operativa;No operativa
+2021;30080;No operativa;No operativa
+2021;3011;REACT-UE;REACT-UE
+2021;30110;REACT-UE;REACT-UE
+2021;3013;No operativa;No operativa
+2021;30130;No operativa;No operativa
+2021;51;Instituto Aragonés de Empleo;Instituto Aragonés de Empleo
+2021;5100;Ingresos del Inst. Aragonés de Empleo;Ingresos del Inst. Aragonés de Empleo
+2021;51000;Ingresos del Inst. Aragonés de Empleo;Ingresos del Inst. Aragonés de Empleo
+2021;5101;Instituto Aragonés de Empleo;Instituto Aragonés de Empleo
+2021;51010;Instituto Aragonés de Empleo;Instituto Aragonés de Empleo
+2021;51011;INAEM - Servicio Provincial de Huesca;INAEM - Servicio Provincial de Huesca
+2021;51012;INAEM - Servicio Provincial de Teruel;INAEM - Servicio Provincial de Teruel
+2021;51013;INAEM - Servicio Provincial de Zaragoza;INAEM - Servicio Provincial de Zaragoza
+2021;51014;INAEM - Servicio de Formación;INAEM - Servicio de Formación
+2021;51015;INAEM - Servicio de Intermediación;INAEM - Servicio de Intermediación
+2021;51016;INAEM - Servicio de Promoción de Empleo;INAEM - Servicio de Promoción de Empleo
+2021;52;Servicio Aragonés de Salud;Servicio Aragonés de Salud
+2021;52AL;Gerencia Sector Alcañiz;Gerencia Sector Alcañiz
+2021;52AL1;Gerencia Sector Alcañiz;Gerencia Sector Alcañiz
+2021;52AL2;Hospital de  Alcañiz;Hospital de  Alcañiz
+2021;52AL3;Atención Primaria Sector Alcañiz;Atención Primaria Sector Alcañiz
+2021;52BA;Gerencia Sector Barbastro;Gerencia Sector Barbastro
+2021;52BA1;Gerencia Sector Barbastro;Gerencia Sector Barbastro
+2021;52BA2;Hospital Barbastro;Hospital Barbastro
+2021;52BA3;Centro Sociosanitario de Fraga;Centro Sociosanitario de Fraga
+2021;52BA4;Atención Primaria Sector Barbastro;Atención Primaria Sector Barbastro
+2021;52CA;Gerencia Sector Calatayud;Gerencia Sector Calatayud
+2021;52CA1;Gerencia Sector Calatayud;Gerencia Sector Calatayud
+2021;52CA2;Hospital Ernest Lluch Martin;Hospital Ernest Lluch Martin
+2021;52CA3;Atención Primaria Sector Calatayud;Atención Primaria Sector Calatayud
+2021;52HU;Gerencia Sector Huesca;Gerencia Sector Huesca
+2021;52HU1;Gerencia Sector Huesca;Gerencia Sector Huesca
+2021;52HU2;Hospital San Jorge de Huesca;Hospital San Jorge de Huesca
+2021;52HU3;Hospital Sagrado Corazón de Jesús;Hospital Sagrado Corazón de Jesús
+2021;52HU4;C.R.P. Santo Cristo de los Milagros;C.R.P. Santo Cristo de los Milagros
+2021;52HU5;Atención Primaria Sector Huesca;Atención Primaria Sector Huesca
+2021;52TE;Gerencia Sector Teruel;Gerencia Sector Teruel
+2021;52TE1;Gerencia Sector Teruel;Gerencia Sector Teruel
+2021;52TE2;Hospital Obispo Polanco Teruel;Hospital Obispo Polanco Teruel
+2021;52TE3;Hospital San José;Hospital San José
+2021;52TE4;C.R.P. San Juan de Dios;C.R.P. San Juan de Dios
+2021;52TE5;Atención Primaria Sector Teruel;Atención Primaria Sector Teruel
+2021;52Z1;Gerencia Sector Zaragoza I;Gerencia Sector Zaragoza I
+2021;52Z11;Gerencia Sector Zaragoza I;Gerencia Sector Zaragoza I
+2021;52Z12;Hospital Royo Villanova;Hospital Royo Villanova
+2021;52Z13;Hospital Nuestra Señora de Gracia;Hospital Nuestra Señora de Gracia
+2021;52Z14;Atención Primaria Sector Zaragoza I;Atención Primaria Sector Zaragoza I
+2021;52Z2;Gerencia Sector Zaragoza II;Gerencia Sector Zaragoza II
+2021;52Z21;Gerencia Sector Zaragoza II;Gerencia Sector Zaragoza II
+2021;52Z22;Hospital Universitario Miguel Servet;Hospital Universitario Miguel Servet
+2021;52Z23;Atención Primaria Sector Zaragoza II;Atención Primaria Sector Zaragoza II
+2021;52Z3;Gerencia Sector Zaragoza III;Gerencia Sector Zaragoza III
+2021;52Z31;Gerencia Sector Zaragoza III;Gerencia Sector Zaragoza III
+2021;52Z32;Hospital Clínico Universitario Lozano Bl;Hospital Clínico Universitario Lozano Bl
+2021;52Z33;H.Geriático San Jorge de Zaragoza;H.Geriático San Jorge de Zaragoza
+2021;52Z34;C.R.P. Nuestra Señora del Pilar;C.R.P. Nuestra Señora del Pilar
+2021;52Z35;Atención Primaria Sector Zaragoza III;Atención Primaria Sector Zaragoza III
+2021;5200;Ingresos del Servicio Aragonés de Salud;Ingresos del Servicio Aragonés de Salud
+2021;52000;Ingresos del Servicio Aragonés de Salud;Ingresos del Servicio Aragonés de Salud
+2021;5201;Servicio Aragonés de Salud;Servicio Aragonés de Salud
+2021;52010;Servicio Aragonés de Salud;Servicio Aragonés de Salud
+2021;5205;Ctro. Gestión Integrada Proyectos Corp.;Ctro. Gestión Integrada Proyectos Corp.
+2021;52050;Ctro. Gestión Integrada Proyectos Corp.;Ctro. Gestión Integrada Proyectos Corp.
+2021;5206;Gerencia 061 Aragon;Gerencia 061 Aragon
+2021;52061;Gerencia 061 Aragon;Gerencia 061 Aragon
+2021;5209;Liquidación CASAR;
+2021;52090;Liquidación CASAR;Liquidación CASAR
+2021;53;Instituto Aragonés de Servicios Sociales;Instituto Aragonés de Servicios Sociales
+2021;53AAA;Acción concertada Plazas Mayores Huesca;Acción concertada Plazas Mayores Huesca
+2021;53AAB;Acción concertada Plazas Mayores Teruel;Acción concertada Plazas Mayores Teruel
+2021;53AAC;Acción concertada Plazas Mayores Zaragoz;Acción concertada Plazas Mayores Zaragoz
+2021;53AB;Residencias;Residencias
+2021;53ABA;Residencia de Mayores Ciudad de Huesca;Residencia de Mayores Ciudad de Huesca
+2021;53ABB;Res.Mayores Sagrada Familia-Huesca;Res.Mayores Sagrada Familia-Huesca
+2021;53ABC;Res.Mayores San Blas-Huesca;Res.Mayores San Blas-Huesca
+2021;53ABD;Res.Mayores Turia-Teruel;Res.Mayores Turia-Teruel
+2021;53ABE;Residencia de Utrillas;Residencia de Utrillas
+2021;53ABF;Residencia de Mayores Ciudad de Albarra;Residencia de Mayores Ciudad de Albarra
+2021;53ABG;Res. de Mayores Javalambre Teruel;Res. de Mayores Javalambre Teruel
+2021;53ABH;Res. de Mayores  de Movera;Res. de Mayores  de Movera
+2021;53ABI;Res. de Mayores  de Borja;Res. de Mayores  de Borja
+2021;53ABJ;Res. Mayores Romareda Zaragoza;Res. Mayores Romareda Zaragoza
+2021;53ABK;Res. de Mayores de Alagon;Res. de Mayores de Alagon
+2021;53ABL;Res. de Mayores Las Fuentes Zaragoza;Res. de Mayores Las Fuentes Zaragoza
+2021;53ABM;Centro Asistencial de Calatayud;Centro Asistencial de Calatayud
+2021;53ABN;Centro Asistencial Hogar Doz Tarazona;Centro Asistencial Hogar Doz Tarazona
+2021;53ABO;Res. Mayores Actur de Zaragoza;Res. Mayores Actur de Zaragoza
+2021;53ABP;Res. Mayores Oliver Zaragoza;Res. Mayores Oliver Zaragoza
+2021;53ABQ;Res. Mayores Elías Martinez Zaragoza;Res. Mayores Elías Martinez Zaragoza
+2021;53ABR;Res. de Mayores de Utebo;Res. de Mayores de Utebo
+2021;53ABS;Res. de Mayores Delicias - Zaragoza;Res. de Mayores Delicias - Zaragoza
+2021;53ACA;Centro Día en Res. Ciudad de Huesca;Centro Día en Res. Ciudad de Huesca
+2021;53ACB;Centro Dia Res. Sagr.Familia Huesca;Centro Dia Res. Sagr.Familia Huesca
+2021;53ACC;Centro de Dia de Fraga;Centro de Dia de Fraga
+2021;53ACD;Centro Dia en Res.Romareda Zaragoza;Centro Dia en Res.Romareda Zaragoza
+2021;53ACE;Centro Dia Res Las Fuentes Zaragoza;Centro Dia Res Las Fuentes Zaragoza
+2021;53ACF;Centro de Dia de Calatayud;Centro de Dia de Calatayud
+2021;53ACG;Hogar 3ª Edad de Ejea de los Caballeros;Hogar 3ª Edad de Ejea de los Caballeros
+2021;53ACH;Centro de Día Barrio San José Zaragoza;Centro de Día Barrio San José Zaragoza
+2021;53ACI;Centro de Dia San Blas Zaragoza;Centro de Dia San Blas Zaragoza
+2021;53ACJ;Centro de Dia Delicias de Zaragoza;Centro de Dia Delicias de Zaragoza
+2021;53ACK;Centro de Dia Picarral de Zaragoza;Centro de Dia Picarral de Zaragoza
+2021;53ACL;Centro de Dia Valdefierro Zaragoza;Centro de Dia Valdefierro Zaragoza
+2021;53ACM;C. Día y Usos Cultur. Casa Aísa, Huesca;C. Día y Usos Cultur. Casa Aísa, Huesca
+2021;53ACN;C. Día y Usos Cultur. Casa Aísa, Huesca;C. Día y Usos Cultur. Casa Aísa, Huesca
+2021;53ACO;Centro de Día San León - Teruel;Centro de Día San León - Teruel
+2021;53AD;IASS - Centro Mayores (Hogares);IASS - Centro Mayores (Hogares)
+2021;53ADA;Hogar de Barbastro;Hogar de Barbastro
+2021;53ADB;Hogar de Binefar;Hogar de Binefar
+2021;53ADC;Hogar de Huesca;Hogar de Huesca
+2021;53ADD;Hogar de Jaca;Hogar de Jaca
+2021;53ADE;Hogar de  Monzón;Hogar de  Monzón
+2021;53ADF;Hogar de Sabiñánigo;Hogar de Sabiñánigo
+2021;53ADG;Hogar en Res. Mayores Turia Teruel;Hogar en Res. Mayores Turia Teruel
+2021;53ADH;Hogar en Res. Mayores Utrillas;Hogar en Res. Mayores Utrillas
+2021;53ADI;Hogar de Alcañiz;Hogar de Alcañiz
+2021;53ADJ;Hogar de Andorra;Hogar de Andorra
+2021;53ADK;Hogar de Calamocha;Hogar de Calamocha
+2021;53ADL;Hogar de Calanda;Hogar de Calanda
+2021;53ADM;Hogar de Ojos Negros;Hogar de Ojos Negros
+2021;53ADN;Hogar Torrecilla de Alcañiz;Hogar Torrecilla de Alcañiz
+2021;53ADO;Hogar Balsas de Ebro Viejo Zaragoza;Hogar Balsas de Ebro Viejo Zaragoza
+2021;53ADP;Hogar Boterón de Zaragoza;Hogar Boterón de Zaragoza
+2021;53ADQ;Club de Casetas;Club de Casetas
+2021;53ADR;Club Cervantes de Gallur;Club Cervantes de Gallur
+2021;53ADS;Hogar de Illueca;Hogar de Illueca
+2021;53ADT;Hogar Las Fuentes-Zaragoza;Hogar Las Fuentes-Zaragoza
+2021;53ADU;Hogar Roger de Flor de Zaragoza;Hogar Roger de Flor de Zaragoza
+2021;53ADV;Hogar de la Tercera Edad Moncayo;Hogar de la Tercera Edad Moncayo
+2021;53ADW;Hogar de Mayores Valdefierro - Zaragoza;Hogar de Mayores Valdefierro - Zaragoza
+2021;53ADX;Comedor Personas Mayores San Blas de Fonz (Huesca);Comedor Personas Mayores San Blas de Fonz (Huesca)
+2021;53AFA;Aulas de Tercera Edad;Aulas de Tercera Edad
+2021;53AHA;Gastos Varios de Mayores de Huesca;Gastos Varios de Mayores de Huesca
+2021;53AHB;Gastos Varios de Mayores de Teruel;Gastos Varios de Mayores de Teruel
+2021;53AHC;Gastos Varios de Mayores de Zaragoza;Gastos Varios de Mayores de Zaragoza
+2021;53AHD;Gastos Varios de Mayores en Gerencia;Gastos Varios de Mayores en Gerencia
+2021;53AIA;Convenios y Subv. de Mayores Huesca;Convenios y Subv. de Mayores Huesca
+2021;53AIB;Convenios y Subv. de Mayores de Teruel;Convenios y Subv. de Mayores de Teruel
+2021;53AIC;Convenios y Subv. de Mayores de Zaragoza;Convenios y Subv. de Mayores de Zaragoza
+2021;53AID;Convenios y Subv. de Mayores de Gerencia;Convenios y Subv. de Mayores de Gerencia
+2021;53AJA;Prestaciones de Mayores de Huesca;Prestaciones de Mayores de Huesca
+2021;53AJB;Prestaciones de Mayores de Teruel;Prestaciones de Mayores de Teruel
+2021;53AJC;Prestaciones de Mayores de Zaragoza;Prestaciones de Mayores de Zaragoza
+2021;53AJD;Ayudas Alimenticias;Ayudas Alimenticias
+2021;53AJE;Prestaciones Extraordinarias;Prestaciones Extraordinarias
+2021;53AJF;Prestaciones Plan Dependencia - Huesca;Prestaciones Plan Dependencia - Huesca
+2021;53AJG;Prestaciones Plan Dependencia - Teruel;Prestaciones Plan Dependencia - Teruel
+2021;53AJH;Prestaciones Plan Dependencia - Zaragoza;Prestaciones Plan Dependencia - Zaragoza
+2021;53BAA;Acción Concertada Discapacitados Huesca;Acción Concertada Discapacitados Huesca
+2021;53BAB;Acción Concertada Discapacitados Teruel;Acción Concertada Discapacitados Teruel
+2021;53BAC;Ac.Concertada Dispacitados Zaragoza;Ac.Concertada Dispacitados Zaragoza
+2021;53BAD;Ac.Concertada Transf.Dip.Prov. de Zarago;Ac.Concertada Transf.Dip.Prov. de Zarago
+2021;53BAE;Acción Concertada Tutelados en Huesca;Acción Concertada Tutelados en Huesca
+2021;53BAF;Acción Concertada Tutelados en Teruel;Acción Concertada Tutelados en Teruel
+2021;53BAG;Acción Concertada Tutelados en Zaragoza;Acción Concertada Tutelados en Zaragoza
+2021;53BAH;Acción Concertada Tutelados en Gerencia;Acción Concertada Tutelados en Gerencia
+2021;53BB;Centro Asistencial;Centro Asistencial
+2021;53BBA;Centro Asistencial El Pinar  de Teruel;Centro Asistencial El Pinar  de Teruel
+2021;53BBB;Centro Atención Minus.Psíquicos de Zarag;Centro Atención Minus.Psíquicos de Zarag
+2021;53BBC;Centro Dependientes Cesaraugusta Zaragoz;Centro Dependientes Cesaraugusta Zaragoz
+2021;53BEA;Centro Base Huesca;Centro Base Huesca
+2021;53BEB;Centro Base Teruel;Centro Base Teruel
+2021;53BEC;Centro Base I de Zaragoza;Centro Base I de Zaragoza
+2021;53BED;Centro Base II de Zaragoza;Centro Base II de Zaragoza
+2021;53BHA;Gastos Varios Dispacitados Huesca;Gastos Varios Dispacitados Huesca
+2021;53BHB;Gastos Varios Dispacitados Teruel;Gastos Varios Dispacitados Teruel
+2021;53BHC;Gastos Varios Dispacitados Zaragoza;Gastos Varios Dispacitados Zaragoza
+2021;53BHD;Gastos Varios Dispacitados Gerencia;Gastos Varios Dispacitados Gerencia
+2021;53BHE;Gastos Varios Tutelados en Huesca;Gastos Varios Tutelados en Huesca
+2021;53BHF;Gastos Varios Tutelados en Teruel;Gastos Varios Tutelados en Teruel
+2021;53BHG;Gastos Varios Tutelados en Zaragoza;Gastos Varios Tutelados en Zaragoza
+2021;53BHH;Gastos Varios Tutelados en Gerencia;Gastos Varios Tutelados en Gerencia
+2021;53BIA;Convenios y Subv. Discapacitados Huesca;Convenios y Subv. Discapacitados Huesca
+2021;53BIB;Convenios y Subv. Discapacitados Teruel;Convenios y Subv. Discapacitados Teruel
+2021;53BIC;Convenios y Subv. Discapacitados Zaragoz;Convenios y Subv. Discapacitados Zaragoz
+2021;53BID;Convenios y Subv. Discapacitados Gerenci;Convenios y Subv. Discapacitados Gerenci
+2021;53BIE;Convenios y Subv. de Tutelados en Huesca;Convenios y Subv. de Tutelados en Huesca
+2021;53BIF;Convenios y Subv. de Tutelados en Teruel;Convenios y Subv. de Tutelados en Teruel
+2021;53BIG;Convenios y Subv. de Tutelados en Zarago;Convenios y Subv. de Tutelados en Zarago
+2021;53BIH;Convenios y Subv. de Tutelados en Gerenc;Convenios y Subv. de Tutelados en Gerenc
+2021;53BJA;Prestaciones Dispacitados de Huesca;Prestaciones Dispacitados de Huesca
+2021;53BJB;Prestaciones Dispacitados de Teruel;Prestaciones Dispacitados de Teruel
+2021;53BJC;Prestaciones Dispacitados de Zaragoza;Prestaciones Dispacitados de Zaragoza
+2021;53CAA;Acción Concertada Plazas Menores Huesca;Acción Concertada Plazas Menores Huesca
+2021;53CAB;Acción Concertada Plazas Menores Teruel;Acción Concertada Plazas Menores Teruel
+2021;53CAC;Acción Concertada Plazas Menores Zaragoz;Acción Concertada Plazas Menores Zaragoz
+2021;53CAD;Acción Concertada Plazas Menores Gerenci;Acción Concertada Plazas Menores Gerenci
+2021;53CB;Menores- Centros Propios;Menores- Centros Propios
+2021;53CBA;Vivienda Tutelada de Huesca;Vivienda Tutelada de Huesca
+2021;53CBB;Vivienda Tutelada de Teruel;Vivienda Tutelada de Teruel
+2021;53CBC;COA Juan Lanuza I de Zaragoza;COA Juan Lanuza I de Zaragoza
+2021;53CBD;Res. Menores  Cesaraugusta de Zaragoza;Res. Menores  Cesaraugusta de Zaragoza
+2021;53CBE;Res. Menores  Infanta Isabel de Zarago;Res. Menores  Infanta Isabel de Zarago
+2021;53CBF;C.O.A. Juan Lanuza II de Zaragoza;C.O.A. Juan Lanuza II de Zaragoza
+2021;53CBG;Res. de Menores Salduba de Zaragoza;Res. de Menores Salduba de Zaragoza
+2021;53CBH;Piso Prep. Adop. Medina Albaida Zaragoza;Piso Prep. Adop. Medina Albaida Zaragoza
+2021;53CBI;C.E.I. San Jorge de Zaragoza;C.E.I. San Jorge de Zaragoza
+2021;53CBJ;Centro Internamiento Menores  Juslibol;Centro Internamiento Menores  Juslibol
+2021;53CBK;Res. Menores Villacampa de Zaragoza;Res. Menores Villacampa de Zaragoza
+2021;53CBL;Vivienda Hogar  L. Loste de Huesca;Vivienda Hogar  L. Loste de Huesca
+2021;53CBM;Piso de Emancipación - Teruel;Piso de Emancipación - Teruel
+2021;53CBN;Escuelas Taller - Talleres de Empleo;Escuelas Taller - Talleres de Empleo
+2021;53CBO;Casa de Acogida III;Casa de Acogida III
+2021;53CBP;Casa de Acogida IV;Casa de Acogida IV
+2021;53CBQ;Piso Tutelado Menores - Teruel;Piso Tutelado Menores - Teruel
+2021;53CBR;Hogar Infantil Casco Histórico Zaragoza;Hogar Infantil Casco Histórico Zaragoza
+2021;53CBS;Hogar Infantil Romareda Zaragoza;Hogar Infantil Romareda Zaragoza
+2021;53CBT;Piso Tutelado de Menores Centro Zaragoza;Piso Tutelado de Menores Centro Zaragoza
+2021;53CBU;Piso Tutelado de Menores Actur Zaragoza;Piso Tutelado de Menores Actur Zaragoza
+2021;53CBV;Piso Tutelado de Menores Picarral Zaragoza;Piso Tutelado de Menores Picarral Zaragoza
+2021;53CGA;Supervia/Lagasca de Zaragoza;Supervia/Lagasca de Zaragoza
+2021;53CHA;Gastos Varios  de Menores de Huesca;Gastos Varios  de Menores de Huesca
+2021;53CHB;Gastos Varios  de Menores de Teruel;Gastos Varios  de Menores de Teruel
+2021;53CHC;Gastos Varios  de Menores de Zaragoza;Gastos Varios  de Menores de Zaragoza
+2021;53CHD;Gastos Varios  de Menores de Gerencia;Gastos Varios  de Menores de Gerencia
+2021;53CIA;Convenios y Subv. Menores de Huesca;Convenios y Subv. Menores de Huesca
+2021;53CIB;Convenios y Subv. Menores de Teruel;Convenios y Subv. Menores de Teruel
+2021;53CIC;Convenios y Subv. Menores de Zaragoza;Convenios y Subv. Menores de Zaragoza
+2021;53CID;Convenios y Subv. Menores de Gerencia;Convenios y Subv. Menores de Gerencia
+2021;53CJA;Acogimientos  Remunerados de Huesca;Acogimientos  Remunerados de Huesca
+2021;53CJB;Acogimientos  Remunerados de Teruel;Acogimientos  Remunerados de Teruel
+2021;53CJC;Acogimientos  Remunerados de Zaragoza;Acogimientos  Remunerados de Zaragoza
+2021;53CJD;Acogimientos  Remunerados de Gerencia;Acogimientos  Remunerados de Gerencia
+2021;53CJE;Prestaciones  Menores de Huesca;Prestaciones  Menores de Huesca
+2021;53CJF;Prestaciones  de Menores de Teruel;Prestaciones  de Menores de Teruel
+2021;53CJG;Prestaciones  Menores de Zaragoza;Prestaciones  Menores de Zaragoza
+2021;53CJH;Ayudas  Urgentes Menores D.88/98  Huesca;Ayudas  Urgentes Menores D.88/98  Huesca
+2021;53CJI;Ayudas  Urgentes Menores D.88/98  Teruel;Ayudas  Urgentes Menores D.88/98  Teruel
+2021;53CJJ;Ayudas  Urgentes Menores D.88/98  Zarago;Ayudas  Urgentes Menores D.88/98  Zarago
+2021;53DAA;Acción Concertada Plz. Inserción Huesca;Acción Concertada Plz. Inserción Huesca
+2021;53DHA;Gastos Varios inserción en Gerencia;Gastos Varios inserción en Gerencia
+2021;53DIA;Convenios y  Subv. de Inserción Huesca;Convenios y  Subv. de Inserción Huesca
+2021;53DIB;Convenios y  Subv. Inserción Teruel;Convenios y  Subv. Inserción Teruel
+2021;53DIC;Convenios y  Subv. de Inserción Zaragoza;Convenios y  Subv. de Inserción Zaragoza
+2021;53DID;Convenios y  Subv. de Inserción Gerencia;Convenios y  Subv. de Inserción Gerencia
+2021;53DIE;Conv.  y  Subv. Programas varios Huesca;Conv.  y  Subv. Programas varios Huesca
+2021;53DIF;Con. y Subv. Programas Varios en Teruel;Con. y Subv. Programas Varios en Teruel
+2021;53DIG;Conv.  y  Subv. Programas varios Zaragoz;Conv.  y  Subv. Programas varios Zaragoz
+2021;53DIH;Conv.  y  Subv. Programas varios Gerenci;Conv.  y  Subv. Programas varios Gerenci
+2021;53DJA;Ayudas de Urgencia en  Zaragoza;Ayudas de Urgencia en  Zaragoza
+2021;53DJB;Prestaciones de Insercción en  Huesca;Prestaciones de Insercción en  Huesca
+2021;53DJC;Prestaciones de Insercción en Teruel;Prestaciones de Insercción en Teruel
+2021;53DJD;Prestaciones de Insercción en Zaragoza;Prestaciones de Insercción en Zaragoza
+2021;53EIA;Serv. Sociales Entidades Locales Huesca;Serv. Sociales Entidades Locales Huesca
+2021;53EIB;Serv. Sociales Entidades Locales Teruel;Serv. Sociales Entidades Locales Teruel
+2021;53EIC;Serv. Sociales Entidades Locales Zaragoz;Serv. Sociales Entidades Locales Zaragoz
+2021;53EID;Serv. Sociales Entidades Locales Gerenci;Serv. Sociales Entidades Locales Gerenci
+2021;53EIE;Servicios Sociales Base  Area deZaragoza;Servicios Sociales Base  Area deZaragoza
+2021;53FBA;Residencia  Padre Polanco Orihuela Tre;Residencia  Padre Polanco Orihuela Tre
+2021;53GGA;Dirección Provincial de  Huesca;Dirección Provincial de  Huesca
+2021;53GGB;Dirección Provincial  de Teruel;Dirección Provincial  de Teruel
+2021;53GGC;Dirección Provincial  de Zaragoza;Dirección Provincial  de Zaragoza
+2021;53GGD;Gerencia de IASS;Gerencia de IASS
+2021;5300;Ingresos Inst. Aragonés Serv. Sociales;Ingresos Inst. Aragonés Serv. Sociales
+2021;53000;Ingresos Inst. Aragonés Serv. Sociales;Ingresos Inst. Aragonés Serv. Sociales
+2021;5301;Instituto Aragonés de Servicios Sociales;Instituto Aragonés de Servicios Sociales
+2021;53010;Instituto Aragonés de Servicios Sociales;Instituto Aragonés de Servicios Sociales
+2021;54;Instituto Aragonés de la Mujer;Instituto Aragonés de la Mujer
+2021;5400;Ingresos del Inst. Aragonés de la Mujer;Ingresos del Inst. Aragonés de la Mujer
+2021;54000;Ingresos del Inst. Aragonés de la Mujer;Ingresos del Inst. Aragonés de la Mujer
+2021;5401;Instituto Aragonés de la Mujer;Instituto Aragonés de la Mujer
+2021;54010;Instituto Aragonés de la Mujer;Instituto Aragonés de la Mujer
+2021;55;Instituto Aragonés de la Juventud;Instituto Aragonés de la Juventud
+2021;5500;Ingresos del Inst. Arag. de la Juventud;Ingresos del Inst. Arag. de la Juventud
+2021;55000;Ingresos del Inst. Arag. de la Juventud;Ingresos del Inst. Arag. de la Juventud
+2021;5501;Instituto Aragonés de la Juventud;Instituto Aragonés de la Juventud
+2021;55010;Instituto Aragonés de la Juventud;Instituto Aragonés de la Juventud
+2021;56;Inst.Arag.Enseñanzas Artíst.Superiores;Inst.Arag.Enseñanzas Artíst.Superiores
+2021;5600;Ingresos Inst. Ar. Enseñanzas Artíst.Sup;Ingresos Inst. Ar. Enseñanzas Artíst.Sup
+2021;56000;Ingresos Inst. Ar. Enseñanzas Artíst.Sup;Ingresos Inst. Ar. Enseñanzas Artíst.Sup
+2021;5601;Inst.Arag.Enseñanzas Artíst.Superiores;Inst.Arag.Enseñanzas Artíst.Superiores
+2021;56010;Inst.Arag.Enseñanzas Artíst.Superiores;Inst.Arag.Enseñanzas Artíst.Superiores
+2021;71;E.P. Aragonesa de Servicios Telemáticos;E.P. Aragonesa de Servicios Telemáticos
+2021;7100;Ingresos Aragonesa Servicios Telemáticos;Ingresos Aragonesa Servicios Telemáticos
+2021;71000;Ingresos Aragonesa Servicios Telemáticos;Ingresos Aragonesa Servicios Telemáticos
+2021;7101;E.P. Aragonesa de Servicios Telemáticos;E.P. Aragonesa de Servicios Telemáticos
+2021;7101A;AST - TELECOMUNICACIONES;AST - TELECOMUNICACIONES
+2021;71010;E.P. Aragonesa de Servicios Telemáticos;E.P. Aragonesa de Servicios Telemáticos
+2021;72;Instituto Aragonés del Agua;Instituto Aragonés del Agua
+2021;7200;Ingresos del Instituto Aragonés del Agua;Ingresos del Instituto Aragonés del Agua
+2021;72000;Ingresos del Instituto Aragonés del Agua;Ingresos del Instituto Aragonés del Agua
+2021;7201;Instituto Aragonés del Agua;Instituto Aragonés del Agua
+2021;72010;Instituto Aragonés del Agua;Instituto Aragonés del Agua
+2021;73;Instituto Aragonés Ciencias de la Salud;Instituto Aragonés Ciencias de la Salud
+2021;7300;Ingresos Inst. Aragonés Ciencias Salud;Ingresos Inst. Aragonés Ciencias Salud
+2021;73000;Ingresos Inst. Aragonés Ciencias Salud;Ingresos Inst. Aragonés Ciencias Salud
+2021;7301;Instituto Aragonés Ciencias de la Salud;Instituto Aragonés Ciencias de la Salud
+2021;73010;Instituto Aragonés Ciencias de la Salud;Instituto Aragonés Ciencias de la Salud
+2021;74;Centro Investigación y Tecnol. Agroalim.;Centro Investigación y Tecnol. Agroalim.
+2021;7400;Ingresos Centro Invest. y Tecn. Agroalim;Ingresos Centro Invest. y Tecn. Agroalim
+2021;74000;Ingresos Centro Invest. y Tecn. Agroalim;Ingresos Centro Invest. y Tecn. Agroalim
+2021;7401;Centro Investigación y Tecnol. Agroalim.;Centro Investigación y Tecnol. Agroalim.
+2021;74010;Centro Investigación y Tecnol. Agroalim.;Centro Investigación y Tecnol. Agroalim.
+2021;75;Instituto Aragonés de Gestión Ambiental;Instituto Aragonés de Gestión Ambiental
+2021;7500;Ingresos Inst. Arag. Gestión Ambiental;Ingresos Inst. Arag. Gestión Ambiental
+2021;75000;Ingresos Inst. Arag. Gestión Ambiental;Ingresos Inst. Arag. Gestión Ambiental
+2021;7501;Instituto Aragonés de Gestión Ambiental;Instituto Aragonés de Gestión Ambiental
+2021;75010;Instituto Aragonés de Gestión Ambiental;Instituto Aragonés de Gestión Ambiental
+2021;76;E.P. Aragonesa Banco de Sangre y Tejidos;E.P. Aragonesa Banco de Sangre y Tejidos
+2021;7600;Ingresos E.P. Banco de Sangre y Tejidos;Ingresos E.P. Banco de Sangre y Tejidos
+2021;76000;Ingresos E.P. Banco de Sangre y Tejidos;Ingresos E.P. Banco de Sangre y Tejidos
+2021;7601;E.P. Aragonesa Banco de Sangre y Tejidos;E.P. Aragonesa Banco de Sangre y Tejidos
+2021;76010;E.P. Aragonesa Banco de Sangre y Tejidos;E.P. Aragonesa Banco de Sangre y Tejidos
+2021;77;Agencia de Calidad y Prospectiva Univers;Agencia de Calidad y Prospectiva Univers
+2021;7700;Ingresos Ag. Calidad y Prosp. Univ.;Ingresos Ag. Calidad y Prosp. Univ.
+2021;77000;Ingresos Ag. Calidad y Prosp. Univ.;Ingresos Ag. Calidad y Prosp. Univ.
+2021;7701;Agencia de Calidad y Prospectiva Univers;Agencia de Calidad y Prospectiva Univers
+2021;77010;Agencia de Calidad y Prospectiva Univers;Agencia de Calidad y Prospectiva Univers
+2021;78;Instituto Aragonés de Fomento;Instituto Aragonés de Fomento
+2021;7800;Ingresos del Instituto Aragonés de Fomento;Ingresos del Instituto Aragonés de Fomento
+2021;78000;Ingresos del Instituto Aragonés de Fomento;Ingresos del Instituto Aragonés de Fomento
+2021;7801;Instituto Aragonés de Fomento;Instituto Aragonés de Fomento
+2021;78010;Instituto Aragonés de Fomento;Instituto Aragonés de Fomento
+2021;90;No operativa;Consorcio Aragonés Sanitario Alta Resol.
+2021;90CS;No operativa;Centros Alta Resolución
+2021;90CS2;No operativa;Centro A.R. Pirineos (JACA)
+2021;90CS3;No operativa;Centro A.R. Cinco Villas (EJEA)
+2021;90CS4;No operativa;Centro A.R. Bajo Cinca (FRAGA)
+2021;90CS5;No operativa;Centro A.R. Moncayo (TARAZONA)
+2021;9000;No operativa;Ingr. Consorcio Arag. Sanitario Alta Res
+2021;90000;No operativa;Ingr. Consorcio Arag. Sanitario Alta Res
+2021;9001;No operativa;Consorcio Aragonés Sanitario Alta Resol.
+2021;90010;No operativa;Consorcio Aragonés Sanitario Alta Resol.
