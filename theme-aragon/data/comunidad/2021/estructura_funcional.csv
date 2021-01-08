@@ -1,145 +1,145 @@
 EJERCICIO;GRUPO;FUNCION;SUBFUNCION;PROGRAMA;DESCRIPCION CORTA;DESCRIPCION LARGA
-2021;0;;;;Deuda P√∫blica;Deuda P√∫blica
-2021;0;01;;;Deuda P√∫blica;Deuda P√∫blica
-2021;0;01;011;;Deuda P√∫blica;Deuda P√∫blica
-2021;0;01;011;0111;Amortiz. y gastos Deuda;Amortizaci√≥n y Gastos Financieros de la Deuda
-2021;1;;;;Servcios Car√°cter General;Servicios de Car√°cter General
-2021;1;11;;;Alta Direcci√≥n C.A. y Gob;Alta Direcci√≥n de la C.A. y del Gobierno
-2021;1;11;111;;Alta Direcci√≥n (Cortes);Alta Direcci√≥n de la C.A. (Cortes de Arag√≥n)
-2021;1;11;111;1111;Cortes de Arag√≥n;Cortes de Arag√≥n (Actividad Legislativa)
-2021;1;11;111;1112;Actuaciones del Justicia;Actuaciones del Justicia de Arag√≥n
-2021;1;11;111;1113;Aljafer√≠a;Aljafer√≠a
-2021;1;11;111;1114;Act. C√°mara de Cuentas;Actuaciones de la C√°mara de Cuentas de Arag√≥n
-2021;1;11;112;;Alta Direcci√≥n (P Gob.Ar);Alta Direcci√≥n de la C.A. (Presidencia Gob Arag√≥n)
-2021;1;11;112;1121;Presidencia y √ìrg Presid;Presidencia y √ìrganos de la Presidencia
-2021;1;11;112;1124;Tribunal Admtvo. de Contratos P√∫blicos de Arag√≥n;Tribunal Admtvo. de Contratos P√∫blicos de Arag√≥n
-2021;1;11;112;1125;Consejo Cons. Arag√≥n;Consejo Consultivo de Arag√≥n
-2021;1;12;;;Administraci√≥n General;Administraci√≥n General
+2021;0;;;;Deuda P˙blica;Deuda P˙blica
+2021;0;01;;;Deuda P˙blica;Deuda P˙blica
+2021;0;01;011;;Deuda P˙blica;Deuda P˙blica
+2021;0;01;011;0111;Amortiz. y gastos Deuda;AmortizaciÛn y Gastos Financieros de la Deuda
+2021;1;;;;Servcios Car·cter General;Servicios de Car·cter General
+2021;1;11;;;Alta DirecciÛn C.A. y Gob;Alta DirecciÛn de la C.A. y del Gobierno
+2021;1;11;111;;Alta DirecciÛn (Cortes);Alta DirecciÛn de la C.A. (Cortes de AragÛn)
+2021;1;11;111;1111;Cortes de AragÛn;Cortes de AragÛn (Actividad Legislativa)
+2021;1;11;111;1112;Actuaciones del Justicia;Actuaciones del Justicia de AragÛn
+2021;1;11;111;1113;AljaferÌa;AljaferÌa
+2021;1;11;111;1114;Act. C·mara de Cuentas;Actuaciones de la C·mara de Cuentas de AragÛn
+2021;1;11;112;;Alta DirecciÛn (P Gob.Ar);Alta DirecciÛn de la C.A. (Presidencia Gob AragÛn)
+2021;1;11;112;1121;Presidencia y ”rg Presid;Presidencia y ”rganos de la Presidencia
+2021;1;11;112;1124;Tribunal Admtvo. de Contratos P˙blicos de AragÛn;Tribunal Admtvo. de Contratos P˙blicos de AragÛn
+2021;1;11;112;1125;Consejo Cons. AragÛn;Consejo Consultivo de AragÛn
+2021;1;12;;;AdministraciÛn General;AdministraciÛn General
 2021;1;12;121;;Servicios Generales;Servicios Generales
 2021;1;12;121;1211;Servicios Generales de Presidencia y Relacs.Instit;Servicios Generales de Presidencia y Relacs.Instit
 2021;1;12;121;1212;Servicios Centrales, Edificios e Instalaciones;Servicios Centrales, Edificios e Instalaciones
-2021;1;12;121;1213;Servicios de Seguridad y Protecci√≥n Civil;Servicios de Seguridad y Protecci√≥n Civil
+2021;1;12;121;1213;Servicios de Seguridad y ProtecciÛn Civil;Servicios de Seguridad y ProtecciÛn Civil
 2021;1;12;121;1214;No operativo;No operativo
 2021;1;12;121;1215;Servicios de Interior;Servicios de Interior
 2021;1;12;121;1216;Comunidades Aragonesas Exterior;Comunidades Aragonesas en el Exterior
 2021;1;12;121;1217;Relac. Institucionales;Relaciones Institucionales
-2021;1;12;121;1219;Unidad Polic√≠a Nacional adscrita a la C.Aut√≥noma;Unidad Polic√≠a Nacional adscrita a la C.Aut√≥noma
-2021;1;12;122;;Funci√≥n P√∫blica;Funci√≥n P√∫blica
-2021;1;12;122;1221;Direcci√≥n y Administraci√≥n de la Funci√≥n P√∫blica;Direcci√≥n y Administraci√≥n de la Funci√≥n P√∫blica
-2021;1;12;123;;Formac y perfecc personal;Formaci√≥n y Perfeccionamiento del personal (IAAP)
-2021;1;12;123;1231;Selecci√≥n, Formaci√≥n y Perfeccionamiento Personal;Selecci√≥n, Formaci√≥n y Perfeccionamiento Personal
-2021;1;12;125;;Gastos relat. Adm√≥n.Local;Gastos relativos a la Administraci√≥n Local
-2021;1;12;125;1251;Apoyo a la Administraci√≥n Local;Apoyo a la Administraci√≥n Local
-2021;1;12;125;1252;Pol√≠tica Territorial;Pol√≠tica Territorial
+2021;1;12;121;1219;Unidad PolicÌa Nacional adscrita a la C.AutÛnoma;Unidad PolicÌa Nacional adscrita a la C.AutÛnoma
+2021;1;12;122;;FunciÛn P˙blica;FunciÛn P˙blica
+2021;1;12;122;1221;DirecciÛn y AdministraciÛn de la FunciÛn P˙blica;DirecciÛn y AdministraciÛn de la FunciÛn P˙blica
+2021;1;12;123;;Formac y perfecc personal;FormaciÛn y Perfeccionamiento del personal (IAAP)
+2021;1;12;123;1231;SelecciÛn, FormaciÛn y Perfeccionamiento Personal;SelecciÛn, FormaciÛn y Perfeccionamiento Personal
+2021;1;12;125;;Gastos relat. AdmÛn.Local;Gastos relativos a la AdministraciÛn Local
+2021;1;12;125;1251;Apoyo a la AdministraciÛn Local;Apoyo a la AdministraciÛn Local
+2021;1;12;125;1252;PolÌtica Territorial;PolÌtica Territorial
 2021;1;12;125;1253;Estrategias Territoriales;Estrategias Territoriales
-2021;1;12;125;1259;Cooperaci√≥n con la Polic√≠a Local;Cooperaci√≥n con la Polic√≠a Local
+2021;1;12;125;1259;CooperaciÛn con la PolicÌa Local;CooperaciÛn con la PolicÌa Local
 2021;1;12;126;;Otros Servicios Generales;Otros Servicios Generales
-2021;1;12;126;1261;Serv.Coord.Admva.Huesca;Servicios de Coordinaci√≥n Administrativa en Huesca
-2021;1;12;126;1262;Serv.Coord.Admva.Teruel;Servicios de Coordinaci√≥n Administrativa en Teruel
-2021;1;12;126;1263;Servicios Jur√≠dicos;Servicios Jur√≠dicos
-2021;1;12;126;1264;IInformaci√≥n Ciudadana y Doc Administrativa;Informaci√≥n Ciudadana y Documentaci√≥n Admva.
-2021;1;12;126;1265;Servicios Telem√°ticos;Servicios Telem√°ticos
-2021;1;12;126;1266;Televisi√≥n y Radio Auton√≥micas;Televisi√≥n y Radio Auton√≥micas
+2021;1;12;126;1261;Serv.Coord.Admva.Huesca;Servicios de CoordinaciÛn Administrativa en Huesca
+2021;1;12;126;1262;Serv.Coord.Admva.Teruel;Servicios de CoordinaciÛn Administrativa en Teruel
+2021;1;12;126;1263;Servicios JurÌdicos;Servicios JurÌdicos
+2021;1;12;126;1264;IInformaciÛn Ciudadana y Doc Administrativa;InformaciÛn Ciudadana y DocumentaciÛn Admva.
+2021;1;12;126;1265;Servicios Telem·ticos;Servicios Telem·ticos
+2021;1;12;126;1266;TelevisiÛn y Radio AutonÛmicas;TelevisiÛn y Radio AutonÛmicas
 2021;1;12;126;1267;Actuaciones Relativas al Desarrollo Estatutario;Actuaciones Relativas al Desarrollo Estatutario
-2021;1;12;126;1268;Inform. Partic. Ciudadana;Informaci√≥n y Participaci√≥n Ciudadana
+2021;1;12;126;1268;Inform. Partic. Ciudadana;InformaciÛn y ParticipaciÛn Ciudadana
 2021;1;12;126;1269;Serv.Gen.Pol.Terr. e Int(No operativo);Serv.Grales P. Territorial e Interior (No operativ
-2021;1;13;;;Rel. Ext. y Coop. Intern.;Relaciones Exteriores y Cooperaci√≥n Internacional
+2021;1;13;;;Rel. Ext. y Coop. Intern.;Relaciones Exteriores y CooperaciÛn Internacional
 2021;1;13;131;;Rel. Exteriores;Relaciones Exteriores
 2021;1;13;131;1311;Act. Relac. Exteriores;Actuaciones de Relaciones Exteriores
-2021;1;13;134;;Cooperaci√≥n Internacional;Cooperaci√≥n Internacional
-2021;1;13;134;1341;Cooperaci√≥n al Desarrollo;Cooperaci√≥n al Desarrollo
+2021;1;13;134;;CooperaciÛn Internacional;CooperaciÛn Internacional
+2021;1;13;134;1341;CooperaciÛn al Desarrollo;CooperaciÛn al Desarrollo
 2021;1;14;;;Justicia;Justicia
-2021;1;14;142;;Administraci√≥n Justicia;Administraci√≥n de Justicia
-2021;1;14;142;1421;Serv. Admon. Justicia;Servicios de Administraci√≥n de Justicia
+2021;1;14;142;;AdministraciÛn Justicia;AdministraciÛn de Justicia
+2021;1;14;142;1421;Serv. Admon. Justicia;Servicios de AdministraciÛn de Justicia
 2021;1;14;142;1422;Ministerio Fiscal;Ministerio Fiscal
-2021;3;;;;Seg Protecc y Prom Social;Seguridad, Protecci√≥n y Promoci√≥n Social
-2021;3;31;;;Seg. y Protecci√≥n Social;Seguridad y Protecci√≥n Social
-2021;3;31;311;;Adm√≥n y Promoci√≥n Social;Adm√≥n y Promoci√≥n Social
-2021;3;31;311;3111;Serv. Grales. Cuidadan√≠a y Derechos Sociales;Serv. Grales. Ciudadan√≠a y Derechos Sociales
-2021;3;31;313;;Acci√≥n Social;Acci√≥n Social
+2021;3;;;;Seg Protecc y Prom Social;Seguridad, ProtecciÛn y PromociÛn Social
+2021;3;31;;;Seg. y ProtecciÛn Social;Seguridad y ProtecciÛn Social
+2021;3;31;311;;AdmÛn y PromociÛn Social;AdmÛn y PromociÛn Social
+2021;3;31;311;3111;Serv. Grales. CuidadanÌa y Derechos Sociales;Serv. Grales. CiudadanÌa y Derechos Sociales
+2021;3;31;313;;AcciÛn Social;AcciÛn Social
 2021;3;31;313;3131;Prest. Asistenciales y Serv. Sociales (No operativ;Prest. Asistenciales y Serv. Sociales (No operativ
-2021;3;31;313;3132;Gesti√≥n y Dllo Serv Soc;Gesti√≥n y Desarrollo de los Servicios Sociales
-2021;3;31;313;3133;Pol√≠t Integral de Apoyo a las Familias y de Iguald;Pol√≠t Integral de Apoyo a las Familias y de Iguald
-2021;3;31;313;3134;Atenci√≥n a la dependencia (No operativo);Atenci√≥n a la dependencia (No operativo)
-2021;3;31;313;3135;Acci√≥n Social a favor del personal;Acci√≥n Social en Favor del Personal
-2021;3;31;313;3136;Fondo Inc. Soc.y Ay Fam U;Fondo de Inclusi√≥n Social y Ayuda Familiar Urgente
+2021;3;31;313;3132;GestiÛn y Dllo Serv Soc;GestiÛn y Desarrollo de los Servicios Sociales
+2021;3;31;313;3133;PolÌt Integral de Apoyo a las Familias y de Iguald;PolÌt Integral de Apoyo a las Familias y de Iguald
+2021;3;31;313;3134;AtenciÛn a la dependencia (No operativo);AtenciÛn a la dependencia (No operativo)
+2021;3;31;313;3135;AcciÛn Social a favor del personal;AcciÛn Social en Favor del Personal
+2021;3;31;313;3136;Fondo Inc. Soc.y Ay Fam U;Fondo de InclusiÛn Social y Ayuda Familiar Urgente
 2021;3;31;315;;Relaciones Laborales;Relaciones Laborales
 2021;3;31;315;3151;Relaciones Laborales;Relaciones Laborales
-2021;3;32;;;Promoci√≥n Social;Promoci√≥n Social
-2021;3;32;322;;Promoci√≥n del Empleo;Promoci√≥n del Empleo
-2021;3;32;322;3221;Fomento del Empleo. INAEM;Fomento del Empleo. Instituto Aragon√©s de Empleo
+2021;3;32;;;PromociÛn Social;PromociÛn Social
+2021;3;32;322;;PromociÛn del Empleo;PromociÛn del Empleo
+2021;3;32;322;3221;Fomento del Empleo. INAEM;Fomento del Empleo. Instituto AragonÈs de Empleo
 2021;3;32;322;3222;Fomento del Empleo EE.TT. (No operativo);Fomento del Empleo EE.TT. (No operativo)
 2021;3;32;322;3225;Fomento del Empleo;Fomento del Empleo
-2021;3;32;322;3229;Consejo Econom y Social;Consejo Econ√≥mico y Social de Arag√≥n
-2021;3;32;323;;Promoci√≥n Sociocultural;Promoci√≥n Sociocultural
-2021;3;32;323;3231;Promoci√≥n de la Juventud;Promoci√≥n de la Juventud
-2021;3;32;323;3232;Promoci√≥n de la Mujer;Promoci√≥n de la Mujer
-2021;3;32;324;;Acci√≥n favor Inmigrantes;Acci√≥n en favor de los Inmigrantes
-2021;3;32;324;3241;Apoyo a la Inmigraci√≥n;Apoyo a la Inmigraci√≥n
-2021;4;;;;Prod.Bienes P√∫b. c.social;Producci√≥n de Bienes P√∫blicos de Car√°cter Social
+2021;3;32;322;3229;Consejo Econom y Social;Consejo EconÛmico y Social de AragÛn
+2021;3;32;323;;PromociÛn Sociocultural;PromociÛn Sociocultural
+2021;3;32;323;3231;PromociÛn de la Juventud;PromociÛn de la Juventud
+2021;3;32;323;3232;PromociÛn de la Mujer;PromociÛn de la Mujer
+2021;3;32;324;;AcciÛn favor Inmigrantes;AcciÛn en favor de los Inmigrantes
+2021;3;32;324;3241;Apoyo a la InmigraciÛn;Apoyo a la InmigraciÛn
+2021;4;;;;Prod.Bienes P˙b. c.social;ProducciÛn de Bienes P˙blicos de Car·cter Social
 2021;4;41;;;Sanidad;Sanidad
-2021;4;41;411;;Adm√≥n General Sanidad;Administraci√≥n General de Sanidad
+2021;4;41;411;;AdmÛn General Sanidad;AdministraciÛn General de Sanidad
 2021;4;41;411;4111;Serv. Gener. Sanidad;Serv. Gener. Sanidad
 2021;4;41;412;;Hosp,Svcios, Asist y Cent;Hospitales, Svcios, Asistencias y Centros de Salud
 2021;4;41;412;4121;Asistencia Sanitaria;Asistencia Sanitaria
 2021;4;41;412;4123;Asist. Sanit. Medio Rural (No operativo);Asistencia Sanitaria Medio Rural (CASAR) (No opera
-2021;4;41;412;4124;Prod.comp.sangu√≠n. y tej.;Producc. componentes sangu√≠neos y de tejidos
-2021;4;41;413;;Acciones P√∫blicas Salud;Acciones P√∫blicas relativas a la Salud
-2021;4;41;413;4131;Protecc y Promoci√≥n Salud;Protecci√≥n y Promoci√≥n de la Salud
-2021;4;41;413;4132;Serv. Atenci√≥n Usuario;Servicios de Atenci√≥n al Usuario
-2021;4;41;413;4134;Salud P√∫blica;Salud P√∫blica
-2021;4;42;;;Educaci√≥n;Educaci√≥n
-2021;4;42;421;;Adm√≥n General Educaci√≥n;Administraci√≥n General de Educaci√≥n
-2021;4;42;421;4211;Serv. Gen. Educaci√≥n, Cultura y Deporte;Servicios Generales Educaci√≥n, Cultura y Deporte
-2021;4;42;421;4212;Gesti√≥n de Personal;Gesti√≥n de Personal
-2021;4;42;422;;Ense√±anza;Ense√±anza
-2021;4;42;422;4220;Formaci√≥n Profesional;Formaci√≥n Profesional
-2021;4;42;422;4221;Educ Infantil y Primaria;Educaci√≥n Infantil y Primaria
+2021;4;41;412;4124;Prod.comp.sanguÌn. y tej.;Producc. componentes sanguÌneos y de tejidos
+2021;4;41;413;;Acciones P˙blicas Salud;Acciones P˙blicas relativas a la Salud
+2021;4;41;413;4131;Protecc y PromociÛn Salud;ProtecciÛn y PromociÛn de la Salud
+2021;4;41;413;4132;Serv. AtenciÛn Usuario;Servicios de AtenciÛn al Usuario
+2021;4;41;413;4134;Salud P˙blica;Salud P˙blica
+2021;4;42;;;EducaciÛn;EducaciÛn
+2021;4;42;421;;AdmÛn General EducaciÛn;AdministraciÛn General de EducaciÛn
+2021;4;42;421;4211;Serv. Gen. EducaciÛn, Cultura y Deporte;Servicios Generales EducaciÛn, Cultura y Deporte
+2021;4;42;421;4212;GestiÛn de Personal;GestiÛn de Personal
+2021;4;42;422;;EnseÒanza;EnseÒanza
+2021;4;42;422;4220;FormaciÛn Profesional;FormaciÛn Profesional
+2021;4;42;422;4221;Educ Infantil y Primaria;EducaciÛn Infantil y Primaria
 2021;4;42;422;4222;Educ Secundaria;Educ Secundaria
-2021;4;42;422;4223;Educaci√≥n Especial;Educaci√≥n Especial
-2021;4;42;422;4224;Ense√±anzas Art√≠sticas;Ense√±anzas Art√≠sticas
-2021;4;42;422;4225;Educaci√≥n Permanente;Educaci√≥n Permanente
-2021;4;42;422;4226;Plan Aragon√©s de F.P.;Plan Aragon√©s de Formaci√≥n Profesional
-2021;4;42;422;4227;Formaci√≥n del Profesorado;Formaci√≥n del Profesorado
-2021;4;42;422;4228;Educaci√≥n Universitaria;Educaci√≥n Universitaria
-2021;4;42;422;4229;Eval. Calidad Ense√±anza S;Evaluaci√≥n de la calidad de la Ense√±anza Superior
+2021;4;42;422;4223;EducaciÛn Especial;EducaciÛn Especial
+2021;4;42;422;4224;EnseÒanzas ArtÌsticas;EnseÒanzas ArtÌsticas
+2021;4;42;422;4225;EducaciÛn Permanente;EducaciÛn Permanente
+2021;4;42;422;4226;Plan AragonÈs de F.P.;Plan AragonÈs de FormaciÛn Profesional
+2021;4;42;422;4227;FormaciÛn del Profesorado;FormaciÛn del Profesorado
+2021;4;42;422;4228;EducaciÛn Universitaria;EducaciÛn Universitaria
+2021;4;42;422;4229;Eval. Calidad EnseÒanza S;EvaluaciÛn de la calidad de la EnseÒanza Superior
 2021;4;42;423;;Becas y Ayudas;Becas y Ayudas
-2021;4;42;423;4231;Innovaci√≥n y Participaci√≥n;Innovaci√≥n y Participaci√≥n
+2021;4;42;423;4231;InnovaciÛn y ParticipaciÛn;InnovaciÛn y ParticipaciÛn
 2021;4;42;423;4232;Equidad;Equidad
 2021;4;43;;;Vivienda y Urbanismo;Vivienda y Urbanismo
 2021;4;43;431;;Vivienda;Vivienda
-2021;4;43;431;4311;Promoci√≥n y Adm√≥n.Viviendas;Promoci√≥n y Administraci√≥n de Viviendas
-2021;4;43;431;4312;Gesti√≥n Social de la Vivienda;Gesti√≥n social de la vivienda
+2021;4;43;431;4311;PromociÛn y AdmÛn.Viviendas;PromociÛn y AdministraciÛn de Viviendas
+2021;4;43;431;4312;GestiÛn Social de la Vivienda;GestiÛn social de la vivienda
 2021;4;43;432;;Urbanismo y Arquitectura;Urbanismo y Arquitectura
 2021;4;43;432;4321;Urbanismo;Urbanismo
-2021;4;43;432;4323;Arquitectura y Rehabilitaci√≥n;Arquitectura y Rehabilitaci√≥n
+2021;4;43;432;4323;Arquitectura y RehabilitaciÛn;Arquitectura y RehabilitaciÛn
 2021;4;44;;;Bienestar Comunitario;Bienestar Comunitario
-2021;4;44;442;;Protecc y Medio Ambiente;Protecci√≥n y Medio Ambiente
-2021;4;44;442;4422;Protecc y Mejor Medio Amb;Protecci√≥n y Mejora del Medio Ambiente
-2021;4;44;442;4423;Gesti√≥n Ambiental;Gesti√≥n Ambiental
+2021;4;44;442;;Protecc y Medio Ambiente;ProtecciÛn y Medio Ambiente
+2021;4;44;442;4422;Protecc y Mejor Medio Amb;ProtecciÛn y Mejora del Medio Ambiente
+2021;4;44;442;4423;GestiÛn Ambiental;GestiÛn Ambiental
 2021;4;44;443;;Otros Srvcios Bstar Com.;Otros servicios de Bienestar Comunitario
 2021;4;44;443;4431;Control del Consumo;Control del Consumo
 2021;4;45;;;Cultura;Cultura
 2021;4;45;452;;Archivos,Bibliot y Museos;Archivos, Bibliotecas y Museos
 2021;4;45;452;4521;Archivos, Museos y Bibliotecas;Archivos, Museos y Bibliotecas
-2021;4;45;452;4522;Gesti√≥n de Bibliotecas (No operativo);Gesti√≥n de Bibliotecas (No operativo)
-2021;4;45;455;;Promoci√≥n Cultural;Promoci√≥n Cultural
-2021;4;45;455;4551;Fom y prom lenguas propias;Fomento y promoci√≥n de las lenguas propias
-2021;4;45;455;4553;Prom y Acci√≥n Cultural (No operativo);Promoci√≥n y Acci√≥n Cultural (No operativo)
-2021;4;45;457;;Deportes y Educ F√≠sica;Deportes y Educaci√≥n F√≠sica
+2021;4;45;452;4522;GestiÛn de Bibliotecas (No operativo);GestiÛn de Bibliotecas (No operativo)
+2021;4;45;455;;PromociÛn Cultural;PromociÛn Cultural
+2021;4;45;455;4551;Fom y prom lenguas propias;Fomento y promociÛn de las lenguas propias
+2021;4;45;455;4553;Prom y AcciÛn Cultural (No operativo);PromociÛn y AcciÛn Cultural (No operativo)
+2021;4;45;457;;Deportes y Educ FÌsica;Deportes y EducaciÛn FÌsica
 2021;4;45;457;4571;Fom y apoyo Activ. Depor;Fomento y apoyo a la Actividad Deportiva
-2021;4;45;458;;Patr. Hist-Art√≠st y Arqu.;Patrimonio Hist√≥rico-Art√≠stico y Arqueol√≥gico
-2021;4;45;458;4581;Promoci√≥n de la Cultura;Promoci√≥n de la Cultura
-2021;4;45;458;4582;Protecci√≥n del Patrimonio Cultural;Protecci√≥n del Patrimonio Cultural
+2021;4;45;458;;Patr. Hist-ArtÌst y Arqu.;Patrimonio HistÛrico-ArtÌstico y ArqueolÛgico
+2021;4;45;458;4581;PromociÛn de la Cultura;PromociÛn de la Cultura
+2021;4;45;458;4582;ProtecciÛn del Patrimonio Cultural;ProtecciÛn del Patrimonio Cultural
 2021;4;46;;;Otros Srvcios Com. y Soc.;Otros Servicios Comunitarios y Sociales
-2021;4;46;463;;Asoc y Partic. Ciudadana;Asociaci√≥n y Participaci√≥n Ciudadana
+2021;4;46;463;;Asoc y Partic. Ciudadana;AsociaciÛn y ParticipaciÛn Ciudadana
 2021;4;46;463;4631;Elecc. Institucionales;Elecciones Institucionales
-2021;5;;;;Prod.Bien P carac.econom.;Producc. de Bienes P√∫blicos de Car√°cter Econ√≥mico
-2021;5;51;;;Infraestructuras B√°sicas;Infraestructuras B√°sicas y del Transporte
-2021;5;51;511;;Adm√≥n G. Infr. B√°sic.Tte;Administraci√≥n General de Infr. B√°sicas y del Tte
+2021;5;;;;Prod.Bien P carac.econom.;Producc. de Bienes P˙blicos de Car·cter EconÛmico
+2021;5;51;;;Infraestructuras B·sicas;Infraestructuras B·sicas y del Transporte
+2021;5;51;511;;AdmÛn G. Infr. B·sic.Tte;AdministraciÛn General de Infr. B·sicas y del Tte
 2021;5;51;511;5111;S G Vert. Territorrio, Movilidad y Vivienda;Serv.G. Verteb. Territorrio, Movilidad y Vivienda
-2021;5;51;512;;Recursos Hidr√°ulicos;Recursos Hidr√°ulicos
-2021;5;51;512;5121;Gest e Infr Recur Hidr√°ul;Gesti√≥n e Infraestructura de Recursos Hidr√°ulicos
+2021;5;51;512;;Recursos Hidr·ulicos;Recursos Hidr·ulicos
+2021;5;51;512;5121;Gest e Infr Recur Hidr·ul;GestiÛn e Infraestructura de Recursos Hidr·ulicos
 2021;5;51;513;;Transporte Terrestre;Transporte Terrestre
 2021;5;51;513;5131;Carreteras;Carreteras
 2021;5;51;513;5132;Transportes;Transportes
@@ -148,66 +148,66 @@ EJERCICIO;GRUPO;FUNCION;SUBFUNCION;PROGRAMA;DESCRIPCION CORTA;DESCRIPCION LARGA
 2021;5;53;531;5311;Mej Estr Agrar y Dllo Rur;Mejora de Estructuras Agrarias y Desarrollo Rural
 2021;5;53;531;5312;Des. Sost. Medio Rural;Desarrollo Sostenible en el Medio Rural
 2021;5;53;533;;Mejora del Medio Natural;Mejora del Medio Natural
-2021;5;53;533;5331;Prot y mejora Medio Nat.;Protecci√≥n y mejora del Medio Natural
+2021;5;53;533;5331;Prot y mejora Medio Nat.;ProtecciÛn y mejora del Medio Natural
 2021;5;53;533;5332;Cons. Biodiv. y Des.Sost;Conservac. de la Biodivers y Desarrollo Sostenible
-2021;5;54;;;Invest Cient, T√©c y Aplic;Investigaci√≥n Cient√≠fica, T√©cnica y Aplicada
+2021;5;54;;;Invest Cient, TÈc y Aplic;InvestigaciÛn CientÌfica, TÈcnica y Aplicada
 2021;5;54;541;;Ad G. Ciencia, Universidad y Sdad. del Conocimi;Adm. Gen. Ciencia, Universidad y Sdad. del Conocim
 2021;5;54;541;5411;Serv. G. Ciencia, Universidad y Sdad. del Conocimi;Serv. G. Ciencia, Universidad y Sdad. del Conocimi
-2021;5;54;542;;Invest T√©cnica y Aplicada;Investigaci√≥n T√©cnica y Aplicada
-2021;5;54;542;5421;Investigaci√≥n Agroalimentaria;Investigaci√≥n Agroalimentaria
-2021;5;54;542;5422;Inv Tecnolog Aplic Indust;Investigaci√≥n y Tecnolog√≠a Aplicada a la Industria
-2021;5;54;542;5423;Investigaci√≥n, Desarrollo e Innovac Tec;Investigaci√≥n, Desarrollo e Innovaci√≥n Tecnol√≥gica
-2021;5;54;542;5424;Inves y Dllo Sdad. Informaci√≥n;Investigaci√≥n y Dllo. Sociedad de la Informaci√≥n
-2021;5;54;542;5425;Inves. y Des. Area de Salud;Investigaci√≥n y Desarrollo en el √Årea de la Salud
-2021;5;54;542;5426;Administraci√≥n electr√≥nica;Administraci√≥n electr√≥nica
-2021;5;55;;;Inform B√°sica y Estad√≠st;Informaci√≥n B√°sica y Estad√≠stica
-2021;5;55;551;;Estad√≠s, Cartogr y Meteor;Estad√≠stica, Cartograf√≠a y Meteorolog√≠a
-2021;5;55;551;5511;Elaboraci√≥n y Difusi√≥n Estad√≠stica;Elaboraci√≥n y Difusi√≥n Estad√≠stica
-2021;6;;;;Reg Econom Car√°ct General;Regulaci√≥n Econ√≥mica de Car√°cter General
-2021;6;61;;;Act Econ√≥micas Generales;Actuaciones Econ√≥micas Generales
-2021;6;61;611;;Adm√≥n Gen. Hacienda y Administraci√≥n P√∫blica;Ad. Gen.de Hacienda y Administraci√≥n P√∫blica
-2021;6;61;611;6111;Serv Generales Hacienda y Administraci√≥n P√∫blica;Serv. Gen. de Hacienda y Administraci√≥n P√∫blica
-2021;6;61;611;6112;Ser.v Generales Econom√≠a, Planificaci√≥n y Empleo;Serv. Generales Econom√≠a, Planificaci√≥n y Empleo
-2021;6;61;612;;Regulac Econ√≥mica General;Regulaci√≥n Econ√≥mica General
+2021;5;54;542;;Invest TÈcnica y Aplicada;InvestigaciÛn TÈcnica y Aplicada
+2021;5;54;542;5421;InvestigaciÛn Agroalimentaria;InvestigaciÛn Agroalimentaria
+2021;5;54;542;5422;Inv Tecnolog Aplic Indust;InvestigaciÛn y TecnologÌa Aplicada a la Industria
+2021;5;54;542;5423;InvestigaciÛn, Desarrollo e Innovac Tec;InvestigaciÛn, Desarrollo e InnovaciÛn TecnolÛgica
+2021;5;54;542;5424;Inves y Dllo Sdad. InformaciÛn;InvestigaciÛn y Dllo. Sociedad de la InformaciÛn
+2021;5;54;542;5425;Inves. y Des. Area de Salud;InvestigaciÛn y Desarrollo en el ¡rea de la Salud
+2021;5;54;542;5426;AdministraciÛn electrÛnica;AdministraciÛn electrÛnica
+2021;5;55;;;Inform B·sica y EstadÌst;InformaciÛn B·sica y EstadÌstica
+2021;5;55;551;;EstadÌs, Cartogr y Meteor;EstadÌstica, CartografÌa y MeteorologÌa
+2021;5;55;551;5511;ElaboraciÛn y DifusiÛn EstadÌstica;ElaboraciÛn y DifusiÛn EstadÌstica
+2021;6;;;;Reg Econom Car·ct General;RegulaciÛn EconÛmica de Car·cter General
+2021;6;61;;;Act EconÛmicas Generales;Actuaciones EconÛmicas Generales
+2021;6;61;611;;AdmÛn Gen. Hacienda y AdministraciÛn P˙blica;Ad. Gen.de Hacienda y AdministraciÛn P˙blica
+2021;6;61;611;6111;Serv Generales Hacienda y AdministraciÛn P˙blica;Serv. Gen. de Hacienda y AdministraciÛn P˙blica
+2021;6;61;611;6112;Ser.v Generales EconomÌa, PlanificaciÛn y Empleo;Serv. Generales EconomÌa, PlanificaciÛn y Empleo
+2021;6;61;612;;Regulac EconÛmica General;RegulaciÛn EconÛmica General
 2021;6;61;612;6120;Fondo Inversiones de Teruel;Fondo Inversiones de Teruel
-2021;6;61;612;6121;Planific.y Direcc Presup;Planificaci√≥n y Direcci√≥n Presupuestaria
-2021;6;61;612;6122;Promoci√≥n y Dllo Econ√≥m.;Promoci√≥n y Desarrollo Econ√≥mico
-2021;6;61;612;6123;Plan Miner√≠a del Carb√≥n;Plan Miner√≠a del Carb√≥n y Dllo Alternat Com.Min
-2021;6;61;612;6124;Corp. Empr. P√∫bl. Arag√≥n;Corporaci√≥n Empresarial P√∫blica de Arag√≥n
-2021;6;61;612;6125;Planificaci√≥n Econ√≥mica;Planificaci√≥n Econ√≥mica
-2021;6;61;612;6126;Apoyo Dllo Econ y Social;Apoyo al Desarrollo Econ√≥mico y Social
+2021;6;61;612;6121;Planific.y Direcc Presup;PlanificaciÛn y DirecciÛn Presupuestaria
+2021;6;61;612;6122;PromociÛn y Dllo EconÛm.;PromociÛn y Desarrollo EconÛmico
+2021;6;61;612;6123;Plan MinerÌa del CarbÛn;Plan MinerÌa del CarbÛn y Dllo Alternat Com.Min
+2021;6;61;612;6124;Corp. Empr. P˙bl. AragÛn;CorporaciÛn Empresarial P˙blica de AragÛn
+2021;6;61;612;6125;PlanificaciÛn EconÛmica;PlanificaciÛn EconÛmica
+2021;6;61;612;6126;Apoyo Dllo Econ y Social;Apoyo al Desarrollo EconÛmico y Social
 2021;6;61;612;6127;Gastos no clasificados;Gastos no clasificados
 2021;6;61;612;6128;Fondo Gastos Personal;Fondo de Gastos de Personal
-2021;6;61;612;6129;Fondo Contingencia;Fondo de Contingencia de Ejecuci√≥n Presupuestaria
+2021;6;61;612;6129;Fondo Contingencia;Fondo de Contingencia de EjecuciÛn Presupuestaria
 2021;6;61;615;;Asuntos de la C.E;Asuntos de la Comunidad Europea
 2021;6;61;615;6152;Act Programas Europeos;Actuaciones relativas a Programas Europeos
 2021;6;62;;;Comercio;Comercio
 2021;6;62;622;;Comercio Interior;Comercio Interior
-2021;6;62;622;6221;Ordci√≥n y Prom Comercial;Ordenaci√≥n y Promoci√≥n Comercial
+2021;6;62;622;6221;OrdciÛn y Prom Comercial;OrdenaciÛn y PromociÛn Comercial
 2021;6;62;623;;Comercio Exterior;Comercio Exterior
-2021;6;62;623;6231;Comerc Ext. y Rel.Ec. Int;Comercio Exterior y Relaciones Econ√≥micas Inter
+2021;6;62;623;6231;Comerc Ext. y Rel.Ec. Int;Comercio Exterior y Relaciones EconÛmicas Inter
 2021;6;63;;;Actividad Financiera;Actividad Financiera
-2021;6;63;631;;Administraci√≥n Financiera;Administraci√≥n Financiera
-2021;6;63;631;6311;Gesti√≥n e Inspec Tributos;Gesti√≥n e Inspecci√≥n de Tributos
+2021;6;63;631;;AdministraciÛn Financiera;AdministraciÛn Financiera
+2021;6;63;631;6311;GestiÛn e Inspec Tributos;GestiÛn e InspecciÛn de Tributos
 2021;6;63;631;6312;Control Interno y Contab;Control Interno y Contabilidad
-2021;6;63;631;6313;Gesti√≥n del Patrimonio;Gesti√≥n del Patrimonio
-2021;6;63;631;6314;Gesti√≥n de Tesorer√≠a;Gesti√≥n de Tesorer√≠a
-2021;6;63;631;6315;Estudios Econ y Regulaci√≥;Estudios Econ√≥micos y Regulaci√≥n
-2021;6;64;;;Otras act. car√°cter econ.;Otras actuaciones de car√°cter econ√≥mico
-2021;6;64;641;;Junta Contrataci√≥n Adtva.;Junta de Contrataci√≥n Administrativa
-2021;6;64;641;6411;Jta Cons. Contr.Ad y Reg;Jta Consultiva Contrataci√≥n Admtva y Registros
-2021;6;64;641;6412;Contrataci√≥n P√∫blica;Contrataci√≥n P√∫blica
+2021;6;63;631;6313;GestiÛn del Patrimonio;GestiÛn del Patrimonio
+2021;6;63;631;6314;GestiÛn de TesorerÌa;GestiÛn de TesorerÌa
+2021;6;63;631;6315;Estudios Econ y RegulaciÛ;Estudios EconÛmicos y RegulaciÛn
+2021;6;64;;;Otras act. car·cter econ.;Otras actuaciones de car·cter econÛmico
+2021;6;64;641;;Junta ContrataciÛn Adtva.;Junta de ContrataciÛn Administrativa
+2021;6;64;641;6411;Jta Cons. Contr.Ad y Reg;Jta Consultiva ContrataciÛn Admtva y Registros
+2021;6;64;641;6412;ContrataciÛn P˙blica;ContrataciÛn P˙blica
 2021;6;64;642;;Defensa Competencia;Defensa de la Competencia
 2021;6;64;642;6421;Acts. Defensa Competencia;Actuaciones en materia de Defensa de Competencia
-2021;7;;;;Reg Econ Sect Productivos;Regulaci√≥n Econ√≥mica de Sectores Productivos
-2021;7;71;;;Agricultura y Ganader√≠a;Agricultura y Ganader√≠a
-2021;7;71;711;;Ad.G Agricultura, Ganader√≠a y Medio Ambiente;Adm.Gener. Agricultura, Ganader√≠a y Medio Ambiente
-2021;7;71;711;7111;Serv.Gen. Agricultura, Ganader√≠a y Medio Ambiente;Serv.Gen. Agricultura, Ganader√≠a y Medio Ambiente
-2021;7;71;712;;Promoci√≥n Poblaci√≥n Rural;Promoci√≥n de la Poblaci√≥n Rural
+2021;7;;;;Reg Econ Sect Productivos;RegulaciÛn EconÛmica de Sectores Productivos
+2021;7;71;;;Agricultura y GanaderÌa;Agricultura y GanaderÌa
+2021;7;71;711;;Ad.G Agricultura, GanaderÌa y Medio Ambiente;Adm.Gener. Agricultura, GanaderÌa y Medio Ambiente
+2021;7;71;711;7111;Serv.Gen. Agricultura, GanaderÌa y Medio Ambiente;Serv.Gen. Agricultura, GanaderÌa y Medio Ambiente
+2021;7;71;712;;PromociÛn PoblaciÛn Rural;PromociÛn de la PoblaciÛn Rural
 2021;7;71;712;7121;Dllo Agroalim y Fmto Asoc;Desarrollo Agroalimentario y Fomento Asociativo
-2021;7;71;712;7122;Coordinaci√≥n y Gesti√≥n de Servicios Agroambientale;Coordinaci√≥n y Gesti√≥n de Servicios Agroambient.
-2021;7;71;712;7123;Producci√≥n Agraria y Gesti√≥n de Ayudas;Producci√≥n Agraria y Gesti√≥n de Ayudas
-2021;7;71;712;7128;Pol√≠tica Agraria Comunitaria;Pol√≠tica Agraria Comunitaria
+2021;7;71;712;7122;CoordinaciÛn y GestiÛn de Servicios Agroambientale;CoordinaciÛn y GestiÛn de Servicios Agroambient.
+2021;7;71;712;7123;ProducciÛn Agraria y GestiÛn de Ayudas;ProducciÛn Agraria y GestiÛn de Ayudas
+2021;7;71;712;7128;PolÌtica Agraria Comunitaria;PolÌtica Agraria Comunitaria
 2021;7;71;716;;Calidad y Seguridad Alimentaria;Calidad y Seguridad Alimentaria
 2021;7;71;716;7161;Calidad y Seguridad Alimentaria;Calidad y Seguridad Alimentaria
 2021;7;72;;;Industria;Industria
@@ -215,17 +215,17 @@ EJERCICIO;GRUPO;FUNCION;SUBFUNCION;PROGRAMA;DESCRIPCION CORTA;DESCRIPCION LARGA
 2021;7;72;721;7211;Serv.Gen.  Industria, Competitividad y Des. Empres;Serv.Gen.  Industria, Competitividad y Des. Empres
 2021;7;72;722;;Act Admtvas sobre Industria;Actuaciones Administrativas sobre Industria
 2021;7;72;722;7221;Act Admtvas sobre Industria;Actuaciones Administrativas sobre Industria
-2021;7;72;723;;Apoyo a la PYME;Apoyo a la Peque√±a y Mediana Empresa
+2021;7;72;723;;Apoyo a la PYME;Apoyo a la PequeÒa y Mediana Empresa
 2021;7;72;723;7231;Fomento Industrial;Fomento Industrial
-2021;7;73;;;Energ√≠a y Minas;Energ√≠a y Minas
-2021;7;73;731;;Planif y Prod Energ y Minas;Planificaci√≥n y Producci√≥n Energ√©tica y Minera
-2021;7;73;731;7311;Fmto y Gesti√≥n Energ√©tica;Fomento y Gesti√≥n Energ√©tica
-2021;7;73;731;7312;Apoyo a la Miner√≠a;Apoyo a la Miner√≠a
+2021;7;73;;;EnergÌa y Minas;EnergÌa y Minas
+2021;7;73;731;;Planif y Prod Energ y Minas;PlanificaciÛn y ProducciÛn EnergÈtica y Minera
+2021;7;73;731;7311;Fmto y GestiÛn EnergÈtica;Fomento y GestiÛn EnergÈtica
+2021;7;73;731;7312;Apoyo a la MinerÌa;Apoyo a la MinerÌa
 2021;7;75;;;Turismo;Turismo
-2021;7;75;751;;Ordci√≥n y Prom Tur√≠stica;Ordenaci√≥n y Promoci√≥n Tur√≠stica
-2021;7;75;751;7511;Ordci√≥n y Prom y Fmto Turismo;Ordenaci√≥n, Promoci√≥n y Fomento del Turismo
-2021;9;;;;Transfer a otras AA.PP.;Transferencias a otras Administraciones P√∫blicas
+2021;7;75;751;;OrdciÛn y Prom TurÌstica;OrdenaciÛn y PromociÛn TurÌstica
+2021;7;75;751;7511;OrdciÛn y Prom y Fmto Turismo;OrdenaciÛn, PromociÛn y Fomento del Turismo
+2021;9;;;;Transfer a otras AA.PP.;Transferencias a otras Administraciones P˙blicas
 2021;9;91;;;Transfer AA.PP. Territ;Transferencias a AA.PP. Territoriales
 2021;9;91;911;;Transfer AA.PP. Comarcal;Transferencias a Administraciones Comarcales
 2021;9;91;911;9111;Transfer AA.PP. Comarcal;Transferencias a Administraciones Comarcales
-2021;9;91;911;9112;Cohesi√≥n Comarcal;Cohesi√≥n Comarcal
+2021;9;91;911;9112;CohesiÛn Comarcal;CohesiÛn Comarcal
