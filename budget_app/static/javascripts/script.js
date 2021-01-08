@@ -130,7 +130,7 @@ function addProjectLabel(year){
 		var anio = $('div.jslider-value span ').html();
 		if (anio == year){
 			if ($('div.projectLabel').length==0){
-				$('h1.main-title').before('<div class="projectLabel" style="float: right; margin-top: 35px;">Proyecto de pptos</div>');
+				$('h1.main-title').before('<div class="projectLabel" style="float: right; margin-top: 35px;">Presupuestos</div>');
 			}
 		}
 		else{
