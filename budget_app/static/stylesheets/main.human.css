@@ -6937,7 +6937,7 @@ g.bg .chart-container rect {
   font-size: 12px;
 }
 .SvgOverlay svg {
-  position: absolute;
+  position: inherit;
   top: -4000px;
   left: -4000px;
   width: 8000px;
@@ -6959,17 +6959,16 @@ g.bg .chart-container rect {
   max-width: none;
 }
 .map-info {
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  border-radius: 0.5em;
-  -webkit-box-shadow: 0 0.5em 0 0 rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 0.5em 0 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0.5em 0 0 rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  -webkit-box-shadow: 0 0.5em 0 0 rgb(0 0 0 / 5%);
+  -moz-box-shadow: 0 .5em 0 0 rgba(0,0,0,0.05);
+  box-shadow: 0 0.5em 0 0 rgb(0 0 0 / 5%);
   bottom: 2em;
-  left: 2.5%;
   position: absolute;
   right: 2.5%;
-  z-index: 10;
+  z-index: 410;
 }
 @media screen and (min-width: 481px) {
   .map-info {
@@ -7072,25 +7071,25 @@ g.bg .chart-container rect {
   height: 260px;
   top: 100px;
   right: 20px;
-  z-index: 10;
+  z-index: 410;
   -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0.5em;
-  -webkit-border-bottom-left-radius: 0.5em;
+  -webkit-border-bottom-right-radius: .5em;
+  -webkit-border-bottom-left-radius: .5em;
   -webkit-border-top-left-radius: 0;
   -moz-border-top-right-radius: 0;
-  -moz-border-bottom-right-radius: 0.5em;
-  -moz-border-bottom-left-radius: 0.5em;
+  -moz-border-bottom-right-radius: .5em;
+  -moz-border-bottom-left-radius: .5em;
   -moz-border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border-bottom-right-radius: 0.5em;
-  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: .5em;
+  border-bottom-left-radius: .5em;
   border-top-left-radius: 0;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e6e6e6;
   padding: .75em;
-  -webkit-box-shadow: 0 0.5em 0 0 rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 0.5em 0 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0.5em 0 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0.5em 0 0 rgb(0 0 0 / 5%);
+  -moz-box-shadow: 0 .5em 0 0 rgba(0,0,0,0.05);
+  box-shadow: 0 0.5em 0 0 rgb(0 0 0 / 5%);
 }
 #map-legend > *:last-child {
   margin-bottom: 0;
