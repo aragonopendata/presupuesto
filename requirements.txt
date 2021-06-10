@@ -1,5 +1,5 @@
 Coffin==0.3.7
-Django==1.4.3
+Django==2.2.24
 django-appconf==1.0.1
 django-compressor==1.4
 django-jasmine==0.4.1
