@@ -2,7 +2,7 @@
 @import url(select2.css);
 /*!
  * Bootstrap v2.1.0
- *
+
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -3485,6 +3485,7 @@ header[role=banner] {
     font-size: 2em;
     font-weight: 800;
     margin: 0 10px .25em;
+    text-align: center;
 }
 
 .home-intro .big-intro .intro-text {
@@ -3492,6 +3493,14 @@ header[role=banner] {
     font-weight: 300;
     margin: 0 10px .5em;
     font-style: normal;
+    text-align: center;
+}
+
+@media screen and (min-width:48em) {
+    .home-intro .big-intro h1 .intro-text{
+        text-align: left;
+
+    } 
 }
 
 .home-intro .options:after,
@@ -3509,12 +3518,10 @@ header[role=banner] {
     margin: 0 0 1.5em;
     padding: 1.5em;
     width: auto;
-    display: flex;
 }
 
 .home-intro .options > div {
-    margin: 0 2% .25em 0;
-    width: 90%;
+    margin-bottom: 10px;
     font-size: 1.143em;
     text-align: center;
     -webkit-border-radius: .5em;
@@ -3530,6 +3537,15 @@ header[role=banner] {
     border: solid 1px #979797;
     border-bottom: 4px solid #5ea2ba;
 }
+
+@media screen and (min-width:48em) {
+    .home-intro .options > div { 
+    margin: 0 2% .25em 0;
+    width: 90%;
+     }
+
+}
+
 
 .home-intro .options > div ul {
     list-style: none;
@@ -3562,31 +3578,32 @@ header[role=banner] {
 .home-intro .options .button {
     padding: 1em 2em;
     color: #333;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     border-radius: 5px;
     color: #ffffff;;
     background-color: #3e6d7e;
+    text-align: center;
 }
-
-.home-intro .option-global .icon {
-    display: none;
+@media screen and (min-width:48em) {
+    .home-intro .options .button {
+    font-size: 16px;
+    }
 }
-
 .home-intro .option-global h2 {
-    margin: 40px;
+    margin: 40px 20px;
     border-bottom: 2px solid #5ea2ba;
     padding-bottom: 10px;
 }
 
 .home-intro .option-policies h2 {
-    margin: 40px 40px 10px;
+    margin: 40px 20px 10px 20px;
     border-bottom: 2px solid #5ea2ba;
     padding-bottom: 10px;
 }
 
 .home-intro .option-tax h2 {
-    margin: 40px;
+    margin: 40px 20px;
     border-bottom: 2px solid #5ea2ba;
     padding-bottom: 10px;
 }
@@ -3594,7 +3611,9 @@ header[role=banner] {
 .home-intro .option-policies .icon {
     display: none;
 }
-
+.home-intro .option-global .icon {
+    display: none;
+}
 .home-intro .option-tax .icon {
     display: none;
 }
@@ -3608,6 +3627,9 @@ header[role=banner] {
 }
 
 @media screen and (min-width:48em) {
+    .home-intro .options {
+        display: flex;
+    }
     .home-intro .options > div {
         float: left;
         width: 28%;
@@ -4084,7 +4106,7 @@ textarea:invalid {
     input.medium-f,
     select.medium-f,
     textarea.medium-f {
-        width: 30%;
+        width: 73%;
         border: #fff;
         height: 60px;
     }
@@ -4115,8 +4137,19 @@ textarea:invalid {
         position: absolute;
         top: 7px;
     }
+    input.medium-f,
+    select.medium-f,
+    textarea.medium-f {
+        width: 40%;
+    }
 }
-
+@media screen and (min-width:75em) {
+    input.medium-f,
+    select.medium-f,
+    textarea.medium-f {
+        width: 30%;
+    }
+}
 .table-std,
 .table-std caption,
 .table-std td,
@@ -4468,7 +4501,7 @@ input[type=submit].button {
     padding: 0;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:200px) {
     .button,
     .button:visited {
         display: inline-block;
@@ -5646,13 +5679,25 @@ a.avatar:hover {
     text-transform: uppercase;
     color: #5ea2ba;
     font-size: 18px;
-}
+    text-align: center;}
+
+    @media screen and (min-width:48em) {
+        .expense-examples .title {
+            text-align: left;
+        } 
+    }
 
 .expense-examples ul {
     list-style: none;
     margin: 0;
-    display: flex;
 }
+
+@media screen and (min-width:48em) {
+    .expense-examples ul {
+        display: flex;
+    } 
+}
+
 
 .expense-examples ul li {
     background: rgba(94, 162, 186, .2);
