@@ -273,8 +273,8 @@ class BudgetLoader:
                                             section=item['ic_code'][0:4],
                                             department=item['ic_code'])
             if not ic:
-                print u"ALERTA: No se encuentra la institución '%s' para '%s': %s€" % (item['ic_code'], item['description'], item['amount'])
-                continue
+                print u"ALERTA: No se encuentra la institución '%s' para '%s': %s�^¬" % (item['ic_code'], item['description'], item['amount'])
+		continue
             else:
                 ic = ic[0]
 
@@ -285,7 +285,9 @@ class BudgetLoader:
                                                 programme=item['fc_programme'])
             if not fc:
                 print u"ALERTA: No se encuentra la categoría funcional '%s' para '%s': %s€" % (item['fc_programme'], item['description'], item['amount'])
-                continue
+             	#print item['fc_programme']
+                #print item['amount']
+		continue
             else:
                 fc = fc[0]
 
@@ -296,6 +298,7 @@ class BudgetLoader:
                                                 heading=item['ec_heading'],
                                                 subheading=item['ec_subheading'])
             if not ec:
+                #print item['ec_code']
                 #print str("budget -> "+str(budget)+"\nexpense -> "+str(is_expense)+"\nitem -> "+str(item))
                 print u"ALERTA: No se encuentra la categoría económica '%s' para '%s': %s€" % (item['ec_code'], item['description'], item['amount'])
                 continue
