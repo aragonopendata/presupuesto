@@ -17,11 +17,12 @@ Estos loaders son ejecutados mediante comandos desde consola, por lo que primero
             ii. `clasificacion_funcional.csv`  
             iii. `no_xbrl.csv`  
             
-3. Carga de presupuestos de municipios  
+3. Carga de presupuestos de municipios y comarcas
         a. Ir a la ruta de la aplicación:  
 `/data/apps/presupuesto/`  
-        b. Ejecutar la siguiente instrucción:  
+        b. Ejecutar las siguientes instrucciones:  
         ```
         python manage.py load_budget_data municipio [año]  
+        python manage.py load_budget_data comarca [año]  
         ```  
         Donde `[año]` corresponde al nombre del directorio que creamos para municipios.
