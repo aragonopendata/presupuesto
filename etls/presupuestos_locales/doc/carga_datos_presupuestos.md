@@ -7,9 +7,9 @@ Estos loaders son ejecutados mediante comandos desde consola, por lo que primero
 ## Tareas
 1. Creación de los directorios  
         a. Se deberá crear en la siguiente ruta, un directorio que tenga por nombre el año del presupuesto de los municipios a cargar:  
-`/apps/presupuestos-aragon/theme-aragon/data/municipio/`  
+`/data/apps/presupuestos-aragon/theme-aragon/data/municipio/`  
         b. Se deberá crear en la siguiente ruta, un directorio que tenga por nombre el año del presupuesto de las comarcas a cargar:    
-`/apps/presupuestos-aragon/theme-aragon/data/comarca/`  
+`/data/apps/presupuestos-aragon/theme-aragon/data/comarca/`  
 
 2. Subida de ficheros de carga  
         a. Subir a cada uno de los directorios creados anteriormente los ficheros correspondientes a municipio y comarca respectivamente:  
@@ -19,7 +19,7 @@ Estos loaders son ejecutados mediante comandos desde consola, por lo que primero
             
 3. Carga de presupuestos de municipios  
         a. Ir a la ruta de la aplicación:  
-`/apps/presupuestos-aragon/`  
+`/data/apps/presupuestos-aragon/`  
         b. Ejecutar la siguiente instrucción:  
         ```
         python manage.py load_budget_data municipio [año]  
