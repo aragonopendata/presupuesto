@@ -24,7 +24,7 @@ Estos loaders son ejecutados mediante comandos desde consola, por lo que primero
         ```
         python manage.py load_budget_data municipio [año]  
         ```
-          
+        y  
         ```
         python manage.py load_budget_data comarca [año]  
         ```  
