@@ -1,0 +1,22 @@
+# Carga de datos de presupuestos
+## Descripción
+La aplicación de presupuestos de Aragón utiliza unos scripts llamados “loaders” para cargar los datos de presupuestos en la base de datos. Estos loaders son ejecutados mediante comandos desde consola, por lo que primero será necesario colocar los ficheros en sus directorios correspondientes.
+## Tareas
+1. Creación de los directorios
+        a. Se deberá crear en la siguiente ruta, un directorio que tenga por nombre el año del presupuesto de los municipios a cargar:  
+`/apps/presupuestos-aragon/theme-aragon/data/municipio/`
+        b. Se deberá crear en la siguiente ruta, un directorio que tenga por nombre el año del presupuesto de las comarcas a cargar:  
+`/apps/presupuestos-aragon/theme-aragon/data/comarca/`
+2. Subida de ficheros de carga  
+        a. Subir a cada uno de los directorios creados anteriormente los ficheros correspondientes a municipio y comarca respectivamente:  
+            i. `clasificacion_economica.csv`  
+            ii. `clasificacion_funcional.csv`  
+            iii. `no_xbrl.csv`  
+3. Carga de presupuestos de municipios  
+        a. Ir a la ruta de la aplicación:  
+`/apps/presupuestos-aragon/`  
+        b. Ejecutar la siguiente instrucción:  
+```
+python manage.py load_budget_data municipio [año]
+```
+Donde `[año]` corresponde al nombre del directorio que creamos para municipios.
