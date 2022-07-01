@@ -22,6 +22,6 @@ Estos loaders son ejecutados mediante comandos desde consola, por lo que primero
 `/apps/presupuestos-aragon/`  
         b. Ejecutar la siguiente instrucción:  
         ```
-        python manage.py load_budget_data municipio [año]
-        ```
+        python manage.py load_budget_data municipio [año]  
+        ```  
         > Donde `[año]` corresponde al nombre del directorio que creamos para municipios.
