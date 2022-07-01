@@ -24,4 +24,4 @@ Estos loaders son ejecutados mediante comandos desde consola, por lo que primero
         ```
         python manage.py load_budget_data municipio [año]  
         ```  
-        > Donde `[año]` corresponde al nombre del directorio que creamos para municipios.
+        Donde `[año]` corresponde al nombre del directorio que creamos para municipios.
