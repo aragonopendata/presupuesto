@@ -170,7 +170,7 @@ class AragonBulkBudgetLoader:
             raise Exception("Entity (%s/%s) not found" % (level, entity_id))
         else:
             entity = entity[0]
-        print u"Cargando presupuesto para entidad '%s' año %s..." % (entity.name, year)
+#        print u"Cargando presupuesto para entidad '%s' año %s..." % (entity.name, year)
 
         # Check whether the budget exists already
         budget = Budget.objects.filter(entity=entity, year=year)
