@@ -30,7 +30,7 @@ Estos loaders son ejecutados mediante comandos desde consola, por lo que primero
         ```  
         python manage.py load_budget_data comarca [año]  
         ```  
-> Donde `[año]` corresponde al nombre del directorio que creamos para municipios.  
+   > Donde `[año]` corresponde al nombre del directorio que creamos para municipios.  
         
 4. Borrar caché  
         Tal vez sea necesario borrar el caché de la página para que se actualicen los resultados:  
