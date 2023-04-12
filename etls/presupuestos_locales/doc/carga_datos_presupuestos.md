@@ -12,7 +12,7 @@ Estos loaders son ejecutados mediante comandos desde consola, por lo que primero
 `/data/apps/presupuesto/theme-aragon/data/comarca/`  
 
 2. Subida de ficheros de carga 
-> (los ficheros proceden de la ejecución de los jobs Talend situados en la máquina de salto, colsultar credenciales en Contraseñas, pestaña 'Otros', 'MÁQUINA DE SALTO PRESUPUESTOS (1 y 2)') 
+> (los ficheros proceden de la ejecución de los jobs Talend situados en la máquina de salto, colsultar credenciales en Contraseñas, pestaña 'Otros', 'MÁQUINA DE SALTO PRESUPUESTOS (1 y 2)')   
         a. Subir a cada uno de los directorios creados anteriormente los ficheros correspondientes a municipio y comarca respectivamente:  
             i. `clasificacion_economica.csv`  
             ii. `clasificacion_funcional.csv`  
@@ -22,7 +22,7 @@ Estos loaders son ejecutados mediante comandos desde consola, por lo que primero
         a. Ir a la ruta de la aplicación:  
         ```
         cd /data/apps/presupuesto/
-        ```
+        ```  
         b. Ejecutar las siguientes instrucciones:  
         ```
         python manage.py load_budget_data municipio [año]  
