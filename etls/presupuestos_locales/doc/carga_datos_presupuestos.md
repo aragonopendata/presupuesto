@@ -16,7 +16,8 @@ Estos loaders son ejecutados mediante comandos desde consola, por lo que primero
             i. `clasificacion_economica.csv`  
             ii. `clasificacion_funcional.csv`  
             iii. `no_xbrl.csv`  
-   > (los ficheros proceden de la ejecución de los jobs Talend situados en la máquina de salto, colsultar credenciales en Contraseñas, pestaña 'Otros', 'MÁQUINA DE SALTO PRESUPUESTOS (1 y 2)')   
+   > Los ficheros proceden de la ejecución de los jobs Talend situados en la máquina de salto.
+   > Consultar credenciales de las máquinas en: '[AOD]_Passwords.xlsx', pestaña 'Otros', 'MÁQUINA DE SALTO PRESUPUESTOS (1 y 2)'.   
 3. Carga de presupuestos de municipios y comarcas  
         a. Ir a la ruta de la aplicación:  
         ```
