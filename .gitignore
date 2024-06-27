@@ -1,14 +1,16 @@
 db
 *pyc
 .DS_Store
-/static
-local_settings*py
-/project/settings.py
+src/static
+src/local_settings*py
+src/project/settings.py
 fabfile.*
-presupuesto-*
-*config.codekit
+src/presupuesto-*
+src/*config.codekit
 
-budget_app/static/stylesheets/config.codekit
+src/budget_app/static/stylesheets/config.codekit
 /.gitignore
 /.project
 /.pydevproject
+
+.idea
