@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## - 2024-07-01
+### Added
+- Moved app code to src folder.
+- Added Dockerfiles and docker-compose to build and run the app in docker.
+
 ## [Unreleased]
 ### Changed
 - New system of error pages like 404, 500, etc.

@@ -1,0 +1,44 @@
+services:
+  django:
+    build: src/
+#    command: tail -f /dev/null
+    depends_on:
+      - postgres
+    volumes:
+      - static:/app/static/
+      - ./data:/app/theme-aragon/data/
+      - ./local_settings.py:/app/presupuesto/local_settings.py
+    networks:
+      - infraestructura_opendata
+
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: presupuesto
+      POSTGRES_USER: presupuesto
+      POSTGRES_PASSWORD: presupuesto
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - infraestructura_opendata
+
+  nginx:
+    build: nginx/
+    ports:
+      - "80:80"
+    depends_on:
+      - django
+      - postgres
+    volumes:
+      - static:/static/
+    networks:
+      - infraestructura_opendata
+
+
+volumes:
+  postgres_data:
+  static:
+
+networks:
+  infraestructura_opendata:
+    driver: external

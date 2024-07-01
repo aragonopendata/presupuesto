@@ -9,10 +9,10 @@ ENV = {
 #  'TEMPLATE_DEBUG': True,
 
   # Database
-  'DATABASE_NAME': 'presupuestos',
-  'DATABASE_USER': '',
-  'DATABASE_PASSWORD': '',
-  'DATABASE_HOST': '',
+  'DATABASE_NAME': 'presupuesto',
+  'DATABASE_USER': 'presupuesto',
+  'DATABASE_PASSWORD': 'presupuesto',
+  'DATABASE_HOST': 'postgres',
 #  'SEARCH_CONFIG': 'unaccent_spa',
 
   # Caching
