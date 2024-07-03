@@ -5,6 +5,11 @@ import sys
 SETTINGS_PATH = os.path.dirname(os.path.abspath(__file__))
 ROOT_PATH = os.path.join(SETTINGS_PATH, '..')
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 # ENVIRONMENT-SPECIFIC SETTINGS
 #
@@ -14,10 +19,10 @@ ROOT_PATH = os.path.join(SETTINGS_PATH, '..')
 # but it turns out it's more useful to load it at the beginning, so I can set the database credentials.
 # I could potentially split it in two (like Rails does), but feels overkill
 #
-try:
-    execfile(os.path.join(ROOT_PATH, 'local_settings.py'), globals(), locals())
-except IOError:
-    pass
+# try:
+#     execfile(os.path.join(ROOT_PATH, 'local_settings.py'), globals(), locals())
+# except IOError:
+#     pass
 
 
 # THEME-SPECIFIC SETTINGS
@@ -26,26 +31,33 @@ except IOError:
 #
 # Pick a theme by setting the THEME variable in 'local_settings.py'.
 #
-if ENV.get('THEME'):
-    THEME=ENV.get('THEME')
-    execfile( os.path.join(ROOT_PATH, THEME, 'settings.py'), globals(), locals())
-else:
-   print "Please set the environment variable THEME in your local_settings.py file."
-   sys.exit(1)
+# if ENV.get('THEME'):
+#     THEME=ENV.get('THEME')
+#     execfile( os.path.join(ROOT_PATH, THEME, 'settings.py'), globals(), locals())
+# else:
+#    print "Please set the environment variable THEME in your local_settings.py file."
+#    sys.exit(1)
+THEME = os.getenv('THEME', 'theme-aragon')
+if THEME == 'theme-aragon':
+    execfile(os.path.join(ROOT_PATH, THEME, 'settings.py'), globals(), locals())
 
 
 # DJANGO SETTINGS
 #
-DEBUG = ENV.get('DEBUG', False)
-TEMPLATE_DEBUG = ENV.get('TEMPLATE_DEBUG', DEBUG)
+# DEBUG = ENV.get('DEBUG', False)
+# TEMPLATE_DEBUG = ENV.get('TEMPLATE_DEBUG', DEBUG)
+DEBUG = os.getenv('DEBUG', False)
+TEMPLATE_DEBUG = os.getenv('TEMPLATE_DEBUG', DEBUG)
+
+
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': ENV.get('DATABASE_NAME'),                   # Or path to database file if using sqlite3.
-        'USER': ENV.get('DATABASE_USER'),                   # Not used with sqlite3.
-        'PASSWORD': ENV.get('DATABASE_PASSWORD'),           # Not used with sqlite3.
-        'HOST': ENV.get('DATABASE_HOST', 'postgres'), # Set to empty string for localhost. Not used with sqlite3.
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.getenv('DATABASE_NAME', 'presupuesto'),
+        'USER': os.getenv('DATABASE_USER', 'presupuesto'),                   # Not used with sqlite3.
+        'PASSWORD':os.getenv('DATABASE_PASSWORD', 'presupuesto'),           # Not used with sqlite3.
+        'HOST': os.getenv('DATABASE_HOST', 'postgres'), # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                                 # Set to empty string for default. Not used with sqlite3.
     }
 }
@@ -228,19 +240,41 @@ LOGGING = {
             '()': 'django.utils.log.RequireDebugFalse'
         }
     },
+    'formatters': {
+      'simple': {
+            'format': '%(levelname)s %(name)s %(module)s %(message)s'
+      },
+    },
     'handlers': {
         'mail_admins': {
             'level': 'ERROR',
             'filters': ['require_debug_false'],
             'class': 'django.utils.log.AdminEmailHandler'
-        }
+        },
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
     },
+
     'loggers': {
-        'django.request': {
-            'handlers': ['mail_admins'],
-            'level': 'ERROR',
+        'django': {
+            'handlers': ['console'],
+            'level': 'INFO',
             'propagate': True,
         },
+        'django.request': {
+            'handlers': ['mail_admins', 'console'],
+            'level': 'WARNING',
+            'propagate': True,
+        },
+        'budget_app': {
+            'handlers': ['console'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+
     }
 }
 
@@ -255,7 +289,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.messages.context_processors.messages"
 )
 
-SEARCH_CONFIG = ENV.get('SEARCH_CONFIG', 'pg_catalog.english')
+SEARCH_CONFIG = os.getenv('SEARCH_CONFIG', 'pg_catalog.english')
 
 
 DEFAULT_CACHES = {
@@ -263,7 +297,7 @@ DEFAULT_CACHES = {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache'
     }
 }
-CACHES = ENV.get('CACHES', DEFAULT_CACHES)
+CACHES = os.getenv('CACHES', DEFAULT_CACHES)
 
 CACHE_MIDDLEWARE_ALIAS = 'default'
 CACHE_MIDDLEWARE_SECONDS = 90 * 60 * 60 * 24  # 90 Days: data doesn't actually change
@@ -272,3 +306,9 @@ CACHE_MIDDLEWARE_KEY_PREFIX = 'budget_app'
 # Name of cache backend to cache user agents. If it not specified default
 # cache alias will be used. Set to `None` to disable caching.
 USER_AGENTS_CACHE = 'default'
+
+# if exists, load local_settings.py
+try:
+    from local_settings import *
+except ImportError:
+    pass

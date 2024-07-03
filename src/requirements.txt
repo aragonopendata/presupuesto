@@ -11,3 +11,4 @@ six==1.12.0
 xlwt==0.7.5
 django-user-agents==0.4.0
 gunicorn==19.10.0
+python-dotenv==0.18.0

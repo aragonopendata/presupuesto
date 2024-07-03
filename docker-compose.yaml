@@ -4,8 +4,15 @@ services:
 #    command: tail -f /dev/null
     depends_on:
       - postgres
+    environment:
+      - DEBUG=${DEBUG}
+      - DATABASE_HOST=${DATABASE_HOST}
+      - DATABASE_NAME=${DATABASE_NAME}
+      - DATABASE_USER=${DATABASE_USER}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
     volumes:
       - static:/app/static/
+      - cache:/var/cache/
       - ./data:/app/theme-aragon/data/
       - ./local_settings.py:/app/presupuesto/local_settings.py
     networks:
@@ -13,10 +20,11 @@ services:
 
   postgres:
     image: postgres:13
+    hostname: db-presupuesto
     environment:
-      POSTGRES_DB: presupuesto
-      POSTGRES_USER: presupuesto
-      POSTGRES_PASSWORD: presupuesto
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
@@ -38,7 +46,8 @@ services:
 volumes:
   postgres_data:
   static:
+  cache:
 
 networks:
   infraestructura_opendata:
-    driver: external
+    external: true

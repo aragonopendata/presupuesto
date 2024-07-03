@@ -16,7 +16,10 @@ RUN pip install --no-cache-dir -r /app/requirements.txt
 COPY . /app
 RUN chmod +x /app/entrypoint.sh
 
-RUN useradd -ms /bin/bash django
+RUN groupadd -g 1234 django && \
+    useradd -m -u 1234 -g django django
+
+RUN mkdir -p /app/cache && chown -R django /app/cache
 USER django
 
 ENTRYPOINT ["/app/entrypoint.sh"]

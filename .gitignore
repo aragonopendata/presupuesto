@@ -7,6 +7,7 @@ src/project/settings.py
 fabfile.*
 src/presupuesto-*
 src/*config.codekit
+.env
 
 src/budget_app/static/stylesheets/config.codekit
 /.gitignore

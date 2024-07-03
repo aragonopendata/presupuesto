@@ -1,25 +1,10 @@
 # ENVIRONMENT-SPECIFIC SETTINGS
-#
 
-ENV = {
 
-  'THEME': 'theme-aragon',
-
-#  'DEBUG': True,
-#  'TEMPLATE_DEBUG': True,
-
-  # Database
-  'DATABASE_NAME': 'presupuesto',
-  'DATABASE_USER': 'presupuesto',
-  'DATABASE_PASSWORD': 'presupuesto',
-  'DATABASE_HOST': 'postgres',
-#  'SEARCH_CONFIG': 'unaccent_spa',
-
-  # Caching
 #  'CACHES': {
 #      'default': {
 #          'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
-#          'LOCATION': '/tmp'
+#          'LOCATION': '/var/cache'
 #      }
 #  }
 
