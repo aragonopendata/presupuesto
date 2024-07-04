@@ -10,11 +10,12 @@ services:
       - DATABASE_NAME=${DATABASE_NAME}
       - DATABASE_USER=${DATABASE_USER}
       - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - CACHE=${CACHE}
     volumes:
       - static:/app/static/
-      - cache:/var/cache/
-      - ./data:/app/theme-aragon/data/
-      - ./local_settings.py:/app/presupuesto/local_settings.py
+      - cache:/var/cache/django/
+      - ./data:/app/theme-aragon/data
+#      - ./local_settings.py:/app/local_settings.py
     networks:
       - infraestructura_opendata
 
@@ -33,7 +34,7 @@ services:
   nginx:
     build: nginx/
     ports:
-      - "80:80"
+      - ${NGINX_PORT}:80
     depends_on:
       - django
       - postgres

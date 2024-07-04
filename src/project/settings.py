@@ -292,14 +292,17 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 SEARCH_CONFIG = os.getenv('SEARCH_CONFIG', 'pg_catalog.english')
 
 
-DEFAULT_CACHES = {
+CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache'
+    },
+    'filebased': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': '/var/cache/django'
     }
 }
-CACHES = os.getenv('CACHES', DEFAULT_CACHES)
 
-CACHE_MIDDLEWARE_ALIAS = 'default'
+CACHE_MIDDLEWARE_ALIAS = os.getenv('CACHE', 'default')
 CACHE_MIDDLEWARE_SECONDS = 90 * 60 * 60 * 24  # 90 Days: data doesn't actually change
 CACHE_MIDDLEWARE_KEY_PREFIX = 'budget_app'
 

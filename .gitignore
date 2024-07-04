@@ -2,7 +2,7 @@ db
 *pyc
 .DS_Store
 src/static
-src/local_settings*py
+**/local_settings*py
 src/project/settings.py
 fabfile.*
 src/presupuesto-*
