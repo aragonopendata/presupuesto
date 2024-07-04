@@ -1,3 +1,29 @@
+### Instalación en docker
+
+Para instalar la aplicación en docker es necesario seguir los siguientes pasos:
+* Descargar el repositorio:
+    
+    $ git clone git@github.com:aragonopendata/presupuesto.git
+
+* Crear el archivo `.env` a partir del archivo `.env-template` y modificar los valores necesarios:
+
+    $ cp presupuesto/.env-template presupuesto/.env
+
+* Construir la imagen de docker:
+    
+        $ docker compose build
+
+* Arrancar la aplicación:
+        
+            $ docker compose up
+
+* Crear la base de datos:
+    
+            $ docker compose run django python manage.py syncdb
+    
+* Cargar datos, como se indica en el proximo apartado.
+    
+
 ### Instalando en local
 
 Para instalar la aplicación en local es necesario seguir los siguientes pasos:
