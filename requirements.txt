@@ -3,7 +3,7 @@ Django==1.4.3
 django-appconf==1.0.1
 django-compressor==1.4
 django-jasmine==0.4.1
-Jinja2==2.6
+Jinja2==2.11.3
 MarkupSafe==1.0
 psycopg2-binary==2.8.4
 Pygments==2.4.2
