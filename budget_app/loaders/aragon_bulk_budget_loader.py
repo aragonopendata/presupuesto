@@ -41,7 +41,8 @@ class AragonBulkBudgetLoader:
         # us to accomodate later on data files with only subsets of the overall domain.
         reader = csv.reader(open(filename, 'rb'), delimiter=';')
         for index, line in enumerate(reader):
-            if re.match("^#", line[0]):         # Ignore comments
+            print(line)
+	    if re.match("^#", line[0]):         # Ignore comments
                 continue
 
             if re.match("^ +$", line[0]):       # Ignore empty lines
@@ -108,12 +109,8 @@ class AragonBulkBudgetLoader:
                 continue
 
             # Retrieve entity id
-            if level == 'municipio':
-                entity_name = line[83]          # not really used, but handy
-                entity_id = line[84]
-            else:
-                entity_name = line[81]          # not really used, but handy
-                entity_id = line[82]
+            entity_name = line[39]          # not really used, but handy
+            entity_id = line[40]
             if ( len(entity_id)<2 ):            # Zero padding county codes
                 entity_id = "0"+entity_id
 
