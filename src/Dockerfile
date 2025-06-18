@@ -17,7 +17,7 @@ WORKDIR /app
 COPY requirements.txt /app
 RUN pip install --no-cache-dir -r /app/requirements.txt
 COPY . /app
-RUN chmod +x /app/entrypoint.sh && chown django:django /app/theme-aragon/data && chown django:django /app/static
+RUN chmod +x /app/entrypoint.sh && chown django:django /app/theme-aragon/data #&& chown django:django /app/static
 
 RUN mkdir /var/cache/django && chown -R django:django /var/cache/django
 
