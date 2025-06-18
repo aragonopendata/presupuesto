@@ -2,6 +2,7 @@
 
 import os.path
 import sys
+
 SETTINGS_PATH = os.path.dirname(os.path.abspath(__file__))
 ROOT_PATH = os.path.join(SETTINGS_PATH, '..')
 
@@ -46,7 +47,9 @@ if THEME == 'theme-aragon':
 #
 # DEBUG = ENV.get('DEBUG', False)
 # TEMPLATE_DEBUG = ENV.get('TEMPLATE_DEBUG', DEBUG)
+
 DEBUG = os.getenv('DEBUG', False)
+#DEBUG = True
 TEMPLATE_DEBUG = os.getenv('TEMPLATE_DEBUG', DEBUG)
 
 
@@ -232,6 +235,7 @@ JASMINE_TEST_DIRECTORY = (
 # the site admins on every HTTP 500 error when DEBUG=False.
 # See http://docs.djangoproject.com/en/dev/topics/logging for
 # more details on how to customize your logging configuration.
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -244,6 +248,11 @@ LOGGING = {
       'simple': {
             'format': '%(levelname)s %(name)s %(module)s %(message)s'
       },
+      'verbose': { # Añadimos un formato más detallado para el archivo, si lo deseas
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+      },
+
     },
     'handlers': {
         'mail_admins': {
@@ -256,21 +265,29 @@ LOGGING = {
             'class': 'logging.StreamHandler',
             'formatter': 'simple'
         },
+	'file': { # ¡Este es el nuevo handler para el archivo!
+            'level': 'INFO', # Nivel de log para el archivo
+            'class': 'logging.handlers.RotatingFileHandler', # Tipo de handler para archivos que rotan
+            'formatter': 'verbose', # Usamos el formato 'verbose' para el archivo
+            'filename': os.path.join(ROOT_PATH, 'logs', 'django.log'), # Ruta donde se guardará el log
+            'maxBytes': 1024 * 1024 * 5, # Tamaño máximo del archivo antes de rotar (5 MB)
+            'backupCount': 5, # Número de archivos de backup a mantener
+        },
     },
 
     'loggers': {
         'django': {
-            'handlers': ['console'],
+            'handlers': ['console','file'],
             'level': 'INFO',
             'propagate': True,
         },
         'django.request': {
-            'handlers': ['mail_admins', 'console'],
+            'handlers': ['mail_admins', 'console', 'file'],
             'level': 'WARNING',
             'propagate': True,
         },
         'budget_app': {
-            'handlers': ['console'],
+            'handlers': ['console','file'],
             'level': 'INFO',
             'propagate': True,
         },

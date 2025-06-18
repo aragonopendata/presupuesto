@@ -1,5 +1,5 @@
 services:
-  django:
+  djangopresu:
     build: src/
 #    command: tail -f /dev/null
     depends_on:
@@ -36,7 +36,7 @@ services:
     ports:
       - ${NGINX_PORT}:80
     depends_on:
-      - django
+      - djangopresu
       - postgres
     volumes:
       - static:/static/
