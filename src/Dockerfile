@@ -21,7 +21,11 @@ RUN chmod +x /app/entrypoint.sh && chown django:django /app/theme-aragon/data
 
 RUN mkdir /var/cache/django && chown -R django:django /var/cache/django
 
+RUN mkdir -p /app/logs && chmod -R 775 /app/logs
+
+RUN chown -R django:django /app/logs
+
 USER django
 
 ENTRYPOINT ["/app/entrypoint.sh"]
-CMD ["gunicorn","--workers=2","-b", "0.0.0.0:8000","project.wsgi:application"]
+CMD ["gunicorn","--workers", "5","-b", "0.0.0.0:8000","project.wsgi:application"]
