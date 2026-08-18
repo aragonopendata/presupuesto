@@ -16,8 +16,9 @@ services:
       - cache:/var/cache/django/
       - ./data:/app/theme-aragon/data
 #      - ./local_settings.py:/app/local_settings.py
-    networks:
-      - infraestructura_opendata
+    restart: always
+      #    networks:
+      #- infraestructura_opendata
 
   postgres:
     image: postgres:13
@@ -28,8 +29,9 @@ services:
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    networks:
-      - infraestructura_opendata
+    restart: always
+      #networks:
+      #- infraestructura_opendata
 
   nginx:
     build: nginx/
@@ -40,8 +42,9 @@ services:
       - postgres
     volumes:
       - static:/static/
-    networks:
-      - infraestructura_opendata
+    restart: always
+      #networks:
+      #- infraestructura_opendata
 
 
 volumes:
@@ -49,6 +52,6 @@ volumes:
   static:
   cache:
 
-networks:
-  infraestructura_opendata:
-    external: true
+    #networks:
+    #infraestructura_opendata:
+    #external: true
